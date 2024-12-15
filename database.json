@@ -6,7 +6,7 @@
       "afkReason": "",
       "role": "",
       "reporte": 0,
-      "name": "⌥ 𝙷𝚎𝚗𝚛𝚢 𝙰𝚛𝚌𝚊𝚗𝚐𝚎𝚕𝚘",
+      "name": "𝙷𝚎𝚗𝚛𝚢 𝙰𝚛𝚌𝚊𝚗𝚐𝚎𝚕𝚘",
       "antispam": 0,
       "antispamlastclaim": 0,
       "silenced": false,
@@ -10736,7 +10736,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734207858164,
+          "lastMessageTime": 1734258412409,
           "messageCount": 1,
           "pontos": 0
         },
@@ -20142,7 +20142,7 @@
           "silenced": true,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1733414345301,
+          "lastMessageTime": 1734258378257,
           "messageCount": 1,
           "pontos": 0,
           "tempBan": false,
@@ -20161,7 +20161,7 @@
           "usuariosRoubados": []
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 1704,
+          "exp": 7177,
           "limit": 0,
           "role": "",
           "money": 0,
@@ -24944,10 +24944,10 @@
       "lastSuccess": 1732652186371
     },
     "dono-exec.js": {
-      "total": 26,
-      "success": 26,
-      "last": 1732928775547,
-      "lastSuccess": 1732928775547
+      "total": 33,
+      "success": 33,
+      "last": 1734258378270,
+      "lastSuccess": 1734258378270
     },
     "bingImg.js": {
       "total": 5,
