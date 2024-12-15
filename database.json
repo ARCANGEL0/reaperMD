@@ -1253,7 +1253,7 @@
       "afkReason": "",
       "role": "",
       "reporte": 0,
-      "name": "",
+      "name": "Tiago",
       "antispam": 0,
       "antispamlastclaim": 0,
       "silenced": false,
@@ -10401,6 +10401,32 @@
           "afkReason": ""
         }
       }
+    },
+    "196250007773392@lid": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 0,
+      "afkInfo": {
+        "120363312968709293@g.us": {
+          "afkTime": -2,
+          "number": "196250007773392@lid",
+          "afkReason": ""
+        }
+      }
     }
   },
   "chats": {
@@ -10462,7 +10488,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1733629661268,
+          "lastMessageTime": 1734208114619,
           "messageCount": 1,
           "pontos": 0
         },
@@ -10480,7 +10506,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1733942971770,
+          "lastMessageTime": 1734208023225,
           "messageCount": 1,
           "pontos": 0
         },
@@ -10678,7 +10704,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1733842372497,
+          "lastMessageTime": 1734207858164,
           "messageCount": 1,
           "pontos": 0
         },
@@ -10732,8 +10758,8 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1732784845423,
-          "messageCount": 1,
+          "lastMessageTime": 1734212258015,
+          "messageCount": 2,
           "pontos": 0
         },
         "224382060371988@lid": {
@@ -10786,7 +10812,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734205558609,
+          "lastMessageTime": 1734208150986,
           "messageCount": 1,
           "pontos": 0
         },
@@ -11326,7 +11352,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1733622187988,
+          "lastMessageTime": 1734208059637,
           "messageCount": 1,
           "pontos": 0
         },
@@ -15217,6 +15243,24 @@
           "lastMessageTime": 1734206373091,
           "messageCount": null,
           "pontos": 0
+        },
+        "196250007773392@lid": {
+          "exp": 0,
+          "limit": 0,
+          "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
+          "money": 0,
+          "level": 0,
+          "adm": false,
+          "legendary": false,
+          "banned": false,
+          "adv": 0,
+          "tentativasRoubo": 5,
+          "silenced": false,
+          "maxlevel": false,
+          "cocriador": false,
+          "lastMessageTime": 1734208543914,
+          "messageCount": null,
+          "pontos": 0
         }
       },
       "isBanned": true,
@@ -16756,6 +16800,10 @@
           "admin": null
         },
         {
+          "id": "224949516148849@lid",
+          "admin": null
+        },
+        {
           "id": "279739843539058@lid",
           "admin": null
         },
@@ -16805,10 +16853,6 @@
         },
         {
           "id": "224618401013847@lid",
-          "admin": null
-        },
-        {
-          "id": "196250007773392@lid",
           "admin": null
         },
         {
@@ -17623,7 +17667,8 @@
         "243911360557184@lid": [],
         "111214403281125@lid": [],
         "103006418780255@lid": [],
-        "76918670028857@lid": []
+        "76918670028857@lid": [],
+        "196250007773392@lid": []
       }
     },
     "120363202217134158@g.us": {
