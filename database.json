@@ -238,7 +238,7 @@
       "afkReason": "",
       "role": "",
       "reporte": 0,
-      "name": "Åńōnymøü_3301 🖖👽",
+      "name": "",
       "antispam": 0,
       "antispamlastclaim": 0,
       "silenced": false,
@@ -10543,6 +10543,38 @@
           "afkReason": ""
         }
       }
+    },
+    "185878098010274@lid": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "Fabiano Oliveira",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 0,
+      "afkInfo": {
+        "120363312968709293@g.us": {
+          "afkTime": -2,
+          "number": "185878098010274@lid",
+          "afkReason": ""
+        }
+      },
+      "money": 150,
+      "nsfwAdv": 0,
+      "adv": 2,
+      "tentativasRoubo": 5,
+      "spammer": 0,
+      "usuariosRoubados": []
     }
   },
   "chats": {
@@ -10571,7 +10603,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734307013949,
+          "lastMessageTime": 1734364004983,
           "messageCount": 1,
           "pontos": 0
         },
@@ -10928,7 +10960,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734229470900,
+          "lastMessageTime": 1734363759383,
           "messageCount": 1,
           "pontos": 0
         },
@@ -10964,8 +10996,8 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1732242617583,
-          "messageCount": 1,
+          "lastMessageTime": 1734364373161,
+          "messageCount": 3,
           "pontos": 0
         },
         "155680216494256@lid": {
@@ -11275,7 +11307,7 @@
           "pontos": 0
         },
         "553497704017@s.whatsapp.net": {
-          "exp": 11,
+          "exp": 13,
           "limit": 0,
           "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
           "money": 0,
@@ -11288,7 +11320,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734306025820,
+          "lastMessageTime": 1734363743188,
           "messageCount": 1,
           "pontos": 0
         },
@@ -15449,6 +15481,24 @@
           "lastMessageTime": 1734346665701,
           "messageCount": null,
           "pontos": 0
+        },
+        "185878098010274@lid": {
+          "exp": 0,
+          "limit": 0,
+          "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
+          "money": 0,
+          "level": 0,
+          "adm": false,
+          "legendary": false,
+          "banned": false,
+          "adv": 0,
+          "tentativasRoubo": 5,
+          "silenced": false,
+          "maxlevel": false,
+          "cocriador": false,
+          "lastMessageTime": 1734363807562,
+          "messageCount": null,
+          "pontos": 0
         }
       },
       "isBanned": true,
@@ -17848,7 +17898,8 @@
         "274229517922425@lid": [],
         "229106742480919@lid": [],
         "195408580108479@lid": [],
-        "250903902814445@lid": []
+        "250903902814445@lid": [],
+        "185878098010274@lid": []
       }
     },
     "120363202217134158@g.us": {
@@ -21264,7 +21315,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1732670643775,
+          "lastMessageTime": 1734369666047,
           "messageCount": 1,
           "pontos": 0
         },
@@ -21387,7 +21438,7 @@
       "except": false,
       "lastSentTime": 0,
       "name": "Cabeçudos 🫱🏻‍🫲🏿",
-      "totalMembros": 42,
+      "totalMembros": 41,
       "membros": [
         {
           "id": "554796646044@s.whatsapp.net",
@@ -21415,10 +21466,6 @@
         },
         {
           "id": "99080701214902@lid",
-          "admin": null
-        },
-        {
-          "id": "154095138656344@lid",
           "admin": null
         },
         {
