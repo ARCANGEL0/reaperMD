@@ -10665,6 +10665,32 @@
       "tentativasRoubo": 5,
       "spammer": 0,
       "usuariosRoubados": []
+    },
+    "46162795073756@lid": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 0,
+      "afkInfo": {
+        "120363312968709293@g.us": {
+          "afkTime": -2,
+          "number": "46162795073756@lid",
+          "afkReason": ""
+        }
+      }
     }
   },
   "chats": {
@@ -11050,8 +11076,8 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734430744869,
-          "messageCount": 1,
+          "lastMessageTime": 1734467821781,
+          "messageCount": 3,
           "pontos": 0
         },
         "146978277163151@lid": {
@@ -11104,7 +11130,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734201692999,
+          "lastMessageTime": 1734466493578,
           "messageCount": 1,
           "pontos": 0
         },
@@ -15643,6 +15669,24 @@
           "lastMessageTime": 1734433213150,
           "messageCount": 5,
           "pontos": 0
+        },
+        "46162795073756@lid": {
+          "exp": 0,
+          "limit": 0,
+          "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
+          "money": 0,
+          "level": 0,
+          "adm": false,
+          "legendary": false,
+          "banned": false,
+          "adv": 0,
+          "tentativasRoubo": 5,
+          "silenced": false,
+          "maxlevel": false,
+          "cocriador": false,
+          "lastMessageTime": 1734470002165,
+          "messageCount": null,
+          "pontos": 0
         }
       },
       "isBanned": true,
@@ -18042,7 +18086,8 @@
         "185878098010274@lid": [],
         "129730107945046@lid": [],
         "134754632478934@lid": [],
-        "13632813424806@lid": []
+        "13632813424806@lid": [],
+        "46162795073756@lid": []
       }
     },
     "120363202217134158@g.us": {
@@ -20456,7 +20501,7 @@
       },
       "users": {
         "351927285125@s.whatsapp.net": {
-          "exp": 108,
+          "exp": 109,
           "limit": 6666,
           "role": "𝑵𝒆𝒗𝒆𝒓𝒎𝒐𝒓𝒆 ༒︎\n𝙼𝚎𝚜𝚝𝚛𝚎 𝚍𝚘𝚜 𝚌𝚘𝚛𝚟𝚘𝚜",
           "money": 66666,
@@ -20469,7 +20514,7 @@
           "silenced": true,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734282539790,
+          "lastMessageTime": 1734466420498,
           "messageCount": 1,
           "pontos": 0,
           "tempBan": false,
@@ -20488,7 +20533,7 @@
           "usuariosRoubados": []
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 7178,
+          "exp": 7190,
           "limit": 0,
           "role": "",
           "money": 0,
@@ -21168,7 +21213,7 @@
       "firstTime": true,
       "antiCallGp": true,
       "nsfw": true,
-      "name": "⌥ 𝙷𝚎𝚗𝚛𝚢 𝙰𝚛𝚌𝚊𝚗𝚐𝚎𝚕𝚘",
+      "name": "Eu",
       "totalMembros": 0,
       "membros": [],
       "boleto": 20,
@@ -25237,10 +25282,10 @@
       "lastSuccess": 1733095634966
     },
     "dono-update.js": {
-      "total": 21,
-      "success": 21,
-      "last": 1732660563807,
-      "lastSuccess": 1732660563807
+      "total": 22,
+      "success": 22,
+      "last": 1734466411216,
+      "lastSuccess": 1734466411216
     },
     "menu-menu.js": {
       "total": 16,
@@ -25297,9 +25342,9 @@
       "lastSuccess": 1731429934683
     },
     "cfg-chatGPT.js": {
-      "total": 205,
+      "total": 206,
       "success": 205,
-      "last": 1733249613746,
+      "last": 1734466420778,
       "lastSuccess": 1733249613746
     },
     "dono-clearallsession.js": {
