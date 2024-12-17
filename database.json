@@ -10575,6 +10575,64 @@
       "tentativasRoubo": 5,
       "spammer": 0,
       "usuariosRoubados": []
+    },
+    "129730107945046@lid": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "Iury Jonathan Vendas",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 0,
+      "afkInfo": {
+        "120363312968709293@g.us": {
+          "afkTime": -2,
+          "number": "129730107945046@lid",
+          "afkReason": ""
+        }
+      },
+      "money": 150,
+      "nsfwAdv": 0,
+      "adv": 2,
+      "tentativasRoubo": 5,
+      "spammer": 0,
+      "usuariosRoubados": []
+    },
+    "134754632478934@lid": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 0,
+      "afkInfo": {
+        "120363312968709293@g.us": {
+          "afkTime": -2,
+          "number": "134754632478934@lid",
+          "afkReason": ""
+        }
+      }
     }
   },
   "chats": {
@@ -10870,7 +10928,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734204034294,
+          "lastMessageTime": 1734371623706,
           "messageCount": 1,
           "pontos": 0
         },
@@ -11698,8 +11756,8 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734231360940,
-          "messageCount": 1,
+          "lastMessageTime": 1734371976850,
+          "messageCount": 3,
           "pontos": 0
         },
         "557999793522@s.whatsapp.net": {
@@ -15499,6 +15557,42 @@
           "lastMessageTime": 1734363807562,
           "messageCount": null,
           "pontos": 0
+        },
+        "129730107945046@lid": {
+          "exp": 0,
+          "limit": 0,
+          "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
+          "money": 0,
+          "level": 0,
+          "adm": false,
+          "legendary": false,
+          "banned": false,
+          "adv": 0,
+          "tentativasRoubo": 5,
+          "silenced": false,
+          "maxlevel": false,
+          "cocriador": false,
+          "lastMessageTime": 1734371418441,
+          "messageCount": 1,
+          "pontos": 0
+        },
+        "134754632478934@lid": {
+          "exp": 0,
+          "limit": 0,
+          "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
+          "money": 0,
+          "level": 0,
+          "adm": false,
+          "legendary": false,
+          "banned": false,
+          "adv": 0,
+          "tentativasRoubo": 5,
+          "silenced": false,
+          "maxlevel": false,
+          "cocriador": false,
+          "lastMessageTime": 1734377999299,
+          "messageCount": null,
+          "pontos": 0
         }
       },
       "isBanned": true,
@@ -17899,7 +17993,9 @@
         "229106742480919@lid": [],
         "195408580108479@lid": [],
         "250903902814445@lid": [],
-        "185878098010274@lid": []
+        "185878098010274@lid": [],
+        "129730107945046@lid": [],
+        "134754632478934@lid": []
       }
     },
     "120363202217134158@g.us": {
