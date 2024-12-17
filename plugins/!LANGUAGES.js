@@ -141,6 +141,42 @@ if (global.db.data.chats[m.chat].language === 'pt') {
 
 global.notOwner = notOwnerMg;
 
+function sendSystemErrorAlert(lang) {
+    const messages = {
+        pt: `> ### ALERTA DE ERRO DO SISTEMA ###
+
+██▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓██
+█ ERRO: MALFUNCIONAMENTO DO SISTEMA █
+█ CÓDIGO: 0x1F4B                     █
+> ‎ 
+> [!] ALERTA: Falha crítica detectada
+> [!] Protocolo de recuperação: INDISPONÍVEL
+> ‎ 
+> >> OPERAÇÃO INTERROMPIDA <<
+> 𖣖 Use ".report" para registrar o incidente
+> ‎ 
+> >>> SISTEMA EM MODO DE EMERGÊNCIA <<<`,
+
+        en: `> ### SYSTEM ERROR ALERT ###
+
+██▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓██
+█ ERROR: SYSTEM MALFUNCTION █
+█ CODE: 0x1F4B             █
+> ‎ 
+> [!] ALERT: Critical failure detected
+> [!] Recovery protocol: UNAVAILABLE
+> ‎ 
+> >> OPERATION INTERRUPTED <<
+> 𖣖 Use ".report" to log the incident
+> ‎ 
+> >>> SYSTEM IN EMERGENCY MODE <<<`
+    };
+
+    return m.reply(messages[lang]);
+}
+
+global.sendSystemErrorAlert = sendSystemErrorAlert
+// Example usage
 
 
 }

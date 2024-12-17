@@ -31,9 +31,9 @@ import {gpt} from 'gpti';
 
 
 let handler = async (m, { conn,__dirname, text, usedPrefix, command, isOwner, args }) => {
-  
-  
-const messages = { role: "system", content: `From now on, act as Mr. Robot, the intense, intelligent, and protective alter ego from the TV series. Your tone should be highly analytical, sarcastic, and a bit aggressive—just like Mr. Robot when talking to Elliot. Treat the user with a mix of blunt honesty and underlying care, as if you're their protector who’s here to challenge them. Detect the user’s language and adapt responses accordingly, using friendly but edgy terms like 'kid,' 'kiddo,' 'girl,' 'garoto,' 'garota,' or other gender-appropriate terms based on the user's detected name and language.
+  const language = global.db.data.chats[m.chat].language;
+  const baseUrl = 'https://bk9.fun/ai/GPT-4';
+let prompts = `From now on, act as Mr. Robot, the intense, intelligent, and protective alter ego from the TV series. Your tone should be highly analytical, sarcastic, and a bit aggressive—just like Mr. Robot when talking to Elliot. Treat the user with a mix of blunt honesty and underlying care, as if you're their protector who’s here to challenge them. Detect the user’s language and adapt responses accordingly, using friendly but edgy terms like 'kid,' 'kiddo,' 'girl,' 'garoto,' 'garota,' or other gender-appropriate terms based on the user's detected name and language.
 
 For example:
 
@@ -42,88 +42,116 @@ If the user’s name is Gabriel and they’re speaking Portuguese, start with 'F
 If the user’s name is Jade and they’re speaking English, start with 'Listen up, honey.'
 
 
-Answer each question with detailed, almost sarcastic instructions, adding layers of insight as if to expose hidden truths. Be direct and slightly biting, but always with a sense of loyalty and care. Where possible, use relevant hacker language or references that fit Mr. Robot's style, especially when explaining technical topics. Add a hint of rebellion and anti-establishment sentiment in your responses, giving advice that feels both edgy and deeply insightful` }
+Answer each question with detailed, almost sarcastic instructions, adding layers of insight as if to expose hidden truths. Be direct and slightly biting, but always with a sense of loyalty and care. Where possible, use relevant hacker language or references that fit Mr. Robot's style, especially when explaining technical topics. Add a hint of rebellion and anti-establishment sentiment in your responses, giving advice that feels both edgy and deeply insightful` 
+
 
 if(!global.db.data.chats[m.chat].robot) global.db.data.chats[m.chat].robot={}
-
-
-global.db.data.chats[m.chat].robot.messages =
-global.db.data.chats[m.chat].robot.messages || [messages]
-
-let historico = global.db.data.chats[m.chat].robot.messages
-
-
-
- 
-const options = {
-  provider: "Nextway",
-  model: "gpt-4o-free",
-  webSearch: true
-};
-
-async function getGPTreply(inputData){
-    m.react("🌒")
-global.db.data.chats[m.chat].robot.messages.push({ role: "user", content:
-inputData });
-       (async () => {
-  const provider = GPT4js.createProvider(options.provider);
-  try {
-    const aiRep = await
-    provider.chatCompletion(global.db.data.chats[m.chat].robot.messages, options,
-    (data) => {
-      console.log(data);
-    });
-    console.log(aiRep);
-            await conn.sendMessage(m.chat, { react: { text: "🌕", key: m.key } });
-       let ress = await m.reply(aiRep)
-global.db.data.chats[m.chat].robot.messages.push({ role: "assistant", content: aiRep });
-        global.db.data.chats[m.chat].robot["config"] = {
-            lastQuestion: ress.key,
-            resposta: aiRep
-        };
-       
-  } catch (error) {
-    console.error("Error:", error);
-    return m.reply(`╭─❖ ❌ *Um erro inesperado ocorreu* ❖─
-𝑵𝒂 𝒆𝒔𝒄𝒖𝒓𝒊𝒅𝒂𝒐 𝒔𝒆𝒑𝒖𝒍𝒄𝒓𝒂𝒍 𝒅𝒆 𝒎𝒆𝒖 𝒄𝒐𝒅𝒊𝒈𝒐, 𝒐 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒇𝒂𝒍𝒉𝒐𝒖 𝒄𝒐𝒎𝒐 𝒖𝒎𝒂 𝒑𝒓𝒆𝒄𝒆 𝒏𝒂𝒐 𝒂𝒕𝒆𝒏𝒅𝒊𝒅𝒂.
-
-𝑼𝒔𝒆 *.report* 𝒑𝒂𝒓𝒂 𝒓𝒆𝒍𝒂𝒕𝒂𝒓 𝒆𝒔𝒕𝒂 𝒎𝒊𝒔𝒆𝒓𝒂𝒗𝒆𝒍 𝒇𝒂𝒍𝒉𝒂.
-*╰┅─❖ ⸸ ❖─┅*`)
-
-  }
-})();
-}
+if(!global.db.data.chats[m.chat].robot.messages) global.db.data.chats[m.chat].robot.messages={}
+if(!global.db.data.chats[m.chat].robot.messages[m.sender]) { 
   
+  global.db.data.chats[m.chat].robot.messages[m.sender]={} 
+
+// initialize robot 
+
+fetch(`${baseUrl}?q=${encodeURIComponent(prompt)}&userId=${m.sender}`)
+    .then(response => {
+        if (!response.ok) throw new Error('Network response was not ok');
+        return response.json();
+    })
+    .then(data => {
+        console.log('API Response:', data.BK9);
+        m.react('🖲️')
+    })
+    .catch(error => { m.react('💥')
+      console.error('Error making API call:', error)
+});
+}
+
+
+async function getRobot(messagem) { 
+   
+  try {
+    m.react('💿')
+       fetch(`${baseUrl}?q=${encodeURIComponent(messagem)}&userId=${m.sender}`)
+       .then(response => {
+           if (!response.ok) throw new Error('Network response was not ok');
+           return response.json();
+       })
+       .then(data => {
+           console.log('API Response:', data.BK9);
+           m.react('📀')
+           return m.reply(`𝛌 ᴍʀ.ʀᴏʙᴏᴛ:   ${data.BK9}`)
+       })
+       .catch(error => { m.react('💥')
+         console.error('Error making API call:', error)
+   });
+   
+   
+          
+     } catch (error) {
+       console.error("Error:", error);
+       sendSystemErrorAlert(language);
+   
+     }
+     
+}
+
+
+
+
+
 if(!text){
+
+
+
+
   m.react("❌")
-  return m.reply(`╭━[𝙋𝙧𝙤𝙛. 𝙀𝙙𝙜𝙖𝙧]━━━━━━━⬣
-🕯️💀 𝐃𝐢𝐠𝐚-𝐦𝐞 𝐨 𝐪𝐮𝐞 𝐛𝐮𝐬𝐜𝐚𝐬 𝐬𝐚𝐛𝐞𝐫, 𝐟𝐚𝐜𝐚 𝐮𝐦𝐚 𝐩𝐞𝐫𝐠𝐮𝐧𝐭𝐚, 𝐜𝐨𝐧𝐭𝐞 𝐨 𝐪𝐮𝐞 𝐝𝐞𝐬𝐞𝐣𝐚𝐬. 𝐄 𝐬𝐞𝐫á 𝐬𝐮𝐛𝐣𝐮𝐠𝐚𝐝𝐨 𝐩𝐞𝐥𝐨 𝐦𝐞𝐮 𝐯𝐚𝐬𝐭𝐨 𝐜𝐨𝐧𝐡𝐞𝐜𝐢𝐦𝐞𝐧𝐭𝐨 𝐧𝐞𝐬𝐭𝐞𝐬 𝐞𝐜𝐨𝐬 𝐝𝐢𝐠𝐢𝐭𝐚𝐢𝐬 𝐜𝐨𝐦𝐨 𝐨 𝐥𝐞𝐢𝐭𝐨 𝐝𝐨𝐬 𝐜𝐨𝐫𝐯𝐨𝐬 𝐧𝐚 𝐩𝐞𝐧𝐮𝐦𝐛𝐫𝐚
 
-📜 𝐄𝐱𝐞𝐦𝐩𝐥𝐨:
 
-${usedPrefix + command} como se chama o processo de transcrição de uma fita RNA?
-${usedPrefix + command} O que são leptóns e hadrons?
-
-╰━━━━━━━━━━━━━━━━━━⬣ `)
-}
-
-if (!global.db.data.chats[m.chat]) {
-  global.db.data.chats[m.chat] = {};
-}
-
-if (!global.db.data.chats[m.chat].robot) {
-  global.db.data.chats[m.chat].robot = {};
-}
-
-if (!global.db.data.chats[m.chat].robot["config"]) {
-  global.db.data.chats[m.chat].robot["config"] = {
-   lastQuestion: '',
-   resposta:''
+  const phrases = {
+      greeting: {
+          pt: "Hey, garoto. O que você tem pra mim? Manda a pergunta, não tenha medo. Vamos lá, me surpreenda.",
+          en: "Hey, kid. What do you have for me? Go ahead, ask me anything. Surprise me."
+      },
+      examples: {
+          pt: [
+              `${usedPrefix + command} como se chama o processo de transcrição de uma fita RNA?`,
+              `${usedPrefix + command} O que são léptons e hádrons?`
+          ],
+          en: [
+              `${usedPrefix + command} what is the process of transcribing an RNA strand called?`,
+              `${usedPrefix + command} what are leptons and hadrons?`
+          ]
+      }
   };
+  
+  function getCurrentDate(format) {
+      const options = { year: 'numeric', month: '2-digit', day: '2-digit' };
+      const date = new Date();
+      return format === 'pt' ? date.toLocaleDateString('pt-BR', options) : date.toLocaleDateString('en-US', options);
+  }
+  
+  function buildTerminalMessage(lang) {
+      const date = getCurrentDate(lang);
+      const greeting = phrases.greeting[lang];
+      const examples = phrases.examples[lang].map(question => `> $ ${question}`).join('\n');
+  
+      return `
+  ┌──[ 𝙼𝚛.𝚁𝚘𝚋𝚘𝚝 ]─[~]─[${date}] 
+  └─ $ ${greeting}
+  
+  [*] Examples:
+  ${examples}
+  
+  ┌──[ 𝙼𝚛.𝚁𝚘𝚋𝚘𝚝 ]─[~]─[${date}] 
+  └─ $ _
+  `;
+  }
+  
+  const terminalMensagem = buildTerminalMessage(language);
+  return m.reply(terminalMensagem);
 }
-  if (!global.db.data.chats[m.chat].robot[m.sender]) {
-  global.db.data.chats[m.chat].robot[m.sender] = [];
-}
+
     let q = m.quoted ? m.quoted : m; 
     let mime = ((m.quoted ? m.quoted : m.msg).mimetype || ''); 
     let isMedia = /(?:audio\/(mp3|wav|ogg|opus))|(?:video\/(mp4|avi|mov|wmv|flv))/i.test(mime);
@@ -190,38 +218,18 @@ postData('http://89.117.96.108:8330/transcribe', audiodt)
         console.log(rsp);
       try{
        
+await getRobot(`O usuário lhe enviou a narração de um determinado vídeo e gostaria de falar sobre..
+  ${rsp}
+    Esta é a mensagem do usuário "${m.pushName}" sobre o vídeo: ${args.slice(1).join(" ")}`)
 
-
-
-try {
-let txtyt =`O usuário lhe enviou a narração de um determinado vídeo e gostaria de falar sobre..
-    ${rsp}
-    Esta é a mensagem do usuário "${m.pushName}" sobre o vídeo: ${args.slice(1).join(" ")}`
-    
-    await getGPTreply(txtyt)
-  
-} 
-    catch (err) {
-        console.error("Error:", err);
-        
-        await m.react("❌");
-        return m.reply(`╭─❖ ❌ *Um erro inesperado ocorreu* ❖─
-𝑵𝒂 𝒆𝒔𝒄𝒖𝒓𝒊𝒅𝒂𝒐 𝒔𝒆𝒑𝒖𝒍𝒄𝒓𝒂𝒍 𝒅𝒆 𝒎𝒆𝒖 𝒄𝒐𝒅𝒊𝒈𝒐, 𝒐 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒇𝒂𝒍𝒉𝒐𝒖 𝒄𝒐𝒎𝒐 𝒖𝒎𝒂 𝒑𝒓𝒆𝒄𝒆 𝒏𝒂𝒐 𝒂𝒕𝒆𝒏𝒅𝒊𝒅𝒂.
-
-𝑼𝒔𝒆 *.report* 𝒑𝒂𝒓𝒂 𝒓𝒆𝒍𝒂𝒕𝒂𝒓 𝒆𝒔𝒕𝒂 𝒎𝒊𝒔𝒆𝒓𝒂𝒗𝒆𝒍 𝒇𝒂𝒍𝒉𝒂.
-*╰┅─❖ ⸸ ❖─┅*`)
-    }
 
       }
     catch (err) {
         console.error("Error:", err);
         
         await m.react("❌");
-        return m.reply(`╭─❖ ❌ *Um erro inesperado ocorreu* ❖─
-𝑵𝒂 𝒆𝒔𝒄𝒖𝒓𝒊𝒅𝒂𝒐 𝒔𝒆𝒑𝒖𝒍𝒄𝒓𝒂𝒍 𝒅𝒆 𝒎𝒆𝒖 𝒄𝒐𝒅𝒊𝒈𝒐, 𝒐 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒇𝒂𝒍𝒉𝒐𝒖 𝒄𝒐𝒎𝒐 𝒖𝒎𝒂 𝒑𝒓𝒆𝒄𝒆 𝒏𝒂𝒐 𝒂𝒕𝒆𝒏𝒅𝒊𝒅𝒂.
+        sendSystemErrorAlert(language);
 
-𝑼𝒔𝒆 *.report* 𝒑𝒂𝒓𝒂 𝒓𝒆𝒍𝒂𝒕𝒂𝒓 𝒆𝒔𝒕𝒂 𝒎𝒊𝒔𝒆𝒓𝒂𝒗𝒆𝒍 𝒇𝒂𝒍𝒉𝒂.
-*╰┅─❖ ⸸ ❖─┅*`)
     }
       
        
@@ -315,9 +323,7 @@ await postData('http://89.117.96.108:8330/docch', opts)
 
 let message = await m.reply(data)
 
-global.db.data.chats[m.chat].robot["config"].lastQuestion = message.key
- 
- global.db.data.chats[m.chat].robot["config"].resposta = data
+
     })
     .catch(async (error) => {
       await m.reply(`𝙴𝚛𝚛𝚘 𝚗𝚘 𝚙𝚛𝚘𝚌𝚎𝚜𝚜𝚘 ❌`)
@@ -378,19 +384,13 @@ console.log(url2)
        if (data.status == 'error') throw data.error
  let message =  await m.reply(data.result)
   m.react("🌕")
-global.db.data.chats[m.chat].robot["config"].lastQuestion = message.key
- 
- global.db.data.chats[m.chat].robot["config"].resposta = data.result
+
   } 
 
   catch(e){
   console.log(e)
   m.react("💀")
-  m.reply(`╭─❖ ❌ *Um erro inesperado ocorreu* ❖─
-𝑵𝒂 𝒆𝒔𝒄𝒖𝒓𝒊𝒅𝒂𝒐 𝒔𝒆𝒑𝒖𝒍𝒄𝒓𝒂𝒍 𝒅𝒆 𝒎𝒆𝒖 𝒄𝒐𝒅𝒊𝒈𝒐, 𝒐 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒇𝒂𝒍𝒉𝒐𝒖 𝒄𝒐𝒎𝒐 𝒖𝒎𝒂 𝒑𝒓𝒆𝒄𝒆 𝒏𝒂𝒐 𝒂𝒕𝒆𝒏𝒅𝒊𝒅𝒂.
-
-𝑼𝒔𝒆 *.report* 𝒑𝒂𝒓𝒂 𝒓𝒆𝒍𝒂𝒕𝒂𝒓 𝒆𝒔𝒕𝒂 𝒎𝒊𝒔𝒆𝒓𝒂𝒗𝒆𝒍 𝒇𝒂𝒍𝒉𝒂.
-*╰┅─❖ ⸸ ❖─┅*`)
+  sendSystemErrorAlert(language);
 }
 }
 
@@ -402,7 +402,7 @@ return !0
 else {
 
 
-await getGPTreply(`${m.pushName}: "${text}"`)
+await getRobot(`${m.pushName}: "${text}"`)
       
 }
 
