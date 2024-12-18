@@ -21672,8 +21672,8 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734001060515,
-          "messageCount": null,
+          "lastMessageTime": 1734525337260,
+          "messageCount": 1,
           "pontos": 0
         },
         "154095138656344@lid": {
@@ -21741,7 +21741,7 @@
       "except": false,
       "lastSentTime": 0,
       "name": "Cabeçudos 🫱🏻‍🫲🏿",
-      "totalMembros": 41,
+      "totalMembros": 42,
       "membros": [
         {
           "id": "554796646044@s.whatsapp.net",
@@ -21761,6 +21761,10 @@
         },
         {
           "id": "58514785435703@lid",
+          "admin": null
+        },
+        {
+          "id": "195399704965241@lid",
           "admin": null
         },
         {
@@ -25712,17 +25716,17 @@
       "modoia": true,
       "jadibotmd": true
     },
-    "cotacao": 0.9838318702320968,
-    "cotacaoOntem": 0.9877349052709085,
+    "cotacao": 0.9894386638342831,
+    "cotacaoOntem": 0.9838318702320968,
     "banco": {
       "clientes": {
         "351927285125@s.whatsapp.net": {
           "saldo": 9.993929299484747e+44
         }
       },
-      "rendimento": 0.000024595796755802425
+      "rendimento": 0.000024735966595857082
     },
-    "cotacaoPercentual": -0.3951500567595234,
-    "ultimaAtualizacao": "2024-12-17T12:07:52.121Z"
+    "cotacaoPercentual": 0.5698934718249771,
+    "ultimaAtualizacao": "2024-12-18T12:35:37.264Z"
   }
 }
