@@ -10936,6 +10936,32 @@
           "afkReason": ""
         }
       }
+    },
+    "124438607581269@lid": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 0,
+      "afkInfo": {
+        "120363312968709293@g.us": {
+          "afkTime": -2,
+          "number": "124438607581269@lid",
+          "afkReason": ""
+        }
+      }
     }
   },
   "chats": {
@@ -13949,7 +13975,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734617702799,
+          "lastMessageTime": 1734664685926,
           "messageCount": 1,
           "pontos": 0
         },
@@ -16074,6 +16100,24 @@
           "maxlevel": false,
           "cocriador": false,
           "lastMessageTime": 1734636075351,
+          "messageCount": null,
+          "pontos": 0
+        },
+        "124438607581269@lid": {
+          "exp": 0,
+          "limit": 0,
+          "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
+          "money": 0,
+          "level": 0,
+          "adm": false,
+          "legendary": false,
+          "banned": false,
+          "adv": 0,
+          "tentativasRoubo": 5,
+          "silenced": false,
+          "maxlevel": false,
+          "cocriador": false,
+          "lastMessageTime": 1734665435244,
           "messageCount": null,
           "pontos": 0
         }
@@ -18444,7 +18488,8 @@
         "107378913587268@lid": [],
         "60984341340183@lid": [],
         "241476281856131@lid": [],
-        "259184213938395@lid": []
+        "259184213938395@lid": [],
+        "124438607581269@lid": []
       }
     },
     "120363202217134158@g.us": {
