@@ -193,7 +193,7 @@ ${warningMessageThree.getRandom()}
 }
 
    let q =  m; 
-    let mime = m.msg.mimetype || ''
+    let mime = m?.msg?.mimetype || ''
     if(/sticker/.test(m.mediaType)){
       console.log("👀")
    
