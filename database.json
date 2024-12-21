@@ -11280,6 +11280,32 @@
           "afkReason": ""
         }
       }
+    },
+    "115878284812302@lid": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 0,
+      "afkInfo": {
+        "120363312968709293@g.us": {
+          "afkTime": -2,
+          "number": "115878284812302@lid",
+          "afkReason": ""
+        }
+      }
     }
   },
   "chats": {
@@ -11359,7 +11385,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734657969947,
+          "lastMessageTime": 1734780460602,
           "messageCount": 1,
           "pontos": 0
         },
@@ -11395,8 +11421,8 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734772150580,
-          "messageCount": 2,
+          "lastMessageTime": 1734785930310,
+          "messageCount": 1,
           "pontos": 0
         },
         "54121319104566@lid": {
@@ -11485,7 +11511,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734688625687,
+          "lastMessageTime": 1734780294563,
           "messageCount": 1,
           "pontos": 0
         },
@@ -11683,7 +11709,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734625301489,
+          "lastMessageTime": 1734786160180,
           "messageCount": 1,
           "pontos": 0
         },
@@ -12025,7 +12051,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734612901632,
+          "lastMessageTime": 1734783788962,
           "messageCount": 1,
           "pontos": 0
         },
@@ -16654,6 +16680,24 @@
           "lastMessageTime": 1734779269690,
           "messageCount": null,
           "pontos": 0
+        },
+        "115878284812302@lid": {
+          "exp": 0,
+          "limit": 0,
+          "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
+          "money": 0,
+          "level": 0,
+          "adm": false,
+          "legendary": false,
+          "banned": false,
+          "adv": 0,
+          "tentativasRoubo": 5,
+          "silenced": false,
+          "maxlevel": false,
+          "cocriador": false,
+          "lastMessageTime": 1734786909334,
+          "messageCount": null,
+          "pontos": 0
         }
       },
       "isBanned": true,
@@ -17482,10 +17526,6 @@
         },
         {
           "id": "258797683638516@lid",
-          "admin": null
-        },
-        {
-          "id": "276746737852593@lid",
           "admin": null
         },
         {
@@ -18501,6 +18541,10 @@
           "admin": null
         },
         {
+          "id": "40029447528605@lid",
+          "admin": null
+        },
+        {
           "id": "278747907420320@lid",
           "admin": null
         },
@@ -19083,7 +19127,8 @@
         "25095863009378@lid": [],
         "51015739027571@lid": [],
         "165261785231466@lid": [],
-        "276746737852593@lid": []
+        "276746737852593@lid": [],
+        "115878284812302@lid": []
       }
     },
     "120363202217134158@g.us": {
@@ -27102,17 +27147,17 @@
       "modoia": true,
       "jadibotmd": true
     },
-    "cotacao": 0.9849285124790437,
-    "cotacaoOntem": 0.9894386638342831,
+    "cotacao": 0.9799547974619246,
+    "cotacaoOntem": 0.9849285124790437,
     "banco": {
       "clientes": {
         "351927285125@s.whatsapp.net": {
           "saldo": 9.993929299484747e+44
         }
       },
-      "rendimento": 0.000024623212811976094
+      "rendimento": 0.000024498869936548116
     },
-    "cotacaoPercentual": -0.45582930201672944,
-    "ultimaAtualizacao": "2024-12-19T12:51:51.108Z"
+    "cotacaoPercentual": -0.5049823366977508,
+    "ultimaAtualizacao": "2024-12-21T12:23:00.031Z"
   }
 }
