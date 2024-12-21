@@ -11306,6 +11306,84 @@
           "afkReason": ""
         }
       }
+    },
+    "1584926826656@lid": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 0,
+      "afkInfo": {
+        "120363312968709293@g.us": {
+          "afkTime": -2,
+          "number": "1584926826656@lid",
+          "afkReason": ""
+        }
+      }
+    },
+    "217123666276606@lid": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 0,
+      "afkInfo": {
+        "120363312968709293@g.us": {
+          "afkTime": -2,
+          "number": "217123666276606@lid",
+          "afkReason": ""
+        }
+      }
+    },
+    "63827727134947@lid": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 0,
+      "afkInfo": {
+        "120363312968709293@g.us": {
+          "afkTime": -2,
+          "number": "63827727134947@lid",
+          "afkReason": ""
+        }
+      }
     }
   },
   "chats": {
@@ -11421,8 +11499,8 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734785930310,
-          "messageCount": 1,
+          "lastMessageTime": 1734791050585,
+          "messageCount": 2,
           "pontos": 0
         },
         "54121319104566@lid": {
@@ -16698,6 +16776,60 @@
           "lastMessageTime": 1734786909334,
           "messageCount": null,
           "pontos": 0
+        },
+        "1584926826656@lid": {
+          "exp": 0,
+          "limit": 0,
+          "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
+          "money": 0,
+          "level": 0,
+          "adm": false,
+          "legendary": false,
+          "banned": false,
+          "adv": 0,
+          "tentativasRoubo": 5,
+          "silenced": false,
+          "maxlevel": false,
+          "cocriador": false,
+          "lastMessageTime": 1734788001651,
+          "messageCount": null,
+          "pontos": 0
+        },
+        "217123666276606@lid": {
+          "exp": 0,
+          "limit": 0,
+          "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
+          "money": 0,
+          "level": 0,
+          "adm": false,
+          "legendary": false,
+          "banned": false,
+          "adv": 0,
+          "tentativasRoubo": 5,
+          "silenced": false,
+          "maxlevel": false,
+          "cocriador": false,
+          "lastMessageTime": 1734788665688,
+          "messageCount": null,
+          "pontos": 0
+        },
+        "63827727134947@lid": {
+          "exp": 0,
+          "limit": 0,
+          "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
+          "money": 0,
+          "level": 0,
+          "adm": false,
+          "legendary": false,
+          "banned": false,
+          "adv": 0,
+          "tentativasRoubo": 5,
+          "silenced": false,
+          "maxlevel": false,
+          "cocriador": false,
+          "lastMessageTime": 1734793608046,
+          "messageCount": null,
+          "pontos": 0
         }
       },
       "isBanned": true,
@@ -17629,10 +17761,6 @@
           "admin": null
         },
         {
-          "id": "115878284812302@lid",
-          "admin": null
-        },
-        {
           "id": "190189741801484@lid",
           "admin": null
         },
@@ -17734,10 +17862,6 @@
         },
         {
           "id": "69677472555097@lid",
-          "admin": null
-        },
-        {
-          "id": "1584926826656@lid",
           "admin": null
         },
         {
@@ -18629,7 +18753,15 @@
           "admin": null
         },
         {
+          "id": "9311623335982@lid",
+          "admin": null
+        },
+        {
           "id": "33917876842502@lid",
+          "admin": null
+        },
+        {
+          "id": "138070850592859@lid",
           "admin": null
         },
         {
@@ -19128,7 +19260,10 @@
         "51015739027571@lid": [],
         "165261785231466@lid": [],
         "276746737852593@lid": [],
-        "115878284812302@lid": []
+        "115878284812302@lid": [],
+        "1584926826656@lid": [],
+        "217123666276606@lid": [],
+        "63827727134947@lid": []
       }
     },
     "120363202217134158@g.us": {
