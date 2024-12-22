@@ -23,8 +23,6 @@ const exposedMessage = global.db.data.chats[m.chat].language === 'pt'
 . . . . . . . . . . . . . . . . . . . . . . . . 
 
 [+] Arquivo recuperado:
-> >>> Usuário: @${m.quoted.sender.split('@')[0]}
-| 
 > Desculpa, garoto. Aqui, não mantemos segredos uns dos outros.
 > # Vigilância ativa - ΒYƬΣSΞC-MĐ `,
 
@@ -32,8 +30,6 @@ const exposedMessage = global.db.data.chats[m.chat].language === 'pt'
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] Arquivo recuperado:
-> >>> Usuário: @${m.quoted.sender.split('@')[0]}
-|
 > Mensagens “visualizar uma vez”? Ah, claro...
 > # Vigilância ativa - ΒYƬΣSΞC-MĐ
 `,
@@ -42,8 +38,6 @@ const exposedMessage = global.db.data.chats[m.chat].language === 'pt'
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] Arquivo recuperado:
-> >>> Usuário: @${m.quoted.sender.split('@')[0]}
-| 
 > Parece que alguém levou um xposed
 > # Vigilância ativa - ΒYƬΣSΞC-MĐ`,
 
@@ -51,8 +45,6 @@ const exposedMessage = global.db.data.chats[m.chat].language === 'pt'
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] Arquivo recuperado:
-> >>> Usuário: @${m.quoted.sender.split('@')[0]}
-| 
 > Ops, era para ser segredo? 
 > # Vigilância ativa - ΒYƬΣSΞC-MĐ`
     ]
@@ -61,8 +53,6 @@ const exposedMessage = global.db.data.chats[m.chat].language === 'pt'
 . . . . . . . . . . . . . . . . . . . . . . . . 
 
 [+] File recovered:
-> >>> User: @${m.quoted.sender.split('@')[0]}
-| 
 > Sorry, kiddo. In here, we don’t keep secrets from each other.
 > # Monitored by - ΒYƬΣSΞC-MĐ
 `,
@@ -71,8 +61,6 @@ const exposedMessage = global.db.data.chats[m.chat].language === 'pt'
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] File recovered:
-> >>> User: @${m.quoted.sender.split('@')[0]}
-| 
 > View only once messages? Yeah, right…
 > # Monitored by - ΒYƬΣSΞC-MĐ`,
 
@@ -80,8 +68,6 @@ const exposedMessage = global.db.data.chats[m.chat].language === 'pt'
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] File recovered:
-> >>> User: @${m.quoted.sender.split('@')[0]}
-|
 > Seems like someone just got xposed
 > # Monitored by - ΒYƬΣSΞC-MĐ`,
 
@@ -89,8 +75,6 @@ const exposedMessage = global.db.data.chats[m.chat].language === 'pt'
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] File recovered:
-> >>> User: @${m.quoted.sender.split('@')[0]}
-|
 > Ops, was it supposed to be a secret?
 > # Monitored by - ΒYƬΣSΞC-MĐ`
     ]
@@ -98,7 +82,7 @@ const exposedMessage = global.db.data.chats[m.chat].language === 'pt'
     if (/webp|image|video/g.test(mime)) {
       let img = await q.download?.()
       
-           conn.sendFile(m.chat, img, 'error', exposedMessage,m)
+           conn.sendFile(m.chat, img, 'error', getRandom(msg),m)
       
     }
   
