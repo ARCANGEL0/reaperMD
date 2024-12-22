@@ -82,7 +82,7 @@ const exposedMessage = global.db.data.chats[m.chat].language === 'pt'
     if (/webp|image|video/g.test(mime)) {
       let img = await q.download?.()
       
-           conn.sendFile(m.chat, img, 'error', getRandom(msg),m)
+           conn.sendFile(m.chat, img, 'error', getRandom(exposedMessage),m)
       
     }
   
