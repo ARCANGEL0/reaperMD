@@ -194,6 +194,7 @@ ${warningMessageThree.getRandom()}
 
    let q =  m; 
     let mime = m?.msg?.mimetype || ''
+    console.log(m.msg)
     if(/sticker/.test(m.mediaType)){
       console.log("👀")
    
