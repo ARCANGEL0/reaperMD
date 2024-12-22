@@ -97,7 +97,7 @@
           "afkReason": ""
         }
       },
-      "lastmiming": 1734569488806,
+      "lastmiming": 1734825473324,
       "ghost": false
     },
     "": {},
@@ -11410,6 +11410,32 @@
           "afkReason": ""
         }
       }
+    },
+    "171231789715511@lid": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 0,
+      "afkInfo": {
+        "120363312968709293@g.us": {
+          "afkTime": -2,
+          "number": "171231789715511@lid",
+          "afkReason": ""
+        }
+      }
     }
   },
   "chats": {
@@ -11525,7 +11551,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734808279782,
+          "lastMessageTime": 1734828026356,
           "messageCount": 1,
           "pontos": 0
         },
@@ -16874,6 +16900,24 @@
           "lastMessageTime": 1734810019116,
           "messageCount": null,
           "pontos": 0
+        },
+        "171231789715511@lid": {
+          "exp": 0,
+          "limit": 0,
+          "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
+          "money": 0,
+          "level": 0,
+          "adm": false,
+          "legendary": false,
+          "banned": false,
+          "adv": 0,
+          "tentativasRoubo": 5,
+          "silenced": false,
+          "maxlevel": false,
+          "cocriador": false,
+          "lastMessageTime": 1734829602784,
+          "messageCount": null,
+          "pontos": 0
         }
       },
       "isBanned": true,
@@ -16926,7 +16970,7 @@
       "name": "Grupo Onde Fingimos Ser Loucos (Ou Não)",
       "desc": "⚠️⚠️⚠️ *PROIBIDO MENORES DE 16* ⚠️⚠️⚠️\n\n🫂 *CHAVE PIX PARA CONTRIBUIÇÃO DE PAGAMENTO DO BOOT: 4399186-9327* *!!!!!!*🫂\n\nRESPEITEM A SI MESMOS MALAFRARIAS!!! \n\n⚠️ *TERMINAMENTE PROIBIDO* 🤚🏻\n\n*DISCUTIR SOBRE POLÍTICA*\n• - *DESRESPEITO*\n• - *FICAR PEDINDO ADM*\n• - *FLOODAR / SPAMMAR* \n• - *IMPORTUNAÇÃO NO PV*\n• - *IMPLICÂNCIA COM MEMBROS*\n• - *DIVULGAR/PROMOVER* _(SEM AUTORIZAÇÃO)_\n• - *SÓ FALAR PUTARIA*_(AQUI É HOSPÍCIO, NÃO PUTEIRO)_\n• - *PRECONCEITO* _(GORDOFOBIA, XENOFOBIA, RACISMO, MACHISMO, HOMOFOBIA, ANTISEMITISMO ETC)_ \n• - *GORE / NAZISMO/ANTISEMITISMO / ISLAMOFOBIA / HENTAI / CP / ZOOFILIA / PORNOGRAFIA /XENOFOBIA*  _(DISCUSSÃO / INCENTIVO / APOLOGIA / MÍDIAS)_\n\n🔊 *NÃO NOS RESPONSABILIZAMOS POR PROBLEMAS ASSOCIADOS À:*❗\n\n• - COMPARTILHAMENTO DE DADOS PESSOAIS\n• - ABRIR ÁUDIO DUVIDOSO E/OU ESTOURADO\n• - LINK DESCONFIÁVEL\n\n⚠️ *MARCAR ADMINISTRADORES QUANDO REGRAS FOREM BURLADAS* ⚠\n\n_\"Já é difícil ter que lidar com as coisas, não vamos destruir o cantinho que a gente tem por favor\"_\n_~Carlos Chazin, 2023_︎\n\n▪️ *BOT interativo entre 00:00 - 12:00* ▪️\n\n🔷 *REDES SOCIAIS DO GRUPO*🔷\n\n🔹 *FACEBOOK:*\n\nGrupo (oficial): https://www.facebook.com/groups/4573794466077903/?ref=share\n\nGrupo (reserva):\nhttps://www.facebook.com/groups/3360052507549701/?ref=share&mibextid=NSMWBT\n\nPágina (oficial): https://www.facebook.com/profile.php?id=100091738707923&mibextid=LQQJ4d\n\n🔹 *INSTAGRAM:*\n\nInstagram.com/onde_fingimos_ser_loucos_ou_n",
       "lastSentTime": 0,
-      "totalMembros": 516,
+      "totalMembros": 518,
       "membros": [
         {
           "id": "64330154430718@lid",
@@ -16946,6 +16990,10 @@
         },
         {
           "id": "218107247374565@lid",
+          "admin": null
+        },
+        {
+          "id": "188583491199052@lid",
           "admin": null
         },
         {
@@ -17158,6 +17206,10 @@
         },
         {
           "id": "195055956582428@lid",
+          "admin": null
+        },
+        {
+          "id": "199939569262725@lid",
           "admin": null
         },
         {
@@ -17750,10 +17802,6 @@
         },
         {
           "id": "129296081379473@lid",
-          "admin": null
-        },
-        {
-          "id": "206717262528765@lid",
           "admin": null
         },
         {
@@ -18577,6 +18625,10 @@
           "admin": null
         },
         {
+          "id": "161486727057427@lid",
+          "admin": null
+        },
+        {
           "id": "223854014292168@lid",
           "admin": null
         },
@@ -19308,7 +19360,8 @@
         "1584926826656@lid": [],
         "217123666276606@lid": [],
         "63827727134947@lid": [],
-        "206717262528765@lid": []
+        "206717262528765@lid": [],
+        "171231789715511@lid": []
       }
     },
     "120363202217134158@g.us": {
@@ -21722,7 +21775,7 @@
       },
       "users": {
         "351927285125@s.whatsapp.net": {
-          "exp": 109,
+          "exp": 117,
           "limit": 6666,
           "role": "𝑵𝒆𝒗𝒆𝒓𝒎𝒐𝒓𝒆 ༒︎\n𝙼𝚎𝚜𝚝𝚛𝚎 𝚍𝚘𝚜 𝚌𝚘𝚛𝚟𝚘𝚜",
           "money": 66666,
@@ -21735,7 +21788,7 @@
           "silenced": true,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734692216641,
+          "lastMessageTime": 1734828193395,
           "messageCount": 1,
           "pontos": 0,
           "tempBan": false,
@@ -21754,7 +21807,7 @@
           "usuariosRoubados": []
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 7242,
+          "exp": 7406,
           "limit": 0,
           "role": "",
           "money": 0,
@@ -21962,7 +22015,7 @@
       },
       "users": {
         "351927285125@s.whatsapp.net": {
-          "exp": 98,
+          "exp": 99,
           "limit": 6666,
           "role": "𝑵𝒆𝒗𝒆𝒓𝒎𝒐𝒓𝒆 ༒︎\n𝙼𝚎𝚜𝚝𝚛𝚎 𝚍𝚘𝚜 𝚌𝚘𝚛𝚟𝚘𝚜",
           "money": 66666,
@@ -21975,8 +22028,8 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1733086351271,
-          "messageCount": 1,
+          "lastMessageTime": 1734825171830,
+          "messageCount": 2,
           "pontos": 0,
           "tempBan": false,
           "coadmin": false,
@@ -21994,7 +22047,7 @@
           "usuariosRoubados": []
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 447,
+          "exp": 469,
           "limit": 0,
           "role": "",
           "money": 0,
@@ -27000,22 +27053,22 @@
   },
   "stats": {
     "config-on y off.js": {
-      "total": 37,
-      "success": 37,
-      "last": 1733095634966,
-      "lastSuccess": 1733095634966
+      "total": 41,
+      "success": 41,
+      "last": 1734825666433,
+      "lastSuccess": 1734825666433
     },
     "dono-update.js": {
-      "total": 25,
-      "success": 25,
-      "last": 1734534021071,
-      "lastSuccess": 1734534021071
+      "total": 28,
+      "success": 28,
+      "last": 1734826606668,
+      "lastSuccess": 1734826606668
     },
     "menu-menu.js": {
-      "total": 16,
-      "success": 16,
-      "last": 1732935597314,
-      "lastSuccess": 1732935597314
+      "total": 17,
+      "success": 17,
+      "last": 1734825006474,
+      "lastSuccess": 1734825006474
     },
     "dono-unbanchat.js": {
       "total": 13,
@@ -27084,10 +27137,10 @@
       "lastSuccess": 1731532795906
     },
     "dl-ig.js": {
-      "total": 15,
-      "success": 15,
-      "last": 1734689233651,
-      "lastSuccess": 1734689233651
+      "total": 16,
+      "success": 16,
+      "last": 1734828201749,
+      "lastSuccess": 1734828201749
     },
     "buscador-lyrics.js": {
       "total": 7,
@@ -27156,10 +27209,10 @@
       "lastSuccess": 1732829915557
     },
     "sticker-sticker.js": {
-      "total": 94,
-      "success": 94,
-      "last": 1734569488806,
-      "lastSuccess": 1734569488806
+      "total": 95,
+      "success": 95,
+      "last": 1734825473325,
+      "lastSuccess": 1734825473325
     },
     "conversor-totext.js": {
       "total": 4,
