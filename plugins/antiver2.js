@@ -118,7 +118,7 @@ msg[type].caption : ''}
 
 handler.tags = ['tools']
 
-handler.command = ['ver']
+handler.command = ['reveal','ver']
 export default handler
 
 const getRandom = (ext) => {
