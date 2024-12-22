@@ -23,8 +23,7 @@ const exposedMessage = global.db.data.chats[m.chat].language === 'pt'
 . . . . . . . . . . . . . . . . . . . . . . . . 
 
 [+] Arquivo recuperado:
-> >>> Usuário: @${m.sender.split('@')[0]}${msg[type].caption ? '> '+
-msg[type].caption : ''}
+> >>> Usuário: @${m.quoted.sender.split('@')[0]}
 | 
 > Desculpa, garoto. Aqui, não mantemos segredos uns dos outros.
 > # Vigilância ativa - ΒYƬΣSΞC-MĐ `,
@@ -33,8 +32,7 @@ msg[type].caption : ''}
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] Arquivo recuperado:
-> >>> Usuário: @${m.sender.split('@')[0]}${msg[type].caption ? '> '+
-msg[type].caption : ''}
+> >>> Usuário: @${m.quoted.sender.split('@')[0]}
 |
 > Mensagens “visualizar uma vez”? Ah, claro...
 > # Vigilância ativa - ΒYƬΣSΞC-MĐ
@@ -44,8 +42,7 @@ msg[type].caption : ''}
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] Arquivo recuperado:
-> >>> Usuário: @${m.sender.split('@')[0]}${msg[type].caption ? '> '+
-msg[type].caption : ''}
+> >>> Usuário: @${m.quoted.sender.split('@')[0]}
 | 
 > Parece que alguém levou um xposed
 > # Vigilância ativa - ΒYƬΣSΞC-MĐ`,
@@ -54,8 +51,7 @@ msg[type].caption : ''}
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] Arquivo recuperado:
-> >>> Usuário: @${m.sender.split('@')[0]}${msg[type].caption ? '> '+
-msg[type].caption : ''}
+> >>> Usuário: @${m.quoted.sender.split('@')[0]}
 | 
 > Ops, era para ser segredo? 
 > # Vigilância ativa - ΒYƬΣSΞC-MĐ`
@@ -65,8 +61,7 @@ msg[type].caption : ''}
 . . . . . . . . . . . . . . . . . . . . . . . . 
 
 [+] File recovered:
-> >>> User: @${m.sender.split('@')[0]}${msg[type].caption ? '> '+
-msg[type].caption : ''}
+> >>> User: @${m.quoted.sender.split('@')[0]}
 | 
 > Sorry, kiddo. In here, we don’t keep secrets from each other.
 > # Monitored by - ΒYƬΣSΞC-MĐ
@@ -76,8 +71,7 @@ msg[type].caption : ''}
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] File recovered:
-> >>> User: @${m.sender.split('@')[0]}${msg[type].caption ? '> '+
-msg[type].caption : ''}
+> >>> User: @${m.quoted.sender.split('@')[0]}
 | 
 > View only once messages? Yeah, right…
 > # Monitored by - ΒYƬΣSΞC-MĐ`,
@@ -86,8 +80,7 @@ msg[type].caption : ''}
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] File recovered:
-> >>> User: @${m.sender.split('@')[0]}${msg[type].caption ? '> '+
-msg[type].caption : ''}
+> >>> User: @${m.quoted.sender.split('@')[0]}
 |
 > Seems like someone just got xposed
 > # Monitored by - ΒYƬΣSΞC-MĐ`,
@@ -96,8 +89,7 @@ msg[type].caption : ''}
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] File recovered:
-> >>> User: @${m.sender.split('@')[0]}${msg[type].caption ? '> '+
-msg[type].caption : ''}
+> >>> User: @${m.quoted.sender.split('@')[0]}
 |
 > Ops, was it supposed to be a secret?
 > # Monitored by - ΒYƬΣSΞC-MĐ`
