@@ -33,7 +33,6 @@ const exposedMessage = global.db.data.chats[m.chat].language === 'pt'
 > Mensagens “visualizar uma vez”? Ah, claro...
 > # Vigilância ativa - ΒYƬΣSΞC-MĐ
 `,
-
         `> root@bytesec:~# recoverfiles /dev/sda1 -p --view-once
 . . . . . . . . . . . . . . . . . . . . . . . .
 
@@ -82,7 +81,7 @@ const exposedMessage = global.db.data.chats[m.chat].language === 'pt'
     if (/webp|image|video/g.test(mime)) {
       let img = await q.download?.()
       
-           conn.sendFile(m.chat, img, 'error', getRandom(exposedMessage),m)
+           conn.sendFile(m.chat, img, 'error', exposedMessage.getRandom(),m)
       
     }
   
