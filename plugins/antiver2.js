@@ -12,7 +12,7 @@ import { exec } from 'child_process'
 import { unlinkSync, readFileSync, writeFile } from 'fs'; 
 
 let handler = async (m, { conn, args, __dirname, usedPrefix, command }) => {
-if (!chat.antiver || chat.isBanned) return m.react("⭕")
+if (!global.db.data.chats[m.chat].antiver || global.db.data.chats[m.chat].isBanned) return m.react("⭕")
 if (global.db.data.chats[m.chat].isBanned) return !1
 
   let q = m.quoted ? m.quoted : m
