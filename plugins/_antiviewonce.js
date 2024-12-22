@@ -24,9 +24,6 @@ export async function before(m, { isAdmin, isBotAdmin }) {
 
  
  
- console.log(m)
- console.log('*********++++++++')
- console.log(m.mtype)
  
  
 let chat = db.data.chats[m.chat] 
