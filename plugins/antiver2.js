@@ -11,9 +11,9 @@ import { join } from 'path'
 import { exec } from 'child_process'
 import { unlinkSync, readFileSync, writeFile } from 'fs'; 
 
-let handler = async (m, { conn, args, __dirname, usedPrefix, command }) => {
-if (!global.db.data.chats[m.chat].antiver || global.db.data.chats[m.chat].isBanned) return m.react("⭕")
-if (global.db.data.chats[m.chat].isBanned) return !1
+let handler = async (m, { conn, args, __dirname, usedPrefix, command, isAdmin }) => {
+if (!isAdmin && !isOwner && (!global.db.data.chats[m.chat].antiver ||
+global.db.data.chats[m.chat].isBanned)) return m.react("⭕")
 
   let q = m.quoted ? m.quoted : m
     let mime = (q.msg || q).mimetype || q.mediaType || ''
