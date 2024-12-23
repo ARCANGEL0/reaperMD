@@ -2038,7 +2038,8 @@
       "tentativasRoubo": 5,
       "spammer": 0,
       "usuariosRoubados": [],
-      "warn": 0
+      "warn": 0,
+      "lastmiming": 1734992061789
     },
     "184327296032775@lid": {
       "counterPrivate": 0,
@@ -6051,7 +6052,7 @@
       "afkReason": "",
       "role": "",
       "reporte": 0,
-      "name": "Jinn LeafMage",
+      "name": "Jinn Yōkai",
       "antispam": 0,
       "antispamlastclaim": 0,
       "silenced": false,
@@ -25030,14 +25031,15 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734975139344,
+          "lastMessageTime": 1734993766574,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
           "usuariosRoubados": [],
           "acaoTimer": "2024-12-23T02:01:02.464Z",
           "rouboTimestamp": "2024-11-25T16:13:22.037Z",
-          "rings": 0
+          "rings": 0,
+          "steals": 0
         },
         "351927285125@s.whatsapp.net": {
           "exp": 121,
@@ -25053,7 +25055,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734956039696,
+          "lastMessageTime": 1734992601535,
           "messageCount": 1,
           "pontos": 0,
           "tempBan": false,
@@ -25093,7 +25095,8 @@
           "lastMessageTime": 1732614022304,
           "messageCount": 1,
           "pontos": 0,
-          "almas": 0
+          "almas": 0,
+          "steals": 0
         },
         "558199330656@s.whatsapp.net": {
           "exp": 52,
@@ -25109,13 +25112,14 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734986111766,
+          "lastMessageTime": 1734989260465,
           "messageCount": 1,
           "pontos": 0,
           "usuariosRoubados": [],
           "acaoTimer": "2024-11-26T16:31:56.438Z",
           "almas": 0,
-          "rouboTimestamp": "2024-11-25T16:31:56.439Z"
+          "rouboTimestamp": "2024-11-25T16:31:56.439Z",
+          "steals": 0
         },
         "555191592033@s.whatsapp.net": {
           "exp": 1,
@@ -25133,7 +25137,9 @@
           "cocriador": false,
           "lastMessageTime": 1734986524304,
           "messageCount": 1,
-          "pontos": 0
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         },
         "5521972685548@s.whatsapp.net": {
           "exp": 62,
@@ -25149,7 +25155,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734970382065,
+          "lastMessageTime": 1734992505197,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -25158,7 +25164,8 @@
           "regTimeStart": "",
           "regPrazo": "",
           "regMsg": "",
-          "registradoBlock": false
+          "registradoBlock": false,
+          "steals": 0
         },
         "558897548069@s.whatsapp.net": {
           "exp": 25,
@@ -25174,10 +25181,12 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734986291896,
+          "lastMessageTime": 1734990969284,
           "messageCount": 1,
           "pontos": 0,
-          "tempBan": false
+          "tempBan": false,
+          "almas": 0,
+          "steals": 0
         },
         "558386725018@s.whatsapp.net": {
           "exp": 17,
@@ -25195,7 +25204,9 @@
           "cocriador": false,
           "lastMessageTime": 1732615101674,
           "messageCount": 1,
-          "pontos": 0
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         },
         "553497704017@s.whatsapp.net": {
           "exp": 0,
@@ -25211,9 +25222,11 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1732659337389,
-          "messageCount": 1,
-          "pontos": 0
+          "lastMessageTime": 1734992060638,
+          "messageCount": 5,
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         },
         "556791303488@s.whatsapp.net": {
           "exp": 0,
@@ -25231,7 +25244,9 @@
           "cocriador": false,
           "lastMessageTime": 1734935475978,
           "messageCount": 1,
-          "pontos": 0
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         },
         "553291074882@s.whatsapp.net": {
           "exp": 0,
@@ -25277,9 +25292,11 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734976587061,
+          "lastMessageTime": 1734988146097,
           "messageCount": 1,
-          "pontos": 0
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         },
         "5514981384196@s.whatsapp.net": {
           "exp": 0,
@@ -25297,7 +25314,9 @@
           "cocriador": false,
           "lastMessageTime": 1734983633959,
           "messageCount": 1,
-          "pontos": 0
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         },
         "556195667729@s.whatsapp.net": {
           "exp": 0,
@@ -25313,9 +25332,11 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734984515842,
+          "lastMessageTime": 1734993915996,
           "messageCount": 1,
-          "pontos": 0
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         },
         "555599538879@s.whatsapp.net": {
           "exp": 0,
@@ -25333,7 +25354,9 @@
           "cocriador": false,
           "lastMessageTime": 1734972306544,
           "messageCount": 1,
-          "pontos": 0
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         },
         "554998412876@s.whatsapp.net": {
           "exp": 0,
@@ -25349,9 +25372,11 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734981927430,
+          "lastMessageTime": 1734989498801,
           "messageCount": 1,
-          "pontos": 0
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         },
         "553188507912@s.whatsapp.net": {
           "exp": 0,
@@ -25367,14 +25392,15 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734986000776,
+          "lastMessageTime": 1734986971733,
           "messageCount": 1,
           "pontos": 0,
           "acaoTimer": "2024-11-26T21:35:02.700Z",
           "almas": 1,
           "usuariosRoubados": [],
           "rouboTimestamp": "2024-11-25T21:35:02.702Z",
-          "daggers": null
+          "daggers": null,
+          "steals": 0
         },
         "554796286237@s.whatsapp.net": {
           "exp": 0,
@@ -25392,7 +25418,9 @@
           "cocriador": false,
           "lastMessageTime": 1734970912961,
           "messageCount": 1,
-          "pontos": 0
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         },
         "5511994334762@s.whatsapp.net": {
           "exp": 0,
@@ -25477,11 +25505,12 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734967398733,
+          "lastMessageTime": 1734992738199,
           "messageCount": 1,
           "pontos": 0,
           "acaoTimer": "2024-12-22T13:35:39.919Z",
-          "almas": 0
+          "almas": 0,
+          "steals": 0
         },
         "5516981119323@s.whatsapp.net": {
           "exp": 0,
@@ -25497,9 +25526,12 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1732667839397,
+          "lastMessageTime": 1734989052954,
           "messageCount": 1,
-          "pontos": 0
+          "pontos": 0,
+          "tempBan": false,
+          "almas": 0,
+          "steals": 0
         },
         "5521969915001@s.whatsapp.net": {
           "exp": 0,
@@ -25517,7 +25549,9 @@
           "cocriador": false,
           "lastMessageTime": 1734959594858,
           "messageCount": 1,
-          "pontos": 0
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         },
         "554599015152@s.whatsapp.net": {
           "exp": 0,
@@ -25533,10 +25567,13 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734986272740,
+          "lastMessageTime": 1734993851657,
           "messageCount": 1,
           "pontos": 0,
-          "usuariosRoubados": []
+          "usuariosRoubados": [],
+          "almas": 0,
+          "steals": 0,
+          "tempBan": false
         },
         "555496930052@s.whatsapp.net": {
           "exp": 0,
@@ -25554,7 +25591,9 @@
           "cocriador": false,
           "lastMessageTime": 1734909172561,
           "messageCount": 1,
-          "pontos": 0
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         },
         "553888016495@s.whatsapp.net": {
           "exp": 10000,
@@ -25570,7 +25609,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734986557643,
+          "lastMessageTime": 1734992648421,
           "messageCount": 1,
           "pontos": 0,
           "acaoTimer": "2024-11-26T20:44:17.952Z",
@@ -25578,7 +25617,8 @@
           "usuariosRoubados": [],
           "rouboTimestamp": "2024-11-26T20:44:17.952Z",
           "mortoDemonio": false,
-          "tempBan": false
+          "tempBan": false,
+          "steals": 0
         },
         "5516988272864@s.whatsapp.net": {
           "exp": 0,
@@ -25650,7 +25690,9 @@
           "cocriador": false,
           "lastMessageTime": 1734979180648,
           "messageCount": 1,
-          "pontos": 0
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         },
         "5527999248909@s.whatsapp.net": {
           "exp": 0,
@@ -25668,7 +25710,9 @@
           "cocriador": false,
           "lastMessageTime": 1734980299169,
           "messageCount": 4,
-          "pontos": 0
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         },
         "559183454349@s.whatsapp.net": {
           "exp": 0,
@@ -25722,7 +25766,9 @@
           "cocriador": false,
           "lastMessageTime": 1732662580824,
           "messageCount": 1,
-          "pontos": 0
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         },
         "554898587608@s.whatsapp.net": {
           "exp": 0,
@@ -25756,10 +25802,12 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734979656102,
+          "lastMessageTime": 1734992371659,
           "messageCount": 1,
           "pontos": 0,
-          "almas": 0
+          "almas": 0,
+          "tempBan": false,
+          "steals": 0
         },
         "553291235912@s.whatsapp.net": {
           "exp": 0,
@@ -25790,9 +25838,11 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734981585396,
+          "lastMessageTime": 1734992453005,
           "messageCount": 1,
-          "pontos": 0
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         },
         "5511995199687@s.whatsapp.net": {
           "exp": 0,
@@ -25808,10 +25858,11 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734978861832,
+          "lastMessageTime": 1734993800486,
           "messageCount": 1,
           "pontos": 0,
-          "almas": 0
+          "almas": 0,
+          "steals": 0
         },
         "559384036433@s.whatsapp.net": {
           "exp": 0,
@@ -25829,7 +25880,9 @@
           "cocriador": false,
           "lastMessageTime": 1732634025110,
           "messageCount": 1,
-          "pontos": 0
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         },
         "556295410574@s.whatsapp.net": {
           "exp": 0,
@@ -25845,9 +25898,11 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734984534223,
+          "lastMessageTime": 1734991657095,
           "messageCount": 1,
-          "pontos": 0
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         },
         "557391032940@s.whatsapp.net": {
           "exp": 0,
@@ -25863,10 +25918,12 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734980519392,
+          "lastMessageTime": 1734989620203,
           "messageCount": 1,
           "pontos": 0,
-          "tempBan": false
+          "tempBan": false,
+          "almas": 0,
+          "steals": 0
         },
         "559192321625@s.whatsapp.net": {
           "exp": 10000,
@@ -25887,7 +25944,8 @@
           "pontos": 0,
           "almas": 0,
           "usuariosRoubados": [],
-          "rouboTimestamp": "2024-12-22T03:17:27.697Z"
+          "rouboTimestamp": "2024-12-22T03:17:27.697Z",
+          "steals": 0
         },
         "555584470148@s.whatsapp.net": {
           "exp": 0,
@@ -25905,7 +25963,9 @@
           "cocriador": false,
           "lastMessageTime": 1734974309668,
           "messageCount": 1,
-          "pontos": 0
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         },
         "554792254487@s.whatsapp.net": {
           "exp": 0,
@@ -25928,7 +25988,8 @@
           "almas": 0,
           "usuariosRoubados": [],
           "rouboTimestamp": "2024-11-25T16:12:43.953Z",
-          "rings": 0
+          "rings": 0,
+          "steals": 0
         },
         "557382274015@s.whatsapp.net": {
           "exp": 0,
@@ -25947,7 +26008,8 @@
           "lastMessageTime": 1734931991781,
           "messageCount": 1,
           "pontos": 0,
-          "almas": 0
+          "almas": 0,
+          "steals": 0
         },
         "554792625204@s.whatsapp.net": {
           "exp": 0,
@@ -25965,7 +26027,9 @@
           "cocriador": false,
           "lastMessageTime": 1734901268206,
           "messageCount": 1,
-          "pontos": 0
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         },
         "5512988340770@s.whatsapp.net": {
           "exp": 0,
@@ -26001,7 +26065,9 @@
           "cocriador": false,
           "lastMessageTime": 1732639311284,
           "messageCount": null,
-          "pontos": 0
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         },
         "555181168509@s.whatsapp.net": {
           "exp": 0,
@@ -26037,7 +26103,9 @@
           "cocriador": false,
           "lastMessageTime": 1732668315753,
           "messageCount": 1,
-          "pontos": 0
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         },
         "558196334341@s.whatsapp.net": {
           "exp": 0,
@@ -26055,7 +26123,9 @@
           "cocriador": false,
           "lastMessageTime": 1734922743806,
           "messageCount": 1,
-          "pontos": 0
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         },
         "555397113309@s.whatsapp.net": {
           "exp": 0,
@@ -26072,7 +26142,10 @@
           "maxlevel": false,
           "cocriador": false,
           "lastMessageTime": 1732648129624,
-          "messageCount": 1
+          "messageCount": 1,
+          "almas": 0,
+          "steals": 0,
+          "pontos": 0
         },
         "554192629959@s.whatsapp.net": {
           "exp": 0,
@@ -26090,7 +26163,9 @@
           "cocriador": false,
           "lastMessageTime": 1734912878165,
           "messageCount": 1,
-          "pontos": 0
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         },
         "false": {
           "exp": 0,
@@ -26122,9 +26197,11 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734982645314,
+          "lastMessageTime": 1734987670167,
           "messageCount": 1,
-          "pontos": 0
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         },
         "556295757489@s.whatsapp.net": {
           "exp": 0,
@@ -26140,9 +26217,11 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734985291911,
-          "messageCount": 2,
-          "pontos": 0
+          "lastMessageTime": 1734993444279,
+          "messageCount": 1,
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         },
         "557598564299@s.whatsapp.net": {
           "exp": 0,
@@ -26176,9 +26255,12 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734986613297,
+          "lastMessageTime": 1734992044972,
           "messageCount": 1,
-          "pontos": 0
+          "pontos": 0,
+          "tempBan": false,
+          "almas": 0,
+          "steals": 0
         },
         "558981130725@s.whatsapp.net": {
           "exp": 0,
@@ -26196,7 +26278,9 @@
           "cocriador": false,
           "lastMessageTime": 1732664323502,
           "messageCount": 1,
-          "pontos": 0
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         },
         "5521965009773@s.whatsapp.net": {
           "exp": 0,
@@ -26229,7 +26313,9 @@
           "cocriador": false,
           "lastMessageTime": 1732663830073,
           "messageCount": null,
-          "pontos": 0
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         },
         "5521993065198@s.whatsapp.net": {
           "exp": 0,
@@ -26247,7 +26333,9 @@
           "cocriador": false,
           "lastMessageTime": 1732666857659,
           "messageCount": 1,
-          "pontos": 0
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         },
         "553496426551@s.whatsapp.net": {
           "exp": 0,
@@ -26263,9 +26351,11 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734982336924,
+          "lastMessageTime": 1734987698370,
           "messageCount": 1,
-          "pontos": 0
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         },
         "553192346005@s.whatsapp.net": {
           "exp": 0,
@@ -26283,7 +26373,9 @@
           "cocriador": false,
           "lastMessageTime": 1734859091853,
           "messageCount": null,
-          "pontos": 0
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         },
         "557499574225@s.whatsapp.net": {
           "exp": 0,
@@ -26305,7 +26397,8 @@
           "advLink": 0,
           "tempBan": false,
           "acaoTimer": "2024-12-22T14:29:01.844Z",
-          "almas": 0
+          "almas": 0,
+          "steals": 0
         },
         "553597621893@s.whatsapp.net": {
           "exp": 0,
@@ -26343,7 +26436,8 @@
           "messageCount": 1,
           "pontos": 0,
           "acaoTimer": "2024-12-22T11:35:18.674Z",
-          "almas": 0
+          "almas": 0,
+          "steals": 0
         },
         "5511954604612@s.whatsapp.net": {
           "exp": 0,
@@ -26359,9 +26453,11 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734986482514,
+          "lastMessageTime": 1734988800968,
           "messageCount": 1,
-          "pontos": 0
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         },
         "5514981304169@s.whatsapp.net": {
           "exp": 0,
@@ -26379,7 +26475,9 @@
           "cocriador": false,
           "lastMessageTime": 1734914787602,
           "messageCount": 1,
-          "pontos": 0
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         },
         "553182537308@s.whatsapp.net": {
           "exp": 0,
@@ -26399,7 +26497,8 @@
           "messageCount": 1,
           "pontos": 0,
           "acaoTimer": "2024-12-22T16:17:05.932Z",
-          "almas": 0
+          "almas": 0,
+          "steals": 0
         },
         "556581171352@s.whatsapp.net": {
           "exp": 0,
@@ -26437,7 +26536,8 @@
           "messageCount": 1,
           "pontos": 0,
           "acaoTimer": "2024-12-22T16:45:46.760Z",
-          "almas": 0
+          "almas": 0,
+          "steals": 0
         },
         "557499682189@s.whatsapp.net": {
           "exp": 0,
@@ -26474,7 +26574,8 @@
           "lastMessageTime": 1734985413920,
           "messageCount": 1,
           "pontos": 0,
-          "almas": 0
+          "almas": 0,
+          "steals": 0
         },
         "5516993161616@s.whatsapp.net": {
           "exp": 0,
@@ -26492,7 +26593,9 @@
           "cocriador": false,
           "lastMessageTime": 1734896905019,
           "messageCount": 1,
-          "pontos": 0
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         },
         "555499609666@s.whatsapp.net": {
           "exp": 0,
@@ -26510,7 +26613,9 @@
           "cocriador": false,
           "lastMessageTime": 1734968768458,
           "messageCount": 1,
-          "pontos": 0
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         },
         "5522998070259@s.whatsapp.net": {
           "exp": 0,
@@ -26563,9 +26668,11 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734975128931,
+          "lastMessageTime": 1734993117960,
           "messageCount": 1,
-          "pontos": 0
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         },
         "554195676946@s.whatsapp.net": {
           "exp": 0,
@@ -26601,7 +26708,9 @@
           "cocriador": false,
           "lastMessageTime": 1734933589013,
           "messageCount": 1,
-          "pontos": 0
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         },
         "554391557178@s.whatsapp.net": {
           "exp": 0,
@@ -26637,7 +26746,9 @@
           "cocriador": false,
           "lastMessageTime": 1734907529622,
           "messageCount": null,
-          "pontos": 0
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         },
         "5519971412295@s.whatsapp.net": {
           "exp": 0,
@@ -26655,7 +26766,9 @@
           "cocriador": false,
           "lastMessageTime": 1734908157703,
           "messageCount": 1,
-          "pontos": 0
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         },
         "555496218678@s.whatsapp.net": {
           "exp": 0,
@@ -26691,7 +26804,9 @@
           "cocriador": false,
           "lastMessageTime": 1734976221965,
           "messageCount": 1,
-          "pontos": 0
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         },
         "555195830228@s.whatsapp.net": {
           "exp": 0,
@@ -26709,7 +26824,9 @@
           "cocriador": false,
           "lastMessageTime": 1734958720617,
           "messageCount": 1,
-          "pontos": 0
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         },
         "557488557699@s.whatsapp.net": {
           "exp": 0,
@@ -26746,7 +26863,9 @@
           "cocriador": false,
           "lastMessageTime": 1734966130556,
           "messageCount": 1,
-          "pontos": 0
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         },
         "5522992352532@s.whatsapp.net": {
           "exp": 0,
@@ -26764,7 +26883,9 @@
           "cocriador": false,
           "lastMessageTime": 1734977695435,
           "messageCount": 1,
-          "pontos": 0
+          "pontos": 0,
+          "almas": 0,
+          "steals": 0
         }
       },
       "isBanned": false,
@@ -29029,10 +29150,10 @@
       "lastSuccess": 1734884225932
     },
     "grupo-perfil.js": {
-      "total": 30,
-      "success": 30,
-      "last": 1734924971357,
-      "lastSuccess": 1734924971357
+      "total": 33,
+      "success": 33,
+      "last": 1734991970184,
+      "lastSuccess": 1734991970184
     },
     "dono-reiniciar-usuario.js": {
       "total": 6,
@@ -29059,10 +29180,10 @@
       "lastSuccess": 1731532795906
     },
     "dl-ig.js": {
-      "total": 29,
-      "success": 28,
-      "last": 1734980246703,
-      "lastSuccess": 1734980246703
+      "total": 31,
+      "success": 30,
+      "last": 1734988198254,
+      "lastSuccess": 1734988198254
     },
     "buscador-lyrics.js": {
       "total": 7,
@@ -29131,10 +29252,10 @@
       "lastSuccess": 1732829915557
     },
     "sticker-sticker.js": {
-      "total": 114,
-      "success": 114,
-      "last": 1734981689407,
-      "lastSuccess": 1734981689407
+      "total": 130,
+      "success": 130,
+      "last": 1734992061790,
+      "lastSuccess": 1734992061790
     },
     "conversor-totext.js": {
       "total": 4,
@@ -29345,6 +29466,12 @@
       "success": 2,
       "last": 1734968929213,
       "lastSuccess": 1734968929213
+    },
+    "dono-cmd-del.js": {
+      "total": 2,
+      "success": 2,
+      "last": 1734987253647,
+      "lastSuccess": 1734987253647
     }
   },
   "msgs": {},
