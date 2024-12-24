@@ -6723,7 +6723,7 @@
       "tentativasRoubo": 5,
       "spammer": 0,
       "usuariosRoubados": [],
-      "lastmiming": 1735005743990
+      "lastmiming": 1735014523307
     },
     "557391032940@s.whatsapp.net": {
       "counterPrivate": 0,
@@ -11909,7 +11909,8 @@
       "adv": 2,
       "tentativasRoubo": 5,
       "spammer": 0,
-      "usuariosRoubados": []
+      "usuariosRoubados": [],
+      "lastmiming": 1735011849047
     },
     "5516997117979@s.whatsapp.net": {},
     "244938479504@s.whatsapp.net": {
@@ -25211,7 +25212,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734997342357,
+          "lastMessageTime": 1735014534147,
           "messageCount": 1,
           "pontos": 0,
           "usuariosRoubados": [],
@@ -25254,7 +25255,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735005411939,
+          "lastMessageTime": 1735008419872,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -25341,7 +25342,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734935475978,
+          "lastMessageTime": 1735010030829,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -25431,7 +25432,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735008136791,
+          "lastMessageTime": 1735014175903,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -25491,7 +25492,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735003775834,
+          "lastMessageTime": 1735014503503,
           "messageCount": 1,
           "pontos": 0,
           "acaoTimer": "2024-11-26T21:35:02.700Z",
@@ -25604,7 +25605,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735000696714,
+          "lastMessageTime": 1735010753329,
           "messageCount": 1,
           "pontos": 0,
           "acaoTimer": "2024-12-22T13:35:39.919Z",
@@ -25688,7 +25689,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734909172561,
+          "lastMessageTime": 1735014280302,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -25708,8 +25709,8 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735005815075,
-          "messageCount": 1,
+          "lastMessageTime": 1735015361554,
+          "messageCount": 2,
           "pontos": 0,
           "acaoTimer": "2024-11-26T20:44:17.952Z",
           "almas": 0,
@@ -25787,7 +25788,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734979180648,
+          "lastMessageTime": 1735012233173,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -25997,7 +25998,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735005743065,
+          "lastMessageTime": 1735014522554,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -26060,7 +26061,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734995090503,
+          "lastMessageTime": 1735013892694,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -26124,7 +26125,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734901268206,
+          "lastMessageTime": 1735008834780,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -26220,7 +26221,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735003631975,
+          "lastMessageTime": 1735015184569,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -26354,7 +26355,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735005545122,
+          "lastMessageTime": 1735014269491,
           "messageCount": 1,
           "pontos": 0,
           "tempBan": false,
@@ -26631,7 +26632,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734999470041,
+          "lastMessageTime": 1735015287747,
           "messageCount": 1,
           "pontos": 0,
           "acaoTimer": "2024-12-22T16:45:46.760Z",
@@ -26670,7 +26671,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734996070795,
+          "lastMessageTime": 1735013138696,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -29252,10 +29253,10 @@
   },
   "stats": {
     "config-on y off.js": {
-      "total": 53,
-      "success": 53,
-      "last": 1734952226334,
-      "lastSuccess": 1734952226334
+      "total": 54,
+      "success": 54,
+      "last": 1735009440158,
+      "lastSuccess": 1735009440158
     },
     "dono-update.js": {
       "total": 36,
@@ -29366,10 +29367,10 @@
       "lastSuccess": 1732134744175
     },
     "dl-yt_play.js": {
-      "total": 70,
-      "success": 69,
-      "last": 1735006493062,
-      "lastSuccess": 1735006493062
+      "total": 71,
+      "success": 70,
+      "last": 1735013804702,
+      "lastSuccess": 1735013804702
     },
     "dono-reporte.js": {
       "total": 7,
@@ -29408,10 +29409,10 @@
       "lastSuccess": 1732829915557
     },
     "sticker-sticker.js": {
-      "total": 131,
-      "success": 131,
-      "last": 1735005743990,
-      "lastSuccess": 1735005743990
+      "total": 133,
+      "success": 133,
+      "last": 1735014523308,
+      "lastSuccess": 1735014523308
     },
     "conversor-totext.js": {
       "total": 4,
