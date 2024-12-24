@@ -25137,7 +25137,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735004523536,
+          "lastMessageTime": 1735034689079,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -25261,7 +25261,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735032664462,
+          "lastMessageTime": 1735040219029,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -25287,7 +25287,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735007095179,
+          "lastMessageTime": 1735034589953,
           "messageCount": 1,
           "pontos": 0,
           "tempBan": false,
@@ -25398,7 +25398,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734999130710,
+          "lastMessageTime": 1735033993362,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -25418,11 +25418,16 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734998985820,
+          "lastMessageTime": 1735033680058,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
-          "steals": 0
+          "steals": 0,
+          "acaoTimer": "2024-12-24T09:48:00.094Z",
+          "usuariosRoubados": [],
+          "rouboTimestamp": "2024-12-23T09:48:00.095Z",
+          "morto": true,
+          "elixirs": 0
         },
         "556195667729@s.whatsapp.net": {
           "exp": 0,
@@ -25438,7 +25443,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735032825368,
+          "lastMessageTime": 1735040099983,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -25611,7 +25616,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735010753329,
+          "lastMessageTime": 1735036851734,
           "messageCount": 1,
           "pontos": 0,
           "acaoTimer": "2024-12-22T13:35:39.919Z",
@@ -25944,8 +25949,8 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734992453005,
-          "messageCount": 1,
+          "lastMessageTime": 1735038051130,
+          "messageCount": 2,
           "pontos": 0,
           "almas": 0,
           "steals": 0
@@ -26323,7 +26328,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735032653816,
+          "lastMessageTime": 1735033749211,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -26497,7 +26502,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735031583720,
+          "lastMessageTime": 1735039451375,
           "messageCount": 1,
           "pontos": 0,
           "advLink": 0,
@@ -26579,7 +26584,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734914787602,
+          "lastMessageTime": 1735036743797,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -26599,7 +26604,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735003677616,
+          "lastMessageTime": 1735040667628,
           "messageCount": 1,
           "pontos": 0,
           "acaoTimer": "2024-12-22T16:17:05.932Z",
@@ -28568,7 +28573,8 @@
       "initialBoot": true,
       "ignored": [
         "CD5CFC61BE7ED4D1356D64B183A2FA94",
-        "9CCC7DDF4214BDB139667EBC100BBD4E"
+        "9CCC7DDF4214BDB139667EBC100BBD4E",
+        "6550EE9B286032BFA98A5A26F702B07B"
       ],
       "loja": {
         "lojaId": {
@@ -29493,10 +29499,10 @@
       "lastSuccess": 1732619581280
     },
     "fun-acoes.js": {
-      "total": 9,
-      "success": 9,
-      "last": 1734919262465,
-      "lastSuccess": 1734919262465
+      "total": 10,
+      "success": 10,
+      "last": 1735033681472,
+      "lastSuccess": 1735033681472
     },
     "cfgLoja.js": {
       "total": 4,
@@ -29635,6 +29641,12 @@
       "success": 2,
       "last": 1734987253647,
       "lastSuccess": 1734987253647
+    },
+    "dl-ytv.js": {
+      "total": 3,
+      "success": 3,
+      "last": 1735036870638,
+      "lastSuccess": 1735036870638
     }
   },
   "msgs": {},
