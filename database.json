@@ -97,7 +97,7 @@
           "afkReason": ""
         }
       },
-      "lastmiming": 1735156965614,
+      "lastmiming": 1735171642850,
       "ghost": false,
       "offlineStart": "2024-12-23T11:10:10.158Z",
       "ocupado": true
@@ -2263,7 +2263,8 @@
       "adv": 2,
       "tentativasRoubo": 5,
       "spammer": 0,
-      "usuariosRoubados": []
+      "usuariosRoubados": [],
+      "lastmiming": 1735172206616
     },
     "219627481239786@lid": {
       "counterPrivate": 0,
@@ -5783,7 +5784,7 @@
       "tentativasRoubo": 5,
       "spammer": 0,
       "usuariosRoubados": [],
-      "lastmiming": 1735159385647
+      "lastmiming": 1735172798838
     },
     "555599538879@s.whatsapp.net": {
       "counterPrivate": 0,
@@ -12531,7 +12532,8 @@
           "number": "558387194995@s.whatsapp.net",
           "afkReason": ""
         }
-      }
+      },
+      "lastmiming": 1735170870794
     },
     "553888016495@s.whatsapp.net,553496426551@s.whatsapp.net,554599015152@s.whatsapp.net": {},
     "559192321625@s.whatsapp.net,553497704017@s.whatsapp.net": {},
@@ -13551,6 +13553,33 @@
         "120363312968709293@g.us": {
           "afkTime": -2,
           "number": "63926880493817@lid",
+          "afkReason": ""
+        }
+      }
+    },
+    "556699768494@s.whatsapp.net": {
+      "exp": 0,
+      "money": 150,
+      "limit": 2,
+      "nsfwAdv": 0,
+      "adv": 2,
+      "counterPrivate": 0,
+      "afk": -1,
+      "reporte": 0,
+      "role": "𝘼𝙥𝙧𝙚𝙣𝙙𝙞𝙯 🕯️",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "level": 0,
+      "tentativasRoubo": 5,
+      "spammer": 0,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "usuariosRoubados": [],
+      "warn": 0,
+      "name": "Flavia [🪐]•°",
+      "afkInfo": {
+        "120363126337539207@g.us": {
+          "afkTime": -2,
+          "number": "556699768494@s.whatsapp.net",
           "afkReason": ""
         }
       }
@@ -24667,7 +24696,8 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "pontos": 0
+          "pontos": 0,
+          "tempBan": false
         },
         "79001643752@s.whatsapp.net": {
           "exp": 0,
@@ -26148,7 +26178,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735168411666,
+          "lastMessageTime": 1735176982299,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -26172,7 +26202,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735165198822,
+          "lastMessageTime": 1735171962603,
           "messageCount": 1,
           "pontos": 0,
           "tempBan": false,
@@ -26229,7 +26259,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735146001324,
+          "lastMessageTime": 1735172391334,
           "messageCount": 1,
           "pontos": 0,
           "usuariosRoubados": [],
@@ -26272,8 +26302,8 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735161960571,
-          "messageCount": 1,
+          "lastMessageTime": 1735177402490,
+          "messageCount": 2,
           "pontos": 0,
           "almas": 0,
           "advLink": 0,
@@ -26312,7 +26342,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735167776765,
+          "lastMessageTime": 1735174401224,
           "messageCount": 1,
           "pontos": 0,
           "tempBan": false,
@@ -26424,7 +26454,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735104054284,
+          "lastMessageTime": 1735176525595,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -26469,7 +26499,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735165742663,
+          "lastMessageTime": 1735177398174,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -26510,7 +26540,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735146175715,
+          "lastMessageTime": 1735174927651,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -26530,7 +26560,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735169886511,
+          "lastMessageTime": 1735174823149,
           "messageCount": 1,
           "pontos": 0,
           "acaoTimer": "2024-11-26T21:35:02.700Z",
@@ -26554,7 +26584,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735129923579,
+          "lastMessageTime": 1735176826159,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -26705,7 +26735,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735165279762,
+          "lastMessageTime": 1735176399537,
           "messageCount": 1,
           "pontos": 0,
           "usuariosRoubados": [],
@@ -26827,7 +26857,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735144190599,
+          "lastMessageTime": 1735172332085,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -26941,7 +26971,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735169060337,
+          "lastMessageTime": 1735177421288,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -26997,7 +27027,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735158019351,
+          "lastMessageTime": 1735174198528,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -27037,7 +27067,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735161161773,
+          "lastMessageTime": 1735172620941,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -27101,7 +27131,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735097540610,
+          "lastMessageTime": 1735171621491,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -27398,7 +27428,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735163831367,
+          "lastMessageTime": 1735177394371,
           "messageCount": 1,
           "pontos": 0,
           "tempBan": false,
@@ -27419,7 +27449,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735168499467,
+          "lastMessageTime": 1735171751782,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -27619,7 +27649,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735145898529,
+          "lastMessageTime": 1735170264525,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -27639,7 +27669,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735168841617,
+          "lastMessageTime": 1735177420133,
           "messageCount": 1,
           "pontos": 0,
           "acaoTimer": "2024-12-22T16:17:05.932Z",
@@ -27739,11 +27769,12 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735143491608,
+          "lastMessageTime": 1735172202685,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
-          "steals": 0
+          "steals": 0,
+          "tempBan": false
         },
         "555499609666@s.whatsapp.net": {
           "exp": 0,
@@ -27759,7 +27790,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735139965853,
+          "lastMessageTime": 1735171857540,
           "messageCount": 2,
           "pontos": 0,
           "almas": 0,
@@ -28009,7 +28040,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735133237360,
+          "lastMessageTime": 1735170872635,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -28522,6 +28553,24 @@
           "messageCount": 1,
           "pontos": 0,
           "tempBan": false
+        },
+        "556699768494@s.whatsapp.net": {
+          "exp": 0,
+          "limit": 0,
+          "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
+          "money": 0,
+          "level": 0,
+          "adm": false,
+          "legendary": false,
+          "banned": false,
+          "adv": 0,
+          "tentativasRoubo": 5,
+          "silenced": false,
+          "maxlevel": false,
+          "cocriador": false,
+          "lastMessageTime": 1735175336702,
+          "messageCount": 1,
+          "pontos": 0
         }
       },
       "isBanned": false,
@@ -30017,7 +30066,8 @@
         "5511949104591@s.whatsapp.net": [],
         "5521973188360@s.whatsapp.net": [],
         "556593464338@s.whatsapp.net": [],
-        "557382472606@s.whatsapp.net": []
+        "557382472606@s.whatsapp.net": [],
+        "556699768494@s.whatsapp.net": []
       },
       "firstTime": false,
       "antiCallGp": true,
@@ -31019,10 +31069,10 @@
       "lastSuccess": 1732134744175
     },
     "dl-yt_play.js": {
-      "total": 111,
-      "success": 110,
-      "last": 1735159818064,
-      "lastSuccess": 1735159818064
+      "total": 112,
+      "success": 111,
+      "last": 1735174095305,
+      "lastSuccess": 1735174095305
     },
     "dono-reporte.js": {
       "total": 7,
@@ -31061,10 +31111,10 @@
       "lastSuccess": 1732829915557
     },
     "sticker-sticker.js": {
-      "total": 163,
-      "success": 163,
-      "last": 1735159385647,
-      "lastSuccess": 1735159385647
+      "total": 167,
+      "success": 167,
+      "last": 1735172798839,
+      "lastSuccess": 1735172798839
     },
     "conversor-totext.js": {
       "total": 5,
