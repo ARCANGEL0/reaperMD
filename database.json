@@ -26405,7 +26405,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735171962603,
+          "lastMessageTime": 1735204605740,
           "messageCount": 1,
           "pontos": 0,
           "tempBan": false,
@@ -26462,7 +26462,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735172391334,
+          "lastMessageTime": 1735203639929,
           "messageCount": 1,
           "pontos": 0,
           "usuariosRoubados": [],
@@ -26586,7 +26586,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735145583253,
+          "lastMessageTime": 1735204048642,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -26606,7 +26606,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735180343154,
+          "lastMessageTime": 1735206356621,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -26702,7 +26702,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735187780939,
+          "lastMessageTime": 1735206306427,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -26723,7 +26723,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735188691844,
+          "lastMessageTime": 1735202900557,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -26938,7 +26938,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735177951544,
+          "lastMessageTime": 1735205939335,
           "messageCount": 1,
           "pontos": 0,
           "usuariosRoubados": [],
@@ -27291,7 +27291,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735164964619,
+          "lastMessageTime": 1735199467637,
           "messageCount": 1,
           "pontos": 0,
           "tempBan": false,
@@ -27767,7 +27767,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735158359137,
+          "lastMessageTime": 1735201830758,
           "messageCount": 1,
           "pontos": 0,
           "advLink": 0,
@@ -28848,7 +28848,7 @@
           "pontos": 0
         }
       },
-      "isBanned": false,
+      "isBanned": true,
       "welcome": true,
       "detect": false,
       "language": "pt",
@@ -31234,10 +31234,10 @@
       "lastSuccess": 1734858861576
     },
     "menu-menu.js": {
-      "total": 22,
-      "success": 22,
-      "last": 1735062027996,
-      "lastSuccess": 1735062027996
+      "total": 24,
+      "success": 24,
+      "last": 1735204048655,
+      "lastSuccess": 1735204048655
     },
     "dono-unbanchat.js": {
       "total": 15,
@@ -31444,10 +31444,10 @@
       "lastSuccess": 1734922981972
     },
     "grupo-admins.js": {
-      "total": 5,
-      "success": 5,
-      "last": 1735091191120,
-      "lastSuccess": 1735091191120
+      "total": 6,
+      "success": 6,
+      "last": 1735203801034,
+      "lastSuccess": 1735203801034
     },
     "fun-slot.js": {
       "total": 2,
