@@ -14733,7 +14733,8 @@
         }
       }
     },
-    "554598527531@s.whatsapp.net,5521983793257@s.whatsapp.net,555391229279@s.whatsapp.net,556296397081@s.whatsapp.net": {}
+    "554598527531@s.whatsapp.net,5521983793257@s.whatsapp.net,555391229279@s.whatsapp.net,556296397081@s.whatsapp.net": {},
+    "5516993161616@s.whatsapp.net,556195667729@s.whatsapp.net": {}
   },
   "chats": {
     "120363312968709293@g.us": {
@@ -27592,7 +27593,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735424534645,
+          "lastMessageTime": 1735463959423,
           "messageCount": 1,
           "pontos": 0,
           "tempBan": false,
@@ -28111,7 +28112,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735454571983,
+          "lastMessageTime": 1735464753071,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -28821,8 +28822,8 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735424845972,
-          "messageCount": 2,
+          "lastMessageTime": 1735464754168,
+          "messageCount": 1,
           "pontos": 0,
           "advLink": 0,
           "tempBan": false,
@@ -29026,7 +29027,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735447502336,
+          "lastMessageTime": 1735461781984,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -32491,7 +32492,7 @@
           "cocriador": false
         },
         "5521997547386@s.whatsapp.net": {
-          "exp": 6914,
+          "exp": 6994,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 1326,
@@ -32504,7 +32505,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735456286055,
+          "lastMessageTime": 1735462628164,
           "messageCount": 1,
           "pontos": 0,
           "slots": 0,
@@ -34096,10 +34097,10 @@
       "lastSuccess": 1732134744175
     },
     "dl-yt_play.js": {
-      "total": 153,
-      "success": 152,
-      "last": 1735439724088,
-      "lastSuccess": 1735439724088
+      "total": 154,
+      "success": 153,
+      "last": 1735463896434,
+      "lastSuccess": 1735463896434
     },
     "dono-reporte.js": {
       "total": 8,
