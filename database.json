@@ -2373,7 +2373,7 @@
           "afkReason": ""
         }
       },
-      "lastmiming": 1735144995468
+      "lastmiming": 1735617514513
     },
     "188420232073421@lid": {
       "counterPrivate": 0,
@@ -28146,7 +28146,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735613172380,
+          "lastMessageTime": 1735618905421,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -28409,7 +28409,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735603831452,
+          "lastMessageTime": 1735619619585,
           "messageCount": 1,
           "pontos": 0,
           "acaoTimer": "2024-11-26T21:35:02.700Z",
@@ -28565,7 +28565,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735601805417,
+          "lastMessageTime": 1735615637025,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -28573,10 +28573,10 @@
           "acaoTimer": "2024-12-28T15:17:17.635Z"
         },
         "554599015152@s.whatsapp.net": {
-          "exp": 0,
+          "exp": 400,
           "limit": 0,
           "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
-          "money": 0,
+          "money": 520,
           "level": 0,
           "adm": true,
           "legendary": false,
@@ -28586,13 +28586,14 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735523128561,
+          "lastMessageTime": 1735618447458,
           "messageCount": 1,
           "pontos": 0,
           "usuariosRoubados": [],
           "almas": 0,
           "steals": 0,
-          "tempBan": false
+          "tempBan": false,
+          "rouboTimestamp": "2024-12-30T03:47:36.938Z"
         },
         "555496930052@s.whatsapp.net": {
           "exp": 0,
@@ -28708,8 +28709,8 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735604335147,
-          "messageCount": 2,
+          "lastMessageTime": 1735619837811,
+          "messageCount": 1,
           "pontos": 0,
           "almas": 0,
           "steals": 0
@@ -28822,7 +28823,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735613992107,
+          "lastMessageTime": 1735619985034,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -28899,8 +28900,8 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735519305222,
-          "messageCount": 1,
+          "lastMessageTime": 1735619124982,
+          "messageCount": 2,
           "pontos": 0,
           "almas": 0,
           "steals": 0,
@@ -29031,7 +29032,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735589435794,
+          "lastMessageTime": 1735617500974,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -29225,7 +29226,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735608735961,
+          "lastMessageTime": 1735617034764,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -29284,7 +29285,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735605040099,
+          "lastMessageTime": 1735619200110,
           "messageCount": 1,
           "pontos": 0,
           "tempBan": false,
@@ -29367,7 +29368,7 @@
           "steals": 0
         },
         "553496426551@s.whatsapp.net": {
-          "exp": 0,
+          "exp": 124567789900,
           "limit": 0,
           "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
           "money": 0,
@@ -29380,12 +29381,13 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735593787755,
+          "lastMessageTime": 1735617912957,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
           "steals": 0,
-          "tempBan": false
+          "tempBan": false,
+          "usuariosRoubados": []
         },
         "553192346005@s.whatsapp.net": {
           "exp": 0,
@@ -30065,7 +30067,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735609484482,
+          "lastMessageTime": 1735614159085,
           "messageCount": 1,
           "pontos": 0
         },
@@ -30821,15 +30823,15 @@
       "sPromote": "",
       "sDemote": "",
       "delete": true,
-      "jogos": false,
-      "gpt": false,
+      "jogos": true,
+      "gpt": true,
       "expira": "2025-02-13T00:00:00.000Z",
-      "acoes": false,
-      "busca": false,
-      "midia": false,
+      "acoes": true,
+      "busca": true,
+      "midia": true,
       "xadrez": true,
       "admafk": false,
-      "downloads": false,
+      "downloads": true,
       "modohorny": false,
       "stickers": true,
       "autosticker": false,
@@ -30853,7 +30855,7 @@
       "antiTraba": true,
       "autolevelup": false,
       "edgar": true,
-      "reply": false,
+      "reply": true,
       "expired": 0,
       "except": false,
       "lastSentTime": 0,
@@ -32156,11 +32158,11 @@
       ],
       "boleto": 45,
       "forca": {
-        "palavra": "diabolico",
+        "palavra": "ruina",
         "isGame": false,
         "forcaID": "",
-        "currentStatus": "__abol_co",
-        "currentStageIndex": 5,
+        "currentStatus": "rui_a",
+        "currentStageIndex": 2,
         "stages": [
           "♱ 𝑻𝒉𝒆 𝒉𝒂𝒏𝒈𝒎𝒂𝒏\n      \n╭─┅──┅❖\n|                   |\n|                   |\n|                   \n|\n|\n|\n|\n|\n|                             𓄿\n*╰─┅──┅┅❖ ⸸ ❖─┅*\n\n",
           "♱ 𝑻𝒉𝒆 𝒉𝒂𝒏𝒈𝒎𝒂𝒏\n      \n╭─┅──┅❖\n|                   |\n|                   |\n|                   O\n|\n|\n|\n|\n|\n|                             𓄿\n*╰─┅──┅┅❖ ⸸ ❖─┅*\n\n",
@@ -32412,8 +32414,8 @@
         "fromMe": true,
         "id": "BAE5D697A9854BF9"
       },
-      "ricksan": false,
-      "iaAtiva": false,
+      "ricksan": true,
+      "iaAtiva": true,
       "truco": {
         "gameData": null,
         "table": {},
@@ -33272,7 +33274,7 @@
           "cocriador": false
         },
         "5521997547386@s.whatsapp.net": {
-          "exp": 23322,
+          "exp": 23332,
           "limit": 0,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 2791,
@@ -33285,7 +33287,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735610033379,
+          "lastMessageTime": 1735618712667,
           "messageCount": 1,
           "pontos": 0,
           "slots": 0,
@@ -35053,10 +35055,10 @@
   },
   "stats": {
     "config-on y off.js": {
-      "total": 88,
-      "success": 87,
-      "last": 1735606396821,
-      "lastSuccess": 1735606396821
+      "total": 89,
+      "success": 88,
+      "last": 1735615591198,
+      "lastSuccess": 1735615591198
     },
     "dono-update.js": {
       "total": 36,
@@ -35107,10 +35109,10 @@
       "lastSuccess": 1735580165725
     },
     "grupo-perfil.js": {
-      "total": 65,
-      "success": 65,
-      "last": 1735583271185,
-      "lastSuccess": 1735583271185
+      "total": 69,
+      "success": 69,
+      "last": 1735616749338,
+      "lastSuccess": 1735616749338
     },
     "dono-reiniciar-usuario.js": {
       "total": 6,
@@ -35185,10 +35187,10 @@
       "lastSuccess": 1735158938282
     },
     "jogosLetras.js": {
-      "total": 73,
-      "success": 73,
-      "last": 1735601143423,
-      "lastSuccess": 1735601143423
+      "total": 76,
+      "success": 76,
+      "last": 1735617103985,
+      "lastSuccess": 1735617103985
     },
     "lista-lista.js": {
       "total": 2,
@@ -35209,10 +35211,10 @@
       "lastSuccess": 1732829915557
     },
     "sticker-sticker.js": {
-      "total": 220,
-      "success": 220,
-      "last": 1735608885188,
-      "lastSuccess": 1735608885188
+      "total": 221,
+      "success": 221,
+      "last": 1735617514513,
+      "lastSuccess": 1735617514513
     },
     "conversor-totext.js": {
       "total": 6,
@@ -35401,10 +35403,10 @@
       "lastSuccess": 1735492807186
     },
     "dono-levelup.js": {
-      "total": 6,
-      "success": 6,
-      "last": 1735413093813,
-      "lastSuccess": 1735413093813
+      "total": 7,
+      "success": 7,
+      "last": 1735616856939,
+      "lastSuccess": 1735616856939
     },
     "quiz.js": {
       "total": 5,
