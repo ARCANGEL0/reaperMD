@@ -29539,7 +29539,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735880710929,
+          "lastMessageTime": 1735883078623,
           "messageCount": 1,
           "pontos": 0,
           "tempBan": false,
@@ -34141,7 +34141,7 @@
           "usuariosRoubados": []
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 35225,
+          "exp": 37245,
           "limit": 0,
           "role": "",
           "money": 0,
@@ -34159,10 +34159,10 @@
           "pontos": 0
         },
         "5521997547386@s.whatsapp.net": {
-          "exp": 48202,
+          "exp": 44088,
           "limit": 0,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
-          "money": 15958,
+          "money": 16883,
           "level": 9,
           "adm": true,
           "legendary": false,
@@ -34172,14 +34172,14 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735881982217,
+          "lastMessageTime": 1735887889773,
           "messageCount": 1,
           "pontos": 0,
-          "slots": 1,
-          "lastslot": 1735871386278,
+          "slots": 0,
+          "lastslot": 1735884550322,
           "almas": 0,
           "steals": 6,
-          "acaoTimer": "2025-01-03T01:54:56.720Z",
+          "acaoTimer": "2025-01-03T06:56:40.463Z",
           "usuariosRoubados": [
             "554792584937@s.whatsapp.net"
           ],
@@ -34666,7 +34666,7 @@
           "steals": 0
         },
         "558799186663@s.whatsapp.net": {
-          "exp": 270,
+          "exp": 328,
           "limit": 0,
           "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
           "money": 0,
@@ -34679,7 +34679,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735868052356,
+          "lastMessageTime": 1735883333901,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -35000,11 +35000,15 @@
       ],
       "boleto": 25,
       "forca": {
-        "palavra": "procrastinacao",
+        "palavra": "magnanimo",
         "isGame": false,
-        "forcaID": "",
-        "currentStatus": "pro_ra__i_a_ao",
-        "currentStageIndex": 2,
+        "forcaID": {
+          "remoteJid": "120363042501201148@g.us",
+          "fromMe": true,
+          "id": "BAE59A8C485AAA35"
+        },
+        "currentStatus": "_a__a_i_o",
+        "currentStageIndex": 6,
         "stages": [
           "♱ 𝑻𝒉𝒆 𝒉𝒂𝒏𝒈𝒎𝒂𝒏\n      \n╭─┅──┅❖\n|                   |\n|                   |\n|                   \n|\n|\n|\n|\n|\n|                             𓄿\n*╰─┅──┅┅❖ ⸸ ❖─┅*\n\n",
           "♱ 𝑻𝒉𝒆 𝒉𝒂𝒏𝒈𝒎𝒂𝒏\n      \n╭─┅──┅❖\n|                   |\n|                   |\n|                   O\n|\n|\n|\n|\n|\n|                             𓄿\n*╰─┅──┅┅❖ ⸸ ❖─┅*\n\n",
@@ -36062,10 +36066,10 @@
       "lastSuccess": 1734858861576
     },
     "menu-menu.js": {
-      "total": 71,
-      "success": 71,
-      "last": 1735870828416,
-      "lastSuccess": 1735870828416
+      "total": 73,
+      "success": 73,
+      "last": 1735887068719,
+      "lastSuccess": 1735887068719
     },
     "dono-unbanchat.js": {
       "total": 19,
@@ -36098,10 +36102,10 @@
       "lastSuccess": 1732473745563
     },
     "funAcoes7.js": {
-      "total": 158,
-      "success": 158,
-      "last": 1735871330184,
-      "lastSuccess": 1735871330184
+      "total": 159,
+      "success": 159,
+      "last": 1735887400464,
+      "lastSuccess": 1735887400464
     },
     "grupo-perfil.js": {
       "total": 103,
@@ -36164,10 +36168,10 @@
       "lastSuccess": 1732134744175
     },
     "dl-yt_play.js": {
-      "total": 213,
-      "success": 211,
-      "last": 1735876265734,
-      "lastSuccess": 1735876265734
+      "total": 214,
+      "success": 212,
+      "last": 1735887308778,
+      "lastSuccess": 1735887308778
     },
     "dono-reporte.js": {
       "total": 13,
@@ -36182,10 +36186,10 @@
       "lastSuccess": 1735647086890
     },
     "jogosLetras.js": {
-      "total": 114,
-      "success": 114,
-      "last": 1735870893593,
-      "lastSuccess": 1735870893593
+      "total": 116,
+      "success": 116,
+      "last": 1735887446601,
+      "lastSuccess": 1735887446601
     },
     "lista-lista.js": {
       "total": 2,
@@ -36278,10 +36282,10 @@
       "lastSuccess": 1735506420942
     },
     "fun-slot.js": {
-      "total": 64,
-      "success": 57,
-      "last": 1735871386403,
-      "lastSuccess": 1735871386403
+      "total": 66,
+      "success": 59,
+      "last": 1735884561457,
+      "lastSuccess": 1735884561457
     },
     "fun-acoes.js": {
       "total": 14,
@@ -36452,10 +36456,10 @@
       "lastSuccess": 1735862776492
     },
     "games-roleta.js": {
-      "total": 18,
-      "success": 18,
-      "last": 1735653756315,
-      "lastSuccess": 1735653756315
+      "total": 21,
+      "success": 21,
+      "last": 1735884632275,
+      "lastSuccess": 1735884632275
     },
     "cfgRick.js": {
       "total": 3,
@@ -36524,10 +36528,10 @@
       "lastSuccess": 1735326855653
     },
     "dl-imagen.js": {
-      "total": 10,
-      "success": 8,
-      "last": 1735869593728,
-      "lastSuccess": 1735869593728
+      "total": 11,
+      "success": 9,
+      "last": 1735887155366,
+      "lastSuccess": 1735887155366
     },
     "buscador-google.js": {
       "total": 2,
@@ -36554,10 +36558,10 @@
       "lastSuccess": 1735518710662
     },
     "clima.js": {
-      "total": 6,
-      "success": 6,
-      "last": 1735852810554,
-      "lastSuccess": 1735852810554
+      "total": 8,
+      "success": 8,
+      "last": 1735887222858,
+      "lastSuccess": 1735887222858
     },
     "dono-boost.js": {
       "total": 2,
