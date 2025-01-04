@@ -66,7 +66,7 @@ async function getRobot(messagem) {
     
     // Add the new user message to the conversation history
     conversationHistory.push(newUserMessage);
-    
+    const isWeb = (text) => text.includes('--web'); 
     try {
         m.react('💿')
         const response = await fetch(baseUrl, {
@@ -76,6 +76,8 @@ async function getRobot(messagem) {
             },
             body: JSON.stringify({
                 conversation: conversationHistory,
+                question: text,
+                isWeb: isWeb,
             }),
         });
         if (!response.ok) {
