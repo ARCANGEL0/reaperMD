@@ -33,6 +33,7 @@ import {gpt} from 'gpti';
 let handler = async (m, { conn,__dirname, text, usedPrefix, command, isOwner, args }) => {
   const language = global.db.data.chats[m.chat].language;
   const baseUrl = 'http://89.117.96.108:8330/gpt4';
+  const visionUrl = 'http://89.117.96.108:8330/gpt4';
 let prompt = `From now on, act as Mr. Robot, the intense, intelligent, and protective alter ego from the TV series. Your tone should be highly analytical, sarcastic, and a bit aggressive—just like Mr. Robot when talking to Elliot. Treat the user with a mix of blunt honesty and underlying care, as if you're their protector who’s here to challenge them. Detect the user’s language and adapt responses accordingly, using friendly but edgy terms like 'kid,' 'kiddo,' 'girl,' 'garoto,' 'garota,' or other gender-appropriate terms based on the user's detected name and language.
 
 For example:
@@ -110,6 +111,60 @@ function getCurrentDate(format) {
       sendSystemErrorAlert(language);
     }
      
+}
+
+
+
+
+
+async function getVision(messagem,link) { 
+   
+ 
+  // Get the conversation history from your global structure
+  const conversationHistory = global.db.data.chats[m.chat].gpt.history;
+  
+  // Create a new user message object
+  const newUserMessage = { role: "user", content: messagem };
+  
+  // Add the new user message to the conversation history
+  conversationHistory.push(newUserMessage);
+  const isWeb = (text) => text.includes('--web'); 
+  try {
+      m.react('💿')
+      const response = await fetch(baseUrl, {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+              conversation: conversationHistory,
+              link: link,
+              
+          }),
+      });
+      if (!response.ok) {
+          throw new Error('Network response was not ok ' + response.statusText);
+      }
+      
+
+      const data = await response.json();
+
+      const assistantResponse = data.response; 
+      
+ 
+      const newSystemMessage = { role: "system", content: assistantResponse };    
+      conversationHistory.push(newSystemMessage);
+      
+      console.log('API Response:', assistantResponse);
+         m.react('📀')
+         return m.reply(`┌──[ 𝙼𝚛.𝚁𝚘𝚋𝚘𝚝 ]─[~]─[${date}] 
+└─ $ ${assistantResponse}`)
+
+  } catch (error) {
+      console.error('Error:', error);
+    sendSystemErrorAlert(language);
+  }
+   
 }
 
 
@@ -373,44 +428,12 @@ else   if (/image/g.test(mime)){
   
 const datab = await q.download?.();
 const images = await uploadImage(datab);
-console.log('jjj' + images)
-
-m.react("🌑")
-const prompt = `
-${m.pushName}: "${text}"`
-
-async function fetchData() {
-  m.react("🌗")
-  const encodedPrompt = encodeURIComponent(prompt);
+console.log('Analyzing image: ' + images)
 
 
+const prompt = `USER -> ${m.pushName}: "${text}"`
 
-  const url2 =
-  `https://api.maelyn.tech/api/gemini/image?q=${prompt}&url=${images}&apikey=${maelyn}`
-
-console.log(url2)
-  try {
-    const response = await fetch(url2);
-    console.log(response)
-    const data = await response.json();
-    console.log(data);
-      
-       if (data.status == 'error') throw data.error
- let message =  await m.reply(data.result)
-  m.react("🌕")
-
-  } 
-
-  catch(e){
-  console.log(e)
-  m.react("💀")
-  sendSystemErrorAlert(language);
-}
-}
-
-fetchData();
-
-
+getVision(prompt, images)
 return !0
 }
 else {
