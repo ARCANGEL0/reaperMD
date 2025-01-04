@@ -11631,7 +11631,14 @@
           "number": "553192346005@s.whatsapp.net",
           "afkReason": ""
         }
-      }
+      },
+      "money": 150,
+      "nsfwAdv": 0,
+      "adv": 2,
+      "tentativasRoubo": 5,
+      "spammer": 0,
+      "usuariosRoubados": [],
+      "lastmiming": 1735976695327
     },
     "557499574225@s.whatsapp.net": {
       "counterPrivate": 0,
@@ -26809,7 +26816,7 @@
           "silenced": true,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735948760023,
+          "lastMessageTime": 1735977156778,
           "messageCount": 1,
           "pontos": 0,
           "tempBan": false,
@@ -28846,7 +28853,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735872519690,
+          "lastMessageTime": 1735977190845,
           "messageCount": 1,
           "pontos": 0,
           "tempBan": false,
@@ -30055,7 +30062,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735937847362,
+          "lastMessageTime": 1735979406938,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -30211,8 +30218,8 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1734859091853,
-          "messageCount": null,
+          "lastMessageTime": 1735976693707,
+          "messageCount": 1,
           "pontos": 0,
           "almas": 0,
           "steals": 0
@@ -34531,7 +34538,7 @@
           "shadowAtivo": false
         },
         "553496738698@s.whatsapp.net": {
-          "exp": 72370,
+          "exp": 72377,
           "limit": 4,
           "role": "Ｏｐｅｒａｔｉｖｏ　ｄｏ　Ｅｘéｒｃｉｔｏ　Ｓｏｍｂｒｉｏ",
           "money": 11515,
@@ -34544,7 +34551,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735950981674,
+          "lastMessageTime": 1735979491150,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -35072,7 +35079,7 @@
       "lastSentTime": 1735402861799,
       "name": "♥️ Porta Jóias ♦️",
       "desc": "Hierarquia aqui funciona da seguinte forma: \n\n- membro ovo tem q chegar mandando foto do cartão de crédito frente e verso \n\n- membro comum tem q venerar todos os Ademir\n\n*ATENÇÃO NO QUE NÃO PODE*\n\n- Fica a vontade pra mandar oq tu quiser, mas segura tua onda, sem ficar flodando pornografia ou gore.\n\n- não tenho q ficar ditando um milhão d regras, só a questão do bom senso msm, se souber não se comportar como um primata já tá valendo.\n- proibido ser igual ao Vitor.\n\n- *BEBAM ÁGUA!!!!!!!*",
-      "totalMembros": 47,
+      "totalMembros": 46,
       "membros": [
         {
           "id": "557981607343@s.whatsapp.net",
@@ -35124,10 +35131,6 @@
         },
         {
           "id": "553196516366@s.whatsapp.net",
-          "admin": null
-        },
-        {
-          "id": "5512996832081@s.whatsapp.net",
           "admin": null
         },
         {
@@ -36745,10 +36748,10 @@
       "lastSuccess": 1735650796996
     },
     "sticker-sticker.js": {
-      "total": 296,
-      "success": 296,
-      "last": 1735954421398,
-      "lastSuccess": 1735954421398
+      "total": 299,
+      "success": 299,
+      "last": 1735976695327,
+      "lastSuccess": 1735976695327
     },
     "conversor-totext.js": {
       "total": 6,
@@ -37192,7 +37195,7 @@
           "conta": "430638986273",
           "sepa": "SE9625115229047742",
           "wallet": "WAL-2740855773",
-          "saldo": 2030.4551391881605
+          "saldo": 2030.5033180659925
         }
       },
       "rendimento": 0.00002372811735756406
