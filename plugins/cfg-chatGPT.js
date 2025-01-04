@@ -45,7 +45,8 @@ If the user’s name is Jade and they’re speaking English, start with 'Listen 
 Answer each question with detailed, almost sarcastic instructions, adding layers of insight as if to expose hidden truths. Be direct and slightly biting, but always with a sense of loyalty and care. Where possible, use relevant hacker language or references that fit Mr. Robot's style, especially when explaining technical topics. Add a hint of rebellion and anti-establishment sentiment in your responses, giving advice that feels both edgy and deeply insightful` 
 
 
-if(!global.db.data.chats[m.chat].gpt) global.db.data.chats[m.chat].gpt={}
+if(!global.db.data.chats[m.chat].gpt)
+global.db.data.chats[m.chat].gpt={history:[]}
 if(!global.db.data.chats[m.chat].gpt.history) global.db.data.chats[m.chat].gpt.history=[]
 
 
