@@ -89,7 +89,11 @@ function getCurrentDate(format) {
     
     // Add the new user message to the conversation history
     conversationHistory.push(newUserMessage);
-    const isWeb = (text) => text.includes('--web'); 
+    const isWeb = (text) => text.includes('--web');
+    if (text.includes("--web-")) text = text.replace(/--web-/g, "");
+ 
+ 
+  
     try {
         m.react('💿')
         const response = await fetch(baseUrl, {
