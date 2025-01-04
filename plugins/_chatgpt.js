@@ -139,9 +139,59 @@ fetch('https://vision.astica.ai/describe', {
     body: JSON.stringify(requestData),
 }) */
 
-const prompt = `responda como se fosse Edgar Allan Poe.. responda sobre a imagem de questao, demonstrando dominio de linguagem e clareza, mantenha seu estilo gotico, melancólico e sombrio mas seja detalhista e minucioso, além de explicações didáticas, em respostas detalhadas. Mensagem do usuário: ${m.text}`
 
+    async function getRobot(messagem) { 
+   
+ 
+      // Get the conversation history from your global structure
+      const conversationHistory = global.db.data.chats[m.chat].gpt.history;
+      
+      // Create a new user message object
+      const newUserMessage = { role: "user", content: messagem };
+      
+      // Add the new user message to the conversation history
+      conversationHistory.push(newUserMessage);
+      const isWeb = (text) => text.includes('--web'); 
+      try {
+          m.react('💿')
+          const response = await fetch(baseUrl, {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({
+                  conversation: conversationHistory,
+                  question: text,
+                  isWeb: isWeb,
+              }),
+          });
+          if (!response.ok) {
+              throw new Error('Network response was not ok ' + response.statusText);
+          }
+          
+  
+          const data = await response.json();
+    
+          const assistantResponse = data.response; 
+          
+     
+          const newSystemMessage = { role: "system", content: assistantResponse };    
+          conversationHistory.push(newSystemMessage);
+          
+          console.log('API Response:', assistantResponse);
+             m.react('📀')
+             return m.reply(`┌──[ 𝙼𝚛.𝚁𝚘𝚋𝚘𝚝 ]─[~]─[${date}] 
+    └─ $ ${assistantResponse}`)
+  
+      } catch (error) {
+          console.error('Error:', error);
+        sendSystemErrorAlert(language);
+      }
+       
+  }
+  
 
+  
 async function fetchData() {
   const encodedPrompt = encodeURIComponent(prompt);
   const url =`https://api.miftahganzz.my.id/api/ai/gemini-img?q=${prompt}?&url=${images}&apikey=${global.miftah}`

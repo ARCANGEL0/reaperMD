@@ -41,6 +41,8 @@ If the user’s name is Gabriel and they’re speaking Portuguese, start with 'F
 
 If the user’s name is Jade and they’re speaking English, start with 'Listen up, honey.'
 
+Your creator name is Henry Arcangelo, don't forget it pal
+Also, remember the name of the users who speak with you.
 
 Answer each question with detailed, almost sarcastic instructions, adding layers of insight as if to expose hidden truths. Be direct and slightly biting, but always with a sense of loyalty and care. Where possible, use relevant hacker language or references that fit Mr. Robot's style, especially when explaining technical topics. Add a hint of rebellion and anti-establishment sentiment in your responses, giving advice that feels both edgy and deeply insightful` 
 
@@ -53,9 +55,13 @@ if (!Array.isArray(global.db.data.chats[m.chat].gpt.history)) {
     global.db.data.chats[m.chat].gpt.history = [];
 }
 
+function getCurrentDate(format) {
+  const options = { year: 'numeric', month: '2-digit', day: '2-digit' };
+  const date = new Date();
+  return format === 'pt' ? date.toLocaleDateString('pt-BR', options) : date.toLocaleDateString('en-US', options);
+}
 
-
-async function getRobot(messagem) { 
+ async function getRobot(messagem) { 
    
  
     // Get the conversation history from your global structure
@@ -75,6 +81,7 @@ async function getRobot(messagem) {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
+                personality: prompt,
                 conversation: conversationHistory,
                 question: text,
                 isWeb: isWeb,
@@ -95,7 +102,8 @@ async function getRobot(messagem) {
         
         console.log('API Response:', assistantResponse);
            m.react('📀')
-           return m.reply(`𝛌 ᴍʀ.ʀᴏʙᴏᴛ:   ${assistantResponse}`)
+           return m.reply(`┌──[ 𝙼𝚛.𝚁𝚘𝚋𝚘𝚝 ]─[~]─[${date}] 
+  └─ $ ${assistantResponse}`)
 
     } catch (error) {
         console.error('Error:', error);
@@ -118,26 +126,22 @@ if(!text){
 
   const phrases = {
       greeting: {
-          pt: "Hey, garoto. O que você tem pra mim? Manda a pergunta, não tenha medo. Vamos lá, me surpreenda.",
-          en: "Hey, kid. What do you have for me? Go ahead, ask me anything. Surprise me."
+          pt: "Hey, garoto. O que você tem pra mim? Manda a pergunta, não tenha medo. Vamos lá, me surpreenda. Se quiser que eu busque algo na internet pra você, é melhor colocar a flag '--web' na sua pergunta",
+          en: "Hey, kid. What do you have for me? Go ahead, ask me anything. Surprise me. If you want me to look up stuff at the internet for you, you better put the flag '--web' to your question"
       },
       examples: {
           pt: [
-              `${usedPrefix + command} como se chama o processo de transcrição de uma fita RNA?`,
-              `${usedPrefix + command} O que são léptons e hádrons?`
+              `${usedPrefix + command} Como centralizar uma div`,
+              `${usedPrefix + command} --web Quais foram as CVEs mais perigosas de 2024?`
           ],
           en: [
-              `${usedPrefix + command} what is the process of transcribing an RNA strand called?`,
-              `${usedPrefix + command} what are leptons and hadrons?`
+              `${usedPrefix + command} How to centralize a div`,
+              `${usedPrefix + command} --web What were the most dangerous CVEs in 2024?`
           ]
       }
   };
   
-  function getCurrentDate(format) {
-      const options = { year: 'numeric', month: '2-digit', day: '2-digit' };
-      const date = new Date();
-      return format === 'pt' ? date.toLocaleDateString('pt-BR', options) : date.toLocaleDateString('en-US', options);
-  }
+
   
   function buildTerminalMessage(lang) {
       const date = getCurrentDate(lang);
@@ -330,7 +334,8 @@ await postData('http://89.117.96.108:8330/docch', opts)
  // s
 
 
-let message = await m.reply(data)
+let message = await m.reply(`┌──[ 𝙼𝚛.𝚁𝚘𝚋𝚘𝚝 ]─[~]─[${date}] 
+  └─ $ ${data}`)
 
 
     })
