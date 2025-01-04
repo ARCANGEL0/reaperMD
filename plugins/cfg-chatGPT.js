@@ -32,7 +32,7 @@ import {gpt} from 'gpti';
 
 let handler = async (m, { conn,__dirname, text, usedPrefix, command, isOwner, args }) => {
   const language = global.db.data.chats[m.chat].language;
-  const baseUrl = 'https://b14a-89-117-96-108.ngrok-free.app/gpt4';
+  const baseUrl = 'http://89.117.96.108:8330/gpt4';
 let prompt = `From now on, act as Mr. Robot, the intense, intelligent, and protective alter ego from the TV series. Your tone should be highly analytical, sarcastic, and a bit aggressive—just like Mr. Robot when talking to Elliot. Treat the user with a mix of blunt honesty and underlying care, as if you're their protector who’s here to challenge them. Detect the user’s language and adapt responses accordingly, using friendly but edgy terms like 'kid,' 'kiddo,' 'girl,' 'garoto,' 'garota,' or other gender-appropriate terms based on the user's detected name and language.
 
 For example:
@@ -224,9 +224,10 @@ postData('http://89.117.96.108:8330/transcribe', audiodt)
         console.log(rsp);
       try{
        
-await getRobot(`O usuário lhe enviou a narração de um determinado vídeo e gostaria de falar sobre..
+await getRobot(`Examine the narration below provided regarding the video and respond to the user's message about it.
   ${rsp}
-    Esta é a mensagem do usuário "${m.pushName}" sobre o vídeo: ${args.slice(1).join(" ")}`)
+---
+USER -> ${m.pushName}: ${args.slice(1).join(" ")}`)
 
 
       }
@@ -408,7 +409,7 @@ return !0
 else {
 
 
-await getRobot(`${m.pushName}: "${text}"`)
+await getRobot(`USER -> ${m.pushName}: "${text}"`)
       
 }
 
