@@ -89,17 +89,6 @@ function getCurrentDate(format) {
     
     // Add the new user message to the conversation history
     conversationHistory.push(newUserMessage);
-    let isWeb;
-    if (text.includes("--web")){
-      text = text.replace(/--web/g, "")
-      isWeb = true
-    }
-    else {
-      isWeb = false
-    }
- 
- 
-  
     try {
         m.react('💿')
         const response = await fetch(baseUrl, {
@@ -108,10 +97,8 @@ function getCurrentDate(format) {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-              
                 conversation: conversationHistory,
                 question: messagem,
-                isWeb: isWeb,
             }),
         });
         if (!response.ok) {
@@ -159,7 +146,6 @@ async function getVision(messagem,link) {
   
   // Add the new user message to the conversation history
   conversationHistory.push(newUserMessage);
-  const isWeb = (text) => text.includes('--web'); 
   try {
       m.react('💿')
       const response = await fetch(visionUrl, {
