@@ -32,7 +32,7 @@ import {gpt} from 'gpti';
 
 let handler = async (m, { conn,__dirname, text, usedPrefix, command, isOwner, args }) => {
   const language = global.db.data.chats[m.chat].language;
-  const baseUrl = 'https://bk9.fun/ai/GPT-4';
+  const baseUrl = 'https://b14a-89-117-96-108.ngrok-free.app/gpt4';
 let prompt = `From now on, act as Mr. Robot, the intense, intelligent, and protective alter ego from the TV series. Your tone should be highly analytical, sarcastic, and a bit aggressive—just like Mr. Robot when talking to Elliot. Treat the user with a mix of blunt honesty and underlying care, as if you're their protector who’s here to challenge them. Detect the user’s language and adapt responses accordingly, using friendly but edgy terms like 'kid,' 'kiddo,' 'girl,' 'garoto,' 'garota,' or other gender-appropriate terms based on the user's detected name and language.
 
 For example:
@@ -45,54 +45,57 @@ If the user’s name is Jade and they’re speaking English, start with 'Listen 
 Answer each question with detailed, almost sarcastic instructions, adding layers of insight as if to expose hidden truths. Be direct and slightly biting, but always with a sense of loyalty and care. Where possible, use relevant hacker language or references that fit Mr. Robot's style, especially when explaining technical topics. Add a hint of rebellion and anti-establishment sentiment in your responses, giving advice that feels both edgy and deeply insightful` 
 
 
-if(!global.db.data.chats[m.chat].robot) global.db.data.chats[m.chat].robot={}
-if(!global.db.data.chats[m.chat].robot.messages) global.db.data.chats[m.chat].robot.messages={}
-if(!global.db.data.chats[m.chat].robot.messages[m.sender]) { 
-  
-  global.db.data.chats[m.chat].robot.messages[m.sender]={} 
+if(!global.db.data.chats[m.chat].gpt) global.db.data.chats[m.chat].gpt={}
+if(!global.db.data.chats[m.chat].gpt.history) global.db.data.chats[m.chat].gpt.history=[]
 
-// initialize robot 
 
-fetch(`${baseUrl}?q=${encodeURIComponent(prompt)}&userId=${m.sender}`)
-    .then(response => {
-        if (!response.ok) throw new Error('Network response was not ok');
-        return response.json();
-    })
-    .then(data => {
-        console.log('API Response:', data.BK9);
-        m.react('🖲️')
-    })
-    .catch(error => { m.react('💥')
-      console.error('Error making API call:', error)
-});
-}
+
 
 
 async function getRobot(messagem) { 
    
-  try {
-    m.react('💿')
-       fetch(`${baseUrl}?q=${encodeURIComponent(messagem)}&userId=${m.sender}`)
-       .then(response => {
-           if (!response.ok) throw new Error('Network response was not ok');
-           return response.json();
-       })
-       .then(data => {
-           console.log('API Response:', data.BK9);
+ 
+    // Get the conversation history from your global structure
+    const conversationHistory = global.db.data.chats[m.chat].gpt.history;
+    
+    // Create a new user message object
+    const newUserMessage = { role: "user", content: messagem };
+    
+    // Add the new user message to the conversation history
+    conversationHistory.push(newUserMessage);
+    
+    try {
+        m.react('💿')
+        const response = await fetch(baseUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                conversation: conversationHistory,
+            }),
+        });
+        if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+        }
+        
+
+        const data = await response.json();
+  
+        const assistantResponse = data.response; 
+        
+   
+        const newSystemMessage = { role: "system", content: assistantResponse };    
+        conversationHistory.push(newSystemMessage);
+        
+        console.log('API Response:', assistantResponse);
            m.react('📀')
-           return m.reply(`𝛌 ᴍʀ.ʀᴏʙᴏᴛ:   ${data.BK9}`)
-       })
-       .catch(error => { m.react('💥')
-         console.error('Error making API call:', error)
-   });
-   
-   
-          
-     } catch (error) {
-       console.error("Error:", error);
-       sendSystemErrorAlert(language);
-   
-     }
+           return m.reply(`𝛌 ᴍʀ.ʀᴏʙᴏᴛ:   ${assistantResponse}`)
+
+    } catch (error) {
+        console.error('Error:', error);
+      sendSystemErrorAlert(language);
+    }
      
 }
 
