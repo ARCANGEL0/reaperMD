@@ -66,6 +66,8 @@ export function before(m, { conn , isOwner, nivel, participants}) {
   }
   
   function upgradeMessage(username, currentLevel,coins,ethl) {
+
+    console.log("UPGRADE MESSAGE - LEVELUP!")
       const now = new Date();
       const formattedDate = formatDate(now);
       let previousLevel = currentLevel - 1
