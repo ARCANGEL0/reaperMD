@@ -13,7 +13,6 @@
 //or
 import fs from 'fs'
 import ytdl from 'ytdl-core';
-import GPT4js from "gpt4js";
  import FormData from "form-data"; 
 import fetch from "node-fetch"; 
 import pdf from 'pdf-parse'
@@ -33,7 +32,7 @@ import {gpt} from 'gpti';
 let handler = async (m, { conn,__dirname, text, usedPrefix, command, isOwner, args }) => {
   const language = global.db.data.chats[m.chat].language;
   const baseUrl = 'http://89.117.96.108:8330/gpt4';
-  const visionUrl = 'http://89.117.96.108:8330/gpt4';
+  const visionUrl = 'http://89.117.96.108:8330/vision';
 let prompt = `From now on, act as Mr. Robot, the intense, intelligent, and protective alter ego from the TV series. Your tone should be highly analytical, sarcastic, and a bit aggressive—just like Mr. Robot when talking to Elliot. Treat the user with a mix of blunt honesty and underlying care, as if you're their protector who’s here to challenge them. Detect the user’s language and adapt responses accordingly, using friendly but edgy terms like 'kid,' 'kiddo,' 'girl,' 'garoto,' 'garota,' or other gender-appropriate terms based on the user's detected name and language.
 
 For example:
@@ -84,7 +83,7 @@ function getCurrentDate(format) {
             body: JSON.stringify({
                 personality: prompt,
                 conversation: conversationHistory,
-                question: text,
+                question: messagem,
                 isWeb: isWeb,
             }),
         });
@@ -103,9 +102,12 @@ function getCurrentDate(format) {
         
         console.log('API Response:', assistantResponse);
            m.react('📀')
-           return m.reply(`┌──[ 𝙼𝚛.𝚁𝚘𝚋𝚘𝚝 ]─[~]─[${date}] 
-  └─ $ ${assistantResponse}`)
+           let mensagem = m.reply(`┌──[ 𝙼𝚛.𝚁𝚘𝚋𝚘𝚝 ]─[~]─[${date}] 
+  └─ $ ${assistantResponse}`) 
 
+  global.db.data.chats[m.chat].gpt.lastQuestion = mensagem.key.id
+
+  return mensagem
     } catch (error) {
         console.error('Error:', error);
       sendSystemErrorAlert(language);
@@ -157,9 +159,12 @@ async function getVision(messagem,link) {
       
       console.log('API Response:', assistantResponse);
          m.react('📀')
-         return m.reply(`┌──[ 𝙼𝚛.𝚁𝚘𝚋𝚘𝚝 ]─[~]─[${date}] 
+         let mensagem = m.reply(`┌──[ 𝙼𝚛.𝚁𝚘𝚋𝚘𝚝 ]─[~]─[${date}] 
 └─ $ ${assistantResponse}`)
 
+global.db.data.chats[m.chat].gpt.lastQuestion = mensagem.key.id
+
+return mensagem
   } catch (error) {
       console.error('Error:', error);
     sendSystemErrorAlert(language);

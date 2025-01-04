@@ -21,7 +21,7 @@ let handler = m => m
 handler.before = async function (m,{isCriadora,isAdmin,groupMetadata ,participants,__dirname , conn})
 {
   
-  console.log('TESTE SE PLUGIN 8✅✅✅: ' +m.isCommand)
+
   
    global.db.data.users[m.sender].name = m.pushName
     if (global.db.data.settings.cotacao === undefined) {
