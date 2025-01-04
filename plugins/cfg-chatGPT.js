@@ -119,7 +119,7 @@ function getCurrentDate(format) {
            let mensagem = m.reply(`┌──[ 𝙼𝚛.𝚁𝚘𝚋𝚘𝚝 ]─[~]─[${date}] 
   └─ $ ${assistantResponse}`) 
 
-  global.db.data.chats[m.chat].gpt.lastQuestion = mensagem.key.id
+  global.db.data.chats[m.chat].gpt.lastQuestion = mensagem.id
 
   return mensagem
     } catch (error) {
@@ -177,7 +177,7 @@ async function getVision(messagem,link) {
          let mensagem = m.reply(`┌──[ 𝙼𝚛.𝚁𝚘𝚋𝚘𝚝 ]─[~]─[${date}] 
 └─ $ ${assistantResponse}`)
 
-global.db.data.chats[m.chat].gpt.lastQuestion = mensagem.key.id
+global.db.data.chats[m.chat].gpt.lastQuestion = mensagem.id
 
 return mensagem
   } catch (error) {
