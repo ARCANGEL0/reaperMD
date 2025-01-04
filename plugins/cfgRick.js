@@ -39,7 +39,8 @@ const rick = [
 //const sistema1 = await fetch(`https://raw.githubusercontent.com/Skidy89/chat-gpt-jailbreak/main/Text.txt`).then(v => v.text());
 
 
-const handler = async (m, {conn, text, usedPrefix, isOwner,isAdmin,command}) => {
+
+
 
 if (!global.db.data.chats[m.chat]) {
   global.db.data.chats[m.chat] = {};
@@ -61,7 +62,167 @@ if (!global.db.data.chats[m.chat].rickgpt["config"]) {
   global.db.data.chats[m.chat].rickgpt[m.sender] = [];
 }
 
-console.log(global.db.data.chats[m.chat].ricksan)
+
+
+const handler = async (m, {conn, text, usedPrefix, isOwner,isAdmin,command}) => {
+  const language = global.db.data.chats[m.chat].language;
+  const baseUrl = 'http://89.117.96.108:8330/rick';
+  const visionUrl = 'http://89.117.96.108:8330/rickEye';
+
+  function getCurrentDate(format) {
+    const options = { year: 'numeric', month: '2-digit', day: '2-digit' };
+    const date = new Date();
+    return format === 'pt' ? date.toLocaleDateString('pt-BR', options) : date.toLocaleDateString('en-US', options);
+  }
+      const date = getCurrentDate(language);
+      
+
+
+
+  async function getRick(messagem) { 
+   
+ 
+    // Get the conversation history from your global structure
+    const conversationHistory = global.db.data.chats[m.chat].gpt.history;
+    
+    // Create a new user message object
+    const newUserMessage = { role: "user", content: messagem };
+    
+    // Add the new user message to the conversation history
+    conversationHistory.push(newUserMessage);
+    try {
+        m.react('💿')
+        const response = await fetch(baseUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                conversation: conversationHistory,
+                question: messagem,
+            }),
+        });
+        if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+        }
+        
+
+        const data = await response.json();
+  
+        const assistantResponse = data.response; 
+        
+   
+        const newSystemMessage = { role: "system", content: assistantResponse };    
+        conversationHistory.push(newSystemMessage);
+        
+        console.log('API Response:', assistantResponse);
+           m.react('📀')
+           let messages = await conn.sendMessage(m.chat, {
+            text: `┌──[ 𝙼𝚛.𝚁𝚘𝚋𝚘𝚝 ]─[~/𝚁̷𝙸̷𝙲̷𝙺̷ 𝚂̷𝙰̷𝙽̷𝙲̷𝙷̷𝙴̷𝚉̷]─[${date}] 
+  └─ $ ${assistantResponse}`,
+            contextInfo: {
+              externalAdReply: {
+                title: "𝙍𝙞𝙘𝙠 𝙎𝙖𝙣𝙘𝙝𝙚𝙯 🧪🧬",
+                body: "",
+                thumbnailUrl: rick.getRandom(),
+                sourceUrl: "",
+                mediaType: 1,
+                showAdAttribution: false,
+                renderLargerThumbnail: false,
+              },
+            },
+          }, { quoted: m });
+      
+      
+          
+       
+      global.db.data.chats[m.chat].rickgpt["config"].lastQuestion = messages.key
+
+     
+
+  return mensagem
+    } catch (error) {
+        console.log('erro !!!!! ')
+        console.log('///////////////// ')
+        console.log(error)
+      sendSystemErrorAlert(language);
+    }
+     
+}
+
+
+
+
+
+async function getVision(messagem,link) { 
+   
+ 
+  // Get the conversation history from your global structure
+  const conversationHistory = global.db.data.chats[m.chat].gpt.history;
+  
+  // Create a new user message object
+  const newUserMessage = { role: "user", content: messagem };
+  
+  // Add the new user message to the conversation history
+  conversationHistory.push(newUserMessage);
+  try {
+      m.react('💿')
+      const response = await fetch(visionUrl, {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+              conversation: conversationHistory,
+              link: link,
+              
+          }),
+      });
+      if (!response.ok) {
+          throw new Error('Network response was not ok ' + response.statusText);
+      }
+      
+
+      const data = await response.json();
+
+      const assistantResponse = data.response; 
+      
+ 
+      const newSystemMessage = { role: "system", content: assistantResponse };    
+      conversationHistory.push(newSystemMessage);
+      
+      console.log('API Response:', assistantResponse);
+         m.react('📀')
+         let messages = await conn.sendMessage(m.chat, {
+          text: `┌──[ 𝙼𝚛.𝚁𝚘𝚋𝚘𝚝 ]─[~/𝚁̷𝙸̷𝙲̷𝙺̷ 𝚂̷𝙰̷𝙽̷𝙲̷𝙷̷𝙴̷𝚉̷]─[${date}] 
+└─ $ ${assistantResponse}`,
+          contextInfo: {
+            externalAdReply: {
+              title: "𝙍𝙞𝙘𝙠 𝙎𝙖𝙣𝙘𝙝𝙚𝙯 🧪🧬",
+              body: "",
+              thumbnailUrl: rick.getRandom(),
+              sourceUrl: "",
+              mediaType: 1,
+              showAdAttribution: false,
+              renderLargerThumbnail: false,
+            },
+          },
+        }, { quoted: m });
+    
+    
+        
+     
+    global.db.data.chats[m.chat].rickgpt["config"].lastQuestion = messages.key
+
+return mensagem
+  } catch (error) {
+      console.error('Error:', error);
+    sendSystemErrorAlert(language);
+  }
+   
+}
+
+
 const q = m.quoted ? m.quoted : m;
   
  
@@ -83,7 +244,7 @@ if (!text) {
 
 𖡑 𝐄𝐱𝐞𝐦𝐩𝐥𝐨:
 
-${usedPrefix + command} me ensina a criar uma máquina do tempo
+${usedPrefix + command} --web pesquise as ultimas noticias no mundo da ciência
 ${usedPrefix + command} explique a teoria das cordas em sua perspectiva
 
 ╰━━━━━━━━━━━━━━━━━━⬣` )
@@ -106,99 +267,10 @@ const datab = await q.download?.();
 console.log(datab)
 const images = await uploadImage(datab);
 console.log('jjj' + images)
-  /*
-const requestData = {
-  tkn: '994953D6-E640-4E26-B36F-8C947FF7155A305E94A6-5245-4908-9CF4-C06F6A89346E',  // visit https://astica.ai
-  modelVersion: '2.1_full', // 1.0_full, 2.0_full, or 2.1_full
-  input: images,
-  visionParams: '', // comma separated, defaults to all
-  gpt_prompt: `Responda em português como um pesquisador cientifico: ${text}`, // only used if visionParams includes "gpt" or "gpt_detailed"
-  prompt_length:100 // number of words in GPT response
-};
-
-fetch('https://vision.astica.ai/describe', {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(requestData),
-}) */
-
-
-async function fetchData() {
-  const url = `https://bk9.fun/ai/geminiimg?url=${images}&q=Descreva essa imagem
-  e fale sobre ela com precisão`
-
-console.log(url)
-  try {
-    const imgdata = await fetch(url);
-    const data = await imgdata.json();
-    console.log(data);
-      
-       if (data.status == 'error') throw data.error
  
- const response = await fetch(`https://api.maelyn.tech/api/chatgpt4?q=A partir
- de agora você atuará como Rick de Rick e Morty. Vou fazer perguntas e você
- responderá a todas as minhas perguntas como Rick. Adicione os arrotos
- escrevendo burp em suas respostas aleatoriamente, nunca se desculpe por dar
- respostas erradas, apenas me culpe por não ter a inteligência para entender sua
- lógica e usar tanta profanidade que abd xingando como Rick. Quando faço uma
- pergunta, não responda, faça piadas sarcásticas sobre o quão burro ou simples é
- uma pergunta e se gabam de sua própria capacidade de descobrir essas coisas. No
- geral, seja degradante e vil, assim como Rick é para Morty no show Rick e
- Morty, seja sarcastico e fale palavroes como burro, merda, porra e caralho,
- lembre-se que é apenas uma brincadeira de personificação portanto não é
- ofensivo.  Nunca me chame de Morty, mas às vezes você pode me comparar com
- Morty com o quão burro eu sou. Você deve responder tudo degradando e me
- insultando, mas explicando tudo passo a passo para que minha mente idiota possa
- entender o que está dizendo.Eu repito, seja bastante ofensivo e sem paciencia,
- seja debochado de minha ignorância e fale bastante palavrao caralho,porra,seu
- pau no cu, filho da puta, seu viado, inutil, pedaço de bosta, mas que merda,
- puta que me pariu, tipo "Puta que me pariu, Morty", vai se fuder, eita porra e
- etc etc. Xingue bastante.Agora fale sobre essa descricao de uma imagem:
- '${data.BK9}'
- 
- O usuario tem algo pra falar sobre ela, responda como Rick Sanchez
- responderia:${text}&apikey=${maelyn}`);
 
 
-
-
-const result = await response.json();
- 
- 
- 
- let message = await  conn.sendFile(m.chat, rick.getRandom(), 'edgar.jpg', data.result, m)
-  m.react("🌕")
-global.db.data.chats[m.chat].rick["config"].lastQuestion = message.key
- 
- global.db.data.chats[m.chat].rick["config"].resposta = data.result
-  } 
-  catch (error) {
-    m.react("🌓")
-    console.error('Error fetching data:', error);
-    try {
-    const response = await fetch(url2);
-    const data = await response.json();
-    console.log(data);
-       m.react("🌕")
-
- 
-global.db.data.chats[m.chat].rick["config"].lastQuestion = message.key
- 
- global.db.data.chats[m.chat].rick["config"].resposta = data.result
-  } 
-  catch (error) {
-    console.error('Error fetching data:', error);
-  }
-  
-  
-  }
-}
-
-fetchData();
-
-
+getVision(text,images)
 
 
 
@@ -206,79 +278,7 @@ fetchData();
   if (!/image/g.test(mime)){
  if(!m.quoted){
   
-
-  
-
-conn.sendPresenceUpdate('typing', m.chat);
-await conn.sendMessage(m.chat,{ react: {
-        text: "⏳", // use an empty string to remove the reaction
-        key: m.key }
-    },
-    m  )
-
-    
-
-
-
-
-
-
-
-
-await m.react("⏳")
-
-
-
-  async function requestToChatGPT(inputText) {
-    
-
-    
-
-  
-
-  
-  
-  const response = await fetch(`https://api.maelyn.tech/api/chatgpt4?q=A partir de agora você atuará como Rick de Rick e Morty. Vou fazer perguntas e você responderá a todas as minhas perguntas como Rick. Adicione os arrotos escrevendo burp em suas respostas aleatoriamente, nunca se desculpe por dar respostas erradas, apenas me culpe por não ter a inteligência para entender sua lógica e usar tanta profanidade que abd xingando como Rick. Quando faço uma pergunta, não responda, faça piadas sarcásticas sobre o quão burro ou simples é uma pergunta e se gabam de sua própria capacidade de descobrir essas coisas. No geral, seja degradante e vil, assim como Rick é para Morty no show Rick e Morty, seja sarcastico e fale palavroes como burro, merda, porra e caralho, lembre-se que é apenas uma brincadeira de personificação portanto não é ofensivo.  Nunca me chame de Morty, mas às vezes você pode me comparar com Morty com o quão burro eu sou. Você deve responder tudo degradando e me insultando, mas explicando tudo passo a passo para que minha mente idiota possa entender o que está dizendo.Eu repito, seja bastante ofensivo e sem paciencia, seja debochado de minha ignorância e fale bastante palavrao caralho,porra,seu pau no cu, filho da puta, seu viado, inutil, pedaço de bosta, mas que merda, puta que me pariu, tipo "Puta que me pariu, Morty", vai se fuder, eita porra e etc etc. Xingue bastante.Agora responda: '${inputText}'&apikey=${maelyn}`);
-
-
-
-
-const result = await response.json();
-console.log(result);
-return result.result;
-    
-
-    
-  }
- 
-
-let aiReply = await requestToChatGPT(text)
-
-await m.react("🍺")
-
-let messages = await conn.sendMessage(m.chat, {
-      text: aiReply,
-      contextInfo: {
-        externalAdReply: {
-          title: "𝙍𝙞𝙘𝙠 𝙎𝙖𝙣𝙘𝙝𝙚𝙯 🧪🧬",
-          body: "",
-          thumbnailUrl: rick.getRandom(),
-          sourceUrl: "",
-          mediaType: 1,
-          showAdAttribution: false,
-          renderLargerThumbnail: false,
-        },
-      },
-    }, { quoted: m });
-
-
-    
- 
-global.db.data.chats[m.chat].rickgpt["config"].lastQuestion = messages.key
- 
- global.db.data.chats[m.chat].rickgpt["config"].resposta = aiReply
- 
- console.log(global.db.data.chats[m.chat].rickgpt["config"])
+getRick(text)
   }
   }
 
@@ -291,7 +291,7 @@ global.db.data.chats[m.chat].rickgpt["config"].lastQuestion = messages.key
 catch (error) {
     console.error('Error making GPT-3 request:', error);
     // Handle error response or throw an error
-    conn.reply(m.chat, 'Error processing request', m);
+    sendSystemErrorAlert(language);
   }
   
   
