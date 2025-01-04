@@ -61,7 +61,8 @@ function getCurrentDate(format) {
   const date = new Date();
   return format === 'pt' ? date.toLocaleDateString('pt-BR', options) : date.toLocaleDateString('en-US', options);
 }
-
+    const date = getCurrentDate(language);
+    
  async function getRobot(messagem) { 
    
  
@@ -207,7 +208,7 @@ if(!text){
 
   
   function buildTerminalMessage(lang) {
-      const date = getCurrentDate(lang);
+    
       const greeting = phrases.greeting[lang];
       const examples = phrases.examples[lang].map(question => `> $ ${question}`).join('\n');
   
