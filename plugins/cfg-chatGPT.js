@@ -89,8 +89,14 @@ function getCurrentDate(format) {
     
     // Add the new user message to the conversation history
     conversationHistory.push(newUserMessage);
-    const isWeb = (text) => text.includes('--web');
-    if (text.includes("--web-")) text = text.replace(/--web-/g, "");
+    let isWeb;
+    if (text.includes("--web")){
+      text = text.replace(/--web/g, "")
+      isWeb = true
+    }
+    else {
+      isWeb = false
+    }
  
  
   
