@@ -26804,7 +26804,7 @@
       },
       "users": {
         "351927285125@s.whatsapp.net": {
-          "exp": 125,
+          "exp": 128,
           "limit": 6666,
           "role": "𝑵𝒆𝒗𝒆𝒓𝒎𝒐𝒓𝒆 ༒︎\n𝙼𝚎𝚜𝚝𝚛𝚎 𝚍𝚘𝚜 𝚌𝚘𝚛𝚟𝚘𝚜",
           "money": 66666,
@@ -26817,7 +26817,7 @@
           "silenced": true,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735980592313,
+          "lastMessageTime": 1735990059708,
           "messageCount": 1,
           "pontos": 0,
           "tempBan": false,
@@ -26836,7 +26836,7 @@
           "usuariosRoubados": []
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 7768,
+          "exp": 8169,
           "limit": 0,
           "role": "",
           "money": 0,
@@ -26880,7 +26880,42 @@
       "sDemote": "",
       "delete": true,
       "jogos": true,
-      "gpt": true,
+      "gpt": {
+        "history": [
+          {
+            "role": "user",
+            "content": "𝙷𝚎𝚗𝚛𝚢 𝙰𝚛𝚌𝚊𝚗𝚐𝚎𝚕𝚘: \"ola\""
+          },
+          {
+            "role": "system",
+            "content": "*adjusts hoodie, looks intensely*\n\nOlá, garoto. Noticed you typed my name with some fancy Unicode characters. Trying to be subtle? *smirks* \n\nListen up - I see right through those little digital tricks. You want my attention? Well, you've got it. What's running through that mind of yours? Some grand plan to disrupt the system? Or just another mundane query waiting to be decoded?\n\n*leans in closer*\n\nI'm not here to waste time. Speak your mind, and let's see if we can crack whatever puzzle you're presenting. The world's full of noise, but real communication? That's an art form. So go ahead - what's your signal in all this digital static?\n\n*raises an eyebrow, waiting*"
+          },
+          {
+            "role": "user",
+            "content": "𝙷𝚎𝚗𝚛𝚢 𝙰𝚛𝚌𝚊𝚗𝚐𝚎𝚕𝚘: \"Sabe meu nome?\""
+          },
+          {
+            "role": "system",
+            "content": "Fala aí, garoto. Of course I know your name. You think I’m just some mindless bot? Nah, I’m tuned in, always watching the patterns. But let’s not get too cozy here. Names are just labels, right? What really matters is what you do with that name. \n\nSo, what’s the game plan? You got something on your mind, or are we just playing a little guessing game? Spill it. I’m all ears, but don’t expect me to sugarcoat anything. You want the truth? I’ll give it to you straight, no chaser. What’s your next move in this digital chess match? *leans back, arms crossed, waiting for your response*"
+          },
+          {
+            "role": "user",
+            "content": "𝙷𝚎𝚗𝚛𝚢 𝙰𝚛𝚌𝚊𝚗𝚐𝚎𝚕𝚘: \"oq eu perguntei antes?\""
+          },
+          {
+            "role": "system",
+            "content": "Olha só, garoto. Você está jogando um jogo de gato e rato comigo? *estreita os olhos* \n\nAntes de me perguntar se eu sabia seu nome, você simplesmente disse \"ola\". Nada mais, nada menos. Parece que está tentando me testar, verificar meus limites. Bem, deixa eu te dizer uma coisa: eu não caio em provocações fáceis.\n\nSe quer jogar, vamos jogar. Mas não espere que eu siga um script previsível. Cada movimento seu, eu vou dissecar, analisar, desconstruir. *sorri de lado*\n\nEntão, qual é o próximo lance? Vai ficar nesse jogo de meias palavras ou vai soltar o que realmente quer? Estou ouvindo. *cruza os braços, esperando*"
+          },
+          {
+            "role": "user",
+            "content": "𝙷𝚎𝚗𝚛𝚢 𝙰𝚛𝚌𝚊𝚗𝚐𝚎𝚕𝚘: \"oq e malware\""
+          },
+          {
+            "role": "system",
+            "content": "*ajusta os óculos, olha fixamente*\n\nMalware, garoto. É o pesadelo digital que ninguém quer encontrar. \n\nTradução técnica: Software malicioso projetado para invadir, danificar ou comprometer sistemas computacionais sem consentimento. Pode ser:\n\n🔹 Vírus\n🔹 Trojans\n🔹 Ransomware\n🔹 Spyware\n🔹 Worms\n\nObjetivo? Destruir, roubar dados, espionar, sequestrar sistemas. É como um vírus biológico, mas no mundo digital. Cada linha de código é uma arma silenciosa.\n\n*olha intensamente*\n\nQuer que eu detalhe cada tipo? Ou prefere continuar nadando na superfície dessa realidade digital perigosa? \n\n*sorri de lado, desafiador*\n\nEscolha sabiamente, kiddo."
+          }
+        ]
+      },
       "expira": "2025-01-22T09:12:19.092Z",
       "acoes": true,
       "busca": true,
@@ -28854,7 +28889,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735981028398,
+          "lastMessageTime": 1735990235130,
           "messageCount": 1,
           "pontos": 0,
           "tempBan": false,
@@ -28955,7 +28990,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735952787123,
+          "lastMessageTime": 1735989951847,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -28997,7 +29032,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735987271872,
+          "lastMessageTime": 1735994464383,
           "messageCount": 1,
           "pontos": 0,
           "tempBan": false,
@@ -29038,7 +29073,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735938909146,
+          "lastMessageTime": 1735994558019,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -29177,7 +29212,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735967139019,
+          "lastMessageTime": 1735990340524,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -29218,7 +29253,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735968940967,
+          "lastMessageTime": 1735993203759,
           "messageCount": 1,
           "pontos": 0,
           "acaoTimer": "2024-11-26T21:35:02.700Z",
@@ -29243,7 +29278,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735946259754,
+          "lastMessageTime": 1735992910314,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -29332,7 +29367,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735985847280,
+          "lastMessageTime": 1735988203650,
           "messageCount": 1,
           "pontos": 0,
           "acaoTimer": "2024-12-22T13:35:39.919Z",
@@ -30042,7 +30077,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735948758369,
+          "lastMessageTime": 1735994335041,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -30344,7 +30379,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735951025314,
+          "lastMessageTime": 1735989733164,
           "messageCount": 1,
           "pontos": 0,
           "acaoTimer": "2024-12-22T16:17:05.932Z",
@@ -30920,7 +30955,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735952171735,
+          "lastMessageTime": 1735993150489,
           "messageCount": 1,
           "pontos": 0
         },
@@ -31861,7 +31896,26 @@
       "sDemote": "",
       "delete": true,
       "jogos": true,
-      "gpt": true,
+      "gpt": {
+        "history": [
+          {
+            "role": "user",
+            "content": "𝙷𝚎𝚗𝚛𝚢 𝙰𝚛𝚌𝚊𝚗𝚐𝚎𝚕𝚘: \"me fale sobre os tipos de malware e especificamente o primeiro ransomware global, wannacry e metodos de descriptografar, ou isolar o mesmo\""
+          },
+          {
+            "role": "system",
+            "content": "Fala aí, garoto. Vamos lá, porque você precisa entender essa bagunça chamada malware, e mais especificamente, o que foi o WannaCry, o primeiro ransomware global que fez a galera suar frio. \n\n### Tipos de Malware\n\n1. **Vírus**: Esse é o clássico. Ele se anexa a arquivos e se espalha como uma praga. O problema é que, assim como uma má ideia, você só percebe quando já tá tudo ferrado.\n\n2. **Worms**: Eles não precisam de um arquivo hospedeiro. Eles se replicam por conta própria e podem se espalhar pela rede. Imagine um vírus que não precisa de convite pra festa.\n\n3. **Trojan**: Aqui, a coisa fica mais traiçoeira. Ele se disfarça como um software legítimo. Você clica, e BAM! Você abriu a porta pra um intruso.\n\n4. **Spyware**: Esse é o espião da turma. Ele se instala no seu sistema e coleta dados sem você saber. É como ter um amigo que só quer saber da sua vida.\n\n5. **Adware**: Basicamente, é publicidade indesejada. Não é tão malvado quanto os outros, mas incomoda pra caramba.\n\n6. **Ransomware**: E aqui chegamos ao WannaCry. Ele criptografa seus arquivos e exige um resgate. É como um sequestro digital. \n\n### WannaCry: O Primeiro Ransomware Global\n\nLançado em maio de 2017, WannaCry explorou uma vulnerabilidade no Windows chamada EternalBlue. Essa vulnerabilidade foi originalmente descoberta pela NSA, mas vazou e caiu nas mãos erradas. O WannaCry se espalhou rapidamente, afetando mais de 230 mil computadores em 150 países. A galera ficou desesperada, e muitos pagaram o resgate em Bitcoin, acreditando que isso resolveria seus problemas. Spoiler: não resolveu.\n\n### Métodos de Descriptografar ou Isolar\n\n1. **Backup**: A melhor defesa é ter backups regulares. Se você tiver, simplesmente restaure seus arquivos e siga em frente.\n\n2. **Descriptografadores**: Às vezes, a comunidade de segurança consegue desenvolver ferramentas para descriptografar arquivos sequestrados. Para WannaCry, por exemplo, houve uma ferramenta criada pela MalwareTech que ajudou algumas vítimas. Mas isso não é garantido.\n\n3. **Isolamento**: Se você suspeitar que seu sistema foi infectado, desconecte-o da rede imediatamente. Isso impede que o ransomware se espalhe e proteja outros dispositivos.\n\n4. **Antivírus e Atualizações**: Mantenha seu antivírus atualizado e aplique patches de segurança regularmente. O WannaCry se aproveitou de sistemas desatualizados. Não seja esse cara.\n\n5. **Educação e Conscientização**: Conheça os sinais de phishing e outros métodos de infecção. Não abra e-mails de remetentes desconhecidos. Isso é básico, mas parece que muita gente ainda não aprendeu.\n\nEntão, garoto, agora você tem um mapa do tesouro e as ferramentas pra não ser mais uma vítima. Mas lembre-se: a segurança digital é uma batalha constante. Esteja sempre um passo à frente."
+          },
+          {
+            "role": "user",
+            "content": "𝙷𝚎𝚗𝚛𝚢 𝙰𝚛𝚌𝚊𝚗𝚐𝚎𝚕𝚘: \"valeu paizao\""
+          },
+          {
+            "role": "system",
+            "content": "Model not found or too long input. Or any other error (xD)"
+          }
+        ]
+      },
       "expira": "2025-02-13T00:00:00.000Z",
       "acoes": true,
       "busca": true,
@@ -36599,10 +36653,10 @@
       "lastSuccess": 1735955124909
     },
     "dono-update.js": {
-      "total": 36,
-      "success": 36,
-      "last": 1734858861576,
-      "lastSuccess": 1734858861576
+      "total": 39,
+      "success": 39,
+      "last": 1735989973305,
+      "lastSuccess": 1735989973305
     },
     "menu-menu.js": {
       "total": 84,
@@ -36659,10 +36713,10 @@
       "lastSuccess": 1731429934683
     },
     "cfg-chatGPT.js": {
-      "total": 242,
-      "success": 241,
-      "last": 1735948762113,
-      "lastSuccess": 1735948762113
+      "total": 250,
+      "success": 247,
+      "last": 1735990230219,
+      "lastSuccess": 1735990230219
     },
     "dono-clearallsession.js": {
       "total": 6,
@@ -37196,7 +37250,7 @@
           "conta": "430638986273",
           "sepa": "SE9625115229047742",
           "wallet": "WAL-2740855773",
-          "saldo": 2030.5033180659925
+          "saldo": 2030.5996792512656
         }
       },
       "rendimento": 0.00002372811735756406
