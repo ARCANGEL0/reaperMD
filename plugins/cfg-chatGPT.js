@@ -152,7 +152,7 @@ async function getVision(messagem,link) {
   const isWeb = (text) => text.includes('--web'); 
   try {
       m.react('💿')
-      const response = await fetch(baseUrl, {
+      const response = await fetch(visionUrl, {
           method: 'POST',
           headers: {
               'Content-Type': 'application/json',
