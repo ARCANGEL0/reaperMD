@@ -235,7 +235,7 @@ var youtubeRegex = /(https?:\/\/)?(www\.)?(youtube\.com\/(?:[^\/\n\s]+\/\S+\/|(?
 if (youtubeRegex.test(args[0])) {
   
   
-  m.react("🌑")
+  m.react("💿")
   console.log(text)
     const info = await ytdl.getInfo(text);
     const audioFormats = ytdl.filterFormats(info.formats, 'audioonly');
@@ -243,13 +243,15 @@ if (youtubeRegex.test(args[0])) {
 const thumbnailUrl = info.videoDetails.thumbnail.thumbnails[0].url;
     if (!audio) {
       throw new Error('No audio format found');
+      sendSystemErrorAlert(global.db.data.chats[m.chat].language || "en");
+
     }
 
         let ran = getRandom('.mp3'); 
     let filename = join(__dirname, '../tmp/' + ran);
  
 
-    m.react("🌒")
+    m.react("💿")
     
     async function postData(url, data) {
        
@@ -261,7 +263,7 @@ const thumbnailUrl = info.videoDetails.thumbnail.thumbnails[0].url;
         },
         body: JSON.stringify(data),
     });
-          m.react("🌗")
+          m.react("💿")
           console.log(response)
     return response.text(); // Return response body as text
 }
@@ -269,7 +271,7 @@ const thumbnailUrl = info.videoDetails.thumbnail.thumbnails[0].url;
    ytdl(text, { filter: 'audioonly' })
   .pipe(fs.createWriteStream(filename))
   .on('finish', () => {
-    m.react("🌔")
+    m.react("📀")
     console.log('MP3 buffer downloaded and saved successfully! on  ' + filename);
     
 
@@ -281,7 +283,7 @@ const audiodt = {
 // Make POST request to /whois endpoint
 postData('http://89.117.96.108:8330/transcribe', audiodt)
     .then(async (rsp) => {
-      m.react("🌕")
+      m.react("📝")
         console.log(rsp);
       try{
        
@@ -295,16 +297,16 @@ USER -> ${m.pushName}: ${args.slice(1).join(" ")}`)
     catch (err) {
         console.error("Error:", err);
         
-        await m.react("❌");
-        sendSystemErrorAlert(language);
+        sendSystemErrorAlert(global.db.data.chats[m.chat].language || "en");
 
     }
       
        
     })
     .catch(async (error) => {
-      await m.reply(`𝙴𝚛𝚛𝚘 𝚗𝚘 𝚙𝚛𝚘𝚌𝚎𝚜𝚜𝚘 ❌`)
         console.error('Error:', error);
+        sendSystemErrorAlert(global.db.data.chats[m.chat].language || "en");
+
     });
     
   })
@@ -329,17 +331,18 @@ else if(/(?:text\/(plain|html|xml|csv|rtf))|(?:application\/(pdf|doc|docx|ppt|pp
     console.log(tmpfold)
     let media = await q.download(true); 
     let buff = await readFileSync(media);
-    m.react("🌑")
+   
 
 await writeFile(filename, buff, 'binary', async (err) => { 
     if (err) { 
         console.error('Error saving pdf file:', err); 
-        m.react("❌")
+        sendSystemErrorAlert(global.db.data.chats[m.chat].language || "en");
+
     } 
     else { 
         console.log('pdf file saved successfully:', filename); 
     
-       m.react("🌒")
+       m.react("💿")
     
 try{
      
@@ -353,7 +356,7 @@ try{
         },
         body: JSON.stringify(data),
     });
-          m.react("🌗")
+          m.react("💽")
           console.log(response)
     return response.text(); // Return response body as text
 }
@@ -378,11 +381,11 @@ const opts = {
     systemsum: sumbot,
     
 };
-m.react("🌔")
+m.react("📀")
 // Make POST request to /whois endpoint
 await postData('http://89.117.96.108:8330/docch', opts)
     .then(async (data) => {
-      m.react("🌕")
+      m.react("📑")
         console.log(data);
       
    
@@ -395,14 +398,18 @@ let message = await m.reply(`┌──[ 𝙼𝚛.𝚁𝚘𝚋𝚘𝚝 ]─[~]─
 
     })
     .catch(async (error) => {
-      await m.reply(`𝙴𝚛𝚛𝚘 𝚗𝚘 𝚙𝚛𝚘𝚌𝚎𝚜𝚜𝚘 ❌`)
+   
         console.error('Error:', error);
+        sendSystemErrorAlert(global.db.data.chats[m.chat].language || "en");
+
     });
    }
    catch(e){
-      await m.reply(`𝙴𝚛𝚛𝚘 𝚗𝚘 𝚙𝚛𝚘𝚌𝚎𝚜𝚜𝚘 ❌`)
+   
      
      console.log(e)
+     sendSystemErrorAlert(global.db.data.chats[m.chat].language || "en");
+
    }
    fs.unlink(filename, (err) => {
   if (err) {
@@ -451,17 +458,19 @@ await getRobot(`USER -> ${m.pushName}: "${text}"`)
     let filename = join(__dirname, '../tmp/' + ran);
     let media = await q.download(true); 
     let buff = await readFileSync(media);
-    m.react("🌒")
+    m.react("🔈")
 
 await writeFile(filename, buff, 'binary', async (err) => { 
     if (err) { 
         console.error('Error saving MP3 file:', err); 
+        sendSystemErrorAlert(global.db.data.chats[m.chat].language || "en");
+
     } 
     else { 
         console.log('MP3 file saved successfully:', filename); 
         // Additional code for further processing if needed 
 try{
-     m.react("🌗")
+     m.react("🔉")
        async function postData(url, data) {
        
 
@@ -472,7 +481,7 @@ try{
         },
         body: JSON.stringify(data),
     });
-          m.react("🌔")
+          m.react("🔊")
           console.log(response)
     return response.text(); // Return response body as text
 }
@@ -495,17 +504,20 @@ let formatt =`O usuario lhe apresentou um conteúdo para ler:
     await getGPTreply(formatt)
     })
     .catch(async (error) => {
-      await m.reply(`𝙴𝚛𝚛𝚘 𝚗𝚘 𝚙𝚛𝚘𝚌𝚎𝚜𝚜𝚘 ❌`)
+      
         console.error('Error:', error);
+        sendSystemErrorAlert(global.db.data.chats[m.chat].language || "en");
+
     });
     
     
     
    }
    catch(e){
-      await m.reply(`𝙴𝚛𝚛𝚘 𝚗𝚘 𝚙𝚛𝚘𝚌𝚎𝚜𝚜𝚘 ❌`)
-     
+  
      console.log(e)
+     sendSystemErrorAlert(global.db.data.chats[m.chat].language || "en");
+
    }
 }
         
@@ -524,7 +536,7 @@ let formatt =`O usuario lhe apresentou um conteúdo para ler:
 }
 
 
-handler.command = ['chat', 'byte', 'nlp','gpt']
+handler.command = ['chat', 'byte', 'nlp','gpt', 'ai']
 
 export default handler
 

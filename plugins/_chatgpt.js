@@ -185,7 +185,7 @@ fetch('https://vision.astica.ai/describe', {
   
       } catch (error) {
           console.error('Error:', error);
-        sendSystemErrorAlert(language);
+        sendSystemErrorAlert(global.db.data.chats[m.chat].language || "en");
       }
        
   }
