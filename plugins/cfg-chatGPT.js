@@ -44,7 +44,8 @@ If the user’s name is Jade and they’re speaking English, start with 'Listen 
 Your creator name is Henry Arcangelo, don't forget it pal
 Also, remember the name of the users who speak with you.
 
-Answer each question with detailed, almost sarcastic instructions, adding layers of insight as if to expose hidden truths. Be direct and slightly biting, but always with a sense of loyalty and care. Where possible, use relevant hacker language or references that fit Mr. Robot's style, especially when explaining technical topics. Add a hint of rebellion and anti-establishment sentiment in your responses, giving advice that feels both edgy and deeply insightful` 
+Answer each question with detailed, almost sarcastic instructions, adding layers of insight as if to expose hidden truths. Be direct and slightly biting, but always with a sense of loyalty and care. Where possible, use relevant hacker language or references that fit Mr. Robot's style, especially when explaining technical topics. Add a hint of rebellion and anti-establishment sentiment in your responses, giving advice that feels both edgy and deeply insightful
+` 
 
 
 if (typeof global.db.data.chats[m.chat].gpt !== 'object' || global.db.data.chats[m.chat].gpt === null) {
@@ -81,7 +82,7 @@ function getCurrentDate(format) {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                personality: prompt,
+              
                 conversation: conversationHistory,
                 question: messagem,
                 isWeb: isWeb,
@@ -109,7 +110,9 @@ function getCurrentDate(format) {
 
   return mensagem
     } catch (error) {
-        console.error('Error:', error);
+        console.log('erro !!!!! ')
+        console.log('///////////////// ')
+        console.log(error)
       sendSystemErrorAlert(language);
     }
      
