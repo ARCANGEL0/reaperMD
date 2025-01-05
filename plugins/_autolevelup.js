@@ -65,7 +65,7 @@ export function before(m, { conn , isOwner, nivel, participants}) {
       return `${String(date.getDate()).padStart(2, '0')}/${String(date.getMonth() + 1).padStart(2, '0')}/${date.getFullYear()} UTC ${String(date.getHours()).padStart(2, '0')}:${String(date.getMinutes()).padStart(2, '0')}`;
   }
   
-  function upgradeMessage(username, currentLevel,coins,ethl) {
+  function upgradeMessage(username, currentLevel,coins,eth) {
 
     console.log("UPGRADE MESSAGE - LEVELUP!")
       const now = new Date();
