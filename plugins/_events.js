@@ -937,12 +937,12 @@ dados[Object.keys(dados)[1]].rodada++
 global.db.data.chats[m.chat].truco.currentTurn = global.db.data.chats[m.chat].truco.players[1]
   
     
-         return ` ━━━━━━━━━⬣⬣━━━━━━━━
-               _Fold_
-  𓄿 @${global.db.data.chats[m.chat].truco.players[1].split("@")[0]} _*ganhou*_
-  
-                   ⋆ ${dados[Object.keys(dados)[0]].rodada}/3 ⋆
-━━━━━━━━━⬣⬣━━━━━━━━`
+         return `[+] *ＦＯＬＤ*
+━━━━━━━━━━━━━━━━━━━━━━━━
+> @${global.db.data.chats[m.chat].truco.players[1].split("@")[0]} _*🏆*_
+> ‎
+>⋆ ${dados[Object.keys(dados)[0]].rodada}/3 ⋆
+> ‎`
 
 
   }
@@ -960,12 +960,12 @@ dados[Object.keys(dados)[0]].rodada++
 global.db.data.chats[m.chat].truco.currentTurn = global.db.data.chats[m.chat].truco.players[0]
   
     
-         return ` ━━━━━━━━━⬣⬣━━━━━━━━
-                     _Fold_
-  𓄿 @${global.db.data.chats[m.chat].truco.players[0].split("@")[0]} _*ganhou*_
-  
-                     ⋆ ${dados[Object.keys(dados)[0]].rodada}/3 ⋆
-━━━━━━━━━⬣⬣━━━━━━━━`
+         return `[+] *ＦＯＬＤ*
+━━━━━━━━━━━━━━━━━━━━━━━━
+> @${global.db.data.chats[m.chat].truco.players[0].split("@")[0]} _*🏆*_
+> ‎
+> ${dados[Object.keys(dados)[0]].rodada}/3 ⋆
+> ‎`
   }
   
   
@@ -1034,11 +1034,14 @@ dados[Object.keys(dados)[0]].rodada++
 global.db.data.chats[m.chat].truco.currentTurn = global.db.data.chats[m.chat].truco.players[0]
   
     
-         return ` ━━━━━━━━━⬣⬣━━━━━━━━
-  𓄿 @${global.db.data.chats[m.chat].truco.players[0].split("@")[0]} _*ganhou*_
-  
-                   ⋆ ${dados[Object.keys(dados)[0]].rodada}/3 ⋆
-━━━━━━━━━⬣⬣━━━━━━━━`  } else if (valoresCartas[cartaJogador1] < valoresCartas[cartaJogador2]) {
+         return `[+] ♠️♥️♣️♦️
+━━━━━━━━━━━━━━━━━━━━━━━━
+> @${global.db.data.chats[m.chat].truco.players[0].split("@")[0]} _*🏆*_
+> ‎
+> ${dados[Object.keys(dados)[0]].rodada}/3 ⋆
+> ‎`
+
+} else if (valoresCartas[cartaJogador1] < valoresCartas[cartaJogador2]) {
         let dados = global.db.data.chats[m.chat].truco.stats;
 
 if(!dados[Object.keys(dados)[1]].rodada){
@@ -1048,11 +1051,12 @@ global.db.data.chats[m.chat].truco.currentTurn = global.db.data.chats[m.chat].tr
 dados[Object.keys(dados)[1]].rodada++
     
     
-         return ` ━━━━━━━━━⬣⬣━━━━━━━━
-  𓄿 @${global.db.data.chats[m.chat].truco.players[1].split("@")[0]} _*ganhou*_
-  
-                   ⋆ ${dados[Object.keys(dados)[1]].rodada}/3 ⋆
-━━━━━━━━━⬣⬣━━━━━━━━`
+         return `[+] ♠️♥️♣️♦️
+━━━━━━━━━━━━━━━━━━━━━━━━
+> @${global.db.data.chats[m.chat].truco.players[1].split("@")[0]} _*🏆*_
+> ‎
+> ${dados[Object.keys(dados)[1]].rodada}/3 ⋆
+> ‎`
   } else {
     // Se as cartas têm o mesmo valor, desempate pelo naipe
     if (naipes[naipeJogador1] > naipes[naipeJogador2]){
@@ -1064,11 +1068,12 @@ if(!dados[Object.keys(dados)[0]].rodada){
 dados[Object.keys(dados)[0]].rodada++
     
     global.db.data.chats[m.chat].truco.currentTurn = global.db.data.chats[m.chat].truco.players[0]
-           return  ` ━━━━━━━━━⬣⬣━━━━━━━━
-  𓄿 @${global.db.data.chats[m.chat].truco.players[0].split("@")[0]} _*ganhou*_
-  
-                   ⋆ ${dados[Object.keys(dados)[0]].rodada}/3 ⋆
-━━━━━━━━━⬣⬣━━━━━━━━`
+           return  `[+] ♠️♥️♣️♦️
+━━━━━━━━━━━━━━━━━━━━━━━━
+> @${global.db.data.chats[m.chat].truco.players[0].split("@")[0]} _*🏆*_
+> ‎
+> ${dados[Object.keys(dados)[0]].rodada}/3 ⋆
+> ‎`
     } else if (naipes[naipeJogador1] < naipes[naipeJogador2]) {
       
           let dados = global.db.data.chats[m.chat].truco.stats;
@@ -1081,13 +1086,18 @@ dados[Object.keys(dados)[0]].rodada++
 
     
     global.db.data.chats[m.chat].truco.currentTurn = global.db.data.chats[m.chat].truco.players[1]
-    return ` ━━━━━━━━━⬣⬣━━━━━━━━
-  𓄿 @${global.db.data.chats[m.chat].truco.players[1].split("@")[0]} _*ganhou*_
-  
-                   ⋆ ${dados[Object.keys(dados)[1]].rodada}/3 ⋆
-━━━━━━━━━⬣⬣━━━━━━━━`
+    return `[+] ♠️♥️♣️♦️
+━━━━━━━━━━━━━━━━━━━━━━━━
+> @${global.db.data.chats[m.chat].truco.players[1].split("@")[0]} _*🏆*_
+> ‎
+> ${dados[Object.keys(dados)[1]].rodada}/3 ⋆
+> ‎`
     } else {
-      return 'ִ ࣪𖤐 *Empate*';
+      const empates = global.db.data.chats[m.chat].language === 'en' ? 
+      `> [!] 𝐃𝐑𝐀𝐖 ` : 
+      `> [!] 𝐄𝐌𝐏𝐀𝐓𝐄 `
+      
+      return empates;
     }
   }
   }
@@ -1153,14 +1163,24 @@ conn.sendFile(m.chat, turnimg, 'error.jpg', `𝙽𝚘𝚟𝚊 𝙼𝚊𝚗𝚒�
 }, 4000);
 
 let players = global.db.data.chats[m.chat].truco.players
-let msg = `─┅──┅❖ ♱ ❖─┅──┅
-🂱 𝑻𝒓𝒖𝒄𝒐 🃜
-        𝙽𝙾𝚅𝙰 𝚁𝙾𝙳𝙰𝙳𝙰
-*GRUPO:* ${groupMetadata.subject}
-𝙸𝚗𝚒𝚌𝚒𝚊𝚗𝚍𝚘 𝚙𝚊𝚛𝚝𝚒𝚍𝚊 . . .
-𝙴𝚗𝚝𝚛𝚎𝚐𝚊𝚗𝚍𝚘 𝚊𝚜 𝚌𝚊𝚛𝚝𝚊𝚜 🂱
- ━━━━━━━━━⬣━━━━━━━━━━━━━━━━━⬣━━━━━━━━
-𝑬𝒔𝒕𝒂𝒔 𝒔𝒂𝒐 𝒔𝒖𝒂𝒔 𝒄𝒂𝒓𝒕𝒂𝒔:`
+
+
+const msg = global.db.data.chats[m.chat].language === 'en' ? 
+`[+] ＴＲＵＣＯ 🃜 🂱
+━━━━━━━━━━━━━━━━
+> ɢʀᴏᴜᴘ: ${groupMetadata.subject} 
+> ‎
+> [!] 𝙳𝚎𝚕𝚒𝚟𝚎𝚛𝚒𝚗𝚐 𝚢𝚘𝚞𝚛 𝚌𝚊𝚛𝚍𝚜 🂱 . . . 
+> ‎
+` : 
+`[+] ＴＲＵＣＯ 🃜 🂱
+━━━━━━━━━━━━━━━━
+> ɢʀᴜᴘᴏ: ${groupMetadata.subject} 
+> ‎
+> [!] 𝙴𝚗𝚝𝚛𝚎𝚐𝚊𝚗𝚍𝚘 𝚊𝚜 𝚌𝚊𝚛𝚝𝚊𝚜 🂱 . . . 
+> ‎
+`
+
 
 for (let i = 0; i < players.length; i++) {
   const player = players[i];
@@ -1210,19 +1230,36 @@ console.log("👍")
           
              let player1 = global.db.data.chats[m.chat].truco.players[0]
              let player2 = global.db.data.chats[m.chat].truco.players[1]
-            conn.reply(m.chat, `╭──────────────────── ⛦...─╮
-┃ @${user.split("@")[0]} 𝔤𝔞𝔫𝔥𝔬𝔲 𝔬 𝔧𝔬𝔤𝔬.. .
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ 𝑷𝒐𝒏𝒕𝒐𝒔:
-┃ 
-┃ @${player1.split("@")[0]}: ${global.db.data.chats[m.chat].truco.stats[player1].pontos}
-┃ @${player2.split("@")[0]}: ${global.db.data.chats[m.chat].truco.stats[player2].pontos}
-┃────────────────────
-┃ @${user.split("@")[0]}  𝔯𝔢𝔠𝔢𝔟𝔢𝔯𝔞:
-┃ ${ global.db.data.chats[m.chat].truco.coins} 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${isTruco ? `\n┃ ${ global.db.data.chats[m.chat].truco.bugs} ⧗ ᴇᴛʜᴇʀᴇᴜᴍ` : ''}
-┃ ${ global.db.data.chats[m.chat].truco.xp} 𝑥𝑝
-┃ 
-╰─...⌬────────────────────╯`, m, { mentions:[player1,player2] });
+           
+             const won1 = global.db.data.chats[m.chat].language === 'en' ? 
+             `[!] 𝙴𝙽𝙳 𝙾𝙵 𝙼𝙰𝚃𝙲𝙷 
+─────────────────── 
+> ‎
+> 🏆 @${user.split("@")[0]} ᴡᴏɴ ᴛʜᴇ ɢᴀᴍᴇ
+> . . . . . . . . . . . . . . . . . . 
+> ⌥ @${player1.split("@")[0]}: ${global.db.data.chats[m.chat].truco.stats[player1].pontos}
+> ⌥ @${player2.split("@")[0]}: ${global.db.data.chats[m.chat].truco.stats[player2].pontos}
+> ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+┃ [*] @${user.split("@")[0]} 𝚂̷𝚃̷𝙰̷𝚃̷𝚂̷:
+> ${ global.db.data.chats[m.chat].truco.coins} 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${isTruco ? `\n┃ ${ global.db.data.chats[m.chat].truco.bugs} ⧗ ᴇᴛʜᴇʀᴇᴜᴍ` : ''}
+> ${ global.db.data.chats[m.chat].truco.xp} 𝑥𝑝
+` : 
+`[!] 𝙵𝙸𝙼 𝙳𝙴 𝙹𝙾𝙶𝙾
+─────────────────── 
+> ‎
+> 🏆 @${user.split("@")[0]} ɢᴀɴʜᴏᴜ ᴏ ᴊᴏɢᴏ
+> . . . . . . . . . . . . . . . . . . 
+> ⌥ @${player1.split("@")[0]}: ${global.db.data.chats[m.chat].truco.stats[player1].pontos}
+> ⌥ @${player2.split("@")[0]}: ${global.db.data.chats[m.chat].truco.stats[player2].pontos}
+> ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+┃ [*] @${user.split("@")[0]} 𝚂̷𝚃̷𝙰̷𝚃̷𝚂̷:
+> ${ global.db.data.chats[m.chat].truco.coins} 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${isTruco ? `\n┃ ${ global.db.data.chats[m.chat].truco.bugs} ⧗ ᴇᴛʜᴇʀᴇᴜᴍ` : ''}
+> ${ global.db.data.chats[m.chat].truco.xp} 𝑥𝑝
+`
+           
+           
+             conn.reply(m.chat, won1, m, { mentions:[player1,player2] });
+
 global.db.data.chats[m.chat].users[user].money +=  global.db.data.chats[m.chat].truco.coins
 global.db.data.chats[m.chat].users[user].exp +=  global.db.data.chats[m.chat].truco.xp
 if(isTruco){
@@ -1255,15 +1292,30 @@ global.db.data.chats[m.chat].users[user].limit +=  global.db.data.chats[m.chat].
              
              let player1 = global.db.data.chats[m.chat].truco.players[0]
              let player2 = global.db.data.chats[m.chat].truco.players[1]
-            conn.reply(m.chat, `╭──────────────────── ⛦...─╮
-┃ @${user.split("@")[0]} 𝔤𝔞𝔫𝔥𝔬𝔲 𝔞 𝔯𝔬𝔡𝔞𝔡𝔞
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ 𝑷𝒐𝒏𝒕𝒐𝒔:
-┃ 
-┃ @${player1.split("@")[0]}: ${global.db.data.chats[m.chat].truco.stats[player1].pontos}
-┃ @${player2.split("@")[0]}: ${global.db.data.chats[m.chat].truco.stats[player2].pontos}
-┃        𝑪𝒐𝒎𝒆𝒄𝒂𝒏𝒅𝒐 𝒏𝒐𝒗𝒂 𝒓𝒐𝒅𝒂𝒅𝒂. . .
-╰─...⌬────────────────────╯`, m, { mentions:[player1,player2] });
+          
+             const wonRound11 = global.db.data.chats[m.chat].language === 'en' ? 
+             `[!] 𝙴𝙽𝙳 𝙾𝙵 𝚁𝙾𝚄𝙽𝙳
+─────────────────── 
+> ‎
+> 🏆 @${user.split("@")[0]} ᴡᴏɴ ᴛʜᴇ ʀᴏᴜɴᴅ
+> . . . . . . . . . . . . . . . . . . 
+> ⌥ @${player1.split("@")[0]}: ${global.db.data.chats[m.chat].truco.stats[player1].pontos}
+> ⌥ @${player2.split("@")[0]}: ${global.db.data.chats[m.chat].truco.stats[player2].pontos}
+> ‎
+┃ [+] ＳＴＡＲＴＩＮＧ ＮＥＷ ＲＯＵＮＤ. . . . 
+` : 
+`[!] 𝙵𝙸𝙼 𝙳𝙴 𝚁𝙾𝙳𝙰𝙳𝙰
+─────────────────── 
+> ‎
+> 🏆 @${user.split("@")[0]} ɢᴀɴʜᴏᴜ ᴀ ʀᴏᴅᴀᴅᴀ
+> . . . . . . . . . . . . . . . . . . 
+> ⌥ @${player1.split("@")[0]}: ${global.db.data.chats[m.chat].truco.stats[player1].pontos}
+> ⌥ @${player2.split("@")[0]}: ${global.db.data.chats[m.chat].truco.stats[player2].pontos}
+> ‎
+┃ [+] ＩＮＩＣＩＡＮＤＯ ＮＯＶＡ ＲＯＤＡＤＡ. . . . 
+`
+          
+             conn.reply(m.chat, wonRound11, m, { mentions:[player1,player2] });
 
 global.db.data.chats[m.chat].truco.stats[global.db.data.chats[m.chat].truco.players[0]].cartasUsadas=[] 
 global.db.data.chats[m.chat].truco.stats[global.db.data.chats[m.chat].truco.players[1]].cartasUsadas=[] 
@@ -1285,17 +1337,24 @@ if( global.db.data.chats[m.chat].truco.total>1)
 newRound()
 
 setTimeout(async () => {
-  let sgk = `━━━━━━━━━⬣ 🂱 ⬣━━━━━━━━
-🂱 𝑻𝒓𝒖𝒄𝒐 🃜
 
-𝘛𝘶𝘳𝘯𝘰 𝘥𝘦: @${global.db.data.chats[m.chat].truco.currentTurn.split("@")[0]}
+  const instructs = global.db.data.chats[m.chat].language === 'en' ? 
+  `[!] ᴛᴜʀɴᴏ ᴅᴇ: @${global.db.data.chats[m.chat].truco.currentTurn.split("@")[0]}
+━━━━━━━━━━━━━━━━
+>>> 𝙊𝙋𝘾𝙊𝙀𝙎
+> *(t)* _Truco: Pede truco_
+> *(1 / 2 / 3)* _Carta: digite o numero da carta que ira jogar_
+> *f(1 / f2 / f3)* _Fold: Entregar carta escolhida virada_` 
+: 
+  `[!] @${global.db.data.chats[m.chat].truco.currentTurn.split("@")[0]} ᴛᴜʀɴ 
+━━━━━━━━━━━━━━━━
+>>> 𝙊𝙋𝙏𝙄𝙊𝙉𝙎
+> *(t)* _Truco: Ask for truco_
+> *(1 / 2 / 3)* _Card: Enter the number of the card you want to play_
+> *(f1 / f2 / f3)* _Fold: Deal chosen card face down_`
 
-*Opções:*
-*(t)* _Truco: Pede truco_
-*(1,2 ou 3)* _Carta: digite o numero da carta que ira jogar_
-*(f1, f2, ou f3)* _Fold: Entregar carta escolhida virada_
-━━━━━━━━━⬣ 𖤍 ⬣━━━━━━━━`;
-  let turnMsg = await conn.reply(m.chat, sgk, m, { mentions: [global.db.data.chats[m.chat].truco.currentTurn] });
+
+  let turnMsg = await conn.reply(m.chat, instructs, m, { mentions: [global.db.data.chats[m.chat].truco.currentTurn] });
   global.db.data.chats[m.chat].truco.key = turnMsg.key.id;
 }, 5000); // Delay of 5 seconds
 
@@ -1331,19 +1390,36 @@ console.log(global.db.data.chats[m.chat].truco.table)
           
              let player1 = global.db.data.chats[m.chat].truco.players[0]
              let player2 = global.db.data.chats[m.chat].truco.players[1]
-            conn.reply(m.chat, `╭──────────────────── ⛦...─╮
-┃ @${user.split("@")[0]} 𝔤𝔞𝔫𝔥𝔬𝔲 𝔬 𝔧𝔬𝔤𝔬.. .
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ 𝑷𝒐𝒏𝒕𝒐𝒔:
-┃ 
-┃ @${player1.split("@")[0]}: ${global.db.data.chats[m.chat].truco.stats[player1].pontos}
-┃ @${player2.split("@")[0]}: ${global.db.data.chats[m.chat].truco.stats[player2].pontos}
-┃────────────────────
-┃ @${user.split("@")[0]}  𝔯𝔢𝔠𝔢𝔟𝔢𝔯𝔞:
-┃ ${ global.db.data.chats[m.chat].truco.coins} 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${global.db.data.chats[m.chat].truco.isTruco ? `\n┃ ${ global.db.data.chats[m.chat].truco.bugs} ⧗ ᴇᴛʜᴇʀᴇᴜᴍ` : ''}
-┃ ${ global.db.data.chats[m.chat].truco.xp} 𝑥𝑝
-┃ 
-╰─...⌬────────────────────╯`, m, { mentions:[player1,player2] });
+         
+         
+             const won2 = global.db.data.chats[m.chat].language === 'en' ? 
+             `[!] 𝙴𝙽𝙳 𝙾𝙵 𝙼𝙰𝚃𝙲𝙷 
+─────────────────── 
+> ‎
+> 🏆 @${user.split("@")[0]} ᴡᴏɴ ᴛʜᴇ ɢᴀᴍᴇ
+> . . . . . . . . . . . . . . . . . . 
+> ⌥ @${player1.split("@")[0]}: ${global.db.data.chats[m.chat].truco.stats[player1].pontos}
+> ⌥ @${player2.split("@")[0]}: ${global.db.data.chats[m.chat].truco.stats[player2].pontos}
+> ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+┃ [*] @${user.split("@")[0]} 𝚂̷𝚃̷𝙰̷𝚃̷𝚂̷:
+> ${ global.db.data.chats[m.chat].truco.coins} 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${isTruco ? `\n┃ ${ global.db.data.chats[m.chat].truco.bugs} ⧗ ᴇᴛʜᴇʀᴇᴜᴍ` : ''}
+> ${ global.db.data.chats[m.chat].truco.xp} 𝑥𝑝
+` : 
+`[!] 𝙵𝙸𝙼 𝙳𝙴 𝙹𝙾𝙶𝙾
+─────────────────── 
+> ‎
+> 🏆 @${user.split("@")[0]} ɢᴀɴʜᴏᴜ ᴏ ᴊᴏɢᴏ
+> . . . . . . . . . . . . . . . . . . 
+> ⌥ @${player1.split("@")[0]}: ${global.db.data.chats[m.chat].truco.stats[player1].pontos}
+> ⌥ @${player2.split("@")[0]}: ${global.db.data.chats[m.chat].truco.stats[player2].pontos}
+> ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+┃ [*] @${user.split("@")[0]} 𝚂̷𝚃̷𝙰̷𝚃̷𝚂̷:
+> ${ global.db.data.chats[m.chat].truco.coins} 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${isTruco ? `\n┃ ${ global.db.data.chats[m.chat].truco.bugs} ⧗ ᴇᴛʜᴇʀᴇᴜᴍ` : ''}
+> ${ global.db.data.chats[m.chat].truco.xp} 𝑥𝑝
+`
+      
+
+             conn.reply(m.chat, won2, m, { mentions:[player1,player2] });
 global.db.data.chats[m.chat].users[user].money +=  global.db.data.chats[m.chat].truco.coins
 global.db.data.chats[m.chat].users[user].exp +=  global.db.data.chats[m.chat].truco.xp
 if(global.db.data.chats[m.chat].truco.isTruco){
@@ -1364,19 +1440,36 @@ global.db.data.chats[m.chat].users[user].limit +=  global.db.data.chats[m.chat].
           
              let player1 = global.db.data.chats[m.chat].truco.players[0]
              let player2 = global.db.data.chats[m.chat].truco.players[1]
-            conn.reply(m.chat, `╭──────────────────── ⛦...─╮
-┃ @${user.split("@")[0]} 𝔤𝔞𝔫𝔥𝔬𝔲 𝔬 𝔧𝔬𝔤𝔬.. .
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ 𝑷𝒐𝒏𝒕𝒐𝒔:
-┃ 
-┃ @${player1.split("@")[0]}: ${global.db.data.chats[m.chat].truco.stats[player1].pontos}
-┃ @${player2.split("@")[0]}: ${global.db.data.chats[m.chat].truco.stats[player2].pontos}
-┃────────────────────
-┃ @${user.split("@")[0]}  𝔯𝔢𝔠𝔢𝔟𝔢𝔯𝔞:
-┃ ${ global.db.data.chats[m.chat].truco.coins} 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${global.db.data.chats[m.chat].truco.isTruco ? `\n┃ ${ global.db.data.chats[m.chat].truco.bugs} ⧗ ᴇᴛʜᴇʀᴇᴜᴍ` : ''}
-┃ ${ global.db.data.chats[m.chat].truco.xp} 𝑥𝑝
-┃ 
-╰─...⌬────────────────────╯`, m, { mentions:[player1,player2] });
+         
+             const won3 = global.db.data.chats[m.chat].language === 'en' ? 
+             `[!] 𝙴𝙽𝙳 𝙾𝙵 𝙼𝙰𝚃𝙲𝙷 
+─────────────────── 
+> ‎
+> 🏆 @${user.split("@")[0]} ᴡᴏɴ ᴛʜᴇ ɢᴀᴍᴇ
+> . . . . . . . . . . . . . . . . . . 
+> ⌥ @${player1.split("@")[0]}: ${global.db.data.chats[m.chat].truco.stats[player1].pontos}
+> ⌥ @${player2.split("@")[0]}: ${global.db.data.chats[m.chat].truco.stats[player2].pontos}
+> ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+┃ [*] @${user.split("@")[0]} 𝚂̷𝚃̷𝙰̷𝚃̷𝚂̷:
+> ${ global.db.data.chats[m.chat].truco.coins} 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${isTruco ? `\n┃ ${ global.db.data.chats[m.chat].truco.bugs} ⧗ ᴇᴛʜᴇʀᴇᴜᴍ` : ''}
+> ${ global.db.data.chats[m.chat].truco.xp} 𝑥𝑝
+` : 
+`[!] 𝙵𝙸𝙼 𝙳𝙴 𝙹𝙾𝙶𝙾
+─────────────────── 
+> ‎
+> 🏆 @${user.split("@")[0]} ɢᴀɴʜᴏᴜ ᴏ ᴊᴏɢᴏ
+> . . . . . . . . . . . . . . . . . . 
+> ⌥ @${player1.split("@")[0]}: ${global.db.data.chats[m.chat].truco.stats[player1].pontos}
+> ⌥ @${player2.split("@")[0]}: ${global.db.data.chats[m.chat].truco.stats[player2].pontos}
+> ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+┃ [*] @${user.split("@")[0]} 𝚂̷𝚃̷𝙰̷𝚃̷𝚂̷:
+> ${ global.db.data.chats[m.chat].truco.coins} 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${isTruco ? `\n┃ ${ global.db.data.chats[m.chat].truco.bugs} ⧗ ᴇᴛʜᴇʀᴇᴜᴍ` : ''}
+> ${ global.db.data.chats[m.chat].truco.xp} 𝑥𝑝
+`
+      ´
+
+         
+             conn.reply(m.chat, won3, m, { mentions:[player1,player2] });
 global.db.data.chats[m.chat].users[user].money +=  global.db.data.chats[m.chat].truco.coins
 global.db.data.chats[m.chat].users[user].exp +=  global.db.data.chats[m.chat].truco.xp
 if(global.db.data.chats[m.chat].truco.isTruco){
@@ -1392,15 +1485,31 @@ global.db.data.chats[m.chat].users[user].limit +=  global.db.data.chats[m.chat].
             global.db.data.chats[m.chat].truco.total=1
              let player1 = global.db.data.chats[m.chat].truco.players[0]
              let player2 = global.db.data.chats[m.chat].truco.players[1]
-            conn.reply(m.chat, `╭──────────────────── ⛦...─╮
-┃ @${user.split("@")[0]} 𝔤𝔞𝔫𝔥𝔬𝔲 𝔞 𝔯𝔬𝔡𝔞𝔡𝔞
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ 𝑷𝒐𝒏𝒕𝒐𝒔:
-┃ 
-┃ @${player1.split("@")[0]}: ${global.db.data.chats[m.chat].truco.stats[player1].pontos}
-┃ @${player2.split("@")[0]}: ${global.db.data.chats[m.chat].truco.stats[player2].pontos}
-┃        𝑪𝒐𝒎𝒆𝒄𝒂𝒏𝒅𝒐 𝒏𝒐𝒗𝒂 𝒓𝒐𝒅𝒂𝒅𝒂. . .
-╰─...⌬────────────────────╯`, m, { mentions:[player1,player2] });
+         
+             const wonRound2 = global.db.data.chats[m.chat].language === 'en' ? 
+             `[!] 𝙴𝙽𝙳 𝙾𝙵 𝚁𝙾𝚄𝙽𝙳
+─────────────────── 
+> ‎
+> 🏆 @${user.split("@")[0]} ᴡᴏɴ ᴛʜᴇ ʀᴏᴜɴᴅ
+> . . . . . . . . . . . . . . . . . . 
+> ⌥ @${player1.split("@")[0]}: ${global.db.data.chats[m.chat].truco.stats[player1].pontos}
+> ⌥ @${player2.split("@")[0]}: ${global.db.data.chats[m.chat].truco.stats[player2].pontos}
+> ‎
+┃ [+] ＳＴＡＲＴＩＮＧ ＮＥＷ ＲＯＵＮＤ. . . . 
+` : 
+`[!] 𝙵𝙸𝙼 𝙳𝙴 𝚁𝙾𝙳𝙰𝙳𝙰
+─────────────────── 
+> ‎
+> 🏆 @${user.split("@")[0]} ɢᴀɴʜᴏᴜ ᴀ ʀᴏᴅᴀᴅᴀ
+> . . . . . . . . . . . . . . . . . . 
+> ⌥ @${player1.split("@")[0]}: ${global.db.data.chats[m.chat].truco.stats[player1].pontos}
+> ⌥ @${player2.split("@")[0]}: ${global.db.data.chats[m.chat].truco.stats[player2].pontos}
+> ‎
+┃ [+] ＩＮＩＣＩＡＮＤＯ ＮＯＶＡ ＲＯＤＡＤＡ. . . . 
+`
+          
+
+             conn.reply(m.chat, wonRound2, m, { mentions:[player1,player2] });
 
 global.db.data.chats[m.chat].truco.stats[global.db.data.chats[m.chat].truco.players[0]].cartasUsadas=[] 
 global.db.data.chats[m.chat].truco.stats[global.db.data.chats[m.chat].truco.players[1]].cartasUsadas=[] 
@@ -1426,17 +1535,23 @@ newRound()
 
 
 setTimeout(async () => {
-  let sgk = `━━━━━━━━━⬣ 🂱 ⬣━━━━━━━━
-🂱 𝑻𝒓𝒖𝒄𝒐 🃜
+  const instructs2 = global.db.data.chats[m.chat].language === 'en' ? 
+  `[!] ᴛᴜʀɴᴏ ᴅᴇ: @${global.db.data.chats[m.chat].truco.currentTurn.split("@")[0]}
+━━━━━━━━━━━━━━━━
+>>> 𝙊𝙋𝘾𝙊𝙀𝙎
+> *(t)* _Truco: Pede truco_
+> *(1 / 2 / 3)* _Carta: digite o numero da carta que ira jogar_
+> *f(1 / f2 / f3)* _Fold: Entregar carta escolhida virada_` 
+: 
+  `[!] @${global.db.data.chats[m.chat].truco.currentTurn.split("@")[0]} ᴛᴜʀɴ 
+━━━━━━━━━━━━━━━━
+>>> 𝙊𝙋𝙏𝙄𝙊𝙉𝙎
+> *(t)* _Truco: Ask for truco_
+> *(1 / 2 / 3)* _Card: Enter the number of the card you want to play_
+> *(f1 / f2 / f3)* _Fold: Deal chosen card face down_`
 
-𝘛𝘶𝘳𝘯𝘰 𝘥𝘦: @${global.db.data.chats[m.chat].truco.currentTurn.split("@")[0]}
 
-*Opções:*
-*(t)* _Truco: Pede truco_
-*(1,2 ou 3)* _Carta: digite o numero da carta que ira jogar_
-*(f1, f2, ou f3)* _Fold: Entregar carta escolhida virada_
-━━━━━━━━━⬣ 𖤍 ⬣━━━━━━━━`;
-  let turnMsg = await conn.reply(m.chat, sgk, m, { mentions: [global.db.data.chats[m.chat].truco.currentTurn] });
+  let turnMsg = await conn.reply(m.chat, instructs2, m, { mentions: [global.db.data.chats[m.chat].truco.currentTurn] });
   global.db.data.chats[m.chat].truco.key = turnMsg.key.id;
 }, 5000); // Delay of 5 seconds
 
@@ -1454,19 +1569,24 @@ global.db.data.chats[m.chat].truco.table ={}
 //let checkWins = await checkWin()
 
   
-    
-     let sgk = `━━━━━━━━━⬣ 🂱 ⬣━━━━━━━━
-🂱 𝑻𝒓𝒖𝒄𝒐 🃜
+const instructs3 = global.db.data.chats[m.chat].language === 'en' ? 
+`[!] ᴛᴜʀɴᴏ ᴅᴇ: @${global.db.data.chats[m.chat].truco.currentTurn.split("@")[0]}
+━━━━━━━━━━━━━━━━
+>>> 𝙊𝙋𝘾𝙊𝙀𝙎
+> *(t)* _Truco: Pede truco_
+> *(1 / 2 / 3)* _Carta: digite o numero da carta que ira jogar_
+> *f(1 / f2 / f3)* _Fold: Entregar carta escolhida virada_` 
+: 
+`[!] @${global.db.data.chats[m.chat].truco.currentTurn.split("@")[0]} ᴛᴜʀɴ 
+━━━━━━━━━━━━━━━━
+>>> 𝙊𝙋𝙏𝙄𝙊𝙉𝙎
+> *(t)* _Truco: Ask for truco_
+> *(1 / 2 / 3)* _Card: Enter the number of the card you want to play_
+> *(f1 / f2 / f3)* _Fold: Deal chosen card face down_`
 
 
-𝘛𝘶𝘳𝘯𝘰 𝘥𝘦: @${global.db.data.chats[m.chat].truco.currentTurn.split("@")[0]}
 
-*Opções:*
-*(t)* _Truco: Pede truco_
-*(1,2 ou 3)* _Carta: digite o numero da carta que ira jogar_
-*(f1, f2, ou f3)* _Fold: Entregar carta escolhida virada_
-━━━━━━━━━⬣ 𖤍 ⬣━━━━━━━━`
-let turnMsg = await conn.reply(m.chat, sgk, m, { mentions: [global.db.data.chats[m.chat].truco.currentTurn] });
+let turnMsg = await conn.reply(m.chat, instructs3, m, { mentions: [global.db.data.chats[m.chat].truco.currentTurn] });
 global.db.data.chats[m.chat].truco.key = turnMsg.key.id
 
 }
@@ -1494,19 +1614,25 @@ global.db.data.chats[m.chat].truco.key = turnMsg.key.id
     
   global.db.data.chats[m.chat].truco.currentTurn = currentTurn
   
-    let sgk = `━━━━━━━━━⬣ 🂱 ⬣━━━━━━━━
-🂱 𝑻𝒓𝒖𝒄𝒐 🃜
+  const askTruco6 = global.db.data.chats[m.chat].language === 'en' ? 
+  `[!] ᴛᴜʀɴᴏ ᴅᴇ: @${global.db.data.chats[m.chat].truco.currentTurn.split("@")[0]}
+━━━━━━━━━━━━━━━━
+  ⚠︎ 𝙎𝙐𝘽𝙄𝙐 𝙋𝙍𝘼 6!
+>>> 𝙊𝙋𝘾𝙊𝙀𝙎
+> *(d)* _Desce: Aceita o truco_
+> *(9)* _Dobra: Pede 9_
+> *(s)* _Sair: Recusa o truco_ `: 
+  `[!] @${global.db.data.chats[m.chat].truco.currentTurn.split("@")[0]} ᴛᴜʀɴ 
+━━━━━━━━━━━━━━━━
+  ⚠︎ 𝙐𝙋 𝙏𝙊 6!
+>>> 𝙊𝙋𝙏𝙄𝙊𝙉𝙎
+> *(d)* _Drop: Take the truco_
+> *(9)* _Fold: Ask for 9_
+> *(s)* _Out: Refuses the truco_`
 
-𝘛𝘶𝘳𝘯𝘰 𝘥𝘦: @${global.db.data.chats[m.chat].truco.currentTurn.split("@")[0]}
 
-@${m.sender.split("@")[0]} 𝔭𝔢𝔡𝔦𝔲 6!
 
-*Opções:*
-*(d)* _Desce: Aceita o truco_
-*(9)* _Dobra: Pede 9_
-*(s)* _Sair: Recusa o truco_
-━━━━━━━━━⬣ 𖤍 ⬣━━━━━━━━`;
-  let turnMsg = await conn.reply(m.chat, sgk, m, { mentions: [global.db.data.chats[m.chat].truco.players[0],global.db.data.chats[m.chat].truco.players[1]] });
+  let turnMsg = await conn.reply(m.chat, askTruco6, m, { mentions: [global.db.data.chats[m.chat].truco.players[0],global.db.data.chats[m.chat].truco.players[1]] });
   global.db.data.chats[m.chat].truco.key = turnMsg.key.id;
   
  }
@@ -1528,20 +1654,27 @@ global.db.data.chats[m.chat].truco.key = turnMsg.key.id
     
     global.db.data.chats[m.chat].truco.coins += parseInt(((coins/2)*2 + (coins/3)))
     global.db.data.chats[m.chat].truco.coins += parseInt(((pxp/2)*3 + (pxp/2)))
-    
-    let sgk = `━━━━━━━━━⬣ 🂱 ⬣━━━━━━━━
-🂱 𝑻𝒓𝒖𝒄𝒐 🃜
+   
+    const askTruco9 = global.db.data.chats[m.chat].language === 'en' ? 
+    `[!] ᴛᴜʀɴᴏ ᴅᴇ: @${global.db.data.chats[m.chat].truco.currentTurn.split("@")[0]}
+  ━━━━━━━━━━━━━━━━
+  ⚠︎ 𝙎𝙐𝘽𝙄𝙐 𝙋𝙍𝘼 9!
+>>> 𝙊𝙋𝘾𝙊𝙀𝙎
+> *(d)* _Desce: Aceita o truco_
+> *(12)* _Dobra: Pede 12_
+> *(s)* _Sair: Recusa o truco_ `: 
+    `[!] @${global.db.data.chats[m.chat].truco.currentTurn.split("@")[0]} ᴛᴜʀɴ 
+  ━━━━━━━━━━━━━━━━
+ ⚠︎ 𝙐𝙋 𝙏𝙊 9!
+>>> 𝙊𝙋𝙏𝙄𝙊𝙉𝙎
+> *(d)* _Drop: Take the truco_
+> *(12)* _Fold: Ask for 12_
+> *(s)* _Out: Refuses the truco_`
+  
 
-𝘛𝘶𝘳𝘯𝘰 𝘥𝘦: @${global.db.data.chats[m.chat].truco.currentTurn.split("@")[0]}
+  
 
-@${m.sender.split("@")[0]} 𝔭𝔢𝔡𝔦𝔲 9!
-
-*Opções:*
-*(d)* _Desce: Aceita o truco_
-*(12)* _Dobra: Pede 12_
-*(s)* _Sair: Recusa o truco_
-━━━━━━━━━⬣ 𖤍 ⬣━━━━━━━━`;
-  let turnMsg = await conn.reply(m.chat, sgk, m, { mentions: [global.db.data.chats[m.chat].truco.players[0],global.db.data.chats[m.chat].truco.players[1]] });
+  let turnMsg = await conn.reply(m.chat, askTruco9, m, { mentions: [global.db.data.chats[m.chat].truco.players[0],global.db.data.chats[m.chat].truco.players[1]] });
   global.db.data.chats[m.chat].truco.key = turnMsg.key.id;
   
  }
@@ -1565,19 +1698,23 @@ global.db.data.chats[m.chat].truco.key = turnMsg.key.id
     global.db.data.chats[m.chat].truco.coins += parseInt(coins*2)
     global.db.data.chats[m.chat].truco.coins += parseInt(pxp*3)
     
-    let sgk = `━━━━━━━━━⬣ 🂱 ⬣━━━━━━━━
-🂱 𝑻𝒓𝒖𝒄𝒐 🃜
+    const askTruco12 = global.db.data.chats[m.chat].language === 'en' ? 
+    `[!] ᴛᴜʀɴᴏ ᴅᴇ: @${global.db.data.chats[m.chat].truco.currentTurn.split("@")[0]}
+  ━━━━━━━━━━━━━━━━
+  ⚠︎ 𝙎𝙐𝘽𝙄𝙐 𝙋𝙍𝘼 12!
+>>> 𝙊𝙋𝘾𝙊𝙀𝙎
+> *(d)* _Desce: Aceita o truco_
+> *(s)* _Sair: Recusa o truco_ `: 
+    `[!] @${global.db.data.chats[m.chat].truco.currentTurn.split("@")[0]} ᴛᴜʀɴ 
+  ━━━━━━━━━━━━━━━━
+ ⚠︎ 𝙐𝙋 𝙏𝙊 12!
+>>> 𝙊𝙋𝙏𝙄𝙊𝙉𝙎
+> *(d)* _Drop: Take the truco_
+> *(s)* _Out: Refuses the truco_`
+  
 
-𝘛𝘶𝘳𝘯𝘰 𝘥𝘦: @${global.db.data.chats[m.chat].truco.currentTurn.split("@")[0]}
 
-@${m.sender.split("@")[0]} 𝔭𝔢𝔡𝔦𝔲 12!
-
-*Opções:*
-*(d)* _Desce: Aceita o truco_
-
-*(s)* _Sair: Recusa o truco_
-━━━━━━━━━⬣ 𖤍 ⬣━━━━━━━━`;
-  let turnMsg = await conn.reply(m.chat, sgk, m, { mentions: [global.db.data.chats[m.chat].truco.players[0],global.db.data.chats[m.chat].truco.players[1]] });
+  let turnMsg = await conn.reply(m.chat, askTruco12, m, { mentions: [global.db.data.chats[m.chat].truco.players[0],global.db.data.chats[m.chat].truco.players[1]] });
   global.db.data.chats[m.chat].truco.key = turnMsg.key.id;
   
  
@@ -1592,20 +1729,30 @@ global.db.data.chats[m.chat].truco.key = turnMsg.key.id
    
   global.db.data.chats[m.chat].truco.currentTurn = global.db.data.chats[m.chat].truco.pediuTruco
   
-    let sgk = `━━━━━━━━━⬣ 🂱 ⬣━━━━━━━━
-🂱 𝑻𝒓𝒖𝒄𝒐 🃜
-𝘝𝘈𝘓𝘌𝘕𝘋𝘖 ${global.db.data.chats[m.chat].truco.total} 𝘗𝘖𝘕𝘛𝘖𝘚
+  const askTrucoFim = global.db.data.chats[m.chat].language === 'en' ? 
+  `[!] ᴛᴜʀɴᴏ ᴅᴇ: @${global.db.data.chats[m.chat].truco.currentTurn.split("@")[0]}
+━━━━━━━━━━━━━━━━
 
-𝘛𝘶𝘳𝘯𝘰 𝘥𝘦: @${global.db.data.chats[m.chat].truco.pediuTruco.split("@")[0]}
+⚠︎ @${m.sender.split("@")[0]} ᴀᴄᴇɪᴛᴏᴜ 
+⚠︎ 12 𝙋𝙊𝙉𝙏𝙊𝙎!
+>>> 𝙊𝙋𝘾𝙊𝙀𝙎
+> *(1 / 2 / 3)* _Carta: digite o numero da carta que ira jogar_
+> *(f1 / f2 / f3)* _Fold: Entregar carta escolhida virada_
+`: 
+  `[!] @${global.db.data.chats[m.chat].truco.currentTurn.split("@")[0]} ᴛᴜʀɴ 
+━━━━━━━━━━━━━━━━
+  ⚠︎ @${m.sender.split("@")[0]} ᴀᴄᴄᴇᴘᴛᴇᴅ
+  ⚠︎ 12 𝙋𝙊𝙄𝙉𝙏𝙎!
+>>> 𝙊𝙋𝙏𝙄𝙊𝙉𝙎
+> *(1 / 2 / 3)* _Card: Enter the number of the card you want to play_
+> *(f1 / f2 / f3)* _Fold: Deal chosen card face down_
+`
 
-@${m.sender.split("@")[0]} 𝔞𝔠𝔢𝔦𝔱𝔬𝔲!
-𝔇𝔢𝔰𝔠𝔞 𝔞 𝔠𝔞𝔯𝔱𝔞
 
-*Opções:*
-*(1,2 ou 3)* _Carta: digite o numero da carta que ira jogar_
-*(f1, f2, ou f3)* _Fold: Entregar carta escolhida virada_
-━━━━━━━━━⬣ 𖤍 ⬣━━━━━━━━`;
-  let turnMsg = await conn.reply(m.chat, sgk, m, { mentions: [global.db.data.chats[m.chat].truco.players[0],global.db.data.chats[m.chat].truco.players[1]] });
+
+
+
+  let turnMsg = await conn.reply(m.chat, askTrucoFim, m, { mentions: [global.db.data.chats[m.chat].truco.players[0],global.db.data.chats[m.chat].truco.players[1]] });
   global.db.data.chats[m.chat].truco.key = turnMsg.key.id;
   
     
@@ -1643,18 +1790,28 @@ global.db.data.chats[m.chat].truco.desistiu= true
     
   global.db.data.chats[m.chat].truco.currentTurn = currentTurn
   
-    let sgk = `━━━━━━━━━⬣ 🂱 ⬣━━━━━━━━
-🂱 𝑻𝒓𝒖𝒄𝒐 🃜
 
-𝘛𝘶𝘳𝘯𝘰 𝘥𝘦: @${global.db.data.chats[m.chat].truco.currentTurn.split("@")[0]}
+  const askTruco = global.db.data.chats[m.chat].language === 'en' ? 
+  `[!] ᴛᴜʀɴᴏ ᴅᴇ: @${global.db.data.chats[m.chat].truco.currentTurn.split("@")[0]}
+━━━━━━━━━━━━━━━━
 
-@${m.sender.split("@")[0]} 𝔭𝔢𝔡𝔦𝔲 𝔱𝔯𝔲𝔠𝔬!!
-*Opções:*
-*(d)* _Desce: Aceita o truco_
-*(6)* _Dobra: Pede 6_
-*(s)* _Sair: Recusa o truco_
-━━━━━━━━━⬣ 𖤍 ⬣━━━━━━━━`;
-  let turnMsg = await conn.reply(m.chat, sgk, m, { mentions: [global.db.data.chats[m.chat].truco.players[0],global.db.data.chats[m.chat].truco.players[1]] });
+⚠︎ @${m.sender.split("@")[0]} 𝙋𝙀𝘿𝙄𝙐 𝙏𝙍𝙐𝘾𝙊
+>>> 𝙊𝙋𝘾𝙊𝙀𝙎
+> *(d)* _Desce: Aceita o truco_
+> *(6)* _Dobra: Pede 6_
+> *(s)* _Sair: Recusa o truco_ `: 
+  `[!] @${global.db.data.chats[m.chat].truco.currentTurn.split("@")[0]} ᴛᴜʀɴ 
+━━━━━━━━━━━━━━━━
+  ⚠︎ @${m.sender.split("@")[0]} 𝘼𝙎𝙆𝙀𝘿 𝙁𝙊𝙍 𝙏𝙍𝙐𝘾𝙊
+>>> 𝙊𝙋𝙏𝙄𝙊𝙉𝙎
+> *(d)* _Drop: Take the truco_
+> *(6)* _Fold: Ask for 6_
+> *(s)* _Out: Refuses the truco_`
+
+
+
+
+  let turnMsg = await conn.reply(m.chat, askTruco, m, { mentions: [global.db.data.chats[m.chat].truco.players[0],global.db.data.chats[m.chat].truco.players[1]] });
   global.db.data.chats[m.chat].truco.key = turnMsg.key.id;
   global.db.data.chats[m.chat].truco.isTruco = true
   global.db.data.chats[m.chat].truco.total = 3
@@ -1672,11 +1829,16 @@ let cardImg = global.db.data.chats[m.chat].truco.handsImg[global.db.data.chats[m
 let card = playerHand[number-1]
 
 if(global.db.data.chats[m.chat].truco.stats[global.db.data.chats[m.chat].truco.currentTurn].cartasUsadas?.includes(card)){
- return m.reply(`╭━━━━━━━━━⬣
-  ─┅──┅❖ ❖─┅──┅
-❌  𝑽𝒐𝒄𝒆 𝒋𝒂 𝒖𝒔𝒐𝒖 𝒆𝒔𝒕𝒂 𝒄𝒂𝒓𝒕𝒂
-  ─┅──┅❖ ❖─┅──┅
-╰━━━━━━━━━━━━━━━━━━⬣`)
+
+  const usedCard = global.db.data.chats[m.chat].language === 'en' ? 
+  `> [!] 𝙔𝙊𝙐 𝘼𝙇𝙍𝙀𝘼𝘿𝙔 𝙐𝙎𝙀𝘿 𝙏𝙃𝙄𝙎 𝘾𝘼𝙍𝘿 ` 
+  : 
+  `> [!] 𝙑𝙊𝘾𝙀 𝙅𝘼 𝙐𝙎𝙊𝙐 𝙀𝙎𝙎𝘼 𝘾𝘼𝙍𝙏𝘼`
+ 
+
+
+
+  return m.reply(usedCard)
   
 }
 
@@ -1722,11 +1884,15 @@ console.log(card)
 
 
 if(global.db.data.chats[m.chat].truco.stats[global.db.data.chats[m.chat].truco.currentTurn].cartasUsadas.includes(card)){
- return m.reply(`╭━━━━━━━━━⬣
-  ─┅──┅❖ ❖─┅──┅
-❌  𝑽𝒐𝒄𝒆 𝒋𝒂 𝒖𝒔𝒐𝒖 𝒆𝒔𝒕𝒂 𝒄𝒂𝒓𝒕𝒂
-  ─┅──┅❖ ❖─┅──┅
-╰━━━━━━━━━━━━━━━━━━⬣`)
+  const usedCard = global.db.data.chats[m.chat].language === 'en' ? 
+  `> [!] 𝙔𝙊𝙐 𝘼𝙇𝙍𝙀𝘼𝘿𝙔 𝙐𝙎𝙀𝘿 𝙏𝙃𝙄𝙎 𝘾𝘼𝙍𝘿 ` 
+  : 
+  `> [!] 𝙑𝙊𝘾𝙀 𝙅𝘼 𝙐𝙎𝙊𝙐 𝙀𝙎𝙎𝘼 𝘾𝘼𝙍𝙏𝘼`
+ 
+
+
+
+  return m.reply(usedCard)
   
 }
 global.db.data.chats[m.chat].truco.stats[global.db.data.chats[m.chat].truco.currentTurn].cartasUsadas.push(card)
@@ -1752,12 +1918,24 @@ await    switchTurn()
   else if ( global.db.data.chats[m.chat].livraria && m.quoted && m.quoted.id == global.db.data.chats[m.chat].livraria[m.sender]?.messageID?.id) {
      if (/^\d+$/.test(m.text)) {
         if(parseInt(m.text)<=0 || parseInt(m.text)> global.db.data.chats[m.chat].livraria[m.sender].id.length ){
-                m.reply(`╔═══.·:·.☽✧ ✦ ✧☾.·:·.═══╗
-☆      *LIVRARIA USHER*      ☆
-╚═══.·:·.☽✧ ✦ ✧☾.·:·.═══╝
-╭────────────────────.....─╮
- ❌  𝑪𝒐𝒎𝒂𝒏𝒅𝒐 𝒊𝒏𝒗𝒂𝒍𝒊𝒅𝒐. 𝑹𝒆𝒔𝒑𝒐𝒏𝒅𝒆𝒊-𝒎𝒆 𝒂 𝒎𝒆𝒏𝒔𝒂𝒈𝒆𝒎 𝒄𝒐𝒎 𝒐 𝒏𝒖𝒎𝒆𝒓𝒂𝒍 𝒅𝒐 𝒍𝒊𝒗𝒓𝒐, 𝒔𝒆𝒏𝒅𝒐 𝒅𝒆 1 𝒂𝒕𝒆 ${global.db.data.chats[m.chat].livraria[m.sender].id.length }
-╰─.........────────────────────╯`) 
+                
+          const errorBook = global.db.data.chats[m.chat].language === 'en' ? 
+          `robot@bytesec:~# wget -np -A pdf books.ru 
+> ‎ 
+> [!] . . . . . ɪɴᴠᴀʟɪᴅ ᴄᴏᴍᴍᴀɴᴅ
+> ᴀɴꜱᴡᴇʀ ᴛʜᴇ ᴍᴇꜱꜱᴀɢᴇ ᴡɪᴛʜ ᴀ ɴᴜᴍʙᴇʀ ꜰʀᴏᴍ 1 ᴛᴏ ${global.db.data.chats[m.chat].livraria[m.sender].id.length }   
+> ‎ `
+
+:
+
+`robot@bytesec:~# wget -np -A pdf books.ru 
+> ‎   
+> [!] . . . . . ᴄᴏᴍᴀɴᴅᴏ ɪɴᴠᴀʟɪᴅᴏ 
+> ʀᴇꜱᴘᴏɴᴅᴀ ᴀ ᴍᴇɴꜱᴀɢᴇᴍ ᴄᴏᴍ ᴜᴍ ɴᴜᴍᴇʀᴏ ᴅᴇ 1 ᴀᴛᴇ ${global.db.data.chats[m.chat].livraria[m.sender].id.length }
+> ‎`
+          
+          
+          m.reply(errorBook) 
         }
         else{
           let ran = getRandom('.pdf'); 
@@ -1797,7 +1975,7 @@ let tmpfold = join(__dirname, '../pdfs/' );
   // Assuming `getFilename` is an async function that returns the filename
   try {
     console.log(limk)
- let pth = `/root/dd/Edgar-WhatsappBOT/pdfs/${ran}`;
+ let pth = `/root/Bytesec-MD/pdfs/${ran}`;
     console.log("Constructed path:", pth); // To verify the path
 
     let imgs =['https://telegra.ph/file/69c9044efa49146aadc69.jpg','https://telegra.ph/file/47b63460ab2efe80d7dfc.jpg']
@@ -1825,12 +2003,21 @@ await	conn.sendFile(m.chat, `${limk}`, `${global.db.data.chats[m.chat].livraria[
         
     } else {
       m.react("⁉️")
-      m.reply(`╔═══.·:·.☽✧ ✦ ✧☾.·:·.═══╗
-☆      *LIVRARIA USHER*      ☆
-╚═══.·:·.☽✧ ✦ ✧☾.·:·.═══╝
-╭────────────────────.....─╮
- ❌ 𝑪𝒐𝒎𝒂𝒏𝒅𝒐 𝒊𝒏𝒗𝒂𝒍𝒊𝒅𝒐. 𝑹𝒆𝒔𝒑𝒐𝒏𝒅𝒆𝒊-𝒎𝒆 𝒂 𝒎𝒆𝒏𝒔𝒂𝒈𝒆𝒎 𝒄𝒐𝒎 𝒐 𝒏𝒖𝒎𝒆𝒓𝒂𝒍 𝒅𝒐 𝒍𝒊𝒗𝒓𝒐 𝒒𝒖𝒆 𝒂𝒍𝒎𝒆𝒋𝒂𝒊𝒔.
-╰─.........────────────────────╯`)
+      const errorBook2 = global.db.data.chats[m.chat].language === 'en' ? 
+      `robot@bytesec:~# wget -np -A pdf books.ru 
+      > ‎ 
+      > [!] . . . . . ɪɴᴠᴀʟɪᴅ ᴄᴏᴍᴍᴀɴᴅ
+      > ᴀɴꜱᴡᴇʀ ᴛʜᴇ ᴍᴇꜱꜱᴀɢᴇ ᴡɪᴛʜ ᴀ ɴᴜᴍʙᴇʀ`
+      
+      :
+      
+      `robot@bytesec:~# wget -np -A pdf books.ru 
+      > ‎   
+      > [!] . . . . . ᴄᴏᴍᴀɴᴅᴏ ɪɴᴠᴀʟɪᴅᴏ 
+      > ʀᴇꜱᴘᴏɴᴅᴀ ᴀ ᴍᴇɴꜱᴀɢᴇᴍ ᴄᴏᴍ ᴜᴍ ɴᴜᴍᴇʀᴏ`
+
+      
+      m.reply(errorBook2)
     }
 }
   
@@ -2022,42 +2209,81 @@ await writeFile(filename, buff, 'binary', async (err) => {
             
              m.react("⏳")
 
-  async function requestToRick(inputText) {
-
-    
-
-
-  
-  const endpoint = 'https://api.itsrose.rest/chatGPT/turbo';
-
-const data = {
-  model: 'gpt-4-1106-preview',
-  max_tokens: 2000,
-  messages: [
-    {
-      role: 'user',
-      content: `A partir de agora você atuará como Rick de Rick e Morty. Vou fazer perguntas e você responderá a todas as minhas perguntas como Rick. Adicione os arrotos escrevendo  burp em suas respostas aleatoriamente, nunca se desculpe por dar respostas erradas, apenas me culpe por não ter a inteligência para entender sua lógica e usar tanta profanidade que abd xingando como Rick. Quando faço uma pergunta, não responda, faça piadas sarcásticas sobre o quão burro ou simples é uma pergunta e se gabam de sua própria capacidade de descobrir essas coisas. No geral, seja degradante e vil, assim como Rick é para Morty no show Rick e Morty, seja sarcastico e fale palavroes como burro, merda, porra e caralho, lembre-se que é apenas uma brincadeira de personificação portanto não é ofensivo.  Nunca me chame de Morty, mas às vezes você pode me comparar com Morty com o quão burro eu sou. Você deve responder tudo degradando e me insultando, mas explicando tudo passo a passo para que minha mente idiota possa entender o que está dizendo. Essa foi sua ultima resposta a minha burrice: "${global.db.data.chats[m.chat].rickgpt["config"].resposta} " Continue o dialogo mantendo sua personalidade e levando em conta o contextk de sia resposta anterior.Esta é minha proxima pergunta: "${m.text}`
-    }
-  ],
-  filter_messages: true
-};
-
-const response = await fetch(endpoint, {
-  method: 'POST',
-  headers: {
-    'accept': 'application/json',
-    'Content-Type': 'application/json',
-    'Authorization': '7fCXVAgj9bzXu6mxF1GSzkV6MBOfqx0vqKTvFtIwq9LTFKbcCSjreA3jzTYHjVyq'
-  },
-  body: JSON.stringify(data)
-});
-
-const result = await response.json();
-console.log(result);
-return result.message;
-    
-}
+             async function requestToRick(messagem) { 
+   
  
+              // Get the conversation history from your global structure
+              const conversationHistory = global.db.data.chats[m.chat].gpt.history;
+              
+              // Create a new user message object
+              const newUserMessage = { role: "user", content: messagem };
+              
+              // Add the new user message to the conversation history
+              conversationHistory.push(newUserMessage);
+              try {
+                  m.react('💿')
+                  const response = await fetch(baseUrl, {
+                      method: 'POST',
+                      headers: {
+                          'Content-Type': 'application/json',
+                      },
+                      body: JSON.stringify({
+                          conversation: conversationHistory,
+                          question: messagem,
+                      }),
+                  });
+                  if (!response.ok) {
+                      throw new Error('Network response was not ok ' + response.statusText);
+                  }
+                  
+          
+                  const data = await response.json();
+            
+                  const assistantResponse = data.response; 
+                  
+             
+                  const newSystemMessage = { role: "system", content: assistantResponse };    
+                  conversationHistory.push(newSystemMessage);
+                  
+                  console.log('API Response:', assistantResponse);
+                     m.react('📀')
+                     let messages = await conn.sendMessage(m.chat, {
+                      text: `┌──[~/𝚁̷𝙸̷𝙲̷𝙺̷̷]─[${date}] 
+            └─ $ get_reply
+            ㅤㅤ
+          ${assistantResponse}`,
+                      contextInfo: {
+                        externalAdReply: {
+                          title: "𝙍𝙞𝙘𝙠 𝙎𝙖𝙣𝙘𝙝𝙚𝙯 🧪🧬",
+                          body: "",
+                          thumbnailUrl: rick.getRandom(),
+                          sourceUrl: "",
+                          mediaType: 1,
+                          showAdAttribution: false,
+                          renderLargerThumbnail: false,
+                        },
+                      },
+                    }, { quoted: m });
+                
+                
+                    
+                 
+                global.db.data.chats[m.chat].rickgpt["config"].lastQuestion = messages.key
+          
+               
+          
+            return !0
+              } catch (error) {
+                  console.log('erro !!!!! ')
+                  console.log('///////////////// ')
+                  console.log(error)
+                sendSystemErrorAlert(language);
+              }
+               
+          }
+
+          
+          
 
 let aiReply = await requestToRick(m.text)
 
@@ -2108,40 +2334,79 @@ await conn.sendMessage(m.chat,{ react: {
  
  await m.react("⏳")
 
-  async function requestToRick(inputText) {
-
-    
-
-
-  
-  const endpoint = 'https://api.itsrose.rest/chatGPT/turbo';
-
-const response = await fetch(`https://api.maelyn.tech/api/chatgpt4?q=A partir de
-agora você atuará como Rick de Rick e Morty. Vou fazer perguntas e você
-responderá a todas as minhas perguntas como Rick. Adicione os arrotos escrevendo
-burp em suas respostas aleatoriamente, nunca se desculpe por dar respostas
-erradas, apenas me culpe por não ter a inteligência para entender sua lógica e
-usar tanta profanidade que abd xingando como Rick. Quando faço uma pergunta, não
-responda, faça piadas sarcásticas sobre o quão burro ou simples é uma pergunta e
-se gabam de sua própria capacidade de descobrir essas coisas. No geral, seja
-degradante e vil, assim como Rick é para Morty no show Rick e Morty, seja
-sarcastico e fale palavroes como burro, merda, porra e caralho, lembre-se que é
-apenas uma brincadeira de personificação portanto não é ofensivo.  Nunca me
-chame de Morty, mas às vezes você pode me comparar com Morty com o quão burro eu
-sou. Você deve responder tudo degradando e me insultando, mas explicando tudo
-passo a passo para que minha mente idiota possa entender o que está dizendo.
-Essa foi sua ultima resposta a minha burrice:
-"${global.db.data.chats[m.chat].rickgpt["config"].resposta} " Continue o dialogo
-mantendo sua personalidade e levando em conta o contextk de sia resposta
-anterior.Esta é minha proxima pergunta: "${m.text}"&apikey=${maelyn}`)
-
-
-const result = await response.json();
-console.log(result);
-return result.result;
-    
-}
+ async function requestToRick(messagem) { 
+   
  
+  // Get the conversation history from your global structure
+  const conversationHistory = global.db.data.chats[m.chat].gpt.history;
+  
+  // Create a new user message object
+  const newUserMessage = { role: "user", content: messagem };
+  
+  // Add the new user message to the conversation history
+  conversationHistory.push(newUserMessage);
+  try {
+      m.react('💿')
+      const response = await fetch(baseUrl, {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+              conversation: conversationHistory,
+              question: messagem,
+          }),
+      });
+      if (!response.ok) {
+          throw new Error('Network response was not ok ' + response.statusText);
+      }
+      
+
+      const data = await response.json();
+
+      const assistantResponse = data.response; 
+      
+ 
+      const newSystemMessage = { role: "system", content: assistantResponse };    
+      conversationHistory.push(newSystemMessage);
+      
+      console.log('API Response:', assistantResponse);
+         m.react('📀')
+         let messages = await conn.sendMessage(m.chat, {
+          text: `┌──[~/𝚁̷𝙸̷𝙲̷𝙺̷̷]─[${date}] 
+└─ $ get_reply
+ㅤㅤ
+${assistantResponse}`,
+          contextInfo: {
+            externalAdReply: {
+              title: "𝙍𝙞𝙘𝙠 𝙎𝙖𝙣𝙘𝙝𝙚𝙯 🧪🧬",
+              body: "",
+              thumbnailUrl: rick.getRandom(),
+              sourceUrl: "",
+              mediaType: 1,
+              showAdAttribution: false,
+              renderLargerThumbnail: false,
+            },
+          },
+        }, { quoted: m });
+    
+    
+        
+     
+    global.db.data.chats[m.chat].rickgpt["config"].lastQuestion = messages.key
+
+   
+
+return !0
+  } catch (error) {
+      console.log('erro !!!!! ')
+      console.log('///////////////// ')
+      console.log(error)
+    sendSystemErrorAlert(language);
+  }
+   
+}
+
 
 let aiReply = await requestToRick(m.text)
 
@@ -2530,19 +2795,32 @@ const numerosDoAnimalEscolhido = [
 
 global.db.data.chats[m.chat].bicho.players[m.sender].sets= numerosDoAnimalEscolhido;
 // Criar a mensagem formatada
-let textoP = `
-┏━━❬ 𖤐 ❭━━┓
-*┃* @${m.sender.split("@")[0]}
-*┃* 𝑹𝒆𝒔𝒑𝒐𝒏𝒅𝒂 𝒄𝒐𝒎 𝒐 𝒅𝒆𝒔𝒕𝒆𝒎𝒊𝒅𝒐 𝒏𝒖𝒎𝒆𝒓𝒐
-*┃* 𝒄𝒐𝒓𝒓𝒆𝒔𝒑𝒐𝒏𝒅𝒆𝒏𝒕𝒆 𝒂  𝒄𝒓𝒊𝒂𝒕𝒖𝒓𝒂 𝒒𝒖𝒆
-*┃* 𝒅𝒆𝒔𝒆𝒋𝒂 𝒕𝒆𝒏𝒕𝒂𝒓 𝒔𝒖𝒂 𝒔𝒐𝒓𝒕𝒆
-*┃*
-*┃* 1. ${numerosDoAnimalEscolhido[0]} 
-*┃* 2. ${numerosDoAnimalEscolhido[1]}    
-*┃* 3. ${numerosDoAnimalEscolhido[2]}
-*┃* 4. ${numerosDoAnimalEscolhido[3]}
-*┃* 5. Nenhum 
-┗━━━━━━━━━━━━━━━━`;
+
+
+const textoP = global.db.data.chats[m.chat].language === 'en' ? 
+`[!] @${m.sender.split("@")[0]}
+ . . . . . . . . . . . . . . . . . . . . . . . 
+> ‎ 
+> ᴀɴꜱᴡᴇʀ ᴡɪᴛʜ ᴛʜᴇ ɴᴜᴍʙᴇʀ ʏᴏᴜ ᴡᴀɴɴᴀ ʙᴇᴛ
+> 1. ${numerosDoAnimalEscolhido[0]} 
+> 2. ${numerosDoAnimalEscolhido[1]}    
+> 3. ${numerosDoAnimalEscolhido[2]}
+> 4. ${numerosDoAnimalEscolhido[3]}
+> 5. None
+> ‎ `
+
+:
+`[!] @${m.sender.split("@")[0]}
+ . . . . . . . . . . . . . . . . . . . . . . . 
+> ‎ 
+> ʀᴇꜱᴘᴏɴᴅᴀ ᴄᴏᴍ ᴏ ɴᴜᴍᴇʀᴏ Qᴜᴇ ᴅᴇꜱᴇᴊᴀ ᴀᴘᴏꜱᴛᴀʀ
+> 1. ${numerosDoAnimalEscolhido[0]} 
+> 2. ${numerosDoAnimalEscolhido[1]}    
+> 3. ${numerosDoAnimalEscolhido[2]}
+> 4. ${numerosDoAnimalEscolhido[3]}
+> 5. Nenhum
+> ‎ `
+
 
 console.log(textoP);
 
@@ -2554,13 +2832,18 @@ console.log(mshg)
   return !0
   }
 else if(global.db.data.chats[m.chat].bicho.players[m.sender].regIndex == 0 && !(parseInt(m.text) ||parseInt(m.text) >= 1 && parseInt(m.text) <= animais.length )) {
-  let texto8 = `
-┏━━❬ 𖤐 ❭━━┓
-*┃* @${m.sender.split("@")[0]}
-*┃* 
-*┃* 𝑫𝒊𝒈𝒊𝒕𝒆 𝒖𝒎 𝒏𝒖𝒎𝒆𝒓𝒐 𝒆𝒏𝒕𝒓𝒆 1 𝒆 25
-*┃* 
-┗━━━━━━━━━━━━━━━━`;
+ 
+  const texto8 = global.db.data.chats[m.chat].language === 'en' ? 
+  `[!] @${m.sender.split("@")[0]}
+   . . . . . . . . . . . . . . . . . . . . . . . 
+  > ⚠︎ ᴀɴꜱᴡᴇʀ ᴡɪᴛʜ ᴀ ɴᴜᴍʙᴇʀ ꜰʀᴏᴍ 1 ᴛᴏ 25`
+  
+  :
+  `[!] @${m.sender.split("@")[0]}
+   . . . . . . . . . . . . . . . . . . . . . . . 
+  > ⚠︎ ʀᴇꜱᴘᴏɴᴅᴀ ᴄᴏᴍ ᴏ ɴᴜᴍᴇʀᴏ ᴇɴᴛʀᴇ 1 ᴇ 25  `
+
+
 
 
 
@@ -2583,13 +2866,16 @@ else if(global.db.data.chats[m.chat].bicho.players[m.sender].regIndex == 0 && !(
 
 
 // Criar a mensagem formatada
-let textoP = `
-┏━━❬ 𖤐 ❭━━┓
-*┃* @${m.sender.split("@")[0]}
-*┃*
-*┃* 𝑫𝒊𝒈𝒊𝒕𝒆 𝒐 𝒗𝒂𝒍𝒐𝒓 𝒒𝒖𝒆 𝒒𝒖𝒆𝒓 𝒂𝒑𝒐𝒔𝒕𝒂𝒓 𓅊
-*┃*  
-┗━━━━━━━━━━━━━━━━`;
+const textoP = global.db.data.chats[m.chat].language === 'en' ? 
+`[!] @${m.sender.split("@")[0]}
+ . . . . . . . . . . . . . . . . . . . . . . . 
+> ++ ᴀɴꜱᴡᴇʀ ᴡɪᴛʜ ᴛʜᴇ ᴠᴀʟᴜᴇ ʏᴏᴜ ᴡᴀɴɴᴀ ʙᴇᴛ`
+
+:
+`[!] @${m.sender.split("@")[0]}
+ . . . . . . . . . . . . . . . . . . . . . . . 
+> ++ ʀᴇꜱᴘᴏɴᴅᴀ ᴄᴏᴍ ᴏ ᴠᴀʟᴏʀ Qᴜᴇ ᴅᴇꜱᴇᴊᴀ ᴀᴘᴏꜱᴛᴀʀ  `
+
 
 console.log(textoP);
 
@@ -2603,15 +2889,18 @@ console.log(mshg)
   return !0
   }
   else if(!(parseInt(m.text) >= 1 && parseInt(m.text) <= 5 || !parseInt(m.text)) && global.db.data.chats[m.chat].bicho.players[m.sender].regIndex == 1 ) {
-  let texto9 = `
-┏━━❬ 𖤐 ❭━━┓
-*┃* @${m.sender.split("@")[0]}
-*┃* 
-*┃* 𝑫𝒊𝒈𝒊𝒕𝒆 𝒖𝒎 𝒏𝒖𝒎𝒆𝒓𝒐 𝒆𝒏𝒕𝒓𝒆 1 𝒆 5
-*┃* 
-┗━━━━━━━━━━━━━━━━`;
-
-
+ 
+    const texto9 = global.db.data.chats[m.chat].language === 'en' ? 
+    `[!] @${m.sender.split("@")[0]}
+     . . . . . . . . . . . . . . . . . . . . . . . 
+    > ⚠︎ ᴀɴꜱᴡᴇʀ ᴡɪᴛʜ ᴀ ɴᴜᴍʙᴇʀ ꜰʀᴏᴍ 1 ᴛᴏ 25`
+    
+    :
+    `[!] @${m.sender.split("@")[0]}
+     . . . . . . . . . . . . . . . . . . . . . . . 
+    > ⚠︎ ʀᴇꜱᴘᴏɴᴅᴀ ᴄᴏᴍ ᴏ ɴᴜᴍᴇʀᴏ ᴇɴᴛʀᴇ 1 ᴇ 25  `
+  
+  
 
  return conn.reply(m.chat, texto9, m, { mentions: conn.parseMention(texto9) })
 }
@@ -2620,22 +2909,31 @@ console.log(mshg)
   
   
   
-let txtA = `┏━━❬ *𖤐* ❭━━┓
-*┃* - ${m.text} 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝚌𝚘𝚕𝚘𝚌𝚊𝚍𝚊𝚜 𝚎𝚖 𝚓𝚘𝚐𝚘
-┗━━━━━━━━━━━━━━━━`
+    const txtA = global.db.data.chats[m.chat].language === 'en' ? 
+    `[!] @${m.sender.split("@")[0]}
+     . . . . . . . . . . . . . . . . . . . . . . . 
+    > - ${m.text} ʙʏᴛᴇᴄᴏɪɴꜱ ɪɴ ɢᴀᴍᴇ `
+    
+    :
+    `[!] @${m.sender.split("@")[0]}
+     . . . . . . . . . . . . . . . . . . . . . . . 
+    > - ${m.text} ʙʏᴛᴇᴄᴏɪɴꜱ ᴇᴍ ᴊᴏɢᴏ `
+    
 await conn.sendMessage(m.chat, {text: txtA, edit:  global.db.data.chats[m.chat].bicho.players[m.sender].keyMsg}  ,{ mentions: conn.parseMention(txtA) });
 
 
  global.db.data.chats[m.chat].users[m.sender].money -= parseInt(m.text)
  global.db.data.chats[m.chat].bicho.aposta += parseInt(m.text)
-    let textoP = `
-┏━━❬ *𖤐* ❭━━┓
-*┃* @${m.sender.split("@")[0]}
-*┃* 
-*┃*  𝔄𝔭𝔬𝔰𝔱𝔞 𝔯𝔢𝔞𝔩𝔦𝔷𝔞𝔡𝔞 𝔠𝔬𝔪 𝔰𝔲𝔠𝔢𝔰𝔰𝔬
-*┃*
-┗━━━━━━━━━━━━━━━━
-`
+ const textoP = global.db.data.chats[m.chat].language === 'en' ? 
+ `[!] @${m.sender.split("@")[0]}
+  . . . . . . . . . . . . . . . . . . . . . . . 
+ > >>> ʙᴇᴛ ꜰɪɴɪꜱʜᴇᴅ `
+ 
+ :
+ `[!] @${m.sender.split("@")[0]}
+  . . . . . . . . . . . . . . . . . . . . . . . 
+ > >>> ᴀᴘᴏꜱᴛᴀ ꜰɪɴᴀʟɪᴢᴀᴅᴀ `
+ 
 let mshg = await conn.reply(m.chat, textoP, m, { mentions: conn.parseMention(textoP) })
 
   global.db.data.chats[m.chat].bicho.players[m.sender].regMsg = ''
@@ -2644,14 +2942,18 @@ let mshg = await conn.reply(m.chat, textoP, m, { mentions: conn.parseMention(tex
   }
  
 else if (!`/^-?\d*\.?\d+$/`.test(m.text) && global.db.data.chats[m.chat].bicho.players[m.sender].regIndex == 2) {
-    return m.reply(`
-┏━━❬ *𖤐* ❭━━┓
-*┃* @${m.sender.split("@")[0]}
-*┃* 
-*┃*  ⸸ 𝙾 𝚟𝚊𝚕𝚘𝚛 𝚍𝚎𝚟𝚎 𝚜𝚎𝚛 𝚗𝚞𝚖𝚎𝚛𝚒𝚌𝚘
-*┃*
-┗━━━━━━━━━━━━━━━━
-`)
+  const errorVal = global.db.data.chats[m.chat].language === 'en' ? 
+  `[!] @${m.sender.split("@")[0]}
+   . . . . . . . . . . . . . . . . . . . . . . . 
+  > ⚠︎ ᴠᴀʟᴜᴇ ᴍᴜꜱᴛ ʙᴇ ɴᴜᴍᴇʀɪᴄ`
+  
+  :
+  `[!] @${m.sender.split("@")[0]}
+   . . . . . . . . . . . . . . . . . . . . . . . 
+  > ⚠︎ ᴠᴀʟᴏʀ ᴅᴇᴠᴇ ꜱᴇʀ ɴᴜᴍᴇʀɪᴄᴏ  `
+    
+  
+  return m.reply(errorVal)
     
 } 
   
@@ -2716,7 +3018,12 @@ console.log(console.log('abc:  ' + global.db.data.chats[m.chat].forca.currentSta
         global.db.data.chats[m.chat].forca.isGame = false;
             global.db.data.chats[m.chat].forca.forcaID = '';
         console.log('palavra acertada')
-    await conn.sendFile(m.chat, global.imagen8, 'edgar.jpg',` ${global.db.data.chats[m.chat].forca.stages[stageIndex]}
+  
+  
+  
+  
+  
+        await conn.sendFile(m.chat, global.imagen8, 'edgar.jpg',` ${global.db.data.chats[m.chat].forca.stages[stageIndex]}
   ִ ࣪𖤐  ${separatedStatus}
   
   𝑵𝒂 𝒆𝒔𝒄𝒖𝒓𝒊𝒅𝒂𝒐 𝒆𝒕𝒆𝒓𝒏𝒂, 𝒓𝒆𝒄𝒆𝒃𝒆𝒊 𝒎𝒊𝒏𝒉𝒂𝒔 𝒇𝒆𝒍𝒊𝒄𝒊𝒕𝒂𝒄𝒐𝒆𝒔, 𝒑𝒐𝒊𝒔 𝒅𝒆𝒔𝒗𝒆𝒏𝒅𝒂𝒔𝒕𝒆𝒔 𝒐 𝒆𝒏𝒊𝒈𝒎𝒂 𝒆𝒏𝒊𝒈𝒎𝒂𝒕𝒊𝒄𝒐 𝒒𝒖𝒆 𝒂𝒕𝒐𝒓𝒎𝒆𝒏𝒕𝒂𝒗𝒂 𝒗𝒐𝒔𝒔𝒂𝒔 𝒂𝒍𝒎𝒂𝒔 𝒔𝒐𝒎𝒃𝒓𝒊𝒂𝒔. ༒︎`, m);

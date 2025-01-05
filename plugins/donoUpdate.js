@@ -10,7 +10,7 @@ import axios from 'axios';
 let previousCommitSHA = '';
 let previousUpdatedAt = '';
 const owner = 'ARCANGEL0';
-const repo = 'Edgar-WhatsappBOT';
+const repo = 'Bytesec-MD';
 let handler = async (m, { conn, text, usedPrefix, command }) => {
   async function checkRepoUpdates() {
     try {
