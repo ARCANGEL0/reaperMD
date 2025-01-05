@@ -42,6 +42,13 @@ const rick = [
 
 
 
+
+
+const handler = async (m, {conn, text, usedPrefix, isOwner,isAdmin,command}) => {
+  
+  
+  
+
 if (!global.db.data.chats[m.chat]) {
   global.db.data.chats[m.chat] = {};
 }
@@ -63,8 +70,6 @@ if (!global.db.data.chats[m.chat].rickgpt["config"]) {
 }
 
 
-
-const handler = async (m, {conn, text, usedPrefix, isOwner,isAdmin,command}) => {
   const language = global.db.data.chats[m.chat].language;
   const baseUrl = 'http://89.117.96.108:8330/rick';
   const visionUrl = 'http://89.117.96.108:8330/rickEye';
