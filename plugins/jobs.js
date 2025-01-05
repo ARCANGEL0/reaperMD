@@ -188,7 +188,7 @@ message += (await Promise.all(response.map(async (job, index) =>  {
 🗓️ 𝐏𝐮𝐛𝐥𝐢𝐜𝐚𝐝𝐨 𝐞𝐦: ${formatDate(job.date)}${job.agoTime ? '\n' + txttrnslt.text : ''} 
     
 ${job.salary ? '💵 𝐑𝐞𝐦𝐮𝐧𝐞𝐫𝐚𝐜𝐚𝐨: '+job.salary+'\n': ''}
-𓂀 𝐋𝐢𝐧𝐤: ${job.jobUrl}
+җ 𝐋𝐢𝐧𝐤: ${job.jobUrl}
   `;
 }))).join('');
 

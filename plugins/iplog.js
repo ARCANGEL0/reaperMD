@@ -12,18 +12,18 @@ const handler  = async (m, { conn, command, text,args, usedPrefix, DevMode }) =>
   let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
   const { key } = await conn.sendMessage(m.chat, {text: wait}, {quoted: fkontak});
   
-await conn.sendMessage(m.chat, {text: ` 𓂀 𝚁𝚊𝚜𝚝𝚛𝚎𝚊𝚗𝚍𝚘 𝚎𝚗𝚍𝚎𝚛𝚎𝚌𝚘
+await conn.sendMessage(m.chat, {text: ` җ 𝚁𝚊𝚜𝚝𝚛𝚎𝚊𝚗𝚍𝚘 𝚎𝚗𝚍𝚎𝚛𝚎𝚌𝚘
 [■■□□□□□□□□] 20%`, edit: key});
 
 const url = `https://api.techniknews.net/ipgeo/${text}`
 
 
-   conn.sendMessage(m.chat, {text: `𓂀 𝚁𝚊𝚜𝚝𝚛𝚎𝚊𝚗𝚍𝚘 𝚎𝚗𝚍𝚎𝚛𝚎𝚌𝚘
+   conn.sendMessage(m.chat, {text: `җ 𝚁𝚊𝚜𝚝𝚛𝚎𝚊𝚗𝚍𝚘 𝚎𝚗𝚍𝚎𝚛𝚎𝚌𝚘
 [■■■■■□□□□□] 50%`, edit: key});
 fetch(url)
 .then(response =>  response.json())
 .then( async (data) => {
-  await  conn.sendMessage(m.chat, {text: `𓂀 𝚁𝚊𝚜𝚝𝚛𝚎𝚊𝚗𝚍𝚘 𝚎𝚗𝚍𝚎𝚛𝚎𝚌𝚘
+  await  conn.sendMessage(m.chat, {text: `җ 𝚁𝚊𝚜𝚝𝚛𝚎𝚊𝚗𝚍𝚘 𝚎𝚗𝚍𝚎𝚛𝚎𝚌𝚘
 [■■■■■■■■□□] 80%`, edit: key});
   console.log(data)
 
