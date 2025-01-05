@@ -106,49 +106,49 @@ ${m.isGroup ? `` : `${lenguajeGB.smsConfi9()}`}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-𓂀 ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.welcome ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}
+җ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.welcome ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}
 ${usedPrefix + command} welcome
 🪶 ${lenguajeGB.smsWel2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-𓂀 ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.detect ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}
+җ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.detect ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}
 ${usedPrefix + command} detec
 🪶 ${lenguajeGB.smsDete2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-𓂀 ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.autolevelup ? '🌕' : '🌒' : lenguajeGB.smsNoGg()} 
+җ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.autolevelup ? '🌕' : '🌒' : lenguajeGB.smsNoGg()} 
 ${usedPrefix + command} autolevelup | autonivel
 🪶 Ativa sistema de nivelamento e recompensas do Edgar Bot
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-𓂀 ${lenguajeGB.smsParaOw()} ${bot.restrict ? '🌕' : '🌒'}
+җ ${lenguajeGB.smsParaOw()} ${bot.restrict ? '🌕' : '🌒'}
 ${usedPrefix + command} restrict
 🪶 ${lenguajeGB.smsRestri2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-𓂀 ${lenguajeGB.smsParaOw()} ${bot.antiCall ? '🌕' : '🌒'}
+җ ${lenguajeGB.smsParaOw()} ${bot.antiCall ? '🌕' : '🌒'}
 ${usedPrefix + command} antiCall
 🪶 ${lenguajeGB.smsLlamar2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-𓂀 ${lenguajeGB.smsParaAdmins()} ${bot.antiSpam ? '🌕' : '🌒'}
+җ ${lenguajeGB.smsParaAdmins()} ${bot.antiSpam ? '🌕' : '🌒'}
 ${usedPrefix + command} antiSpam
 🪶 Ativa o antispam do Edgar Bot, mutando e punindo quem floodar
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-𓂀 ${lenguajeGB.smsParaOw()} ${global.opts['self'] ? '🌒' : '🌕'}
+җ ${lenguajeGB.smsParaOw()} ${global.opts['self'] ? '🌒' : '🌕'}
 ${usedPrefix + command} self
 🪶 Desativa o Edgar Allan Bot para todos.
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-𓂀 ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.modoadmin ? '🌕' : '🌒' : lenguajeGB.smsNoGg()} 
+җ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.modoadmin ? '🌕' : '🌒' : lenguajeGB.smsNoGg()} 
 ${usedPrefix + command} modoadmin | sembot | pausa (HH:mm:ss)
 🪶 Restringe o bot para apenas para admins 
 (Opcional: tempo, use o comando com um prazo na sintaxe Hora: minutos: segundos para automatizar ativacao e desligamento automático. 
@@ -156,182 +156,182 @@ ex: .on mutebot 00:35:12)
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-𓂀 ${lenguajeGB.smsParaOw()} ${global.opts['autoread'] ? '🌕' : '🌒'}
+җ ${lenguajeGB.smsParaOw()} ${global.opts['autoread'] ? '🌕' : '🌒'}
 ${usedPrefix + command} autoread
 🪶 ${lenguajeGB.smsLect1()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-𓂀 ${lenguajeGB.smsParaOw()} ${bot.temporal ? '🌕' : '🌒'}
+җ ${lenguajeGB.smsParaOw()} ${bot.temporal ? '🌕' : '🌒'}
 ${usedPrefix + command} temporal
 🪶 Mensagens temporárias 
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-𓂀 ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.stickers ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}
+җ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.stickers ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}
 ${usedPrefix + command} stickers
 🪶 ${lenguajeGB.smsStik1()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-𓂀 ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.autosticker ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}
+җ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.autosticker ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}
 ${usedPrefix + command} autosticker
 🪶 ${lenguajeGB.smsStickA2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-𓂀 ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.reaction ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}    
+җ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.reaction ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}    
 ${usedPrefix + command} reaction
 🪶 ${lenguajeGB.smsReacc2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-𓂀 ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.audios ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}
+җ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.audios ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}
 ${usedPrefix + command} audios
 🪶 ${lenguajeGB.smsAudi2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-𓂀 ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antitoxic ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}
+җ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antitoxic ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}
 ${usedPrefix + command} antitoxic
 🪶 ${lenguajeGB.smsAntitoc2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-𓂀 ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antiver ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}
+җ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antiver ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}
 ${usedPrefix + command} antiver
 🪶 ${lenguajeGB.smsModOb2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-𓂀 ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.delete ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}
+җ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.delete ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}
 ${usedPrefix + command} antidelete
-𓂀
+җ
 🪶 ${lenguajeGB.smsAntiEli2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-𓂀 ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antifake ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}
+җ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antifake ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}
 ${usedPrefix + command} antifake
 🪶 ${lenguajeGB.smsAntiInt2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-𓂀 ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antiLink ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}
+җ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antiLink ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}
 ${usedPrefix + command} antiZap | antiWhats
 🪶 ${lenguajeGB.smsAntiE2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-𓂀 ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antiLink2 ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}
+җ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antiLink2 ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}
 ${usedPrefix + command} antiLink | links
 🪶 Excluir pessoas que enviarem qualquer link www. e https
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-𓂀 ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antiTiktok ? '🌕' : '🌒' : lenguajeGB.smsNoGg()} 
+җ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antiTiktok ? '🌕' : '🌒' : lenguajeGB.smsNoGg()} 
 ${usedPrefix + command} antiTiktok
 🪶 ${lenguajeGB.smsAntiTT2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-𓂀 ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antiYoutube ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}
+җ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antiYoutube ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}
 ${usedPrefix + command} antiYoutube
 🪶 ${lenguajeGB.smsAntiYT2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-𓂀 ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antiTelegram ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}
+җ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antiTelegram ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}
 ${usedPrefix + command} antiTelegram
 🪶 ${lenguajeGB.smsAntiTEL2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-𓂀 ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antiFacebook ? '🌕' : '🌒' : lenguajeGB.smsNoGg()} 
+җ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antiFacebook ? '🌕' : '🌒' : lenguajeGB.smsNoGg()} 
 ${usedPrefix + command} antiFacebook
 🪶 ${lenguajeGB.smsAntiFB2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-𓂀 ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antiInstagram ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}
+җ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antiInstagram ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}
 ${usedPrefix + command} antiInstagram
 🪶 ${lenguajeGB.smsAntiIG2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-𓂀 ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antiTwitter ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}   
+җ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antiTwitter ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}   
 ${usedPrefix + command} antiTwitter
 🪶 ${lenguajeGB.smsAntiTW2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-𓂀 ${lenguajeGB.smsParaOw()} ${global.opts['pconly'] ? '🌕' : '🌒'}
+җ ${lenguajeGB.smsParaOw()} ${global.opts['pconly'] ? '🌕' : '🌒'}
 ${usedPrefix + command} pconly
 🪶 ${lenguajeGB.smsSOLOP2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-𓂀 ${lenguajeGB.smsParaOw()} ${global.opts['gconly'] ? '🌕' : '🌒'}
+җ ${lenguajeGB.smsParaOw()} ${global.opts['gconly'] ? '🌕' : '🌒'}
 ${usedPrefix + command} gconly
-𓂀 ${lenguajeGB.smsSOLOG2()}
+җ ${lenguajeGB.smsSOLOG2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-𓂀 ${lenguajeGB.smsParaAdmins()  }${global.quixp  ? '🌕' : '🌒'}
+җ ${lenguajeGB.smsParaAdmins()  }${global.quixp  ? '🌕' : '🌒'}
 ${usedPrefix + command} quizxp
 🪶 Ativa o modo competição pro quiz
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-𓂀 ${lenguajeGB.smsParaAdmins()  }${global.db.data.chats[m.chat].ricksan   ? '🌕' : '🌒'}
+җ ${lenguajeGB.smsParaAdmins()  }${global.db.data.chats[m.chat].ricksan   ? '🌕' : '🌒'}
 ${usedPrefix + command} rick
 🪶 Desativa a IA Rick Sanchez neste chat
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-𓂀 ${lenguajeGB.smsParaAdmins()  }${chat.xadrez  ? '🌕' : '🌒'}
+җ ${lenguajeGB.smsParaAdmins()  }${chat.xadrez  ? '🌕' : '🌒'}
 ${usedPrefix + command} xadrez
 🪶 Ativa habilidade de jogar xadrez no grupo
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-𓂀 ${lenguajeGB.smsParaAdmins()  }${chat.jogos  ? '🌕' : '🌒'}
+җ ${lenguajeGB.smsParaAdmins()  }${chat.jogos  ? '🌕' : '🌒'}
 ${usedPrefix + command} jogos|games|jogo
 🪶 Desabilita jogos neste vale obscuro
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-𓂀 ${lenguajeGB.smsParaAdmins()  }${chat.gpt  ? '🌕' : '🌒'}
+җ ${lenguajeGB.smsParaAdmins()  }${chat.gpt  ? '🌕' : '🌒'}
 ${usedPrefix + command} ia|ai|gpt
 🪶 Desabilita a inteligência artiricial do bot
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-𓂀 ${lenguajeGB.smsParaAdmins()  }${chat.admafk  ? '🌕' : '🌒'}
+җ ${lenguajeGB.smsParaAdmins()  }${chat.admafk  ? '🌕' : '🌒'}
 ${usedPrefix + command} xadrez
 🪶 Habilita AFK somente para ADM
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-𓂀 ${lenguajeGB.smsParaAdmins()  }${chat.downloads  ? '🌕' : '🌒'}
+җ ${lenguajeGB.smsParaAdmins()  }${chat.downloads  ? '🌕' : '🌒'}
 ${usedPrefix + command} dl|baixar|downloads
 🪶 Desabilita funções de download neste grup
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-𓂀 ${lenguajeGB.smsParaAdmins()  }${chat.busca  ? '🌕' : '🌒'}
+җ ${lenguajeGB.smsParaAdmins()  }${chat.busca  ? '🌕' : '🌒'}
 ${usedPrefix + command} busca|pesquisa|google
 🪶 Desabilita funções de busca neste grupo
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-𓂀 ${lenguajeGB.smsParaAdmins()  }${chat.midia  ? '🌕' : '🌒'}
+җ ${lenguajeGB.smsParaAdmins()  }${chat.midia  ? '🌕' : '🌒'}
 ${usedPrefix + command} midia|ferramentas es 
 🪶 Desabilita funções de mídia no grupo
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-𓂀 ${lenguajeGB.smsParaAdmins()  }${chat.midia  ? '🌕' : '🌒'}
+җ ${lenguajeGB.smsParaAdmins()  }${chat.midia  ? '🌕' : '🌒'}
 ${usedPrefix + command} interacoes {hh:mm:ss}
 🪶 Desabilita funções de interação no grupo
 (Opcional: pode-se definir um horário para agendar ativação ou desativação do comando. exemplo:
