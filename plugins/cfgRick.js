@@ -123,8 +123,9 @@ console.log('rickjs')
         console.log('API Response:', assistantResponse);
            m.react('📀')
            let messages = await conn.sendMessage(m.chat, {
-            text: `┌──[ 𝙼𝚛.𝚁𝚘𝚋𝚘𝚝 ]─[~/𝚁̷𝙸̷𝙲̷𝙺̷ 𝚂̷𝙰̷𝙽̷𝙲̷𝙷̷𝙴̷𝚉̷]─[${date}] 
-  └─ $ ${assistantResponse}`,
+            text: `┌──[~/𝚁̷𝙸̷𝙲̷𝙺̷̷]─[${date}] 
+  └─ $ get_reply
+${assistantResponse}`,
             contextInfo: {
               externalAdReply: {
                 title: "𝙍𝙞𝙘𝙠 𝙎𝙖𝙣𝙘𝙝𝙚𝙯 🧪🧬",
@@ -145,7 +146,7 @@ console.log('rickjs')
 
      
 
-  return mensagem
+  return !0
     } catch (error) {
         console.log('erro !!!!! ')
         console.log('///////////////// ')
