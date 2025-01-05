@@ -521,7 +521,7 @@ if(!global.db.data.chats[m.chat].users[m.sender]){
   global.db.data.chats[m.chat].users[m.sender]={
         exp: 0,
         limit:0,
-        almas:0,
+        rce:0,
         role:'⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎',
         money:0,
         level:0,
@@ -592,7 +592,7 @@ if(!global.db.data.chats[m.chat].jogadores[m.sender]){
 ▞▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▚
 ▌ 𝙲𝚘𝚗𝚐𝚛𝚊𝚝𝚜, 𝚔𝚒𝚍. 𝚈𝚘𝚞 𝚠𝚘𝚗:
 ┃ ${parseInt(global.db.data.chats[m.chat].quiz.pergunta.Pontos)} points
-┃ _*${global.db.data.chats[m.chat].quiz.pergunta.Money}*_ җ ʙʏᴛᴇᴄᴏɪɴꜱ
+┃ _*${global.db.data.chats[m.chat].quiz.pergunta.Money}*_ 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ
 ┃ _*${parseInt(global.db.data.chats[m.chat].quiz.pergunta.XP)}*_ 𝑥𝑝
 ┃ _*1*_ ⧗ ᴇᴛʜᴇʀᴇᴜᴍ
 ▚▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▞
@@ -610,7 +610,7 @@ if(!global.db.data.chats[m.chat].jogadores[m.sender]){
 ▞▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▚
 ▌ 𝙿𝚊𝚛𝚊𝚋𝚎𝚗𝚜, 𝚐𝚊𝚛𝚘𝚝𝚘. 𝚅𝚘𝚌𝚎 𝚐𝚊𝚗𝚑𝚘𝚞:
 ┃ ${parseInt(global.db.data.chats[m.chat].quiz.pergunta.Pontos)} pontos
-┃ _*${global.db.data.chats[m.chat].quiz.pergunta.Money}*_ җ ʙʏᴛᴇᴄᴏɪɴꜱ
+┃ _*${global.db.data.chats[m.chat].quiz.pergunta.Money}*_ 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ
 ┃ _*${parseInt(global.db.data.chats[m.chat].quiz.pergunta.XP)}*_ 𝑥𝑝
 ┃ _*1*_ ⧗ ᴇᴛʜᴇʀᴇᴜᴍ
 ▚▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▞
@@ -1219,7 +1219,7 @@ console.log("👍")
 ┃ @${player2.split("@")[0]}: ${global.db.data.chats[m.chat].truco.stats[player2].pontos}
 ┃────────────────────
 ┃ @${user.split("@")[0]}  𝔯𝔢𝔠𝔢𝔟𝔢𝔯𝔞:
-┃ ${ global.db.data.chats[m.chat].truco.coins} җ ʙʏᴛᴇᴄᴏɪɴꜱ ${isTruco ? `\n┃ ${ global.db.data.chats[m.chat].truco.bugs} ⧗ ᴇᴛʜᴇʀᴇᴜᴍ` : ''}
+┃ ${ global.db.data.chats[m.chat].truco.coins} 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${isTruco ? `\n┃ ${ global.db.data.chats[m.chat].truco.bugs} ⧗ ᴇᴛʜᴇʀᴇᴜᴍ` : ''}
 ┃ ${ global.db.data.chats[m.chat].truco.xp} 𝑥𝑝
 ┃ 
 ╰─...⌬────────────────────╯`, m, { mentions:[player1,player2] });
@@ -1340,7 +1340,7 @@ console.log(global.db.data.chats[m.chat].truco.table)
 ┃ @${player2.split("@")[0]}: ${global.db.data.chats[m.chat].truco.stats[player2].pontos}
 ┃────────────────────
 ┃ @${user.split("@")[0]}  𝔯𝔢𝔠𝔢𝔟𝔢𝔯𝔞:
-┃ ${ global.db.data.chats[m.chat].truco.coins} җ ʙʏᴛᴇᴄᴏɪɴꜱ ${global.db.data.chats[m.chat].truco.isTruco ? `\n┃ ${ global.db.data.chats[m.chat].truco.bugs} ⧗ ᴇᴛʜᴇʀᴇᴜᴍ` : ''}
+┃ ${ global.db.data.chats[m.chat].truco.coins} 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${global.db.data.chats[m.chat].truco.isTruco ? `\n┃ ${ global.db.data.chats[m.chat].truco.bugs} ⧗ ᴇᴛʜᴇʀᴇᴜᴍ` : ''}
 ┃ ${ global.db.data.chats[m.chat].truco.xp} 𝑥𝑝
 ┃ 
 ╰─...⌬────────────────────╯`, m, { mentions:[player1,player2] });
@@ -1373,7 +1373,7 @@ global.db.data.chats[m.chat].users[user].limit +=  global.db.data.chats[m.chat].
 ┃ @${player2.split("@")[0]}: ${global.db.data.chats[m.chat].truco.stats[player2].pontos}
 ┃────────────────────
 ┃ @${user.split("@")[0]}  𝔯𝔢𝔠𝔢𝔟𝔢𝔯𝔞:
-┃ ${ global.db.data.chats[m.chat].truco.coins} җ ʙʏᴛᴇᴄᴏɪɴꜱ ${global.db.data.chats[m.chat].truco.isTruco ? `\n┃ ${ global.db.data.chats[m.chat].truco.bugs} ⧗ ᴇᴛʜᴇʀᴇᴜᴍ` : ''}
+┃ ${ global.db.data.chats[m.chat].truco.coins} 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${global.db.data.chats[m.chat].truco.isTruco ? `\n┃ ${ global.db.data.chats[m.chat].truco.bugs} ⧗ ᴇᴛʜᴇʀᴇᴜᴍ` : ''}
 ┃ ${ global.db.data.chats[m.chat].truco.xp} 𝑥𝑝
 ┃ 
 ╰─...⌬────────────────────╯`, m, { mentions:[player1,player2] });
@@ -2291,7 +2291,7 @@ if(global.db.data.chats[m.chat].roleta.jogadores[m.sender].tempType== 1 &&
 *┃━╼*  𝐐𝐮𝐚𝐥 𝐬𝐞𝐫𝐚́ 𝐨 𝐭𝐢𝐩𝐨 𝐝𝐞 𝐬𝐮𝐚 𝐚𝐩𝐨𝐬𝐭𝐚?
 ╰╾╼╾╼╾╼╾╼╾╼╾
 > ‎ 
-> җ 𝑸𝒖𝒂𝒏𝒕𝒐 𝒅𝒆𝒔𝒆𝒋𝒂 𝒂𝒑𝒐𝒔𝒕𝒂𝒓? 
+> 🜅 𝑸𝒖𝒂𝒏𝒕𝒐 𝒅𝒆𝒔𝒆𝒋𝒂 𝒂𝒑𝒐𝒔𝒕𝒂𝒓? 
 > ‎
 ┗━━━━━━━━━━━━━━━━`
   
@@ -2621,7 +2621,7 @@ console.log(mshg)
   
   
 let txtA = `┏━━❬ *𖤐* ❭━━┓
-*┃* - ${m.text} җ ʙʏᴛᴇᴄᴏɪɴꜱ 𝚌𝚘𝚕𝚘𝚌𝚊𝚍𝚊𝚜 𝚎𝚖 𝚓𝚘𝚐𝚘
+*┃* - ${m.text} 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝚌𝚘𝚕𝚘𝚌𝚊𝚍𝚊𝚜 𝚎𝚖 𝚓𝚘𝚐𝚘
 ┗━━━━━━━━━━━━━━━━`
 await conn.sendMessage(m.chat, {text: txtA, edit:  global.db.data.chats[m.chat].bicho.players[m.sender].keyMsg}  ,{ mentions: conn.parseMention(txtA) });
 
@@ -2734,7 +2734,7 @@ console.log(console.log('abc:  ' + global.db.data.chats[m.chat].forca.currentSta
   
 @${m.sender.split('@')[0]}
 | ━━⬣ 𝑹𝒆𝒄𝒆𝒃𝒆𝒓𝒂𝒔
-| җ ʙʏᴛᴇᴄᴏɪɴꜱ  _*+${coins}*_
+| 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ  _*+${coins}*_
 | 𓂀 𝑥𝑝  _*+${xp}*_
   `
   
@@ -2786,7 +2786,7 @@ if(userGuess == palavra){
   𝑫𝒆𝒔𝒗𝒆𝒏𝒅𝒂𝒔𝒕𝒆 𝒅𝒆 𝒇𝒐𝒓𝒎𝒂 𝒔𝒊𝒏𝒈𝒆𝒍𝒂 𝒎𝒆𝒖 𝒆𝒏𝒊𝒈𝒎𝒂
   @${m.sender.split('@')[0]}
 | ━━⬣ 𝑹𝒆𝒄𝒆𝒃𝒆𝒓𝒂𝒔
-| җ ʙʏᴛᴇᴄᴏɪɴꜱ  _*+${coins}*_
+| 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ  _*+${coins}*_
 | 𓂀 𝑥𝑝  _*+${xp}*_ `
     let message = await conn.reply(m.chat,textwioplv, m, { mentions: [m.sender] })
      return !0
@@ -3007,7 +3007,7 @@ _𝐁𝐞𝐦 𝐯𝐢𝐧𝐝𝐨 𝐚 𝐥𝐨𝐣𝐚 𝐝𝐨 𝐆𝐚𝐭�
 
 ⦗1⦘ _𝑪𝒂𝒎𝒃𝒊𝒐 𝒅𝒆 ᴇᴛʜᴇʀᴇᴜᴍ 𝒆 ʙʏᴛᴇᴄᴏɪɴꜱ
 
-⦗2⦘ _𝐂𝐨𝐦𝐩𝐫𝐚𝐫 𝐱𝐩 𝐜𝐨𝐦 җ ʙʏᴛᴇᴄᴏɪɴꜱ_
+⦗2⦘ _𝐂𝐨𝐦𝐩𝐫𝐚𝐫 𝐱𝐩 𝐜𝐨𝐦 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ_
 
 ⦗3⦘ _𝐂𝐨𝐦𝐩𝐫𝐚𝐫 𝐭𝐨𝐤𝐞𝐧𝐬_    
 
@@ -3055,7 +3055,7 @@ _〘 ⧗ 𝑽𝒆𝒏𝒅𝒂 𝒅𝒆 𝒆𝒔𝒄𝒂𝒓𝒂𝒗𝒆𝒍𝒉�
 ⦗5⦘ _Vender 7 escaravelhos por 3850 ʙʏᴛᴇᴄᴏɪɴꜱ_
 ⦗6⦘ _Vender 8 escaravelhos por 4400 ʙʏᴛᴇᴄᴏɪɴꜱ_
 
-_〘 җ 𝑽𝒆𝒏𝒅𝒂 𝒅𝒆 𝑫𝒂𝒓𝒌𝒄𝒐𝒊𝒏𝒔 〙_
+_〘 🜅 𝑽𝒆𝒏𝒅𝒂 𝒅𝒆 𝑫𝒂𝒓𝒌𝒄𝒐𝒊𝒏𝒔 〙_
 
 ⦗7⦘ _Vender 550 ʙʏᴛᴇᴄᴏɪɴꜱ por 1 escaravelho_
 ⦗8⦘ _Vender 1100 ʙʏᴛᴇᴄᴏɪɴꜱ por 2 escaravelhos_
@@ -3181,16 +3181,16 @@ let message = await  conn.sendFile(m.chat, bugsStore.getRandom(), 'loja.jpg', `�
 ╭⋟────────────────────────╮
     𝘗𝘰𝘳 𝘧𝘢𝘷𝘰𝘳... 𝘴𝘦𝘭𝘦𝘤𝘪𝘰𝘯𝘦 𝘶𝘮𝘢 𝘰𝘱𝘤𝘢𝘰
     
-⦗1⦘ Comprar 1 *Capa Vampirica〘𖢲〙* por 15 almas
+⦗1⦘ Comprar 1 *Capa Vampirica〘𖢲〙* por 15 rce
 ᴘʀᴏᴛᴇᴊᴀ-sᴇ ᴅᴏs ᴀssᴀssɪɴᴏs ᴅᴀ ɴᴏɪᴛᴇ
 
 ⦗2⦘ Comprar 1 *Artefato de Frankenstein〘𖥂〙* por 1 alma
 ʀᴇʟɪ́ǫᴜɪᴀ ᴅᴏ ɪɴғᴀᴍᴇ ᴅʀ.ᴠɪᴄᴛᴏʀ ᴘᴀʀᴀ ʀᴇsᴛᴀᴜʀᴀʀ ᴠɪᴅᴀ ᴀᴏs ᴍᴏʀᴛᴏs
 
-⦗3⦘ Comprar 1 *Relíquia da Morte〘𖢹〙* por 5 almas 
+⦗3⦘ Comprar 1 *Relíquia da Morte〘𖢹〙* por 5 rce 
 ᴿᵉˢˢᵘᶜᶦᵗᵉ ᶜᵒᵐᵒ ᵘᵐᵃ ᶠᵉⁿᶦˣ
 
-⦗4⦘ Comprar 1 *Demonio protetor〘𖡹〙* por 30 almas
+⦗4⦘ Comprar 1 *Demonio protetor〘𖡹〙* por 30 rce
 ᴅᴇᴍᴏ̂ɴɪᴏ ᴅᴀ ᴇɴᴄʀᴜᴢɪʟʜᴀᴅᴀ ᴘᴀʀᴀ ᴏ ᴘʀᴏᴛᴇɢᴇʀ ᴘᴇssᴏᴀʟ ᴅᴇ ʟᴀᴅʀᴏ̃ᴇs ᴇ ᴀssᴀssɪɴᴏs
 
 ⦗0⦘ _𝑽𝒐𝒍𝒕𝒂𝒓_
@@ -3200,7 +3200,7 @@ let message = await  conn.sendFile(m.chat, bugsStore.getRandom(), 'loja.jpg', `�
 global.db.data.chats[m.chat].loja.lojaId = message.key
 
 global.db.data.chats[m.chat].loja.Index = 4
-global.db.data.chats[m.chat].loja.page='almas'
+global.db.data.chats[m.chat].loja.page='rce'
    return
    
       
@@ -3434,25 +3434,25 @@ global.db.data.chats[m.chat].users[m.sender][att] =
 }
  
  if (global.db.data.chats[m.chat].loja.Index === 4 &&
- global.db.data.chats[m.chat].loja.page == 'almas' && m.text >= 0 && m.text <=
+ global.db.data.chats[m.chat].loja.page == 'rce' && m.text >= 0 && m.text <=
  4) 
  {
    
  const tokOptions = {
     
-    1: { attribute: 'vampire', cost: -15, type: 'Tornou-se vampiro por por 15 almas' },
+    1: { attribute: 'vampire', cost: -15, type: 'Tornou-se vampiro por por 15 rce' },
   
     2: { attribute: 'artifacts', cost: -1, type: 'Aprendeu os segredos de Victor Frankenstein por 1 alma' },
-    3: { attribute: 'elixirs', cost: -5, type: 'Relíquia da morte obtida por 5 almas' },
-    4: { attribute: 'demonio', cost: -30, type: 'Invocou um demonio para proteje-lo, ofertando 30 almas' }
+    3: { attribute: 'elixirs', cost: -5, type: 'Relíquia da morte obtida por 5 rce' },
+    4: { attribute: 'demonio', cost: -30, type: 'Invocou um demonio para proteje-lo, ofertando 30 rce' }
 }
 
     let choice = tokOptions[m.text];
    let loja = global.db.data.chats[m.chat].loja
     let user = global.db.data.chats[m.chat].users[m.sender];
-if(user.almas<0)user.almas = 0
+if(user.rce<0)user.rce = 0
     // Check if user has enough ʙʏᴛᴇᴄᴏɪɴꜱ
-    if (user.almas < -choice.cost) {
+    if (user.rce < -choice.cost) {
         m.reply(`⎔⎓──────────────
 ┃  ✞︎ 𝑬𝑹𝑹𝑶 𝑨𝑶 𝑬𝑭𝑬𝑻𝑼𝑨𝑹 𝑪𝑶𝑴𝑷𝑹𝑨!
 ┃ 
@@ -3475,7 +3475,7 @@ global.db.data.chats[m.chat].users[m.sender][att] =
 
 
 
-    user.almas += choice.cost;
+    user.rce += choice.cost;
 
     // Create a protocol ID and log the purchase
     let protocolId = Math.random().toString(36).substr(2, 9).toUpperCase();
@@ -3566,7 +3566,7 @@ if (["sim", "claro", "aceito", "óbvio", "obvio", "claro que sim", "s", "ss"].in
  
  𝑵𝒐 𝒐𝒃𝒔𝒄𝒖𝒓𝒐 𝒓𝒆𝒄𝒊𝒏𝒕𝒐 𝒅𝒐 𝒄𝒂𝒓𝒕𝒐𝒓𝒊𝒐, 𝒐𝒔 𝒑𝒆𝒓𝒈𝒂𝒎𝒊𝒏𝒉𝒐𝒔 𝒇𝒐𝒓𝒂𝒎 𝒂𝒔𝒔𝒊𝒏𝒂𝒅𝒐𝒔 𝒆 𝒓𝒆𝒄𝒐𝒏𝒉𝒆𝒄𝒊𝒅𝒐𝒔 𝒆 𝒗𝒐𝒔𝒔𝒐𝒔 𝒅𝒆𝒔𝒕𝒊𝒏𝒐𝒔 𝒅𝒆𝒔𝒗𝒊𝒏𝒄𝒖𝒍𝒂𝒅𝒐𝒔. 𝑨𝒈𝒐𝒓𝒂, 𝒗𝒐𝒔𝒔𝒂𝒔 𝒂𝒍𝒎𝒂𝒔 𝒆𝒔𝒕𝒂𝒐 𝒍𝒆𝒈𝒂𝒍𝒎𝒆𝒏𝒕𝒆 𝒔𝒆𝒑𝒂𝒓𝒂𝒅𝒂𝒔. 
  
- 𝑼𝒎𝒂 𝒕𝒂𝒙𝒂 𝒅𝒆 415 җ ʙʏᴛᴇᴄᴏɪɴꜱ 𝒇𝒐𝒊 𝒆𝒙𝒂𝒖𝒓𝒊𝒅𝒂 𝒅𝒆 𝒗𝒐𝒔𝒔𝒂 𝒄𝒐𝒏𝒕𝒂 𝒂 𝒐𝒓𝒅𝒆𝒎 𝒑𝒂𝒓𝒂 𝒄𝒐𝒏𝒄𝒓𝒆𝒕𝒊𝒛𝒂𝒓 𝒆𝒔𝒕𝒆 𝒑𝒓𝒐𝒄𝒆𝒔𝒔𝒐 𝒅𝒆 𝒅𝒊𝒔𝒔𝒐𝒍𝒖𝒄𝒂𝒐 𝒎𝒂𝒕𝒓𝒊𝒎𝒐𝒏𝒊𝒂𝒍.
+ 𝑼𝒎𝒂 𝒕𝒂𝒙𝒂 𝒅𝒆 415 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝒇𝒐𝒊 𝒆𝒙𝒂𝒖𝒓𝒊𝒅𝒂 𝒅𝒆 𝒗𝒐𝒔𝒔𝒂 𝒄𝒐𝒏𝒕𝒂 𝒂 𝒐𝒓𝒅𝒆𝒎 𝒑𝒂𝒓𝒂 𝒄𝒐𝒏𝒄𝒓𝒆𝒕𝒊𝒛𝒂𝒓 𝒆𝒔𝒕𝒆 𝒑𝒓𝒐𝒄𝒆𝒔𝒔𝒐 𝒅𝒆 𝒅𝒊𝒔𝒔𝒐𝒍𝒖𝒄𝒂𝒐 𝒎𝒂𝒕𝒓𝒊𝒎𝒐𝒏𝒊𝒂𝒍.
 
 ┗━── `, // Replace with the desired caption
             contextInfo: {
@@ -4384,7 +4384,7 @@ const statusString = global.db.data.chats[m.chat].sudoku.gameData.status.join(''
  global.db.data.chats[m.chat].users[m.sender].money += conns5
  let textts = `╭──────────────────── ⛦...─╮
                    ༒︎ 𝑭𝑰𝑴 𝑫𝑬 𝑱𝑶𝑮𝑶 ༒︎            
- 𝒈𝒂𝒏𝒉𝒐𝒖 ${conns5} җ ʙʏᴛᴇᴄᴏɪɴꜱ
+ 𝒈𝒂𝒏𝒉𝒐𝒖 ${conns5} 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ
 ${global.db.data.chats[m.chat].sudoku.singleplayer ? `` : `─┅❖ 𝑱𝒐𝒈𝒂𝒅𝒐𝒓𝒆𝒔\n`}
 ${global.db.data.chats[m.chat].sudoku.jogadores.map(player => '@' + player.split('@')[0] + '  𝒈𝒂𝒏𝒉𝒐𝒖 ' + (6 * global.db.data.chats[m.chat].sudoku.jogadas[player]) + ' 𝑥𝑝').join('\n')}
 
@@ -4487,7 +4487,7 @@ if(!global.db.data.chats[m.chat].sudoku.jogadas[m.sender]){
       global.db.data.chats[m.chat].users[m.sender].pontos++
     let msgh = await conn.sendFile(m.chat, filePath, 'sudoku.png', `╭──────────────────── ⛦...─╮
                         ⸸ 𝑵𝒖𝒎𝒆𝒓𝒐 𝒄𝒐𝒓𝒓𝒆𝒕𝒐 
-     𝒈𝒂𝒏𝒉𝒐𝒖 ${conns} җ ʙʏᴛᴇᴄᴏɪɴꜱ 𝒆 +1 𝒑𝒐𝒏𝒕𝒐
+     𝒈𝒂𝒏𝒉𝒐𝒖 ${conns} 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝒆 +1 𝒑𝒐𝒏𝒕𝒐
 ╰─...𖤐────────────────────╯`, m,{mentions:[m.sender]});
     
   global.db.data.chats[m.chat].sudoku.regMsg = msgh.key.id
@@ -4510,14 +4510,14 @@ handleCorrectGuess(rowIndex, colIndex, number); // Row index for 'C' is 2, colum
  let mmn = Math.floor(Math.random() * (10 - 5 + 1)) + 5;
     m.reply(  `╭────────────⌬─╮
 |            𝑬𝒓𝒓𝒂𝒅𝒐 ❌             
-| 𝒑𝒆𝒓𝒅𝒆𝒔 ${mmn} җ ʙʏᴛᴇᴄᴏɪɴꜱ 
+| 𝒑𝒆𝒓𝒅𝒆𝒔 ${mmn} 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 
 ╰─⌬────────────╯`)
  global.db.data.chats[m.chat].users[m.sender].money -= mmn
   } else {
   let mmhn = Math.floor(Math.random() * (10 - 5 + 1)) + 5;
     m.reply(  `╭────────────⌬─╮
 |            𝑬𝒓𝒓𝒂𝒅𝒐 ❌             
-| 𝒑𝒆𝒓𝒅𝒆𝒔 ${mmhn} җ ʙʏᴛᴇᴄᴏɪɴꜱ 
+| 𝒑𝒆𝒓𝒅𝒆𝒔 ${mmhn} 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 
 ╰─⌬────────────╯`)
  global.db.data.chats[m.chat].users[m.sender].money -= mmhn
   }
