@@ -68,7 +68,7 @@ const handler = async (m, {conn, text, usedPrefix, isOwner,isAdmin,command}) => 
   const language = global.db.data.chats[m.chat].language;
   const baseUrl = 'http://89.117.96.108:8330/rick';
   const visionUrl = 'http://89.117.96.108:8330/rickEye';
-
+console.log('rickjs')
   function getCurrentDate(format) {
     const options = { year: 'numeric', month: '2-digit', day: '2-digit' };
     const date = new Date();
