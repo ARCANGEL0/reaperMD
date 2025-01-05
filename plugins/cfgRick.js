@@ -225,7 +225,7 @@ ${assistantResponse}`,
 
 return mensagem
   } catch (error) {
-      console.error('Error:', error);
+      console.log(error);
     sendSystemErrorAlert(language);
   }
    
