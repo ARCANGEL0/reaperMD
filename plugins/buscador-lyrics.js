@@ -67,7 +67,7 @@ conn.sendFile(m.chat, dat2.image, 'error.jpg',`╭──────────
 
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 180
-await m.reply("༒︎ 180 𒄆 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+await m.reply("༒︎ 180 җ ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
 
 }
 catch(e){

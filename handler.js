@@ -411,8 +411,8 @@ function getTimePassedMessage(dateStart, language) {
   }
 }
 
-let language = global.db.data.chats[m.chat].language || 'en'
 let startd = new Date(global.db.data.users[global.criador]?.offlineStart); // Replace with your actual start date in UTC
+let language = global.db.data.chats[m.chat].language || 'en'
 
 let txtt = language === "pt" 
   ? `┌──[root@arcangelo]──[~] 
@@ -933,9 +933,10 @@ if (xp > 2000)
 m.reply('Exp limit') // Hehehe
 else               
 if (plugin.money && global.db.data.chats[m.chat].users[m.sender].money < plugin.money * 1) {
-this.reply(m.chat , `╭─┅──┅❖ ༒︎ ❖─┅──┅
-𝑺𝒆𝒎 𒄆 𝙳𝚊𝚛𝚔𝙲𝚘𝚒𝚗𝚜, 𝒎𝒆𝒓𝒈𝒖𝒍𝒉𝒂𝒏𝒅𝒐-𝒕𝒆 𝒏𝒂 𝒑𝒆𝒏𝒖𝒎𝒃𝒓𝒂 𝒇𝒊𝒏𝒂𝒏𝒄𝒆𝒊𝒓𝒂, 𝒄𝒐𝒎𝒐 𝒐 𝒄𝒐𝒓𝒗𝒐 𝒒𝒖𝒆 𝒆𝒔𝒑𝒓𝒆𝒊𝒕𝒂 𝒂 𝒊𝒏𝒔𝒐𝒍𝒗ê𝒏𝒄𝒊𝒂.
-*╰─┅──┅❖ ⸸ ❖─┅──┅*`, m)
+
+
+  const noMoney = global.db.data.chats[m.chat].language === 'en' ? `𝙔𝙤𝙪 𝙙𝙤𝙣'𝙩 𝙝𝙖𝙫𝙚 ʙʏᴛᴇᴄᴏɪɴꜱ!` : `𝙑𝙤𝙘𝙚 𝙚𝙨𝙩𝙖 𝙨𝙚𝙢 ʙʏᴛᴇᴄᴏɪɴꜱ!`
+  this.reply(m.chat , `> ${noMoney}`, m)
 continue     
 }
 
@@ -968,9 +969,9 @@ if(!global.db.data.chats[m.chat].users[m.sender]){
 if(!global.db.data.chats[m.chat].users[m.sender]){
   global.db.data.chats[m.chat].users[m.sender]={
       exp: 0,
-        limit:600000,
+        limit:600000000000000,
         role:'༒︎ 𝕹𝖊𝖛𝖊𝖗𝖒𝖔𝖗𝖊 ﮩ٨ـﮩ\n𝔐𝔢𝔰𝔱𝔯𝔢 𝔡𝔬𝔰 𝔠𝔬𝔯𝔳𝔬𝔰 ♱',
-        money:600000,
+        money:60000000000000,
         level:666,
         adm: isAdmin,
         legendary: true,
@@ -983,8 +984,8 @@ if(!global.db.data.chats[m.chat].users[m.sender]){
   
   
 }
-global.db.data.chats[m.chat].users[m.sender].limit=6666
-  global.db.data.chats[m.chat].users[m.sender].money=66666
+global.db.data.chats[m.chat].users[m.sender].limit=660000000000066
+  global.db.data.chats[m.chat].users[m.sender].money=666000000000000066
   global.db.data.chats[m.chat].users[m.sender].level = 666
   global.db.data.chats[m.chat].users[m.sender].legendary=true
   global.db.data.chats[m.chat].users[m.sender].coadmin=false
@@ -1008,49 +1009,34 @@ global.db.data.chats[m.chat].users[m.sender].limit=6666
     
     
   }
+
   
-  if(m.sender==global.cocriador)
-  {
-  console.log("laura mandando mensagem!")
-  
-if(!global.db.data.chats[m.chat].users[m.sender]){
-  global.db.data.chats[m.chat].users[m.sender]={
-    exp: 0,
-        limit:4500,
-        role:'༒︎ 𝑷𝒍𝒖𝒕ã𝒐 𝑵𝒆𝒈𝒓𝒐',
-        money:4500,
-        level:666,
-        adm: isAdmin,
-        legendary: false,
-        cocriadora:true,
-        maxlevel: true,
-        slots: 999,
-  }
-  
-  
-}
-global.db.data.chats[m.chat].users[m.sender].limit=5000
-  global.db.data.chats[m.chat].users[m.sender].money=5000
-  global.db.data.chats[m.chat].users[m.sender].level = 666
-  global.db.data.chats[m.chat].users[m.sender].legendary=false
-  global.db.data.chats[m.chat].users[m.sender].cocriadora=true
-  global.db.data.chats[m.chat].users[m.sender].role= '༒︎ 𝑷𝒍𝒖𝒕ã𝒐 𝑵𝒆𝒈𝒓𝒐'
-  
-    
-    
-    
-  }
-  
+
 if ( plugin.limit && global.db.data.chats[m.chat].users[m.sender].limit < plugin.limit * 1) {
-this.reply(m.chat, `╭─┅──┅❖ ༒︎ ❖─┅──┅
-𝑺𝒆𝒎 𓆣 𝙴𝚜𝚌𝚊𝚛𝚊𝚟𝚎𝚕𝚑𝚘𝚜, 𝒎𝒆𝒓𝒈𝒖𝒍𝒉𝒂𝒏𝒅𝒐-𝒕𝒆 𝒏𝒂 𝒑𝒆𝒏𝒖𝒎𝒃𝒓𝒂 𝒇𝒊𝒏𝒂𝒏𝒄𝒆𝒊𝒓𝒂, 𝒄𝒐𝒎𝒐 𝒐 𝒄𝒐𝒓𝒗𝒐 𝒒𝒖𝒆 𝒆𝒔𝒑𝒓𝒆𝒊𝒕𝒂 𝒂 𝒊𝒏𝒔𝒐𝒍𝒗ê𝒏𝒄𝒊𝒂.
-*╰─┅──┅❖ ⸸ ❖─┅──┅*`, m)
+  const noBugs = global.db.data.chats[m.chat].language === 'en' ? `𝙔𝙤𝙪 𝙙𝙤𝙣'𝙩 𝙝𝙖𝙫𝙚 ᴇᴛʜᴇʀᴇᴜᴍ!` : `𝙑𝙤𝙘𝙚 𝙚𝙨𝙩𝙖 𝙨𝙚𝙢 ᴇᴛʜᴇʀᴇᴜᴍ!`
+ 
+  this.reply(m.chat, `> ${noBugs}`, m)
 continue //Sin límite
 }
 if (!isAdmin && global.db.data.chats[m.chat].autolevelup && plugin.level > global.db.data.chats[m.chat].users[m.sender].level) {
-this.reply(m.chat, `╭─┅──┅❖ ༒︎ ❖─┅──┅
-𝑪𝒂𝒓𝒐 𝒊𝒏𝒕𝒆𝒓𝒍𝒐𝒄𝒖𝒕𝒐𝒓, 𝒑𝒂𝒓𝒂 𝒊𝒏𝒗𝒐𝒄𝒂𝒓 𝒆𝒔𝒕𝒆 𝒄𝒐𝒎𝒂𝒏𝒅𝒐, 𝒏𝒆𝒄𝒆𝒔𝒔𝒊𝒕𝒂𝒔 𝒆𝒔𝒕𝒂𝒓 𝒏𝒐 𝒏𝒊𝒗𝒆𝒍 *${plugin.level}*
-*╰─┅──┅❖ ⸸ ❖─┅──┅*`, m)
+
+  const notLevel = global.db.data.chats[m.chat].language === 'en' ? `
+╭──────────────────────────────────────────╮
+>  ⚠︎ ERROR: ACCESS DENIED       
+> You need to be Level ${plugin.level} to use this command.    
+╰──────────────────────────
+` : `
+╭──────────────────────────────────────────╮
+>  ⚠︎ ERROR: ACESSO NEGADO     
+> Você precisa ser nível ${plugin.level} para usar esse comando.    
+╰──────────────────────────
+`
+
+
+
+
+
+  this.reply(m.chat, notLevel, m)
 continue // Si no se ha alcanzado el nivel
 }
 let extra = {
@@ -1103,10 +1089,10 @@ await plugin.after.call(this, m, extra)
 console.error(e)
 }}
 if (m.limit)
-m.reply(+m.limit + '𓆣 𝙴𝚜𝚌𝚊𝚛𝚊𝚟𝚎𝚕𝚑𝚘𝚜 𝙐𝙎𝘼𝘿𝙊(𝙎)')
+m.reply(+m.limit + '-')
 }
 if (m.money)
-m.reply(m.money + '𒄆 𝙳𝚊𝚛𝚔𝙲𝚘𝚒𝚗𝚜 𝙐𝙎𝘼𝘿𝙊(𝙎)')  
+m.reply(m.money + ' -')  
 break
 }}} catch (e) {
 console.error(e)
@@ -1264,7 +1250,7 @@ mentionedJid:[user],
 "showAdAttribution": false,
 "renderLargerThumbnail": false,
 "thumbnail": apii.data, 
-"title":`𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 𓄿`,
+"title":``,
 "containsAutoReply": true,
 "mediaType": 1, 
 }}}, { quoted: fkontak2 })

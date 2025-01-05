@@ -122,7 +122,7 @@ console.log(getMarketInformation());
 > ${variac>0 ? '📈 +' : '📉 -'}${Math.floor(parseFloat(variac) * 100) / 100}%
  
 𒈞  𝚂𝚞𝚊 𝚌𝚘𝚗𝚝𝚊:
-_Saldo:_ ${parseFloat(cliente.saldo).toFixed(2)} 𒄆 𝙳𝚊𝚛𝚔𝚌𝚘𝚒𝚗𝚜
+_Saldo:_ ${parseFloat(cliente.saldo).toFixed(2)} җ 𝙳𝚊𝚛𝚔𝚌𝚘𝚒𝚗𝚜
 _Títular:_ ${cliente.titular}
 _Número da Conta_: ${cliente.conta}
 _Código SEPA:_ ${cliente.sepa}
@@ -144,7 +144,7 @@ else if (command == 'depositar' && /^\d+(\.\d{1,2})?$/.test(text)) {
   {
    m.react("❌")
    return m.reply(`╔═━━━───•───━━━═╗
-𝐷𝑎𝑟𝑘𝑐𝑜𝑖𝑛𝑠 𝐼𝑚𝑠𝑢𝑓𝑖𝑐𝑖𝑒𝑛𝑡𝑒𝑠 𝑝𝑎𝑟𝑎 𝑑𝑒𝑝𝑜𝑠𝑖𝑡𝑎𝑟. . . 𒂝
+ʙʏᴛᴇᴄᴏɪɴꜱ 𝐼𝑚𝑠𝑢𝑓𝑖𝑐𝑖𝑒𝑛𝑡𝑒𝑠 𝑝𝑎𝑟𝑎 𝑑𝑒𝑝𝑜𝑠𝑖𝑡𝑎𝑟. . . 𒂝
 ╚═━━━───•───━━━═╝`)
   }
   
@@ -158,7 +158,7 @@ else if (command == 'depositar' && /^\d+(\.\d{1,2})?$/.test(text)) {
 𝐴𝑠 𝑡𝑟𝑎𝑛𝑠𝑎𝑐̧𝑜̃𝑒𝑠 𝑓𝑖𝑛𝑎𝑛𝑐𝑒𝑖𝑟𝑎𝑠 𝑠𝑒 𝑒𝑛𝑟𝑒𝑑𝑎𝑚 𝑛𝑎 𝑒𝑠𝑐𝑢𝑟𝑖𝑑𝑎̃𝑜. 𝐷𝑒𝑝𝑜́𝑠𝑖𝑡𝑜 𝑑𝑒 ${Math.floor(parseFloat(text) * 100) / 100} 𝙳𝚊𝚛𝚔𝚌𝚘𝚒𝚗𝚜 𝑓𝑒𝑖𝑡𝑜 𝑐𝑜𝑚 𝑠𝑢𝑐𝑒𝑠𝑠𝑜; 𝑎𝑔𝑜𝑟𝑎, 𝑎𝑠 𝑠𝑜𝑚𝑏𝑟𝑎𝑠 𝑧𝑒𝑙𝑎𝑟𝑎̃𝑜 𝑝𝑜𝑟 𝑠𝑢𝑎 𝑟𝑖𝑞𝑢𝑒𝑧𝑎. ☥
 
  \`𝑵𝒐𝒗𝒐 𝒔𝒂𝒍𝒅𝒐:\`
-> ➢ ${Math.floor(parseFloat(global.db.data.settings.banco.clientes[m.sender].saldo) * 100) / 100} 𒄆 𝙳𝚊𝚛𝚔𝚌𝚘𝚒𝚗𝚜
+> ➢ ${Math.floor(parseFloat(global.db.data.settings.banco.clientes[m.sender].saldo) * 100) / 100} җ 𝙳𝚊𝚛𝚔𝚌𝚘𝚒𝚗𝚜
 
   ╰──────────────˒≪𖥳≫`
    let message = await  conn.sendFile(m.chat, imgBank.getRandom(), 'loja.jpg',
@@ -201,10 +201,10 @@ global.db.data.chats[m.chat].users[m.sender].money += amountAfterFee;
 𝒎𝒐𝒆𝒅𝒂𝒔 𝒃𝒓𝒊𝒍𝒉𝒂𝒎 𝒏𝒂𝒔 𝒔𝒐𝒎𝒃𝒓𝒂𝒔 𝒅𝒆 𝒔𝒆𝒖 𝒅𝒐𝒎𝒊𝒏𝒊𝒐 ☥
 
 𝐕𝐨𝐜𝐞 𝐞𝐱𝐜𝐞𝐝𝐞𝐮 𝐨 𝐥𝐢𝐦𝐢𝐭𝐞 𝐝𝐞 𝟑 𝐬𝐚𝐪𝐮𝐞𝐬 𝐠𝐫𝐚𝐭𝐮𝐢𝐭𝐨𝐬
-𝐩𝐨𝐫 𝐡𝐨𝐣𝐞 𝐞 𝐟𝐨𝐢 𝐜𝐨𝐛𝐫𝐚𝐝𝐨 ${fee} 𒄆 𝙳𝚊𝚛𝚔𝚌𝚘𝚒𝚗𝚜 𝐝𝐞 𝐢𝐦𝐩𝐨𝐬𝐭𝐨
+𝐩𝐨𝐫 𝐡𝐨𝐣𝐞 𝐞 𝐟𝐨𝐢 𝐜𝐨𝐛𝐫𝐚𝐝𝐨 ${fee} җ 𝙳𝚊𝚛𝚔𝚌𝚘𝚒𝚗𝚜 𝐝𝐞 𝐢𝐦𝐩𝐨𝐬𝐭𝐨
 
 \`𝑵𝒐𝒗𝒐 𝒔𝒂𝒍𝒅𝒐:\`
-> ➢ ${parseFloat(global.db.data.settings.banco.clientes[m.sender].saldo).toFixed(2)} 𒄆 𝙳𝚊𝚛𝚔𝚌𝚘𝚒𝚗𝚜
+> ➢ ${parseFloat(global.db.data.settings.banco.clientes[m.sender].saldo).toFixed(2)} җ 𝙳𝚊𝚛𝚔𝚌𝚘𝚒𝚗𝚜
 
   ╰──────────────˒≪𖥳≫`
    let message = await  conn.sendFile(m.chat, imgBank.getRandom(), 'loja.jpg',
@@ -224,7 +224,7 @@ ${parseFloat(text).toFixed(2)}
 𝒎𝒐𝒆𝒅𝒂𝒔 𝒃𝒓𝒊𝒍𝒉𝒂𝒎 𝒏𝒂𝒔 𝒔𝒐𝒎𝒃𝒓𝒂𝒔 𝒅𝒆 𝒔𝒆𝒖 𝒅𝒐𝒎𝒊𝒏𝒊𝒐 ☥
 
 \`𝑵𝒐𝒗𝒐 𝒔𝒂𝒍𝒅𝒐:\`
-> ➢ ${parseFloat(global.db.data.settings.banco.clientes[m.sender].saldo).toFixed(2)} 𒄆 𝙳𝚊𝚛𝚔𝚌𝚘𝚒𝚗𝚜
+> ➢ ${parseFloat(global.db.data.settings.banco.clientes[m.sender].saldo).toFixed(2)} җ 𝙳𝚊𝚛𝚔𝚌𝚘𝚒𝚗𝚜
 
   ╰──────────────˒≪𖥳≫`
    let message = await  conn.sendFile(m.chat, imgBank.getRandom(), 'loja.jpg',

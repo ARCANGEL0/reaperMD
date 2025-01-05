@@ -271,18 +271,20 @@ vencedores += `@${winner.split('@')[0]}`
 
 
 // List each winner and their share of the prize
-    let txtA = `━━━━━━━━━⬣ 𖤐 ⬣━━━━━━━━ 
-                 𝔍𝔬𝔤𝔬 𝔡𝔞 𝔅𝔢𝔰𝔱𝔞 
-                            ⸸ _*${numeroSorteado}*_ ⸸
-    𝑶 𝒂𝒏𝒊𝒎𝒂𝒍 𝒔𝒐𝒓𝒕𝒆𝒂𝒅𝒐 𝒇𝒐𝒊:
-   *${animalSorteado}*
-   
-𝑨𝒍𝒎𝒂𝒔 𝒄𝒐𝒏𝒄𝒆𝒅𝒊𝒅𝒂𝒔 𝒂 𝒄𝒆𝒍𝒆𝒔𝒕𝒊𝒂𝒍 𝒇𝒐𝒓𝒕𝒖𝒏𝒂
-    
-  𝑫𝒆𝒔𝒗𝒆𝒏𝒅𝒂𝒓𝒂𝒎 𝒐 𝑵𝒖𝒎𝒆𝒓𝒐 𝒅𝒆𝒔𝒕𝒆𝒎𝒊𝒅𝒐: 
-  ${vencedores}
-  
-   ━━━━━━━━━⬣⬣━━━━━━━━  `
+    let txtA = `┌──[robot@bytesec]──[~] 
+└─► cat /games/bicho.csv
+> ‎ 
+> 𝙹̷𝙾̷𝙶̷𝙾̷ 𝙳̷𝙾̷ 𝙱̷𝙸̷𝙲̷𝙷̷𝙾̷  ${numeroSorteado}
+[+] ${ global.db.data.chats[m.chat].language  == 'pt' ? "𝙾 𝚊𝚗𝚒𝚖𝚊𝚕 𝚜𝚘𝚛𝚝𝚎𝚊𝚍𝚘 𝚏𝚘𝚒:" : "𝚃𝚑𝚎 𝚜𝚎𝚕𝚎𝚌𝚝𝚎𝚍 𝚊𝚗𝚒𝚖𝚊𝚕 𝚠𝚊𝚜" }
+> *${animalSorteado}*
+> ‎ 
+> ‎ 
+> ${ global.db.data.chats[m.chat].language == 'pt' ? "𝙋𝙖𝙧𝙖𝙗𝙚𝙣𝙨 𝙖𝙤𝙨 𝙫𝙚𝙣𝙘𝙚𝙙𝙤𝙧𝙚𝙨" : "𝘾𝙤𝙣𝙜𝙧𝙖𝙩𝙪𝙡𝙖𝙩𝙞𝙤𝙣𝙨 𝙩𝙤 𝙩𝙝𝙚 𝙬𝙞𝙣𝙣𝙚𝙧𝙨!" }
+${vencedores}
+> ‎
+    `
+
+
      await conn.reply(m.chat, txtA, m, { mentions: conn.parseMention(txtA) })
      return !0
   } else if (vencedoresAnimal.length > 0) {
@@ -296,31 +298,35 @@ vencedoresNumeroExato.forEach(winner => {
 vencedores +=   `@${winner.split('@')[0]}`.join('\n')
 });
   
-       let txtB = `━━━━━━━━━⬣ 𖤐 ⬣━━━━━━━━
-                          𝔍𝔬𝔤𝔬 𝔡𝔞 𝔅𝔢𝔰𝔱𝔞 
-                            ⸸ _*${numeroSorteado}*_ ⸸
-    𝑶 𝒂𝒏𝒊𝒎𝒂𝒍 𝒔𝒐𝒓𝒕𝒆𝒂𝒅𝒐 𝒇𝒐𝒊:
-   *${animalSorteado}*
-   
-𝑨𝒍𝒎𝒂𝒔 𝒄𝒐𝒏𝒄𝒆𝒅𝒊𝒅𝒂𝒔 𝒂 𝒄𝒆𝒍𝒆𝒔𝒕𝒊𝒂𝒍 𝒇𝒐𝒓𝒕𝒖𝒏𝒂
-    
-  𝑫𝒆𝒔𝒗𝒆𝒏𝒅𝒂𝒓𝒂𝒎 𝒐 𝑵𝒖𝒎𝒆𝒓𝒐 𝒅𝒆𝒔𝒕𝒆𝒎𝒊𝒅𝒐: 
-  ${vencedores}
-  
-   ━━━━━━━━━⬣⬣━━━━━━━━  `
+    // List each winner and their share of the prize
+    let txtB = `┌──[robot@bytesec]──[~] 
+└─► cat /games/bicho.csv
+> ‎ 
+> 𝙹̷𝙾̷𝙶̷𝙾̷ 𝙳̷𝙾̷ 𝙱̷𝙸̷𝙲̷𝙷̷𝙾̷  ${numeroSorteado}
+[+] ${ global.db.data.chats[m.chat].language  == 'pt' ? "𝙾 𝚊𝚗𝚒𝚖𝚊𝚕 𝚜𝚘𝚛𝚝𝚎𝚊𝚍𝚘 𝚏𝚘𝚒:" : "𝚃𝚑𝚎 𝚜𝚎𝚕𝚎𝚌𝚝𝚎𝚍 𝚊𝚗𝚒𝚖𝚊𝚕 𝚠𝚊𝚜" }
+> *${animalSorteado}*
+> ‎ 
+> ‎ 
+> ${ global.db.data.chats[m.chat].language == 'pt' ? "𝙋𝙖𝙧𝙖𝙗𝙚𝙣𝙨 𝙖𝙤𝙨 𝙫𝙚𝙣𝙘𝙚𝙙𝙤𝙧𝙚𝙨" : "𝘾𝙤𝙣𝙜𝙧𝙖𝙩𝙪𝙡𝙖𝙩𝙞𝙤𝙣𝙨 𝙩𝙤 𝙩𝙝𝙚 𝙬𝙞𝙣𝙣𝙚𝙧𝙨!" }
+${vencedores}
+> ‎
+    `
     await conn.reply(m.chat, txtB, m, { mentions: conn.parseMention(txtB) })
      return !0
   } else {
     console.log(global.db.data.chats[m.chat].bicho.aposta)
-       let txtC = `━━━━━━━━━⬣ 𖤐 ⬣━━━━━━━━
-                      𝔍𝔬𝔤𝔬 𝔡𝔞 𝔅𝔢𝔰𝔱𝔞 
-                            ⸸ _*${numeroSorteado}*_ ⸸
-    𝑶 𝒂𝒏𝒊𝒎𝒂𝒍 𝒔𝒐𝒓𝒕𝒆𝒂𝒅𝒐 𝒇𝒐𝒊:
-   *${animalSorteado}*
-   
-  𝑵𝒆𝒏𝒉𝒖𝒎𝒂 𝒂𝒍𝒎𝒂 𝒑𝒓𝒆𝒔𝒆𝒏𝒕𝒆 𝒂𝒄𝒆𝒓𝒕𝒐𝒖 𝒆𝒔𝒕𝒆 𝒋𝒐𝒈𝒐
-  
-   ━━━━━━━━━⬣⬣━━━━━━━━  `
+    // List each winner and their share of the prize
+    let txtC = `┌──[robot@bytesec]──[~] 
+└─► cat /games/bicho.csv
+> ‎ 
+> 𝙹̷𝙾̷𝙶̷𝙾̷ 𝙳̷𝙾̷ 𝙱̷𝙸̷𝙲̷𝙷̷𝙾̷  ${numeroSorteado}
+[+] ${ global.db.data.chats[m.chat].language  == 'pt' ? "𝙾 𝚊𝚗𝚒𝚖𝚊𝚕 𝚜𝚘𝚛𝚝𝚎𝚊𝚍𝚘 𝚏𝚘𝚒:" : "𝚃𝚑𝚎 𝚜𝚎𝚕𝚎𝚌𝚝𝚎𝚍 𝚊𝚗𝚒𝚖𝚊𝚕 𝚠𝚊𝚜" }
+> *${animalSorteado}*
+> ‎ 
+> ‎ 
+> ${ global.db.data.chats[m.chat].language == 'pt' ? "𝙁𝙖𝙡𝙩𝙖 𝙙𝙚 𝙨𝙤𝙧𝙩𝙚, 𝙝𝙚𝙞𝙣. 𝙋𝙖𝙧𝙚𝙘𝙚 𝙦𝙪𝙚 𝙣𝙞𝙣𝙜𝙪𝙚𝙢 𝙜𝙖𝙣𝙝𝙤𝙪" : "𝙒𝙚𝙡𝙡, 𝙡𝙤𝙤𝙠 𝙖𝙩 𝙩𝙝𝙖𝙩. 𝙉𝙤𝙗𝙤𝙙𝙮 𝙬𝙤𝙣 𝙩𝙝𝙚 𝙜𝙖𝙢𝙚. 𝙎𝙝𝙤𝙘𝙠𝙞𝙣𝙜, 𝙧𝙞𝙜𝙝𝙩?" }
+> ‎
+    `
      await conn.reply(m.chat, txtC, m, { mentions: conn.parseMention(txtC) })
      return !0
   }
@@ -497,37 +503,6 @@ if (minutesPassed >= 30) {
 }
 }
 
-if(m.text && isCriadora)
-  {
-  console.log("laura mandando mensagem!")
-  
-if(!global.db.data.chats[m.chat].users[m.sender]){
-  global.db.data.chats[m.chat].users[m.sender]={
-    exp: 0,
-        limit:4500,
-        role:'༒︎ 𝑩𝒍𝒂𝒄𝒌 𝑷𝒍𝒖𝒕𝒐',
-        money:4500,
-        level:666,
-        adm: isAdmin,
-        legendary: false,
-        cocriadora:true,
-        maxlevel: true,
-        slots: 999,
-  }
-  
-  
-}
-global.db.data.chats[m.chat].users[m.sender].limit=9999999
-  global.db.data.chats[m.chat].users[m.sender].money=9999999
-  global.db.data.chats[m.chat].users[m.sender].level = 666
-  global.db.data.chats[m.chat].users[m.sender].legendary=false
-  global.db.data.chats[m.chat].users[m.sender].coadmin=false
-  global.db.data.chats[m.chat].users[m.sender].role= '༒︎ 𝑩𝒍𝒂𝒄𝒌 𝑷𝒍𝒖𝒕𝒐'
-  
-    
-    
-    
-  }
 
   let username = conn.getName(m.sender)
   const groupAdmins = participants.filter(p => p.admin)
@@ -602,23 +577,47 @@ if(!global.db.data.chats[m.chat].jogadores[m.sender]){
           global.db.data.chats[m.chat].users[m.sender].money +=
           parseFloat(global.db.data.chats[m.chat].quiz.pergunta.Money)
           global.db.data.chats[m.chat].users[m.sender].limit += 1
-          await m.reply(`
-╭━━━━━━━━━⬣
-┃ ┅──┅❖ 𝙾𝚙𝚌𝚊𝚘 ${global.db.data.chats[m.chat].quiz.ca}
-┃ 👁️ ℜ𝔢𝔰𝔭𝔬𝔰𝔱𝔞 𝔠𝔬𝔯𝔯𝔢𝔱𝔞
-┃
-┃ ${global.db.data.chats[m.chat].quiz.cm}
-┃
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┃ 𝙑𝙤𝙘𝙚 𝙜𝙖𝙣𝙝𝙤𝙪:
-┃ ${parseInt(global.db.data.chats[m.chat].quiz.pergunta.Pontos)} pontos
-┃ _*${global.db.data.chats[m.chat].quiz.pergunta.Money}*_ 𒄆 ʙʏᴛᴇᴄᴏɪɴꜱ
+         
+          const quizReply = global.db.data.chats[m.chat].language === 'en' ? 
+`┌──[robot@bytesec]──[~/ϙυιȥ] 
+└─► get_reply -n
+
+> ◥ SELECTED OPTION: ${global.db.data.chats[m.chat].quiz.ca}
+[+] CORRECT ANSWER!  
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+> ‎ 
+> ${global.db.data.chats[m.chat].quiz.cm}
+> ‎ 
+> ‎ 
+▞▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▚
+▌ 𝙲𝚘𝚗𝚐𝚛𝚊𝚝𝚜, 𝚔𝚒𝚍. 𝚈𝚘𝚞 𝚠𝚘𝚗:
+┃ ${parseInt(global.db.data.chats[m.chat].quiz.pergunta.Pontos)} points
+┃ _*${global.db.data.chats[m.chat].quiz.pergunta.Money}*_ җ ʙʏᴛᴇᴄᴏɪɴꜱ
 ┃ _*${parseInt(global.db.data.chats[m.chat].quiz.pergunta.XP)}*_ 𝑥𝑝
-┃ _*1*_ 𓆣 ᴇᴛʜᴇʀᴇᴜᴍ
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┃ 𝙼𝚘𝚍𝚘 𝙲𝚘𝚖𝚙𝚎𝚝𝚒𝚝𝚒𝚟𝚘 🌒
-╰━━━━━━━━━━━━━━━━━━⬣
-          `)
+┃ _*1*_ ⧗ ᴇᴛʜᴇʀᴇᴜᴍ
+▚▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▞
+` :
+`┌──[robot@bytesec]──[~/ϙυιȥ] 
+└─► get_reply -n
+
+> ◥ OPÇÃO SELECIONADA: ${global.db.data.chats[m.chat].quiz.ca}
+[+] RESPOSTA CORRETA!  
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+> ‎ 
+> ${global.db.data.chats[m.chat].quiz.cm}
+> ‎ 
+> ‎ 
+▞▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▚
+▌ 𝙿𝚊𝚛𝚊𝚋𝚎𝚗𝚜, 𝚐𝚊𝚛𝚘𝚝𝚘. 𝚅𝚘𝚌𝚎 𝚐𝚊𝚗𝚑𝚘𝚞:
+┃ ${parseInt(global.db.data.chats[m.chat].quiz.pergunta.Pontos)} pontos
+┃ _*${global.db.data.chats[m.chat].quiz.pergunta.Money}*_ җ ʙʏᴛᴇᴄᴏɪɴꜱ
+┃ _*${parseInt(global.db.data.chats[m.chat].quiz.pergunta.XP)}*_ 𝑥𝑝
+┃ _*1*_ ⧗ ᴇᴛʜᴇʀᴇᴜᴍ
+▚▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▞
+`
+ 
+          await m.reply(quizReply)
+
             global.db.data.chats[m.chat].quiz.perguntaAndamento = false
           global.db.data.chats[m.chat].quiz.pergunta = {}
       
@@ -637,24 +636,43 @@ if(!global.db.data.chats[m.chat].jogadores[m.sender]){
         }
         else {
           console.log(global.db.data.chats[m.chat].quiz)
-          await m.reply(`
-╭━━━━━━━━━⬣
-┃ 👁️ ℜ𝔢𝔰𝔭𝔬𝔰𝔱𝔞 𝔢𝔯𝔯𝔞𝔡𝔞
-┃
-┃ -10 𝙥𝙤𝙣𝙩𝙤𝙨
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┃ 𝙼𝚘𝚍𝚘 𝙲𝚘𝚖𝚙𝚎𝚝𝚒𝚝𝚒𝚟𝚘 🌒
-╰━━━━━━━━━━━━━━━━━━⬣
-          `)
+         
+          const quizWrongReply = global.db.data.chats[m.chat].language === 'en' ? 
+          `┌──[robot@bytesec]──[~/ϙυιȥ] 
+└─► get_reply -n
+
+[!] ɪɴᴄᴏʀʀᴇᴄᴛ ᴀɴꜱᴡᴇʀ
+> 𝚈𝚘𝚞 𝚓𝚞𝚜𝚝 𝚍𝚛𝚘𝚙𝚙𝚎𝚍 𝟷𝟶 𝚙𝚘𝚒𝚗𝚝𝚜, 𝚔𝚒𝚍
+
+` : 
+          `┌──[robot@bytesec]──[~/ϙυιȥ] 
+└─► get_reply -n
+
+[!] ʀᴇꜱᴘᴏꜱᴛᴀ ɪɴᴄᴏʀʀᴇᴛᴀ
+> 𝚅𝚘𝚌𝚎 𝚙𝚎𝚛𝚍𝚎𝚞 𝟷𝟶 𝚙𝚘𝚗𝚝𝚘𝚜, 𝚐𝚊𝚛𝚘𝚝𝚘
+
+`
+          await m.reply(quizWrongReply)
           global.db.data.chats[m.chat].jogadores[m.sender].xp -=10
         }
            }
            else if (!global.db.data.chats[m.chat].quiz.perguntaAndamento && ["A", "B", "C", "D"].includes(m.text.toUpperCase())) {
-             await m.reply(`
-╭━━━━━━━━━⬣
-💀 𝔈𝔰𝔱𝔢 𝔧𝔬𝔤𝔬 𝔧á 𝔣𝔬𝔦 𝔢𝔫𝔠𝔢𝔯𝔯𝔞𝔡𝔬
-╰━━━━━━━━━⬣
-        `)
+            
+            const quizEnd = global.db.data.chats[m.chat].language === 'en' ? 
+            `┌──[robot@bytesec]──[~/ϙυιȥ] 
+  └─► get_status -e
+  
+  [!] ᴛʜɪꜱ ɢᴀᴍᴇ ᴀʟʀᴇᴀᴅʏ ᴇɴᴅᴇᴅ, ᴋɪᴅ
+
+  ` : 
+            `┌──[robot@bytesec]──[~/ϙυιȥ] 
+  └─► get_status -e
+  
+  [!] ᴇꜱꜱᴇ ᴊᴏɢᴏ ᴊᴀ ᴀᴄᴀʙᴏᴜ, ɢᴀʀᴏᴛᴏ
+
+  `
+
+            await m.reply(quizEnd)
            }
       
     
@@ -692,7 +710,12 @@ m.react('💿')
 
 if(/^\s*--exec\s*$/.test(m.text)) {
   m.react('📀')
-  return m.reply(`edgar@fsociety:~$ .fsociety --help
+
+  let languag = global.db.data.chats[m.chat].language || 'en'
+
+  let getRbt = languag === "pt" 
+    ? `┌──[robot@bytesec]──[~] 
+  └─► .fsociety --help
 > ‎ 
 > 𝙼𝚎 𝚍𝚎 𝚊𝚕𝚐𝚞𝚖𝚊 𝚛𝚎𝚜𝚙𝚘𝚜𝚝𝚊, 𝚐𝚊𝚛𝚘𝚝𝚘.
 > -------------
@@ -702,11 +725,34 @@ Responda com:
 > $ --menu 
 > -------------
 Exemplos de Uso:
-> $ <?> Responda com algum dos exemplos acima 
+> $ <?>  
 > ‎
 > Lembre-se: Você é um 1 ou um 0? Ou você controla o sistema, ou é controlado por ele. A pergunta é: está no comando ou só segue as linhas de código?
 > ‎
-edgar@fsociety:~$ _`)
+
+┌──[robot@bytesec]──[~] 
+└─► _`
+    : 
+    `┌──[robot@bytesec]──[~] 
+  └─► .fsociety --help
+> ‎ 
+> 𝙶𝚒𝚟𝚎 𝚖𝚎 𝚜𝚘𝚖𝚎𝚝𝚑𝚒𝚗', 𝚔𝚒𝚍
+> -------------
+Responda com:
+> $ <question>          
+> $ --exec <Type somethin' to do in shell>
+> $ --menu 
+> -------------
+Usage:
+> $ <?> 
+> ‎
+> Remember: Are you a 1 or a 0? Either you control the system, or you are controlled by it. The question is: are you in charge or just following the lines of code?
+> ‎
+
+┌──[robot@bytesec]──[~] 
+└─► _`
+  
+  return m.reply(getRbt)
 }
 else if(m.text.includes('--menu')) {
 
@@ -733,16 +779,48 @@ else if(m.text.includes('--menu')) {
   return 
 }
 else {
-  const { key } = await conn.sendMessage(m.chat, { text: `> ### FSOCIETY SYSTEM INITIATED ###
+
+
+let languag = global.db.data.chats[m.chat].language || 'en'
+
+let getRbt = languag === "pt" 
+  ? `┌──[robot@bytesec]──[~] 
+└─► .fsociety --help
+
+> ### FSOCIETY SYSTEM INITIATED ###
 > ‎ 
-| 𖣖 Por favor, mantenha a conexão 
-| edgar@fsociety:~$ Iniciando 
-| módulo MR.ROBOT...
+| 𖣖 Por favor, aguarde. . . 
+| Iniciando módulo...
 > ‎  
 > [!] Aguarde a resposta ser gerada
 > [!] Processo em andamento...
 > ‎ 
-> >> EOF <<` }, { quoted: m });
+> >> EOF <<
+
+┌──[robot@bytesec]──[~] 
+└─► _~
+`
+  : 
+  `┌──[robot@bytesec]──[~] 
+└─► .fsociety --help
+
+> ‎ 
+> ### FSOCIETY SYSTEM INITIATED ###
+> ‎ 
+| 𖣖 Please wait. . . 
+| Initiating module. . . 
+> ‎  
+> [!] Wait for response
+> [!] Processing...
+> ‎ 
+> >> EOF <<
+
+┌──[robot@bytesec]──[~] 
+└─► _`
+
+
+
+  const { key } = await conn.sendMessage(m.chat, { text: loadingRobot }, { quoted: m });
 
     
 const inputNg = {
@@ -790,7 +868,7 @@ await postData('http://89.117.96.108:8330/elliot', inputNg)
         }
 
       let robotMsg =  await conn.sendMessage(m.chat, {
-            text: `> ### FSOCIETY SYSTEM INITIATED ###\n> edgar@fsociety:~$ ./robot -e\n> --- \n𖣖 𝗠𝗿.𝗥𝗼𝗯𝗼𝘁: ${responseText}\n> ---\n> >> EOF <<`,
+            text: `> ### FSOCIETY SYSTEM INITIATED ###\n> root@fsociety:~$ ./robot -e\n> --- \n𖣖 𝗠𝗿.𝗥𝗼𝗯𝗼𝘁: ${responseText}\n> ---\n> >> EOF <<`,
             edit: key
         });
   
@@ -803,21 +881,8 @@ await postData('http://89.117.96.108:8330/elliot', inputNg)
     })
 
     .catch(async (error) => {
-      await conn.sendMessage(m.chat, {text: `> ### SYSTEM ERROR ALERT ###
+      sendSystemErrorAlert( global.db.data.chats[m.chat].language || 'en');
 
-██▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓██
-█ ERROR: SYSTEM MALFUNCTION █
-█ CODE: 0x1F4B             █
-> ‎ 
-> [!] ALERTA: Falha crítica detectada
-> [!] Protocolo de recuperação: INDISPONÍVEL
-> ‎ 
-> >> OPERAÇÃO INTERROMPIDA <<
-> 𖣖 Use ".report" para registrar o incidente
-> ‎ 
-> >>> SISTEMA EM MODO DE EMERGÊNCIA <<<` , edit: key});
-
-      
         console.error('Error:', error);
         m.react('🏴‍☠️')
     });
@@ -1154,7 +1219,7 @@ console.log("👍")
 ┃ @${player2.split("@")[0]}: ${global.db.data.chats[m.chat].truco.stats[player2].pontos}
 ┃────────────────────
 ┃ @${user.split("@")[0]}  𝔯𝔢𝔠𝔢𝔟𝔢𝔯𝔞:
-┃ ${ global.db.data.chats[m.chat].truco.coins} 𒄆 ʙʏᴛᴇᴄᴏɪɴꜱ ${isTruco ? `\n┃ ${ global.db.data.chats[m.chat].truco.bugs} 𓆣 ᴇᴛʜᴇʀᴇᴜᴍ` : ''}
+┃ ${ global.db.data.chats[m.chat].truco.coins} җ ʙʏᴛᴇᴄᴏɪɴꜱ ${isTruco ? `\n┃ ${ global.db.data.chats[m.chat].truco.bugs} ⧗ ᴇᴛʜᴇʀᴇᴜᴍ` : ''}
 ┃ ${ global.db.data.chats[m.chat].truco.xp} 𝑥𝑝
 ┃ 
 ╰─...⌬────────────────────╯`, m, { mentions:[player1,player2] });
@@ -1275,7 +1340,7 @@ console.log(global.db.data.chats[m.chat].truco.table)
 ┃ @${player2.split("@")[0]}: ${global.db.data.chats[m.chat].truco.stats[player2].pontos}
 ┃────────────────────
 ┃ @${user.split("@")[0]}  𝔯𝔢𝔠𝔢𝔟𝔢𝔯𝔞:
-┃ ${ global.db.data.chats[m.chat].truco.coins} 𒄆 ʙʏᴛᴇᴄᴏɪɴꜱ ${global.db.data.chats[m.chat].truco.isTruco ? `\n┃ ${ global.db.data.chats[m.chat].truco.bugs} 𓆣 ᴇᴛʜᴇʀᴇᴜᴍ` : ''}
+┃ ${ global.db.data.chats[m.chat].truco.coins} җ ʙʏᴛᴇᴄᴏɪɴꜱ ${global.db.data.chats[m.chat].truco.isTruco ? `\n┃ ${ global.db.data.chats[m.chat].truco.bugs} ⧗ ᴇᴛʜᴇʀᴇᴜᴍ` : ''}
 ┃ ${ global.db.data.chats[m.chat].truco.xp} 𝑥𝑝
 ┃ 
 ╰─...⌬────────────────────╯`, m, { mentions:[player1,player2] });
@@ -1308,7 +1373,7 @@ global.db.data.chats[m.chat].users[user].limit +=  global.db.data.chats[m.chat].
 ┃ @${player2.split("@")[0]}: ${global.db.data.chats[m.chat].truco.stats[player2].pontos}
 ┃────────────────────
 ┃ @${user.split("@")[0]}  𝔯𝔢𝔠𝔢𝔟𝔢𝔯𝔞:
-┃ ${ global.db.data.chats[m.chat].truco.coins} 𒄆 ʙʏᴛᴇᴄᴏɪɴꜱ ${global.db.data.chats[m.chat].truco.isTruco ? `\n┃ ${ global.db.data.chats[m.chat].truco.bugs} 𓆣 ᴇᴛʜᴇʀᴇᴜᴍ` : ''}
+┃ ${ global.db.data.chats[m.chat].truco.coins} җ ʙʏᴛᴇᴄᴏɪɴꜱ ${global.db.data.chats[m.chat].truco.isTruco ? `\n┃ ${ global.db.data.chats[m.chat].truco.bugs} ⧗ ᴇᴛʜᴇʀᴇᴜᴍ` : ''}
 ┃ ${ global.db.data.chats[m.chat].truco.xp} 𝑥𝑝
 ┃ 
 ╰─...⌬────────────────────╯`, m, { mentions:[player1,player2] });
@@ -2226,7 +2291,7 @@ if(global.db.data.chats[m.chat].roleta.jogadores[m.sender].tempType== 1 &&
 *┃━╼*  𝐐𝐮𝐚𝐥 𝐬𝐞𝐫𝐚́ 𝐨 𝐭𝐢𝐩𝐨 𝐝𝐞 𝐬𝐮𝐚 𝐚𝐩𝐨𝐬𝐭𝐚?
 ╰╾╼╾╼╾╼╾╼╾╼╾
 > ‎ 
-> 𒄆 𝑸𝒖𝒂𝒏𝒕𝒐 𝒅𝒆𝒔𝒆𝒋𝒂 𝒂𝒑𝒐𝒔𝒕𝒂𝒓? 
+> җ 𝑸𝒖𝒂𝒏𝒕𝒐 𝒅𝒆𝒔𝒆𝒋𝒂 𝒂𝒑𝒐𝒔𝒕𝒂𝒓? 
 > ‎
 ┗━━━━━━━━━━━━━━━━`
   
@@ -2256,7 +2321,7 @@ else if(global.db.data.chats[m.chat].users[m.sender].money < m.text){
 *┃*  𝙀𝙧𝙧𝙤!
 ╰╾╼╾╼╾╼╾╼╾╼╾
 > ‎ 
-> ☛ 𝑉𝑜𝑐𝑒̂ 𝑛𝑎̃𝑜 𝑡𝑒𝑚 𝐷𝑎𝑟𝑘𝑐𝑜𝑖𝑛𝑠 𝑠𝑢𝑓𝑖𝑐𝑖𝑒𝑛𝑡𝑒𝑠!
+> ☛ 𝑉𝑜𝑐𝑒̂ 𝑛𝑎̃𝑜 𝑡𝑒𝑚 ʙʏᴛᴇᴄᴏɪɴꜱ 𝑠𝑢𝑓𝑖𝑐𝑖𝑒𝑛𝑡𝑒𝑠!
 > ‎
 ┗━━━━━━━━━━━━━━━━`) 
 }
@@ -2556,7 +2621,7 @@ console.log(mshg)
   
   
 let txtA = `┏━━❬ *𖤐* ❭━━┓
-*┃* - ${m.text} 𒄆 ʙʏᴛᴇᴄᴏɪɴꜱ 𝚌𝚘𝚕𝚘𝚌𝚊𝚍𝚊𝚜 𝚎𝚖 𝚓𝚘𝚐𝚘
+*┃* - ${m.text} җ ʙʏᴛᴇᴄᴏɪɴꜱ 𝚌𝚘𝚕𝚘𝚌𝚊𝚍𝚊𝚜 𝚎𝚖 𝚓𝚘𝚐𝚘
 ┗━━━━━━━━━━━━━━━━`
 await conn.sendMessage(m.chat, {text: txtA, edit:  global.db.data.chats[m.chat].bicho.players[m.sender].keyMsg}  ,{ mentions: conn.parseMention(txtA) });
 
@@ -2669,7 +2734,7 @@ console.log(console.log('abc:  ' + global.db.data.chats[m.chat].forca.currentSta
   
 @${m.sender.split('@')[0]}
 | ━━⬣ 𝑹𝒆𝒄𝒆𝒃𝒆𝒓𝒂𝒔
-| 𒄆 ʙʏᴛᴇᴄᴏɪɴꜱ  _*+${coins}*_
+| җ ʙʏᴛᴇᴄᴏɪɴꜱ  _*+${coins}*_
 | 𓂀 𝑥𝑝  _*+${xp}*_
   `
   
@@ -2721,7 +2786,7 @@ if(userGuess == palavra){
   𝑫𝒆𝒔𝒗𝒆𝒏𝒅𝒂𝒔𝒕𝒆 𝒅𝒆 𝒇𝒐𝒓𝒎𝒂 𝒔𝒊𝒏𝒈𝒆𝒍𝒂 𝒎𝒆𝒖 𝒆𝒏𝒊𝒈𝒎𝒂
   @${m.sender.split('@')[0]}
 | ━━⬣ 𝑹𝒆𝒄𝒆𝒃𝒆𝒓𝒂𝒔
-| 𒄆 ʙʏᴛᴇᴄᴏɪɴꜱ  _*+${coins}*_
+| җ ʙʏᴛᴇᴄᴏɪɴꜱ  _*+${coins}*_
 | 𓂀 𝑥𝑝  _*+${xp}*_ `
     let message = await conn.reply(m.chat,textwioplv, m, { mentions: [m.sender] })
      return !0
@@ -2772,7 +2837,7 @@ function generateBankDetails() {
     };
 }
 if(global.db.data.chats[m.chat].users[m.sender].money < 100){
-return m.reply(`> ☛ 𝑉𝑜𝑐𝑒̂ 𝑛𝑎̃𝑜 𝑡𝑒𝑚 𝐷𝑎𝑟𝑘𝑐𝑜𝑖𝑛𝑠 𝑠𝑢𝑓𝑖𝑐𝑖𝑒𝑛𝑡𝑒𝑠!`)
+return m.reply(`> ☛ 𝑉𝑜𝑐𝑒̂ 𝑛𝑎̃𝑜 𝑡𝑒𝑚 ʙʏᴛᴇᴄᴏɪɴꜱ 𝑠𝑢𝑓𝑖𝑐𝑖𝑒𝑛𝑡𝑒𝑠!`)
 }
  global.db.data.chats[m.chat].users[m.sender].money -= 100
     const details = generateBankDetails();
@@ -2801,7 +2866,7 @@ _Número da Conta_: ${details.accountNumber}
 _Código SEPA:_ ${details.sepaCode}
 _Carteira Digital:_ ${details.walletAddress}
 
-𝑂 𝑑𝑒𝑝𝑜́𝑠𝑖𝑡𝑜 𝑑𝑒 100 𝐷𝑎𝑟𝑘𝑐𝑜𝑖𝑛𝑠 𝑓𝑜𝑖 𝑏𝑒𝑚-𝑠𝑢𝑐𝑒𝑑𝑖𝑑𝑜 𝑒 𝑝𝑜𝑑𝑒 𝑠𝑒𝑟 𝑒𝑛𝑐𝑜𝑛𝑡𝑟𝑎𝑑𝑜 𝑛𝑜 𝑠𝑎𝑙𝑑𝑜 𝑑𝑒 𝑡𝑢𝑎 𝑐𝑜𝑛𝑡𝑎.
+𝑂 𝑑𝑒𝑝𝑜́𝑠𝑖𝑡𝑜 𝑑𝑒 100 ʙʏᴛᴇᴄᴏɪɴꜱ 𝑓𝑜𝑖 𝑏𝑒𝑚-𝑠𝑢𝑐𝑒𝑑𝑖𝑑𝑜 𝑒 𝑝𝑜𝑑𝑒 𝑠𝑒𝑟 𝑒𝑛𝑐𝑜𝑛𝑡𝑟𝑎𝑑𝑜 𝑛𝑜 𝑠𝑎𝑙𝑑𝑜 𝑑𝑒 𝑡𝑢𝑎 𝑐𝑜𝑛𝑡𝑎.
 𝑆𝑢𝑎 𝑐𝑜𝑛𝑡𝑎 𝑒𝑠𝑡𝑎́ 𝑎𝑡𝑖𝑣𝑎 𝑒 𝑗𝑎́ 𝑝𝑜𝑑𝑒 𝑟𝑒𝑎𝑙𝑖𝑧𝑎𝑟 𝑑𝑒𝑝𝑜𝑠𝑖𝑡𝑜𝑠 𝑒 𝑠𝑎𝑞𝑢𝑒𝑠.
 𝑃𝑎𝑟𝑎 𝑚𝑎𝑖𝑠 𝑖𝑛𝑓𝑜𝑟𝑚𝑎𝑐̧𝑜̃𝑒𝑠, 𝑑𝑖𝑔𝑖𝑡𝑒 *.𝘣𝘢𝘯𝘤𝘰*
 ╰──────────────˒≪𖥳≫`
@@ -2942,7 +3007,7 @@ _𝐁𝐞𝐦 𝐯𝐢𝐧𝐝𝐨 𝐚 𝐥𝐨𝐣𝐚 𝐝𝐨 𝐆𝐚𝐭�
 
 ⦗1⦘ _𝑪𝒂𝒎𝒃𝒊𝒐 𝒅𝒆 ᴇᴛʜᴇʀᴇᴜᴍ 𝒆 ʙʏᴛᴇᴄᴏɪɴꜱ
 
-⦗2⦘ _𝐂𝐨𝐦𝐩𝐫𝐚𝐫 𝐱𝐩 𝐜𝐨𝐦 𒄆 ʙʏᴛᴇᴄᴏɪɴꜱ_
+⦗2⦘ _𝐂𝐨𝐦𝐩𝐫𝐚𝐫 𝐱𝐩 𝐜𝐨𝐦 җ ʙʏᴛᴇᴄᴏɪɴꜱ_
 
 ⦗3⦘ _𝐂𝐨𝐦𝐩𝐫𝐚𝐫 𝐭𝐨𝐤𝐞𝐧𝐬_    
 
@@ -2981,7 +3046,7 @@ let message = await  conn.sendFile(m.chat, bugStore.getRandom(), 'loja.jpg', `�
 ╭⋟────────────────────────╮
     𝘗𝘰𝘳 𝘧𝘢𝘷𝘰𝘳... 𝘴𝘦𝘭𝘦𝘤𝘪𝘰𝘯𝘦 𝘶𝘮𝘢 𝘰𝘱𝘤𝘢𝘰
 
-_〘 𓆣 𝑽𝒆𝒏𝒅𝒂 𝒅𝒆 𝒆𝒔𝒄𝒂𝒓𝒂𝒗𝒆𝒍𝒉𝒐𝒔 〙_
+_〘 ⧗ 𝑽𝒆𝒏𝒅𝒂 𝒅𝒆 𝒆𝒔𝒄𝒂𝒓𝒂𝒗𝒆𝒍𝒉𝒐𝒔 〙_
 
 ⦗1⦘ _Vender 1 escaravelho por 550 ʙʏᴛᴇᴄᴏɪɴꜱ_
 ⦗2⦘ _Vender 2 escaravelhos por 1100 ʙʏᴛᴇᴄᴏɪɴꜱ_
@@ -2990,7 +3055,7 @@ _〘 𓆣 𝑽𝒆𝒏𝒅𝒂 𝒅𝒆 𝒆𝒔𝒄𝒂𝒓𝒂𝒗𝒆𝒍𝒉
 ⦗5⦘ _Vender 7 escaravelhos por 3850 ʙʏᴛᴇᴄᴏɪɴꜱ_
 ⦗6⦘ _Vender 8 escaravelhos por 4400 ʙʏᴛᴇᴄᴏɪɴꜱ_
 
-_〘 𒄆 𝑽𝒆𝒏𝒅𝒂 𝒅𝒆 𝑫𝒂𝒓𝒌𝒄𝒐𝒊𝒏𝒔 〙_
+_〘 җ 𝑽𝒆𝒏𝒅𝒂 𝒅𝒆 𝑫𝒂𝒓𝒌𝒄𝒐𝒊𝒏𝒔 〙_
 
 ⦗7⦘ _Vender 550 ʙʏᴛᴇᴄᴏɪɴꜱ por 1 escaravelho_
 ⦗8⦘ _Vender 1100 ʙʏᴛᴇᴄᴏɪɴꜱ por 2 escaravelhos_
@@ -3501,7 +3566,7 @@ if (["sim", "claro", "aceito", "óbvio", "obvio", "claro que sim", "s", "ss"].in
  
  𝑵𝒐 𝒐𝒃𝒔𝒄𝒖𝒓𝒐 𝒓𝒆𝒄𝒊𝒏𝒕𝒐 𝒅𝒐 𝒄𝒂𝒓𝒕𝒐𝒓𝒊𝒐, 𝒐𝒔 𝒑𝒆𝒓𝒈𝒂𝒎𝒊𝒏𝒉𝒐𝒔 𝒇𝒐𝒓𝒂𝒎 𝒂𝒔𝒔𝒊𝒏𝒂𝒅𝒐𝒔 𝒆 𝒓𝒆𝒄𝒐𝒏𝒉𝒆𝒄𝒊𝒅𝒐𝒔 𝒆 𝒗𝒐𝒔𝒔𝒐𝒔 𝒅𝒆𝒔𝒕𝒊𝒏𝒐𝒔 𝒅𝒆𝒔𝒗𝒊𝒏𝒄𝒖𝒍𝒂𝒅𝒐𝒔. 𝑨𝒈𝒐𝒓𝒂, 𝒗𝒐𝒔𝒔𝒂𝒔 𝒂𝒍𝒎𝒂𝒔 𝒆𝒔𝒕𝒂𝒐 𝒍𝒆𝒈𝒂𝒍𝒎𝒆𝒏𝒕𝒆 𝒔𝒆𝒑𝒂𝒓𝒂𝒅𝒂𝒔. 
  
- 𝑼𝒎𝒂 𝒕𝒂𝒙𝒂 𝒅𝒆 415 𒄆 ʙʏᴛᴇᴄᴏɪɴꜱ 𝒇𝒐𝒊 𝒆𝒙𝒂𝒖𝒓𝒊𝒅𝒂 𝒅𝒆 𝒗𝒐𝒔𝒔𝒂 𝒄𝒐𝒏𝒕𝒂 𝒂 𝒐𝒓𝒅𝒆𝒎 𝒑𝒂𝒓𝒂 𝒄𝒐𝒏𝒄𝒓𝒆𝒕𝒊𝒛𝒂𝒓 𝒆𝒔𝒕𝒆 𝒑𝒓𝒐𝒄𝒆𝒔𝒔𝒐 𝒅𝒆 𝒅𝒊𝒔𝒔𝒐𝒍𝒖𝒄𝒂𝒐 𝒎𝒂𝒕𝒓𝒊𝒎𝒐𝒏𝒊𝒂𝒍.
+ 𝑼𝒎𝒂 𝒕𝒂𝒙𝒂 𝒅𝒆 415 җ ʙʏᴛᴇᴄᴏɪɴꜱ 𝒇𝒐𝒊 𝒆𝒙𝒂𝒖𝒓𝒊𝒅𝒂 𝒅𝒆 𝒗𝒐𝒔𝒔𝒂 𝒄𝒐𝒏𝒕𝒂 𝒂 𝒐𝒓𝒅𝒆𝒎 𝒑𝒂𝒓𝒂 𝒄𝒐𝒏𝒄𝒓𝒆𝒕𝒊𝒛𝒂𝒓 𝒆𝒔𝒕𝒆 𝒑𝒓𝒐𝒄𝒆𝒔𝒔𝒐 𝒅𝒆 𝒅𝒊𝒔𝒔𝒐𝒍𝒖𝒄𝒂𝒐 𝒎𝒂𝒕𝒓𝒊𝒎𝒐𝒏𝒊𝒂𝒍.
 
 ┗━── `, // Replace with the desired caption
             contextInfo: {
@@ -4319,7 +4384,7 @@ const statusString = global.db.data.chats[m.chat].sudoku.gameData.status.join(''
  global.db.data.chats[m.chat].users[m.sender].money += conns5
  let textts = `╭──────────────────── ⛦...─╮
                    ༒︎ 𝑭𝑰𝑴 𝑫𝑬 𝑱𝑶𝑮𝑶 ༒︎            
- 𝒈𝒂𝒏𝒉𝒐𝒖 ${conns5} 𒄆 ʙʏᴛᴇᴄᴏɪɴꜱ
+ 𝒈𝒂𝒏𝒉𝒐𝒖 ${conns5} җ ʙʏᴛᴇᴄᴏɪɴꜱ
 ${global.db.data.chats[m.chat].sudoku.singleplayer ? `` : `─┅❖ 𝑱𝒐𝒈𝒂𝒅𝒐𝒓𝒆𝒔\n`}
 ${global.db.data.chats[m.chat].sudoku.jogadores.map(player => '@' + player.split('@')[0] + '  𝒈𝒂𝒏𝒉𝒐𝒖 ' + (6 * global.db.data.chats[m.chat].sudoku.jogadas[player]) + ' 𝑥𝑝').join('\n')}
 
@@ -4422,7 +4487,7 @@ if(!global.db.data.chats[m.chat].sudoku.jogadas[m.sender]){
       global.db.data.chats[m.chat].users[m.sender].pontos++
     let msgh = await conn.sendFile(m.chat, filePath, 'sudoku.png', `╭──────────────────── ⛦...─╮
                         ⸸ 𝑵𝒖𝒎𝒆𝒓𝒐 𝒄𝒐𝒓𝒓𝒆𝒕𝒐 
-     𝒈𝒂𝒏𝒉𝒐𝒖 ${conns} 𒄆 ʙʏᴛᴇᴄᴏɪɴꜱ 𝒆 +1 𝒑𝒐𝒏𝒕𝒐
+     𝒈𝒂𝒏𝒉𝒐𝒖 ${conns} җ ʙʏᴛᴇᴄᴏɪɴꜱ 𝒆 +1 𝒑𝒐𝒏𝒕𝒐
 ╰─...𖤐────────────────────╯`, m,{mentions:[m.sender]});
     
   global.db.data.chats[m.chat].sudoku.regMsg = msgh.key.id
@@ -4445,14 +4510,14 @@ handleCorrectGuess(rowIndex, colIndex, number); // Row index for 'C' is 2, colum
  let mmn = Math.floor(Math.random() * (10 - 5 + 1)) + 5;
     m.reply(  `╭────────────⌬─╮
 |            𝑬𝒓𝒓𝒂𝒅𝒐 ❌             
-| 𝒑𝒆𝒓𝒅𝒆𝒔 ${mmn} 𒄆 ʙʏᴛᴇᴄᴏɪɴꜱ 
+| 𝒑𝒆𝒓𝒅𝒆𝒔 ${mmn} җ ʙʏᴛᴇᴄᴏɪɴꜱ 
 ╰─⌬────────────╯`)
  global.db.data.chats[m.chat].users[m.sender].money -= mmn
   } else {
   let mmhn = Math.floor(Math.random() * (10 - 5 + 1)) + 5;
     m.reply(  `╭────────────⌬─╮
 |            𝑬𝒓𝒓𝒂𝒅𝒐 ❌             
-| 𝒑𝒆𝒓𝒅𝒆𝒔 ${mmhn} 𒄆 ʙʏᴛᴇᴄᴏɪɴꜱ 
+| 𝒑𝒆𝒓𝒅𝒆𝒔 ${mmhn} җ ʙʏᴛᴇᴄᴏɪɴꜱ 
 ╰─⌬────────────╯`)
  global.db.data.chats[m.chat].users[m.sender].money -= mmhn
   }

@@ -45,7 +45,7 @@ if(!global.db.data.chats[m.chat].users[m.sender]){
 }
  if (!(isAdmin || isOwner) && global.db.data.chats[m.chat].autolevelup && global.db.data.chats[m.chat].users[m.sender].money < 120) {
 await conn.sendMessage(m.chat ,{text: `╭─┅──┅❖ ༒︎ ❖─┅──┅
-𝑺𝒆𝒎 𒄆 ʙʏᴛᴇᴄᴏɪɴꜱ, 𝒎𝒆𝒓𝒈𝒖𝒍𝒉𝒂𝒏𝒅𝒐-𝒕𝒆 𝒏𝒂 𝒑𝒆𝒏𝒖𝒎𝒃𝒓𝒂 𝒇𝒊𝒏𝒂𝒏𝒄𝒆𝒊𝒓𝒂, 𝒄𝒐𝒎𝒐 𝒐 𝒄𝒐𝒓𝒗𝒐 𝒒𝒖𝒆 𝒆𝒔𝒑𝒓𝒆𝒊𝒕𝒂 𝒂 𝒊𝒏𝒔𝒐𝒍𝒗ê𝒏𝒄𝒊𝒂.
+𝑺𝒆𝒎 җ ʙʏᴛᴇᴄᴏɪɴꜱ, 𝒎𝒆𝒓𝒈𝒖𝒍𝒉𝒂𝒏𝒅𝒐-𝒕𝒆 𝒏𝒂 𝒑𝒆𝒏𝒖𝒎𝒃𝒓𝒂 𝒇𝒊𝒏𝒂𝒏𝒄𝒆𝒊𝒓𝒂, 𝒄𝒐𝒎𝒐 𝒐 𝒄𝒐𝒓𝒗𝒐 𝒒𝒖𝒆 𝒆𝒔𝒑𝒓𝒆𝒊𝒕𝒂 𝒂 𝒊𝒏𝒔𝒐𝒍𝒗ê𝒏𝒄𝒊𝒂.
 *╰─┅──┅❖ ⸸ ❖─┅──┅*`},{quoted:m})
  return !0
 }
@@ -86,7 +86,7 @@ const audiocore = mediaa.result2?.[0]?.audio || mediaa.result2?.[1]?.audio || me
 const aa = await conn.sendMessage(m.chat, {audio: {url: audiocore}, fileName: `error.mp3`, mimetype: 'audio/mp4'}, {quoted: m});
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 120
-await m.reply("༒︎ 120 𒄆 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+await m.reply("༒︎ 120 җ ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
 if (!aa) {
 throw new Error();
 }} catch {
@@ -95,7 +95,7 @@ const json = await res.json();
 const aa_1 = await conn.sendMessage(m.chat, {audio: {url: json.result.audio}, fileName: `error.mp3`, mimetype: 'audio/mp4'}, {quoted: m});
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 120
-await m.reply("༒︎ 120 𒄆 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+await m.reply("༒︎ 120 җ ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
 if (!aa_1) aa_1 = await conn.sendFile(m.chat, json.result.audio, 'error.mp3', null, m, false, {mimetype: 'audio/mp4'});
 }}
 if (command == 'play.2') {
@@ -117,7 +117,7 @@ try {
 const mediaa = await ytPlayVid(text);
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 120
-await m.reply("༒︎ 120 𒄆 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+await m.reply("༒︎ 120 җ ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
 const aa_2 = await conn.sendMessage(m.chat, {video: {url: mediaa.result}, fileName: `error.mp4`, caption: `${wm}`, thumbnail: mediaa.thumb, mimetype: 'video/mp4'}, {quoted: m});
 if (!aa_2) {
 throw new Error();
@@ -126,7 +126,7 @@ const res = await fetch(`https://api.lolhuman.xyz/api/ytplay2?apikey=${lolkeysap
 const json = await res.json();
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 120
-await m.reply("༒︎ 120 𒄆 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+await m.reply("༒︎ 120 җ ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
 await conn.sendFile(m.chat, json.result.video, 'error.mp4', `${wm}`, m);
 }}} catch {
 m.reply(`${fg}╭━━━━━━━━━⬣
