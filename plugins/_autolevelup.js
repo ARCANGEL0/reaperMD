@@ -316,11 +316,8 @@ else if(user.level<2){
 user.role = levels[0]
   user.money += 30
 
-  drawRank(false,30,0,global.pluginsAtUserLevel.flat(),user.level, `╭─┅──┅❖ ༒︎ ❖─┅──┅ \n\n ﷽  @${m.sender.split('@')[0]}
- ᶜᵉˡᵉᵇʳᵒ ᵗᵘᵃ ᵃˢᶜᵉⁿˢᵃᵒ
- ᵒⁿᵈᵉ ᵃˢ ᵗʳᵉᵛᵃˢ ᵃᵖˡᵃᵘᵈᵉᵐ ᵗᵉᵘ ᶠᵉⁱᵗᵒ ᵉ ᵒ ᵈᵉˢᶜᵒⁿʰᵉᶜⁱᵈᵒ
- ᵐᵘʳᵐᵘʳᵃ ᵉˡᵒᵍⁱᵒˢ ᵉᵐ ᵘᵐ ᶜᵒʳᵒ ˢᵒᵐᵇʳⁱᵒ.
-*╰─┅──┅❖ ⸸ ❖─┅──┅*`) 		  	 
+upgradeMessage(m.pushName, user.level, 30, 0)
+
 }
 } // 2
 if(userxp>4000 && userxp<8000 ){
@@ -339,11 +336,8 @@ else if(user.level<3){
 user.role = levels[0]
   user.money += 30
 
-  drawRank(false,30,0,global.pluginsAtUserLevel.flat(),user.level, `╭─┅──┅❖ ༒︎ ❖─┅──┅ \n\n ﷽  @${m.sender.split('@')[0]}
- ᶜᵉˡᵉᵇʳᵒ ᵗᵘᵃ ᵃˢᶜᵉⁿˢᵃᵒ
- ᵒⁿᵈᵉ ᵃˢ ᵗʳᵉᵛᵃˢ ᵃᵖˡᵃᵘᵈᵉᵐ ᵗᵉᵘ ᶠᵉⁱᵗᵒ ᵉ ᵒ ᵈᵉˢᶜᵒⁿʰᵉᶜⁱᵈᵒ
- ᵐᵘʳᵐᵘʳᵃ ᵉˡᵒᵍⁱᵒˢ ᵉᵐ ᵘᵐ ᶜᵒʳᵒ ˢᵒᵐᵇʳⁱᵒ.
-*╰─┅──┅❖ ⸸ ❖─┅──┅*`) 		  	 
+upgradeMessage(m.pushName, user.level, 30, 0)
+
 }
 } // 3
 if(userxp>8000 && userxp<14000 ){
@@ -362,11 +356,8 @@ else if(user.level<4){
 user.role = levels[0]
   user.money += 30
 
-  drawRank(false,30,0,global.pluginsAtUserLevel.flat(),user.level, `╭─┅──┅❖ ༒︎ ❖─┅──┅ \n\n ﷽  @${m.sender.split('@')[0]}
- ᶜᵉˡᵉᵇʳᵒ ᵗᵘᵃ ᵃˢᶜᵉⁿˢᵃᵒ
- ᵒⁿᵈᵉ ᵃˢ ᵗʳᵉᵛᵃˢ ᵃᵖˡᵃᵘᵈᵉᵐ ᵗᵉᵘ ᶠᵉⁱᵗᵒ ᵉ ᵒ ᵈᵉˢᶜᵒⁿʰᵉᶜⁱᵈᵒ
- ᵐᵘʳᵐᵘʳᵃ ᵉˡᵒᵍⁱᵒˢ ᵉᵐ ᵘᵐ ᶜᵒʳᵒ ˢᵒᵐᵇʳⁱᵒ.
-*╰─┅──┅❖ ⸸ ❖─┅──┅*`) 		  	 
+upgradeMessage(m.pushName, user.level, 30, 0)
+
 }
 } //4
 if(userxp>14000 && userxp<20000 ){
@@ -386,11 +377,8 @@ user.role = levels[1]
   user.money += 60
   user.limit += 1
 
-  drawRank(true,60,1,global.pluginsAtUserLevel.flat(),user.level, `╭─┅──┅❖ ༒︎ ❖─┅──┅ \n\n ﷽  @${m.sender.split('@')[0]}
- ᶜᵉˡᵉᵇʳᵒ ᵗᵘᵃ ᵃˢᶜᵉⁿˢᵃᵒ
- ᵒⁿᵈᵉ ᵃˢ ᵗʳᵉᵛᵃˢ ᵃᵖˡᵃᵘᵈᵉᵐ ᵗᵉᵘ ᶠᵉⁱᵗᵒ ᵉ ᵒ ᵈᵉˢᶜᵒⁿʰᵉᶜⁱᵈᵒ
- ᵐᵘʳᵐᵘʳᵃ ᵉˡᵒᵍⁱᵒˢ ᵉᵐ ᵘᵐ ᶜᵒʳᵒ ˢᵒᵐᵇʳⁱᵒ.
-*╰─┅──┅❖ ⸸ ❖─┅──┅*`,user.role)
+upgradeMessage(m.pushName, user.level, 60, 1)
+
 
 }
 } //5
@@ -411,11 +399,8 @@ user.role = levels[1]
   user.money += 60
 
  
-  drawRank(false,60,0,global.pluginsAtUserLevel.flat(),user.level, `╭─┅──┅❖ ༒︎ ❖─┅──┅ \n\n ﷽  @${m.sender.split('@')[0]}
- ᶜᵉˡᵉᵇʳᵒ ᵗᵘᵃ ᵃˢᶜᵉⁿˢᵃᵒ
- ᵒⁿᵈᵉ ᵃˢ ᵗʳᵉᵛᵃˢ ᵃᵖˡᵃᵘᵈᵉᵐ ᵗᵉᵘ ᶠᵉⁱᵗᵒ ᵉ ᵒ ᵈᵉˢᶜᵒⁿʰᵉᶜⁱᵈᵒ
- ᵐᵘʳᵐᵘʳᵃ ᵉˡᵒᵍⁱᵒˢ ᵉᵐ ᵘᵐ ᶜᵒʳᵒ ˢᵒᵐᵇʳⁱᵒ.
-*╰─┅──┅❖ ⸸ ❖─┅──┅*`)	  	 
+upgradeMessage(m.pushName, user.level, 60, 0)
+
 }
 } //6
 if(userxp>26500 && userxp<33500 ){
@@ -435,11 +420,8 @@ user.role = levels[1]
   user.money += 60
   
 
-  drawRank(false,60,0,global.pluginsAtUserLevel.flat(),user.level, `╭─┅──┅❖ ༒︎ ❖─┅──┅ \n\n ﷽  @${m.sender.split('@')[0]}
- ᶜᵉˡᵉᵇʳᵒ ᵗᵘᵃ ᵃˢᶜᵉⁿˢᵃᵒ
- ᵒⁿᵈᵉ ᵃˢ ᵗʳᵉᵛᵃˢ ᵃᵖˡᵃᵘᵈᵉᵐ ᵗᵉᵘ ᶠᵉⁱᵗᵒ ᵉ ᵒ ᵈᵉˢᶜᵒⁿʰᵉᶜⁱᵈᵒ
- ᵐᵘʳᵐᵘʳᵃ ᵉˡᵒᵍⁱᵒˢ ᵉᵐ ᵘᵐ ᶜᵒʳᵒ ˢᵒᵐᵇʳⁱᵒ.
-*╰─┅──┅❖ ⸸ ❖─┅──┅*`)			  	 
+upgradeMessage(m.pushName, user.level, 60, 0)
+
 }
 } //7
 if(userxp>33500 && userxp<41000 ){
@@ -458,11 +440,8 @@ else if(user.level<8){
 user.role = levels[1]
   user.money += 60
  
-  drawRank(false,60,0,global.pluginsAtUserLevel.flat(),user.level, `╭─┅──┅❖ ༒︎ ❖─┅──┅ \n\n ﷽  @${m.sender.split('@')[0]}
- ᶜᵉˡᵉᵇʳᵒ ᵗᵘᵃ ᵃˢᶜᵉⁿˢᵃᵒ
- ᵒⁿᵈᵉ ᵃˢ ᵗʳᵉᵛᵃˢ ᵃᵖˡᵃᵘᵈᵉᵐ ᵗᵉᵘ ᶠᵉⁱᵗᵒ ᵉ ᵒ ᵈᵉˢᶜᵒⁿʰᵉᶜⁱᵈᵒ
- ᵐᵘʳᵐᵘʳᵃ ᵉˡᵒᵍⁱᵒˢ ᵉᵐ ᵘᵐ ᶜᵒʳᵒ ˢᵒᵐᵇʳⁱᵒ.
-*╰─┅──┅❖ ⸸ ❖─┅──┅*`)	  		  	 
+upgradeMessage(m.pushName, user.level, 60, 0)
+
 }
 } //8
 if(userxp>41000 && userxp<49000 ){
@@ -481,11 +460,8 @@ else if(user.level<9){
 user.role = levels[1]
   user.money += 60
 
-  drawRank(false,60,0,global.pluginsAtUserLevel.flat(),user.level, `╭─┅──┅❖ ༒︎ ❖─┅──┅ \n\n ﷽  @${m.sender.split('@')[0]}
- ᶜᵉˡᵉᵇʳᵒ ᵗᵘᵃ ᵃˢᶜᵉⁿˢᵃᵒ
- ᵒⁿᵈᵉ ᵃˢ ᵗʳᵉᵛᵃˢ ᵃᵖˡᵃᵘᵈᵉᵐ ᵗᵉᵘ ᶠᵉⁱᵗᵒ ᵉ ᵒ ᵈᵉˢᶜᵒⁿʰᵉᶜⁱᵈᵒ
- ᵐᵘʳᵐᵘʳᵃ ᵉˡᵒᵍⁱᵒˢ ᵉᵐ ᵘᵐ ᶜᵒʳᵒ ˢᵒᵐᵇʳⁱᵒ.
-*╰─┅──┅❖ ⸸ ❖─┅──┅*`)	  		  	 
+upgradeMessage(m.pushName, user.level, 60, 0)
+
 }
 } //9
 if(userxp>49000 && userxp<49850 ){
@@ -504,11 +480,8 @@ else if(user.level<10){
 user.role = levels[2]
   user.money += 85
   user.limit += 1
-  drawRank(true,85,1,global.pluginsAtUserLevel.flat(),user.level, `╭─┅──┅❖ ༒︎ ❖─┅──┅ \n\n ﷽  @${m.sender.split('@')[0]}
- ᶜᵉˡᵉᵇʳᵒ ᵗᵘᵃ ᵃˢᶜᵉⁿˢᵃᵒ
- ᵒⁿᵈᵉ ᵃˢ ᵗʳᵉᵛᵃˢ ᵃᵖˡᵃᵘᵈᵉᵐ ᵗᵉᵘ ᶠᵉⁱᵗᵒ ᵉ ᵒ ᵈᵉˢᶜᵒⁿʰᵉᶜⁱᵈᵒ
- ᵐᵘʳᵐᵘʳᵃ ᵉˡᵒᵍⁱᵒˢ ᵉᵐ ᵘᵐ ᶜᵒʳᵒ ˢᵒᵐᵇʳⁱᵒ.
-*╰─┅──┅❖ ⸸ ❖─┅──┅*`,user.role)	
+
+upgradeMessage(m.pushName, user.level,85,1)
 }
 } //10
 if(userxp>49850 && userxp<50750 ){
@@ -527,11 +500,8 @@ else if(user.level<11){
 user.role = levels[2]
   user.money += 85
   
-  drawRank(false,85,0,global.pluginsAtUserLevel.flat(),user.level, `╭─┅──┅❖ ༒︎ ❖─┅──┅ \n\n ﷽  @${m.sender.split('@')[0]}
- ᶜᵉˡᵉᵇʳᵒ ᵗᵘᵃ ᵃˢᶜᵉⁿˢᵃᵒ
- ᵒⁿᵈᵉ ᵃˢ ᵗʳᵉᵛᵃˢ ᵃᵖˡᵃᵘᵈᵉᵐ ᵗᵉᵘ ᶠᵉⁱᵗᵒ ᵉ ᵒ ᵈᵉˢᶜᵒⁿʰᵉᶜⁱᵈᵒ
- ᵐᵘʳᵐᵘʳᵃ ᵉˡᵒᵍⁱᵒˢ ᵉᵐ ᵘᵐ ᶜᵒʳᵒ ˢᵒᵐᵇʳⁱᵒ.
-*╰─┅──┅❖ ⸸ ❖─┅──┅*`)	  	 
+upgradeMessage(m.pushName, user.level, 85, 0)
+
 }
 } //11
 if(userxp>50750 && userxp<51750 ){
@@ -550,11 +520,8 @@ else if(user.level<12){
 user.role = levels[2]
   user.money += 85
 
-  drawRank(false,85,0,global.pluginsAtUserLevel.flat(),user.level, `╭─┅──┅❖ ༒︎ ❖─┅──┅ \n\n ﷽  @${m.sender.split('@')[0]}
- ᶜᵉˡᵉᵇʳᵒ ᵗᵘᵃ ᵃˢᶜᵉⁿˢᵃᵒ
- ᵒⁿᵈᵉ ᵃˢ ᵗʳᵉᵛᵃˢ ᵃᵖˡᵃᵘᵈᵉᵐ ᵗᵉᵘ ᶠᵉⁱᵗᵒ ᵉ ᵒ ᵈᵉˢᶜᵒⁿʰᵉᶜⁱᵈᵒ
- ᵐᵘʳᵐᵘʳᵃ ᵉˡᵒᵍⁱᵒˢ ᵉᵐ ᵘᵐ ᶜᵒʳᵒ ˢᵒᵐᵇʳⁱᵒ.
-*╰─┅──┅❖ ⸸ ❖─┅──┅*`)	  		  	 
+upgradeMessage(m.pushName, user.level, 85, 0)
+
 }
 } //12
 if(userxp>51750 && userxp<52850 ){
@@ -573,11 +540,8 @@ else if(user.level<13){
 user.role = levels[2]
   user.money += 85
 
-  drawRank(false,85,0,global.pluginsAtUserLevel.flat(),user.level, `╭─┅──┅❖ ༒︎ ❖─┅──┅ \n\n ﷽  @${m.sender.split('@')[0]}
- ᶜᵉˡᵉᵇʳᵒ ᵗᵘᵃ ᵃˢᶜᵉⁿˢᵃᵒ
- ᵒⁿᵈᵉ ᵃˢ ᵗʳᵉᵛᵃˢ ᵃᵖˡᵃᵘᵈᵉᵐ ᵗᵉᵘ ᶠᵉⁱᵗᵒ ᵉ ᵒ ᵈᵉˢᶜᵒⁿʰᵉᶜⁱᵈᵒ
- ᵐᵘʳᵐᵘʳᵃ ᵉˡᵒᵍⁱᵒˢ ᵉᵐ ᵘᵐ ᶜᵒʳᵒ ˢᵒᵐᵇʳⁱᵒ.
-*╰─┅──┅❖ ⸸ ❖─┅──┅*`)	  	  	 
+upgradeMessage(m.pushName, user.level, 85, 0)
+
 }
 } //13
 if(userxp>52850 && userxp<54050 ){
@@ -596,11 +560,8 @@ else if(user.level<14){
 user.role = levels[2]
   user.money += 85
 
-  drawRank(false,85,0,global.pluginsAtUserLevel.flat(),user.level, `╭─┅──┅❖ ༒︎ ❖─┅──┅ \n\n ﷽  @${m.sender.split('@')[0]}
- ᶜᵉˡᵉᵇʳᵒ ᵗᵘᵃ ᵃˢᶜᵉⁿˢᵃᵒ
- ᵒⁿᵈᵉ ᵃˢ ᵗʳᵉᵛᵃˢ ᵃᵖˡᵃᵘᵈᵉᵐ ᵗᵉᵘ ᶠᵉⁱᵗᵒ ᵉ ᵒ ᵈᵉˢᶜᵒⁿʰᵉᶜⁱᵈᵒ
- ᵐᵘʳᵐᵘʳᵃ ᵉˡᵒᵍⁱᵒˢ ᵉᵐ ᵘᵐ ᶜᵒʳᵒ ˢᵒᵐᵇʳⁱᵒ.
-*╰─┅──┅❖ ⸸ ❖─┅──┅*`)	    	 
+upgradeMessage(m.pushName, user.level, 85, 0)
+
 }
 } //14
 if(userxp>54050 && userxp<55350 ){
