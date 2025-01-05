@@ -153,7 +153,7 @@ return !1
 if (isToxic && chat.antitoxic && !isOwner && !isAdmin) {
 global.db.data.chats[m.chat].users[m.sender].adv  += 1
 if (!(global.db.data.chats[m.chat].users[m.sender].adv >= 3)) await m.reply(`━━━━━━━⬣⚠️⬣━━━━━━
-@${m.sender.split`@`[0]}* 𓂀
+@${m.sender.split`@`[0]}* җ
 
 ${lenguajeGB['smsToxic1']()}
 ${lenguajeGB['smsToxic2']()} 
