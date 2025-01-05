@@ -125,6 +125,7 @@ console.log('rickjs')
            let messages = await conn.sendMessage(m.chat, {
             text: `┌──[~/𝚁̷𝙸̷𝙲̷𝙺̷̷]─[${date}] 
   └─ $ get_reply
+  ㅤㅤ
 ${assistantResponse}`,
             contextInfo: {
               externalAdReply: {
@@ -201,8 +202,8 @@ async function getVision(messagem,link) {
          m.react('📀')
          let messages = await conn.sendMessage(m.chat, {
           text: `┌──[~/𝚁̷𝙸̷𝙲̷𝙺̷̷]─[${date}] 
-└─ $ get_reply
-
+└─ $ get_reply -n
+ㅤㅤ
 ${assistantResponse}`,
           contextInfo: {
             externalAdReply: {
