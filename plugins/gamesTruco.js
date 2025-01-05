@@ -339,7 +339,7 @@ console.log(global.db.data.chats[m.chat].truco.hands)
  let sgk = `━━━━━━━━━⬣ 🂱 ⬣━━━━━━━━
 🂱 𝑻𝒓𝒖𝒄𝒐 🃜
 
-𝙋𝙤𝙩:  ${pot} җ ʙʏᴛᴇᴄᴏɪɴꜱ
+𝙋𝙤𝙩:  ${pot} 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ
 𝘛𝘶𝘳𝘯𝘰 𝘥𝘦: @${global.db.data.chats[m.chat].truco.currentTurn.split("@")[0]}
 
 *Opções:*
