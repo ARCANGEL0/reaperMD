@@ -222,8 +222,7 @@ ${assistantResponse}`,
         
      
     global.db.data.chats[m.chat].rickgpt["config"].lastQuestion = messages.key
-
-return mensagem
+return !0
   } catch (error) {
       console.log(error);
     sendSystemErrorAlert(language);
