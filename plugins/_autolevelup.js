@@ -294,7 +294,7 @@ if(userxp>1000 && userxp<2000 ){
 user.role = levels[0]
   user.money += 30
 
-  upgradeMessage(m.pushName, user.level, 30)
+  upgradeMessage(m.pushName, user.level, 30, 0)
 
 		  	 
   }
