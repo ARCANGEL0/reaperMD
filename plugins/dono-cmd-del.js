@@ -33,7 +33,7 @@ _.${command} *coins*_
 _.${command} *nivel*_ 
 _.${command} *roubos*_ 
 _.${command} *pontos*_ 
-_.${command} *almas*_ 
+_.${command} *rce*_ 
 
 *─┅──┅❖ ❖─┅──┅*`, fkontak, m)
   }
@@ -41,7 +41,7 @@ _.${command} *almas*_
 async function initializeAttributes(user) {
     
     if (user.money === undefined) user.money = 0;
-    if (user.almas === undefined) user.almas = 0;
+    if (user.rce === undefined) user.rce = 0;
     if (user.steals === undefined) user.steals = 0;
     if (user.pontos === undefined) user.pontos = 0;
     if (user.level === undefined) {
@@ -71,7 +71,7 @@ async function getTopPlayers(chatId, attribute, topN = 10) {
 }
 
 async function sendTopPlayersMessage(chatId, attribute) {
-    const validAttributes = ["coins", "almas", "xp", "pontos", 'roubos',"nivel", "quiz"];
+    const validAttributes = ["coins", "rce", "xp", "pontos", 'roubos',"nivel", "quiz"];
     if (!validAttributes.includes(attribute)) {
         return conn.reply(m.chat, `*─┅──┅❖ 𓄿 ❖─┅──┅*
 ✞︎ 𝚁𝚊𝚗𝚔𝚒𝚗𝚐 ✞︎
@@ -82,7 +82,7 @@ _.${command} *coins*_
 _.${command} *nivel*_ 
 _.${command} *roubos*_ 
 _.${command} *pontos*_ 
-_.${command} *almas*_ 
+_.${command} *rce*_ 
 
 *─┅──┅❖ ❖─┅──┅*`, fkontak, m)
     }
@@ -91,8 +91,8 @@ _.${command} *almas*_
      
 if(attribute=="coins") {
        tipo= 'money'
-       titlen = 'җ ʙʏᴛᴇᴄᴏɪɴꜱ'
-       categ = 'җ ʙʏᴛᴇᴄᴏɪɴꜱ'
+       titlen = '🜅 ʙʏᴛᴇᴄᴏɪɴꜱ'
+       categ = '🜅 ʙʏᴛᴇᴄᴏɪɴꜱ'
        desc = '𝑨𝒒𝒖𝒊 𝒋𝒂𝒛 𝒐𝒔 𝒎𝒆𝒎𝒃𝒓𝒐𝒔 𝒎𝒂𝒊𝒔 𝒓𝒊𝒄𝒐𝒔 𝒅𝒆𝒔𝒕𝒂 𝒔𝒐𝒄𝒊𝒆𝒅𝒂𝒅𝒆, 𝒐𝒔𝒕𝒆𝒏𝒕𝒂𝒏𝒅𝒐 𝒆𝒎 𝒔𝒖𝒂 𝒇𝒐𝒓𝒕𝒖𝒏𝒂'
        
      }
@@ -117,8 +117,8 @@ if(attribute=="coins") {
        desc = '𝑨𝒒𝒖𝒊 𝒋𝒂𝒛 𝒐𝒔 𝒎𝒆𝒎𝒃𝒓𝒐𝒔 𝒄𝒐𝒎 𝒂𝒔 𝒎𝒂𝒊𝒐𝒓𝒆𝒔 𝒑𝒐𝒏𝒕𝒖𝒂𝒄𝒐𝒆𝒔 𝒆𝒏𝒕𝒓𝒆 𝒎𝒆𝒖𝒔 𝒋𝒐𝒈𝒐𝒔'
        
      }
-     else if(attribute=="almas") {
-       tipo= 'almas'
+     else if(attribute=="rce") {
+       tipo= 'rce'
        titlen = '𝚊𝚜𝚜𝚊𝚜𝚜𝚒𝚗𝚘𝚜'
        categ = '𝚊𝚕𝚖𝚊𝚜'
        desc = '𝑨𝒒𝒖𝒊 𝒋𝒂𝒛 𝒐𝒔 𝒎𝒂𝒊𝒐𝒓𝒆𝒔 𝒍𝒖𝒏𝒂𝒕𝒊𝒄𝒐𝒔 𝒆 𝒉𝒐𝒎𝒊𝒄𝒊𝒅𝒂𝒔 𝒅𝒆𝒔𝒕𝒂 𝒄𝒐𝒎𝒖𝒏𝒊𝒅𝒂𝒅𝒆. 𝑨𝒄𝒖𝒔𝒂𝒅𝒐𝒔 𝒅𝒆 𝒄𝒆𝒊𝒇𝒂𝒓 𝒆𝒎 𝒊𝒏𝒖𝒎𝒆𝒓𝒂𝒔 𝒂𝒍𝒎𝒂𝒔 ☥'

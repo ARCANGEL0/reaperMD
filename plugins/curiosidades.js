@@ -250,7 +250,7 @@ else {
   "Na mitologia inuit, o deus Sedna é associado ao oceano e à vida marinha, sendo muitas vezes representado como uma mulher com cauda de peixe.",
   "O folclore russo apresenta a Baba Yaga, uma bruxa de nariz afiado que mora em uma cabana sobre patas de galinha, desafiando aqueles que buscam sua sabedoria.",
   "Os mitos egípcios incluem a história de Ísis e Osíris, um casal divino cuja tragédia envolve morte, ressurreição e a ascensão ao trono no submundo.",
-  "O deus Anúbis, frequentemente retratado com a cabeça de chacal, era encarregado de guiar as almas dos mortos no processo de julgamento pós-vida.",
+  "O deus Anúbis, frequentemente retratado com a cabeça de chacal, era encarregado de guiar as rce dos mortos no processo de julgamento pós-vida.",
   "O mito de Hathor, deusa do amor e da maternidade, destaca-se por seu papel como mãe de Hórus e por sua conexão com a música e dança.",
   "Thoth, deus da sabedoria e da escrita, era frequentemente representado como uma íbis ou babuíno e desempenhava um papel crucial na balança do julgamento dos mortos.",
   "A história da criação no Egito envolvia o deus Atum emergindo do Caos primordial, criando o mundo por meio do seu pensamento e vontade.",
@@ -267,7 +267,7 @@ else {
   "Os egípcios adoravam uma ampla variedade de deuses, como Rá, deus do sol, Hathor, deusa do amor e da maternidade, e Osíris, deus associado à morte e ressurreição.",
   "Isis, esposa de Osíris, era venerada como protetora da família e conhecida por sua habilidade em ressuscitar os mortos, tornando-a uma figura central em rituais funerários.",
   "Horus, filho de Ísis e Osíris, era adorado como o deus dos céus, dos faraós e da guerra justa, com acreditava-se que os faraós eram a reencarnação de Horus na terra.",
-  "Anúbis, frequentemente representado com a cabeça de chacal, era o deus associado à mumificação e ao julgamento dos mortos, protegendo os túmulos e guiando as almas ao pós-vida.",
+  "Anúbis, frequentemente representado com a cabeça de chacal, era o deus associado à mumificação e ao julgamento dos mortos, protegendo os túmulos e guiando as rce ao pós-vida.",
   "Ma'at, deusa da ordem e da verdade, era fundamental para a compreensão da justiça na sociedade egípcia, influenciando os rituais judiciais e a ética cotidiana.",
   "O processo de mumificação era uma prática crucial no Antigo Egito, destinada a preservar o corpo para a vida após a morte. Envolveu vários rituais e embalsamadores especializados."
       ];
@@ -1281,7 +1281,7 @@ else {
   "O videoclipe de 'Gangnam Style' quebrou o contador de visualizações do YouTube, levando à atualização da plataforma.",
   "O autor de ficção científica Philip K. Dick teve várias de suas obras adaptadas para o cinema, incluindo 'Blade Runner' e 'Minority Report'.",
   "A série 'Stranger Things' homenageia e faz referências a várias obras dos anos 80, desde filmes a jogos de tabuleiro.",
-  "O emoji de palmas é comumente usado online para expressar aprovação ou reconhecimento.",
+  "O emoji de prce é comumente usado online para expressar aprovação ou reconhecimento.",
   "O videogame 'Tetris' foi criado por Alexey Pajitnov e tornou-se um dos jogos mais vendidos de todos os tempos.",
   "A série 'The Twilight Zone', criada por Rod Serling, é conhecida por suas histórias de ficção científica e reviravoltas surpreendentes.",
   "O termo 'nerdvana' é usado para descrever um estado de grande felicidade alcançado por meio de interesses nerds, como filmes, jogos e quadrinhos."
