@@ -182,20 +182,18 @@ const username = global.db.data.chats[m.chat].users[who].name
   const perfilX = global.db.data.chats[m.chat].language === 'en' ? 
 `[+] USER_LOG
 ${username ?'> ' + username + '\n' : ''}
-> ʀᴀɴᴋ: ${user.level}
-> 
-
-𝑥𝑝: ${user.exp}
-𝙽𝚒𝚟𝚎𝚕 𝙰𝚝𝚞𝚊𝚕: ${user.level} ♱
-𝙿𝚘𝚜𝚒𝚌𝚊𝚘: ${user.role}
-
-✞︎ 𝐑𝐂𝐄'𝐬: ${user.rce}
-🜅 ʙʏᴛᴇᴄᴏɪɴꜱ: ${user.money.toFixed(2)}
-⧗ ᴇᴛʜᴇʀᴇᴜᴍ: ${user.limit}
+> ʀᴀɴᴋ: ${user.role}
+> ʟᴇᴠᴇʟ: ${user.level}
+> xᴘ: ${user.exp}
+> . . . . . . . . . . . . . . . . .
+> ✞︎ 𝐑𝐂𝐄'𝐬: ${user.rce} ᴛʀᴏᴊᴀɴꜱ
+> 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ: ${user.money.toFixed(2)}
+> ⧗ ᴇᴛʜᴇʀᴇᴜᴍ: ${user.limit}
 ` 
   :
   ``
   
+ɴɪᴠᴇʟ
 
 
   
