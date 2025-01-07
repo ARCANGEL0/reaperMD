@@ -15,6 +15,15 @@ const handler = async (m, {conn, participants, groupMetadata,isAdmin, isOwner, t
    
    return !0;
  } 
+
+ function getCurrentDate(format) {
+  const options = { year: 'numeric', month: '2-digit', day: '2-digit' };
+  const date = new Date();
+  return format === 'pt' ? date.toLocaleDateString('pt-BR', options) : date.toLocaleDateString('en-US', options);
+}
+    const date = getCurrentDate(language);
+
+
   if(!global.xppergunta){
     global.xppergunta = {}
   }
@@ -54,34 +63,59 @@ return list[Math.floor(list.length * Math.random())]}
 
 
 
-  const categories = [
-        'Geral',
-        'Historia',
-        'Mitologia',
-        'Arte',
-        'Tecnologia',
-        'Informatica',
-        'Programacao',
-        'Fisica',
-        'Quimica',
-        'Biologia',
-        'Matematica',
-        'Musica',
-        'Filosofia',
-        'Literatura',
-        'Medicina',
-        'Economia',
-        'Politica',
-        'Astronomia',
-        'Psicologia',
-        'Sociologia',
-        'Arqueologia',
-        'Criminologia',
-        'Fotografia',
-        'Cultura',
-        'Direito'
-        // Adicione mais categorias conforme necessário
-    ];
+  const categories = global.db.data.chats[m.chat].language === 'en' ? [
+    'General',
+    'History',
+    'Mythology',
+    'Art',
+    'Technology',
+    'Computer Science',
+    'Programming',
+    'Physics',
+    'Chemistry',
+    'Biology',
+    'Mathematics',
+    'Music',
+    'Philosophy',
+    'Literature',
+    'Medicine',
+    'Economics',
+    'Politics',
+    'Astronomy',
+    'Psychology',
+    'Sociology',
+    'Archaeology',
+    'Criminology',
+    'Photography',
+    'Culture',
+    'Law'
+] : [
+    'Geral',
+    'História',
+    'Mitologia',
+    'Arte',
+    'Tecnologia',
+    'Informática',
+    'Programação',
+    'Física',
+    'Química',
+    'Biologia',
+    'Matemática',
+    'Música',
+    'Filosofia',
+    'Literatura',
+    'Medicina',
+    'Economia',
+    'Política',
+    'Astronomia',
+    'Psicologia',
+    'Sociologia',
+    'Arqueologia',
+    'Criminologia',
+    'Fotografia',
+    'Cultura',
+    'Direito'
+];
     let id = m.chat;
     let currentQuestion = "";
 let currentAnswer = "";
@@ -92,28 +126,41 @@ let currentAnswer = "";
 if (!text) {
     
 
-    const categoryList = categories.map((category, index) => `┃ ${usedPrefix + command} ${index + 1} - ${category}`).join('\n');
+    const categoryList = categories.map((category, index) => `> ${usedPrefix + command} ${index + 1} - ${category}`).join('\n');
 
-    throw `
-╭━━━『 𝐐𝐮𝐢𝐳 』━━━⬣
-┃ 
-┃ 🥀🦇 𝐒𝐞𝐥𝐞𝐜𝐢𝐨𝐧𝐞 𝐨 𝐧ú𝐦𝐞𝐫𝐨 𝐩𝐚𝐫𝐚 
-┃ 𝐝𝐞𝐬𝐯𝐞𝐥𝐚𝐫 𝐚 𝐪𝐮𝐞𝐬𝐭ã𝐨 𝐯𝐢𝐧𝐝𝐚 
-┃ 𝐝𝐚𝐬 𝐬𝐨𝐦𝐛𝐫𝐚𝐬,
-┃ 𝐮𝐬𝐞 𝐨 𝐜𝐨𝐦𝐚𝐧𝐝𝐨 .quiz r 𝐩𝐚𝐫𝐚
-┃ 𝐭𝐫𝐚𝐳𝐞𝐫 𝐥𝐮𝐳 𝐚 
-┃ 𝐩𝐞𝐧𝐮𝐦𝐛𝐫𝐚 𝐝𝐞 𝐟𝐨𝐬𝐬𝐚 𝐢𝐠𝐧𝐨𝐫𝐚𝐧𝐜𝐢𝐚
-┃
-┃ 𝐄𝐱𝐞𝐦𝐩𝐥𝐨:
-┃ .quiz 8 _*(Perguntas de física)*_
-┃ .quiz r _*(Revela a resposta)*_
-┃━━━━━━━⬣
-┃
+
+    const quizHelp = global.db.data.chats[m.chat].language === 'en' ?
+     `┌──[ 𝙼𝚛.𝚁𝚘𝚋𝚘𝚝 ]─[~]─[${date}] 
+  └─ $ node quiz.mjs --help
+> . . . . . . . . . . . . . . . . . . . . . . .
+> 𝘌𝘪, 𝘨𝘢𝘳𝘰𝘵𝘰. 𝘘𝘶𝘦𝘳 𝘤𝘰𝘭𝘰𝘤𝘢𝘳 𝘴𝘦𝘶𝘴 𝘤𝘰𝘯𝘩𝘦𝘤𝘪𝘮𝘦𝘯𝘵𝘰𝘴 à 𝘱𝘳𝘰𝘷𝘢?
+> 𝘌𝘯𝘵ã𝘰, 𝘦𝘴𝘤𝘰𝘭𝘩𝘦 𝘶𝘮 𝘯ú𝘮𝘦𝘳𝘰 𝘥𝘢𝘴 𝘤𝘢𝘵𝘦𝘨𝘰𝘳𝘪𝘢𝘴 𝘢𝘣𝘢𝘪𝘹𝘰 𝘦 𝘴𝘦 𝘫𝘰𝘨𝘢. 
+> ‎ 
+> 𝘚𝘦 𝘢 𝘴𝘶𝘢 𝘮𝘦𝘯𝘵𝘦 𝘦𝘴𝘵𝘪𝘷𝘦𝘳 𝘦𝘮 𝘣𝘳𝘢𝘯𝘤𝘰 𝘦 𝘷𝘰𝘤ê 𝘱𝘳𝘦𝘤𝘪𝘴𝘢𝘳 𝘥𝘢 𝘳𝘦𝘴𝘱𝘰𝘴𝘵𝘢, é 𝘴ó 𝘶𝘴𝘢𝘳 𝘰 𝘤𝘰𝘮𝘢𝘯𝘥𝘰 '.𝘲𝘶𝘪𝘻 𝘳'. 𝘔𝘢𝘴, 𝘤𝘰𝘯𝘷𝘦𝘯𝘩𝘢𝘮𝘰𝘴, 𝘥𝘦𝘴𝘪𝘴𝘵𝘪𝘳 𝘥𝘦 𝘱𝘦𝘯𝘴𝘢𝘳 é 𝘶𝘮𝘢 𝘢𝘳𝘵𝘦 𝘲𝘶𝘦 𝘱𝘰𝘶𝘤𝘰𝘴 𝘥𝘰𝘮𝘪𝘯𝘢𝘮.
+> ‎ 
+[*] ᴄᴀʀʀᴇɢᴀɴᴅᴏ . . . .
+━━━━━━━━━━━━━━━━━━━━━━━━
 ${categoryList}
-┃
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛| ${vs}
-╰━━━━━━━━━━━━━━━━━━⬣`;
+> ‎ 
+> >>EOF<<` 
+     :
+      `┌──[ 𝙼𝚛.𝚁𝚘𝚋𝚘𝚝 ]─[~]─[${date}] 
+  └─ $ node quiz.mjs --help
+> . . . . . . . . . . . . . . . . . . . . . . .
+> 𝘏𝘦𝘺, 𝘬𝘪𝘥. 𝘞𝘢𝘯𝘵 𝘵𝘰 𝘱𝘶𝘵 𝘺𝘰𝘶𝘳 𝘬𝘯𝘰𝘸𝘭𝘦𝘥𝘨𝘦 𝘵𝘰 𝘵𝘩𝘦 𝘵𝘦𝘴𝘵? 
+> 𝘛𝘩𝘦𝘯 𝘱𝘪𝘤𝘬 𝘢 𝘯𝘶𝘮𝘣𝘦𝘳 𝘧𝘳𝘰𝘮 𝘵𝘩𝘦 𝘤𝘢𝘵𝘦𝘨𝘰𝘳𝘪𝘦𝘴 𝘣𝘦𝘭𝘰𝘸 𝘢𝘯𝘥 𝘥𝘪𝘷𝘦 𝘪𝘯.  
+> ‎ 
+> 𝘐𝘧 𝘺𝘰𝘶𝘳 𝘮𝘪𝘯𝘥 𝘪𝘴 𝘣𝘭𝘢𝘯𝘬 𝘢𝘯𝘥 𝘺𝘰𝘶 𝘯𝘦𝘦𝘥 𝘵𝘩𝘦 𝘢𝘯𝘴𝘸𝘦𝘳, 𝘫𝘶𝘴𝘵 𝘶𝘴𝘦 𝘵𝘩𝘦 𝘤𝘰𝘮𝘮𝘢𝘯𝘥 '.𝘲𝘶𝘪𝘻 𝘳'. 𝘉𝘶𝘵 𝘭𝘦𝘵’𝘴 𝘣𝘦 𝘩𝘰𝘯𝘦𝘴𝘵, 𝘨𝘪𝘷𝘪𝘯𝘨 𝘶𝘱 𝘰𝘯 𝘵𝘩𝘪𝘯𝘬𝘪𝘯𝘨 𝘪𝘴 𝘢𝘯 𝘢𝘳𝘵 𝘵𝘩𝘢𝘵 𝘧𝘦𝘸 𝘮𝘢𝘴𝘵𝘦𝘳.
+> ‎ 
+[*] ʟᴏᴀᴅɪɴɢ. . . .
+━━━━━━━━━━━━━━━━━━━━━━━━
+${categoryList}
+> ‎ 
+> >>EOF<<
+  `
+ 
+  
+    throw categoryList
 }
 else {
   
@@ -147,28 +194,34 @@ global.db.data.chats[m.chat].quiz.categoria = selectedCategory
     const remainingTime = delayBetweenQuestions - timeDifference;
     
     const remainingTimeInSeconds = Math.ceil(remainingTime / 1000);
-return m.reply(` ━━━━━━━━━⬣ 💀 ⬣━━━━━━━━
-
-🕰️🕯️ 𝓐𝓰𝓾𝓪𝓻𝓭𝓪 𝓹𝓸𝓻 𝓮𝓽𝓮𝓻𝓷𝓸𝓼  ${remainingTimeInSeconds} 𝓼𝓮𝓰𝓾𝓷𝓭𝓸𝓼, 𝓪𝓷𝓽𝓮𝓼 𝓺𝓾𝓮 𝓽𝓾𝓪 𝓹𝓻𝓸𝔁𝓲𝓶𝓪 𝓹𝓮𝓻𝓰𝓾𝓷𝓽𝓪 𝓸𝓾𝓼𝓮 𝓹𝓮𝓻𝓽𝓾𝓻𝓫𝓪𝓻 𝓸 𝓻𝓮𝓹𝓸𝓾𝓼𝓸 𝓶𝓪𝓬𝓪𝓫𝓻𝓸 𝓭𝓮𝓼𝓽𝓮 𝓭𝓲𝓪𝓵𝓸𝓰𝓸.
 
 
- ━━━━━━━━━⬣ ${vs} ⬣━━━━━━━━`);
+const timing  = global.db.data.chats[m.chat].language === 'en' ? 
+`> [!] 𝙷𝚎𝚢 𝚔𝚒𝚍𝚍𝚘, 𝚢𝚘𝚞'𝚛𝚎 𝚐𝚘𝚒𝚗' 𝚝𝚘𝚘 𝚏𝚊𝚜𝚝. 𝚈𝚘𝚞'𝚛𝚎 𝚜𝚎𝚗𝚍𝚒𝚗𝚐 𝚝𝚘𝚘 𝚖𝚊𝚗𝚢 𝚙𝚊𝚌𝚔𝚎𝚝𝚜 𝚝𝚘 𝚝𝚑𝚎 𝚑𝚘𝚜𝚝 𝚊𝚗𝚍 𝚜𝚝𝚊𝚗𝚍𝚒𝚗𝚐 𝚝𝚑𝚎𝚛𝚎 𝚠𝚒𝚝𝚑 𝟷𝟶𝟶% 𝚕𝚘𝚜𝚜. 𝚁𝚎𝚕𝚊𝚡 𝚔𝚒𝚍, 𝚊𝚗𝚍 𝚠𝚊𝚒𝚝 𝚊𝚋𝚘𝚞𝚝 ${remainingTimeInSeconds} 𝚜𝚎𝚌𝚘𝚗𝚍𝚜`
+:
+`> [!] 𝙴𝚒, 𝚐𝚊𝚛𝚘𝚝𝚘, 𝚟𝚘𝚌𝚎 𝚎𝚜𝚝𝚊 𝚒𝚗𝚍𝚘 𝚛𝚊𝚙𝚒𝚍𝚘 𝚍𝚎𝚖𝚊𝚒𝚜. 𝙴𝚜𝚝𝚊 𝚎𝚗𝚟𝚒𝚊𝚗𝚍𝚘 𝚖𝚞𝚒𝚝𝚘𝚜 𝚙𝚊𝚌𝚘𝚝𝚎𝚜 𝚙𝚊𝚛𝚊 𝚘 𝚑𝚘𝚜𝚝 𝚎 𝚏𝚒𝚌𝚊𝚗𝚍𝚘 𝚕𝚊 𝚌𝚘𝚖 𝟷𝟶𝟶% 𝚍𝚎 𝚙𝚎𝚛𝚍𝚊. 𝚁𝚎𝚕𝚊𝚡𝚊, 𝚐𝚊𝚛𝚘𝚝𝚘, 𝚎 𝚎𝚜𝚙𝚎𝚛𝚊 𝚌𝚎𝚛𝚌𝚊 𝚍𝚎 ${remainingTimeInSeconds} 𝚜𝚎𝚐𝚞𝚗𝚍𝚘𝚜.`
+    return m.reply(timing)
   } 
   
 if (global.db.data.chats[m.chat].quiz.modo && global.db.data.chats[m.chat].quiz.perguntaAndamento) {
-    return m.reply(`━━⬣ 💀 𝔔𝔲𝔦𝔷 💀 ⬣━━
- 
- 🪶📜    ℜ𝔢𝔰𝔭𝔬𝔫𝔡𝔞-𝔪𝔢 𝔞 𝔦𝔫𝔡𝔞𝔤𝔞𝔠𝔞𝔬 𝔞𝔫𝔱𝔢𝔯𝔦𝔬𝔯, 𝔡𝔢 𝔪𝔬𝔡𝔬 𝔞 𝔭𝔯𝔬𝔰𝔰𝔢𝔤𝔲𝔦𝔯 𝔞 𝔱𝔯𝔦𝔩𝔥𝔞 𝔫𝔢𝔰𝔱𝔢 𝔳𝔞𝔩𝔢 𝔡𝔢 𝔰𝔬𝔪𝔟𝔯𝔞𝔰 𝔡𝔬 𝔠𝔬𝔫𝔥𝔢𝔠𝔦𝔪𝔢𝔫𝔱𝔬
- 
-━━━⬣ _𝙼𝚘𝚍𝚘 𝙲𝚘𝚖𝚙𝚎𝚝𝚒𝚝𝚒𝚟𝚘_ ⬣━━━
-    `)
+   
+const awaitNew  = global.db.data.chats[m.chat].language === 'en' ? 
+`> [!] 𝙷𝚎𝚢 𝚔𝚒𝚍𝚍𝚘, 𝚍𝚘𝚗'𝚝 𝚐𝚘 𝚊𝚛𝚘𝚞𝚗𝚍 𝚜𝚔𝚒𝚙𝚙𝚒𝚗𝚐 𝚝𝚑𝚎 𝚚𝚞𝚎𝚜𝚝𝚒𝚘𝚗𝚜. 𝙰𝚗𝚜𝚠𝚎𝚛 𝚝𝚑𝚎 𝚕𝚊𝚜𝚝 𝚘𝚗𝚎 𝙸 𝚐𝚊𝚟𝚎 𝚢𝚘𝚞 𝚏𝚒𝚛𝚜𝚝 𝚋𝚎𝚏𝚘𝚛𝚎 𝙸 𝚐𝚎𝚗𝚎𝚛𝚊𝚝𝚎 𝚊𝚗𝚘𝚝𝚑𝚎𝚛 𝚚𝚞𝚎𝚜𝚝𝚒𝚘𝚗.`
+:
+`> [!] 𝙴𝚒, 𝚐𝚊𝚛𝚘𝚝𝚘, 𝚗𝚊𝚘 𝚏𝚒𝚚𝚞𝚎 𝚙𝚞𝚕𝚊𝚗𝚍𝚘 𝚊𝚜 𝚙𝚎𝚛𝚐𝚞𝚗𝚝𝚊𝚜. 𝚁𝚎𝚜𝚙𝚘𝚗𝚍𝚊 𝚊 𝚞𝚕𝚝𝚒𝚖𝚊 𝚚𝚞𝚎 𝚎𝚞 𝚝𝚎 𝚍𝚎𝚒 𝚙𝚛𝚒𝚖𝚎𝚒𝚛𝚘, 𝚊𝚗𝚝𝚎𝚜 𝚚𝚞𝚎 𝚎𝚞 𝚐𝚎𝚛𝚎 𝚘𝚞𝚝𝚛𝚊 𝚙𝚎𝚛𝚐𝚞𝚗𝚝𝚊.`
+  
+
+return m.reply(awaitNew)
   }
   if(global.db.data.chats[m.chat].quiz.loading===true){
-    return m.reply(` ━━━━⬣ 💀 ⬣━━━━
 
-〘 𝐀𝐠𝐮𝐚𝐫𝐝𝐞 𝐚 𝐩𝐞𝐫𝐠𝐮𝐧𝐭𝐚 𝐬𝐞𝐫 𝐩𝐫𝐨𝐜𝐞𝐬𝐬𝐚𝐝𝐚! 〙
+    const onWait  = global.db.data.chats[m.chat].language === 'en' ? 
+`> [!] 𝙷𝚎𝚢 𝚔𝚒𝚍, 𝚠𝚊𝚒𝚝 𝚏𝚘𝚛 𝚖𝚎 𝚝𝚘 𝚐𝚎𝚗𝚎𝚛𝚊𝚝𝚎 𝚝𝚑𝚎 𝚚𝚞𝚎𝚜𝚝𝚒𝚘𝚗 𝚋𝚎𝚏𝚘𝚛𝚎 𝚊𝚜𝚔𝚒𝚗𝚐 𝚏𝚘𝚛 𝚊𝚗𝚘𝚝𝚑𝚎𝚛 𝚘𝚗𝚎. 𝙰𝚛𝚎 𝚢𝚘𝚞 𝚊𝚗𝚡𝚒𝚘𝚞𝚜`
+:
+`> [!] 𝚀𝚞𝚊𝚕𝚎 𝚐𝚊𝚛𝚘𝚝𝚘, 𝚎𝚜𝚙𝚎𝚛𝚊 𝚎𝚞 𝚐𝚎𝚛𝚊𝚛 𝚊 𝚙𝚎𝚛𝚐𝚞𝚗𝚝𝚊 𝚊𝚗𝚝𝚎𝚜 𝚍𝚎 𝚖𝚎 𝚙𝚎𝚍𝚒𝚛 𝚘𝚞𝚝𝚛𝚊, 𝚎𝚜𝚝𝚊 𝚊𝚗𝚜𝚒𝚘𝚜𝚘?`
+  
 
- ━━━━━━⬣ ${vs} ⬣━━━━━━`);
+    return m.reply(onWait);
   }
      m.react("⏳")
  global.db.data.chats[m.chat].quiz.loading=true
@@ -200,7 +253,9 @@ voce deve criar objetos em JS para perguntas, con alternativas, resposta e expli
 
 Retorne UM OBJETO JSON COMO PLAIN TEXT E NADA MAIS!!!
 no atributo Resposta, voce deve colocar apenas a letra certa!!
-FACA AS PERGUNTAS EM PORTUGUES!!!
+FACA AS PERGUNTAS NO IDIOMA DA CATEGORIA E DO USUARIO!!! 
+SE A CATEGORIA É INGLES, A PERGUNTA É EM INGLES
+SE A CATEGORIA É EM PORTUGUES, A PERGUNTA É EM PORTUGUES
 faca perguntas dificeis e complexas adequadas a um vestibular referente ao tema
 Ajuste o valor de Pontos, Money e XP de acordo com a complexidade e tema da
 , os valores minimos sao 25 pontos, 50 Money e 200xp

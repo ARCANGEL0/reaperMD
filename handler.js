@@ -1021,15 +1021,15 @@ continue //Sin límite
 if (!isAdmin && global.db.data.chats[m.chat].autolevelup && plugin.level > global.db.data.chats[m.chat].users[m.sender].level) {
 
   const notLevel = global.db.data.chats[m.chat].language === 'en' ? `
-╭──────────────────────────────────────────╮
+╭──────────╮
 >  ⚠︎ ERROR: ACCESS DENIED       
 > You need to be Level ${plugin.level} to use this command.    
-╰──────────────────────────
+╰─────────
 ` : `
-╭──────────────────────────────────────────╮
+╭──────────╮
 >  ⚠︎ ERROR: ACESSO NEGADO     
 > Você precisa ser nível ${plugin.level} para usar esse comando.    
-╰──────────────────────────
+╰──────────
 `
 
 
