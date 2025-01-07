@@ -25,7 +25,7 @@ let handler = async (m, { conn,__dirname, text, usedPrefix, command, isOwner, ar
 
   if(!text){
     return conn.reply(m.chat, `*─┅──┅❖ 𓄿 ❖─┅──┅*
-✞︎ 𝚁𝚊𝚗𝚔𝚒𝚗𝚐 ✞︎
+✇ 𝚁𝚊𝚗𝚔𝚒𝚗𝚐 ✇
 
 𝑺𝒆𝒍𝒆𝒄𝒊𝒐𝒏𝒆 𝒐 𝒕𝒊𝒑𝒐 𝒅𝒆 𝒓𝒂𝒏𝒌𝒊𝒏𝒈 𝒂 𝒆𝒙𝒊𝒃𝒊𝒓:
 
@@ -74,7 +74,7 @@ async function sendTopPlayersMessage(chatId, attribute) {
     const validAttributes = ["coins", "rce", "xp", "pontos", 'roubos',"nivel", "quiz"];
     if (!validAttributes.includes(attribute)) {
         return conn.reply(m.chat, `*─┅──┅❖ 𓄿 ❖─┅──┅*
-✞︎ 𝚁𝚊𝚗𝚔𝚒𝚗𝚐 ✞︎
+✇ 𝚁𝚊𝚗𝚔𝚒𝚗𝚐 ✇
 
 𝑺𝒆𝒍𝒆𝒄𝒊𝒐𝒏𝒆 𝒐 𝒕𝒊𝒑𝒐 𝒅𝒆 𝒓𝒂𝒏𝒌𝒊𝒏𝒈 𝒂 𝒆𝒙𝒊𝒃𝒊𝒓:
 
@@ -129,7 +129,7 @@ if(attribute=="coins") {
     if (topPlayers.length === 0) return "No users found.";
    
     let message = `*─┅──┅❖ 𓄿 ❖─┅──┅*
- ✞︎ 𝚁𝚊𝚗𝚔𝚒𝚗𝚐 𝚍𝚎 ${titlen} ✞
+ ✇ 𝚁𝚊𝚗𝚔𝚒𝚗𝚐 𝚍𝚎 ${titlen} ✞
  ${desc}
  
  `

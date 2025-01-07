@@ -396,7 +396,7 @@ Object.keys(users).forEach(user => {
   global.db.data.chats[m.chat].users[m.sender].pontos++
   
   conn.sendFile(m.chat, filenWord, 'crossword.png', `⎔⎓─────────────.
-✞︎ 𝚅𝚘𝚌𝚎 𝚊𝚌𝚎𝚛𝚝𝚘𝚞!
+✇ 𝚅𝚘𝚌𝚎 𝚊𝚌𝚎𝚛𝚝𝚘𝚞!
 𝙶𝚊𝚗𝚑𝚊𝚛a:
 
 +𝟷 𝚙𝚘𝚗𝚝𝚘
@@ -442,7 +442,7 @@ function tentativaJogo(textInput) {
     if (global.db.data.chats[m.chat].palavras.solucao[y][x] === letraUpper) {
       if(global.db.data.chats[m.chat].palavras.solucao[y][x] == global.db.data.chats[m.chat].palavras.jogo[y][x]){
           return m.reply(`⎔⎓─────────────.
-𝙴𝚜𝚝𝚊 𝚕𝚎𝚝𝚛𝚊 𝚓𝚊 𝚏𝚘𝚒 𝚙𝚛𝚎𝚎𝚗𝚌𝚑𝚒𝚍𝚊 ✞︎
+𝙴𝚜𝚝𝚊 𝚕𝚎𝚝𝚛𝚊 𝚓𝚊 𝚏𝚘𝚒 𝚙𝚛𝚎𝚎𝚗𝚌𝚑𝚒𝚍𝚊 ✇
 ╰─...⎔⎓──────────`)
       }
       
@@ -453,7 +453,7 @@ function tentativaJogo(textInput) {
       typeNew();
     } else {
         return m.reply(`⎔⎓─────────────.
-✞︎ 𝙴𝚛𝚛𝚊𝚍𝚘. 𝚃𝚎𝚗𝚝𝚎 𝚗𝚘𝚟𝚊𝚖𝚎𝚗𝚝𝚎
+✇ 𝙴𝚛𝚛𝚊𝚍𝚘. 𝚃𝚎𝚗𝚝𝚎 𝚗𝚘𝚟𝚊𝚖𝚎𝚗𝚝𝚎
 ╰─...⎔⎓──────────`)
       console.log('Falhou!');
       m.react('✖️');
@@ -468,7 +468,7 @@ function tentativaJogo(textInput) {
 if(!text){
   if(global.db.data.chats[m.chat].palavras.jogo.length  !== 0){
   return m.reply(`⎔⎓─────────────.
-  𝙹𝚘𝚐𝚘 𝚎𝚖 𝚊𝚗𝚍𝚊𝚖𝚎𝚗𝚝𝚘! ✞︎
+  𝙹𝚘𝚐𝚘 𝚎𝚖 𝚊𝚗𝚍𝚊𝚖𝚎𝚗𝚝𝚘! ✇
 ╰─...⎔⎓──────────`)
 }
 else{
