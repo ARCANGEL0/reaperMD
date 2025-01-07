@@ -172,7 +172,44 @@ if(global.db.data.chats[m.chat].users[who].money< 0){
 }
 let user = global.db.data.chats[m.chat].users[who]
 let pp = await conn.profilePictureUrl(who, 'image').catch(_ => '') || './media/menus/img5.jpg'
-  let msg =  `┅──┅──┅──┅❖ ༒︎ ❖─┅──┅┅──┅──
+
+
+/// information information
+const username = global.db.data.chats[m.chat].users[who].name
+
+////
+
+  const perfilX = global.db.data.chats[m.chat].language === 'en' ? 
+`[+] USER_LOG
+${username ?'> ' + username + '\n' : ''}
+> ʀᴀɴᴋ: ${user.level}
+> 
+
+𝑥𝑝: ${user.exp}
+𝙽𝚒𝚟𝚎𝚕 𝙰𝚝𝚞𝚊𝚕: ${user.level} ♱
+𝙿𝚘𝚜𝚒𝚌𝚊𝚘: ${user.role}
+
+✞︎ 𝐑𝐂𝐄'𝐬: ${user.rce}
+🜅 ʙʏᴛᴇᴄᴏɪɴꜱ: ${user.money.toFixed(2)}
+⧗ ᴇᴛʜᴇʀᴇᴜᴍ: ${user.limit}
+` 
+  :
+  ``
+  
+
+
+  
+
+
+
+
+  let msg =  `
+┌──[ 𝙼𝚛.𝚁𝚘𝚋𝚘𝚝 ]─[~]─[${date}] 
+└─ $ harvester -e @${who.split('@')[0] } 
+> ‎ 
+${perfilX}
+  
+  ┅──┅──┅──┅❖ ༒︎ ❖─┅──┅┅──┅──
 ${global.db.data.users[who].nome ? '⬣ 𝑵𝒐𝒎𝒆: ' + global.db.data.users[who].nome + '\n' : ''}${global.db.data.chats[m.chat].users[who].morada ? '⬣ 𝑬𝒏𝒅𝒆𝒓𝒆𝒄𝒐: ' + global.db.data.chats[m.chat].users[who].morada + '\n' : ''} ${global.db.data.users[who].age ? '⬣ 𝑰𝒅𝒂𝒅𝒆: ' + global.db.data.users[who].age + '\n' : ''}${global.db.data.users[who].profissao ? '⬣ 𝑷𝒓𝒐𝒇𝒊𝒔𝒔𝒂𝒐: ' + global.db.data.users[who].profissao + '\n' : ''}${global.db.data.users[who].time ? '⬣ 𝑻𝒊𝒎𝒆 𝒑𝒓𝒆𝒇𝒆𝒓𝒊𝒅𝒐: ' + global.db.data.users[who].time + '\n' : ''}${global.db.data.users[who].esportes ? '⬣ 𝑬𝒔𝒑𝒐𝒓𝒕𝒆𝒔 𝒑𝒓𝒂𝒕𝒊𝒄𝒂𝒅𝒐𝒔: ' + global.db.data.users[who].esportes + '\n' : ''}${global.db.data.users[who].religiao ? '⬣ 𝑹𝒆𝒍𝒊𝒈𝒊𝒂𝒐: ' + global.db.data.users[who].religiao + '\n' : ''}${global.db.data.users[who].parceiro ?'⬣ 𝑪𝒂𝒔𝒂𝒅𝒐/𝒂 𝒄𝒐𝒎: @' + global.db.data.users[who].parceiro.split('@')[0] + '\n': ''}${global.db.data.users[who].hobbies ?'⬣ 𝑰𝒏𝒕𝒆𝒓𝒆𝒔𝒔𝒆𝒔: ' + global.db.data.users[who].hobbies + '\n': ''}${global.db.data.users[who].generos ?'⬣ 𝑮𝒆𝒏𝒆𝒓𝒐𝒔 𝒎𝒖𝒔𝒊𝒄𝒂𝒊𝒔: ' + global.db.data.users[who].generos + '\n': ''}${global.db.data.users[who].musica ?'⬣ 𝑴𝒖𝒔𝒊𝒄𝒂 𝒑𝒓𝒆𝒇𝒆𝒓𝒊𝒅𝒂: ' + global.db.data.users[who].musica + '\n': ''}${global.db.data.users[who].animais ?'⬣ 𝑨𝒏𝒊𝒎𝒂𝒊𝒔 𝒅𝒆 𝒆𝒔𝒕𝒊𝒎𝒂𝒄𝒂𝒐: ' + global.db.data.users[who].animais + '\n': ''}${ global.db.data.users[who].instagram ? '⬣ 𝑰𝒏𝒔𝒕𝒂𝒈𝒓𝒂𝒎: instagram.com/' + global.db.data.users[who].instagram +'\n' : ''}${global.db.data.users[who].website ?'⬣ 𝑾𝒆𝒃𝒔𝒊𝒕𝒆: ' + global.db.data.users[who].website +'\n' : ''} ${global.db.data.users[who].links ? '⬣ 𝒍𝒊𝒏𝒌𝒔:  ' + global.db.data.users[who].links + '\n' : ''}
 ${global.db.data.users[who].biografia  ? '━⬣ 𝑺𝒐𝒃𝒓𝒆 𝒎𝒊𝒎:\n' + global.db.data.users[who].biografia  + '\n' : ''}
   ─┅──┅──┅
