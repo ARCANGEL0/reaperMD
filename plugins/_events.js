@@ -4031,12 +4031,32 @@ if (["sim", "claro", "aceito", "óbvio", "obvio", "claro que sim", "s", "ss"].in
 }
 else if(m.quoted && m.quoted.id == global.db.data.users[m.sender].regMsg){
   if(global.db.data.users[m.sender].regIndex == 0){
-    if(m.text == "passo"){
+    if(m.text == "passo" || m.text == "pass" || m.text == "."){
       global.db.data.users[m.sender].nome = ''
     }
     else{
     global.db.data.users[m.sender].nome = m.text
   }
+
+  const textoP = language === 'en'  ? 
+`┌──[ 𝙼𝚛.𝚁𝚘𝚋𝚘𝚝 ]─[~]─[${date}] 
+└─ $ usermod -aG @${m.sender.split('@')[0] } 
+> ‎ 
+| [!] 𝘘𝘶𝘰𝘵𝘦 𝘵𝘩𝘪𝘴 𝘮𝘦𝘴𝘴𝘢𝘨𝘦 𝘢𝘯𝘥 𝘢𝘯𝘴𝘸𝘦𝘳 𝘵𝘩𝘦 𝘧𝘰𝘭𝘭𝘰𝘸𝘪𝘯𝘨 𝘲𝘶𝘦𝘴𝘵𝘪𝘰𝘯𝘴, 𝘬𝘪𝘥. 𝘐𝘧 𝘺𝘰𝘶 𝘸𝘢𝘯𝘵 𝘵𝘰 𝘴𝘬𝘪𝘱 𝘢𝘯𝘺 𝘲𝘶𝘦𝘴𝘵𝘪𝘰𝘯, 𝘫𝘶𝘴𝘵 𝘢𝘯𝘴𝘸𝘦𝘳 𝘸𝘪𝘵𝘩 *"."* 𝘰𝘳 *"𝘱𝘢𝘴s"*
+> ‎
+> ᴡʜᴇʀᴇ ᴅᴏ ʏᴏᴜ ʟɪᴠᴇ?
+> ‎
+` 
+:
+`┌──[ 𝙼𝚛.𝚁𝚘𝚋𝚘𝚝 ]─[~]─[${date}] 
+└─ $ usermod -aG @${m.sender.split('@')[0] } 
+> ‎ 
+| [!] 𝘙𝘦𝘴𝘱𝘰𝘯𝘥𝘢 𝘮𝘪𝘯𝘩𝘢𝘴 𝘱𝘦𝘳𝘨𝘶𝘯𝘵𝘢𝘴 𝘮𝘢𝘳𝘤𝘢𝘯𝘥𝘰 𝘦𝘴𝘵𝘢 𝘮𝘦𝘯𝘴𝘢𝘨𝘦𝘯, 𝘨𝘢𝘳𝘰𝘵𝘰! 𝘚𝘦 𝘷𝘰𝘤𝘦 𝘥𝘦𝘴𝘦𝘫𝘢𝘳 𝘱𝘶𝘭𝘢𝘳 𝘢 𝘱𝘦𝘳𝘨𝘶𝘯𝘵𝘢, 𝘳𝘦𝘴𝘱𝘰𝘯𝘥𝘢 𝘤𝘰𝘮 *"."* 𝘰𝘶 *"𝘱𝘢𝘴𝘴𝘰"*
+> ‎
+> ᴏɴᴅᴇ ᴠᴏᴄᴇ ᴍᴏʀᴀ??
+> ‎`
+
+
   let textoP = `
 ┏━━❬ *REGISTRO* ❭━━┓
 *┃* @${m.sender.split("@")[0]}
@@ -4056,7 +4076,7 @@ console.log(mshg)
   }
   else if(global.db.data.users[m.sender].regIndex == 1){
     
-  if(m.text == "passo"){
+  if(m.text == "passo" || m.text == "pass" || m.text == "."){
       global.db.data.users[m.sender].morada = ''
     }
     else{
@@ -4083,7 +4103,7 @@ console.log(mshg)
   return !0
   }
  else if(global.db.data.users[m.sender].regIndex == 2){
-    if(m.text == "passo"){
+    if(m.text == "passo" || m.text == "pass" || m.text == "."){
       global.db.data.users[m.sender].age = ''
     }
     else{
@@ -4107,7 +4127,7 @@ console.log(mshg)
   return !0
   }
  else if(global.db.data.users[m.sender].regIndex == 3){
-    if(m.text == "passo"){
+    if(m.text == "passo" || m.text == "pass" || m.text == "."){
       global.db.data.users[m.sender].religiao = ''
     }
     else{
@@ -4130,7 +4150,7 @@ console.log(mshg)
   return !0
   }
   else if(global.db.data.users[m.sender].regIndex == 4){
-     if(m.text == "passo"){
+     if(m.text == "passo" || m.text == "pass" || m.text == "."){
       global.db.data.users[m.sender].instagram = ''
     }
     else{
@@ -4153,7 +4173,7 @@ console.log(mshg)
   return !0
   }
   else if(global.db.data.users[m.sender].regIndex == 5){
-     if(m.text == "passo"){
+     if(m.text == "passo" || m.text == "pass" || m.text == "."){
       global.db.data.users[m.sender].profissao = ''
     }
     else{
@@ -4177,7 +4197,7 @@ console.log(mshg)
   return !0
   }
   else if(global.db.data.users[m.sender].regIndex == 6){
-     if(m.text == "passo"){
+     if(m.text == "passo" || m.text == "pass" || m.text == "."){
       global.db.data.users[m.sender].generos = ''
     }
     else{
@@ -4201,7 +4221,7 @@ console.log(mshg)
   return !0
   }
   else if(global.db.data.users[m.sender].regIndex == 7){
-     if(m.text == "passo"){
+     if(m.text == "passo" || m.text == "pass" || m.text == "."){
       global.db.data.users[m.sender].musica = ''
     }
     else{
@@ -4225,7 +4245,7 @@ console.log(mshg)
   return !0
   }
   else if(global.db.data.users[m.sender].regIndex == 8){
-     if(m.text == "passo"){
+     if(m.text == "passo" || m.text == "pass" || m.text == "."){
       global.db.data.users[m.sender].time = ''
     }
     else{
@@ -4249,7 +4269,7 @@ console.log(mshg)
   return !0
   }
   else if(global.db.data.users[m.sender].regIndex == 9){
-     if(m.text == "passo"){
+     if(m.text == "passo" || m.text == "pass" || m.text == "."){
       global.db.data.users[m.sender].esportes = ''
     }
     else{
@@ -4273,7 +4293,7 @@ console.log(mshg)
   return !0
   }
   else if(global.db.data.users[m.sender].regIndex == 10){
-     if(m.text == "passo"){
+     if(m.text == "passo" || m.text == "pass" || m.text == "."){
       global.db.data.users[m.sender].animais = ''
     }
     else{
@@ -4298,7 +4318,7 @@ console.log(mshg)
   return !0
   }
   else if(global.db.data.users[m.sender].regIndex == 11){
-     if(m.text == "passo"){
+     if(m.text == "passo" || m.text == "pass" || m.text == "."){
       global.db.data.users[m.sender].hobbies = ''
     }
     else{
@@ -4323,7 +4343,7 @@ console.log(mshg)
   return !0
   }
   else if(global.db.data.users[m.sender].regIndex == 12){
-     if(m.text == "passo"){
+     if(m.text == "passo" || m.text == "pass" || m.text == "."){
       global.db.data.users[m.sender].website = ''
     }
     else{
@@ -4348,7 +4368,7 @@ console.log(mshg)
   return !0
   }
   else if(global.db.data.users[m.sender].regIndex == 13){
-     if(m.text == "passo"){
+     if(m.text == "passo" || m.text == "pass" || m.text == "."){
       global.db.data.users[m.sender].links = ''
     }
     else{
@@ -4372,7 +4392,7 @@ console.log(mshg)
   return !0
   }
   else if(global.db.data.users[m.sender].regIndex == 14){
-     if(m.text == "passo"){
+     if(m.text == "passo" || m.text == "pass" || m.text == "."){
       global.db.data.users[m.sender].biografia = ''
     }
     else{
