@@ -82,7 +82,6 @@ if(global.db.data.chats[m.chat].users[who].money< 0){
   global.db.data.chats[m.chat].users[who].money=0
 }
 let user = global.db.data.chats[m.chat].users[who]
-let pp = await conn.profilePictureUrl(who, 'image').catch(_ => '') || './media/menus/img5.jpg'
 
 
 /// information information
