@@ -20,87 +20,7 @@ const handler = async (m, {conn, isMods,participants, groupMetadata,usedprefix,i
   const who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender;
   
   let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${who.split('@')[0]}:${who.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
-  
-  if(isOwner){
-  console.log("dono mandando mensagem!")
-  
-if(!global.db.data.chats[m.chat].users[m.sender]){
-  global.db.data.chats[m.chat].users[m.sender]={
-    exp: 0,
-        limit:600000,
-        role:'༒︎ 𝕹𝖊𝖛𝖊𝖗𝖒𝖔𝖗𝖊 ﮩ٨ـﮩ\n𝔐𝔢𝔰𝔱𝔯𝔢 𝔡𝔬𝔰 𝔠𝔬𝔯𝔳𝔬𝔰 ♱',
-        money:600000,
-        level:666,
-        adm: isAdmin,
-        legendary: true,
-        coadmin:false,
-        maxlevel: true,
-        slots: 666,
-        tentativasRoubo: 666,
-        usuariosRoubados: [],
-  }
-  
-  
-}
 
-  global.db.data.chats[m.chat].users[m.sender].name=`𝔥𝔢𝔫𝔯𝔶 𝔞𝔯𝔠𝔞𝔫𝔤𝔢𝔩𝔬 ⸸`
-  global.db.data.chats[m.chat].users[m.sender].age=`𝔇𝔢𝔰𝔠𝔬𝔫𝔥𝔢𝔠𝔦𝔡𝔬`
-  
-  global.db.data.chats[m.chat].users[m.sender].morada=`ℜ𝔦𝔬 𝔱𝔦𝔫𝔱𝔬, 𝔓𝔬𝔯𝔱𝔬   𝔓𝔬𝔯𝔱𝔲𝔤𝔞𝔩`
-  global.db.data.chats[m.chat].users[m.sender]. profissao=`_*𝔇𝔢𝔰𝔢𝔫𝔳𝔬𝔩𝔳𝔢𝔡𝔬𝔯 𝔣𝔲𝔩𝔩𝔰𝔱𝔞𝔠𝔨*_ 𖤍`
-  global.db.data.chats[m.chat].users[m.sender].instagram=`https://instagram.con/henryy.xn`
-  global.db.data.chats[m.chat].users[m.sender].website=`https://arcangelo.net`
-  global.db.data.chats[m.chat].users[m.sender].links=`https://github.com/ARCANGEL0`
-  global.db.data.chats[m.chat].users[m.sender].biografia=`ִ ࣪𖤐`
-  global.db.data.chats[m.chat].users[m.sender].hobbies=`𝔏𝔢𝔯, 𝔬𝔲𝔳𝔦𝔯 𝔪𝔲𝔰𝔦𝔠𝔞, 𝔡𝔢𝔰𝔢𝔫𝔥𝔞𝔯 𝔢 𝔢𝔰𝔠𝔯𝔢𝔳𝔢𝔯. 
-  ℜ𝔢𝔰𝔬𝔩𝔳𝔢𝔯 𝔢𝔫𝔦𝔤𝔪𝔞𝔰, 𝔭𝔲𝔷𝔷𝔩𝔢𝔰 𝔢 𝔡𝔢𝔰𝔞𝔣𝔦𝔬𝔰`
-  global.db.data.chats[m.chat].users[m.sender].relacionamento=`ℭ𝔞𝔰𝔞𝔡𝔬 𝔠𝔬𝔪 𝔞 𝔪𝔬𝔯𝔱𝔢 ༒︎`
-global.db.data.chats[m.chat].users[m.sender].limit=6666
-  global.db.data.chats[m.chat].users[m.sender].money=66666
-  global.db.data.chats[m.chat].users[m.sender].level = 666
-  global.db.data.chats[m.chat].users[m.sender].legendary=true
-  global.db.data.chats[m.chat].users[m.sender].coadmin=false
-  global.db.data.chats[m.chat].users[m.sender].slots=666
-  global.db.data.chats[m.chat].users[m.sender].tentativasRoubo=666
-  global.db.data.chats[m.chat].users[m.sender].usuariosRoubados = []
-  
-  global.db.data.chats[m.chat].users[m.sender].role=`𝑵𝒆𝒗𝒆𝒓𝒎𝒐𝒓𝒆 ༒︎\n𝙼𝚎𝚜𝚝𝚛𝚎 𝚍𝚘𝚜 𝚌𝚘𝚛𝚟𝚘𝚜`
-    
-    
-    
-  }
-  
-  if(m.sender==global.cocriador ||(who==global.cocriador))
-  {
-  console.log("laura mandando mensagem!")
-  
-if(!global.db.data.chats[m.chat].users[global.cocriador]){
-  global.db.data.chats[m.chat].users[global.cocriador]={
-    exp: 0,
-        limit:99999999,
-        role:'༒︎ 𝑷𝒍𝒖𝒕ã𝒐 𝑵𝒆𝒈𝒓𝒐',
-        money:99999999,
-        level:666,
-        adm: isAdmin,
-        legendary: false,
-        cocriadora:true,
-        maxlevel: true,
-        slots: 999,
-  }
-  
-  
-}
-global.db.data.chats[m.chat].users[global.cocriador].limit=5000
-  global.db.data.chats[m.chat].users[global.cocriador].money=5000
-  global.db.data.chats[m.chat].users[global.cocriador].level = 666
-  global.db.data.chats[m.chat].users[global.cocriador].legendary=false
-  global.db.data.chats[m.chat].users[global.cocriador].cocriadora=true
-  global.db.data.chats[m.chat].users[global.cocriador].role= '༒︎ 𝑷𝒍𝒖𝒕ã𝒐 𝑵𝒆𝒈𝒓𝒐'
-  
-    
-    
-    
-  }
   let username = conn.getName(who)
   const groupAdmins = participants.filter(p => p.admin)
  
@@ -118,7 +38,7 @@ global.db.data.chats[m.chat].users[global.cocriador].limit=5000
   
   global.db.data.chats[m.chat].users[who].adm =  admcheck
    //user admins? 
-  	if(!global.db.data.chats[m.chat]){
+	if(!global.db.data.chats[m.chat]){
   global.db.data.chats[m.chat]={}
 }
 if(!global.db.data.chats[m.chat].users){
