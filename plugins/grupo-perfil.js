@@ -102,8 +102,8 @@ function checkProfileExistence(who) {
 
 
  const profileText = global.db.data.chats[m.chat].language === 'en' ?
-`[+] 𝙿̷𝚁̷𝙾̷𝙵̷𝙸̷𝙻̷𝙴̷` :
-`[+] 𝙿̷𝙴̷𝚁̷𝙵̷𝙸̷𝙻̷`
+`| [+] 𝙿̷𝚁̷𝙾̷𝙵̷𝙸̷𝙻̷𝙴̷` :
+`| [+] 𝙿̷𝙴̷𝚁̷𝙵̷𝙸̷𝙻̷`
   return hasProfileData ? profileText : '';
 }
 
@@ -257,7 +257,7 @@ ${myProfile}
 ┌──[ 𝙼𝚛.𝚁𝚘𝚋𝚘𝚝 ]─[~]─[${date}] 
 └─ $ harvester -e @${who.split('@')[0] } 
 > ‎ 
-[+] USER_LOG
+| [+] USER_LOG
 ${usernames ? '> ' + usernames + '\n' : '> ‎ '}
 > ʀᴀɴᴋ: ${user.role}
 > ʟᴇᴠᴇʟ: ${user.level}
