@@ -4031,6 +4031,8 @@ if (["sim", "claro", "aceito", "óbvio", "obvio", "claro que sim", "s", "ss"].in
 }
 else if(m.quoted && m.quoted.id == global.db.data.users[m.sender].regMsg){
 
+ const language = global.db.data.chats[m.chat].language;
+ 
   function getCurrentDate(format) {
     const options = { year: 'numeric', month: '2-digit', day: '2-digit' };
     const date = new Date();
