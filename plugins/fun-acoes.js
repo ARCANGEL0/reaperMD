@@ -21,7 +21,8 @@ import { levelup } from '../lib/canvas.js'
 import { createCanvas, loadImage } from 'canvas';
 import { join } from 'path'; 
 let handler = async (m, { text ,__dirname, groupMetadata, participants,isAdmin,isOwner, conn, args, usedPrefix, command }) => {
-  
+  const langs = global.db.data.chats[m.chat].language;
+
   
    if (!(global.db.data.chats[m.chat]?.users[m.sender]?.acaoTimer instanceof Date) ||
     (new Date() - global.db.data.chats[m.chat].users[m.sender].acaoTimer) >= 240000) {
@@ -42,12 +43,26 @@ if(!global.db.data.chats[m.chat].users[m.sender].trojans){
   global.db.data.chats[m.chat].users[m.sender].trojans =0
 }
 if(global.db.data.users[m.sender]?.parceiro){
- infiel = [
-    `𝑯𝒐𝒏𝒓𝒂 𝒕𝒆𝒖 𝒄𝒐𝒎𝒑𝒓𝒐𝒎𝒊𝒔𝒔𝒐 𝒄𝒐𝒎 @${global.db.data.users[m.sender]?.parceiro.split('@')[0]}... 𝒐𝒖 𝒔𝒆𝒓𝒂 𝒒𝒖𝒆 𝒆𝒔 𝒕𝒂𝒐 𝒇𝒓𝒂𝒄𝒐 𝒒𝒖𝒆 𝒏𝒂𝒐 𝒄𝒐𝒏𝒔𝒆𝒈𝒖𝒆 𝒎𝒂𝒏𝒕𝒆𝒓 𝒕𝒖𝒂 𝒑𝒂𝒍𝒂𝒗𝒓𝒂?`
-    , `𝑳𝒆𝒎𝒃𝒓𝒆-𝒔𝒆 𝒅𝒐𝒔 𝒔𝒆𝒖𝒔 𝒗𝒐𝒕𝒐𝒔 𝒇𝒆𝒊𝒕𝒐𝒔 𝒂 @${global.db.data.users[m.sender]?.parceiro.split('@')[0]}... 𝒐𝒖 𝒕𝒖𝒂 𝒊𝒏𝒕𝒆𝒈𝒓𝒊𝒅𝒂𝒅𝒆 𝒆 𝒕𝒂𝒐 𝒇𝒓𝒂𝒈𝒊𝒍 𝒒𝒖𝒆 𝒕𝒆 𝒆𝒔𝒒𝒖𝒆𝒄𝒆𝒔 𝒄𝒐𝒎 𝒇𝒂𝒄𝒊𝒍𝒊𝒅𝒂𝒅𝒆?`, `𝑻𝒆𝒖 𝒄𝒐𝒎𝒑𝒓𝒐𝒎𝒊𝒔𝒔𝒐 𝒄𝒐𝒎 @${global.db.data.users[m.sender]?.parceiro.split('@')[0]} 𝒆 𝒔𝒂𝒈𝒓𝒂𝒅𝒐... 𝒐𝒖 𝒔𝒆𝒓𝒂 𝒒𝒖𝒆 𝒕𝒖𝒂 𝒑𝒂𝒍𝒂𝒗𝒓𝒂 𝒗𝒂𝒍𝒆 𝒕𝒂𝒐 𝒑𝒐𝒖𝒄𝒐?`
-    
-    , `𝑬𝒔 𝒊𝒏𝒄𝒂𝒑𝒂𝒛 𝒅𝒆 𝒔𝒆𝒓 𝒇𝒊𝒆𝒍 𝒂 @${global.db.data.users[m.sender]?.parceiro.split('@')[0]}? 𝑷𝒓𝒐𝒗𝒂 𝒒𝒖𝒆 𝒂𝒊𝒏𝒅𝒂 𝒕𝒆𝒏𝒔 𝒖𝒎 𝒎𝒊𝒏𝒊𝒎𝒐 𝒅𝒆 𝒉𝒐𝒏𝒓𝒂 𝒆 𝒄𝒖𝒎𝒑𝒓𝒆 𝒕𝒆𝒖𝒔 𝒗𝒐𝒕𝒐𝒔.`, 
-    `𝑵𝒂𝒐 𝒕𝒓𝒂𝒊𝒂 𝒂 𝒄𝒐𝒏𝒇𝒊𝒂𝒏𝒄𝒂 𝒅𝒆 @${global.db.data.users[m.sender]?.parceiro.split('@')[0]}... 𝒐𝒖 𝒆 𝒑𝒆𝒅𝒊𝒓 𝒅𝒆𝒎𝒂𝒊𝒔 𝒒𝒖𝒆 𝒑𝒓𝒆𝒔𝒆𝒓𝒗𝒆 𝒐 𝒑𝒐𝒖𝒄𝒐 𝒅𝒆 𝒅𝒊𝒈𝒏𝒊𝒅𝒂𝒅𝒆 𝒒𝒖𝒆 𝒕𝒆 𝒓𝒆𝒔𝒕𝒂?`]
+
+  if (langs === 'pt') {
+    infiel = [
+        `Você realmente pensa que pode se esconder dos seus próprios demônios, enquanto finge que @${global.db.data.users[m.sender]?.parceiro.split('@')[0]} é apenas uma lembrança distante?`,
+        `Os votos que você fez a @${global.db.data.users[m.sender]?.parceiro.split('@')[0]} são só palavras, ou é apenas você se iludindo com suas próprias mentiras?`,
+        `Essa lealdade que diz ter a @${global.db.data.users[m.sender]?.parceiro.split('@')[0]} é só uma máscara, ou você ainda tem coragem de encarar suas fraquezas?`,
+        `Ser fiel a @${global.db.data.users[m.sender]?.parceiro.split('@')[0]} deve ser uma piada para você, certo? Então me diga, o que realmente resta de honra nesse seu mundo podre?`,
+        `Trair a confiança de @${global.db.data.users[m.sender]?.parceiro.split('@')[0]} é fácil, mas carregar o peso da culpa... você consegue? Ou vai viver na sua própria versão de liberdade?`
+    ];
+} else if (langs === 'en') {
+    infiel = [
+        `Do you really think you can run from your demons while pretending @${global.db.data.users[m.sender]?.parceiro.split('@')[0]} is just a distant memory?`,
+        `Those vows you made to @${global.db.data.users[m.sender]?.parceiro.split('@')[0]}—are they just empty words, or are you fooling yourself with your own lies?`,
+        `That loyalty you claim to @${global.db.data.users[m.sender]?.parceiro.split('@')[0]} is just a facade, or do you still have the guts to face your own weaknesses?`,
+        `Being faithful to @${global.db.data.users[m.sender]?.parceiro.split('@')[0]} must be a joke to you, right? So tell me, what’s left of honor in this decaying world of yours?`,
+        `Betraying @${global.db.data.users[m.sender]?.parceiro.split('@')[0]}'s trust is easy, but can you carry the weight of guilt? Or will you live in your own version of freedom?`
+    ];
+}
+
+
 }
  let alertaInfiel =[
    "𝑨𝒕𝒆𝒏𝒕𝒆-𝒔𝒆 𝒏𝒂𝒔 𝒔𝒐𝒎𝒃𝒓𝒂𝒔... 𝒆𝒔𝒕𝒂𝒐 𝒄𝒐𝒓𝒕𝒆𝒋𝒂𝒏𝒅𝒐 𝒕𝒆𝒖 𝒄𝒐𝒏𝒋𝒖𝒈𝒆.", "𝑬𝒔𝒕𝒆𝒋𝒂 𝒂𝒕𝒆𝒏𝒕𝒂.. 𝒆𝒔𝒕𝒂𝒐 𝒕𝒆𝒏𝒕𝒂𝒏𝒅𝒐 𝒂𝒕𝒓𝒂𝒊𝒓 𝒕𝒆𝒖 𝒄𝒐𝒏𝒋𝒖𝒈𝒆 𝒄𝒐𝒎 𝒆𝒏𝒄𝒂𝒏𝒕𝒐𝒔 𝒆 𝒑𝒂𝒍𝒂𝒗𝒓𝒂𝒔 𝒑𝒓𝒐𝒎𝒊𝒔𝒄𝒖𝒂𝒔.", "𝑭𝒊𝒒𝒖𝒆 𝒅𝒆 𝒐𝒍𝒉𝒐, 𝒆𝒔𝒕𝒂𝒐 𝒅𝒂𝒏𝒅𝒐 𝒆𝒎 𝒄𝒊𝒎𝒂 𝒅𝒆 𝒕𝒆𝒖 𝒄𝒐𝒏𝒋𝒖𝒈𝒆.", "𝑪𝒖𝒊𝒅𝒂𝒅𝒐, 𝒆𝒔𝒕𝒂𝒐 𝒕𝒆𝒏𝒕𝒂𝒏𝒅𝒐 𝒄𝒐𝒏𝒒𝒖𝒊𝒔𝒕𝒂𝒓 𝒕𝒆𝒖 𝒄𝒐𝒏𝒋𝒖𝒈𝒆.", "𝑴𝒂𝒏𝒕𝒆𝒏𝒉𝒂-𝒔𝒆 𝒂𝒕𝒆𝒏𝒕𝒐, 𝒉𝒂 𝒑𝒆𝒔𝒔𝒐𝒂𝒔 𝒕𝒆𝒏𝒕𝒂𝒏𝒅𝒐 𝒔𝒆 𝒂𝒑𝒓𝒐𝒙𝒊𝒎𝒂𝒓 𝒅𝒆 𝒕𝒆𝒖 𝒄𝒐𝒏𝒋𝒖𝒈𝒆.", "𝑨𝒍𝒈𝒖𝒆𝒎 𝒆𝒔𝒕𝒂 𝒕𝒆𝒏𝒕𝒂𝒏𝒅𝒐 𝒄𝒐𝒓𝒕𝒆𝒋𝒂𝒓 𝒕𝒆𝒖 𝒄𝒐𝒏𝒋𝒖𝒈𝒆, 𝒇𝒊𝒒𝒖𝒆 𝒂𝒍𝒆𝒓𝒕𝒂.", "𝑷𝒓𝒐𝒕𝒆𝒋𝒂 𝒕𝒆𝒖 𝒄𝒐𝒏𝒋𝒖𝒈𝒆 𝒅𝒆 𝒒𝒖𝒆𝒎 𝒕𝒆𝒏𝒕𝒂 𝒔𝒆 𝒂𝒑𝒓𝒐𝒙𝒊𝒎𝒂𝒓.", "𝑯𝒂 𝒒𝒖𝒆𝒎 𝒆𝒔𝒕𝒆𝒋𝒂 𝒅𝒆 𝒐𝒍𝒉𝒐 𝒆𝒎 𝒕𝒆𝒖 𝒄𝒐𝒏𝒋𝒖𝒈𝒆, 𝒆𝒔𝒕𝒆𝒋𝒂 𝒗𝒊𝒈𝒊𝒍𝒂𝒏𝒕𝒆."]
