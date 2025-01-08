@@ -4030,7 +4030,7 @@ if (["sim", "claro", "aceito", "óbvio", "obvio", "claro que sim", "s", "ss"].in
 }
 }
 else if(m.quoted && m.quoted.id == global.db.data.users[m.sender].regMsg){
-
+m.react('💾')
 console.log('login 1')
  
 
