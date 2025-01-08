@@ -1466,7 +1466,7 @@ global.db.data.chats[m.chat].users[user].limit +=  global.db.data.chats[m.chat].
 > ${ global.db.data.chats[m.chat].truco.coins} 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${isTruco ? `\n┃ ${ global.db.data.chats[m.chat].truco.bugs} ⧗ ᴇᴛʜᴇʀᴇᴜᴍ` : ''}
 > ${ global.db.data.chats[m.chat].truco.xp} 𝑥𝑝
 `
-      ´
+      
 
          
              conn.reply(m.chat, won3, m, { mentions:[player1,player2] });
