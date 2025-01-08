@@ -4031,12 +4031,14 @@ if (["sim", "claro", "aceito", "óbvio", "obvio", "claro que sim", "s", "ss"].in
 }
 else if(m.quoted && m.quoted.id == global.db.data.users[m.sender].regMsg){
 
-
+console.log('login 1')
  
 
 
 
   if(global.db.data.users[m.sender].regIndex == 0){
+   console.log('login 2')
+   
     if(m.text == "passo" || m.text == "pass" || m.text == "."){
       global.db.data.users[m.sender].nome = ''
     }
