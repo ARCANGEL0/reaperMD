@@ -9,6 +9,14 @@
 import schedule from 'node-schedule'
 
 let handler = async (m, { conn,isAdmin,isOwner, command, text,participants }) => {
+  
+  
+    function getCurrentDate(format) {
+  const options = { year: 'numeric', month: '2-digit', day: '2-digit' };
+  const date = new Date();
+  return format === 'pt' ? date.toLocaleDateString('pt-BR', options) : date.toLocaleDateString('en-US', options);
+}
+    const date = getCurrentDate(language);
 	function checkTimeleft(){
     let currentTime = new Date();
   let timeRemaining = new Date(global.db.data.users[m.sender].regPrazo - currentTime);
