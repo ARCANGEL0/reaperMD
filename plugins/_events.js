@@ -3757,9 +3757,9 @@ global.db.data.chats[m.chat].users[m.sender][att] =
     let choice = tokOptions[m.text];
    let loja = global.db.data.chats[m.chat].loja
     let user = global.db.data.chats[m.chat].users[m.sender];
-if(user.rce<0)user.rce = 0
+if(user.trojans<0)user.trojans = 0
     // Check if user has enough ʙʏᴛᴇᴄᴏɪɴꜱ
-    if (user.rce < -choice.cost) {
+    if (user.trojans < -choice.cost) {
         m.reply(`⎔⎓──────────────
 ┃  ✇ 𝑬𝑹𝑹𝑶 𝑨𝑶 𝑬𝑭𝑬𝑻𝑼𝑨𝑹 𝑪𝑶𝑴𝑷𝑹𝑨!
 ┃ 
@@ -3782,7 +3782,7 @@ global.db.data.chats[m.chat].users[m.sender][att] =
 
 
 
-    user.rce += choice.cost;
+    user.trojans += choice.cost;
 
     // Create a protocol ID and log the purchase
     let protocolId = Math.random().toString(36).substr(2, 9).toUpperCase();
@@ -4038,7 +4038,7 @@ else if(m.quoted && m.quoted.id == global.db.data.users[m.sender].regMsg){
   }
       const date = getCurrentDate(language);
 
-      
+
   if(global.db.data.users[m.sender].regIndex == 0){
     if(m.text == "passo" || m.text == "pass" || m.text == "."){
       global.db.data.users[m.sender].nome = ''

@@ -67,9 +67,9 @@ if(!global.db.data.chats[m.chat].users[who].limit ||
 global.db.data.chats[m.chat].users[who].limit<0){
   global.db.data.chats[m.chat].users[who].limit = 0
 }
-if(!global.db.data.chats[m.chat].users[who].rce ||
-global.db.data.chats[m.chat].users[who].rce<0){
-  global.db.data.chats[m.chat].users[who].rce = 0
+if(!global.db.data.chats[m.chat].users[who].trojans ||
+global.db.data.chats[m.chat].users[who].trojans<0){
+  global.db.data.chats[m.chat].users[who].trojans = 0
 }
 if(!global.db.data.chats[m.chat].users[who].money ||
 global.db.data.chats[m.chat].users[who].money<0){
@@ -262,7 +262,7 @@ ${usernames ? '> ' + usernames + '\n' : '> ‎ '}
 > ʟᴇᴠᴇʟ: ${user.level}
 > xᴘ: ${user.exp}
 > . . . . . . . . . . . . . . . . .
-> ✇ ᴛʀᴏᴊᴀɴꜱ: ${user.rce} 
+> ✇ ᴛʀᴏᴊᴀɴꜱ: ${user.trojans} 
 > 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ: ${user.money.toFixed(2)}
 > ⧗ ᴇᴛʜᴇʀᴇᴜᴍ: ${user.limit}
 > ‎ 

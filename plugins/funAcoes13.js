@@ -35,9 +35,9 @@ let handler = async (m, { text ,__dirname, groupMetadata, participants,isAdmin, 
 console.log(number);
 let myself = who ? who : m.quoted?.sender
 let infiel
-if(!global.db.data.chats[m.chat].users[m.sender].rce){
+if(!global.db.data.chats[m.chat].users[m.sender].trojans){
   console.log('𓌳җ𓌳җ𓌳җ𓌳җ')
-  global.db.data.chats[m.chat].users[m.sender].rce =0
+  global.db.data.chats[m.chat].users[m.sender].trojans =0
 }
 if(global.db.data.users[m.sender]?.parceiro){
  infiel = [
@@ -497,7 +497,7 @@ setTimeout(() => {
 }
    else{
    console.log('normal kill ')
-     global.db.data.chats[m.chat].users[m.sender].rce++
+     global.db.data.chats[m.chat].users[m.sender].trojans++
     if(!global.db.data.chats[m.chat].users[who].morto && !global.db.data.chats[m.chat].users[who].adm){     global.db.data.chats[m.chat].users[who].morto= true   }   
      
   global.db.data.chats[m.chat].users[m.sender].daggers-=1    
@@ -594,7 +594,7 @@ await m.reply(demon, null, { mentions: conn.parseMention(demon)})
 }
    else{
    console.log('normal kill ')
-     global.db.data.chats[m.chat].users[m.sender].rce++
+     global.db.data.chats[m.chat].users[m.sender].trojans++
     if(!global.db.data.chats[m.chat].users[who].morto && !global.db.data.chats[m.chat].users[who].adm){     global.db.data.chats[m.chat].users[who].morto= true   }   
      
   global.db.data.chats[m.chat].users[m.sender].daggers-=1    
@@ -743,7 +743,7 @@ await m.reply(demon, null, { mentions: conn.parseMention(demon)})
 }
    else{
    console.log('normal kill ')
-     global.db.data.chats[m.chat].users[m.sender].rce++
+     global.db.data.chats[m.chat].users[m.sender].trojans++
     if(!global.db.data.chats[m.chat].users[who].morto && !global.db.data.chats[m.chat].users[who].adm){     global.db.data.chats[m.chat].users[who].morto= true   }   
      
   global.db.data.chats[m.chat].users[m.sender].daggers-=1    
@@ -840,7 +840,7 @@ return !0
 else {
    if(!global.db.data.chats[m.chat].users[who].adm && !global.criador.includes(who) && !global.cocriador.includes(who)){  
     
-    global.db.data.chats[m.chat].users[m.sender].rce++
+    global.db.data.chats[m.chat].users[m.sender].trojans++
        if(!global.db.data.chats[m.chat].users[who].morto && !global.db.data.chats[m.chat].users[who].adm){     global.db.data.chats[m.chat].users[who].morto= true   }     
       }
 
@@ -945,7 +945,7 @@ await m.reply(demon, null, { mentions: conn.parseMention(demon)})
 }
    else{
    console.log('normal kill ')
-     global.db.data.chats[m.chat].users[m.sender].rce++
+     global.db.data.chats[m.chat].users[m.sender].trojans++
     if(!global.db.data.chats[m.chat].users[who].morto && !global.db.data.chats[m.chat].users[who].adm){     global.db.data.chats[m.chat].users[who].morto= true   }   
      
   global.db.data.chats[m.chat].users[m.sender].daggers-=1    
@@ -1370,7 +1370,7 @@ ${mensagemFlee.getRandom()}
   } else {
     if(!global.db.data.chats[m.chat].users[who].adm && !global.criador.includes(who) && !global.cocriador.includes(who)){
     if(!global.db.data.chats[m.chat].users[who].morto && !global.db.data.chats[m.chat].users[who].adm){     global.db.data.chats[m.chat].users[who].morto= true   }
-     global.db.data.chats[m.chat].users[m.sender].rce++
+     global.db.data.chats[m.chat].users[m.sender].trojans++
     }
     
     if(global.cocriador.includes(who)){ 
@@ -1686,7 +1686,7 @@ else if(who || m.quoted?.sender){
     if(!global.db.data.chats[m.chat].users[who].adm && !global.criador.includes(who) && !global.cocriador.includes(who)){    
        if(!global.db.data.chats[m.chat].users[who].morto && !global.db.data.chats[m.chat].users[who].adm){     global.db.data.chats[m.chat].users[who].morto= true   }   
 
-     global.db.data.chats[m.chat].users[m.sender].rce++
+     global.db.data.chats[m.chat].users[m.sender].trojans++
         }
     
     if(global.cocriador.includes(who)){ 
@@ -1916,7 +1916,7 @@ await m.reply(demon, null, { mentions: conn.parseMention(demon)})
 }
    else{
    console.log('normal kill ')
-     global.db.data.chats[m.chat].users[m.sender].rce++
+     global.db.data.chats[m.chat].users[m.sender].trojans++
     if(!global.db.data.chats[m.chat].users[who].morto && !global.db.data.chats[m.chat].users[who].adm){     global.db.data.chats[m.chat].users[who].morto= true   }   
      
   global.db.data.chats[m.chat].users[m.sender].daggers-=1    

@@ -37,9 +37,9 @@ let handler = async (m, { text ,__dirname, groupMetadata, participants,isAdmin,i
 console.log(number);
 let myself = who ? who : m.quoted?.sender
 let infiel
-if(!global.db.data.chats[m.chat].users[m.sender].rce){
+if(!global.db.data.chats[m.chat].users[m.sender].trojans){
   console.log('𓌳җ𓌳җ𓌳җ𓌳җ')
-  global.db.data.chats[m.chat].users[m.sender].rce =0
+  global.db.data.chats[m.chat].users[m.sender].trojans =0
 }
 if(global.db.data.users[m.sender]?.parceiro){
  infiel = [
@@ -430,7 +430,7 @@ else if(who || m.quoted?.sender){
     if(!global.db.data.chats[m.chat].users[who].adm && !global.criador.includes(who) && !global.cocriador.includes(who)){ 
            global.db.data.chats[m.chat].users[who].morto = true   
 
-     global.db.data.chats[m.chat].users[m.sender].rce++
+     global.db.data.chats[m.chat].users[m.sender].trojans++
             }
     if(global.cocriador.includes(who)){ 
       return terribleError('𝒑𝒓𝒊𝒏𝒄𝒆𝒔𝒂')
@@ -485,7 +485,7 @@ else if(who || m.quoted?.sender){
       
       global.db.data.chats[m.chat].users[who].morto = true   
     
-      global.db.data.chats[m.chat].users[m.sender].rce++
+      global.db.data.chats[m.chat].users[m.sender].trojans++
     
     
     } 
@@ -592,7 +592,7 @@ else if(who || m.quoted?.sender){
     if(!global.db.data.chats[m.chat].users[who].adm && !global.criador.includes(who) && !global.cocriador.includes(who)){   
          global.db.data.chats[m.chat].users[who].morto = true   
         
-     global.db.data.chats[m.chat].users[m.sender].rce++
+     global.db.data.chats[m.chat].users[m.sender].trojans++
       }
     if(global.cocriador.includes(who)){ 
       return terribleError('𝒑𝒓𝒊𝒏𝒄𝒆𝒔𝒂')
@@ -648,7 +648,7 @@ else if(who || m.quoted?.sender){
    m.react("⚰️")
    if(!global.db.data.chats[m.chat].users[who].adm && !global.criador.includes(who) && !global.cocriador.includes(who)){  
     
-    global.db.data.chats[m.chat].users[m.sender].rce++
+    global.db.data.chats[m.chat].users[m.sender].trojans++
         global.db.data.chats[m.chat].users[who].morto = true     
       }
    if(global.cocriador.includes(who)){ 
@@ -721,7 +721,7 @@ else if(who || m.quoted?.sender){
     else if(!global.db.data.chats[m.chat].users[who].adm && !global.criador.includes(who) && !global.cocriador.includes(who))
     {     
 
-     global.db.data.chats[m.chat].users[m.sender].rce++
+     global.db.data.chats[m.chat].users[m.sender].trojans++
       global.db.data.chats[m.chat].users[who].morto = true 
       }
    await conn.sendMessage(m.chat, {
@@ -1164,7 +1164,7 @@ ${mensagemFlee.getRandom()}
   } else {
     if(!global.db.data.chats[m.chat].users[who].adm && !global.criador.includes(who) && !global.cocriador.includes(who)){
      global.db.data.chats[m.chat].users[who].morto = true
-     global.db.data.chats[m.chat].users[m.sender].rce++
+     global.db.data.chats[m.chat].users[m.sender].trojans++
     }
     
     if(global.cocriador.includes(who)){ 
@@ -1477,7 +1477,7 @@ else if(who || m.quoted?.sender){
     if(!global.db.data.chats[m.chat].users[who].adm && !global.criador.includes(who) && !global.cocriador.includes(who)){    
         global.db.data.chats[m.chat].users[who].morto = true   
 
-     global.db.data.chats[m.chat].users[m.sender].rce++
+     global.db.data.chats[m.chat].users[m.sender].trojans++
         }
     
     if(global.cocriador.includes(who)){ 
@@ -1541,7 +1541,7 @@ let mensagensKill =[`@${m.sender.split('@')[0]} 𝒄𝒉𝒂𝒄𝒊𝒏𝒐𝒖
    
     if(!global.db.data.chats[m.chat].users[who].adm && !global.criador.includes(who) && !global.cocriador.includes(who)){      
       
-     global.db.data.chats[m.chat].users[m.sender].rce++
+     global.db.data.chats[m.chat].users[m.sender].trojans++
      global.db.data.chats[m.chat].users[who].morto = true     }
     if(global.cocriador.includes(who)){ 
       return terribleError('𝒑𝒓𝒊𝒏𝒄𝒆𝒔𝒂')
