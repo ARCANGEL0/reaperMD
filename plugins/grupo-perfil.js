@@ -230,7 +230,7 @@ const myProfile = global.db.data.chats[m.chat].language === 'en' ?
 > ┗ ᴡᴇʙꜱɪᴛᴇ: https://arcangelo.net
 `
 
-  let profile =`┌──[ 𝙼𝚛.𝚁𝚘𝚋𝚘𝚝 ]─[~]─[${date}] 
+  let profile =`┌──[ Ǥнѳᔕт ]─[~]─[${date}] 
 └─ $ harvester -e @${who.split('@')[0] } 
 > ‎ 
 [!] 404
@@ -253,11 +253,12 @@ ${myProfile}
 
 
   let msg =  `
-┌──[ 𝙼𝚛.𝚁𝚘𝚋𝚘𝚝 ]─[~]─[${date}] 
+┌──[ BYΓΞSΞC ]─[~]─[${date}] 
 └─ $ harvester -e @${who.split('@')[0] } 
 > ‎ 
 | [+] USER_LOG
 ${usernames ? '> ' + usernames + '\n' : '> ‎ '}
+${admcheck ? '> Λᴅᴍɪɴ' : '> ‎ '}
 > ʀᴀɴᴋ: ${user.role}
 > ʟᴇᴠᴇʟ: ${user.level}
 > xᴘ: ${user.exp}
