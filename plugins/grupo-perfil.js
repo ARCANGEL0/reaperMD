@@ -9,7 +9,7 @@
 // ╰─...⌬─────────────────────────────────
 
 const handler = async (m, {conn, isMods,participants, groupMetadata,usedprefix,isCriadora, isAdmin,isOwner}) => {
-  
+  const language = global.db.data.chats[m.chat].language;
   function getCurrentDate(format) {
   const options = { year: 'numeric', month: '2-digit', day: '2-digit' };
   const date = new Date();
@@ -192,7 +192,7 @@ const profileStatus = checkProfileExistence(who);
 
 const userdata = global.db.data.users[who];
 
-const language = global.db.data.chats[m.chat].language;
+
 
 const profileLines = [
   language === 'en' 
