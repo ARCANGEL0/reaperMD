@@ -9,7 +9,7 @@
 import schedule from 'node-schedule'
 
 let handler = async (m, { conn,isAdmin,isOwner, command, text,participants }) => {
-  
+   const language = global.db.data.chats[m.chat].language;
   
     function getCurrentDate(format) {
   const options = { year: 'numeric', month: '2-digit', day: '2-digit' };
