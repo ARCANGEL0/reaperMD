@@ -160,7 +160,7 @@ let pp = await conn.profilePictureUrl(who, 'image').catch(_ => '') || './media/m
 
 
 /// information information
-const username = global.db.data.chats[m.chat].users[who].name
+const usernames = global.db.data.chats[m.chat].users[who].name
 
 ////
 function checkProfileExistence(who) {
@@ -332,7 +332,7 @@ ${profileString}
 └─ $ harvester -e @${who.split('@')[0] } 
 > ‎ 
 [+] USER_LOG
-${username ? '> ' + username + '\n' : '> ‎ '}
+${usernames ? '> ' + usernames + '\n' : '> ‎ '}
 > ʀᴀɴᴋ: ${user.role}
 > ʟᴇᴠᴇʟ: ${user.level}
 > xᴘ: ${user.exp}
