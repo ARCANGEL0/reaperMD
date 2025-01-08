@@ -277,7 +277,7 @@ ${profileString}
   
   
 };
-handler.help = ['status', 'perfil'];
+handler.help = ['profile', 'perfil'];
 handler.tags = ['grupo'];
 handler.command = /^(perfil)$/i;
 export default handler;
