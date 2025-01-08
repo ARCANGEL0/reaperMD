@@ -326,7 +326,7 @@ const myProfile = global.db.data.chats[m.chat].language === 'en' ?
 > [*] 𝐎𝐒: ᗷᒪᗩᑕᛕ ᗩᖇᑕᕼ
 > ‎ 
 ${profileStatus}
-${profileString}
+${myProfile}
 `
   return conn.sendMessage(m.chat, {text: profile, mentions: [who,global.db.data.users[who]?.parceiro]}, {quoted: fkontak})
 }
