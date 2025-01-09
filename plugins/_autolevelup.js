@@ -79,7 +79,7 @@ export function before(m, { conn , isOwner, nivel, participants}) {
           en: {
               levelUpDetected: '[+] LΞѴΞL UP DΞΓΞCTΞD!',
               user: `[ 𝚄̷𝚂̷𝙴̷𝚁̷: ${username} ]`,
-              level: `[ 𝙻̷𝙴̷𝚅̷𝙴̷𝙻̷: ${previousLevel}.1 ❱❱❱ v${currentLevel}.0 ]`,
+              level: `[ 𝙻̷𝙴̷𝚅̷𝙴̷𝙻̷: v${previousLevel} ❱❱❱ v${currentLevel} ]`,
               protocolInitiated: '[LOADING]',
               authenticationSuccess: `[+] ${coins} ʙʏᴛᴇᴄᴏɪɴꜱ ʀᴇᴄᴇɪᴠᴇᴅ ɪɴ ʏᴏᴜʀ ʙ̺ʏ̺ᴡ̺ᴀ̺ʟ̺ʟ̺ᴇ̺ᴛ̺ [SUCCESS]`,
               ethereum: `[+] ${eth} ᴇᴛʜᴇʀᴇᴜᴍ ʀᴇᴄᴇɪᴠᴇᴅ ɪɴ ʏᴏᴜʀ ʙ̺ʏ̺ᴡ̺ᴀ̺ʟ̺ʟ̺ᴇ̺ᴛ̺ [SUCCESS]`,
@@ -93,7 +93,7 @@ export function before(m, { conn , isOwner, nivel, participants}) {
           pt: {
               levelUpDetected: '[+] LΞѴΞL UP DΞΓΞCTАDѲ!',
               user: `[ 𝚄̷𝚂̷𝚄̷𝙰̷𝚁̷𝙸̷𝙾̷: ${username} ]`,
-              level: `[ 𝙽̷𝙸̷𝚅̷𝙴̷𝙻̷: ${previousLevel}.1 ❱❱❱ v${currentLevel}.0 ]`,
+              level: `[ 𝙽̷𝙸̷𝚅̷𝙴̷𝙻̷: v${previousLevel} ❱❱❱ v${currentLevel} ]`,
               protocolInitiated: '[CARREGANDO]',
               authenticationSuccess: `[+] ${coins} ʙʏᴛᴇᴄᴏɪɴꜱ ʀᴇᴄᴇʙɪᴅᴏꜱ ɴᴀ ʙ̺ʏ̺ᴡ̺ᴀ̺ʟ̺ʟ̺ᴇ̺ᴛ̺ [SUCESSO]`,
             ethereum: `[+] ${eth} ᴇᴛʜᴇʀᴇᴜᴍ ʀᴇᴄᴇʙɪᴅᴏꜱ ɴᴀ ʙ̺ʏ̺ᴡ̺ᴀ̺ʟ̺ʟ̺ᴇ̺ᴛ̺ [SUCCESSO]`,
@@ -130,13 +130,12 @@ ${messages[userLanguage].level}
 . . . . . . . . . . . . . . . . . . . .
   
 ${messages[userLanguage].protocolInitiated}
+
 ${messages[userLanguage].authenticationSuccess}
 ${ethereumMessage} 
 ${commandsSection} 
 ${messages[userLanguage].eof}
-> ‎ 
-root@bytesec: #~  _ 
-      `;
+> ‎ `;
 
 
       return m.reply(textin)
