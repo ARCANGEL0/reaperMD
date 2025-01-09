@@ -28,7 +28,7 @@ let handler = async(m, { conn,args, usedPrefix, command, text }) =>  {
 
 handler.help = ["language"]
 handler.tags = ["config"]
-
+handler.admin = true
 handler.command = ['lang']
 
 
