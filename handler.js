@@ -463,7 +463,6 @@ let txtt = language === "pt"
   }
   global.db.data.chats[m.chat].ignored.push(DELETEMESSAGE.message.protocolMessage.key.id)
   
-   global.db.data.chats[m.chat].users[m.sender].silenced = true;
   
   
 return m.reply(txtt)
