@@ -344,14 +344,14 @@ Evite repetir as mesmas perguntas`
       }
       
 
-      const data = await response.json();
+      const data = response
 
       const assistantResponse = data.response; 
       
       try{
         console.log('sending quiz')
         console.log(assistantResponse)
-     aiReply = JSON5.parse(assistantResponse)
+  let   aiReply = JSON5.parse(assistantResponse)
       }
       catch(e){
         console.log(' ')
