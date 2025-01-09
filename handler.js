@@ -426,9 +426,9 @@ let txtt = language === "pt"
 > [+] ÚLTIMA VEZ LOGADO: ${getTimePassedMessage(startd, language)}
 > ‎ 
 > [==============================]
-> |  🚧 Ocupado no momento.      |
-> |  ⏳ Retornarei assim que possível. |
-> |  📞 Para emergências, me chame no pv. |
+> | [!] Ocupado no momento.      |
+> | $ Retornarei assim que possível. |
+> | $ Para emergências, me chame no pv. |
 > [==============================]
 > ‎ 
 ┌──[root@arcangelo]──[~] 
@@ -445,9 +445,9 @@ let txtt = language === "pt"
 > [+] LAST TIME LOGGED IN: ${getTimePassedMessage(startd, language)}
 > ‎ 
 > [==============================]
-> |  🚧 Busy at the moment.      |
-> |  ⏳ Will return ASAP.         |
-> |  📞 For emergencies, DM me.  |
+> | [!] Busy at the moment.      |
+> | $ Will return ASAP.         |
+> | $ For emergencies, DM me.  |
 > [==============================]
 > ‎ 
 ┌──[root@arcangelo]──[~] 
