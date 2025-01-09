@@ -452,6 +452,19 @@ let txtt = language === "pt"
 > ‎ 
 ┌──[root@arcangelo]──[~] 
 └─► _`;
+  let DELETEMESSAGE = await conn.sendMessage(m.chat, { delete: m.key })
+      
+     m.reply('🔕')
+  console.log(DELETEMESSAGE.message.protocolMessage.key.id)
+  
+  if(!global.db.data.chats[m.chat].ignored)
+  {
+    global.db.data.chats[m.chat].ignored =[]
+  }
+  global.db.data.chats[m.chat].ignored.push(DELETEMESSAGE.message.protocolMessage.key.id)
+  
+   global.db.data.chats[m.chat].users[m.sender].silenced = true;
+  
   
 return m.reply(txtt)
 
