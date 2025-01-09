@@ -332,21 +332,10 @@ Evite repetir as mesmas perguntas`
       const data = response
 
       const assistantResponse = data.response; 
+  let aiReply = assistantResponse
+     /* 
       
-      try{
-        console.log('sending quiz')
-        console.log(assistantResponse)
-  let   aiReply = JSON5.parse(assistantResponse)
-      }
-      catch(e){
-        console.log(' ')
-        console.log(' --------------- ')
-        console.log(' ')
-        console.log(e)
-        m.react("❌")
-        global.db.data.chats[m.chat].quiz.loading =false
-      }
-
+*/
 
 
 
