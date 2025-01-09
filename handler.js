@@ -428,7 +428,7 @@ let txtt = language === "pt"
 > [==============================]
 > |  🚧 Ocupado no momento.      |
 > |  ⏳ Retornarei assim que possível. |
-> |  📞 Para emergências, me chame no chat direto. |
+> |  📞 Para emergências, me chame no pv. |
 > [==============================]
 > ‎ 
 ┌──[root@arcangelo]──[~] 
@@ -454,7 +454,7 @@ let txtt = language === "pt"
 └─► _`;
   let DELETEMESSAGE = await conn.sendMessage(m.chat, { delete: m.key })
       
-     m.reply('🔕')
+     m.react('🔕')
   console.log(DELETEMESSAGE.message.protocolMessage.key.id)
   
   if(!global.db.data.chats[m.chat].ignored)
