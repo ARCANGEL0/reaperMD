@@ -619,7 +619,7 @@ return !0
       console.log('erro !!!!! ')
       console.log('///////////////// ')
       console.log(error)
-    sendSystemErrorAlert(language);
+    sendSystemErrorAlert(global.db.data.chats[m.chat].language);
   }
    
 }
