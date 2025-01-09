@@ -601,7 +601,7 @@ return !0
 
 
 
-getRobot(global.db.data.chats[m.chat].quiz.historico, categories[m.text -1])
+getRobot(global.db.data.chats[m.chat].quiz.historico, categories[text -1])
 
   
 
