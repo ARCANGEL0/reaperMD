@@ -21,7 +21,7 @@ const handler = async (m, {conn, participants, groupMetadata,isAdmin, isOwner, t
   const date = new Date();
   return format === 'pt' ? date.toLocaleDateString('pt-BR', options) : date.toLocaleDateString('en-US', options);
 }
-    const date = getCurrentDate(language);
+    const date = getCurrentDate(global.db.data.chats[m.chat].language);
 
 
   if(!global.xppergunta){
