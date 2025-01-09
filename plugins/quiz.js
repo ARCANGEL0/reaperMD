@@ -21,7 +21,7 @@ const handler = async (m, {conn, participants, groupMetadata,isAdmin, isOwner, t
   const date = new Date();
   return format === 'pt' ? date.toLocaleDateString('pt-BR', options) : date.toLocaleDateString('en-US', options);
 }
-   m.reacy('💽')
+   m.react('💽')
    
     const date = getCurrentDate(global.db.data.chats[m.chat].language);
 
