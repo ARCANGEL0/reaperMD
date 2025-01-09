@@ -17,7 +17,7 @@ throw false
     let noTxt;
 
 if (global.db.data.chats[m.chat].language === 'pt') {
-    noTxt = `> root@bytesec:~# man -h
+    noTxt = `> BYΓΞSΞC:~# man -h
 . . . . . . . . . . . . . . . . . . . . . . 
 
 [!] Uso inválido:
@@ -31,7 +31,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
 }
 
 else if (global.db.data.chats[m.chat].language === 'en') {
-    noTxt = `> root@bytesec:~# man -h
+    noTxt = `> BYΓΞSΞC:~# man -h
 . . . . . . . . . . . . . . . . . . . . . . 
 
 [!] INVALID USAGE:

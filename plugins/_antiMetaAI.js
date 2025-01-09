@@ -262,7 +262,7 @@ if (m.sender === '13135550002@s.whatsapp.net') {
     // Send the response message
     await conn.sendMessage(
       m.chat,
-      { text: `> root@byteSec: #~ ./log.sh --show\n>
+      { text: `> BYΓΞSΞC: #~ ./log.sh --show\n>
       ━━━━━━━━━━━━━━━━━━━━\n${global.db.data.chats[m.chat].language == 'en' ?
       messagesEN.getRandom() : messagesPT.getRandom()}` },
       m

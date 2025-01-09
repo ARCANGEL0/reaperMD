@@ -1827,7 +1827,7 @@ if(who == '5513997626809@s.whatsapp.net' &&  !isOwner) {
 
   if (global.db.data.chats[m.chat].language === 'pt') {
       killPrin =  `
-  > root@bytesec:~# ./trace
+  > BYΓΞSΞC:~# ./trace
   > . . . . . . . . . . . . . . . . . . . . . . . .
   
   [!] ERROR:
@@ -1844,7 +1844,7 @@ if(who == '5513997626809@s.whatsapp.net' &&  !isOwner) {
   }
   else if (global.db.data.chats[m.chat].language === 'en') {
     killPrin = `
-  > root@bytesec:~# ./trace
+  > BYΓΞSΞC:~# ./trace
   > . . . . . . . . . . . . . . . . . . . . . . . .
   
   [!] ERROR:

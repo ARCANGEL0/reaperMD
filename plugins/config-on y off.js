@@ -997,7 +997,7 @@ global.opts['swonly'] = isEnable
 break
 default:
 if (!/[01]/.test(command))
-return await m.reply(`root@bytesec: #~ cfs --${command + ' ' + text}
+return await m.reply(`BYΓΞSΞC: #~ cfs --${command + ' ' + text}
 ⎓────────
 > [!] 500 INTERNAL ERROR
 ${global.db.data.chats[m.chat].language === 'pt' ? `> [⎔] ENDPOINT INVÁLIDO
@@ -1018,7 +1018,7 @@ let modoGrupo = global.db.data.chats[m.chat].language === 'pt' ? ` SISTEMA/GRUPO
 
 let modoBot = global.db.data.chats[m.chat].language === 'pt' ? ' SISTEMA/TODOS' : ' SYSTEM/ALL'
   
-let resultado = `root@bytesec: #~ cfs --${command + ' ' + text}
+let resultado = `BYΓΞSΞC: #~ cfs --${command + ' ' + text}
 ⎓────────
 > [!] ${type}
 > ${isEnable ? '[+] 200 OK | ONLINE' : '[-] 200 OK | OFFLINE '}

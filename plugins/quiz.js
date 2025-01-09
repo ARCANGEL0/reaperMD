@@ -145,7 +145,7 @@ ${categoryList}
 > >>EOF<<` 
      :
       `┌──[ BYΓΞSΞC ]─[~]─[${date}] 
-  └─ $ node quiz.mjs --help
+└─ $ node quiz.mjs --help
 > . . . . . . . . . . . . . . . . . . . . . . .
 > 𝘏𝘦𝘺, 𝘬𝘪𝘥. 𝘞𝘢𝘯𝘵 𝘵𝘰 𝘱𝘶𝘵 𝘺𝘰𝘶𝘳 𝘬𝘯𝘰𝘸𝘭𝘦𝘥𝘨𝘦 𝘵𝘰 𝘵𝘩𝘦 𝘵𝘦𝘴𝘵? 
 > 𝘛𝘩𝘦𝘯 𝘱𝘪𝘤𝘬 𝘢 𝘯𝘶𝘮𝘣𝘦𝘳 𝘧𝘳𝘰𝘮 𝘵𝘩𝘦 𝘤𝘢𝘵𝘦𝘨𝘰𝘳𝘪𝘦𝘴 𝘣𝘦𝘭𝘰𝘸 𝘢𝘯𝘥 𝘥𝘪𝘷𝘦 𝘪𝘯.  
@@ -319,40 +319,65 @@ Evite repetir as mesmas perguntas`
  ]
  
  console.log('begin quiz')
-  await gpt.v1({
-     messages: global.db.data.chats[m.chat].quiz.historico,
-     
-   model: "GPT-4",
-    markdown: false
-}, async (err, dtta) => {
-    if(err != null){
-        console.log(err);
-        throw err
-    } 
-    else {
-console.log(dtta)
-        
-        let aiReply =  dtta.gpt
-        aiReply = aiReply.replace(/“/g, '"').replace(/”/g, '"');
-        console.log(aiReply); // Should output "object"
-        try{
-          console.log('sending quiz')
-          console.log(aiReply)
-       aiReply = JSON5.parse(aiReply)
-        }
-        catch(e){
-          console.log(' ')
-          console.log(' --------------- ')
-          console.log(' ')
-          console.log(e)
-          m.react("❌")
-          global.db.data.chats[m.chat].quiz.loading =false
-        }
-        
-        global.db.data.chats[m.chat].quiz.historico.push({
-  "role": "user",
-  "content": `PERGUNTA FEITA E ESSE TEMA NAO DEVE SER REPITIDO: ${global.db.data.chats[m.chat].quiz.Pergunta}`
-});
+
+ async function getRobot(messagem) { 
+   
+ 
+  // Get the conversation history from your global structure
+  const conversationHistory = global.db.data.chats[m.chat].gpt.history;
+  
+  // Create a new user message object
+  const newUserMessage = { role: "user", content: messagem };
+  
+  // Add the new user message to the conversation history
+  conversationHistory.push(newUserMessage);
+  try {
+      m.react('💿')
+      const response = await fetch(baseUrl, {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+              conversation: conversationHistory,
+              question: messagem,
+          }),
+      });
+      if (!response.ok) {
+          throw new Error('Network response was not ok ' + response.statusText);
+      }
+      
+
+      const data = await response.json();
+
+      const assistantResponse = data.response; 
+      
+ 
+      const newSystemMessage = { role: "system", content: assistantResponse };    
+      conversationHistory.push(newSystemMessage);
+      try{
+        console.log('sending quiz')
+        console.log(assistantResponse)
+     aiReply = JSON5.parse(assistantResponse)
+      }
+      catch(e){
+        console.log(' ')
+        console.log(' --------------- ')
+        console.log(' ')
+        console.log(e)
+        m.react("❌")
+        global.db.data.chats[m.chat].quiz.loading =false
+      }
+
+      global.db.data.chats[m.chat].quiz.historico.push({
+        "role": "user",
+        "content": `PERGUNTA FEITA E ESSE TEMA NAO DEVE SER REPITIDO: ${global.db.data.chats[m.chat].quiz.Pergunta}`
+      });
+         m.react('📀')
+         console.log('question added')
+         global.db.data.chats[m.chat].quiz.pergunta = aiReply
+
+         
 
 
 console.log('question added')
@@ -375,17 +400,21 @@ console.log('porra')
     // If the user attempts to ask a question too soon, provide a warning
     const remainingTime = delayBetweenQuestions - timeDifference;
     
+
     const remainingTimeInSeconds = Math.ceil(remainingTime / 1000);
-await m.reply(` ━━━━━━━━━⬣ 💀 ⬣━━━━━━━━
-
-🕰️🕯️ 𝓐𝓰𝓾𝓪𝓻𝓭𝓪 𝓹𝓸𝓻 𝓮𝓽𝓮𝓻𝓷𝓸𝓼 ${remainingTimeInSeconds} 𝓼𝓮𝓰𝓾𝓷𝓭𝓸𝓼, 𝓪𝓷𝓽𝓮𝓼 𝓺𝓾𝓮 𝓽𝓾𝓪 𝓹𝓻𝓸𝔁𝓲𝓶𝓪 𝓹𝓮𝓻𝓰𝓾𝓷𝓽𝓪 𝓸𝓾𝓼𝓮 𝓹𝓮𝓻𝓽𝓾𝓻𝓫𝓪𝓻 𝓸 𝓻𝓮𝓹𝓸𝓾𝓼𝓸 𝓶𝓪𝓬𝓪𝓫𝓻𝓸 𝓭𝓮𝓼𝓽𝓮 𝓭𝓲𝓪𝓵𝓸𝓰𝓸.
 
 
- ━━━━━━━━━⬣ ${vs} ⬣━━━━━━━━`);
+    const timing  = global.db.data.chats[m.chat].language === 'en' ? 
+    `> [!] 𝙷𝚎𝚢 𝚔𝚒𝚍𝚍𝚘, 𝚢𝚘𝚞'𝚛𝚎 𝚐𝚘𝚒𝚗' 𝚝𝚘𝚘 𝚏𝚊𝚜𝚝. 𝚈𝚘𝚞'𝚛𝚎 𝚜𝚎𝚗𝚍𝚒𝚗𝚐 𝚝𝚘𝚘 𝚖𝚊𝚗𝚢 𝚙𝚊𝚌𝚔𝚎𝚝𝚜 𝚝𝚘 𝚝𝚑𝚎 𝚑𝚘𝚜𝚝 𝚊𝚗𝚍 𝚜𝚝𝚊𝚗𝚍𝚒𝚗𝚐 𝚝𝚑𝚎𝚛𝚎 𝚠𝚒𝚝𝚑 𝟷𝟶𝟶% 𝚕𝚘𝚜𝚜. 𝚁𝚎𝚕𝚊𝚡 𝚔𝚒𝚍, 𝚊𝚗𝚍 𝚠𝚊𝚒𝚝 𝚊𝚋𝚘𝚞𝚝 ${remainingTimeInSeconds} 𝚜𝚎𝚌𝚘𝚗𝚍𝚜`
+    :
+    `> [!] 𝙴𝚒, 𝚐𝚊𝚛𝚘𝚝𝚘, 𝚟𝚘𝚌𝚎 𝚎𝚜𝚝𝚊 𝚒𝚗𝚍𝚘 𝚛𝚊𝚙𝚒𝚍𝚘 𝚍𝚎𝚖𝚊𝚒𝚜. 𝙴𝚜𝚝𝚊 𝚎𝚗𝚟𝚒𝚊𝚗𝚍𝚘 𝚖𝚞𝚒𝚝𝚘𝚜 𝚙𝚊𝚌𝚘𝚝𝚎𝚜 𝚙𝚊𝚛𝚊 𝚘 𝚑𝚘𝚜𝚝 𝚎 𝚏𝚒𝚌𝚊𝚗𝚍𝚘 𝚕𝚊 𝚌𝚘𝚖 𝟷𝟶𝟶% 𝚍𝚎 𝚙𝚎𝚛𝚍𝚊. 𝚁𝚎𝚕𝚊𝚡𝚊, 𝚐𝚊𝚛𝚘𝚝𝚘, 𝚎 𝚎𝚜𝚙𝚎𝚛𝚊 𝚌𝚎𝚛𝚌𝚊 𝚍𝚎 ${remainingTimeInSeconds} 𝚜𝚎𝚐𝚞𝚗𝚍𝚘𝚜.`
+        return m.reply(timing)´
+
+    
   } 
   else {
     console.log(global.db.data.chats[m.chat].quiz.pergunta)
-    m.react('🌓')
+    m.react('💿')
         console.log('1 🦇')
     const { Pergunta, XP,Pontos, Money, Opcoes, Resposta, Motivo } =     global.db.data.chats[m.chat].quiz.pergunta
     console.log('2 🦇')
@@ -413,16 +442,14 @@ await m.reply(` ━━━━━━━━━⬣ 💀 ⬣━━━━━━━━
     }
     // Send the question
  
-    await m.reply(`
-╭━━━『 ${selectedCategory} 』━━━⬣
-┃
-┃ ${Pergunta}
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-
-${optionsString}
-
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
-${global.db.data.chats[m.chat].quiz.modo== true ? "╰━━━━━━⬣⬣━━━━━━" : "╰━━━━━━━━━━━━━━━━━━⬣"}`);
+    await m.reply(`$ ./quiz.py -c ${selectedCategory} 
+> ‎ 
+> [*] ${Pergunta}
+> ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+> ${optionsString}
+> ‎ 
+> ‎  
+> >>EOF<<`);
 
     // Update the last question time after sending a new question
     
@@ -457,16 +484,14 @@ ${global.db.data.chats[m.chat].quiz.modo== true ? "╰━━━━━━⬣⬣�
     }
     // Send the question
   
-    await m.reply(`
-╭━━━『 ${selectedCategory} 』━━━⬣
-┃
-┃ ${Pergunta}
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-
-${optionsString}
-
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
-${global.db.data.chats[m.chat].quiz.modo== true ? "╰━━━━━━⬣⬣━━━━━━" : "╰━━━━━━━━━━━━━━━━━━⬣"}`);
+    await m.reply(`$ ./quiz.py -c ${selectedCategory} 
+> ‎ 
+> [*] ${Pergunta}
+> ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+> ${optionsString}
+> ‎ 
+> ‎  
+> >>EOF<<`);
 
     // Update the last question time after sending a new question
     
@@ -490,16 +515,14 @@ ${global.db.data.chats[m.chat].quiz.modo== true ? "╰━━━━━━⬣⬣�
     global.db.data.chats[m.chat].quiz.perguntaAndamento = true
     
     
-    let qid = await m.reply(`
-╭━━━『 ${selectedCategory} 』━━━⬣
-┃
-┃ ${Pergunta}
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-
-${optionsString}
-
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
-${global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍𝚘 𝙲𝚘𝚖𝚙𝚎𝚝𝚒𝚝𝚒𝚟𝚘_ ⬣━━━━━━" : "╰━━━━━━━━━━━━━━━━━━⬣"}`);
+    let qid = await m.reply(`$ ./quiz.py -c ${selectedCategory} 
+> ‎ 
+> [*] ${Pergunta}
+> ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+> ${optionsString}
+> ‎ 
+> ‎  
+> >>EOF<<`);
 
  // Update the current question and answer
     global.db.data.chats[m.chat].quiz= {
@@ -544,17 +567,17 @@ ${global.quizxp[m.chat].modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍�
   global.db.data.chats[m.chat].quiz.perguntaAndamento = true
   
   
-   let qid = await m.reply(`
-╭━━━『 ${selectedCategory} 』━━━⬣
-┃
-┃ ${Pergunta}
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
 
-${optionsString}
 
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 📜
-${global.db.data.chats[m.chat].quiz.modo== true ? "╰━━━━━━⬣ _𝙼𝚘𝚍𝚘 𝙲𝚘𝚖𝚙𝚎𝚝𝚒𝚝𝚒𝚟𝚘_ ⬣━━━━━━" : "╰━━━━━━━━━━━━━━━━━━⬣"}
-      `);
+  
+   let qid = await m.reply(`$ ./quiz.py -c ${selectedCategory} 
+> ‎ 
+> [*] ${Pergunta}
+> ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+> ${optionsString}
+> ‎ 
+> ‎  
+> >>EOF<<`);
 
 global.db.data.chats[m.chat].quiz = {
         ...global.db.data.chats[m.chat].quiz,
@@ -587,34 +610,73 @@ global.db.data.chats[m.chat].quiz = {
   
 
  
-    }
-})
 
+         
+return !0
+  } catch (error) {
+      console.log('erro !!!!! ')
+      console.log('///////////////// ')
+      console.log(error)
+    sendSystemErrorAlert(language);
+  }
+   
+}
+
+
+
+getRobot(global.db.data.chats[m.chat].quiz.historico)
+
+  
 
 }
     else if(text === "r"){
       
       
      if(!global.db.data.chats[m.chat].quiz.pergunta){
-        await m.reply(`
-╭━━━━━━━━━⬣
-💀 𝔈𝔰𝔱𝔢 𝔧𝔬𝔤𝔬 𝔧á 𝔣𝔬𝔦 𝔢𝔫𝔠𝔢𝔯𝔯𝔞𝔡𝔬
-╰━━━━━━━━━⬣
-        `)
+
+      const quizEnd = global.db.data.chats[m.chat].language === 'en' ? 
+      `┌──[robot@bytesec]──[~/ϙυιȥ] 
+└─► get_status -e
+> ‎ 
+[!] ᴛʜɪꜱ ɢᴀᴍᴇ ᴀʟʀᴇᴀᴅʏ ᴇɴᴅᴇᴅ, ᴋɪᴅ
+> ‎ 
+` : 
+      `┌──[robot@bytesec]──[~/ϙυιȥ] 
+└─► get_status -e
+> ‎ 
+[!] ᴇꜱꜱᴇ ᴊᴏɢᴏ ᴊᴀ ᴀᴄᴀʙᴏᴜ, ɢᴀʀᴏᴛᴏ
+> ‎ 
+`
+
+
+        await m.reply(quizEnd)
       }
   
      else if(global.db.data.chats[m.chat].quiz.cp)
      
       {
-      await m.reply(`
-╭━━━━━━━━━⬣
-💀 𝐑𝐞𝐬𝐩𝐨𝐬𝐭𝐚: ${global.db.data.chats[m.chat].quiz.ca}
-┗─┅──┅❖ 
 
-${global.db.data.chats[m.chat].quiz.cm}
+        const getAnswer = global.db.data.chats[m.chat].language === 'en' ? 
+        `┌──[robot@bytesec]──[~/ϙυιȥ] 
+└─► get_reply -n
 
-╰━━━━━━━━━━━━━━━━━━⬣
-      `)
+[+] 𝙲𝙾𝚁𝚁𝙴𝙲𝚃 𝙾𝙿𝚃𝙸𝙾𝙽: ${global.db.data.chats[m.chat].quiz.ca} 
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+> ‎ 
+> ${global.db.data.chats[m.chat].quiz.cm}
+> ‎` : 
+        `┌──[robot@bytesec]──[~/ϙυιȥ] 
+└─► get_reply -n
+
+[+] 𝙾𝙿𝙲𝙰𝙾 𝙲𝙾𝚁𝚁𝙴𝚃𝙰: ${global.db.data.chats[m.chat].quiz.ca} 
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+> ‎ 
+> ${global.db.data.chats[m.chat].quiz.cm}
+> ‎`
+
+
+      await m.reply(getAnswer)
+      
           global.db.data.chats[m.chat].quiz.perguntaAndamento = false
           global.db.data.chats[m.chat].quiz.pergunta = {}
       
@@ -661,7 +723,8 @@ const users = participants.map((u) => conn.decodeJid(u.id));
   console.log(players);
   console.log("acima e topjogadores")
   let formattedMessage = `
-━━━━━━━━━⬣📜 𝔓𝔩𝔞𝔠𝔞𝔯 ⬣━━━━━━━━ 
+┌──[robot@bytesec]──[~/ϙυιȥ] 
+└─► cat ranking.md
 `;
 let mentionedId = [];
 
@@ -675,10 +738,10 @@ let mentionedId = [];
     const { pontos, name } = players[key];
     mentionedId.push(key);
 
-    formattedMessage += `
-🪦 @${key.split('@')[0]} 
-🪶 ${pontos} _Pontos_
-   ─┅──┅❖ ❖─┅──┅
+    formattedMessage += `. . . . . . . . . . . . . 
+> [+] @${key.split('@')[0]} 
+> 𝛌 ${pontos} ${global.db.data.chats[m.chat].language === 'en' ? '𝙥𝙤𝙞𝙣𝙩𝙨' : '𝙥𝙤𝙣𝙩𝙤𝙨'}
+
 `;
   })
 
@@ -695,38 +758,6 @@ mentionedId = [];
   
   players = {}
 
-/*
-Object.entries(players).forEach(([group, players]) => {
-  sortedPlayers = Object.entries(players)
-    .sort(([, a], [, b]) => b.xp - a.xp) // Sort by XP level in descending order
-    .slice(0, 5) // Take only the first 5 players
-    .map(
-      ([number, { xp, name }]) => {
-        const userId = number.split('@')[0];
-        mentionIds.push(number); // Add each number to the mentionIds array
-        return `
-🪦 @${key} | ${name}
-🪶 ${xp} _Pontos_
-   ─┅──┅❖ ❖─┅──┅`;
-      }
-    )
-    .join('\n');
-});
-
-// Use mentionIds array as needed
-console.log(mentionIds);
-
-    formattedMessage += `
-${sortedPlayers}
-━━━━━━━━━⬣ 🌒 ${vs} ⬣━━━━━━━━ 
-`;
-
-  
-  
-  
-    conn.sendMessage(m.chat, { text: formattedMessage, mention: mentionIds});
-    
-*/
 
   }
 
@@ -738,18 +769,38 @@ else {
     .map((category, index) => `┃ ${usedPrefix + command} ${index + 1} - ${category}`)
     .join('\n');
 
-  throw `
-╭━━━『𝐂𝐮𝐫𝐢𝐨𝐬𝐢𝐝𝐚𝐝𝐞𝐬』━━━⬣
-┃ 
-┃ 🥀🦇 𝐃𝐢𝐠𝐚-𝐦𝐞 𝐪𝐮𝐚𝐥 𝐭ó𝐩𝐢𝐜𝐨 𝐣𝐚𝐳 
-┃ 𝐞𝐦 𝐬𝐞𝐮𝐬 𝐩𝐞𝐧𝐬𝐚𝐦𝐞𝐧𝐭𝐨𝐬 
-┃ 𝐜𝐮𝐫𝐢𝐨𝐬𝐨𝐬
-┃
+    const helpMenu = global.db.data.chats[m.chat].language === 'en' ?
+    `┌──[ BYΓΞSΞC ]─[~]─[${date}] 
+ └─ $ node quiz.mjs --help
+> . . . . . . . . . . . . . . . . . . . . . . .
+> 𝘌𝘪, 𝘨𝘢𝘳𝘰𝘵𝘰. 𝘘𝘶𝘦𝘳 𝘤𝘰𝘭𝘰𝘤𝘢𝘳 𝘴𝘦𝘶𝘴 𝘤𝘰𝘯𝘩𝘦𝘤𝘪𝘮𝘦𝘯𝘵𝘰𝘴 à 𝘱𝘳𝘰𝘷𝘢?
+> 𝘌𝘯𝘵ã𝘰, 𝘦𝘴𝘤𝘰𝘭𝘩𝘦 𝘶𝘮 𝘯ú𝘮𝘦𝘳𝘰 𝘥𝘢𝘴 𝘤𝘢𝘵𝘦𝘨𝘰𝘳𝘪𝘢𝘴 𝘢𝘣𝘢𝘪𝘹𝘰 𝘦 𝘴𝘦 𝘫𝘰𝘨𝘢. 
+> ‎ 
+> 𝘚𝘦 𝘢 𝘴𝘶𝘢 𝘮𝘦𝘯𝘵𝘦 𝘦𝘴𝘵𝘪𝘷𝘦𝘳 𝘦𝘮 𝘣𝘳𝘢𝘯𝘤𝘰 𝘦 𝘷𝘰𝘤ê 𝘱𝘳𝘦𝘤𝘪𝘴𝘢𝘳 𝘥𝘢 𝘳𝘦𝘴𝘱𝘰𝘴𝘵𝘢, é 𝘴ó 𝘶𝘴𝘢𝘳 𝘰 𝘤𝘰𝘮𝘢𝘯𝘥𝘰 '.𝘲𝘶𝘪𝘻 𝘳'. 𝘔𝘢𝘴, 𝘤𝘰𝘯𝘷𝘦𝘯𝘩𝘢𝘮𝘰𝘴, 𝘥𝘦𝘴𝘪𝘴𝘵𝘪𝘳 𝘥𝘦 𝘱𝘦𝘯𝘴𝘢𝘳 é 𝘶𝘮𝘢 𝘢𝘳𝘵𝘦 𝘲𝘶𝘦 𝘱𝘰𝘶𝘤𝘰𝘴 𝘥𝘰𝘮𝘪𝘯𝘢𝘮.
+> ‎ 
+[*] ᴄᴀʀʀᴇɢᴀɴᴅᴏ . . . .
+━━━━━━━━━━━━━━━━━━━━━━━━
 ${categoryList}
-┃
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛| ${vs}
-╰━━━━━━━━━━━━━━━━━━⬣`;
+> ‎ 
+> >>EOF<<` 
+    :
+     `┌──[ BYΓΞSΞC ]─[~]─[${date}] 
+└─ $ node quiz.mjs --help
+> . . . . . . . . . . . . . . . . . . . . . . .
+> 𝘏𝘦𝘺, 𝘬𝘪𝘥. 𝘞𝘢𝘯𝘵 𝘵𝘰 𝘱𝘶𝘵 𝘺𝘰𝘶𝘳 𝘬𝘯𝘰𝘸𝘭𝘦𝘥𝘨𝘦 𝘵𝘰 𝘵𝘩𝘦 𝘵𝘦𝘴𝘵? 
+> 𝘛𝘩𝘦𝘯 𝘱𝘪𝘤𝘬 𝘢 𝘯𝘶𝘮𝘣𝘦𝘳 𝘧𝘳𝘰𝘮 𝘵𝘩𝘦 𝘤𝘢𝘵𝘦𝘨𝘰𝘳𝘪𝘦𝘴 𝘣𝘦𝘭𝘰𝘸 𝘢𝘯𝘥 𝘥𝘪𝘷𝘦 𝘪𝘯.  
+> ‎ 
+> 𝘐𝘧 𝘺𝘰𝘶𝘳 𝘮𝘪𝘯𝘥 𝘪𝘴 𝘣𝘭𝘢𝘯𝘬 𝘢𝘯𝘥 𝘺𝘰𝘶 𝘯𝘦𝘦𝘥 𝘵𝘩𝘦 𝘢𝘯𝘴𝘸𝘦𝘳, 𝘫𝘶𝘴𝘵 𝘶𝘴𝘦 𝘵𝘩𝘦 𝘤𝘰𝘮𝘮𝘢𝘯𝘥 '.𝘲𝘶𝘪𝘻 𝘳'. 𝘉𝘶𝘵 𝘭𝘦𝘵’𝘴 𝘣𝘦 𝘩𝘰𝘯𝘦𝘴𝘵, 𝘨𝘪𝘷𝘪𝘯𝘨 𝘶𝘱 𝘰𝘯 𝘵𝘩𝘪𝘯𝘬𝘪𝘯𝘨 𝘪𝘴 𝘢𝘯 𝘢𝘳𝘵 𝘵𝘩𝘢𝘵 𝘧𝘦𝘸 𝘮𝘢𝘴𝘵𝘦𝘳.
+> ‎ 
+[*] ʟᴏᴀᴅɪɴɢ. . . .
+━━━━━━━━━━━━━━━━━━━━━━━━
+${categoryList}
+> ‎ 
+> >>EOF<<
+ `
+
+ 
+   throw helpMenu
 }
 }
 }

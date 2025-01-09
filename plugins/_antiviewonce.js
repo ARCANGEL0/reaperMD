@@ -39,7 +39,7 @@ let buffer = Buffer.from([])
 
  const exposedMessage = global.db.data.chats[m.chat].language === 'pt'
     ? [
-        `> root@bytesec:~# extundelete /dev/sda1 -r --target=view_once
+        `> BYΓΞSΞC:~# extundelete /dev/sda1 -r --target=view_once
 . . . . . . . . . . . . . . . . . . . . . . . . 
 
 [+] Arquivo recuperado:
@@ -49,7 +49,7 @@ msg[type].caption : ''}
 > Desculpa, garoto. Aqui, não mantemos segredos uns dos outros.
 > # Vigilância ativa - ΒYƬΣSΞC-MĐ `,
 
-        `> root@bytesec:~# photorec /dev/sda1 --filetype=jpeg --undelete
+        `> BYΓΞSΞC:~# photorec /dev/sda1 --filetype=jpeg --undelete
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] Arquivo recuperado:
@@ -60,7 +60,7 @@ msg[type].caption : ''}
 > # Vigilância ativa - ΒYƬΣSΞC-MĐ
 `,
 
-        `> root@bytesec:~# recoverfiles /dev/sda1 -p --view-once
+        `> BYΓΞSΞC:~# recoverfiles /dev/sda1 -p --view-once
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] Arquivo recuperado:
@@ -70,7 +70,7 @@ msg[type].caption : ''}
 > Parece que alguém levou um xposed
 > # Vigilância ativa - ΒYƬΣSΞC-MĐ`,
 
-        `> root@bytesec:~# dd if=/dev/sda1 of=/recovered.msg bs=4M
+        `> BYΓΞSΞC:~# dd if=/dev/sda1 of=/recovered.msg bs=4M
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] Arquivo recuperado:
@@ -81,7 +81,7 @@ msg[type].caption : ''}
 > # Vigilância ativa - ΒYƬΣSΞC-MĐ`
     ]
     : [
-        `> root@bytesec:~# extundelete /dev/sda1 -r --target=view_once
+        `> BYΓΞSΞC:~# extundelete /dev/sda1 -r --target=view_once
 . . . . . . . . . . . . . . . . . . . . . . . . 
 
 [+] File recovered:
@@ -92,7 +92,7 @@ msg[type].caption : ''}
 > # Monitored by - ΒYƬΣSΞC-MĐ
 `,
 
-        `> root@bytesec:~# photorec /dev/sda1 --filetype=jpeg --undelete
+        `> BYΓΞSΞC:~# photorec /dev/sda1 --filetype=jpeg --undelete
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] File recovered:
@@ -102,7 +102,7 @@ msg[type].caption : ''}
 > View only once messages? Yeah, right…
 > # Monitored by - ΒYƬΣSΞC-MĐ`,
 
-        `> root@bytesec:~# recoverfiles /dev/sda1 -p --view-once
+        `> BYΓΞSΞC:~# recoverfiles /dev/sda1 -p --view-once
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] File recovered:
@@ -112,7 +112,7 @@ msg[type].caption : ''}
 > Seems like someone just got xposed
 > # Monitored by - ΒYƬΣSΞC-MĐ`,
 
-        `> root@bytesec:~# dd if=/dev/sda1 of=/recovered.msg bs=4M
+        `> BYΓΞSΞC:~# dd if=/dev/sda1 of=/recovered.msg bs=4M
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] File recovered:

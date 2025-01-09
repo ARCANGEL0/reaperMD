@@ -1189,7 +1189,7 @@ const isBotAdminNn = botTt2?.admin === "admin" || false
 
 if (global.db.data.chats[id].language === 'pt') {
     text = `
-> root@bytesec:~$ journalctl --access-log
+> BYΓΞSΞC:~$ journalctl --access-log
 > --------------
 
 [+] NOVO LOGIN
@@ -1208,7 +1208,7 @@ if (global.db.data.chats[id].language === 'pt') {
     `;
 } else if (global.db.data.chats[id].language === 'en') {
     text = `
-> root@bytesec:~$ journalctl --access-log
+> BYΓΞSΞC:~$ journalctl --access-log
 > ---------------
 
 [+] NEW LOGIN
@@ -1337,7 +1337,7 @@ if (!msg) return
 if(global.db.data.chats[msg.chat].ignored && global.db.data.chats[msg.chat].ignored.includes(id)) return;
 if (!msg?.isGroup) return
 let lang = global.db.data.chats[msg.chat].language
-const antideleteMessage = `> root@bytesec:~# extundelete /dev/sda1 -c
+const antideleteMessage = `> BYΓΞSΞC:~# extundelete /dev/sda1 -c
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] ${lang == 'pt' ? 'Mensagem recuperada' : 'Message recovered'}:
@@ -1347,7 +1347,7 @@ const antideleteMessage = `> root@bytesec:~# extundelete /dev/sda1 -c
 > ‎ 
 | ${lang == 'pt' ? 'Adicionado em' : 'Added at'}: /tmp/chats.log
 | 
-> root@bytesec:~# _`.trim();
+> BYΓΞSΞC:~# _`.trim();
 
 let DELETEMESSAGE = await conn.sendMessage(msg.chat, {text: antideleteMessage, mentions: [participant]}, {quoted: msg})
 
