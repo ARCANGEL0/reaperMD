@@ -351,7 +351,7 @@ Evite repetir as mesmas perguntas`
 
 
 
-      message.push({
+      messagem.push({
         "role": "assistant",
         "content": `${aiReply}`
       });
