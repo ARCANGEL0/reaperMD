@@ -77,34 +77,32 @@ export function before(m, { conn , isOwner, nivel, participants}) {
       // Define messages based on language
       const messages = {
           en: {
-              levelUpDetected: '[+] LEVEL UP DETECTED!',
-              user: `[ USER: ${username} ]`,
-              level: `[ LEVEL: ${previousLevel}.1 ❱❱❱ v${currentLevel}.0 ]`,
-              systemLog: `[+] SYSTEM LOG: [${formattedDate}]`,
-              protocolInitiated: '[*] Level Up Protocol Initiated... [LOADING]',
-              authenticationSuccess: `[*] Transaction received of ${coins} ʙʏᴛᴇᴄᴏɪɴꜱ [SUCCESS]`,
-              ethereum: `[*] Stake of ${eth} ᴇᴛʜᴇʀᴇᴜᴍ earned on cryptowallet [SUCCESS]`,
-              newCommandsUnlocked: '[!] NEW COMMANDS UNLOCKED:',
+              levelUpDetected: '[+] LΞѴΞL UP DΞΓΞCTΞD!',
+              user: `[ 𝚄̷𝚂̷𝙴̷𝚁̷: ${username} ]`,
+              level: `[ 𝙻̷𝙴̷𝚅̷𝙴̷𝙻̷: ${previousLevel}.1 ❱❱❱ v${currentLevel}.0 ]`,
+              protocolInitiated: '[LOADING]',
+              authenticationSuccess: `[+] ${coins} ʙʏᴛᴇᴄᴏɪɴꜱ ʀᴇᴄᴇɪᴠᴇᴅ ɪɴ ʏᴏᴜʀ ʙ̺ʏ̺ᴡ̺ᴀ̺ʟ̺ʟ̺ᴇ̺ᴛ̺ [SUCCESS]`,
+              ethereum: `[+] ${eth} ᴇᴛʜᴇʀᴇᴜᴍ ʀᴇᴄᴇɪᴠᴇᴅ ɪɴ ʏᴏᴜʀ ʙ̺ʏ̺ᴡ̺ᴀ̺ʟ̺ʟ̺ᴇ̺ᴛ̺ [SUCCESS]`,
+              newCommandsUnlocked: '[!] ɴᴇᴡ ᴄᴏᴍᴍᴀɴᴅꜱ ᴜɴʟᴏᴄᴋᴇᴅ:',
               commandsList: '┏──────────────\n',
               commandsEnd: '┗──────────────\n',
               eof: '> <<EOF',
-              separator: '> ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊',
-              newStatus: 'NEW STATUS: '
+              separator: '> ━━━━━━━━━━━━━━━━━━━━━━━━',
+              newStatus: 'ɴᴇᴡ ʀᴀɴᴋ: '
           },
           pt: {
-              levelUpDetected: '[+] LVL UP DETECTADO!',
-              user: `[ USUÁRIO: ${username} ]`,
-              level: `[ NÍVEL: ${previousLevel}.1 ❱❱❱ v${currentLevel}.0 ]`,
-              systemLog: `[+] REGISTRO DO SISTEMA: [${formattedDate}]`,
-              protocolInitiated: '[*] Protocolo de Ranking Iniciado... [CARREGANDO]',
-              authenticationSuccess: `[*] Transferência recebida de ${coins} ʙʏᴛᴇᴄᴏɪɴꜱ [SUCESSO]`,
-            ethereum: `[*] Stake de ${eth} ᴇᴛʜᴇʀᴇᴜᴍ disponível na cryptowallet [SUCCESSO]`,
-              newCommandsUnlocked: '[!] NOVOS COMANDOS DESBLOQUEADOS:',
+              levelUpDetected: '[+] LΞѴΞL UP DΞΓΞCTАDѲ!',
+              user: `[ 𝚄̷𝚂̷𝚄̷𝙰̷𝚁̷𝙸̷𝙾̷: ${username} ]`,
+              level: `[ 𝙽̷𝙸̷𝚅̷𝙴̷𝙻̷: ${previousLevel}.1 ❱❱❱ v${currentLevel}.0 ]`,
+              protocolInitiated: '[CARREGANDO]',
+              authenticationSuccess: `[+] ${coins} ʙʏᴛᴇᴄᴏɪɴꜱ ʀᴇᴄᴇʙɪᴅᴏꜱ ɴᴀ ʙ̺ʏ̺ᴡ̺ᴀ̺ʟ̺ʟ̺ᴇ̺ᴛ̺ [SUCESSO]`,
+            ethereum: `[+] ${eth} ᴇᴛʜᴇʀᴇᴜᴍ ʀᴇᴄᴇʙɪᴅᴏꜱ ɴᴀ ʙ̺ʏ̺ᴡ̺ᴀ̺ʟ̺ʟ̺ᴇ̺ᴛ̺ [SUCCESSO]`,
+              newCommandsUnlocked: '[!] ɴᴏᴠᴏꜱ ᴄᴏᴍᴀɴᴅᴏꜱ ᴅᴇꜱʙʟᴏϙᴜᴇᴀᴅᴏꜱ:',
               commandsList: '┏──────────────\n',
               commandsEnd: '┗──────────────\n',
-              eof: '> <<EOF',
-              separator: '> ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊',
-              newStatus: 'NOVO STATUS: '
+              eof: '> >>EOF<<',
+              separator: '> ━━━━━━━━━━━━━━━━━━━━━━━━',
+              newStatus: 'ɴᴏᴠᴏ ʀᴀɴᴋ: '
           }
       };
   
@@ -123,22 +121,21 @@ export function before(m, { conn , isOwner, nivel, participants}) {
       const ethereumMessage = eth ? `${messages[userLanguage].ethereum}\n` : '';
   
     let textin = `
-  $ ./upgrade
-  ${messages[userLanguage].separator}
-  ${messages[userLanguage].levelUpDetected}
-  [==============================]
-  ${messages[userLanguage].user}${statusMessage ? `\n[ ${statusMessage} ]\n` : ''}
-  ${messages[userLanguage].level}
-   [==============================]
+root@bytesec: #~ usermod -aG id
+
+${messages[userLanguage].levelUpDetected}
+. . . . . . . . . . . . . . . . . . . .
+${messages[userLanguage].user}${statusMessage ? `\n[ ${statusMessage} ]\n` : ''}
+${messages[userLanguage].level}
+. . . . . . . . . . . . . . . . . . . .
   
-  ${messages[userLanguage].systemLog.replace('${formattedDate}', formattedDate)}
-  ${messages[userLanguage].protocolInitiated}
-  ${messages[userLanguage].authenticationSuccess}
-  ${ethereumMessage} 
-  ${commandsSection} 
-  ${messages[userLanguage].eof}
-  ${messages[userLanguage].separator}
-  $ _ 
+${messages[userLanguage].protocolInitiated}
+${messages[userLanguage].authenticationSuccess}
+${ethereumMessage} 
+${commandsSection} 
+${messages[userLanguage].eof}
+> ‎ 
+root@bytesec: #~  _ 
       `;
 
 
