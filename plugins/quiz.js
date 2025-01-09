@@ -351,7 +351,7 @@ Evite repetir as mesmas perguntas`
       try{
         console.log('sending quiz')
         console.log(assistantResponse)
-     aiReply = JSON5.parse(assistantResponse)
+  let   aiReply = JSON5.parse(assistantResponse)
       }
       catch(e){
         console.log(' ')
