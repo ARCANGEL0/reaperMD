@@ -323,17 +323,10 @@ Evite repetir as mesmas perguntas`
  
  console.log('begin quiz')
 
- async function getRobot(messagem) { 
+ async function getRobot(messagem,category) { 
    
  
-  // Get the conversation history from your global structure
-  const conversationHistory = global.db.data.chats[m.chat].gpt.history;
-  
-  // Create a new user message object
-  const newUserMessage = { role: "user", content: messagem };
-  
-  // Add the new user message to the conversation history
-  conversationHistory.push(newUserMessage);
+ 
   try {
       m.react('💿')
       const response = await fetch('http://89.117.96.108:8330/aiQuiz', {
@@ -342,8 +335,8 @@ Evite repetir as mesmas perguntas`
               'Content-Type': 'application/json',
           },
           body: JSON.stringify({
-              conversation: conversationHistory,
-              question: messagem,
+              conversation: messagem,
+              category: category,
           }),
       });
       if (!response.ok) {
@@ -355,9 +348,6 @@ Evite repetir as mesmas perguntas`
 
       const assistantResponse = data.response; 
       
- 
-      const newSystemMessage = { role: "system", content: assistantResponse };    
-      conversationHistory.push(newSystemMessage);
       try{
         console.log('sending quiz')
         console.log(assistantResponse)
@@ -372,6 +362,10 @@ Evite repetir as mesmas perguntas`
         global.db.data.chats[m.chat].quiz.loading =false
       }
 
+
+
+
+
       global.db.data.chats[m.chat].quiz.historico.push({
         "role": "user",
         "content": `PERGUNTA FEITA E ESSE TEMA NAO DEVE SER REPITIDO: ${global.db.data.chats[m.chat].quiz.Pergunta}`
@@ -381,11 +375,6 @@ Evite repetir as mesmas perguntas`
          global.db.data.chats[m.chat].quiz.pergunta = aiReply
 
          
-
-
-console.log('question added')
-global.db.data.chats[m.chat].quiz.pergunta = aiReply
-  ; // Current time in seconds
 
   if(global.db.data.chats[m.chat].quiz.modo==false){
     console.log('Modo xp false')
@@ -627,7 +616,7 @@ return !0
 
 
 
-getRobot(global.db.data.chats[m.chat].quiz.historico)
+getRobot(global.db.data.chats[m.chat].quiz.historico, categories[m.text -1])
 
   
 
