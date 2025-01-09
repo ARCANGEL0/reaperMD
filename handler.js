@@ -453,7 +453,7 @@ let txtt = language === "pt"
 ┌──[root@arcangelo]──[~] 
 └─► _`;
   
-
+return m.reply(txtt)
 
 }
 if(!isOwner && (m.quoted?.sender || m.mentionedJid) == global.criador  &&
