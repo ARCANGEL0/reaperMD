@@ -271,25 +271,7 @@ Evite repetir as mesmas perguntas`
 
     {
         "role": "user",
-        "content": `Agora siga as instrucoes que te foram dada  e crie o objeto
-        JSON de uma pergunta com os MESNMOS CAMPOS/PROPRIEDADES no exemplo!!!
-               { 
-         Pergunta: "Pergunta dentro do TEMA DA CATEGORIA",
-    Opcoes: {
-      A: "Opcao",
-      B: "Opcao",
-      C: "Opcao",
-      D: "Opcao"
-    },
-    Pontos: "Valor de acordo com a dificuldade",
-     Money: "Valor por dificuldade",
-     XP: "Valor por dificuldade",
-    Resposta: "Opcao certa A, B, C ou D",
-    Motivo: "Explicacao detalhada da resposta"
-  }
-  
-        Retorne APENAS UM OBJETO JSON E MAIS NADA!
-        use o " nas propriedades do objeto
+        "content": `Agora siga as instrucoes que te foram dada  e crie o objeto JSON de uma pergunta com os MESNMOS CAMPOS/PROPRIEDADES no exemplo!!! { Pergunta: \"Pergunta dentro do TEMA DA CATEGORIA\", Opcoes: { A: \"Opcao\", B: \"Opcao\", C: \"Opcao\", D: \"Opcao\" }, Pontos: \"Valor de acordo com a dificuldade\", Money: \"Valor por dificuldade\", XP: \"Valor por dificuldade\", Resposta: \"Opcao certa A, B, C ou D\", Motivo: \"Explicacao detalhada da resposta\" } Retorne APENAS UM OBJETO JSON E MAIS NADA! use o \" nas propriedades do objeto. o usuario ira lhe passar a categoria que deseja, e voce deve gerar uma pergunta baseada no IDIOMA da categoria!! Se for SCIENCE, a pergunta deve ser ingles. Se for CIENCIA, a pergunta deve ser portugues. Se for MEDICINE, deve ser em ingles. se for MEDICINA, deve ser em portugues, etc.
        
        ${global.db.data.chats[m.chat].quiz.categoria
         == 'Historia' ? `Unificação do Egito (História Antiga), Revolução
@@ -325,7 +307,10 @@ Evite repetir as mesmas perguntas`
 
  async function getRobot(messagem,category) { 
    
- 
+  messagem.push({
+    "role": "user",
+    "content": `${category}`
+  });
  
   try {
       m.react('💿')
@@ -336,7 +321,7 @@ Evite repetir as mesmas perguntas`
           },
           body: JSON.stringify({
               conversation: messagem,
-              category: category,
+              question: category,
           }),
       });
       if (!response.ok) {
@@ -366,9 +351,9 @@ Evite repetir as mesmas perguntas`
 
 
 
-      global.db.data.chats[m.chat].quiz.historico.push({
-        "role": "user",
-        "content": `PERGUNTA FEITA E ESSE TEMA NAO DEVE SER REPITIDO: ${global.db.data.chats[m.chat].quiz.Pergunta}`
+      message.push({
+        "role": "assistant",
+        "content": `${aiReply}`
       });
          m.react('📀')
          console.log('question added')
