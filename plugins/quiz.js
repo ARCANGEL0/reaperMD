@@ -329,7 +329,7 @@ Evite repetir as mesmas perguntas`
       }
       
 
-      const data = response
+      const data = await response.json()
 
       const assistantResponse = data.response; 
   let aiReply = assistantResponse
