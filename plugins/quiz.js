@@ -335,7 +335,7 @@ Evite repetir as mesmas perguntas`
   conversationHistory.push(newUserMessage);
   try {
       m.react('💿')
-      const response = await fetch(baseUrl, {
+      const response = await fetch('http://89.117.96.108:8330/aiQuiz', {
           method: 'POST',
           headers: {
               'Content-Type': 'application/json',
