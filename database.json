@@ -19373,7 +19373,33 @@
       "spammer": 0,
       "usuariosRoubados": []
     },
-    "558196223094@s.whatsapp.net": {}
+    "558196223094@s.whatsapp.net": {},
+    "249056613925000@lid": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 0,
+      "afkInfo": {
+        "120363312968709293@g.us": {
+          "afkTime": -2,
+          "number": "249056613925000@lid",
+          "afkReason": ""
+        }
+      }
+    }
   },
   "chats": {
     "120363312968709293@g.us": {
@@ -25863,6 +25889,24 @@
           "lastMessageTime": 1736393388460,
           "messageCount": null,
           "pontos": 0
+        },
+        "249056613925000@lid": {
+          "exp": 0,
+          "limit": 0,
+          "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
+          "money": 0,
+          "level": 0,
+          "adm": false,
+          "legendary": false,
+          "banned": false,
+          "adv": 0,
+          "tentativasRoubo": 5,
+          "silenced": false,
+          "maxlevel": false,
+          "cocriador": false,
+          "lastMessageTime": 1736414092151,
+          "messageCount": null,
+          "pontos": 0
         }
       },
       "isBanned": true,
@@ -25917,7 +25961,7 @@
       "name": "Grupo Onde Fingimos Ser Loucos (Ou Não)",
       "desc": "⚠️⚠️⚠️ *PROIBIDO MENORES DE 16* ⚠️⚠️⚠️\n\n🫂 *CHAVE PIX PARA CONTRIBUIÇÃO DE PAGAMENTO DO BOOT: 4399186-9327* *!!!!!!*🫂\n\nRESPEITEM A SI MESMOS MALAFRARIAS!!! \n\n⚠️ *TERMINAMENTE PROIBIDO* 🤚🏻\n\n*DISCUTIR SOBRE POLÍTICA*\n• - *DESRESPEITO*\n• - *FICAR PEDINDO ADM*\n• - *FLOODAR / SPAMMAR* \n• - *IMPORTUNAÇÃO NO PV*\n• - *IMPLICÂNCIA COM MEMBROS*\n• - *DIVULGAR/PROMOVER* _(SEM AUTORIZAÇÃO)_\n• - *SÓ FALAR PUTARIA*_(AQUI É HOSPÍCIO, NÃO PUTEIRO)_\n• - *PRECONCEITO* _(GORDOFOBIA, XENOFOBIA, RACISMO, MACHISMO, HOMOFOBIA, ANTISEMITISMO ETC)_ \n• - *GORE / NAZISMO/ANTISEMITISMO / ISLAMOFOBIA / HENTAI / CP / ZOOFILIA / PORNOGRAFIA /XENOFOBIA*  _(DISCUSSÃO / INCENTIVO / APOLOGIA / MÍDIAS)_\n\n🔊 *NÃO NOS RESPONSABILIZAMOS POR PROBLEMAS ASSOCIADOS À:*❗\n\n• - COMPARTILHAMENTO DE DADOS PESSOAIS\n• - ABRIR ÁUDIO DUVIDOSO E/OU ESTOURADO\n• - LINK DESCONFIÁVEL\n\n⚠️ *MARCAR ADMINISTRADORES QUANDO REGRAS FOREM BURLADAS* ⚠\n\n_\"Já é difícil ter que lidar com as coisas, não vamos destruir o cantinho que a gente tem por favor\"_\n_~Carlos Chazin, 2023_︎\n\n▪️ *BOT interativo entre 00:00 - 12:00* ▪️\n\n🔷 *REDES SOCIAIS DO GRUPO*🔷\n\n🔹 *FACEBOOK:*\n\nGrupo (oficial): https://www.facebook.com/groups/4573794466077903/?ref=share\n\nGrupo (reserva):\nhttps://www.facebook.com/groups/3360052507549701/?ref=share&mibextid=NSMWBT\n\nPágina (oficial): https://www.facebook.com/profile.php?id=100091738707923&mibextid=LQQJ4d\n\n🔹 *INSTAGRAM:*\n\nInstagram.com/onde_fingimos_ser_loucos_ou_n",
       "lastSentTime": 0,
-      "totalMembros": 536,
+      "totalMembros": 535,
       "membros": [
         {
           "id": "64330154430718@lid",
@@ -27464,10 +27508,6 @@
           "admin": null
         },
         {
-          "id": "84881472249907@lid",
-          "admin": null
-        },
-        {
           "id": "236094419427475@lid",
           "admin": null
         },
@@ -28436,7 +28476,8 @@
         "276446039789737@lid": [],
         "20684898070740@lid": [],
         "231193912045601@lid": [],
-        "84881472249907@lid": []
+        "84881472249907@lid": [],
+        "249056613925000@lid": []
       }
     },
     "120363202217134158@g.us": {
@@ -32930,7 +32971,7 @@
           "shields": 0
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 14466,
+          "exp": 15056,
           "limit": 0,
           "role": "",
           "money": 0,
@@ -32948,7 +32989,7 @@
           "pontos": 0
         },
         "5521970385666@s.whatsapp.net": {
-          "exp": 8726,
+          "exp": 9164,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 610,
@@ -32961,7 +33002,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736386909407,
+          "lastMessageTime": 1736414533549,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -32975,7 +33016,7 @@
           "rce": 0
         },
         "351927285125@s.whatsapp.net": {
-          "exp": 1030,
+          "exp": 1043,
           "limit": 660000000000066,
           "role": "𝑵𝒆𝒗𝒆𝒓𝒎𝒐𝒓𝒆 ༒︎\n𝙼𝚎𝚜𝚝𝚛𝚎 𝚍𝚘𝚜 𝚌𝚘𝚛𝚟𝚘𝚜",
           "money": 666000000000000100,
@@ -32988,7 +33029,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736386130520,
+          "lastMessageTime": 1736414168058,
           "messageCount": 1,
           "pontos": 0,
           "tempBan": false,
@@ -33035,7 +33076,7 @@
           "rce": 0
         },
         "558199330656@s.whatsapp.net": {
-          "exp": 461,
+          "exp": 903,
           "limit": 0,
           "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
           "money": 0,
@@ -33048,7 +33089,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736335356335,
+          "lastMessageTime": 1736416355837,
           "messageCount": 1,
           "pontos": 0,
           "usuariosRoubados": [],
@@ -33288,7 +33329,7 @@
           "rce": 0
         },
         "556195667729@s.whatsapp.net": {
-          "exp": 2420,
+          "exp": 2889,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 145,
@@ -33301,7 +33342,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736402145313,
+          "lastMessageTime": 1736415984040,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -33665,7 +33706,7 @@
           "pontos": 0
         },
         "5517992410887@s.whatsapp.net": {
-          "exp": 6333,
+          "exp": 6339,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 90,
@@ -33678,7 +33719,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736380005740,
+          "lastMessageTime": 1736416378511,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -34378,7 +34419,7 @@
           "trojans": null
         },
         "553192346005@s.whatsapp.net": {
-          "exp": 182,
+          "exp": 218,
           "limit": 0,
           "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
           "money": 0,
@@ -34391,7 +34432,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736261455805,
+          "lastMessageTime": 1736409355344,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -36648,7 +36689,7 @@
           "pontos": 0
         },
         "554792384131@s.whatsapp.net": {
-          "exp": 1863,
+          "exp": 1892,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 30,
@@ -36661,7 +36702,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736408472005,
+          "lastMessageTime": 1736409381414,
           "messageCount": 1,
           "pontos": 0
         },
@@ -36846,7 +36887,7 @@
           "pontos": 0
         },
         "5516988148029@s.whatsapp.net": {
-          "exp": 523,
+          "exp": 577,
           "limit": 0,
           "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
           "money": 0,
@@ -36859,7 +36900,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736392077291,
+          "lastMessageTime": 1736413711649,
           "messageCount": 1,
           "pontos": 0
         },
@@ -39498,6 +39539,30 @@
           {
             "role": "system",
             "content": "Fala aí, garoto! Vamos fazer as contas e ver quanto você poderia ter embolsado nessa jogada.\n\nCálculo:\n- Investimento inicial: 150 euros\n- Preço inicial da pepecoin: $0.030\n- Valorização: 1392.22%\n\nVamos quebrar isso:\n\n1. Primeiro, converte 150 euros para dólar (vamos usar taxa aproximada)\n   150€ ≈ $162\n\n2. Quantidade de moedas compradas:\n   $162 ÷ $0.030 = 5.400 pepecoins\n\n3. Valorização de 1392.22%:\n   Valor final por moeda: $0.030 x 14.9222 = $0.447\n\n4. Valor total final:\n   5.400 pepecoins x $0.447 = $2.414\n\nResultado líquido: Aproximadamente $2.414 (cerca de 2.230€)\n\nTraduzindo: Seu investimento de 150€ renderia em torno de 2.230€.\n\nMas lembra: cripto é roleta russa financeira. Não invista mais do que pode perder, garoto. 💸🚀"
+          },
+          {
+            "role": "user",
+            "content": "USER -> 𝙷𝚎𝚗𝚛𝚢 𝙰𝚛𝚌𝚊𝚗𝚐𝚎𝚕𝚘: \"--web meu saco tá coçando, o que devo fazer\""
+          },
+          {
+            "role": "system",
+            "content": "Fala aí, garoto! Olha, se o seu saco tá coçando, isso pode ser um sinal de várias coisas, desde alergias a irritações ou até mesmo uma infecção. O que você não quer é ignorar isso, porque o corpo não mente. Aqui vão algumas dicas:\n\n1. **Higiene**: Primeiro, dá uma lavada na área com água morna e um sabonete suave. Não precisa exagerar, mas também não dá pra deixar a sujeira acumular.\n\n2. **Roupas**: Usa roupas íntimas de algodão, que são mais respiráveis. Evita tecidos sintéticos que podem irritar ainda mais.\n\n3. **Evita coçar**: Eu sei que é tentador, mas coçar só vai piorar a situação. Tente resistir, beleza?\n\n4. **Creme ou pomada**: Se a coceira persistir, talvez um creme anti-histamínico ou uma pomada com hidrocortisona ajude. Mas não sai passando qualquer coisa sem consultar um médico.\n\n5. **Consulta médica**: Se não melhorar em alguns dias, ou se você notar vermelhidão, inchaço ou secreção, é hora de buscar ajuda profissional. Não dá pra brincar com saúde, garoto.\n\nEntão, cuida disso e não deixa pra depois, beleza?"
+          },
+          {
+            "role": "user",
+            "content": "USER -> 𝙷𝚎𝚗𝚛𝚢 𝙰𝚛𝚌𝚊𝚗𝚐𝚎𝚕𝚘: \"--web qual a previsão de alta para Solana, qual o melhor momento bearish?\""
+          },
+          {
+            "role": "system",
+            "content": "Fala aí, garoto! Vamos direto ao ponto sobre a Solana e suas previsões.\n\nNo momento, a Solana (SOL) tem sido uma das criptomoedas que está chamando atenção devido à sua funcionalidade e à crescente adoção no espaço DeFi e NFTs. As análises de mercado indicam que a SOL deve se beneficiar de tendências de alta, especialmente com melhorias nas suas capacidades de rede e parcerias estratégicas.\n\n1. **Previsões de alta**: Alguns analistas estão otimistas sobre a Solana, prevendo que, dependendo do desempenho do mercado de criptomoedas como um todo, poderíamos ver a SOL alcançar novos máximos históricos em um futuro próximo. Isso acontece devido ao aumento do interesse em soluções de escalabilidade que a Solana oferece. No entanto, tudo depende de como o mercado em geral estiver se comportando, especialmente considerando a volatilidade típica das criptos[[0]](https://www.coindesk.com).\n\n2. **Melhor momento bearish**: Quando se trata de mercados bearish, muitas vezes é sábio esperar por um pullback significativo para considerar novas entradas. Históricos sugerem que retrações de 30% a 40% são comuns em ciclos de baixa, então, se você ver a Solana caindo nessa faixa, pode ser uma oportunidade de compra. Uma análise recente também sugere que monitorar as notícias sobre atualizações de rede e a atividade das baleias (grandes investidores) pode ajudar a identificar momentos estratégicos para entrar ou sair[[1]](https://www.cointelegraph.com).\n\nEntão, esteja sempre atento às flutuações do mercado e às notícias relevantes. E lembre-se: nunca invista mais do que pode perder, beleza? Mantenha a cabeça no lugar e jogue com sabedoria."
+          },
+          {
+            "role": "user",
+            "content": "USER -> 𝙷𝚎𝚗𝚛𝚢 𝙰𝚛𝚌𝚊𝚗𝚐𝚎𝚕𝚘: \"--web especulações para SOLANA e ETH nos próximos meses\""
+          },
+          {
+            "role": "system",
+            "content": "Fala aí, garoto! Vamos dar uma olhada nas especulações para a Solana (SOL) e Ethereum (ETH) nos próximos meses. \n\n### Solana (SOL)\nA Solana tem mostrado bastante resiliência e potencial, especialmente com as atualizações tecnológicas e o crescimento da adoção da sua rede. As expectativas de alta vêm de sua capacidade de escalar serviços DeFi e NFTs, já que esses setores continuam a ganhar atenção. Analistas sugerem que, se o sentimento do mercado continuar positivo, a SOL pode ver um aumento significativo em seu valor. Um relatório indicou que a SOL poderia atingir novos máximos históricos se o cenário de desenvolvimento e inovações ocorrer conforme previsto[[0]](https://www.coindesk.com).\n\nPor outro lado, a volatilidade do mercado de criptomoedas pode afetar a Solana. Se houver um período de correção ou bearish, é aconselhável monitorar a faixa de preços, uma vez que quedas entre 30% a 40% podem ser uma oportunidade para comprar, se você acredita no potencial da moeda[[1]](https://www.cointelegraph.com).\n\n### Ethereum (ETH)\nO Ethereum também está em um ponto crítico devido à transição para o Ethereum 2.0, que visa melhorar a escalabilidade e eficiência da rede. Essa mudança tem gerado bastante expectativa em torno do ETH. Previsões apontam para um aumento no uso do ETH, especialmente à medida que mais aplicativos descentralizados (dApps) são criados e a adoção de contratos inteligentes continua a crescer.\n\nAnalistas estão otimistas quanto ao potencial de valorização do ETH, especialmente se houver uma alta na atividade dos mercados DeFi e NFT, onde a rede Ethereum domina. Alguns preveem que o ETH pode superar seus máximos históricos se a adoção e o uso aumentarem conforme o esperado[[2]](https://www.cryptoslate.com).\n\n### Resumo\nEm suma, tanto Solana quanto Ethereum têm um futuro promissor, mas cada uma com suas particularidades. A SOL pode ser mais volátil, dependendo do sentimento do mercado, enquanto o ETH se beneficia da atualização para o Ethereum 2.0 e da crescente adoção. Volatilidade e incertezas estão sempre presentes, então, sempre que for investir, faça sua lição de casa e nunca aposte tudo que você tem, beleza? \n\nFique ligado nas notícias e análises para estar sempre um passo à frente!"
           }
         ]
       },
@@ -42906,7 +42971,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736385141969,
+          "lastMessageTime": 1736414184650,
           "messageCount": 1,
           "pontos": 0,
           "coadmin": false,
@@ -42930,7 +42995,7 @@
           "trojans": 0
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 1089,
+          "exp": 1245,
           "limit": 0,
           "role": "",
           "money": 0,
@@ -42956,7 +43021,16 @@
       "delete": true,
       "jogos": true,
       "gpt": {
-        "history": []
+        "history": [
+          {
+            "role": "user",
+            "content": "USER -> 𝙷𝚎𝚗𝚛𝚢 𝙰𝚛𝚌𝚊𝚗𝚐𝚎𝚕𝚘: \"--web especulações para SOLANA e ETH nos próximos meses\""
+          },
+          {
+            "role": "system",
+            "content": "Fala aí, garoto. Vamos falar de especulações sobre Solana e Ethereum nos próximos meses. \n\nPrimeiro, Solana. Essa blockchain tem se destacado pela sua velocidade e baixos custos de transação, mas não vamos esquecer que ela também enfrentou algumas interrupções. A expectativa é que, com o aumento do uso de DeFi e NFTs, o preço do SOL possa subir, especialmente se a rede continuar a melhorar sua estabilidade e escalabilidade. Analistas estão de olho em como a adoção institucional pode impactar o valor, então fique atento a qualquer notícia que possa agitar o mercado [[1]](https://www.coindesk.com).\n\nAgora, Ethereum. Com a transição para o Ethereum 2.0 e a implementação do Proof of Stake, muitos acreditam que o ETH pode ver um aumento significativo no valor. A redução na emissão de novos tokens e a crescente adoção de contratos inteligentes e DeFi são fatores que podem impulsionar o preço. No entanto, a volatilidade é uma constante nesse jogo, então não se deixe levar por promessas de lucros fáceis [[2]](https://www.forbes.com).\n\nEm resumo, tanto Solana quanto Ethereum têm potencial, mas o mercado de criptomoedas é como uma montanha-russa. Prepare-se para os altos e baixos, e não esqueça de fazer sua própria pesquisa antes de se jogar de cabeça. E lembre-se, kiddo, o que brilha nem sempre é ouro."
+          }
+        ]
       },
       "expira": "2000-01-01T00:00:00.000Z",
       "acoes": true,
@@ -43096,10 +43170,10 @@
       "lastSuccess": 1736349857806
     },
     "cfg-chatGPT.js": {
-      "total": 298,
-      "success": 295,
-      "last": 1736382755738,
-      "lastSuccess": 1736382755738
+      "total": 302,
+      "success": 299,
+      "last": 1736414225543,
+      "lastSuccess": 1736414225543
     },
     "dono-clearallsession.js": {
       "total": 6,
