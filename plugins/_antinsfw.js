@@ -23,6 +23,36 @@ handler.before = async function (m,{isCriadora,isAdmin,groupMetadata ,participan
 
 if (!m.isGroup) return !1
 
+
+
+async function classifyImage(imageUrl) {
+  // Load the model
+  const model = await nsfwjs.load();
+
+  // Load the image from the URL
+  const response = await fetch(imageUrl);
+  const buffer = await response.buffer();
+  const img = new Image();
+  img.src = buffer;
+
+  // Classify the image
+  const predictions = await model.classify(img);
+  return predictions;
+}
+
+// Example image URL
+const imageUrl = 'YOUR_IMAGE_URL_HERE'; // Replace with your image URL
+
+classifyImage(imageUrl)
+  .then(predictions => {
+      console.log('Predictions:', predictions);
+  })
+  .catch(error => {
+      console.error('Error:', error);
+  });
+
+
+  
   function getDataAtual() {
     const hoje = new Date();
     const dia = String(hoje.getDate()).padStart(2, '0');
