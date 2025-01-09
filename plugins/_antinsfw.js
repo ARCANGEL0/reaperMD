@@ -24,7 +24,7 @@ handler.before = async function (m,{isCriadora,isAdmin,groupMetadata ,participan
 if (!m.isGroup) return !1
 
 
-
+/*
 async function classifyImage(imageUrl) {
   // Load the model
   const model = await nsfwjs.load();
@@ -51,7 +51,7 @@ classifyImage(imageUrl)
       console.error('Error:', error);
   });
 
-
+*/
   
   function getDataAtual() {
     const hoje = new Date();
