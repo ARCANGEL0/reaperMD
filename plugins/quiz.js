@@ -344,7 +344,7 @@ Evite repetir as mesmas perguntas`
       }
       
 
-      const data = await response.json();
+      const data = response
 
       const assistantResponse = data.response; 
       
