@@ -183,7 +183,7 @@ const profileLines = [
 
   language === 'en' 
     ? (userdata.biografia ? '> ┗ ᴀʙᴏᴜᴛ ᴍᴇ:\n> . . . . . . . . . . . . . . . . . .\n\n> ' + userdata.biografia : null)
-    : (userdata.biografia ? '> ┗ ꜱᴏʙʀᴇ ᴍɪᴍ:\n> . . . . . . . . . . . . . . . . . .\n> ‎ \n > ' + userdata.biografia : null)
+    : (userdata.biografia ? '> ┗ ꜱᴏʙʀᴇ ᴍɪᴍ:\n> . . . . . . . . . . . . . . . . . .\n> ‎ \n> ' + userdata.biografia : null)
 ];
 
 const profileString = profileLines.filter(line => line !== null).join('\n');
