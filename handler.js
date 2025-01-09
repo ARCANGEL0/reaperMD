@@ -415,7 +415,7 @@ let startd = new Date(global.db.data.users[global.criador]?.offlineStart); // Re
 let language = global.db.data.chats[m.chat].language || 'en'
 
 let txtt = language === "pt" 
-  ? `┌──[root@arcangelo]──[~] 
+  ? `┌──[ Ǥнѳᔕт ]──[~] 
 └─► cat /var/log/afk.log | grep arcangelo
 > ‎ 
 > Request *timeout* for icmp_seq 1
@@ -430,11 +430,9 @@ let txtt = language === "pt"
 > | $ Retornarei assim que possível. |
 > | $ Para emergências, me chame no pv. |
 > [==============================]
-> ‎ 
-┌──[root@arcangelo]──[~] 
-└─► _`
+> ‎ `
   : 
-  `┌──[root@arcangelo]──[~] 
+  `┌──[ Ǥнѳᔕт ]──[~] 
 └─► cat /var/log/afk.log | grep arcangelo
 > ‎ 
 > Request *timeout* for icmp_seq 1
@@ -450,8 +448,7 @@ let txtt = language === "pt"
 > | $ For emergencies, DM me.  |
 > [==============================]
 > ‎ 
-┌──[root@arcangelo]──[~] 
-└─► _`;
+`
   let DELETEMESSAGE = await conn.sendMessage(m.chat, { delete: m.key })
       
      m.react('🔕')
