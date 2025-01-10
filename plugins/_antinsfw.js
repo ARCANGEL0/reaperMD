@@ -13,6 +13,9 @@
 //┃ 𖤍 𝘾𝙤𝙣𝙩𝙖𝙘𝙩-𝙢𝙚 𝙛𝙤𝙧 𝙖𝙣𝙮 𝙙𝙤𝙪𝙗𝙩
 // ╰─...⌬─────────────────────────────────╯
 
+import axios from 'axios'; // Import axios for HTTP requests
+import * as tf from '@tensorflow/tfjs-node'; // Import TensorFlow.js for Node.js
+import nsfw from 'nsfwjs'; // Import the NSFW.js library
 
 import uploadImage from '../lib/uploadImage.js'
 import { join } from 'path'
@@ -24,34 +27,36 @@ handler.before = async function (m,{isCriadora,isAdmin,groupMetadata ,participan
 if (!m.isGroup) return !1
 
 
-/*
-async function classifyImage(imageUrl) {
-  // Load the model
-  const model = await nsfwjs.load();
+async function fn(images) {
+  try {
+    const pic = await axios.get(images, {
+      responseType: 'arraybuffer',
+    });
 
-  // Load the image from the URL
-  const response = await fetch(imageUrl);
-  const buffer = await response.buffer();
-  const img = new Image();
-  img.src = buffer;
+    const model = await nsfw.load(); // Load the NSFW model
+    
+    const image = await tf.node.decodeImage(new Uint8Array(pic.data)); // Convert image data to tensor
 
-  // Classify the image
-  const predictions = await model.classify(img);
-  return predictions;
+    const predictions = await model.classify(image); // Classify the image
+    console.log(predictions); // Log the predictions
+
+    // Determine if the content is NSFW
+    const nsfwThreshold = 0.5500;
+    for (const prediction of predictions) {
+      if (['Porn', 'Sexy', 'Hentai'].includes(prediction.className) && prediction.probability > nsfwThreshold) {
+        return true; // If any of the NSFW classes exceed the threshold, return 'NSFW'
+      }
+    }
+    return false; // If none exceed the threshold, return 'SFW'
+  } catch (err) {
+    console.error('Error during processing:', err); // Log any errors
+    return 'Error'; // Return an error string if there's an exception
+  }
 }
 
-// Example image URL
-const imageUrl = 'YOUR_IMAGE_URL_HERE'; // Replace with your image URL
 
-classifyImage(imageUrl)
-  .then(predictions => {
-      console.log('Predictions:', predictions);
-  })
-  .catch(error => {
-      console.error('Error:', error);
-  });
 
-*/
+
   
   function getDataAtual() {
     const hoje = new Date();
@@ -240,15 +245,11 @@ ${warningMessageThree.getRandom()}
              console.log("👀")
              console.log(linkST)
              console.log("👀")
-  let checkSt = await fetch(`https://itzpire.com/tools/nsfwcheck?url=${linkST}`)
-  let resSt= await checkSt.json()
-  console.log(resSt)
-  
-const nsfwSt = resSt.data.find(e => e.label === 'nsfw');
-  
-const resultSt = nsfwSt && nsfwSt.score > 0.6;
-console.log(`NSFW?: ${resultSt}`)
-if(resultSt){
+
+             const isNSFW = await fn(linkST);
+
+console.log(`NSFW?: ${isNSFW}`)
+if(isNSFW){
   console.log('nsfw detected')
   if(typeof global.db.data.chats[m.chat].users[m.sender].nsfwAdv
   =='undefined')global.db.data.chats[m.chat].users[m.sender].nsfwAdv =0
@@ -291,17 +292,13 @@ return !0
        let media = await q.download()
 let link = await uploadImage(media)
   console.log("🌙")
-  let check = await fetch(`https://itzpire.com/tools/nsfwcheck?url=${link}`)
-  let res= await check.json()
-  console.log(res)
-  
-const nsfw = res.data.find(e => e.label === 'nsfw');
-  
-const result = nsfw && nsfw.score > 0.6;
-console.log(`NSFW?: ${result}`)
+
+  const isNSFW = await fn(link);
+
+  console.log(`NSFW?: ${isNSFW}`)
 
 
-if(result){
+if(isNSFW){
   
  global.db.data.chats[m.chat].users[m.sender].nsfwAdv += 1
 
