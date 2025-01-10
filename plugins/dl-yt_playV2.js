@@ -62,7 +62,7 @@ if (!text) throw `${mg}
 ┃ 𝐄𝐱𝐞𝐦𝐩𝐥𝐨:
 ┃ ${usedPrefix + command} Horror Vacui - Darkness*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
+┃ 𝙼𝚛. 𝚁𝚘𝚋𝚘𝚝 | ${vs}
 ╰━━━━━━━━━━━━━━━━━━⬣`
 try {
 if (command == 'play.1') {
@@ -73,10 +73,10 @@ conn.reply(m.chat, `${eg}╭━━━━━━━━━⬣
 ┃ 𝐬𝐮𝐚𝐬 𝐦𝐚𝐨𝐬
 ┃
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
+┃ 𝙼𝚛. 𝚁𝚘𝚋𝚘𝚝 | ${vs}
 ╰━━━━━━━━━━━━━━━━━━⬣`, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
-title: '𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛',
+title: '𝙼𝚛. 𝚁𝚘𝚋𝚘𝚝',
 body: `${vs}`,         
 previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
 sourceUrl: `https://github.com/ARCANGEL0/Bytesec-MD `}}}) 
@@ -106,10 +106,10 @@ conn.reply(m.chat, `${eg}╭━━━━━━━━━⬣
 ┃ 𝐬𝐮𝐚𝐬 𝐦𝐚𝐨𝐬
 ┃
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
+┃ 𝙼𝚛. 𝚁𝚘𝚋𝚘𝚝 | ${vs}
 ╰━━━━━━━━━━━━━━━━━━⬣`, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
-title: '𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛',
+title: '𝙼𝚛. 𝚁𝚘𝚋𝚘𝚝',
 body: `${vs}`,         
 previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
 sourceUrl: `https://github.com/ARCANGEL0/Bytesec-MD `}}})
@@ -140,7 +140,7 @@ m.reply(`${fg}╭━━━━━━━━━⬣
 ┃ 𝐞𝐱𝐢𝐭𝐨
 ┃
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
+┃ 𝙼𝚛. 𝚁𝚘𝚋𝚘𝚝 | ${vs}
 ╰━━━━━━━━━━━━━━━━━━⬣`)
 handler.limit = 0 //No gastada limite si fallas
 }}
@@ -235,7 +235,7 @@ try {
 if (command == 'play.1') {
 conn.reply(m.chat, `${eg}𝙀𝙎𝙋𝙀𝙍𝙀 𝙐𝙉 𝙈𝙊𝙈𝙀𝙉𝙏𝙊 𝙀𝙇 𝘼𝙐𝘿𝙄𝙊 𝙋𝙊𝙍 𝙁𝘼𝙑𝙊𝙍\n\n𝙒𝘼𝙄𝙏 𝘼 𝙈𝙊𝙈𝙀𝙉𝙏 𝙁𝙊𝙍 𝙏𝙃𝙀 𝘼𝙐𝘿𝙄𝙊 𝙋𝙇𝙀𝘼𝙎𝙀`, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
-title: '𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛',
+title: '𝙼𝚛. 𝚁𝚘𝚋𝚘𝚝',
 body: '`${vs}`',         
 previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
 sourceUrl: `https://github.com/ARCANGEL0/Bytesec-MD `}}}) 
@@ -248,7 +248,7 @@ conn.sendFile(m.chat, json.result.url, 'error.mp3', null, m, false, { mimetype: 
 if (command == 'play.2') {
 conn.reply(m.chat, `${eg}𝙀𝙎𝙋𝙀𝙍𝙀 𝙐𝙉 𝙈𝙊𝙈𝙀𝙉𝙏𝙊 𝙀𝙇 𝙑𝙄𝘿𝙀𝙊 𝙋𝙊𝙍 𝙁𝘼𝙑𝙊𝙍\n\n𝙒𝘼𝙄𝙏 𝘼 𝙈𝙊𝙈𝙀𝙉𝙏 𝙁𝙊𝙍 𝙏𝙃𝙀 𝙑𝙄𝘿𝙀𝙊 𝙋𝙇𝙀𝘼𝙎𝙀`, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
-title: '𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛',
+title: '𝙼𝚛. 𝚁𝚘𝚋𝚘𝚝',
 body: '`${vs}`',         
 previewType: 0, thumbnail: fs.readFileSync("./media/menus/Menu3.jpg"),
 sourceUrl: `https://github.com/ARCANGEL0/Bytesec-MD `}}})

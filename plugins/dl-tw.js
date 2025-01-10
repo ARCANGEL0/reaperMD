@@ -33,7 +33,7 @@ if (!text) return conn.reply(m.chat, `${langTOGGLE['smsAvisoMG']()}
 ┃ 𝐄𝐱𝐞𝐦𝐩𝐥𝐨:
 ┃ *${usedPrefix + command} link*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
+┃ 𝙼𝚛. 𝚁𝚘𝚋𝚘𝚝 | ${vs}
 ╰━━━━━━━━━━━━━━━━━━⬣ `, fkontak,  m)
 try{ 
 const apiUrl = `https://api.lolhuman.xyz/api/twitter?apikey=${lolkeysapi}&url=${encodeURIComponent(text)}`

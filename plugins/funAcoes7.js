@@ -132,7 +132,7 @@ P┃
 ┃ 𝐄𝐱𝐞𝐦𝐩𝐥𝐨:
 ┃ *${usedPrefix + command}top10 mais nilistas do gp*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
+┃ 𝙼𝚛. 𝚁𝚘𝚋𝚘𝚝 | ${vs}
 ╰━━━━━━━━━━━━━━━━━━⬣`   
 }
 
@@ -151,13 +151,13 @@ function selectTopMembers(ps, number) {
 
 // Function to generate the top list based on selected members
 function generateTopList(selectedMembers, text) {
-    let topList = `╭━━⬣[🕯️💀 *_TOP ${selectedMembers.length} ${txtt}_* 🐈‍⬛]⬣━━━━━━\n`;
+    let topList = `╭━━⬣[🕯️💀 *_TOP ${selectedMembers.length} ${txtt}_* ]⬣━━━━━━\n`;
     
     selectedMembers.forEach((member, index) => {
         topList += `*_${index + 1}. 🕯️ ${user(member)}_*\n`;
     });
     
-    topList += "╰━━━━━[ 𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣 🐈‍⬛ ]━━━━━━⬣*";
+    topList += "╰━━━━━[ 𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣  ]━━━━━━⬣*";
     
     return topList;
 }
@@ -1518,7 +1518,7 @@ else if(who || m.quoted?.sender){
     }
    await conn.sendMessage(m.chat, {
             video: {url:imagesStrangle.getRandom()},
-            caption: `┏━── ﹝🐈‍⬛﹞
+            caption: `┏━── ﹝﹞
  
 ${mensagensStrangle.getRandom()}
 

@@ -68,7 +68,7 @@ filename.forEach(file => unlinkSync(file));
       await conn.sendMessage(
         m.chat,
         { text: `╭━━━━━━━━━⬣
-✔️🐈‍⬛ 𝑶𝒑𝒆𝒓𝒂𝒄𝒂𝒐 𝒓𝒆𝒂𝒍𝒊𝒛𝒂𝒅𝒂 𝒄𝒐𝒎 𝒔𝒖𝒄𝒆𝒔𝒔𝒐
+✔️ 𝑶𝒑𝒆𝒓𝒂𝒄𝒂𝒐 𝒓𝒆𝒂𝒍𝒊𝒛𝒂𝒅𝒂 𝒄𝒐𝒎 𝒔𝒖𝒄𝒆𝒔𝒔𝒐
 
 *${filesDeleted}* 𝑨𝒓𝒒𝒖𝒊𝒗𝒐𝒔 𝒇𝒐𝒓𝒂𝒎 𝒅𝒆𝒍𝒆𝒕𝒂𝒅𝒐𝒔!
 ╰━━━━━━━━━━━━━━━━━━⬣` },
@@ -76,7 +76,7 @@ filename.forEach(file => unlinkSync(file));
       );
     }
   } catch (err) {
-    console.error('Erro na leitura dos arquivos 🐈‍⬛:', err);
+    console.error('Erro na leitura dos arquivos :', err);
     await conn.sendMessage(
       m.chat,
       { text: `${langTOGGLE['smsAvisoFG']()}erro ao eliminar` },

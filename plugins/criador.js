@@ -10,7 +10,7 @@ var handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 let pp = "https://telegra.ph/file/2698af7c7d9cead8d8c89.jpg"
 const cat = `╭─┅──┅❖ ♱ ❖─┅──┅
-| 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 𓄿 v${vs}
+| ᴍʀ. ʀᴏʙᴏᴛ 𓄿 v${vs}
 |
 | 𝑫𝒆𝒔𝒆𝒏𝒗𝒐𝒍𝒗𝒊𝒅𝒐 𝒑𝒐𝒓: 
 | ༒︎ Ｈｅｎｒｙ░ Λｒｃａｎｇｅｌｏ  °⛧

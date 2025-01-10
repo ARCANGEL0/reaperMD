@@ -20,7 +20,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 	switch(command){
 	  
 	  case 'memes':
-	    await m.reply(`━━━━━━━━⬣ 𝑴𝒆𝒎𝒆𝒔 🐈‍⬛⬣━━━━━━━
+	    await m.reply(`━━━━━━━━⬣ 𝑴𝒆𝒎𝒆𝒔 ⬣━━━━━━━
 	    
 𝙻𝚒𝚜𝚝𝚊 𝚍𝚎 𝚖𝚎𝚖𝚎𝚜:
 ♱ .dumb *texto*
@@ -41,7 +41,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 ♱ .cry *texto*
 ♱ .erro *texto*
 
-━━━━━━━━━⬣🐈‍⬛⬣━━━━━━━━`)
+━━━━━━━━━⬣⬣━━━━━━━━`)
 	    break
 	  case 'festa':
 	    try{

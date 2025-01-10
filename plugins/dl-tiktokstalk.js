@@ -20,7 +20,7 @@ if (!text) return conn.reply(m.chat, `${langTOGGLE['smsAvisoMG']()}
 ┃ 𝐄𝐱𝐞𝐦𝐩𝐥𝐨:
 ┃ *${usedPrefix + command} usuario*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
+┃ 𝙼𝚛. 𝚁𝚘𝚋𝚘𝚝 | ${vs}
 ╰━━━━━━━━━━━━━━━━━━⬣`, m)
 try {
 let res = await fetch(`https://api.lolhuman.xyz/api/stalktiktok/${text}?apikey=9b817532fadff8fc7cb86862`)
@@ -30,7 +30,7 @@ if (res.status !== 200) throw await res.text()
 if (!json.status) throw json
 let thumb = await (await fetch(json.result.user_picture)).buffer()
 let gata = `
-🔎🐈‍⬛ 𝙐𝙎𝙐𝘼𝙍𝙄𝙊(𝘼) 
+🔎 𝙐𝙎𝙐𝘼𝙍𝙄𝙊(𝘼) 
 ${json.result.username}
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 🪦𝙉𝙊𝙈𝙀 
@@ -65,7 +65,7 @@ throw `${langTOGGLE['smsAvisoFG']()}
 ┃ 𝐞𝐱𝐢𝐭𝐨
 ┃
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
+┃ 𝙼𝚛. 𝚁𝚘𝚋𝚘𝚝 | ${vs}
 ╰━━━━━━━━━━━━━━━━━━⬣`
 }
 /*let info = `💖 *Infórmate sobre las Novedades y recuerda tener la última versión.*\n\n💝 *Find out about what's new and remember to have the latest version.*

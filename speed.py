@@ -1959,7 +1959,7 @@ def shell():
         printer('Prueba de descarga de omitir | Skipping download test', quiet)
 
     if args.upload:
-        printer('🐈‍⬛ Testando velocidade de upload\n', quiet,
+        printer(' Testando velocidade de upload\n', quiet,
                 end=('', '\n')[bool(debug)])
         speedtest.upload(
             callback=callback,

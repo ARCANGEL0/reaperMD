@@ -47,7 +47,7 @@ if (!text) return conn.reply(m.chat, `${langTOGGLE['smsAvisoMG']()}╭━━━�
 ┃ 𝐄𝐱𝐞𝐦𝐩𝐥𝐨:
 ┃ *${usedPrefix + command} Toque piano gotico*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
+┃ 𝙼𝚛. 𝚁𝚘𝚋𝚘𝚝 | ${vs}
 ╰━━━━━━━━━━━━━━━━━━⬣`, m)
 try {
   
@@ -67,7 +67,7 @@ throw `${langTOGGLE['smsAvisoFG']()}
 ┃ 𝐞𝐱𝐢𝐭𝐨
 ┃
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
+┃ 𝙼𝚛. 𝚁𝚘𝚋𝚘𝚝 | ${vs}
 ╰━━━━━━━━━━━━━━━━━━⬣`
 }
 /*let info = `💖 *Infórmate sobre las Novedades y recuerda tener la última versión.*\n\n💝 *Find out about what's new and remember to have the latest version.*

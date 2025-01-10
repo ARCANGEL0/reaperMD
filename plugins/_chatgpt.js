@@ -252,7 +252,7 @@ if (!/image/g.test(mime)){
       text: data.gpt,
       contextInfo: {
         externalAdReply: {
-          title: "𝕰𝖉𝖌𝖆𝖗 𝕬𝖑𝖑𝖆𝖓 𝕻𝖔𝖊 🪶🐈‍⬛",
+          title: "𝕰𝖉𝖌𝖆𝖗 𝕬𝖑𝖑𝖆𝖓 𝕻𝖔𝖊 🪶",
           body: "",
           thumbnailUrl: allan.getRandom(),
           sourceUrl: "",

@@ -34,7 +34,7 @@ if (!args[0]) return conn.reply(m.chat, `${langTOGGLE['smsAvisoMG']()}╭━━�
 ┃ 𝐄𝐱𝐞𝐦𝐩𝐥𝐨:
 ┃ *${usedPrefix + command} link*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
+┃ 𝙼𝚛. 𝚁𝚘𝚋𝚘𝚝 | ${vs}
 ╰━━━━━━━━━━━━━━━━━━⬣`, fkontak, m)
 if (!args[0].match(/www.facebook.com|fb.watch/g)) return conn.reply(m.chat, `${langTOGGLE['smsAvisoMG']()}╭━━━━━━━━━⬣
 ┃
@@ -48,7 +48,7 @@ if (!args[0].match(/www.facebook.com|fb.watch/g)) return conn.reply(m.chat, `${l
 ┃ 𝐄𝐱𝐞𝐦𝐩𝐥𝐨:
 ┃ *${usedPrefix + command} link*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
+┃ 𝙼𝚛. 𝚁𝚘𝚋𝚘𝚝 | ${vs}
 ╰━━━━━━━━━━━━━━━━━━⬣`, fkontak, m)
 try { 
 

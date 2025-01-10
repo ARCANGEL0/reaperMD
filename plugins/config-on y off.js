@@ -456,7 +456,7 @@ let tempo = formatTime(timeoutset)
    m.reply(`${eg} ⚠️ BOT SERÁ DESATIVADO⚠️ \n 
 ❖─┅──┅\n💀 COMANDOS DISPONÍVEIS DURANTE ${tempo}\n─┅──┅❖ 
 
-  -- 𝓔𝓭𝓰𝓪𝓻 𝓐. 🐈‍⬛`) 
+  -- 𝓔𝓭𝓰𝓪𝓻 𝓐. `) 
   const horarioBot = new Date();
 horarioBot.setHours(newScheduledTime.getHours(), newScheduledTime.getMinutes(),newScheduledTime.getSeconds() , 0)
 
@@ -480,7 +480,7 @@ ${pickRandom([
   "Como as sombras da noite que se retiram com a luz da aurora, eu me despeço da escuridão.",
   "Nas asas da despedida, como um corvo solitário, alço voo para longe dos domínios conhecidos."
 ])}
--- 𝓔𝓭𝓰𝓪𝓻 𝓐.  🐈‍⬛`)
+-- 𝓔𝓭𝓰𝓪𝓻 𝓐.  `)
   }); 
   
   return !0
@@ -535,7 +535,7 @@ ${pickRandom([
   "Como as sombras da noite que se retiram com a luz da aurora, eu me despeço da escuridão.",
   "Nas asas da despedida, como um corvo solitário, alço voo para longe dos domínios conhecidos."
 ])}
-  -- 𝓔𝓭𝓰𝓪𝓻 𝓐. 🐈‍⬛`) 
+  -- 𝓔𝓭𝓰𝓪𝓻 𝓐. `) 
   const horarioBot = new Date();
 horarioBot.setHours(newScheduledTime.getHours(), newScheduledTime.getMinutes(),newScheduledTime.getSeconds() , 0)
 
@@ -560,7 +560,7 @@ ${pickRandom([
   "Como um viajante perdido retorna à senda certa, aqui estou eu, de volta aos caminhos familiares.",
   "Das trevas do exílio, retorno com palavras de reconciliação e boas-vindas."
 ])}
--- 𝓔𝓭𝓰𝓪𝓻 𝓐.  🐈‍⬛`)
+-- 𝓔𝓭𝓰𝓪𝓻 𝓐.  `)
   }); 
   
   return !0
@@ -634,7 +634,7 @@ let tempo = formatTime(timeoutset)
    m.reply(`${eg} ⚠️ AS INTERAÇÕES SERÃO DESLIGADAS⚠️ \n 
 ❖─┅──┅\n💀 COMANDOS E FUNÇÕES DISPONÍVEIS DURANTE ${tempo}\n─┅──┅❖ 
 
-  -- 𝓔𝓭𝓰𝓪𝓻 𝓐. 🐈‍⬛`) 
+  -- 𝓔𝓭𝓰𝓪𝓻 𝓐. `) 
   const horarioBot = new Date();
 horarioBot.setHours(newScheduledTime.getHours(), newScheduledTime.getMinutes(),newScheduledTime.getSeconds() , 0)
 
@@ -667,7 +667,7 @@ ${pickRandom([
   "Como as sombras da noite que se retiram com a luz da aurora, eu me despeço da escuridão.",
   "Nas asas da despedida, como um corvo solitário, alço voo para longe dos domínios conhecidos."
 ])}
--- 𝓔𝓭𝓰𝓪𝓻 𝓐.  🐈‍⬛`)
+-- 𝓔𝓭𝓰𝓪𝓻 𝓐.  `)
   }); 
   
   return !0
@@ -730,7 +730,7 @@ ${pickRandom([
   "Como as sombras da noite que se retiram com a luz da aurora, eu me despeço da escuridão.",
   "Nas asas da despedida, como um corvo solitário, alço voo para longe dos domínios conhecidos."
 ])}
-  -- 𝓔𝓭𝓰𝓪𝓻 𝓐. 🐈‍⬛`) 
+  -- 𝓔𝓭𝓰𝓪𝓻 𝓐. `) 
   const horarioBot = new Date();
 horarioBot.setHours(newScheduledTime.getHours(), newScheduledTime.getMinutes(),newScheduledTime.getSeconds() , 0)
 
@@ -763,7 +763,7 @@ ${pickRandom([
   "Como um viajante perdido retorna à senda certa, aqui estou eu, de volta aos caminhos familiares.",
   "Das trevas do exílio, retorno com palavras de reconciliação e boas-vindas."
 ])}
--- 𝓔𝓭𝓰𝓪𝓻 𝓐.  🐈‍⬛`)
+-- 𝓔𝓭𝓰𝓪𝓻 𝓐.  `)
   }); 
   
   return !0

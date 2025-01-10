@@ -26,7 +26,7 @@ if (!args[0]) throw `${langTOGGLE['smsAvisoMG']()}╭━━━━━━━━━
 ┃ 𝐄𝐱𝐞𝐦𝐩𝐥𝐨:
 ┃ *${usedPrefix + command} usuario*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
+┃ ᴍʀ. ʀᴏʙᴏᴛ  | ${vs}
 ╰━━━━━━━━━━━━━━━━━━⬣`
 
 
@@ -59,7 +59,7 @@ let iggs = `╭━━━━━━━━━⬣
 ┃ 𝘽𝙄𝙊𝙂𝙍𝘼𝙁𝙄𝘼 
 ┃ *${json.bio}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽  ⸸ | ${vs}
+┃ ᴍʀ. ʀᴏʙᴏᴛ  ⸸ | ${vs}
 ╰━━━━━━━━━━━━━━━━━━⬣`.trim() 
 let aa = `${json.result.photo_profile || `https://telegra.ph/file/7ef69475a15a20796a755.jpg`}`
 m.react("🌕")

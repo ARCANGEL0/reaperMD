@@ -621,7 +621,7 @@ global.db.data.chats[m.chat].robotgpt["config"].lastQuestion = message.key
 
 //conn.sendButton(m.chat, `¡𝑬𝒚! 𝑨𝒒𝒖í 𝒆𝒔𝒕𝒐𝒚. 𝒀𝒐 𝒑𝒖𝒆𝒅𝒐 𝒂𝒚𝒖𝒅𝒂𝒓 👉👈 𝑯𝒆𝒚! 𝑰'𝒎 𝒉𝒆𝒓𝒆. 𝑰 𝒄𝒂𝒏 𝒉𝒆𝒍𝒑 🙌`, wm, [['𝙑𝙤𝙡𝙫𝙚𝙧 𝙖𝙡 𝙈𝙚𝙣𝙪́ | 𝘽𝙖𝙘𝙠 𝙩𝙤 𝙈𝙚𝙣𝙪 ☘️', `#menu`]], 'conversation', { sendEphemeral: true, quoted: estilo })
 if (/^gato|cat|chat|preto/i.test(m.text)) {
-    m.react("🐈‍⬛")}
+    m.react("")}
 if (/^palhaco|comedia|comédia|piada/i.test(m.text)) {
     m.react("🤡")}
 if (/^vtmnc|vsfd|va toma no cu|vai toma no cu/i.test(m.text)) {

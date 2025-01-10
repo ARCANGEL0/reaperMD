@@ -15,7 +15,7 @@ let txt = `📛 𝗟𝗜𝗦𝗧𝗔 𝗗𝗘 𝗕𝗟𝗢𝗤𝗨𝗘𝗔𝗗�
 for (let i of data) {
 txt += `┃🚫 @${i.split("@")[0]}\n`
 }
-txt += "╰━━━━━━━⬣\n\n*𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛*"
+txt += "╰━━━━━━━⬣\n\n*𝙼𝚛. 𝚁𝚘𝚋𝚘𝚝*"
 return conn.reply(m.chat, txt, fkontak, m, { mentions: await conn.parseMention(txt) })
 /*conn.sendButton(m.chat, txt, `*Por favor no llame para evitar ser Bloqueado, Gracias.*\n\n*Please do not call to avoid being Blocked, Thank you.*\n\n` + wm, null, [ 
 ['𝗠 𝗘 𝗡 𝗨 ☘️', '/menu']], m, { mentions: await conn.parseMention(txt) })*/
