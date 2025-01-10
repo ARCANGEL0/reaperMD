@@ -22,9 +22,7 @@ let stdout = execSync('git pull origin master' + (m.fromMe && text ? ' ' + text 
 
     const fetch = `┌──[ Ǥнѳᔕт ]─[/usr/bin]
 └─ git pull origin master
-> . . . . . . . . . . . 
-${formattedStdout}
-> . . . . . . . . . . .`;
+${formattedStdout}`;
 ////
 
 
