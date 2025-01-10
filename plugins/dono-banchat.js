@@ -97,7 +97,7 @@ m.reply(`┌──[ Ǥнѳᔕт ]─[/usr/bin]
   else if(!args[0]){
   
     m.reply(`┌──[ Ǥнѳᔕт ]─[/usr/bin]
-      └─ systemctl stop bytesecMD
+└─ systemctl stop bytesecMD
 > ‎ 
 | [+] 200 OK
 > . . . . . . . . . . . . . . . . . 
