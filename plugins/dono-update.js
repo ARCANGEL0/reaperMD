@@ -47,7 +47,8 @@ ${formattedUp}
 
 
 await m.reply(fetch2)
-} catch {
+} catch(e){
+  console.log(e)
   let fetcherror= `┌──[ Ǥнѳᔕт ]─[/usr/bin]
 └─ git pull origin master
 > . . . . . . . . . . .
