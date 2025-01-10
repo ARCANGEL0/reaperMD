@@ -382,7 +382,10 @@ console.log('porra')
     console.log(global.db.data.chats[m.chat].quiz.pergunta)
     m.react('💿')
         console.log('1 🦇')
-    const { Pergunta, XP,Pontos, Money, Opcoes, Resposta, Motivo } =     global.db.data.chats[m.chat].quiz.pergunta
+        
+        
+    let quizQuestion = JSON.parse(global.db.data.chats[m.chat].quiz.pergunta) 
+    const { Pergunta, XP,Pontos, Money, Opcoes, Resposta, Motivo } = quizQuestion
     console.log('2 🦇')
     console.log(global.db.data.chats[m.chat].quiz.pergunta)
     const optionsString = Object.entries(Opcoes)
@@ -425,8 +428,9 @@ console.log('porra')
   }
   else {
  
+    let quizQuestion = JSON.parse(global.db.data.chats[m.chat].quiz.pergunta)
     console.log('1 🦇')
-    const { Pergunta, XP,Pontos, Money, Opcoes, Resposta, Motivo } = global.db.data.chats[m.chat].quiz.pergunta;
+    const { Pergunta, XP,Pontos, Money, Opcoes, Resposta, Motivo } = quizQuestion
     console.log('2 🦇')
     const optionsString = Object.entries(Opcoes)
       .map(([key, value]) => `${key}: ${value}`)
@@ -473,8 +477,9 @@ console.log('porra')
     
     if(global.db.data.chats[m.chat].quiz!= null) {
  
- 
-    const { Pergunta, XP, Money, Pontos, Opcoes, Resposta, Motivo } = global.db.data.chats[m.chat].quiz.pergunta;
+    let quizQuestion = JSON.parse(global.db.data.chats[m.chat].quiz.pergunta) 
+    const { Pergunta, XP, Money, Pontos, Opcoes, Resposta, Motivo } =
+    quizQuestion;
     const optionsString = Object.entries(Opcoes)
       .map(([key, value]) => `${key}: ${value}`)
       .join("\n");
@@ -522,7 +527,9 @@ console.log('porra')
   }
   else {
     
-    const { Pergunta, XP, Money, Pontos, Opcoes, Resposta, Motivo} = global.db.data.chats[m.chat].quiz.pergunta;
+    let quizQuestion = JSON.parse(global.db.data.chats[m.chat].quiz.pergunta)
+    const { Pergunta, XP, Money, Pontos, Opcoes, Resposta, Motivo} =
+    quizQuestion;
     const optionsString = Object.entries(Opcoes)
       .map(([key, value]) => `${key}: ${value}`)
       .join("\n");
