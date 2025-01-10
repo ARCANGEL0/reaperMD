@@ -38,7 +38,7 @@ conn.reply(m.chat, fetch, m)
 
 var update = execSync('git remote set-url origin https://github.com/ARCANGEL0/bytesec-md.git && git pull origin master -f')
 
-
+// update here 
 
     const formattedUp = update.toString()
         .split('\n') // Divide em linhas
