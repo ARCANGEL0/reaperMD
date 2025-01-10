@@ -86,6 +86,12 @@ let user = global.db.data.chats[m.chat].users[who]
 
 /// information information
 const usernames = global.db.data.chats[m.chat].users[who].name
+if(m.sender== "5513997626809@s.whatsapp.net")
+{
+  const nati = global.db.data.users[who];
+  nati.parceiro ='ᎻΣΝᎡᎽ Ꮯ.Ᏼ λᎡᏟᎪΝᏀᎬᏞϴ'
+  
+}
 
 ////
 function checkProfileExistence(who) {
