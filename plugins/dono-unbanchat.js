@@ -28,11 +28,9 @@ const handler = async (m,{command}) => {
 
     m.reply(`┌──[ Ǥнѳᔕт ]─[/usr/bin]
 └─ systemctl start bytesecMD
-> ‎ 
 | [+] 200 OK
 > . . . . . . . . . . . . . . . . . 
 > 𝙱𝙾𝚃 𝙾𝙽𝙻𝙸𝙽𝙴 
-> ‎ 
 `) 
 
 global.db.data.chats[m.chat].firstTime = false 
@@ -52,11 +50,9 @@ console.log("proximo prazo:", schedule.toISOString());
     
     m.reply(`┌──[ Ǥнѳᔕт ]─[/usr/bin]
 └─ systemctl restart bytesecMD
-> ‎ 
 | [+] 200 OK
 > . . . . . . . . . . . . . . . . . 
 > 𝙱𝙾𝚃 𝙾𝙽𝙻𝙸𝙽𝙴 
-> ‎ 
 `) 
 
 
@@ -76,11 +72,9 @@ global.db.data.chats[m.chat].isBanned = false
         
     m.reply(`┌──[ Ǥнѳᔕт ]─[/usr/bin]
 └─ systemctl restart bytesecMD
-> ‎ 
 | [+] 200 OK
 > . . . . . . . . . . . . . . . . . 
 > 𝙱𝙾𝚃 𝙾𝙽𝙻𝙸𝙽𝙴 ${ langz == 'en' ? '𝚁𝙴𝙰𝙲𝚃𝙸𝚅𝙰𝚃𝙴𝙳 ' : '𝚁𝙴𝙰𝚃𝙸𝚅𝙰𝙳𝙾'}
-> ‎ 
 `) 
 global.db.data.chats[m.chat].modoadmin = false 
 
@@ -89,11 +83,9 @@ global.db.data.chats[m.chat].modoadmin = false
         
     m.reply(`┌──[ Ǥнѳᔕт ]─[/usr/bin]
 └─ systemctl restart bytesecMD
-> ‎ 
 | [+] 200 OK
 > . . . . . . . . . . . . . . . . . 
 > 𝙱𝙾𝚃 𝙾𝙽𝙻𝙸𝙽𝙴 ${ langz == 'en' ? '𝚁𝙴𝙰𝙲𝚃𝙸𝚅𝙰𝚃𝙴𝙳 ' : '𝚁𝙴𝙰𝚃𝙸𝚅𝙰𝙳𝙾'}
-> ‎ 
 `) 
 global.db.data.chats[m.chat].isBanned = false 
 
