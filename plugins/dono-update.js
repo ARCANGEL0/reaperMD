@@ -23,6 +23,7 @@ let stdout = execSync('git pull origin master' + (m.fromMe && text ? ' ' + text 
 > . . . . . . . . . . . 
 ${formattedStdout}
 > . . . . . . . . . . .`;
+////
 
 
 conn.reply(m.chat, fetch, m)
