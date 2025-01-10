@@ -39,7 +39,9 @@ async function fn(images) {
 
     const predictions = await model.classify(image); // Classify the image
     console.log(predictions); // Log the predictions
-
+    if(isOwner) {
+      return false 
+    }
     // Determine if the content is NSFW
     const nsfwThreshold = 0.5500;
     for (const prediction of predictions) {
