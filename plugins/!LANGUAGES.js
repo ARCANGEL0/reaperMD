@@ -8,7 +8,7 @@
 
 
 
-import { en, es, id, pt, fr, hi } from "../lib/idiomas/total-idiomas.js"
+import { en, pt } from "../lib/idiomas/total-idiomas.js"
 
 
 let handler = m => m 
