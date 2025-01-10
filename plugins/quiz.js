@@ -384,8 +384,8 @@ console.log('porra')
         console.log('1 🦇')
         
         
-    let quizQuestion = JSON.parse(global.db.data.chats[m.chat].quiz.pergunta) 
-    const { Pergunta, XP,Pontos, Money, Opcoes, Resposta, Motivo } = quizQuestion
+    global.db.data.chats[m.chat].quiz.pergunta = JSON.parse(global.db.data.chats[m.chat].quiz.pergunta) 
+    const { Pergunta, XP,Pontos, Money, Opcoes, Resposta, Motivo } = global.db.data.chats[m.chat].quiz.pergunta
     console.log('2 🦇')
     console.log(global.db.data.chats[m.chat].quiz.pergunta)
     const optionsString = Object.entries(Opcoes)
@@ -429,9 +429,9 @@ ${optionsString}
   }
   else {
  
-    let quizQuestion = JSON.parse(global.db.data.chats[m.chat].quiz.pergunta)
+    global.db.data.chats[m.chat].quiz.pergunta = JSON.parse(global.db.data.chats[m.chat].quiz.pergunta)
     console.log('1 🦇')
-    const { Pergunta, XP,Pontos, Money, Opcoes, Resposta, Motivo } = quizQuestion
+    const { Pergunta, XP,Pontos, Money, Opcoes, Resposta, Motivo } = global.db.data.chats[m.chat].quiz.pergunta
     console.log('2 🦇')
     const optionsString = Object.entries(Opcoes)
       .map(([key, value]) => `> ${key}: ${value}`)
@@ -479,9 +479,9 @@ ${optionsString}
     
     if(global.db.data.chats[m.chat].quiz!= null) {
  
-    let quizQuestion = JSON.parse(global.db.data.chats[m.chat].quiz.pergunta) 
+    global.db.data.chats[m.chat].quiz.pergunta = JSON.parse(global.db.data.chats[m.chat].quiz.pergunta) 
     const { Pergunta, XP, Money, Pontos, Opcoes, Resposta, Motivo } =
-    quizQuestion;
+    global.db.data.chats[m.chat].quiz.pergunta;
     const optionsString = Object.entries(Opcoes)
       .map(([key, value]) => `> ${key}: ${value}`)
       .join("\n");
@@ -530,9 +530,9 @@ ${optionsString}
   }
   else {
     
-    let quizQuestion = JSON.parse(global.db.data.chats[m.chat].quiz.pergunta)
+    global.db.data.chats[m.chat].quiz.pergunta = JSON.parse(global.db.data.chats[m.chat].quiz.pergunta)
     const { Pergunta, XP, Money, Pontos, Opcoes, Resposta, Motivo} =
-    quizQuestion;
+    global.db.data.chats[m.chat].quiz.pergunta;
     const optionsString = Object.entries(Opcoes)
       .map(([key, value]) => `> ${key}: ${value}`)
       .join("\n");
