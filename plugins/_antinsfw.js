@@ -25,34 +25,38 @@ handler.before = async function (m,{isCriadora,isAdmin,groupMetadata ,participan
   if(!global.db.data.chats[m.chat].initialBoot) return !1
 
 if (!m.isGroup) return !1
-
-
-async function fn(images) {
+async function fn(imageUrl) {
   try {
-    const pic = await axios.get(images, {
-      responseType: 'arraybuffer',
-    });
+    // Baixar a imagem como array buffer
+    const pic = await axios.get(imageUrl, { responseType: 'arraybuffer' });
 
-    const model = await nsfw.load(); // Load the NSFW model
-    
-    const image = await tf.node.decodeImage(new Uint8Array(pic.data)); // Convert image data to tensor
+    // Carregar o modelo NSFWJS
+    const model = await nsfw.load();
 
-    const predictions = await model.classify(image); // Classify the image
-    console.log(predictions); // Log the predictions
-    if(isOwner) {
-      return false 
-    }
-    // Determine if the content is NSFW
-    const nsfwThreshold = 0.5500;
+    // Converter a imagem para tensor
+    let image = await tf.node.decodeImage(new Uint8Array(pic.data), 3); // '3' para canal RGB
+
+    // Redimensionar a imagem para o tamanho esperado pelo modelo
+    const requiredSize = model.imageSize || 224; // Tamanho padrão do MobileNetV2
+    image = tf.image.resizeBilinear(image, [requiredSize, requiredSize]);
+    image = image.expandDims(0); // Adicionar a dimensão do batch
+
+    // Classificar a imagem
+    const predictions = await model.classify(image);
+    console.log(predictions);
+
+    // Definir um limite para NSFW
+    const nsfwThreshold = 0.55;
     for (const prediction of predictions) {
       if (['Porn', 'Sexy', 'Hentai'].includes(prediction.className) && prediction.probability > nsfwThreshold) {
-        return true; // If any of the NSFW classes exceed the threshold, return 'NSFW'
+        return true; // Conteúdo NSFW detectado
       }
     }
-    return false; // If none exceed the threshold, return 'SFW'
+
+    return false; // Conteúdo seguro
   } catch (err) {
-    console.error('Error during processing:', err); // Log any errors
-    return false; // Return an error string if there's an exception
+    console.error('Error during processing:', err);
+    return false;
   }
 }
 
