@@ -75,11 +75,11 @@ global.db.data.chats[m.chat].isBanned = false
   else if(command=='ligarbot') {
         
     m.reply(`┌──[ Ǥнѳᔕт ]─[/usr/bin]
-└─ systemctl stop bytesecMD
+└─ systemctl restart bytesecMD
 > ‎ 
 | [+] 200 OK
 > . . . . . . . . . . . . . . . . . 
-> 𝙱𝙾𝚃 𝙾𝙽𝙻𝙸𝙽𝙴 ${ langz == 'en' ? '𝚁𝙴𝙰𝙲𝚃𝙸𝚅𝙰𝚃𝙴𝙳 ' : '𝚁𝙴𝙰𝚃𝙸𝚅𝙰𝙳𝙾'} ${tempo}
+> 𝙱𝙾𝚃 𝙾𝙽𝙻𝙸𝙽𝙴 ${ langz == 'en' ? '𝚁𝙴𝙰𝙲𝚃𝙸𝚅𝙰𝚃𝙴𝙳 ' : '𝚁𝙴𝙰𝚃𝙸𝚅𝙰𝙳𝙾'}
 > ‎ 
 `) 
 global.db.data.chats[m.chat].modoadmin = false 
@@ -88,11 +88,11 @@ global.db.data.chats[m.chat].modoadmin = false
   else {
         
     m.reply(`┌──[ Ǥнѳᔕт ]─[/usr/bin]
-└─ systemctl stop bytesecMD
+└─ systemctl restart bytesecMD
 > ‎ 
 | [+] 200 OK
 > . . . . . . . . . . . . . . . . . 
-> 𝙱𝙾𝚃 𝙾𝙽𝙻𝙸𝙽𝙴 ${ langz == 'en' ? '𝚁𝙴𝙰𝙲𝚃𝙸𝚅𝙰𝚃𝙴𝙳 ' : '𝚁𝙴𝙰𝚃𝙸𝚅𝙰𝙳𝙾'} ${tempo}
+> 𝙱𝙾𝚃 𝙾𝙽𝙻𝙸𝙽𝙴 ${ langz == 'en' ? '𝚁𝙴𝙰𝙲𝚃𝙸𝚅𝙰𝚃𝙴𝙳 ' : '𝚁𝙴𝙰𝚃𝙸𝚅𝙰𝙳𝙾'}
 > ‎ 
 `) 
 global.db.data.chats[m.chat].isBanned = false 
