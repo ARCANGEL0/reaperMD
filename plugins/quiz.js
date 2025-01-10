@@ -389,7 +389,7 @@ console.log('porra')
     console.log('2 🦇')
     console.log(global.db.data.chats[m.chat].quiz.pergunta)
     const optionsString = Object.entries(Opcoes)
-      .map(([key, value]) => `${key}: ${value}`)
+      .map(([key, value]) => `> ${key}: ${value}`)
       .join("\n");
       
     console.log('3 🦇')
@@ -415,7 +415,8 @@ console.log('porra')
 > ‎ 
 > [*] ${Pergunta}
 > ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-> ${optionsString}
+> ‎ 
+${optionsString}
 > ‎ 
 > ‎  
 > >>EOF<<`);
@@ -433,7 +434,7 @@ console.log('porra')
     const { Pergunta, XP,Pontos, Money, Opcoes, Resposta, Motivo } = quizQuestion
     console.log('2 🦇')
     const optionsString = Object.entries(Opcoes)
-      .map(([key, value]) => `${key}: ${value}`)
+      .map(([key, value]) => `> ${key}: ${value}`)
       .join("\n");
     console.log('3 🦇')
 
@@ -458,7 +459,8 @@ console.log('porra')
 > ‎ 
 > [*] ${Pergunta}
 > ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-> ${optionsString}
+> ‎ 
+${optionsString}
 > ‎ 
 > ‎  
 > >>EOF<<`);
@@ -481,7 +483,7 @@ console.log('porra')
     const { Pergunta, XP, Money, Pontos, Opcoes, Resposta, Motivo } =
     quizQuestion;
     const optionsString = Object.entries(Opcoes)
-      .map(([key, value]) => `${key}: ${value}`)
+      .map(([key, value]) => `> ${key}: ${value}`)
       .join("\n");
     global.db.data.chats[m.chat].quiz.perguntaAndamento = true
     
@@ -490,7 +492,8 @@ console.log('porra')
 > ‎ 
 > [*] ${Pergunta}
 > ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-> ${optionsString}
+> ‎ 
+${optionsString}
 > ‎ 
 > ‎  
 > >>EOF<<`);
@@ -531,7 +534,7 @@ console.log('porra')
     const { Pergunta, XP, Money, Pontos, Opcoes, Resposta, Motivo} =
     quizQuestion;
     const optionsString = Object.entries(Opcoes)
-      .map(([key, value]) => `${key}: ${value}`)
+      .map(([key, value]) => `> ${key}: ${value}`)
       .join("\n");
     global.xppergunta[m.chat]= true
  // Update the current question and answer
@@ -547,7 +550,8 @@ console.log('porra')
 > ‎ 
 > [*] ${Pergunta}
 > ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-> ${optionsString}
+> ‎ 
+${optionsString}
 > ‎ 
 > ‎  
 > >>EOF<<`);
