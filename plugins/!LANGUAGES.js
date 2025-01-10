@@ -8,6 +8,7 @@
 
 
 
+import { en, es, id, pt, fr, hi } from "../lib/idiomas/total-idiomas.js"
 
 
 let handler = m => m 
@@ -23,6 +24,7 @@ m.quoted.id == global.db.data.chats[m.chat].langChangeID )
 {
     if(m.text ==1) {
         global.db.data.chats[m.chat].language = 'pt'
+        global.langTOGGLE = pt
         global.db.data.chats[m.chat].initialBoot = true
   m.react("✅")
 
@@ -43,6 +45,7 @@ m.quoted.id == global.db.data.chats[m.chat].langChangeID )
     else if(m.text ==2) {
       global.db.data.chats[m.chat].initialBoot = true
         global.db.data.chats[m.chat].language = 'en'
+        global.langTOGGLE = en
   m.react("✅")
         await conn.sendMessage(m.chat, {
             text: `robot@bytesec:~# lang-config
