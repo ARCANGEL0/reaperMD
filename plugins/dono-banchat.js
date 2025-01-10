@@ -67,11 +67,9 @@ const langz = global.db.data.chats[m.chat].language;
 
 m.reply(`┌──[ Ǥнѳᔕт ]─[/usr/bin]
 └─ systemctl stop bytesecMD
-> ‎ 
 | [+] 200 OK
 > . . . . . . . . . . . . . . . . . 
 > 𝙱𝙾𝚃 𝙾𝙵𝙵𝙻𝙸𝙽𝙴 ${ langz == 'en' ? '𝙵𝙾𝚁' : '𝙿𝙾𝚁'} ${tempo}
-> ‎ 
 `) 
   const horarioBot = new Date();
 horarioBot.setHours(newScheduledTime.getHours(), newScheduledTime.getMinutes(),newScheduledTime.getSeconds() , 0)
@@ -84,11 +82,9 @@ horarioBot.setHours(newScheduledTime.getHours(), newScheduledTime.getMinutes(),n
   global.db.data.chats[m.chat].isBanned = false
 m.reply(`┌──[ Ǥнѳᔕт ]─[/usr/bin]
 └─ systemctl restart bytesecMD
-> ‎ 
 | [+] 200 OK
 > . . . . . . . . . . . . . . . . . 
 > 𝙱𝙾𝚃 𝙾𝙽𝙻𝙸𝙽𝙴 
-> ‎ 
 `)
   }); 
   
@@ -106,7 +102,6 @@ m.reply(`┌──[ Ǥнѳᔕт ]─[/usr/bin]
 | [+] 200 OK
 > . . . . . . . . . . . . . . . . . 
 > 𝙱𝙾𝚃 𝙾𝙵𝙵𝙻𝙸𝙽𝙴
-> ‎ 
 `) 
 
 
@@ -119,8 +114,8 @@ m.reply(`┌──[ Ǥнѳᔕт ]─[/usr/bin]
   m.react("✅")
 }}
 catch(e){
-  await m.reply("erro ⸸")
-  console.log(e)
+    sendSystemErrorAlert(global.db.data.chats[m.chat].language);
+    console.log(e)
 }
 
 }
