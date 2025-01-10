@@ -19,11 +19,11 @@ let fsizedoc = '1'.repeat(10)
 
 try{
 await conn.sendFile(m.chat, pp, 'error.jpg', '*https://chat.whatsapp.com/' + await conn.groupInviteCode(group) + '*', m)
-//await conn.sendButton(m.chat, 'https://chat.whatsapp.com/' + await conn.groupInviteCode(group), wm, pp, [[lenguajeGB.smsConMenu(), `${usedPrefix}menu`]], fkontak, adReply)
+//await conn.sendButton(m.chat, 'https://chat.whatsapp.com/' + await conn.groupInviteCode(group), wm, pp, [[langTOGGLE.smsConMenu(), `${usedPrefix}menu`]], fkontak, adReply)
 } catch (e) {
-await m.reply(`\n${wm}`, lenguajeGB['smsMalError3']() + '#report ' + usedPrefix + command, m)   
-//await conn.sendButton(m.chat, `\n${wm}`, lenguajeGB['smsMalError3']() + '#report ' + usedPrefix + command, null, [[lenguajeGB.smsMensError1(), `#reporte ${lenguajeGB['smsMensError2']()} *${usedPrefix + command}*`]], m)
-console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
+await m.reply(`\n${wm}`, langTOGGLE['smsMalError3']() + '#report ' + usedPrefix + command, m)   
+//await conn.sendButton(m.chat, `\n${wm}`, langTOGGLE['smsMalError3']() + '#report ' + usedPrefix + command, null, [[langTOGGLE.smsMensError1(), `#reporte ${langTOGGLE['smsMensError2']()} *${usedPrefix + command}*`]], m)
+console.log(`❗❗ ${langTOGGLE['smsMensError2']()} ${usedPrefix + command} ❗❗`)
 console.log(e)	
 }} 
 handler.help = ['linkgroup']

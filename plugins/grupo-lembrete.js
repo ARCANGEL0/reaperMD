@@ -142,7 +142,7 @@ let msgg = `━━━━━━━━━⬣⬣━━━━━━━━
  await conn.sendMessage(m.chat, { text: msgg, mentions:[m.sender] });
 }}
    catch (e) {
-await conn.reply(m.chat, lenguajeGB.smsPropban7(usedPrefix, command, number), null, m)
+await conn.reply(m.chat, langTOGGLE.smsPropban7(usedPrefix, command, number), null, m)
 console.log(e) 
 }}
 handler.command = ['lembrete']

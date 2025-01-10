@@ -12,7 +12,7 @@ import { format } from 'util'
 
 let handler = async (m, { conn, usedPrefix, command }) => {
  
-    if (!m.quoted) return m.reply(`${lenguajeGB['smsAvisoMG']()}*╭━━━━━━━━━⬣
+    if (!m.quoted) return m.reply(`${langTOGGLE['smsAvisoMG']()}*╭━━━━━━━━━⬣
 ┃
 ┃ ✒️📜 𝐀𝐠𝐮𝐚𝐫𝐝𝐨 𝐚 𝐭𝐮𝐚 𝐟𝐢𝐠𝐮𝐫𝐚 𝐜𝐨𝐦𝐨 
 ┃ 𝐮𝐦 𝐜𝐨𝐫𝐯𝐨 𝐬𝐨𝐥𝐢𝐭á𝐫𝐢𝐨 𝐚𝐧𝐬𝐞𝐢𝐚 

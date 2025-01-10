@@ -29,41 +29,41 @@ process.env.TZ = 'America/Sao_Paulo';
   
   /*
 let titulo = [ 
-lenguajeGB.smsParaAdmins() + ' ' + `${m.isGroup ? chat.welcome ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}`, 
-lenguajeGB.smsParaAdmins() + ' ' + `${m.isGroup ? chat.detect ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}`,  
-lenguajeGB.smsParaAdmins() + ' ' + `${m.isGroup ? chat.autolevelup ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}`,   
-lenguajeGB.smsParaOw() + ' ' + `${bot.restrict ? '🌕' : '🌒'}`,    
-lenguajeGB.smsParaOw() + ' ' + `${bot.antiCall ? '🌕' : '🌒'}`,
-lenguajeGB.smsParaOw() + ' ' + `${bot.antiSpam ? '🌕' : '🌒'}`,	
-lenguajeGB.smsParaOw() + ' ' + `${global.opts['self'] ? '🌒' : '🌕'}`,    
-lenguajeGB.smsParaAdmins() + ' ' + `${m.isGroup ? chat.modoadmin ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}`,  
-lenguajeGB.smsParaOw() + ' ' + `${global.opts['autoread'] ? '🌕' : '🌒'}`, 
-lenguajeGB.smsParaOw() + ' ' + `${bot.temporal ? '🌕' : '🌒'}`,      
-lenguajeGB.smsParaAdmins() + ' ' + `${m.isGroup ? chat.stickers ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}`,   
-lenguajeGB.smsParaAdmins() + ' ' + `${m.isGroup ? chat.autosticker ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}`,   
-lenguajeGB.smsParaAdmins() + ' ' + `${m.isGroup ? chat.reaction ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}`,    
-lenguajeGB.smsParaAdmins() + ' ' + `${m.isGroup ? chat.audios ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}`,  
-lenguajeGB.smsParaAdmins() + ' ' + `${m.isGroup ? chat.modohorny ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}`,   
-lenguajeGB.smsParaAdmins() + ' ' + `${m.isGroup ? chat.antitoxic ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}`,   
-lenguajeGB.smsParaAdmins() + ' ' + `${m.isGroup ? chat.antiver ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}`,  
-lenguajeGB.smsParaAdmins() + ' ' + `${m.isGroup ? chat.delete ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}`,  
-lenguajeGB.smsParaAdmins() + ' ' + `${m.isGroup ? chat.antifake ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}`,  
-lenguajeGB.smsParaAdmins() + ' ' + `${m.isGroup ? chat.antiLink ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}`,   
-lenguajeGB.smsParaAdmins() + ' ' + `${m.isGroup ? chat.antiLink2 ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}`,    
-lenguajeGB.smsParaAdmins() + ' ' + `${m.isGroup ? chat.antiTiktok ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}`,    
-lenguajeGB.smsParaAdmins() + ' ' + `${m.isGroup ? chat.antiYoutube ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}`,    
-lenguajeGB.smsParaAdmins() + ' ' + `${m.isGroup ? chat.antiTelegram ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}`,    
-lenguajeGB.smsParaAdmins() + ' ' + `${m.isGroup ? chat.antiFacebook ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}`,   
-lenguajeGB.smsParaAdmins() + ' ' + `${m.isGroup ? chat.antiInstagram ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}`,    
-lenguajeGB.smsParaAdmins() + ' ' + `${m.isGroup ? chat.antiTwitter ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}`,    
-lenguajeGB.smsParaOw() + ' ' + `${global.opts['pconly'] ? '🌕' : '🌒'}`,  
-lenguajeGB.smsParaOw() + ' ' + `${global.opts['gconly'] ? '🌕' : '🌒'}`]
+langTOGGLE.smsParaAdmins() + ' ' + `${m.isGroup ? chat.welcome ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}`, 
+langTOGGLE.smsParaAdmins() + ' ' + `${m.isGroup ? chat.detect ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}`,  
+langTOGGLE.smsParaAdmins() + ' ' + `${m.isGroup ? chat.autolevelup ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}`,   
+langTOGGLE.smsParaOw() + ' ' + `${bot.restrict ? '🌕' : '🌒'}`,    
+langTOGGLE.smsParaOw() + ' ' + `${bot.antiCall ? '🌕' : '🌒'}`,
+langTOGGLE.smsParaOw() + ' ' + `${bot.antiSpam ? '🌕' : '🌒'}`,	
+langTOGGLE.smsParaOw() + ' ' + `${global.opts['self'] ? '🌒' : '🌕'}`,    
+langTOGGLE.smsParaAdmins() + ' ' + `${m.isGroup ? chat.modoadmin ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}`,  
+langTOGGLE.smsParaOw() + ' ' + `${global.opts['autoread'] ? '🌕' : '🌒'}`, 
+langTOGGLE.smsParaOw() + ' ' + `${bot.temporal ? '🌕' : '🌒'}`,      
+langTOGGLE.smsParaAdmins() + ' ' + `${m.isGroup ? chat.stickers ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}`,   
+langTOGGLE.smsParaAdmins() + ' ' + `${m.isGroup ? chat.autosticker ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}`,   
+langTOGGLE.smsParaAdmins() + ' ' + `${m.isGroup ? chat.reaction ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}`,    
+langTOGGLE.smsParaAdmins() + ' ' + `${m.isGroup ? chat.audios ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}`,  
+langTOGGLE.smsParaAdmins() + ' ' + `${m.isGroup ? chat.modohorny ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}`,   
+langTOGGLE.smsParaAdmins() + ' ' + `${m.isGroup ? chat.antitoxic ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}`,   
+langTOGGLE.smsParaAdmins() + ' ' + `${m.isGroup ? chat.antiver ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}`,  
+langTOGGLE.smsParaAdmins() + ' ' + `${m.isGroup ? chat.delete ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}`,  
+langTOGGLE.smsParaAdmins() + ' ' + `${m.isGroup ? chat.antifake ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}`,  
+langTOGGLE.smsParaAdmins() + ' ' + `${m.isGroup ? chat.antiLink ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}`,   
+langTOGGLE.smsParaAdmins() + ' ' + `${m.isGroup ? chat.antiLink2 ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}`,    
+langTOGGLE.smsParaAdmins() + ' ' + `${m.isGroup ? chat.antiTiktok ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}`,    
+langTOGGLE.smsParaAdmins() + ' ' + `${m.isGroup ? chat.antiYoutube ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}`,    
+langTOGGLE.smsParaAdmins() + ' ' + `${m.isGroup ? chat.antiTelegram ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}`,    
+langTOGGLE.smsParaAdmins() + ' ' + `${m.isGroup ? chat.antiFacebook ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}`,   
+langTOGGLE.smsParaAdmins() + ' ' + `${m.isGroup ? chat.antiInstagram ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}`,    
+langTOGGLE.smsParaAdmins() + ' ' + `${m.isGroup ? chat.antiTwitter ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}`,    
+langTOGGLE.smsParaOw() + ' ' + `${global.opts['pconly'] ? '🌕' : '🌒'}`,  
+langTOGGLE.smsParaOw() + ' ' + `${global.opts['gconly'] ? '🌕' : '🌒'}`]
 
-let nombre = [ lenguajeGB.smsWel1(), lenguajeGB.smsDete1(), lenguajeGB.smsANivel1(), lenguajeGB.smsRestri1(), lenguajeGB.smsLlamar1(), lenguajeGB.smsAntiSp1(), lenguajeGB.smsModP1(), lenguajeGB.smsModAd1(), lenguajeGB.smsLect1(), lenguajeGB.smsTempo1(), lenguajeGB.smsStik1(), lenguajeGB.smsStickA1(), lenguajeGB.smsReacc1(), lenguajeGB.smsAudi1(), lenguajeGB.smsModHor1(), lenguajeGB.smsAntitoc1(), lenguajeGB.smsModOb1(), lenguajeGB.smsAntiEli1(), lenguajeGB.smsAntiInt1(), lenguajeGB.smsAntiE1(), lenguajeGB.smsAntiEE1(), lenguajeGB.smsAntiTT1(), lenguajeGB.smsAntiYT1(), lenguajeGB.smsAntiTEL1(), lenguajeGB.smsAntiFB1(),
-lenguajeGB.smsAntiIG1(), lenguajeGB.smsAntiTW1(), lenguajeGB.smsSOLOP1(), lenguajeGB.smsSOLOG1()]
+let nombre = [ langTOGGLE.smsWel1(), langTOGGLE.smsDete1(), langTOGGLE.smsANivel1(), langTOGGLE.smsRestri1(), langTOGGLE.smsLlamar1(), langTOGGLE.smsAntiSp1(), langTOGGLE.smsModP1(), langTOGGLE.smsModAd1(), langTOGGLE.smsLect1(), langTOGGLE.smsTempo1(), langTOGGLE.smsStik1(), langTOGGLE.smsStickA1(), langTOGGLE.smsReacc1(), langTOGGLE.smsAudi1(), langTOGGLE.smsModHor1(), langTOGGLE.smsAntitoc1(), langTOGGLE.smsModOb1(), langTOGGLE.smsAntiEli1(), langTOGGLE.smsAntiInt1(), langTOGGLE.smsAntiE1(), langTOGGLE.smsAntiEE1(), langTOGGLE.smsAntiTT1(), langTOGGLE.smsAntiYT1(), langTOGGLE.smsAntiTEL1(), langTOGGLE.smsAntiFB1(),
+langTOGGLE.smsAntiIG1(), langTOGGLE.smsAntiTW1(), langTOGGLE.smsSOLOP1(), langTOGGLE.smsSOLOG1()]
 
-let descripción = [ lenguajeGB.smsWel2(), lenguajeGB.smsDete2(), lenguajeGB.smsANivel2(), lenguajeGB.smsRestri2(), lenguajeGB.smsLlamar2(), lenguajeGB.smsAntiSp2(), lenguajeGB.smsModP2(), lenguajeGB.smsModAd2(), lenguajeGB.smsLect2(), lenguajeGB.smsTempo2(), lenguajeGB.smsStik2(), lenguajeGB.smsStickA2(), lenguajeGB.smsReacc2(), lenguajeGB.smsAudi2(), lenguajeGB.smsModHor2(), lenguajeGB.smsAntitoc2(), lenguajeGB.smsModOb2(), lenguajeGB.smsAntiEli2(), lenguajeGB.smsAntiInt2(), lenguajeGB.smsAntiE2(), lenguajeGB.smsAntiEE2(), lenguajeGB.smsAntiTT2(), lenguajeGB.smsAntiYT2(), lenguajeGB.smsAntiTEL2(), lenguajeGB.smsAntiFB2(),
-lenguajeGB.smsAntiIG2(), lenguajeGB.smsAntiTW2(), lenguajeGB.smsSOLOP2(), lenguajeGB.smsSOLOG2()]
+let descripción = [ langTOGGLE.smsWel2(), langTOGGLE.smsDete2(), langTOGGLE.smsANivel2(), langTOGGLE.smsRestri2(), langTOGGLE.smsLlamar2(), langTOGGLE.smsAntiSp2(), langTOGGLE.smsModP2(), langTOGGLE.smsModAd2(), langTOGGLE.smsLect2(), langTOGGLE.smsTempo2(), langTOGGLE.smsStik2(), langTOGGLE.smsStickA2(), langTOGGLE.smsReacc2(), langTOGGLE.smsAudi2(), langTOGGLE.smsModHor2(), langTOGGLE.smsAntitoc2(), langTOGGLE.smsModOb2(), langTOGGLE.smsAntiEli2(), langTOGGLE.smsAntiInt2(), langTOGGLE.smsAntiE2(), langTOGGLE.smsAntiEE2(), langTOGGLE.smsAntiTT2(), langTOGGLE.smsAntiYT2(), langTOGGLE.smsAntiTEL2(), langTOGGLE.smsAntiFB2(),
+langTOGGLE.smsAntiIG2(), langTOGGLE.smsAntiTW2(), langTOGGLE.smsSOLOP2(), langTOGGLE.smsSOLOG2()]
 
 let comando = [ "welcome", "detect", "autolevelup", "restrict", "anticall", "antispam", "public", "modoadmin", "autoread", "temporal", "stickers", "autosticker", "reaction", "audios", "modohorny", "antitoxic", "antiviewonce", "antidelete", "antifake", "antilink", "antilink2", "antitiktok", "antiyoutube", "antitelegram", "antifacebook",
 "antinstagram", "antitwitter", "pconly", "gconly"]
@@ -73,23 +73,23 @@ rows: [{ title: `${nombre[v]} : ${command} ${comando[v]}`, description: `${1 + i
 
 let name = await conn.getName(m.sender)
 /*const listMessage = {
-text: `${lenguajeGB.smsConfi10()}`,
-footer: `╭━━━🪶 *${lenguajeGB.smsConfi1()}* 🪶━━━━⬣
+text: `${langTOGGLE.smsConfi10()}`,
+footer: `╭━━━🪶 *${langTOGGLE.smsConfi1()}* 🪶━━━━⬣
 ┃
-┃🌟 ${lenguajeGB.smsConfi2()} *${name}*
+┃🌟 ${langTOGGLE.smsConfi2()} *${name}*
 ┃
-${lenguajeGB.smsConfi3()}
-${lenguajeGB.smsConfi4()}
+${langTOGGLE.smsConfi3()}
+${langTOGGLE.smsConfi4()}
 ┃
-${lenguajeGB.smsConfi5()}
-${lenguajeGB.smsConfi6()}
-${lenguajeGB.smsConfi7()}
-${lenguajeGB.smsConfi8()}
-${m.isGroup ? `┃` : `┃\n${lenguajeGB.smsConfi9()}`}
+${langTOGGLE.smsConfi5()}
+${langTOGGLE.smsConfi6()}
+${langTOGGLE.smsConfi7()}
+${langTOGGLE.smsConfi8()}
+${m.isGroup ? `┃` : `┃\n${langTOGGLE.smsConfi9()}`}
 ╰━━━━━🪶 *${vs}* 🪶━━━━⬣
 ${wm}`,
 title: null,
-buttonText: `⚙️ ${lenguajeGB.smsConfi1()} ⚙️`,
+buttonText: `⚙️ ${langTOGGLE.smsConfi1()} ⚙️`,
 sections }*/
 
 let isEnable = /true|enable|(turn)?on|1/i.test(command)
@@ -1025,9 +1025,9 @@ let resultado = `BYΓΞSΞC: #~ cfs --${command + ' ' + text}
 > [⎔] ${isAll ? modoBot : modoGrupo}`
 
 await conn.reply(m.chat, resultado, fkontak, m)}	
-/*await conn.sendButton(m.chat, `${lenguajeGB['smsAvisoRG']()}ღ *_${lenguajeGB['smsMens1']()}_* *|* ${type} 
-ღ *_${lenguajeGB['smsMens2']()}_* *|* ${isEnable ? lenguajeGB.smsEncender() : lenguajeGB.smsApagar()} 
-ღ *_${lenguajeGB['smsMens3']()}_* *|* ${isAll ? lenguajeGB.smsMens4() : isUser ? '' : lenguajeGB.smsMens5()}`, wm, null, [[`${isEnable ? lenguajeGB.smsApagar() : lenguajeGB.smsEncender()}`, `${isEnable ? `.off ${type}` : `.on ${type}`}`], [lenguajeGB.smsConMenu(), '.menu']], fkontak, m)}*/
+/*await conn.sendButton(m.chat, `${langTOGGLE['smsAvisoRG']()}ღ *_${langTOGGLE['smsMens1']()}_* *|* ${type} 
+ღ *_${langTOGGLE['smsMens2']()}_* *|* ${isEnable ? langTOGGLE.smsEncender() : langTOGGLE.smsApagar()} 
+ღ *_${langTOGGLE['smsMens3']()}_* *|* ${isAll ? langTOGGLE.smsMens4() : isUser ? '' : langTOGGLE.smsMens5()}`, wm, null, [[`${isEnable ? langTOGGLE.smsApagar() : langTOGGLE.smsEncender()}`, `${isEnable ? `.off ${type}` : `.on ${type}`}`], [langTOGGLE.smsConMenu(), '.menu']], fkontak, m)}*/
 
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']

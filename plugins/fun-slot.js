@@ -145,7 +145,7 @@ if(global.db.data.chats[m.chat].users[m.sender].slots <= 0){
         // Replenish attempts and update timestamp
         userData.lastslot = currentTime;
         userData.slots = 5
-        if (aposta < 10) throw `${lenguajeGB['smsAvisoAG']()}
+        if (aposta < 10) throw `${langTOGGLE['smsAvisoAG']()}
 ━━━━━━━━━⬣⋆🃜❌🃖⬣━━━━━━━━ 
 ⏦ 𝐀𝐩𝐨𝐬𝐭𝐚 𝐦𝐢𝐧𝐢𝐦𝐚 𝐝𝐞 𝟏𝟎
 ━━━━━━━━━⬣🃁🂭🂺⬣━━━━━━━━`    
@@ -244,7 +244,7 @@ else if (command ===( 'slot' || 'apostar')) {
 }
 
 
-if (aposta < 10) throw `${lenguajeGB['smsAvisoAG']()}
+if (aposta < 10) throw `${langTOGGLE['smsAvisoAG']()}
 ━━━━━━━━━⬣⋆🃜❌🃖⬣━━━━━━━━ 
 ⏦ 𝐀𝐩𝐨𝐬𝐭𝐚 𝐦𝐢𝐧𝐢𝐦𝐚 𝐝𝐞 𝟏𝟎
 ━━━━━━━━━⬣🃁🂭🂺⬣━━━━━━━━`    

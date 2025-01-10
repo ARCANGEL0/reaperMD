@@ -13,7 +13,7 @@ import uploadImage from '../lib/uploadImage.js'
 let handler = async (m, { conn, text, usedPrefix, command }) => {
   
   
-  if (!text && !m.quoted) return conn.reply(m.chat, `${lenguajeGB['smsAvisoMG']()}
+  if (!text && !m.quoted) return conn.reply(m.chat, `${langTOGGLE['smsAvisoMG']()}
    ━━━━━━━━━⬣🌕⬣━━━━━━━━
 𝗗𝗶𝗴𝗮-𝗺𝗲 𝗾𝘂𝗮𝗹 𝗵𝘂𝗺𝗼𝗿 𝘃𝗶𝘀𝗰𝗲𝗿𝗮𝗹 𝗳𝗹𝗼𝗿𝗲𝘀𝗰𝗲 𝗱𝗲 𝘀𝘂𝗮 𝗺𝗲𝗻𝘁𝗲 𝗲 𝗳𝗼𝗿𝗻𝗲𝗰𝗮 𝗺𝗲 𝗼𝘀 𝘁𝗲𝘅𝘁𝗼 
    ━━━━━━━━━⬣🌒⬣━━━━━━━━

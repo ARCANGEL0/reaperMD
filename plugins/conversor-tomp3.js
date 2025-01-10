@@ -10,7 +10,7 @@ import { toAudio } from '../lib/converter.js'
 let handler = async (m, { conn, usedPrefix, command }) => {
 let q = m.quoted ? m.quoted : m
 let mime = (m.quoted ? m.quoted : m.msg).mimetype || ''
-if (!/video|audio/.test(mime)) throw `${lenguajeGB['smsAvisoMG']()}
+if (!/video|audio/.test(mime)) throw `${langTOGGLE['smsAvisoMG']()}
 ╭━━━━━━━━━⬣
 ┃
 ┃ 🐈‍⬛🪦 𝐃𝐢𝐠𝐚-𝐦𝐞, 𝐩𝐨𝐛𝐫𝐞 𝐚𝐥𝐦𝐚. 𝐐𝐮𝐚𝐥
@@ -27,7 +27,7 @@ if (!/video|audio/.test(mime)) throw `${lenguajeGB['smsAvisoMG']()}
 
 
 let media = await q.download?.()
-if (!media && !/video/.test(mime)) throw `${lenguajeGB['smsAvisoFG']()} ╭━━━━━━━━━⬣
+if (!media && !/video/.test(mime)) throw `${langTOGGLE['smsAvisoFG']()} ╭━━━━━━━━━⬣
 ┃
 ┃ ❌✒️ 𝐀 𝐭𝐞𝐧𝐭𝐚𝐭𝐢𝐯𝐚 𝐝𝐞 
 ┃ 𝐭𝐫𝐚𝐧𝐬𝐜𝐫𝐢𝐜𝐚𝐨
@@ -42,7 +42,7 @@ if (!media && !/video/.test(mime)) throw `${lenguajeGB['smsAvisoFG']()} ╭━�
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
 ┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
 ╰━━━━━━━━━━━━━━━━━━⬣`
-if (!media && !/audio/.test(mime)) throw `${lenguajeGB['smsAvisoFG']()}
+if (!media && !/audio/.test(mime)) throw `${langTOGGLE['smsAvisoFG']()}
 ╭━━━━━━━━━⬣
 ┃
 ┃ ❌✒️ 𝐀 𝐭𝐞𝐧𝐭𝐚𝐭𝐢𝐯𝐚 𝐝𝐞 
@@ -58,7 +58,7 @@ if (!media && !/audio/.test(mime)) throw `${lenguajeGB['smsAvisoFG']()}
 ┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
 ╰━━━━━━━━━━━━━━━━━━⬣`
 let audio = await toAudio(media, 'mp4')
-if (!audio.data && !/audio/.test(mime)) throw `${lenguajeGB['smsAvisoFG']()}╭━━━━━━━━━⬣
+if (!audio.data && !/audio/.test(mime)) throw `${langTOGGLE['smsAvisoFG']()}╭━━━━━━━━━⬣
 ┃
 ┃ ❌✒️ 𝐀 𝐭𝐞𝐧𝐭𝐚𝐭𝐢𝐯𝐚 𝐝𝐞 𝐭𝐫𝐚𝐧𝐬𝐜𝐫𝐢𝐜𝐚𝐨
 ┃𝐟𝐚𝐥𝐡𝐨𝐮 𝐥𝐚𝐦𝐞𝐧𝐭𝐚𝐯𝐞𝐥𝐦𝐞𝐧𝐭𝐞.
@@ -71,7 +71,7 @@ if (!audio.data && !/audio/.test(mime)) throw `${lenguajeGB['smsAvisoFG']()}╭�
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
 ┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
 ╰━━━━━━━━━━━━━━━━━━⬣ `
-if (!audio.data && !/audio/.test(mime)) throw `${lenguajeGB['smsAvisoFG']()}
+if (!audio.data && !/audio/.test(mime)) throw `${langTOGGLE['smsAvisoFG']()}
 ╭━━━━━━━━━⬣
 ┃
 ┃ ❌✒️ 𝐀 𝐭𝐞𝐧𝐭𝐚𝐭𝐢𝐯𝐚 𝐝𝐞 𝐭𝐫𝐚𝐧𝐬𝐜𝐫𝐢𝐜𝐚𝐨
@@ -85,7 +85,7 @@ if (!audio.data && !/audio/.test(mime)) throw `${lenguajeGB['smsAvisoFG']()}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
 ┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
 ╰━━━━━━━━━━━━━━━━━━⬣`
-if (!audio.data && !/video/.test(mime)) throw `${lenguajeGB['smsAvisoFG']()}
+if (!audio.data && !/video/.test(mime)) throw `${langTOGGLE['smsAvisoFG']()}
 ╭━━━━━━━━━⬣
 ┃
 ┃ ❌✒️ 𝐀 𝐭𝐞𝐧𝐭𝐚𝐭𝐢𝐯𝐚 𝐝𝐞 𝐭𝐫𝐚𝐧𝐬𝐜𝐫𝐢𝐜𝐚𝐨

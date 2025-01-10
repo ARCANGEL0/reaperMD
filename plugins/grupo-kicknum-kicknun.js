@@ -18,12 +18,12 @@ throw false
 }
 
 
-if (!args[0]) return m.reply(`${lenguajeGB['smsAvisoMG']()}DIGITE O PREFIXO DO PAÍS. EXEMPLO:${usedPrefix + command} 593*`) 
-if (isNaN(args[0])) return m.reply(`${lenguajeGB['smsAvisoMG']()}DIGITE O PREFIXO DE UM PAÍS PARA BUSCAR NUMEROS NO GRUPO.\n EXEMPLO: ${usedPrefix + command} 593*`) 
+if (!args[0]) return m.reply(`${langTOGGLE['smsAvisoMG']()}DIGITE O PREFIXO DO PAÍS. EXEMPLO:${usedPrefix + command} 593*`) 
+if (isNaN(args[0])) return m.reply(`${langTOGGLE['smsAvisoMG']()}DIGITE O PREFIXO DE UM PAÍS PARA BUSCAR NUMEROS NO GRUPO.\n EXEMPLO: ${usedPrefix + command} 593*`) 
 let lol = args[0].replace(/[+]/g, '')
 let ps = participants.map(u => u.id).filter(v => v !== conn.user.jid && v.startsWith(lol || lol)) 
 let bot = global.db.data.settings[conn.user.jid] || {}
-if (ps == '') return m.reply(`${lenguajeGB['smsAvisoAG']()}NAO HÁ MENHUM NUMERO NESTE GRUPO COM ESTE PREFIXO  +${lol}*`)
+if (ps == '') return m.reply(`${langTOGGLE['smsAvisoAG']()}NAO HÁ MENHUM NUMERO NESTE GRUPO COM ESTE PREFIXO  +${lol}*`)
 let numeros = ps.map(v=> '➥ @' + v.replace(/@.+/, ''))
 const delay = time => new Promise(res=>setTimeout(res,time));
 switch (command) {
@@ -31,9 +31,9 @@ case "listanum":
 conn.reply(m.chat, `⚠️ LISTA DE NÚMEROS NO GRUPO FOM O PREFIXO  +${lol}⚠️\n` + numeros.join`\n`, m, { mentions: ps })
 break   
 case "kicknum":  
-if (!bot.restrict) return m.reply(`${lenguajeGB['smsAvisoAG']()} ${lenguajeGB['smsSoloOwner']()}`) 
-if (!isBotAdmin) return m.reply(`${lenguajeGB['smsAvisoAG']()} ${lenguajeGB['smsAllAdmin']()}`)          
-conn.reply(m.chat, `${lenguajeGB['smsAvisoIIG']()}INICIANDO A INEVITAVEL REMOÇÃO DOS NUMEROS 
+if (!bot.restrict) return m.reply(`${langTOGGLE['smsAvisoAG']()} ${langTOGGLE['smsSoloOwner']()}`) 
+if (!isBotAdmin) return m.reply(`${langTOGGLE['smsAvisoAG']()} ${langTOGGLE['smsAllAdmin']()}`)          
+conn.reply(m.chat, `${langTOGGLE['smsAvisoIIG']()}INICIANDO A INEVITAVEL REMOÇÃO DOS NUMEROS 
  A CADA 10 SEGUNDOS UM USUÁRIO SERÁ ELIMINADO`, m)            
 let ownerGroup = m.chat.split`-`[0] + '@s.whatsapp.net'
 let users = participants.map(u => u.id).filter(v => v !== conn.user.jid && v.startsWith(lol || lol))
@@ -44,7 +44,7 @@ await delay(2000)
 let responseb = await conn.groupParticipantsUpdate(m.chat, [user], 'remove')
 if (responseb[0].status === "404") m.reply(error, m.chat, { mentions: conn.parseMention(error)})  
 await delay(10000)
-} else return m.reply(`${lenguajeGB['smsAvisoFG']()}`)}
+} else return m.reply(`${langTOGGLE['smsAvisoFG']()}`)}
 break            
 }}
 handler.command = /^(listanum|kicknum)$/i

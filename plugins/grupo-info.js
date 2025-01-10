@@ -14,7 +14,7 @@ const owner = groupMetadata.owner || groupAdmins.find(p => p.admin === 'superadm
 
 m.reply(groupMetadata.id)
 
-//await conn.sendButton(m.chat, wm, text, pp, [[lenguajeGB.smsGI10(), '.on'], [lenguajeGB.smsConMenu(), '/menu']], m, { mentions: [...groupAdmins.map(v => v.id), owner] })
+//await conn.sendButton(m.chat, wm, text, pp, [[langTOGGLE.smsGI10(), '.on'], [langTOGGLE.smsConMenu(), '/menu']], m, { mentions: [...groupAdmins.map(v => v.id), owner] })
 }
 handler.help = ['infogrup']
 handler.tags = ['group']

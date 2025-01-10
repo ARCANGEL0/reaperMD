@@ -32,7 +32,7 @@ const fkontak = {
         }, 
         "participant": "0@s.whatsapp.net"
     }
-if (!args[0]) throw `${lenguajeGB['smsAvisoMG']()}
+if (!args[0]) throw `${langTOGGLE['smsAvisoMG']()}
 ╭━━━━━━━━━⬣
 ┃
 ┃ 🕯️💀 𝐑𝐞𝐯𝐞𝐥𝐚-𝐦𝐞 𝐨 𝐞𝐥𝐨 𝐩𝐚𝐫𝐚 𝐨 
@@ -68,7 +68,7 @@ await conn.sendMessage(m.chat, { video: { url: ssdk.data[0].url }, fileName: `er
 catch(e) {
 console.log('erro igs') 
 console.log(e)
-conn.sendMessage(m.chat, {text: `${lenguajeGB['smsAvisoFG']()} ╭━━━━━━━━━⬣
+conn.sendMessage(m.chat, {text: `${langTOGGLE['smsAvisoFG']()} ╭━━━━━━━━━⬣
 ┃
 ┃ ❌✒️ 𝐀 𝐭𝐞𝐧𝐭𝐚𝐭𝐢𝐯𝐚 𝐝𝐞 𝐭𝐫𝐚𝐧𝐬𝐜𝐫𝐢𝐜𝐚𝐨
 ┃𝐟𝐚𝐥𝐡𝐨𝐮 𝐥𝐚𝐦𝐞𝐧𝐭𝐚𝐯𝐞𝐥𝐦𝐞𝐧𝐭𝐞.

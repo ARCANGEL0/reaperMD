@@ -16,7 +16,7 @@ if(!(isAdmin || isOwner) && global.db.data.chats[m.chat].download===false){
    
    return !0;
  } 
-if (!text) return conn.reply(m.chat, `${lenguajeGB['smsAvisoMG']()}𝙉𝙤 𝙚𝙩𝙚𝙧 𝙙𝙤 𝙨𝙪𝙗𝙢𝙪𝙣𝙙𝙤 𝙫𝙞𝙧𝙩𝙪𝙖𝙡, 𝙨𝙪𝙨𝙨𝙪𝙧𝙧𝙖-𝙢𝙚 𝙤 𝙩í𝙩𝙪𝙡𝙤 𝙤𝙗𝙨𝙘𝙪𝙧𝙤 𝙙𝙚 𝙪𝙢 𝙫í𝙙𝙚𝙤, 𝙪𝙢 𝙨𝙚𝙜𝙧𝙚𝙙𝙤 𝙙𝙞𝙜𝙞𝙩𝙖𝙡 𝙖 𝙨𝙚𝙧 𝙙𝙚𝙨𝙫𝙚𝙡𝙖𝙙𝙤 𝙦𝙪𝙚 𝙥𝙖𝙧𝙩𝙞𝙧𝙚𝙞 𝙖 𝙗𝙪𝙨𝙘𝙖 𝙥𝙚𝙡𝙤 𝙚𝙨𝙦𝙪𝙚𝙘𝙞𝙙𝙤 𝙫𝙖𝙡𝙚 𝙖 𝙛𝙞𝙢 𝙙𝙚 𝙚𝙣𝙘𝙤𝙣𝙩𝙧𝙖 𝙡𝙤 𝙣𝙤 𝙔𝙤𝙪𝙏𝙪𝙗𝙚.`, fkontak,  m)
+if (!text) return conn.reply(m.chat, `${langTOGGLE['smsAvisoMG']()}𝙉𝙤 𝙚𝙩𝙚𝙧 𝙙𝙤 𝙨𝙪𝙗𝙢𝙪𝙣𝙙𝙤 𝙫𝙞𝙧𝙩𝙪𝙖𝙡, 𝙨𝙪𝙨𝙨𝙪𝙧𝙧𝙖-𝙢𝙚 𝙤 𝙩í𝙩𝙪𝙡𝙤 𝙤𝙗𝙨𝙘𝙪𝙧𝙤 𝙙𝙚 𝙪𝙢 𝙫í𝙙𝙚𝙤, 𝙪𝙢 𝙨𝙚𝙜𝙧𝙚𝙙𝙤 𝙙𝙞𝙜𝙞𝙩𝙖𝙡 𝙖 𝙨𝙚𝙧 𝙙𝙚𝙨𝙫𝙚𝙡𝙖𝙙𝙤 𝙦𝙪𝙚 𝙥𝙖𝙧𝙩𝙞𝙧𝙚𝙞 𝙖 𝙗𝙪𝙨𝙘𝙖 𝙥𝙚𝙡𝙤 𝙚𝙨𝙦𝙪𝙚𝙘𝙞𝙙𝙤 𝙫𝙖𝙡𝙚 𝙖 𝙛𝙞𝙢 𝙙𝙚 𝙚𝙣𝙘𝙤𝙣𝙩𝙧𝙖 𝙡𝙤 𝙣𝙤 𝙔𝙤𝙪𝙏𝙪𝙗𝙚.`, fkontak,  m)
 try {
 let vids_ = { 
 from: m.sender, 
@@ -30,7 +30,7 @@ delete global.videoList;
 }
 global.videoList = [];
 let results = await yts(text);
-let textoInfo = `${lenguajeGB['smsAvisoIIG']()}
+let textoInfo = `${langTOGGLE['smsAvisoIIG']()}
 ╭━━━━━━━━━⬣
 ┃
 ┃ ${usedPrefix}video <numero> 
@@ -69,7 +69,7 @@ export default handler
 /*import yts from "yt-search"
 let handler = async (m, { text, conn, args, command, usedPrefix }) => {
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
-if (!text) return conn.reply(m.chat, `${lenguajeGB['smsAvisoMG']()}𝙀𝙎𝘾𝙍𝙄𝘽𝘼 𝙀𝙇 𝙉𝙊𝙈𝘽𝙍𝙀 𝘿𝙀 𝙐𝙉 𝙑𝙄𝘿𝙀𝙊 𝙊 𝘾𝘼𝙉𝘼 𝘿𝙀 𝙔𝙊𝙐𝙏𝙐𝘽𝙀\n\n𝙒𝙍𝙄𝙏𝙀 𝙏𝙃𝙀 𝙉𝘼𝙈𝙀 𝙊𝙁 𝘼 𝙔𝙊𝙐𝙏𝙐𝘽𝙀 𝙑𝙄𝘿𝙀𝙊 𝙊𝙍 𝘾𝙃𝘼𝙉𝙉𝙀𝙇`, fkontak,  m)
+if (!text) return conn.reply(m.chat, `${langTOGGLE['smsAvisoMG']()}𝙀𝙎𝘾𝙍𝙄𝘽𝘼 𝙀𝙇 𝙉𝙊𝙈𝘽𝙍𝙀 𝘿𝙀 𝙐𝙉 𝙑𝙄𝘿𝙀𝙊 𝙊 𝘾𝘼𝙉𝘼 𝘿𝙀 𝙔𝙊𝙐𝙏𝙐𝘽𝙀\n\n𝙒𝙍𝙄𝙏𝙀 𝙏𝙃𝙀 𝙉𝘼𝙈𝙀 𝙊𝙁 𝘼 𝙔𝙊𝙐𝙏𝙐𝘽𝙀 𝙑𝙄𝘿𝙀𝙊 𝙊𝙍 𝘾𝙃𝘼𝙉𝙉𝙀𝙇`, fkontak,  m)
 try {
 let search = await yts(args.join(" "))
 let listAudio = []

@@ -21,7 +21,7 @@ let handler = async (m, { conn, __dirname,args,text, usedPrefix, command }) => {
   
 if (!text && m.quoted?.text) abc = m.quoted.text
 if (text && !m.quoted?.text) abc = text
-if (!text && !m.quoted?.text) throw `${lenguajeGB['smsAvisoMG']()}╭━━━━━━━━━⬣
+if (!text && !m.quoted?.text) throw `${langTOGGLE['smsAvisoMG']()}╭━━━━━━━━━⬣
 ┃
 ┃ 🥀🪦 𝐌𝐞 𝐬𝐮𝐬𝐬𝐮𝐫𝐫𝐞 𝐮𝐦 𝐬𝐞𝐠𝐫𝐞𝐝𝐨
 ┃ 𝐧𝐚𝐬 𝐬𝐨𝐦𝐛𝐫𝐚𝐬 𝐞 𝐥𝐡𝐞 𝐫𝐞𝐭𝐨𝐫𝐧𝐚𝐫𝐞𝐢

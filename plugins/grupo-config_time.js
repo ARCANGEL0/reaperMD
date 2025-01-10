@@ -33,66 +33,66 @@ let isClose = {
 if (isClose === undefined) {
 	
 let nombre = [ 
-lenguajeGB.smsGrupoTime9() + '1' + lenguajeGB.smsGrupoTime11(), 
-lenguajeGB.smsGrupoTime10() + '1' + lenguajeGB.smsGrupoTime11(), 
+langTOGGLE.smsGrupoTime9() + '1' + langTOGGLE.smsGrupoTime11(), 
+langTOGGLE.smsGrupoTime10() + '1' + langTOGGLE.smsGrupoTime11(), 
 	
-lenguajeGB.smsGrupoTime9() + '2' + lenguajeGB.smsGrupoTime11(), 
-lenguajeGB.smsGrupoTime10() + '2' + lenguajeGB.smsGrupoTime11(), 
+langTOGGLE.smsGrupoTime9() + '2' + langTOGGLE.smsGrupoTime11(), 
+langTOGGLE.smsGrupoTime10() + '2' + langTOGGLE.smsGrupoTime11(), 
 	
-lenguajeGB.smsGrupoTime9() + '3' + lenguajeGB.smsGrupoTime11(), 
-lenguajeGB.smsGrupoTime10() + '3' + lenguajeGB.smsGrupoTime11(), 
+langTOGGLE.smsGrupoTime9() + '3' + langTOGGLE.smsGrupoTime11(), 
+langTOGGLE.smsGrupoTime10() + '3' + langTOGGLE.smsGrupoTime11(), 
 	
-lenguajeGB.smsGrupoTime9() + '4' + lenguajeGB.smsGrupoTime11(), 
-lenguajeGB.smsGrupoTime10() + '4' + lenguajeGB.smsGrupoTime11(), 
+langTOGGLE.smsGrupoTime9() + '4' + langTOGGLE.smsGrupoTime11(), 
+langTOGGLE.smsGrupoTime10() + '4' + langTOGGLE.smsGrupoTime11(), 
 	
-lenguajeGB.smsGrupoTime9() + '5' + lenguajeGB.smsGrupoTime11(), 
-lenguajeGB.smsGrupoTime10() + '5' + lenguajeGB.smsGrupoTime11(), 
+langTOGGLE.smsGrupoTime9() + '5' + langTOGGLE.smsGrupoTime11(), 
+langTOGGLE.smsGrupoTime10() + '5' + langTOGGLE.smsGrupoTime11(), 
 	
-lenguajeGB.smsGrupoTime9() + '6' + lenguajeGB.smsGrupoTime11(), 
-lenguajeGB.smsGrupoTime10() + '6' + lenguajeGB.smsGrupoTime11(), 
+langTOGGLE.smsGrupoTime9() + '6' + langTOGGLE.smsGrupoTime11(), 
+langTOGGLE.smsGrupoTime10() + '6' + langTOGGLE.smsGrupoTime11(), 
 	
-lenguajeGB.smsGrupoTime9() + '7' + lenguajeGB.smsGrupoTime11(), 
-lenguajeGB.smsGrupoTime10() + '7' + lenguajeGB.smsGrupoTime11(), 
+langTOGGLE.smsGrupoTime9() + '7' + langTOGGLE.smsGrupoTime11(), 
+langTOGGLE.smsGrupoTime10() + '7' + langTOGGLE.smsGrupoTime11(), 
 	
-lenguajeGB.smsGrupoTime9() + '10' + lenguajeGB.smsGrupoTime11(),
-lenguajeGB.smsGrupoTime10() + '10' + lenguajeGB.smsGrupoTime11(),
+langTOGGLE.smsGrupoTime9() + '10' + langTOGGLE.smsGrupoTime11(),
+langTOGGLE.smsGrupoTime10() + '10' + langTOGGLE.smsGrupoTime11(),
 
-lenguajeGB.smsGrupoTime9() + '12' + lenguajeGB.smsGrupoTime11(),
-lenguajeGB.smsGrupoTime10() + '12' + lenguajeGB.smsGrupoTime11(),
+langTOGGLE.smsGrupoTime9() + '12' + langTOGGLE.smsGrupoTime11(),
+langTOGGLE.smsGrupoTime10() + '12' + langTOGGLE.smsGrupoTime11(),
 
-lenguajeGB.smsGrupoTime9() + '24' + lenguajeGB.smsGrupoTime11(),
-lenguajeGB.smsGrupoTime10() + '24' + lenguajeGB.smsGrupoTime11()]
+langTOGGLE.smsGrupoTime9() + '24' + langTOGGLE.smsGrupoTime11(),
+langTOGGLE.smsGrupoTime10() + '24' + langTOGGLE.smsGrupoTime11()]
 
 let descripción = [ 
-lenguajeGB.smsGrupoTime12() + '1' + lenguajeGB.smsGrupoTime11(), 
-lenguajeGB.smsGrupoTime13() + '1' + lenguajeGB.smsGrupoTime11() + '\n', 
+langTOGGLE.smsGrupoTime12() + '1' + langTOGGLE.smsGrupoTime11(), 
+langTOGGLE.smsGrupoTime13() + '1' + langTOGGLE.smsGrupoTime11() + '\n', 
 	
-lenguajeGB.smsGrupoTime12() + '2' + lenguajeGB.smsGrupoTime11(), 
-lenguajeGB.smsGrupoTime13() + '2' + lenguajeGB.smsGrupoTime11() + '\n', 
+langTOGGLE.smsGrupoTime12() + '2' + langTOGGLE.smsGrupoTime11(), 
+langTOGGLE.smsGrupoTime13() + '2' + langTOGGLE.smsGrupoTime11() + '\n', 
 	
-lenguajeGB.smsGrupoTime12() + '3' + lenguajeGB.smsGrupoTime11(), 
-lenguajeGB.smsGrupoTime13() + '3' + lenguajeGB.smsGrupoTime11() + '\n',  
+langTOGGLE.smsGrupoTime12() + '3' + langTOGGLE.smsGrupoTime11(), 
+langTOGGLE.smsGrupoTime13() + '3' + langTOGGLE.smsGrupoTime11() + '\n',  
 	
-lenguajeGB.smsGrupoTime12() + '4' + lenguajeGB.smsGrupoTime11(), 
-lenguajeGB.smsGrupoTime13() + '4' + lenguajeGB.smsGrupoTime11() + '\n', 
+langTOGGLE.smsGrupoTime12() + '4' + langTOGGLE.smsGrupoTime11(), 
+langTOGGLE.smsGrupoTime13() + '4' + langTOGGLE.smsGrupoTime11() + '\n', 
 	
-lenguajeGB.smsGrupoTime12() + '5' + lenguajeGB.smsGrupoTime11(), 
-lenguajeGB.smsGrupoTime13() + '5' + lenguajeGB.smsGrupoTime11() + '\n', 
+langTOGGLE.smsGrupoTime12() + '5' + langTOGGLE.smsGrupoTime11(), 
+langTOGGLE.smsGrupoTime13() + '5' + langTOGGLE.smsGrupoTime11() + '\n', 
 	
-lenguajeGB.smsGrupoTime12() + '6' + lenguajeGB.smsGrupoTime11(), 
-lenguajeGB.smsGrupoTime13() + '6' + lenguajeGB.smsGrupoTime11() + '\n', 
+langTOGGLE.smsGrupoTime12() + '6' + langTOGGLE.smsGrupoTime11(), 
+langTOGGLE.smsGrupoTime13() + '6' + langTOGGLE.smsGrupoTime11() + '\n', 
 	
-lenguajeGB.smsGrupoTime12() + '7' + lenguajeGB.smsGrupoTime11(), 
-lenguajeGB.smsGrupoTime13() + '7' + lenguajeGB.smsGrupoTime11() + '\n', 
+langTOGGLE.smsGrupoTime12() + '7' + langTOGGLE.smsGrupoTime11(), 
+langTOGGLE.smsGrupoTime13() + '7' + langTOGGLE.smsGrupoTime11() + '\n', 
 	
-lenguajeGB.smsGrupoTime12() + '10' + lenguajeGB.smsGrupoTime11(),
-lenguajeGB.smsGrupoTime13() + '10' + lenguajeGB.smsGrupoTime11() + '\n', 
+langTOGGLE.smsGrupoTime12() + '10' + langTOGGLE.smsGrupoTime11(),
+langTOGGLE.smsGrupoTime13() + '10' + langTOGGLE.smsGrupoTime11() + '\n', 
 
-lenguajeGB.smsGrupoTime12() + '12' + lenguajeGB.smsGrupoTime11(),
-lenguajeGB.smsGrupoTime13() + '12' + lenguajeGB.smsGrupoTime11() + '\n', 
+langTOGGLE.smsGrupoTime12() + '12' + langTOGGLE.smsGrupoTime11(),
+langTOGGLE.smsGrupoTime13() + '12' + langTOGGLE.smsGrupoTime11() + '\n', 
 
-lenguajeGB.smsGrupoTime12() + '24' + lenguajeGB.smsGrupoTime11(),
-lenguajeGB.smsGrupoTime13() + '24' + lenguajeGB.smsGrupoTime11()]
+langTOGGLE.smsGrupoTime12() + '24' + langTOGGLE.smsGrupoTime11(),
+langTOGGLE.smsGrupoTime13() + '24' + langTOGGLE.smsGrupoTime11()]
 
 let comando = [ 
 "open 1", "fechar 1", 
@@ -106,47 +106,47 @@ let comando = [
 "open 12", "fechar 12",
 "open 24", "fechar 24"]
 
-let sections = Object.keys(nombre, descripción, comando).map((v, index) => ({ title: `${lenguajeGB.smsParaAdmins()}`,
+let sections = Object.keys(nombre, descripción, comando).map((v, index) => ({ title: `${langTOGGLE.smsParaAdmins()}`,
 rows: [{ title: `${nombre[v]}`, description: `${descripción[v]}`, rowId: usedPrefix + command + ' ' + comando[v], }], }))
 
-let caption = `${lenguajeGB['smsAvisoMG']()}
-${lenguajeGB['smsMalused']()}
-${lenguajeGB['smsGrupoTime1']()}
-*${usedPrefix + command} ${lenguajeGB.lenguaje() == 'en' ? 'open' : 'abrir'} 1*
-${lenguajeGB['smsGrupoTime2']()}
-*${usedPrefix + command} ${lenguajeGB.lenguaje() == 'en' ? 'close' : 'fechar'} 1*`
+let caption = `${langTOGGLE['smsAvisoMG']()}
+${langTOGGLE['smsMalused']()}
+${langTOGGLE['smsGrupoTime1']()}
+*${usedPrefix + command} ${langTOGGLE.lenguaje() == 'en' ? 'open' : 'abrir'} 1*
+${langTOGGLE['smsGrupoTime2']()}
+*${usedPrefix + command} ${langTOGGLE.lenguaje() == 'en' ? 'close' : 'fechar'} 1*`
 
 const listMessage = {
 text: `${wm}`,
 footer: `${caption}`,
 title: null,
-buttonText: `⚙️ ${lenguajeGB.smsConfi1()} ⚙️`,
+buttonText: `⚙️ ${langTOGGLE.smsConfi1()} ⚙️`,
 sections }
 
-await conn.reply(m.chat, `${lenguajeGB['smsAvisoMG']()} ${lenguajeGB['smsMalused']()} 
-${lenguajeGB['smsGrupoTime1']()}
-*${usedPrefix + command} ${lenguajeGB.lenguaje() == 'en' ? 'open' : 'abrir'} 1*
-${lenguajeGB['smsGrupoTime2']()}
-*${usedPrefix + command} ${lenguajeGB.lenguaje() == 'en' ? 'close' : 'fechar'} 1*`, fkontak, m)
+await conn.reply(m.chat, `${langTOGGLE['smsAvisoMG']()} ${langTOGGLE['smsMalused']()} 
+${langTOGGLE['smsGrupoTime1']()}
+*${usedPrefix + command} ${langTOGGLE.lenguaje() == 'en' ? 'open' : 'abrir'} 1*
+${langTOGGLE['smsGrupoTime2']()}
+*${usedPrefix + command} ${langTOGGLE.lenguaje() == 'en' ? 'close' : 'fechar'} 1*`, fkontak, m)
 //await conn.sendMessage(m.chat, caption, {quoted: fkontak})
 throw false
 }
 let timeoutset = 86400000 * args[1] / 24 //Una Hora 86400000
 await conn.groupSettingUpdate(m.chat, isClose).then(async _=> {
-m.reply(`${lenguajeGB['smsAvisoRG']()}╭━━━━━━━━━⬣
-${lenguajeGB['smsGrupoTime3']()}* *${isClose == 'announcement' ? lenguajeGB.smsGrupoTime4() : lenguajeGB.smsGrupoTime5()}* ${args[1] ? `*${lenguajeGB['smsGrupoTime6']()} ${clockString(timeoutset)}*` : ''}
+m.reply(`${langTOGGLE['smsAvisoRG']()}╭━━━━━━━━━⬣
+${langTOGGLE['smsGrupoTime3']()}* *${isClose == 'announcement' ? langTOGGLE.smsGrupoTime4() : langTOGGLE.smsGrupoTime5()}* ${args[1] ? `*${langTOGGLE['smsGrupoTime6']()} ${clockString(timeoutset)}*` : ''}
 ╰━━━━━━━━━━━━━━━━━━⬣`)
 })
 if (args[1]) {
 setTimeout(async () => {
 await conn.groupSettingUpdate(m.chat, `${isClose == 'announcement' ? 'not_announcement' : 'announcement'}`).then(async _=>{
-conn.reply(m.chat, `${isClose == 'not_announcement' ? lenguajeGB.smsGrupoTime7() : lenguajeGB.smsGrupoTime8()}!!`)
+conn.reply(m.chat, `${isClose == 'not_announcement' ? langTOGGLE.smsGrupoTime7() : langTOGGLE.smsGrupoTime8()}!!`)
 })
 }, timeoutset)}
 
 } catch (e) {
-await conn.sendButton(m.chat, `\n${wm}`, lenguajeGB['smsMalError3']() + '#report ' + usedPrefix + command, null, [[lenguajeGB.smsMensError1(), `#reporte ${lenguajeGB['smsMensError2']()} *${usedPrefix + command}*`]], m)
-console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
+await conn.sendButton(m.chat, `\n${wm}`, langTOGGLE['smsMalError3']() + '#report ' + usedPrefix + command, null, [[langTOGGLE.smsMensError1(), `#reporte ${langTOGGLE['smsMensError2']()} *${usedPrefix + command}*`]], m)
+console.log(`❗❗ ${langTOGGLE['smsMensError2']()} ${usedPrefix + command} ❗❗`)
 console.log(e)	
 }}
 handler.command = /^(grouptime|gctime|gc)$/i

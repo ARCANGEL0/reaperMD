@@ -155,20 +155,20 @@ global.db.data.chats[m.chat].users[m.sender].adv  += 1
 if (!(global.db.data.chats[m.chat].users[m.sender].adv >= 3)) await m.reply(`━━━━━━━⬣⚠️⬣━━━━━━
 @${m.sender.split`@`[0]}* җ
 
-${lenguajeGB['smsToxic1']()}
-${lenguajeGB['smsToxic2']()} 
+${langTOGGLE['smsToxic1']()}
+${langTOGGLE['smsToxic2']()} 
 
    ⚠ *${global.db.data.chats[m.chat].users[m.sender].adv}/4*
    
 ${wm}`, false, { mentions: [m.sender] })}
-/*await conn.sendButton(m.chat,`${user.warn == 1 ? `*@${m.sender.split`@`[0]}*` : `*@${m.sender.split`@`[0]}*`} *${lenguajeGB['smsToxic1']()} (${isToxic}) ${lenguajeGB['smsToxic2']()}*`, `${lenguajeGB['smsToxic3']()} *${user.warn}/4*\n\n${wm}`, img, [
-[lenguajeGB.smsToxic4(), 'ok'],
-[lenguajeGB.smsToxic5(), '.off antitoxic'],
-[lenguajeGB.smsConMenu(), '/menu']], false, { mentions: [m.sender] })}*/
+/*await conn.sendButton(m.chat,`${user.warn == 1 ? `*@${m.sender.split`@`[0]}*` : `*@${m.sender.split`@`[0]}*`} *${langTOGGLE['smsToxic1']()} (${isToxic}) ${langTOGGLE['smsToxic2']()}*`, `${langTOGGLE['smsToxic3']()} *${user.warn}/4*\n\n${wm}`, img, [
+[langTOGGLE.smsToxic4(), 'ok'],
+[langTOGGLE.smsToxic5(), '.off antitoxic'],
+[langTOGGLE.smsConMenu(), '/menu']], false, { mentions: [m.sender] })}*/
 
 if (global.db.data.chats[m.chat].users[m.sender].adv >= 3) {
 global.db.data.chats[m.chat].users[m.sender].adv  = 0
-await m.reply(`*${lenguajeGB['smsToxic6']()}*\n*@${m.sender.split`@`[0]} ${lenguajeGB['smsToxic7']()}*`, false, { mentions: [m.sender] })
+await m.reply(`*${langTOGGLE['smsToxic6']()}*\n*@${m.sender.split`@`[0]} ${langTOGGLE['smsToxic7']()}*`, false, { mentions: [m.sender] })
 
 
 const banExplanationsEN = [

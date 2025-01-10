@@ -14,13 +14,13 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
   if (global.conn.user.jid !== conn.user.jid) {
     return conn.sendMessage(
       m.chat,
-      { text: `${lenguajeGB['smsAvisoAG']()}𝙐𝙏𝙄𝙇𝙄𝙕𝘼 𝙀𝙎𝙏𝙀 𝘾𝙊𝙈𝘼𝙉𝘿𝙊 𝘿𝙄𝙍𝙀𝘾𝙏𝘼𝙈𝙀𝙉𝙏𝙀 𝙀𝙉 𝙀𝙇 𝙉𝙐́𝙈𝙀𝙍𝙊 𝙋𝙍𝙄𝙉𝘾𝙄𝙋𝘼𝙇 𝘿𝙀𝙇 𝘽𝙊𝙏` },
+      { text: `${langTOGGLE['smsAvisoAG']()}𝙐𝙏𝙄𝙇𝙄𝙕𝘼 𝙀𝙎𝙏𝙀 𝘾𝙊𝙈𝘼𝙉𝘿𝙊 𝘿𝙄𝙍𝙀𝘾𝙏𝘼𝙈𝙀𝙉𝙏𝙀 𝙀𝙉 𝙀𝙇 𝙉𝙐́𝙈𝙀𝙍𝙊 𝙋𝙍𝙄𝙉𝘾𝙄𝙋𝘼𝙇 𝘿𝙀𝙇 𝘽𝙊𝙏` },
       { quoted: m }
     );
   }
  /* await conn.sendMessage(
     m.chat,
-    { text: `${lenguajeGB['smsAvisoAG']()}𝙄𝙉𝙄𝘾𝙄𝘼𝙉𝘿𝙊 𝙋𝙍𝙊𝘾𝙀𝙎𝙊 𝘿𝙀 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝘾𝙄𝙊𝙉 𝘿𝙀 : ${filesDeleted} 𝘼𝙍𝘾𝙃𝙄𝙑𝙊 𝘿𝙀 𝙎𝙀𝙎𝙎𝙄𝙊𝙉, 𝙀𝙓𝘾𝙀𝙋𝙏𝙊 𝙀𝙇 𝘼𝙍𝘾𝙃𝙄𝙑𝙊 *(creds.json)*` },
+    { text: `${langTOGGLE['smsAvisoAG']()}𝙄𝙉𝙄𝘾𝙄𝘼𝙉𝘿𝙊 𝙋𝙍𝙊𝘾𝙀𝙎𝙊 𝘿𝙀 𝙀𝙇𝙄𝙈𝙄𝙉𝘼𝘾𝙄𝙊𝙉 𝘿𝙀 : ${filesDeleted} 𝘼𝙍𝘾𝙃𝙄𝙑𝙊 𝘿𝙀 𝙎𝙀𝙎𝙎𝙄𝙊𝙉, 𝙀𝙓𝘾𝙀𝙋𝙏𝙊 𝙀𝙇 𝘼𝙍𝘾𝙃𝙄𝙑𝙊 *(creds.json)*` },
     { quoted: m }
   );*/
   conn.reply(m.chat, `${eg} *♱ 𝑨𝒓𝒒𝒖𝒊𝒗𝒐𝒔 𝒕𝒆𝒎𝒑𝒐𝒓𝒂𝒓𝒊𝒐𝒔 𝒓𝒆𝒎𝒐𝒗𝒊𝒅𝒐𝒔*`, m)
@@ -46,7 +46,7 @@ filename.forEach(file => unlinkSync(file));
     if (!existsSync(sessionPath)) {
       return await conn.sendMessage(
         m.chat,
-        { text: `${lenguajeGB['smsAvisoFG']()}*Sem sessões.*` },
+        { text: `${langTOGGLE['smsAvisoFG']()}*Sem sessões.*` },
         { quoted: m }
       );
     }
@@ -61,7 +61,7 @@ filename.forEach(file => unlinkSync(file));
     if (filesDeleted === 0) {
       await conn.sendMessage(
         m.chat,
-        { text: `${lenguajeGB['smsAvisoFG']()}*_Sem arquivos na pasta*_` },
+        { text: `${langTOGGLE['smsAvisoFG']()}*_Sem arquivos na pasta*_` },
         { quoted: m }
       );
     } else {
@@ -79,7 +79,7 @@ filename.forEach(file => unlinkSync(file));
     console.error('Erro na leitura dos arquivos 🐈‍⬛:', err);
     await conn.sendMessage(
       m.chat,
-      { text: `${lenguajeGB['smsAvisoFG']()}erro ao eliminar` },
+      { text: `${langTOGGLE['smsAvisoFG']()}erro ao eliminar` },
       { quoted: m }
     );
   }

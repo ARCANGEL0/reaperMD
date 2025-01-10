@@ -16,7 +16,7 @@ let handler = async (m, { conn,isAdmin,isOwner, text, usedPrefix, command }) => 
    return !0;
  } 
   
-if (!text) throw `${lenguajeGB['smsAvisoMG']()}
+if (!text) throw `${langTOGGLE['smsAvisoMG']()}
 ╭━━━━━━━━━⬣
 ┃
 ┃ ✒️📜 𝘿𝙚𝙨𝙫𝙚𝙣𝙙𝙖-𝙢𝙚 𝙤𝙨 𝙧𝙚𝙘𝙚𝙨𝙨𝙤𝙨 

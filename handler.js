@@ -640,7 +640,7 @@ console.error(e)
 for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
 let data = (await conn.onWhatsApp(jid))[0] || {}
 if (data.exists)
-m.reply(`${lenguajeGB['smsCont1']()}\n\n${lenguajeGB['smsCont2']()}\n*_${name}_*\n\n${lenguajeGB['smsCont3']()}\n*_${m.sender}_*\n\n${lenguajeGB['smsCont4']()}\n*_${m.text}_*\n\n${lenguajeGB['smsCont5']()}\n\`\`\`${format(e)}\`\`\`\n\n${lenguajeGB['smsCont6']()}`.trim(), data.jid)
+m.reply(`${langTOGGLE['smsCont1']()}\n\n${langTOGGLE['smsCont2']()}\n*_${name}_*\n\n${langTOGGLE['smsCont3']()}\n*_${m.sender}_*\n\n${langTOGGLE['smsCont4']()}\n*_${m.text}_*\n\n${langTOGGLE['smsCont5']()}\n\`\`\`${format(e)}\`\`\`\n\n${langTOGGLE['smsCont6']()}`.trim(), data.jid)
 }}}
 if (!opts['restrict'])
 if (plugin.tags && plugin.tags.includes('admin')) {
@@ -1086,7 +1086,7 @@ if (e.name)
 for (let [jid] of global.owner.filter(([number, _, isDeveloper]) => isDeveloper && number)) {
 let data = (await conn.onWhatsApp(jid))[0] || {}
 if (data.exists)
-m.reply(`${lenguajeGB['smsCont1']()}\n\n${lenguajeGB['smsCont2']()}\n*_${name}_*\n\n${lenguajeGB['smsCont3']()}\n*_${m.sender}_*\n\n${lenguajeGB['smsCont4']()}\n*_${m.text}_*\n\n${lenguajeGB['smsCont5']()}\n\`\`\`${format(e)}\`\`\`\n\n${lenguajeGB['smsCont6']()}`.trim(), data.jid)
+m.reply(`${langTOGGLE['smsCont1']()}\n\n${langTOGGLE['smsCont2']()}\n*_${name}_*\n\n${langTOGGLE['smsCont3']()}\n*_${m.sender}_*\n\n${langTOGGLE['smsCont4']()}\n*_${m.text}_*\n\n${langTOGGLE['smsCont5']()}\n\`\`\`${format(e)}\`\`\`\n\n${langTOGGLE['smsCont6']()}`.trim(), data.jid)
 }
 m.reply(text)
 }} finally {
@@ -1329,7 +1329,7 @@ if (nk.status == "offer") {
     this.reply('351927285125@s.whatsapp.net', 'teste', false , { mentions: [nk.from] })
   }
   else{
-let callmsg = await this.reply(nk.from, `${lenguajeGB['smsCont15']()} *@${nk.from.split('@')[0]}*, ${nk.isVideo ? lenguajeGB.smsCont16() : lenguajeGB.smsCont17()} ${lenguajeGB['smsCont18']()}`, false, { mentions: [nk.from] })
+let callmsg = await this.reply(nk.from, `${langTOGGLE['smsCont15']()} *@${nk.from.split('@')[0]}*, ${nk.isVideo ? langTOGGLE.smsCont16() : langTOGGLE.smsCont17()} ${langTOGGLE['smsCont18']()}`, false, { mentions: [nk.from] })
 //let data = global.owner.filter(([id, isCreator]) => id && isCreator)
 //await this.sendContact(nk.from, data.map(([id, name]) => [id, name]), false, { quoted: callmsg })
 await this.updateBlockStatus(nk.from, 'block')}
@@ -1368,20 +1368,20 @@ console.error(e)
 
 global.dfail = (type, m, conn) => {
 let msg = {
-rowner: lenguajeGB['smsRowner'](),
-owner: lenguajeGB['smsOwner'](),
-mods: lenguajeGB['smsMods'](),
-premium: lenguajeGB['smsPremium'](),
-group: lenguajeGB['smsGroup'](),
-private: lenguajeGB['smsPrivate'](),
-admin: lenguajeGB['smsAdmin'](),
-botAdmin: lenguajeGB['smsBotAdmin'](),
-unreg: lenguajeGB['smsUnreg'](),
-restrict: lenguajeGB['smsRestrict'](),
+rowner: langTOGGLE['smsRowner'](),
+owner: langTOGGLE['smsOwner'](),
+mods: langTOGGLE['smsMods'](),
+premium: langTOGGLE['smsPremium'](),
+group: langTOGGLE['smsGroup'](),
+private: langTOGGLE['smsPrivate'](),
+admin: langTOGGLE['smsAdmin'](),
+botAdmin: langTOGGLE['smsBotAdmin'](),
+unreg: langTOGGLE['smsUnreg'](),
+restrict: langTOGGLE['smsRestrict'](),
 }[type]
 //if (msg) return m.reply(msg)
 let tg = { quoted: m, userJid: conn.user.jid }
-let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: msg, contextInfo: { externalAdReply: { title: lenguajeGB.smsAvisoAG().slice(0,-2), body: [wm, '𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛' ,gt,'🐦‍⬛ ','🐈‍⬛ henry@arcangello@gmail.com'].getRandom(), thumbnail: gataImg.getRandom(), sourceUrl: [md, nna, nn, nnn, yt, ig, paypal, fb].getRandom() }}}}, tg)
+let prep = generateWAMessageFromContent(m.chat, { extendedTextMessage: { text: msg, contextInfo: { externalAdReply: { title: langTOGGLE.smsAvisoAG().slice(0,-2), body: [wm, '𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛' ,gt,'🐦‍⬛ ','🐈‍⬛ henry@arcangello@gmail.com'].getRandom(), thumbnail: gataImg.getRandom(), sourceUrl: [md, nna, nn, nnn, yt, ig, paypal, fb].getRandom() }}}}, tg)
 if (msg) return conn.relayMessage(m.chat, prep.message, { messageId: prep.key.id })
 }
 

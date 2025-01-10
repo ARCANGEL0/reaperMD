@@ -20,7 +20,7 @@ if(!(isAdmin || isOwner) && global.db.data.chats[m.chat].download===false){
    
    return !0;
  } 
-if (!text) return conn.reply(m.chat, `${lenguajeGB['smsAvisoMG']()}
+if (!text) return conn.reply(m.chat, `${langTOGGLE['smsAvisoMG']()}
 ╭━━━━━━━━━⬣
 ┃
 ┃ 🕯️💀 𝐑𝐞𝐯𝐞𝐥𝐚-𝐦𝐞 𝐨 𝐞𝐥𝐨 𝐩𝐚𝐫𝐚 𝐨 
@@ -36,7 +36,7 @@ if (!text) return conn.reply(m.chat, `${lenguajeGB['smsAvisoMG']()}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
 ┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
 ╰━━━━━━━━━━━━━━━━━━⬣ `, fkontak,  m)
-if (!/(?:https:?\/{2})?(?:w{3}|vm|vt|t)?\.?tiktok.com\/([^\s&]+)/gi.test(text)) return conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}╭━━━━━━━━━⬣
+if (!/(?:https:?\/{2})?(?:w{3}|vm|vt|t)?\.?tiktok.com\/([^\s&]+)/gi.test(text)) return conn.reply(m.chat, `${langTOGGLE['smsAvisoFG']()}╭━━━━━━━━━⬣
 ┃
 ┃ ❌📜 𝐀 𝐔𝐑𝐋 𝐚𝐩𝐫𝐞𝐬𝐞𝐧𝐭𝐚-𝐬𝐞 𝐜𝐨𝐦𝐨 𝐮𝐦 
 ┃ 𝐥𝐚𝐛𝐢𝐫𝐢𝐧𝐭𝐨 𝐝𝐢𝐬𝐭𝐨𝐫𝐜𝐢𝐝𝐨, 𝐮𝐦𝐚 
@@ -48,7 +48,7 @@ if (!/(?:https:?\/{2})?(?:w{3}|vm|vt|t)?\.?tiktok.com\/([^\s&]+)/gi.test(text)) 
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
 ┃ 𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛ | ${vs}
 ╰━━━━━━━━━━━━━━━━━━⬣`, fkontak,  m)  
-await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()}╭━━━━━━━━━⬣
+await conn.reply(m.chat, `${langTOGGLE['smsAvisoEG']()}╭━━━━━━━━━⬣
 ⌛ 𝐀𝐠𝐮𝐚𝐫𝐝𝐞... 𝐞𝐦 𝐛𝐫𝐞𝐯𝐞 𝐫𝐞𝐜𝐞𝐛𝐞𝐫á 𝐨 𝐚𝐫𝐪𝐮𝐢𝐯𝐨, 𝐜𝐨𝐦𝐨 𝐚 𝐩𝐫𝐨𝐦𝐞𝐬𝐬𝐚 𝐬𝐮𝐬𝐬𝐮𝐫𝐫𝐚𝐝𝐚 𝐩𝐨𝐫 𝐞𝐬𝐩𝐞𝐜𝐭𝐫𝐨𝐬 𝐧𝐚𝐬 𝐬𝐨𝐦𝐛𝐫𝐚𝐬 𝐝𝐚 𝐧𝐨𝐢𝐭𝐞.
 ╰━━━━━━━━━━━━━━━━━━⬣`, fkontak,  m) 
 try {
@@ -68,7 +68,7 @@ const { author: { nickname }, video, description } = await tiktokdl(args[0])
 const url = video.no_watermark2 || video.no_watermark || 'https://tikcdn.net' + video.no_watermark_raw || video.no_watermark_hd
 conn.sendFile(m.chat, url, 'tiktok.mp4', `💀🕯️ 𝙐𝙎𝙐𝘼𝙍𝙄𝙊\n*${nickname}*\n${description ? `\n📜 𝘿𝙀𝙎𝘾𝙍𝙄𝘾𝘼𝙊 :\n*${description}*` : ''}\n${wm}`.trim(), m)
 } catch {
-await conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()} ╭━━━━━━━━━⬣
+await conn.reply(m.chat, `${langTOGGLE['smsAvisoFG']()} ╭━━━━━━━━━⬣
 ┃
 ┃ ❌✒️ 𝐀 𝐭𝐞𝐧𝐭𝐚𝐭𝐢𝐯𝐚 𝐝𝐞 𝐭𝐫𝐚𝐧𝐬𝐜𝐫𝐢𝐜𝐚𝐨
 ┃𝐟𝐚𝐥𝐡𝐨𝐮 𝐥𝐚𝐦𝐞𝐧𝐭𝐚𝐯𝐞𝐥𝐦𝐞𝐧𝐭𝐞.

@@ -42,7 +42,7 @@ await m.reply(`╭────────────────────�
 
 } catch (e) {
 await m.reply(`✒️ *Erro* `)
-console.log(`❗❗ ${lenguajeGB['smsMensError2']()} ${usedPrefix + command} ❗❗`)
+console.log(`❗❗ ${langTOGGLE['smsMensError2']()} ${usedPrefix + command} ❗❗`)
 console.log(e)}}
 
 handler.command = /^(backup|bkp|copia)$/i

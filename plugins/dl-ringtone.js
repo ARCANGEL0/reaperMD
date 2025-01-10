@@ -8,7 +8,7 @@
 
 /*import fetch from 'node-fetch'
 let handler = async(m, { conn, groupMetadata, usedPrefix, text, args, command }) => {
-if (!text) throw `${lenguajeGB['smsAvisoMG']()}𝙄teste`
+if (!text) throw `${langTOGGLE['smsAvisoMG']()}𝙄teste`
 
 handler.command  = /^((notifcelular|toque)ringtone)$/i
 handler.money = 0
@@ -35,7 +35,7 @@ $('#__next > main > section > div.jsx-2244708474.container > div > div > div > d
 hasil.push({ title: $(b).find('h4').text(), source: 'https://meloboom.com/'+$(b).find('a').attr('href'), audio: $(b).find('audio').attr('src') })
 })
 resolve(hasil)})})}
-if (!text) return conn.reply(m.chat, `${lenguajeGB['smsAvisoMG']()}╭━━━━━━━━━⬣
+if (!text) return conn.reply(m.chat, `${langTOGGLE['smsAvisoMG']()}╭━━━━━━━━━⬣
 ┃
 ┃ 🥀 𝐌𝐞 𝐝𝐢𝐠𝐚 𝐪𝐮𝐚𝐢𝐬 𝐭𝐞𝐦𝐚𝐭𝐢𝐜𝐚𝐬 
 ┃ 𝐛𝐮𝐬𝐜𝐚𝐬 𝐧𝐨 𝐭𝐨𝐪𝐮𝐞 𝐩𝐚𝐫𝐚 𝐬𝐞𝐮 
@@ -55,7 +55,7 @@ try {
 let result = anu[Math.floor(Math.random() * anu.length)]
 conn.sendMessage(m.chat, { audio: { url: result.audio }, fileName: result.title+'.mp3', mimetype: 'audio/mpeg' }, { quoted: m })}
 catch (e) {
-throw `${lenguajeGB['smsAvisoFG']()}
+throw `${langTOGGLE['smsAvisoFG']()}
 ╭━━━━━━━━━⬣
 ┃
 ┃ ❌🔎 𝐀 𝐭𝐞𝐧𝐭𝐚𝐭𝐢𝐯𝐚 𝐝𝐞 𝐛𝐮𝐬𝐜𝐚

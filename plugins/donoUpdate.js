@@ -20,7 +20,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
       if (sha !== previousCommitSHA || message !== previousUpdatedAt) {
         previousCommitSHA = sha
         previousUpdatedAt = message
-    conn.sendMessage(m.chat, { text: `${lenguajeGB['smsAvisoIIG']()}  𝙍𝙀𝙋𝙊𝙎𝙄𝙏𝙊𝙍𝙄𝙊 𝘼𝙏𝙐𝙇𝙄𝙕𝘼𝘿𝙊!!\n𝙍𝙀𝙋𝙊: ${html_url}\n*• 𝙈𝙀𝙉𝙎. 𝘿𝙀 𝘾𝙊𝙈𝙈𝙄𝙏:* ${message}` }, { quoted: m })
+    conn.sendMessage(m.chat, { text: `${langTOGGLE['smsAvisoIIG']()}  𝙍𝙀𝙋𝙊𝙎𝙄𝙏𝙊𝙍𝙄𝙊 𝘼𝙏𝙐𝙇𝙄𝙕𝘼𝘿𝙊!!\n𝙍𝙀𝙋𝙊: ${html_url}\n*• 𝙈𝙀𝙉𝙎. 𝘿𝙀 𝘾𝙊𝙈𝙈𝙄𝙏:* ${message}` }, { quoted: m })
    } 
   } catch (error) {
     await m.reply(`${fg} 𝙀𝙍𝙍𝙊 𝘼𝙊 𝙑𝙀𝙍𝙄𝙁𝙄𝘾𝘼𝙍 𝙊 𝙍𝙀𝙋𝙊:'`, error.message)

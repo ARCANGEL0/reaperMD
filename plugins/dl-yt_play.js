@@ -61,7 +61,7 @@ await conn.sendMessage(m.chat ,{text: `╭─┅──┅❖ ༒︎ ❖─┅─
  return !0
 }
 let q, v, yt, dl_url, ttl, size, lolhuman, lolh, n, n2, n3, n4, cap, qu, currentQuality   
-if (!text) throw `${lenguajeGB['smsAvisoMG']()}
+if (!text) throw `${langTOGGLE['smsAvisoMG']()}
 ╭━[*𝓔𝓭𝓰𝓪𝓻 𝓐𝓵𝓵𝓪𝓷 𝓑𝓸𝓽 🐈‍⬛*]━⬣
 ┃
 ┃ ✒️📜 𝐃𝐢𝐠𝐚-𝐦𝐞 𝐪𝐮𝐚𝐥 𝐦í𝐝𝐢𝐚 

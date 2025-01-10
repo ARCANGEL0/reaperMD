@@ -328,10 +328,10 @@ global.timestamp.connect = new Date
 if (global.db.data == null) loadDatabase()
 if (update.qr != 0 && update.qr != undefined || methodCodeQR) {
 if (opcion == '1' || methodCodeQR) {
-console.log(chalk.bold.yellow(lenguajeGB['smsCodigoQR']()))}
+console.log(chalk.bold.yellow(langTOGGLE['smsCodigoQR']()))}
 }
 if (connection == 'open') {
-console.log(chalk.bold.greenBright(lenguajeGB['smsConexion']()))}
+console.log(chalk.bold.greenBright(langTOGGLE['smsConexion']()))}
 let reason = new Boom(lastDisconnect?.error)?.output?.statusCode
 if (reason == 405) {
   console.log(connection)
@@ -343,29 +343,29 @@ if (reason === DisconnectReason.badSession) {
 console.log(DisconnectReason)
 console.log(connection)
 
-console.log(chalk.bold.cyanBright(lenguajeGB['smsConexionOFF']()))
+console.log(chalk.bold.cyanBright(langTOGGLE['smsConexionOFF']()))
 } else if (reason === DisconnectReason.connectionClosed) {
-console.log(chalk.bold.magentaBright(lenguajeGB['smsConexioncerrar']()))
+console.log(chalk.bold.magentaBright(langTOGGLE['smsConexioncerrar']()))
 await global.reloadHandler(true).catch(console.error)
 } else if (reason === DisconnectReason.connectionLost) {
-console.log(chalk.bold.blueBright(lenguajeGB['smsConexionperdida']()))
+console.log(chalk.bold.blueBright(langTOGGLE['smsConexionperdida']()))
 await global.reloadHandler(true).catch(console.error)
 console.log('CONEXAO FALHOU MISERAVELMENTE ')
 } else if (reason === DisconnectReason.connectionReplaced) {
-console.log(chalk.bold.yellowBright(lenguajeGB['smsConexionreem']()))
+console.log(chalk.bold.yellowBright(langTOGGLE['smsConexionreem']()))
 } else if (reason === DisconnectReason.loggedOut) {
-console.log(chalk.bold.redBright(lenguajeGB['smsConexionOFF']()))
+console.log(chalk.bold.redBright(langTOGGLE['smsConexionOFF']()))
 await global.reloadHandler(true).catch(console.error)
 } else if (reason === DisconnectReason.restartRequired) {
-console.log(chalk.bold.cyanBright(lenguajeGB['smsConexionreinicio']()))
+console.log(chalk.bold.cyanBright(langTOGGLE['smsConexionreinicio']()))
 await global.reloadHandler(true).catch(console.error)
 } else if (reason === DisconnectReason.timedOut) {
-console.log(chalk.bold.yellowBright(lenguajeGB['smsConexiontiem']()))
+console.log(chalk.bold.yellowBright(langTOGGLE['smsConexiontiem']()))
 await global.reloadHandler(true).catch(console.error) 
 console.log('TIMEOUT👇👇👇👇')
 //process.send('reset')
 } else {
-console.log(chalk.bold.redBright(lenguajeGB['smsConexiondescon'](reason, connection)))
+console.log(chalk.bold.redBright(langTOGGLE['smsConexiondescon'](reason, connection)))
 }}
 }
 process.on('uncaughtException', console.error);
@@ -403,14 +403,14 @@ conn.ev.off('creds.update', conn.credsUpdate);
 }
 
 //Información para Grupos
-conn.welcome = lenguajeGB['smsWelcome']() 
-conn.bye = lenguajeGB['smsBye']() 
-conn.spromote = lenguajeGB['smsSpromote']() 
-conn.sdemote = lenguajeGB['smsSdemote']() 
-conn.sDesc = lenguajeGB['smsSdesc']() 
-conn.sSubject = lenguajeGB['smsSsubject']() 
-conn.sIcon = lenguajeGB['smsSicon']() 
-conn.sRevoke = lenguajeGB['smsSrevoke']() 
+conn.welcome = langTOGGLE['smsWelcome']() 
+conn.bye = langTOGGLE['smsBye']() 
+conn.spromote = langTOGGLE['smsSpromote']() 
+conn.sdemote = langTOGGLE['smsSdemote']() 
+conn.sDesc = langTOGGLE['smsSdesc']() 
+conn.sSubject = langTOGGLE['smsSsubject']() 
+conn.sIcon = langTOGGLE['smsSicon']() 
+conn.sRevoke = langTOGGLE['smsSrevoke']() 
 
 conn.handler = handler.handler.bind(global.conn);
 conn.participantsUpdate = handler.participantsUpdate.bind(global.conn);
@@ -560,11 +560,11 @@ unlinkSync(`./robotBOT/${directorio}/${fileInDir}`)
 }})
 }})
 if (SBprekey.length === 0) {
-console.log(chalk.bold.green(lenguajeGB.smspurgeSessionSB1()))
+console.log(chalk.bold.green(langTOGGLE.smspurgeSessionSB1()))
 } else {
-console.log(chalk.bold.cyanBright(lenguajeGB.smspurgeSessionSB2()))
+console.log(chalk.bold.cyanBright(langTOGGLE.smspurgeSessionSB2()))
 }} catch (err) {
-console.log(chalk.bold.red(lenguajeGB.smspurgeSessionSB3() + err))
+console.log(chalk.bold.red(langTOGGLE.smspurgeSessionSB3() + err))
 }}
 
 function purgeOldFiles() {
@@ -577,32 +577,32 @@ if (file !== 'creds.json') {
 const filePath = path.join(dir, file);
 unlinkSync(filePath, err => {
 if (err) {
-console.log(chalk.bold.red(`${lenguajeGB.smspurgeOldFiles3()} ${file} ${lenguajeGB.smspurgeOldFiles4()}` + err))
+console.log(chalk.bold.red(`${langTOGGLE.smspurgeOldFiles3()} ${file} ${langTOGGLE.smspurgeOldFiles4()}` + err))
 } else {
-console.log(chalk.bold.green(`${lenguajeGB.smspurgeOldFiles1()} ${file} ${lenguajeGB.smspurgeOldFiles2()}`))
+console.log(chalk.bold.green(`${langTOGGLE.smspurgeOldFiles1()} ${file} ${langTOGGLE.smspurgeOldFiles2()}`))
 } }) }
 }) }) }) }
 
 setInterval(async () => {
 await clearTmp()
-console.log(chalk.bold.cyanBright(lenguajeGB.smsClearTmp()))}, 1000 * 60 * 4) // 4 min 
+console.log(chalk.bold.cyanBright(langTOGGLE.smsClearTmp()))}, 1000 * 60 * 4) // 4 min 
 
 setInterval(async () => {
 await purgeSession()
-console.log(chalk.bold.cyanBright(lenguajeGB.smspurgeSession()))}, 1000 * 60 * 10) // 10 min
+console.log(chalk.bold.cyanBright(langTOGGLE.smspurgeSession()))}, 1000 * 60 * 10) // 10 min
 
 setInterval(async () => {
 await purgeSessionSB()}, 1000 * 60 * 10)
 
 setInterval(async () => {
 await purgeOldFiles()
-console.log(chalk.bold.cyanBright(lenguajeGB.smspurgeOldFiles()))}, 1000 * 60 * 10)
+console.log(chalk.bold.cyanBright(langTOGGLE.smspurgeOldFiles()))}, 1000 * 60 * 10)
 
-_quickTest().then(() => conn.logger.info(chalk.bold(lenguajeGB['smsCargando']().trim()))).catch(console.error)
+_quickTest().then(() => conn.logger.info(chalk.bold(langTOGGLE['smsCargando']().trim()))).catch(console.error)
 
 let file = fileURLToPath(import.meta.url)
 watchFile(file, () => {
 unwatchFile(file)
-console.log(chalk.bold.greenBright(lenguajeGB['smsMainBot']().trim()))
+console.log(chalk.bold.greenBright(langTOGGLE['smsMainBot']().trim()))
 import(`${file}?update=${Date.now()}`)
 })

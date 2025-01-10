@@ -8,7 +8,7 @@
 
 import fetch from 'node-fetch'
 let handler = async(m, { conn, text, command, usedPrefix }) => {
-if (!text) return conn.reply(m.chat, `${lenguajeGB['smsAvisoMG']()}
+if (!text) return conn.reply(m.chat, `${langTOGGLE['smsAvisoMG']()}
 ╭━━━━━━━━━⬣
 ┃
 ┃ 🥀💀 𝐃𝐢𝐠𝐚-𝐦𝐞 𝐨 𝐧𝐨𝐦𝐞 𝐝𝐚 𝐚𝐥𝐦𝐚 𝐪𝐮𝐞 
@@ -53,7 +53,7 @@ ${json.result.bio}
 `.trim()
 await conn.sendFile(m.chat, res2, 'error.jpg', gata, m, false)
 } catch (e) {
-throw `${lenguajeGB['smsAvisoFG']()}
+throw `${langTOGGLE['smsAvisoFG']()}
 ╭━━━━━━━━━⬣
 ┃
 ┃ ❌🔎 𝐀 𝐭𝐞𝐧𝐭𝐚𝐭𝐢𝐯𝐚 𝐝𝐞 𝐛𝐮𝐬𝐜𝐚

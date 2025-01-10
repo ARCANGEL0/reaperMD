@@ -11,7 +11,7 @@ import uploadFile from '../lib/uploadFile.js'
 import uploadImage from '../lib/uploadImage.js'
 let handler = async (m, { conn, command, participants, usedPrefix, text }) => {
  
-if (!text && !m.quoted) return m.reply(lenguajeGB.smsBCMensaje(usedPrefix, command))        
+if (!text && !m.quoted) return m.reply(langTOGGLE.smsBCMensaje(usedPrefix, command))        
 
 let users = participants.map(u => conn.decodeJid(u.id))
 let cc2 = text ? m : m.quoted ? await m.getQuotedObj() : false || m
@@ -23,18 +23,18 @@ const q = m.quoted ? m.quoted : m;
   let isTele = /image\/(png|jpe?g|gif)|video\/mp4/.test(mime);
   
 let d = new Date(new Date + 3600000)
-let locale = lenguajeGB.lenguaje()
+let locale = langTOGGLE.lenguaje()
 let dia = d.toLocaleDateString(locale, { weekday: 'long' })
-let fecha = d.toLocaleDateString(lenguajeGB.lenguaje(), { day: 'numeric', month: 'numeric', year: 'numeric' })
-let mes = d.toLocaleDateString(lenguajeGB.lenguaje(), { month: 'long' })
-let año = d.toLocaleDateString(lenguajeGB.lenguaje(), { year: 'numeric' })
+let fecha = d.toLocaleDateString(langTOGGLE.lenguaje(), { day: 'numeric', month: 'numeric', year: 'numeric' })
+let mes = d.toLocaleDateString(langTOGGLE.lenguaje(), { month: 'long' })
+let año = d.toLocaleDateString(langTOGGLE.lenguaje(), { year: 'numeric' })
 
 
 let tiempo = d.toLocaleString('pt-BR', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true })
 let groups = Object.keys(await conn.groupFetchAllParticipating())
 let usersTag = participants.map(u => conn.decodeJid(u.id))
 let readMS = String.fromCharCode(8206).repeat(850)
-await m.reply(lenguajeGB.smsChatGP1())  
+await m.reply(langTOGGLE.smsChatGP1())  
 
 
  if (isTele)
@@ -44,7 +44,7 @@ const images = await uploadImage(datab);
 
    for (let i = 0; i < groups.length; i++) {
 const id = groups[i];
-const infoGP = lenguajeGB.smsChatGP2(readMS, dia, mes, año, fecha, tiempo)
+const infoGP = langTOGGLE.smsChatGP2(readMS, dia, mes, año, fecha, tiempo)
 const delay = i * 20000 //4 seg
 setTimeout(async () => { 
   
@@ -54,12 +54,12 @@ setTimeout(async () => {
 //await conn.reply(id, infoGP + teks2, { mentions: (await conn.groupMetadata(id)).participants.map(v => v.id) }, { quoted: fkontak });
 }, delay)}         
 let totalGP = groups.length
-await m.reply(lenguajeGB.smsChatGP3(totalGP)) 
+await m.reply(langTOGGLE.smsChatGP3(totalGP)) 
   }
   else{
 for (let i = 0; i < groups.length; i++) {
 const id = groups[i];
-const infoGP = lenguajeGB.smsChatGP2(readMS, dia, mes, año, fecha, tiempo)
+const infoGP = langTOGGLE.smsChatGP2(readMS, dia, mes, año, fecha, tiempo)
 const delay = i * 20000 //4 seg
 setTimeout(async () => { 
   
@@ -68,7 +68,7 @@ await conn.sendMessage(id, { text: infoGP + teks2, mentions: [m.sender], mention
 //await conn.reply(id, infoGP + teks2, { mentions: (await conn.groupMetadata(id)).participants.map(v => v.id) }, { quoted: fkontak });
 }, delay)}         
 let totalGP = groups.length
-await m.reply(lenguajeGB.smsChatGP3(totalGP))
+await m.reply(langTOGGLE.smsChatGP3(totalGP))
 
  
   }   

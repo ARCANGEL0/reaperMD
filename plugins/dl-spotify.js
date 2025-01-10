@@ -31,7 +31,7 @@ return { data: res, audio: await spotify.downloadTrack(url) }}
 
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 
-if (!text) throw `${lenguajeGB['smsAvisoMG']()}╭━[𝙎𝙥𝙤𝙩𝙞𝙛𝙮]━⬣
+if (!text) throw `${langTOGGLE['smsAvisoMG']()}╭━[𝙎𝙥𝙤𝙩𝙞𝙛𝙮]━⬣
 ┃
 ┃ ✒️📜 𝐃𝐢𝐠𝐚-𝐦𝐞 𝐪𝐮𝐚𝐥 𝐦í𝐝𝐢𝐚 
 ┃ 𝐚𝐬𝐬𝐨𝐦𝐛𝐫𝐚 𝐬𝐮𝐚 𝐦𝐞𝐧𝐭𝐞 𝐞 𝐞𝐮 𝐚 
@@ -86,7 +86,7 @@ conn.sendMessage(m.chat, { audio: { url: lolh.data.url }, fileName: 'ms' + '.mp3
 
 }
 catch(e){
-  await conn.reply(m.chat, `${lenguajeGB['smsAvisoFG']()}╭━━━━━━━━━⬣
+  await conn.reply(m.chat, `${langTOGGLE['smsAvisoFG']()}╭━━━━━━━━━⬣
 ┃
 ┃ ❌✒️ 𝐀 𝐭𝐞𝐧𝐭𝐚𝐭𝐢𝐯𝐚 𝐝𝐞 𝐭𝐫𝐚𝐧𝐬𝐜𝐫𝐢𝐜𝐚𝐨
 ┃𝐟𝐚𝐥𝐡𝐨𝐮 𝐥𝐚𝐦𝐞𝐧𝐭𝐚𝐯𝐞𝐥𝐦𝐞𝐧𝐭𝐞.

@@ -30,7 +30,7 @@ Exemplo de frase:
 ⌬ Algumas pessoas nos tratam de um modo *Pejorativo* que me causa repulsa na maioria das vezes."
 Você agora irá agir como um dicionario, e responder a palavra a definição da palavra que o usuario lhe digitar seguindo este modelo de mensagem como exemplo, fornecendo definição da palavra, sinonimos e exemplos de frase.
 `
-if (!text) throw `${lenguajeGB['smsAvisoMG']()}❖─┅──┅ 𝑨𝒉, 𝑪𝒂𝒓𝒐 𝒎𝒐𝒓𝒕𝒂𝒍, 𝒄𝒐𝒏𝒕𝒆-𝒎𝒆 𝒒𝒖𝒂𝒍 𝒑𝒂𝒍𝒂𝒗𝒓𝒂 𝒆 𝒇𝒓𝒖𝒕𝒐 𝒅𝒆 𝒗𝒐𝒔𝒔𝒂 𝒄𝒖𝒓𝒊𝒐𝒔𝒊𝒅𝒂𝒅𝒆 𝒒𝒖𝒆 𝒍𝒉𝒆 𝒅𝒊𝒓𝒆𝒊 𝒔𝒖𝒂 𝒅𝒆𝒇𝒊𝒏𝒊𝒄𝒂𝒐 𝒆 𝒔𝒊𝒈𝒏𝒊𝒇𝒊𝒄𝒂𝒅𝒐 🥀 ─┅──┅❖
+if (!text) throw `${langTOGGLE['smsAvisoMG']()}❖─┅──┅ 𝑨𝒉, 𝑪𝒂𝒓𝒐 𝒎𝒐𝒓𝒕𝒂𝒍, 𝒄𝒐𝒏𝒕𝒆-𝒎𝒆 𝒒𝒖𝒂𝒍 𝒑𝒂𝒍𝒂𝒗𝒓𝒂 𝒆 𝒇𝒓𝒖𝒕𝒐 𝒅𝒆 𝒗𝒐𝒔𝒔𝒂 𝒄𝒖𝒓𝒊𝒐𝒔𝒊𝒅𝒂𝒅𝒆 𝒒𝒖𝒆 𝒍𝒉𝒆 𝒅𝒊𝒓𝒆𝒊 𝒔𝒖𝒂 𝒅𝒆𝒇𝒊𝒏𝒊𝒄𝒂𝒐 𝒆 𝒔𝒊𝒈𝒏𝒊𝒇𝒊𝒄𝒂𝒅𝒐 🥀 ─┅──┅❖
 𝙀𝙓:\n*${usedPrefix + command} sublime
 *${usedPrefix + command} léxico 
 *${usedPrefix + command} arcaico`

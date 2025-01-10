@@ -19,9 +19,9 @@ else who = m.chat
 let name = await conn.getName(m.sender)	
 let user = global.db.data.users[who]
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
-if (!global.db.data.settings[conn.user.jid].restrict) return conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}${lenguajeGB['smsSoloOwner']()}`, fkontak, m) 
-if (!text) throw `${lenguajeGB['smsAvisoMG']()} ${lenguajeGB['smsMalused']()}\n*${usedPrefix + command}* 59355555555`
-if (text.includes('+')) throw  `${lenguajeGB['smsAvisoMG']()}𝙄𝙉𝙎𝙄𝙍𝘼 𝙊 𝙉𝙐𝙈𝙀𝙍𝙊 𝙏𝙊𝘿𝙊 𝙅𝙐𝙉𝙏𝙊 𝙎𝙀𝙈 𝙊 +
+if (!global.db.data.settings[conn.user.jid].restrict) return conn.reply(m.chat, `${langTOGGLE['smsAvisoAG']()}${langTOGGLE['smsSoloOwner']()}`, fkontak, m) 
+if (!text) throw `${langTOGGLE['smsAvisoMG']()} ${langTOGGLE['smsMalused']()}\n*${usedPrefix + command}* 59355555555`
+if (text.includes('+')) throw  `${langTOGGLE['smsAvisoMG']()}𝙄𝙉𝙎𝙄𝙍𝘼 𝙊 𝙉𝙐𝙈𝙀𝙍𝙊 𝙏𝙊𝘿𝙊 𝙅𝙐𝙉𝙏𝙊 𝙎𝙀𝙈 𝙊 +
 *+*`
 
 

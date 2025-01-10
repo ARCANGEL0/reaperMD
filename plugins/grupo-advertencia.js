@@ -11,7 +11,7 @@ let handler = async (m, { conn,participants, text, command,groupMetadata, usedPr
   //prems 
 
 
-//conn.sendButton(m.chat, wm, lenguajeGB.smsAdveu1() + lenGB, null, [[lenguajeGB.smsEncender(), lenGB]],  m)
+//conn.sendButton(m.chat, wm, langTOGGLE.smsAdveu1() + lenGB, null, [[langTOGGLE.smsEncender(), lenGB]],  m)
  
 let who 
 let img =  'https://i.imgur.com/DvHoMc3.jpg'
@@ -82,7 +82,7 @@ ${motivo}
  }
 	
 let user = global.db.data.users[who]
-if (!who) return conn.reply(m.chat, lenguajeGB.smsMalused3() + `*${usedPrefix + command} @${name} ${lenguajeGB['smsAdveu2']()}*`,  m)  	
+if (!who) return conn.reply(m.chat, langTOGGLE.smsMalused3() + `*${usedPrefix + command} @${name} ${langTOGGLE['smsAdveu2']()}*`,  m)  	
 let txt = text.replace('@' + who.split`@`[0], '').trim()
 
 const groupAdmins = participants.filter(p => p.admin)
@@ -139,13 +139,13 @@ ${wm} || ${vs}
 ╰━━━━━━━━━━━━━━━━━━⬣`,
     null,
     { mentions: [who] });
-/*await conn.sendButton(m.chat,`${global.db.data.chats[m.chat].users[m.sender].adv == 1 ? `*@${who.split`@`[0]}*` : `*@${who.split`@`[0]}*`} ${lenguajeGB['smsAdveu4']()}\n\n🫵 *${text}*`, `*${lenguajeGB['smsAdveu5']()}*\n⚠️ *${global.db.data.chats[m.chat].users[m.sender].adv}/4*\n\n${wm}`, img, [
-[lenguajeGB.smsToxic4(), '.ok'],
-[lenguajeGB.smsAdveu6(), lenguajeGB.lenguaje() == 'en' ? usedPrefix + 'inventory' : usedPrefix + 'inventario']], false, { mentions: [who] }) //[who]*/
+/*await conn.sendButton(m.chat,`${global.db.data.chats[m.chat].users[m.sender].adv == 1 ? `*@${who.split`@`[0]}*` : `*@${who.split`@`[0]}*`} ${langTOGGLE['smsAdveu4']()}\n\n🫵 *${text}*`, `*${langTOGGLE['smsAdveu5']()}*\n⚠️ *${global.db.data.chats[m.chat].users[m.sender].adv}/4*\n\n${wm}`, img, [
+[langTOGGLE.smsToxic4(), '.ok'],
+[langTOGGLE.smsAdveu6(), langTOGGLE.lenguaje() == 'en' ? usedPrefix + 'inventory' : usedPrefix + 'inventario']], false, { mentions: [who] }) //[who]*/
 	
 if (global.db.data.chats[m.chat].users[who].adv >= 3) {
 global.db.data.chats[m.chat].users[who].adv=0
-await m.reply(`${lenguajeGB['smsAdveu7']()}\n*@${who.split`@`[0]}* ${lenguajeGB['smsAdveu8']()}`, false, { mentions: [who] })
+await m.reply(`${langTOGGLE['smsAdveu7']()}\n*@${who.split`@`[0]}* ${langTOGGLE['smsAdveu8']()}`, false, { mentions: [who] })
 
 await tempBanimento('Usuario excedeu o numero de advertencias')
 await conn.groupParticipantsUpdate(m.chat, [who], 'remove')

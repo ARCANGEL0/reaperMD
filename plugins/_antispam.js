@@ -78,7 +78,7 @@ if(!global.db.data.chats[m.chat].users[m.sender].adv){
 if(global.db.data.chats[m.chat].users[m.sender].adv>=3){
   
   
-await conn.reply(m.chat,`${lenguajeGB['smsAdveu7']()}\n*@${m.sender.split(`@`)[0]}* ${lenguajeGB['smsAdveu8']()}`, m, { mentions: [m.sender] })
+await conn.reply(m.chat,`${langTOGGLE['smsAdveu7']()}\n*@${m.sender.split(`@`)[0]}* ${langTOGGLE['smsAdveu8']()}`, m, { mentions: [m.sender] })
 
 await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove') //@${who.split`@`[0]}
 global.db.data.chats[m.chat].users[m.sender].adv =0

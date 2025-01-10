@@ -15,7 +15,7 @@ _HISTORICO DO GPT APAGADO
 ─┅──┅❖ `)    
 } catch (error1) {   
 console.log(error1)
-throw `${lenguajeGB['smsAvisoFG']()}𝙀𝙍𝙍𝙊𝙍 🕯️💀`   
+throw `${langTOGGLE['smsAvisoFG']()}𝙀𝙍𝙍𝙊𝙍 🕯️💀`   
 }} 
 handler.command = ['delgppt']
 export default handler

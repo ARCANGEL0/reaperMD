@@ -93,62 +93,62 @@ const horarioFecha = lugarFecha.format('dd, DD [de] MMMM,YYYY ♱ HH:mm A').repl
 
 /*
 
-chat, `${lenguajeGB.smsConfi10()}\n\n🥀 ${lenguajeGB.smsConfi2()} *@${toUser}*
+chat, `${langTOGGLE.smsConfi10()}\n\n🥀 ${langTOGGLE.smsConfi2()} *@${toUser}*
 
-${lenguajeGB.smsConfi3()}
-${lenguajeGB.smsConfi4()}
+${langTOGGLE.smsConfi3()}
+${langTOGGLE.smsConfi4()}
 
-${lenguajeGB.smsConfi5()}
-${lenguajeGB.smsConfi6()}
-${lenguajeGB.smsConfi7()}
-${lenguajeGB.smsConfi8()}
-${m.isGroup ? `` : `${lenguajeGB.smsConfi9()}`}
+${langTOGGLE.smsConfi5()}
+${langTOGGLE.smsConfi6()}
+${langTOGGLE.smsConfi7()}
+${langTOGGLE.smsConfi8()}
+${m.isGroup ? `` : `${langTOGGLE.smsConfi9()}`}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.welcome ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}
+җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.welcome ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}
 ${usedPrefix + command} welcome
-🪶 ${lenguajeGB.smsWel2()}
+🪶 ${langTOGGLE.smsWel2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.detect ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}
+җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.detect ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}
 ${usedPrefix + command} detec
-🪶 ${lenguajeGB.smsDete2()}
+🪶 ${langTOGGLE.smsDete2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.autolevelup ? '🌕' : '🌒' : lenguajeGB.smsNoGg()} 
+җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.autolevelup ? '🌕' : '🌒' : langTOGGLE.smsNoGg()} 
 ${usedPrefix + command} autolevelup | autonivel
 🪶 Ativa sistema de nivelamento e recompensas do Edgar Bot
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${lenguajeGB.smsParaOw()} ${bot.restrict ? '🌕' : '🌒'}
+җ ${langTOGGLE.smsParaOw()} ${bot.restrict ? '🌕' : '🌒'}
 ${usedPrefix + command} restrict
-🪶 ${lenguajeGB.smsRestri2()}
+🪶 ${langTOGGLE.smsRestri2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${lenguajeGB.smsParaOw()} ${bot.antiCall ? '🌕' : '🌒'}
+җ ${langTOGGLE.smsParaOw()} ${bot.antiCall ? '🌕' : '🌒'}
 ${usedPrefix + command} antiCall
-🪶 ${lenguajeGB.smsLlamar2()}
+🪶 ${langTOGGLE.smsLlamar2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${lenguajeGB.smsParaAdmins()} ${bot.antiSpam ? '🌕' : '🌒'}
+җ ${langTOGGLE.smsParaAdmins()} ${bot.antiSpam ? '🌕' : '🌒'}
 ${usedPrefix + command} antiSpam
 🪶 Ativa o antispam do Edgar Bot, mutando e punindo quem floodar
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${lenguajeGB.smsParaOw()} ${global.opts['self'] ? '🌒' : '🌕'}
+җ ${langTOGGLE.smsParaOw()} ${global.opts['self'] ? '🌒' : '🌕'}
 ${usedPrefix + command} self
 🪶 Desativa o Edgar Allan Bot para todos.
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.modoadmin ? '🌕' : '🌒' : lenguajeGB.smsNoGg()} 
+җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.modoadmin ? '🌕' : '🌒' : langTOGGLE.smsNoGg()} 
 ${usedPrefix + command} modoadmin | sembot | pausa (HH:mm:ss)
 🪶 Restringe o bot para apenas para admins 
 (Opcional: tempo, use o comando com um prazo na sintaxe Hora: minutos: segundos para automatizar ativacao e desligamento automático. 
@@ -156,182 +156,182 @@ ex: .on mutebot 00:35:12)
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${lenguajeGB.smsParaOw()} ${global.opts['autoread'] ? '🌕' : '🌒'}
+җ ${langTOGGLE.smsParaOw()} ${global.opts['autoread'] ? '🌕' : '🌒'}
 ${usedPrefix + command} autoread
-🪶 ${lenguajeGB.smsLect1()}
+🪶 ${langTOGGLE.smsLect1()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${lenguajeGB.smsParaOw()} ${bot.temporal ? '🌕' : '🌒'}
+җ ${langTOGGLE.smsParaOw()} ${bot.temporal ? '🌕' : '🌒'}
 ${usedPrefix + command} temporal
 🪶 Mensagens temporárias 
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.stickers ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}
+җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.stickers ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}
 ${usedPrefix + command} stickers
-🪶 ${lenguajeGB.smsStik1()}
+🪶 ${langTOGGLE.smsStik1()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.autosticker ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}
+җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.autosticker ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}
 ${usedPrefix + command} autosticker
-🪶 ${lenguajeGB.smsStickA2()}
+🪶 ${langTOGGLE.smsStickA2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.reaction ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}    
+җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.reaction ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}    
 ${usedPrefix + command} reaction
-🪶 ${lenguajeGB.smsReacc2()}
+🪶 ${langTOGGLE.smsReacc2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.audios ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}
+җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.audios ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}
 ${usedPrefix + command} audios
-🪶 ${lenguajeGB.smsAudi2()}
+🪶 ${langTOGGLE.smsAudi2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antitoxic ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}
+җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.antitoxic ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}
 ${usedPrefix + command} antitoxic
-🪶 ${lenguajeGB.smsAntitoc2()}
+🪶 ${langTOGGLE.smsAntitoc2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antiver ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}
+җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.antiver ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}
 ${usedPrefix + command} antiver
-🪶 ${lenguajeGB.smsModOb2()}
+🪶 ${langTOGGLE.smsModOb2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.delete ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}
+җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.delete ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}
 ${usedPrefix + command} antidelete
 җ
-🪶 ${lenguajeGB.smsAntiEli2()}
+🪶 ${langTOGGLE.smsAntiEli2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antifake ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}
+җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.antifake ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}
 ${usedPrefix + command} antifake
-🪶 ${lenguajeGB.smsAntiInt2()}
+🪶 ${langTOGGLE.smsAntiInt2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antiLink ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}
+җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.antiLink ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}
 ${usedPrefix + command} antiZap | antiWhats
-🪶 ${lenguajeGB.smsAntiE2()}
+🪶 ${langTOGGLE.smsAntiE2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antiLink2 ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}
+җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.antiLink2 ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}
 ${usedPrefix + command} antiLink | links
 🪶 Excluir pessoas que enviarem qualquer link www. e https
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antiTiktok ? '🌕' : '🌒' : lenguajeGB.smsNoGg()} 
+җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.antiTiktok ? '🌕' : '🌒' : langTOGGLE.smsNoGg()} 
 ${usedPrefix + command} antiTiktok
-🪶 ${lenguajeGB.smsAntiTT2()}
+🪶 ${langTOGGLE.smsAntiTT2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antiYoutube ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}
+җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.antiYoutube ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}
 ${usedPrefix + command} antiYoutube
-🪶 ${lenguajeGB.smsAntiYT2()}
+🪶 ${langTOGGLE.smsAntiYT2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antiTelegram ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}
+җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.antiTelegram ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}
 ${usedPrefix + command} antiTelegram
-🪶 ${lenguajeGB.smsAntiTEL2()}
+🪶 ${langTOGGLE.smsAntiTEL2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antiFacebook ? '🌕' : '🌒' : lenguajeGB.smsNoGg()} 
+җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.antiFacebook ? '🌕' : '🌒' : langTOGGLE.smsNoGg()} 
 ${usedPrefix + command} antiFacebook
-🪶 ${lenguajeGB.smsAntiFB2()}
+🪶 ${langTOGGLE.smsAntiFB2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antiInstagram ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}
+җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.antiInstagram ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}
 ${usedPrefix + command} antiInstagram
-🪶 ${lenguajeGB.smsAntiIG2()}
+🪶 ${langTOGGLE.smsAntiIG2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${lenguajeGB.smsParaAdmins()} ${m.isGroup ? chat.antiTwitter ? '🌕' : '🌒' : lenguajeGB.smsNoGg()}   
+җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.antiTwitter ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}   
 ${usedPrefix + command} antiTwitter
-🪶 ${lenguajeGB.smsAntiTW2()}
+🪶 ${langTOGGLE.smsAntiTW2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${lenguajeGB.smsParaOw()} ${global.opts['pconly'] ? '🌕' : '🌒'}
+җ ${langTOGGLE.smsParaOw()} ${global.opts['pconly'] ? '🌕' : '🌒'}
 ${usedPrefix + command} pconly
-🪶 ${lenguajeGB.smsSOLOP2()}
+🪶 ${langTOGGLE.smsSOLOP2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${lenguajeGB.smsParaOw()} ${global.opts['gconly'] ? '🌕' : '🌒'}
+җ ${langTOGGLE.smsParaOw()} ${global.opts['gconly'] ? '🌕' : '🌒'}
 ${usedPrefix + command} gconly
-җ ${lenguajeGB.smsSOLOG2()}
+җ ${langTOGGLE.smsSOLOG2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${lenguajeGB.smsParaAdmins()  }${global.quixp  ? '🌕' : '🌒'}
+җ ${langTOGGLE.smsParaAdmins()  }${global.quixp  ? '🌕' : '🌒'}
 ${usedPrefix + command} quizxp
 🪶 Ativa o modo competição pro quiz
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${lenguajeGB.smsParaAdmins()  }${global.db.data.chats[m.chat].ricksan   ? '🌕' : '🌒'}
+җ ${langTOGGLE.smsParaAdmins()  }${global.db.data.chats[m.chat].ricksan   ? '🌕' : '🌒'}
 ${usedPrefix + command} rick
 🪶 Desativa a IA Rick Sanchez neste chat
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${lenguajeGB.smsParaAdmins()  }${chat.xadrez  ? '🌕' : '🌒'}
+җ ${langTOGGLE.smsParaAdmins()  }${chat.xadrez  ? '🌕' : '🌒'}
 ${usedPrefix + command} xadrez
 🪶 Ativa habilidade de jogar xadrez no grupo
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${lenguajeGB.smsParaAdmins()  }${chat.jogos  ? '🌕' : '🌒'}
+җ ${langTOGGLE.smsParaAdmins()  }${chat.jogos  ? '🌕' : '🌒'}
 ${usedPrefix + command} jogos|games|jogo
 🪶 Desabilita jogos neste vale obscuro
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${lenguajeGB.smsParaAdmins()  }${chat.gpt  ? '🌕' : '🌒'}
+җ ${langTOGGLE.smsParaAdmins()  }${chat.gpt  ? '🌕' : '🌒'}
 ${usedPrefix + command} ia|ai|gpt
 🪶 Desabilita a inteligência artiricial do bot
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${lenguajeGB.smsParaAdmins()  }${chat.admafk  ? '🌕' : '🌒'}
+җ ${langTOGGLE.smsParaAdmins()  }${chat.admafk  ? '🌕' : '🌒'}
 ${usedPrefix + command} xadrez
 🪶 Habilita AFK somente para ADM
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${lenguajeGB.smsParaAdmins()  }${chat.downloads  ? '🌕' : '🌒'}
+җ ${langTOGGLE.smsParaAdmins()  }${chat.downloads  ? '🌕' : '🌒'}
 ${usedPrefix + command} dl|baixar|downloads
 🪶 Desabilita funções de download neste grup
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${lenguajeGB.smsParaAdmins()  }${chat.busca  ? '🌕' : '🌒'}
+җ ${langTOGGLE.smsParaAdmins()  }${chat.busca  ? '🌕' : '🌒'}
 ${usedPrefix + command} busca|pesquisa|google
 🪶 Desabilita funções de busca neste grupo
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${lenguajeGB.smsParaAdmins()  }${chat.midia  ? '🌕' : '🌒'}
+җ ${langTOGGLE.smsParaAdmins()  }${chat.midia  ? '🌕' : '🌒'}
 ${usedPrefix + command} midia|ferramentas es 
 🪶 Desabilita funções de mídia no grupo
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${lenguajeGB.smsParaAdmins()  }${chat.midia  ? '🌕' : '🌒'}
+җ ${langTOGGLE.smsParaAdmins()  }${chat.midia  ? '🌕' : '🌒'}
 ${usedPrefix + command} interacoes {hh:mm:ss}
 🪶 Desabilita funções de interação no grupo
 (Opcional: pode-se definir um horário para agendar ativação ou desativação do comando. exemplo:
@@ -378,9 +378,9 @@ let menufuncoes =`╭─┅──┅❖  ♱︎  ❖─┅─┅
 ╰─┅---─┅❖  ⸸  ❖─┅┅
 ┃ 𖤍 *Funções para automação em grupo como Antispam, Anti +18, Antilinks , AntiApagar, Temporizador para o bot e dentre outros.*
 
-${lenguajeGB.smsConfi5()}
-${lenguajeGB.smsConfi6()}
-${lenguajeGB.smsConfi7()}
+${langTOGGLE.smsConfi5()}
+${langTOGGLE.smsConfi6()}
+${langTOGGLE.smsConfi7()}
 
 ┃ Use *.on [função]* para ativar
 ┃ Use *.off [função]* para desativar

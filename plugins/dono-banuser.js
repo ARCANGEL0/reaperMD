@@ -24,7 +24,7 @@ number = text
 }
 user = conn.user.jid.split`@`[0] + '@s.whatsapp.net'
 bot = conn.user.jid.split`@`[0] 
-bant = lenguajeGB.smsPropban1(usedPrefix, command, bot)
+bant = langTOGGLE.smsPropban1(usedPrefix, command, bot)
 if (!text && !m.quoted) return conn.reply(m.chat, bant, null, { mentions: [user] })               
 try {
 if(text) {
@@ -36,12 +36,12 @@ user = number + '@s.whatsapp.net'
 }} catch (e) {
 } finally {
 number = user.split('@')[0]
-if(user === conn.user.jid) return conn.reply(m.chat, lenguajeGB.smsPropban2(bot), null, { mentions: [user] })   
+if(user === conn.user.jid) return conn.reply(m.chat, langTOGGLE.smsPropban2(bot), null, { mentions: [user] })   
 for (let i = 0; i < global.owner.length; i++) {
 ownerNumber = global.owner[i][0];
 if (user.replace(/@s\.whatsapp\.net$/, '') === ownerNumber) {
 aa = ownerNumber + '@s.whatsapp.net'
-await conn.reply(m.chat, lenguajeGB.smsPropban3(ownerNumber), null, { mentions: [aa] })
+await conn.reply(m.chat, langTOGGLE.smsPropban3(ownerNumber), null, { mentions: [aa] })
 return
 }}
 
@@ -65,13 +65,13 @@ if(!global.db.data.chats[m.chat].users[user]){
 }
 users = global.db.data.chats[m.chat].users
 await conn.sendMessage(m.chat, { delete: m.key })
-if (users[user].banned === true) conn.reply(m.chat, lenguajeGB.smsPropban4(number), null, { mentions: [user] }) 
+if (users[user].banned === true) conn.reply(m.chat, langTOGGLE.smsPropban4(number), null, { mentions: [user] }) 
 users[user].banned = true
 usr = user.split('@')[0]     
-await conn.reply(m.chat, lenguajeGB.smsPropban5(), null, { mentions: [user] })   
-//await conn.reply(user, lenguajeGB.smsPropban6(number, usr), null, { mentions: [user, user] })
+await conn.reply(m.chat, langTOGGLE.smsPropban5(), null, { mentions: [user] })   
+//await conn.reply(user, langTOGGLE.smsPropban6(number, usr), null, { mentions: [user, user] })
 }} catch (e) {
-await conn.reply(m.chat, lenguajeGB.smsPropban7(usedPrefix, command, number), null, m)
+await conn.reply(m.chat, langTOGGLE.smsPropban7(usedPrefix, command, number), null, m)
 console.log(e) 
 }}
 handler.command = /^ban$/i

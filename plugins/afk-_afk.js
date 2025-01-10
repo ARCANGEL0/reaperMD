@@ -47,12 +47,12 @@ if(!global.db.data.chats[m.chat].afks)
 console.log("afk event")
 
 if (user.afkInfo[m.chat].afkTime > -1) {
-await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()} ❖─┅──┅ *A F K* ⚰️─┅──┅❖ 
+await conn.reply(m.chat, `${langTOGGLE['smsAvisoEG']()} ❖─┅──┅ *A F K* ⚰️─┅──┅❖ 
       *@${m.sender.split("@")[0]}*
-      ${lenguajeGB['smsAfkM1']()}
-      ${user.afkInfo[m.chat].afkReason ? `\n${lenguajeGB['smsAfkM2']()}🕯️ ` +user.afkInfo[m.chat].afkReason : ''}
+      ${langTOGGLE['smsAfkM1']()}
+      ${user.afkInfo[m.chat].afkReason ? `\n${langTOGGLE['smsAfkM2']()}🕯️ ` +user.afkInfo[m.chat].afkReason : ''}
 
-      ${lenguajeGB['smsAfkM3']()}\n *${(new Date - user.afkInfo[m.chat].afkTime).toTimeString ()}*`.trim(), m, { mentions: [m.sender] });
+      ${langTOGGLE['smsAfkM3']()}\n *${(new Date - user.afkInfo[m.chat].afkTime).toTimeString ()}*`.trim(), m, { mentions: [m.sender] });
 
 
 const numero = m.sender; 
@@ -91,9 +91,9 @@ let time = global.db.data.users[m.mentionedJid.toString()].afkInfo[m.chat].afkTi
   await m.reply(`
   ╭━━━━━━━━━⬣ 💀 ⬣━━━━━━━━━━━
 
-🕯️ ${lenguajeGB['smsAfkM4']()}\n${reason ? `${lenguajeGB['smsAfkM5']()}` + '──┅❖  ' + reason : `${lenguajeGB['smsAfkM6']()}`}
+🕯️ ${langTOGGLE['smsAfkM4']()}\n${reason ? `${langTOGGLE['smsAfkM5']()}` + '──┅❖  ' + reason : `${langTOGGLE['smsAfkM6']()}`}
 
-${lenguajeGB['smsAfkM3']()}\n──┅❖ *${(new Date - time).toTimeString()}*
+${langTOGGLE['smsAfkM3']()}\n──┅❖ *${(new Date - time).toTimeString()}*
 
 ╰━━━━━━━━━━━━━━━━━━⬣`);
   return false
@@ -128,9 +128,9 @@ let time = global.db.data.users[m.quoted.sender.toString()].afkInfo[m.chat].afkT
   await m.reply(`
   ╭━━━━━━━━━⬣ 💀 ⬣━━━━━━━━━━━
 
-🕯️ ${lenguajeGB['smsAfkM4']()}\n${reason ? `${lenguajeGB['smsAfkM5']()}` + '──┅❖  ' + reason : `${lenguajeGB['smsAfkM6']()}`}
+🕯️ ${langTOGGLE['smsAfkM4']()}\n${reason ? `${langTOGGLE['smsAfkM5']()}` + '──┅❖  ' + reason : `${langTOGGLE['smsAfkM6']()}`}
 
-${lenguajeGB['smsAfkM3']()}\n──┅❖ *${(new Date - time).toTimeString()}*
+${langTOGGLE['smsAfkM3']()}\n──┅❖ *${(new Date - time).toTimeString()}*
 
 ╰━━━━━━━━━━━━━━━━━━⬣`);
   return false
@@ -172,9 +172,9 @@ let time = global.db.data.users[m.quoted.toString()].afkInfo[m.chat].afkTime
   await m.reply(`
   ╭━━━━━━━━━⬣ 💀 ⬣━━━━━━━━━━━
 
-🕯️ ${lenguajeGB['smsAfkM4']()}\n${reason ? `${lenguajeGB['smsAfkM5']()}` + '──┅❖  ' + reason : `${lenguajeGB['smsAfkM6']()}`}
+🕯️ ${langTOGGLE['smsAfkM4']()}\n${reason ? `${langTOGGLE['smsAfkM5']()}` + '──┅❖  ' + reason : `${langTOGGLE['smsAfkM6']()}`}
 
-${lenguajeGB['smsAfkM3']()}\n──┅❖ *${(new Date - time).toTimeString()}*
+${langTOGGLE['smsAfkM3']()}\n──┅❖ *${(new Date - time).toTimeString()}*
 
 ╰━━━━━━━━━━━━━━━━━━⬣`);
   
@@ -203,9 +203,9 @@ let time = global.db.data.users[m.quoted].afkInfo[m.chat].afkTime
   await m.reply(`
   ╭━━━━━━━━━⬣ 💀 ⬣━━━━━━━━━━━
 
-🕯️ ${lenguajeGB['smsAfkM4']()}\n${reason ? `${lenguajeGB['smsAfkM5']()}` + '──┅❖  ' + reason : `${lenguajeGB['smsAfkM6']()}`}
+🕯️ ${langTOGGLE['smsAfkM4']()}\n${reason ? `${langTOGGLE['smsAfkM5']()}` + '──┅❖  ' + reason : `${langTOGGLE['smsAfkM6']()}`}
 
-${lenguajeGB['smsAfkM3']()}\n──┅❖ *${(new Date - time).toTimeString()}*
+${langTOGGLE['smsAfkM3']()}\n──┅❖ *${(new Date - time).toTimeString()}*
 
 ╰━━━━━━━━━━━━━━━━━━⬣`);
   
@@ -215,12 +215,12 @@ ${lenguajeGB['smsAfkM3']()}\n──┅❖ *${(new Date - time).toTimeString()}*
 /*
 if (user.afkInfo[m.chat].afkTime > -1 && m.quoted  .sender == user.afkInfo[m.chat].number) {
   console.log(m.quoted)
-await conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}
+await conn.reply(m.chat, `${langTOGGLE['smsAvisoAG']()}
 ╭━━━━━━━━━⬣ 💀 ⬣━━━━━━━━━━━
 
-🕯️ ${lenguajeGB['smsAfkM4']()}\n${reason ? `${lenguajeGB['smsAfkM5']()}` + '──┅❖  ' + reason : `${lenguajeGB['smsAfkM6']()}`}
+🕯️ ${langTOGGLE['smsAfkM4']()}\n${reason ? `${langTOGGLE['smsAfkM5']()}` + '──┅❖  ' + reason : `${langTOGGLE['smsAfkM6']()}`}
 
-${lenguajeGB['smsAfkM3']()}\n──┅❖ *${(new Date - user.afk).toTimeString()}*
+${langTOGGLE['smsAfkM3']()}\n──┅❖ *${(new Date - user.afk).toTimeString()}*
 
 ╰━━━━━━━━━━━━━━━━━━⬣`.trim(), m);
 }
@@ -297,12 +297,12 @@ export default handler
 let handler = m => m 
 handler.before = async function (m, { text, args, usedPrefix, command, conn } ) {
 let user = global.db.data.users[m.sender]
-if (user.afk > -1) {await conn.reply(m.chat, `${lenguajeGB['smsAvisoEG']()} ❖─┅──┅ *A F K* ⚰️─┅──┅❖ 
+if (user.afk > -1) {await conn.reply(m.chat, `${langTOGGLE['smsAvisoEG']()} ❖─┅──┅ *A F K* ⚰️─┅──┅❖ 
       *@${m.sender.split("@")[0]}*
-      ${lenguajeGB['smsAfkM1']()}
-      ${user.afkReason ? `\n${lenguajeGB['smsAfkM2']()}🕯️ ` +user.afkReason : ''}
+      ${langTOGGLE['smsAfkM1']()}
+      ${user.afkReason ? `\n${langTOGGLE['smsAfkM2']()}🕯️ ` +user.afkReason : ''}
 
-      ${lenguajeGB['smsAfkM3']()}\n *${(new Date - user.afk).toTimeString()}*`.trim(), m, { mentions: [m.sender] });
+      ${langTOGGLE['smsAfkM3']()}\n *${(new Date - user.afk).toTimeString()}*`.trim(), m, { mentions: [m.sender] });
 
 user.afk = -1
 user.afkReason = ''
@@ -316,12 +316,12 @@ let afkTime = user.afk
 if (!afkTime || afkTime < 0)
 continue
 let reason = user.afkReason || ''
-await conn.reply(m.chat, `${lenguajeGB['smsAvisoAG']()}
+await conn.reply(m.chat, `${langTOGGLE['smsAvisoAG']()}
 ╭━━━━━━━━━⬣ 💀 ⬣━━━━━━━━━━━
 
-🕯️ ${lenguajeGB['smsAfkM4']()}\n${reason ? `${lenguajeGB['smsAfkM5']()}` + '──┅❖  ' + reason : `${lenguajeGB['smsAfkM6']()}`}
+🕯️ ${langTOGGLE['smsAfkM4']()}\n${reason ? `${langTOGGLE['smsAfkM5']()}` + '──┅❖  ' + reason : `${langTOGGLE['smsAfkM6']()}`}
 
-${lenguajeGB['smsAfkM3']()}\n──┅❖ *${(new Date - user.afk).toTimeString()}*
+${langTOGGLE['smsAfkM3']()}\n──┅❖ *${(new Date - user.afk).toTimeString()}*
 
 ╰━━━━━━━━━━━━━━━━━━⬣`.trim(), m);
 

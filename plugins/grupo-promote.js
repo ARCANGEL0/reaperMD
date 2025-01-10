@@ -54,7 +54,7 @@ var number = text
 if(!text && !m.quoted) return conn.reply(m.chat, noTxt,  m)
 
 
-//conn.sendButton(m.chat, wm, lenguajeGB['smsDemott']() + `*${usedPrefix + command} @${global.owner[0][0]}*`, null, [[lenguajeGB.smsConMenu(), `${usedPrefix}menu`]],  m)
+//conn.sendButton(m.chat, wm, langTOGGLE['smsDemott']() + `*${usedPrefix + command} @${global.owner[0][0]}*`, null, [[langTOGGLE.smsConMenu(), `${usedPrefix}menu`]],  m)
 	
 try {
   let user

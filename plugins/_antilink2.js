@@ -141,7 +141,7 @@ return !0
   
 }
 }    
-//await conn.sendButton(m.chat, `${lenguajeGB['smsEnlaceWatt']()} ${await this.getName(m.sender)} ${isBotAdmin ? '' : `\n\n${lenguajeGB['smsAvisoFG']()}${lenguajeGB['smsAllAdmin']()}`}`, wm, [`${lenguajeGB['smsApagar']()}`, '/disable antilink'], m)    
+//await conn.sendButton(m.chat, `${langTOGGLE['smsEnlaceWatt']()} ${await this.getName(m.sender)} ${isBotAdmin ? '' : `\n\n${langTOGGLE['smsAvisoFG']()}${langTOGGLE['smsAllAdmin']()}`}`, wm, [`${langTOGGLE['smsApagar']()}`, '/disable antilink'], m)    
 if (!isBotAdmin) {
   return m.reply(global.notAdmin)
   } else if (!bot.restrict) {

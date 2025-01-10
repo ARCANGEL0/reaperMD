@@ -19,7 +19,7 @@ console.log(number);
 
    let user = a => '@' + a.split('@')[0] //'@' + a.split('@')[0]
    if (!txtt || !number || !(/^\d+$/.test(number) )) {
-   throw `${lenguajeGB['smsAvisoMG']()}
+   throw `${langTOGGLE['smsAvisoMG']()}
 ╭━━━━━━━━━⬣
 ┃
 ┃ 🪶📜 𝐃𝐢𝐠𝐚-𝐦𝐞 𝐪𝐮𝐞 𝐩𝐫𝐨𝐩ó𝐬𝐢𝐭𝐨 
