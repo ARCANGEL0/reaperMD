@@ -12,13 +12,12 @@ try {
 if (global.conn.user.jid == conn.user.jid) {
 let stdout = execSync('git pull origin master' + (m.fromMe && text ? ' ' + text : ''))
 
-
-    const formattedStdout = stdout
-        toString().split('\n> ') // Divide em linhas
-        .filter(line => line.trim() !== '') // Remove linhas em branco
-        .map(line => `> ${line.trim()}`) // Adiciona ">" e remove espaços extras
-        .join('\n'); // tudo de volta
-
+const formattedStdout = stdout
+    .toString()
+    .split('\n') // Divide em linhas
+    .filter(line => line.trim() !== '') // Remove linhas em branco
+    .map(line => `> ${line.trimStart()}`) // Remove espaços no início e adiciona ">"
+    .join('\n'); // Junta tudo de volta
 
     const fetch = `┌──[ Ǥнѳᔕт ]─[/usr/bin]
 └─ git pull origin master
