@@ -52,7 +52,7 @@ async function fn(images) {
     return false; // If none exceed the threshold, return 'SFW'
   } catch (err) {
     console.error('Error during processing:', err); // Log any errors
-    return 'Error'; // Return an error string if there's an exception
+    return false; // Return an error string if there's an exception
   }
 }
 
