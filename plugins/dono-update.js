@@ -18,7 +18,7 @@ const formattedStdout = stdout
     .filter(line => line.trim() !== '') // Remove linhas em branco
     .map(line => `> ${line.trimStart()}`) // Remove espaços no início e adiciona ">"
     .join('\n'); // Junta tudo de volta
-
+//fetchmaster
     const fetch = `┌──[ Ǥнѳᔕт ]─[/usr/bin]
 └─ git pull origin master
 ${formattedStdout}`;
