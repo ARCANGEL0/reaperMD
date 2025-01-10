@@ -11,12 +11,39 @@ let handler = async (m, { conn, text }) => {
 try {  
 if (global.conn.user.jid == conn.user.jid) {
 let stdout = execSync('git pull origin master' + (m.fromMe && text ? ' ' + text : ''))
-conn.reply(m.chat, stdout.toString(), m)}
+
+let fetch = `┌──[ Ǥнѳᔕт ]─[/usr/bin]
+└─ git pull origin master
+> . . . . . . . . . . . 
+> ${stdout.toString()}
+> . . . . . . . . . . . `
+
+conn.reply(m.chat, fetch, m)
+  
+  
+}
 //} catch {
+
 var update = execSync('git remote set-url origin https://github.com/ARCANGEL0/bytesec-md.git && git pull origin master -f')
-await m.reply(update.toString())
+
+let fetch2 = `┌──[ Ǥнѳᔕт ]─[/usr/bin]
+└─ git pull origin master
+> . . . . . . . . . . .
+> ${update.toString()}
+> . . . . . . . . . . . `
+
+
+await m.reply(fetch2)
 } catch {
-await m.reply(`${fg}`) 
+  let fetcherror= `┌──[ Ǥнѳᔕт ]─[/usr/bin]
+└─ git pull origin master
+> . . . . . . . . . . .
+> [!] _Failed to pull refs from master_
+> . . . . . . . . . . . `
+
+
+
+await m.reply(fetcherror) 
 }}
 handler.help = ['update']
 handler.tags = ['owner']
