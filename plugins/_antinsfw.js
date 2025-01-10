@@ -12,10 +12,10 @@
 //┃ ✞ঔৣ 𝙿𝚕𝚎𝚊𝚜𝚎 𝚌𝚛𝚎𝚍𝚒𝚝 𝚒𝚏 𝚢𝚘𝚞 𝚞𝚜𝚎 𝚝𝚑𝚎 𝚌𝚘𝚍𝚎 ঔৣ✞
 //┃ 𖤍 𝘾𝙤𝙣𝙩𝙖𝙘𝙩-𝙢𝙚 𝙛𝙤𝙧 𝙖𝙣𝙮 𝙙𝙤𝙪𝙗𝙩
 // ╰─...⌬─────────────────────────────────╯
-
-import axios from 'axios'; // Import axios for HTTP requests
-import * as tf from '@tensorflow/tfjs-node'; // Import TensorFlow.js for Node.js
-import nsfw from 'nsfwjs'; // Import the NSFW.js library
+import { Buffer } from 'buffer';                     // Import axios for HTTP requests                  
+import axios from 'axios';                           // Import TensorFlow.js for Node.js            
+import * as tf from '@tensorflow/tfjs-node';         // Import the NSFW.js library                      
+import * as nsfw from 'nsfwjs';
 
 import uploadImage from '../lib/uploadImage.js'
 import { join } from 'path'
