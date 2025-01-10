@@ -121,7 +121,7 @@ dist
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
-GataBotSession/
+ByteSecSession/
 fsocietyData/
 code_database.json
 # yarn v2
