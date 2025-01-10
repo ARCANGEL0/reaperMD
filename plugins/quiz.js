@@ -261,7 +261,8 @@ SE A CATEGORIA É INGLES, A PERGUNTA É EM INGLES
 SE A CATEGORIA É EM PORTUGUES, A PERGUNTA É EM PORTUGUES
 faca perguntas dificeis e complexas adequadas a um vestibular referente ao tema
 Ajuste o valor de Pontos, Money e XP de acordo com a complexidade e tema da
-, os valores minimos sao 25 pontos, 50 Money e 200xp
+, os valores minimos sao 25 pontos, 50 Money e 200xp, faca os valores serem
+dinamicos e variaveis conforme a complexidade!
 Evite repetir as mesmas perguntas`
     },
     ]
