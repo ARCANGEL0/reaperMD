@@ -13,10 +13,12 @@ if (global.conn.user.jid == conn.user.jid) {
 let stdout = execSync('git pull origin master' + (m.fromMe && text ? ' ' + text : ''))
 
 
-   const formattedStdout = stdout.toString()
-        .split('\n') // Divide em linhas
-        .map(line => `> ${line}`) // Adiciona o ">" no início de cada linha
-        .join('\n'); // Junta de volta
+    const formattedStdout = stdout
+        toString().split('\n') // Divide em linhas
+        .filter(line => line.trim() !== '') // Remove linhas em branco
+        .map(line => `> ${line.trim()}`) // Adiciona ">" e remove espaços extras
+        .join('\n'); // Junta tudo de volta
+
 
     const fetch = `┌──[ Ǥнѳᔕт ]─[/usr/bin]
 └─ git pull origin master
@@ -35,10 +37,11 @@ conn.reply(m.chat, fetch, m)
 //} catch {
 
 var update = execSync('git remote set-url origin https://github.com/ARCANGEL0/bytesec-md.git && git pull origin master -f')
-
-   const formattedUp = update.toString().split('\n') // Divide em linhas
-        .map(line => `> ${line}`) // Adiciona o ">" no início de cada linha
-        .join('\n'); // Junta de volta
+    const formattedUp = update.toString().
+        .split('\n') // Divide em linhas
+        .filter(line => line.trim() !== '') // Remove linhas em branco
+        .map(line => `> ${line.trim()}`) // Adiciona ">" e remove espaços extras
+        .join('\n'); // Junta tudo de volta
 
     const fetch2 = `┌──[ Ǥнѳᔕт ]─[/usr/bin]
 └─ git pull origin master
