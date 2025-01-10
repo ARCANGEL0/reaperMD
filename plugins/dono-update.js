@@ -14,7 +14,7 @@ let stdout = execSync('git pull origin master' + (m.fromMe && text ? ' ' + text 
 
 
     const formattedStdout = stdout
-        toString().split('\n') // Divide em linhas
+        toString().split('\n> ') // Divide em linhas
         .filter(line => line.trim() !== '') // Remove linhas em branco
         .map(line => `> ${line.trim()}`) // Adiciona ">" e remove espaços extras
         .join('\n'); // Junta tudo de volta
