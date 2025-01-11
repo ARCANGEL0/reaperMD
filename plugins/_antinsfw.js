@@ -122,7 +122,6 @@ if(!global.db.data.chats[m.chat].users[m.sender]){
         adv:0,
   }
 }
-async function firstWarning(){
   const warningMessageOne = global.db.data.chats[m.chat].language === 'pt'
     ? [
         `⚠️ Olha só, vou ser claro: nada de pornografia aqui. Não sei onde você acha que tá, mas isso é contra as regras. Você acabou de ganhar um aviso. 1/3. Três e você tá fora.`,
@@ -148,16 +147,6 @@ async function firstWarning(){
         `There’s no room for porn here. This is your first warning. 1/3. Three, and you disappear.`,
         `Basic rule: porn, forbidden. That’s your first strike. 1/3. Three strikes, and goodbye.`
     ];
-    return conn.sendMessage(m.chat, {text: `> robot@bytesec:~# uafw -m @${m.sender.split('@')[0]}
-> . . . . . . . . . . . . . . . . . . . . . . .
-> ‎ 
-${warningMessageOne.getRandom()}
-> ‎ 
-> ╰─────────
-`, mentions:
-    [m.sender]}, {quoted: m})
-}
-async function secondWarning(){
   const warningMessageTwo = global.db.data.chats[m.chat].language === 'pt'
     ? [
         `⚠️ Então, você ignorou o primeiro aviso e mandou pornografia de novo. Proibido, parceiro. Esse é seu segundo strike. 2/3. Mais um e você tá fora.`,
@@ -183,19 +172,7 @@ async function secondWarning(){
         `Seriously, this again? Porn is off-limits. That’s your second strike. 2/3. One more, and you're out.`,
         `This is your second strike for porn. One last warning: next time, and you're done.`
     ];
-    return conn.sendMessage(m.chat, {text: `> robot@bytesec:~# uafw -m @${m.sender.split('@')[0]}
-> . . . . . . . . . . . . . . . . . . . . . . .
-> ‎ 
-${warningMessageTwo.getRandom()}
-> ‎ 
-> ╰─────────
-`, mentions:
-    [m.sender]}, {quoted: m})
-    
-
-}
-async function lastWarning(){
-  const warningMessageThree = global.db.data.chats[m.chat].language === 'pt'
+      const warningMessageThree = global.db.data.chats[m.chat].language === 'pt'
     ? [
         `⚠️ Strike 3. Sério? Que patético. Mandando pornografia em um grupo... você realmente precisa de ajuda. Banido.`,
         `Uau, terceiro strike. Eu quase fico com pena de você... quase. Isso é um grupo, não seu porão. Banido por pornografia.`,
@@ -221,17 +198,6 @@ async function lastWarning(){
         `Congrats, you’re why we have rules. Three strikes, banned. Go find somewhere else for your “content.”`
     ];
 
-
-    await conn.sendMessage(m.chat, {text: `> robot@bytesec:~# uafw -m @${m.sender.split('@')[0]}
-> . . . . . . . . . . . . . . . . . . . . . . .
-> ‎ 
-${warningMessageThree.getRandom()}
-> ‎ 
-> ╰─────────
-`, mentions:
-    [m.sender]}, {quoted: m})
-    
-}
 
    let q =  m; 
     let mime = m?.msg?.mimetype || ''
@@ -267,19 +233,37 @@ global.db.data.chats[m.chat].ignored.push(DELETEMESSAGEst.message.protocolMessag
 
 if(global.db.data.chats[m.chat].users[m.sender].nsfwAdv == 1) {
  console.log("🌙")
-  await firstWarning()
-  return !0
+  return conn.sendMessage(m.chat, {text: `> robot@bytesec:~# uafw -m @${m.sender.split('@')[0]}
+> . . . . . . . . . . . . . . . . . . . . . . .
+> ‎ 
+${warningMessageOne.getRandom()}
+> ‎ 
+> ╰─────────
+`, mentions:
+    [m.sender]}, {quoted: m})
 }
 if(global.db.data.chats[m.chat].users[m.sender].nsfwAdv == 2) {
-  await secondWarning()
-  return !0
+  return conn.sendMessage(m.chat, {text: `> robot@bytesec:~# uafw -m @${m.sender.split('@')[0]}
+> . . . . . . . . . . . . . . . . . . . . . . .
+> ‎ 
+${warningMessageTwo.getRandom()}
+> ‎ 
+> ╰─────────
+`, mentions:
+    [m.sender]}, {quoted: m})
   
 }
 if(global.db.data.chats[m.chat].users[m.sender].nsfwAdv == 3) {
-  await lastWarning()
+   await conn.sendMessage(m.chat, {text: `> robot@bytesec:~# uafw -m @${m.sender.split('@')[0]}
+> . . . . . . . . . . . . . . . . . . . . . . .
+> ‎ 
+${warningMessageaThree.getRandom()}
+> ‎ 
+> ╰─────────
+`, mentions:
+    [m.sender]}, {quoted: m})
   await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
 global.db.data.chats[m.chat].users[m.sender].advLink = 0 
-  
 
 return !0
 }
@@ -315,17 +299,36 @@ let DELETEMESSAGEst = await conn.sendMessage(m.chat, { delete: m.key })
 global.db.data.chats[m.chat].ignored.push(DELETEMESSAGEst.message.protocolMessage.key.id)
 if(global.db.data.chats[m.chat].users[m.sender].nsfwAdv == 1) {
   console('first')
-  await firstWarning()
-  return !0
+  return conn.sendMessage(m.chat, {text: `> robot@bytesec:~# uafw -m @${m.sender.split('@')[0]}
+> . . . . . . . . . . . . . . . . . . . . . . .
+> ‎ 
+${warningMessageOne.getRandom()}
+> ‎ 
+> ╰─────────
+`, mentions:
+    [m.sender]}, {quoted: m})
+    
 }
 if(global.db.data.chats[m.chat].users[m.sender].nsfwAdv == 2) {
-  await secondWarning()
-  return !0
+   return conn.sendMessage(m.chat, {text: `> robot@bytesec:~# uafw -m @${m.sender.split('@')[0]}
+> . . . . . . . . . . . . . . . . . . . . . . .
+> ‎ 
+${warningMessageTwo.getRandom()}
+> ‎ 
+> ╰─────────
+`, mentions:
+    [m.sender]}, {quoted: m})
   
 }
 if(global.db.data.chats[m.chat].users[m.sender].nsfwAdv == 3) {
-  await lastWarning()
-  await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
+  await conn.sendMessage(m.chat, {text: `> robot@bytesec:~# uafw -m @${m.sender.split('@')[0]}
+> . . . . . . . . . . . . . . . . . . . . . . .
+> ‎ 
+${warningMessageThree.getRandom()}
+> ‎ 
+> ╰─────────
+`, mentions:
+    [m.sender]}, {quoted: m})  await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
 global.db.data.chats[m.chat].users[m.sender].advLink = 0 
 
 return !0
