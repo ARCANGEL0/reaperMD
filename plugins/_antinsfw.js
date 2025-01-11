@@ -25,35 +25,50 @@ handler.before = async function (m,{isCriadora,isAdmin,groupMetadata ,participan
   if(!global.db.data.chats[m.chat].initialBoot) return !1
 
 if (!m.isGroup) return !1
-async function fn(imageUrl) {
-  try {
-    // Baixar a imagem como array buffer
-    const pic = await axios.get(imageUrl, { responseType: 'arraybuffer' });
 
-    // Carregar o modelo NSFWJS
+
+async function detectNSFW(imageUrl) {
+  try {
+    // Download the image as an array buffer
+    const response = await axios.get(imageUrl, { responseType: 'arraybuffer' });
+
+    // Load the NSFWJS model
     const model = await nsfw.load();
 
-    // Converter a imagem para tensor
-    let image = await tf.node.decodeImage(new Uint8Array(pic.data), 3); // '3' para canal RGB
+    // Decode the image
+    let image = tf.node.decodeImage(new Uint8Array(response.data), 3);
 
-    // Redimensionar a imagem para o tamanho esperado pelo modelo
-    const requiredSize = model.imageSize || 224; // Tamanho padrão do MobileNetV2
+    // Normalize pixel values
+    image = image.div(tf.scalar(255.0));
+
+    // Resize the image to the required size
+    const requiredSize = model.imageSize || 224;
     image = tf.image.resizeBilinear(image, [requiredSize, requiredSize]);
-    image = image.expandDims(0); // Adicionar a dimensão do batch
+    image = image.expandDims(0); // Add batch dimension
 
-    // Classificar a imagem
+    // Classify the image
     const predictions = await model.classify(image);
     console.log(predictions);
 
-    // Definir um limite para NSFW
-    const nsfwThreshold = 0.55;
+    // Dispose of the tensor to free memory
+    image.dispose();
+
+    // Define thresholds for each category
+    const thresholds = {
+      Porn: 0.7,
+      Sexy: 0.6,
+      Hentai: 0.65,
+    };
+
+    // Check if any category exceeds its threshold
     for (const prediction of predictions) {
-      if (['Porn', 'Sexy', 'Hentai'].includes(prediction.className) && prediction.probability > nsfwThreshold) {
-        return true; // Conteúdo NSFW detectado
+      const { className, probability } = prediction;
+      if (thresholds[className] && probability > thresholds[className]) {
+        return true; // NSFW content detected
       }
     }
 
-    return false; // Conteúdo seguro
+    return false; // Safe content
   } catch (err) {
     console.error('Error during processing:', err);
     return false;
