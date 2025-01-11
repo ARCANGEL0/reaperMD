@@ -35,7 +35,7 @@ console.log('teeeest  ' + currentDate < scheduledDateTime)
           global.db.data.chats[m.chat].isBanned = true
        
         console.log('expirou');
-        if(global.db.data.chats[m.chat].isBanned && !isOwner  && global.db.data.chats[m.chat].firstTime)
+        if(global.db.data.chats[m.chat].isBanned && !isOwner&& global.db.data.chats[m.chat].firstTime)
  {
 console.log("first time")
 
