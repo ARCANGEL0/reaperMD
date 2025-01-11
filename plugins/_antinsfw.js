@@ -42,7 +42,7 @@ async function fn(imageUrl) {
     // image = image.div(tf.scalar(255.0));
 
     // Resize the image to the required size
-    const requiredSize = model.imageSize || 224;
+    const requiredSize = model.imageSize || 299;
     image = tf.image.resizeBilinear(image, [requiredSize, requiredSize]);
     image = image.expandDims(0); // Add batch dimension
 
