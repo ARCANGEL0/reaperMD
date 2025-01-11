@@ -328,7 +328,9 @@ ${warningMessageThree.getRandom()}
 > ‎ 
 > ╰─────────
 `, mentions:
-    [m.sender]}, {quoted: m})  await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
+    [m.sender]}, {quoted: m}) 
+    
+    await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
 global.db.data.chats[m.chat].users[m.sender].advLink = 0 
 
 return !0
