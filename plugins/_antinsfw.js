@@ -299,6 +299,7 @@ let DELETEMESSAGEst = await conn.sendMessage(m.chat, { delete: m.key })
 global.db.data.chats[m.chat].ignored.push(DELETEMESSAGEst.message.protocolMessage.key.id)
 if(global.db.data.chats[m.chat].users[m.sender].nsfwAdv == 1) {
   console('first')
+  
   return conn.sendMessage(m.chat, {text: `> robot@bytesec:~# uafw -m @${m.sender.split('@')[0]}
 > . . . . . . . . . . . . . . . . . . . . . . .
 > ‎ 
