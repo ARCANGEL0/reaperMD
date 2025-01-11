@@ -272,7 +272,7 @@ if(global.db.data.chats[m.chat].users[m.sender].nsfwAdv == 3) {
    await conn.sendMessage(m.chat, {text: `> robot@bytesec:~# uafw -m @${m.sender.split('@')[0]}
 > . . . . . . . . . . . . . . . . . . . . . . .
 > ‎ 
-${warningMessageaThree.getRandom()}
+${warningMessageThree.getRandom()}
 > ‎ 
 > ╰─────────
 `, mentions:
