@@ -23,7 +23,7 @@ const scheduledDateTime = new Date(chats.expira);
     const currentDate = new Date();
 console.log('teeeest  ' + currentDate  < scheduledDateTime)
     // Compare the current date and time with the scheduled date and time
-   const isEx = !isOwner && currentDate >= scheduledDateTime
+   const isEx = m.sender !== global.criador && currentDate >= scheduledDateTime
     console.log('teste ban  ',isEx )
     if (currentDate < scheduledDateTime){
       global.db.data.chats[m.chat].isBanned = false
