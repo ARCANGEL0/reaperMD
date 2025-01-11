@@ -268,15 +268,18 @@ global.db.data.chats[m.chat].ignored.push(DELETEMESSAGEst.message.protocolMessag
 if(global.db.data.chats[m.chat].users[m.sender].nsfwAdv == 1) {
  console.log("🌙")
   await firstWarning()
+  return !0
 }
 if(global.db.data.chats[m.chat].users[m.sender].nsfwAdv == 2) {
   await secondWarning()
+  return !0
   
 }
 if(global.db.data.chats[m.chat].users[m.sender].nsfwAdv == 3) {
   await lastWarning()
   await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
 global.db.data.chats[m.chat].users[m.sender].advLink = 0 
+  
 
 return !0
 }
@@ -311,10 +314,13 @@ if(isNSFW){
 let DELETEMESSAGEst = await conn.sendMessage(m.chat, { delete: m.key })
 global.db.data.chats[m.chat].ignored.push(DELETEMESSAGEst.message.protocolMessage.key.id)
 if(global.db.data.chats[m.chat].users[m.sender].nsfwAdv == 1) {
+  console('first')
   await firstWarning()
+  return !0
 }
 if(global.db.data.chats[m.chat].users[m.sender].nsfwAdv == 2) {
   await secondWarning()
+  return !0
   
 }
 if(global.db.data.chats[m.chat].users[m.sender].nsfwAdv == 3) {
