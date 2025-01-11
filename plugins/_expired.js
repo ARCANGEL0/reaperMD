@@ -27,7 +27,7 @@ console.log('teeeest  ' + currentDate < scheduledDateTime)
       global.db.data.chats[m.chat].isBanned = false
       return !0
     }
-    else if(currentDate >= scheduledDateTime){
+    else if(!isOwner && currentDate >= scheduledDateTime){
       global.db.data.chats[m.chat].isBanned = true
       if (/^[\.\/]/.test(m.text) && currentDate >= scheduledDateTime &&
       !isOwner && !m.fromMe) {
