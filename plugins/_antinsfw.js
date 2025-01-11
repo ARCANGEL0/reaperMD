@@ -294,7 +294,7 @@ return !0
     
 }
     else if (/image/g.test(mime)){
-         if (!(isAdmin || isOwner) && !global.db.data.chats[m.chat].nsfw){
+         if (global.db.data.chats[m.chat].nsfw){
        let media = await q.download()
 let link = await uploadImage(media)
   console.log("🌙")
