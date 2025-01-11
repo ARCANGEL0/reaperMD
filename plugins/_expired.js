@@ -23,14 +23,13 @@ const scheduledDateTime = new Date(chats.expira);
     const currentDate = new Date();
 console.log('teeeest  ' + currentDate < scheduledDateTime)
     // Compare the current date and time with the scheduled date and time
+    m.reply(!isOwner && currentDate >= scheduledDateTime)
     if (currentDate < scheduledDateTime){
       global.db.data.chats[m.chat].isBanned = false
       return !0
     }
-    else i
-    m.reply(!isOwner && currentDate >= scheduledDateTim)
     
-    if(!isOwner && currentDate >= scheduledDateTime){
+    else if(!isOwner && currentDate >= scheduledDateTime){
       global.db.data.chats[m.chat].isBanned = true
       if (/^[\.\/]/.test(m.text) && currentDate >= scheduledDateTime &&
       !isOwner && !m.fromMe) {
