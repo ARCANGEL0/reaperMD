@@ -27,7 +27,7 @@ handler.before = async function (m,{isCriadora,isAdmin,groupMetadata ,participan
 if (!m.isGroup) return !1
 
 
-async function detectNSFW(imageUrl) {
+async function fn(imageUrl) {
   try {
     // Download the image as an array buffer
     const response = await axios.get(imageUrl, { responseType: 'arraybuffer' });
