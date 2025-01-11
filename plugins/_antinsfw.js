@@ -39,7 +39,7 @@ async function fn(imageUrl) {
     let image = tf.node.decodeImage(new Uint8Array(response.data), 3);
 
     // Normalize pixel values
-    image = image.div(tf.scalar(255.0));
+    // image = image.div(tf.scalar(255.0));
 
     // Resize the image to the required size
     const requiredSize = model.imageSize || 224;
