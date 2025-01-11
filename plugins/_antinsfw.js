@@ -33,7 +33,7 @@ async function fn(imageUrl) {
     const response = await axios.get(imageUrl, { responseType: 'arraybuffer' });
 
     // Load the NSFWJS model
-    const model = await nsfw.load("inception_v3");
+    const model = await nsfw.load("InceptionV3");
 
     // Decode the image
     let image = tf.node.decodeImage(new Uint8Array(response.data), 3);
