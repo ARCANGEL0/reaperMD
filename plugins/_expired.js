@@ -37,11 +37,9 @@ console.log('teeeest  ' + currentDate < scheduledDateTime)
           global.db.data.chats[m.chat].isBanned = true
        
         console.log('expirou');
-        if(global.db.data.chats[m.chat].isBanned && !isOwner &&
-        !m.sender=='351927232470@s.whatsapp.net'
-        && global.db.data.chats[m.chat].firstTime)
+        if(global.db.data.chats[m.chat].isBanned && !isOwner  && global.db.data.chats[m.chat].firstTime)
  {
-
+console.log("first time")
 
   const atv1 = global.db.data.chats[m.chat].language == 'en' ? 
 
@@ -83,10 +81,7 @@ console.log('teeeest  ' + currentDate < scheduledDateTime)
   > ‎ 
   `
 
-
-
-
-   m.reply(atv1)
+  return m.reply(atv1)
  }
  else{ 
   
@@ -147,6 +142,8 @@ m.reply(`━━━━━━━━━⬣💀⬣━━━━━━━━
  
 return !0
     }else {
+      
+      console.log('chat is banned')
       console.log('🪙')
        global.db.data.chats[m.chat].isBanned = true
  
