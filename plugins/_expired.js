@@ -147,9 +147,9 @@ return !0
       console.log('🪙')
        global.db.data.chats[m.chat].isBanned = true
  
-       if(global.criador.includes(m.sender) || m.sender == global.cocriador || m.sender=='351927232470@s.whatsapp.net' ){
+       if(global.criador.includes(m.sender)){
         // Do something else if the current date and time is before the scheduled date and time
-     
+           
        }
      return !0
     }
