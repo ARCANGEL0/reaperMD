@@ -21,7 +21,7 @@ const scheduledDateTime = new Date(chats.expira);
 
     // Get the current date and time
     const currentDate = new Date();
-console.log('teeeest  ' + currentDate < scheduledDateTime)
+console.log('teeeest  ' + currentDate  < scheduledDateTime)
     // Compare the current date and time with the scheduled date and time
    const isEx = !isOwner && currentDate >= scheduledDateTime
     console.log('teste ban  ',isEx )
