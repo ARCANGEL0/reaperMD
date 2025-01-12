@@ -4045,7 +4045,7 @@ function getCurrentDate(format) {
   if(global.db.data.users[m.sender].regIndex == 0){
    console.log('login 2')
    
-    if(m.text == "passo" || m.text == "pass" || m.text == "."){
+    if(m.text.toLowerCase() == "passo" || m.text.toLowerCase() == "pass" || m.text == "."){
       global.db.data.users[m.sender].nome = ''
     }
     else{
@@ -4079,7 +4079,7 @@ console.log(mshg)
   }
   else if(global.db.data.users[m.sender].regIndex == 1){
     
-  if(m.text == "passo" || m.text == "pass" || m.text == "."){
+  if(m.text.toLowerCase() == "passo" || m.text.toLowerCase() == "pass" || m.text == "."){
       global.db.data.users[m.sender].morada = ''
     }
     else{
@@ -4115,7 +4115,7 @@ console.log(mshg)
   return !0
   }
  else if(global.db.data.users[m.sender].regIndex == 2){
-    if(m.text == "passo" || m.text == "pass" || m.text == "."){
+    if(m.text.toLowerCase() == "passo" || m.text.toLowerCase() == "pass" || m.text == "."){
       global.db.data.users[m.sender].age = ''
     }
     else{
@@ -4148,7 +4148,7 @@ console.log(mshg)
   return !0
   }
  else if(global.db.data.users[m.sender].regIndex == 3){
-    if(m.text == "passo" || m.text == "pass" || m.text == "."){
+    if(m.text.toLowerCase() == "passo" || m.text.toLowerCase() == "pass" || m.text == "."){
       global.db.data.users[m.sender].religiao = ''
     }
     else{
@@ -4180,7 +4180,7 @@ console.log(mshg)
   return !0
   }
   else if(global.db.data.users[m.sender].regIndex == 4){
-     if(m.text == "passo" || m.text == "pass" || m.text == "."){
+     if(m.text.toLowerCase() == "passo" || m.text.toLowerCase() == "pass" || m.text == "."){
       global.db.data.users[m.sender].instagram = ''
     }
     else{
@@ -4217,7 +4217,7 @@ console.log(mshg)
 
   
   else if(global.db.data.users[m.sender].regIndex == 5){
-    if(m.text == "passo" || m.text == "pass" || m.text == "."){
+    if(m.text.toLowerCase() == "passo" || m.text.toLowerCase() == "pass" || m.text == "."){
      global.db.data.users[m.sender].profissao = ''
    }
    else{
@@ -4261,7 +4261,7 @@ console.log(mshg)
 
 
   else if(global.db.data.users[m.sender].regIndex == 6){
-     if(m.text == "passo" || m.text == "pass" || m.text == "."){
+     if(m.text.toLowerCase() == "passo" || m.text.toLowerCase() == "pass" || m.text == "."){
       global.db.data.users[m.sender].languages = ''
     }
     else{
@@ -4310,7 +4310,7 @@ console.log(mshg)
 
 
   else if(global.db.data.users[m.sender].regIndex == 7){
-     if(m.text == "passo" || m.text == "pass" || m.text == "."){
+     if(m.text.toLowerCase() == "passo" || m.text.toLowerCase() == "pass" || m.text == "."){
       global.db.data.users[m.sender].system = ''
     }
     else{
@@ -4349,7 +4349,7 @@ console.log(mshg)
 
 
   else if(global.db.data.users[m.sender].regIndex == 8){
-     if(m.text == "passo" || m.text == "pass" || m.text == "."){
+     if(m.text.toLowerCase() == "passo" || m.text.toLowerCase() == "pass" || m.text == "."){
       global.db.data.users[m.sender].study = ''
     }
     else{
@@ -4386,7 +4386,7 @@ console.log(mshg)
   return !0
   }
   else if(global.db.data.users[m.sender].regIndex == 9){
-     if(m.text == "passo" || m.text == "pass" || m.text == "."){
+     if(m.text.toLowerCase() == "passo" || m.text.toLowerCase() == "pass" || m.text == "."){
       global.db.data.users[m.sender].serie = ''
     }
     else{
@@ -4420,7 +4420,7 @@ console.log(mshg)
   return !0
   }
   else if(global.db.data.users[m.sender].regIndex == 10){
-     if(m.text == "passo" || m.text == "pass" || m.text == "."){
+     if(m.text.toLowerCase() == "passo" || m.text.toLowerCase() == "pass" || m.text == "."){
       global.db.data.users[m.sender].esportes = ''
     }
     else{
@@ -4456,7 +4456,7 @@ console.log(mshg)
   return !0
   }
   else if(global.db.data.users[m.sender].regIndex == 11){
-     if(m.text == "passo" || m.text == "pass" || m.text == "."){
+     if(m.text.toLowerCase() == "passo" || m.text.toLowerCase() == "pass" || m.text == "."){
       global.db.data.users[m.sender].animais = ''
     }
     else{
@@ -4489,7 +4489,7 @@ console.log(mshg)
   return !0
   }
   else if(global.db.data.users[m.sender].regIndex == 12){
-     if(m.text == "passo" || m.text == "pass" || m.text == "."){
+     if(m.text.toLowerCase() == "passo" || m.text.toLowerCase() == "pass" || m.text == "."){
       global.db.data.users[m.sender].hobbies = ''
     }
     else{
@@ -4522,7 +4522,7 @@ console.log(mshg)
   return !0
   }
   else if(global.db.data.users[m.sender].regIndex == 13){
-     if(m.text == "passo" || m.text == "pass" || m.text == "."){
+     if(m.text.toLowerCase() == "passo" || m.text.toLowerCase() == "pass" || m.text == "."){
       global.db.data.users[m.sender].website = ''
     }
     else{
@@ -4557,7 +4557,7 @@ console.log(mshg)
   return !0
   }
   else if(global.db.data.users[m.sender].regIndex == 14){
-     if(m.text == "passo" || m.text == "pass" || m.text == "."){
+     if(m.text.toLowerCase() == "passo" || m.text.toLowerCase() == "pass" || m.text == "."){
       global.db.data.users[m.sender].links = ''
     }
     else{
@@ -4592,7 +4592,7 @@ console.log(mshg)
   return !0
   }
   else if(global.db.data.users[m.sender].regIndex == 15){
-     if(m.text == "passo" || m.text == "pass" || m.text == "."){
+     if(m.text.toLowerCase() == "passo" || m.text.toLowerCase() == "pass" || m.text == "."){
       global.db.data.users[m.sender].biografia = ''
     }
     else{
