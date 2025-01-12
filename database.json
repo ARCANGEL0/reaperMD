@@ -21055,7 +21055,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736680784046,
+          "lastMessageTime": 1736696196225,
           "messageCount": 1,
           "pontos": 0
         },
@@ -21073,7 +21073,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736640481598,
+          "lastMessageTime": 1736696127580,
           "messageCount": 1,
           "pontos": 0
         },
@@ -21919,7 +21919,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1735164904003,
+          "lastMessageTime": 1736690738863,
           "messageCount": 1,
           "pontos": 0
         },
@@ -30810,10 +30810,10 @@
           "tempBan": false
         },
         "5518996556848@s.whatsapp.net": {
-          "exp": 2321,
-          "limit": 4,
+          "exp": 4271,
+          "limit": 9,
           "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
-          "money": 0,
+          "money": 500,
           "level": 0,
           "adm": false,
           "legendary": false,
@@ -30825,7 +30825,7 @@
           "cocriador": false,
           "lastMessageTime": 1731155603517,
           "messageCount": 1,
-          "pontos": 240,
+          "pontos": 515,
           "usuariosRoubados": [],
           "shields": 0,
           "trojans": 0,
@@ -33029,6 +33029,66 @@
           {
             "role": "assistant",
             "content": "{\n  \"Pergunta\": \"Qual dos seguintes conceitos sociológicos foi introduzido por Émile Durkheim em sua análise sobre a coesão social?\",\n  \"Opcoes\": {\n    \"A\": \"Solidariedade Mecânica\",\n    \"B\": \"Instituições Sociais\",\n    \"C\": \"Consciência Coletiva\",\n    \"D\": \"Mobilidade Social\"\n  },\n  \"Pontos\": \"40\",\n  \"Money\": \"70\",\n  \"XP\": \"300\",\n  \"Resposta\": \"A\",\n  \"Motivo\": \"A solidariedade mecânica refere-se ao tipo de coesão social característico de sociedades mais primitivas ou menos complexas, onde as relações sociais são baseadas na semelhança entre os indivíduos e na conformidade às normas sociais. Este conceito é fundamental na obra de Durkheim, que discutiu a transição entre sociedades mais simples e sociedades modernas, caracterizadas pela solidariedade orgânica.\"\n}"
+          },
+          {
+            "role": "user",
+            "content": "Agora siga as instrucoes que te foram dada  e crie o objeto JSON de uma pergunta com os MESNMOS CAMPOS/PROPRIEDADES no exemplo!!! { Pergunta: \"Pergunta dentro do TEMA DA CATEGORIA\", Opcoes: { A: \"Opcao\", B: \"Opcao\", C: \"Opcao\", D: \"Opcao\" }, Pontos: \"Valor de acordo com a dificuldade\", Money: \"Valor por dificuldade\", XP: \"Valor por dificuldade\", Resposta: \"Opcao certa A, B, C ou D\", Motivo: \"Explicacao detalhada da resposta\" } Retorne APENAS UM OBJETO JSON E MAIS NADA! use o \" nas propriedades do objeto. o usuario ira lhe passar a categoria que deseja, e voce deve gerar uma pergunta baseada no IDIOMA da categoria!! Se for SCIENCE, a pergunta deve ser ingles. Se for CIENCIA, a pergunta deve ser portugues. Se for MEDICINE, deve ser em ingles. se for MEDICINA, deve ser em portugues, etc.\n       \n       \n  NAO MANDE PERGUNTAS SEMELHANTES AUE VOCE JA TENHA ME ENVIADO, SEJA CRIATIVO E\n CRIE perguntas complexas e didiceis, finja que isto e um vestibular da maior\n faculdade que há, o vestibular tem que ser dificil\n        Categoria:\n        [Sociologia]"
+          },
+          {
+            "role": "user",
+            "content": "Sociologia"
+          },
+          {
+            "role": "assistant",
+            "content": "{\n  \"Pergunta\": \"Qual é a principal diferença entre a sociologia e a psicologia no estudo do comportamento humano?\",\n  \"Opcoes\": {\n    \"A\": \"A sociologia foca no comportamento individual, enquanto a psicologia analisa a sociedade.\",\n    \"B\": \"A sociologia estuda a influência de grupos sociais, enquanto a psicologia se concentra em processos mentais individuais.\",\n    \"C\": \"Ambas as disciplinas têm o mesmo foco e metodologia.\",\n    \"D\": \"A psicologia é uma subárea da sociologia.\"\n  },\n  \"Pontos\": \"45\",\n  \"Money\": \"80\",\n  \"XP\": \"250\",\n  \"Resposta\": \"B\",\n  \"Motivo\": \"A sociologia investiga como as interações sociais e os grupos influenciam o comportamento humano, enquanto a psicologia se concentra nos processos mentais e comportamentais individuais. Essa distinção é fundamental para entender as dinâmicas sociais e individuais que moldam a experiência humana.\"\n}"
+          },
+          {
+            "role": "user",
+            "content": "Agora siga as instrucoes que te foram dada  e crie o objeto JSON de uma pergunta com os MESNMOS CAMPOS/PROPRIEDADES no exemplo!!! { Pergunta: \"Pergunta dentro do TEMA DA CATEGORIA\", Opcoes: { A: \"Opcao\", B: \"Opcao\", C: \"Opcao\", D: \"Opcao\" }, Pontos: \"Valor de acordo com a dificuldade\", Money: \"Valor por dificuldade\", XP: \"Valor por dificuldade\", Resposta: \"Opcao certa A, B, C ou D\", Motivo: \"Explicacao detalhada da resposta\" } Retorne APENAS UM OBJETO JSON E MAIS NADA! use o \" nas propriedades do objeto. o usuario ira lhe passar a categoria que deseja, e voce deve gerar uma pergunta baseada no IDIOMA da categoria!! Se for SCIENCE, a pergunta deve ser ingles. Se for CIENCIA, a pergunta deve ser portugues. Se for MEDICINE, deve ser em ingles. se for MEDICINA, deve ser em portugues, etc.\n       \n       \n  NAO MANDE PERGUNTAS SEMELHANTES AUE VOCE JA TENHA ME ENVIADO, SEJA CRIATIVO E\n CRIE perguntas complexas e didiceis, finja que isto e um vestibular da maior\n faculdade que há, o vestibular tem que ser dificil\n        Categoria:\n        [Sociologia]"
+          },
+          {
+            "role": "user",
+            "content": "Sociologia"
+          },
+          {
+            "role": "assistant",
+            "content": "{\n  \"Pergunta\": \"Qual conceito de Karl Marx se refere à luta entre classes sociais e suas implicações na estrutura da sociedade?\",\n  \"Opcoes\": {\n    \"A\": \"Alienação\",\n    \"B\": \"Mais-Valia\",\n    \"C\": \"Conflito de Classes\",\n    \"D\": \"Consciência de Classe\"\n  },\n  \"Pontos\": \"50\",\n  \"Money\": \"90\",\n  \"XP\": \"350\",\n  \"Resposta\": \"C\",\n  \"Motivo\": \"O conceito de conflito de classes é central na teoria marxista, onde Marx argumenta que a história da sociedade é a história da luta entre classes sociais opostas, como a burguesia e o proletariado. Essa luta é vista como um motor de mudança social e econômica, refletindo as tensões inerentes à estrutura capitalista.\"\n}"
+          },
+          {
+            "role": "user",
+            "content": "Agora siga as instrucoes que te foram dada  e crie o objeto JSON de uma pergunta com os MESNMOS CAMPOS/PROPRIEDADES no exemplo!!! { Pergunta: \"Pergunta dentro do TEMA DA CATEGORIA\", Opcoes: { A: \"Opcao\", B: \"Opcao\", C: \"Opcao\", D: \"Opcao\" }, Pontos: \"Valor de acordo com a dificuldade\", Money: \"Valor por dificuldade\", XP: \"Valor por dificuldade\", Resposta: \"Opcao certa A, B, C ou D\", Motivo: \"Explicacao detalhada da resposta\" } Retorne APENAS UM OBJETO JSON E MAIS NADA! use o \" nas propriedades do objeto. o usuario ira lhe passar a categoria que deseja, e voce deve gerar uma pergunta baseada no IDIOMA da categoria!! Se for SCIENCE, a pergunta deve ser ingles. Se for CIENCIA, a pergunta deve ser portugues. Se for MEDICINE, deve ser em ingles. se for MEDICINA, deve ser em portugues, etc.\n       \n       \n  NAO MANDE PERGUNTAS SEMELHANTES AUE VOCE JA TENHA ME ENVIADO, SEJA CRIATIVO E\n CRIE perguntas complexas e didiceis, finja que isto e um vestibular da maior\n faculdade que há, o vestibular tem que ser dificil\n        Categoria:\n        [Sociologia]"
+          },
+          {
+            "role": "user",
+            "content": "Sociologia"
+          },
+          {
+            "role": "assistant",
+            "content": "{\n  \"Pergunta\": \"Como a teoria da ação social de Max Weber se diferencia da abordagem funcionalista na análise da sociedade?\",\n  \"Opcoes\": {\n    \"A\": \"Weber foca na estrutura social, enquanto o funcionalismo analisa as ações individuais.\",\n    \"B\": \"Weber enfatiza a compreensão das intenções dos indivíduos, enquanto o funcionalismo se concentra nas funções sociais.\",\n    \"C\": \"Ambas as teorias têm a mesma abordagem e foco.\",\n    \"D\": \"Weber ignora a importância da cultura na sociedade.\"\n  },\n  \"Pontos\": \"55\",\n  \"Money\": \"100\",\n  \"XP\": \"400\",\n  \"Resposta\": \"B\",\n  \"Motivo\": \"A teoria da ação social de Max Weber destaca a importância de entender as motivações e intenções dos indivíduos em suas ações, enquanto a abordagem funcionalista se concentra em como as diferentes partes da sociedade contribuem para a estabilidade e funcionamento do todo. Essa distinção é crucial para a análise sociológica, pois permite uma compreensão mais profunda das dinâmicas sociais.\"\n}"
+          },
+          {
+            "role": "user",
+            "content": "Agora siga as instrucoes que te foram dada  e crie o objeto JSON de uma pergunta com os MESNMOS CAMPOS/PROPRIEDADES no exemplo!!! { Pergunta: \"Pergunta dentro do TEMA DA CATEGORIA\", Opcoes: { A: \"Opcao\", B: \"Opcao\", C: \"Opcao\", D: \"Opcao\" }, Pontos: \"Valor de acordo com a dificuldade\", Money: \"Valor por dificuldade\", XP: \"Valor por dificuldade\", Resposta: \"Opcao certa A, B, C ou D\", Motivo: \"Explicacao detalhada da resposta\" } Retorne APENAS UM OBJETO JSON E MAIS NADA! use o \" nas propriedades do objeto. o usuario ira lhe passar a categoria que deseja, e voce deve gerar uma pergunta baseada no IDIOMA da categoria!! Se for SCIENCE, a pergunta deve ser ingles. Se for CIENCIA, a pergunta deve ser portugues. Se for MEDICINE, deve ser em ingles. se for MEDICINA, deve ser em portugues, etc.\n       \n       \n  NAO MANDE PERGUNTAS SEMELHANTES AUE VOCE JA TENHA ME ENVIADO, SEJA CRIATIVO E\n CRIE perguntas complexas e didiceis, finja que isto e um vestibular da maior\n faculdade que há, o vestibular tem que ser dificil\n        Categoria:\n        [Sociologia]"
+          },
+          {
+            "role": "user",
+            "content": "Sociologia"
+          },
+          {
+            "role": "assistant",
+            "content": "{\n  \"Pergunta\": \"Qual é o papel da cultura na formação da identidade social segundo os estudos sociológicos contemporâneos?\",\n  \"Opcoes\": {\n    \"A\": \"A cultura é irrelevante para a identidade social.\",\n    \"B\": \"A cultura molda a identidade social ao fornecer símbolos e significados compartilhados.\",\n    \"C\": \"A identidade social é exclusivamente determinada por fatores econômicos.\",\n    \"D\": \"A cultura é um reflexo direto da biologia humana.\"\n  },\n  \"Pontos\": \"60\",\n  \"Money\": \"110\",\n  \"XP\": \"450\",\n  \"Resposta\": \"B\",\n  \"Motivo\": \"A cultura desempenha um papel fundamental na formação da identidade social, pois fornece os símbolos, valores e significados que os indivíduos compartilham em suas interações. Esses elementos culturais ajudam a moldar como as pessoas se veem e como se relacionam com os outros, influenciando suas percepções e comportamentos dentro de um contexto social mais amplo.\"\n}"
+          },
+          {
+            "role": "user",
+            "content": "Agora siga as instrucoes que te foram dada  e crie o objeto JSON de uma pergunta com os MESNMOS CAMPOS/PROPRIEDADES no exemplo!!! { Pergunta: \"Pergunta dentro do TEMA DA CATEGORIA\", Opcoes: { A: \"Opcao\", B: \"Opcao\", C: \"Opcao\", D: \"Opcao\" }, Pontos: \"Valor de acordo com a dificuldade\", Money: \"Valor por dificuldade\", XP: \"Valor por dificuldade\", Resposta: \"Opcao certa A, B, C ou D\", Motivo: \"Explicacao detalhada da resposta\" } Retorne APENAS UM OBJETO JSON E MAIS NADA! use o \" nas propriedades do objeto. o usuario ira lhe passar a categoria que deseja, e voce deve gerar uma pergunta baseada no IDIOMA da categoria!! Se for SCIENCE, a pergunta deve ser ingles. Se for CIENCIA, a pergunta deve ser portugues. Se for MEDICINE, deve ser em ingles. se for MEDICINA, deve ser em portugues, etc.\n       \n       \n  NAO MANDE PERGUNTAS SEMELHANTES AUE VOCE JA TENHA ME ENVIADO, SEJA CRIATIVO E\n CRIE perguntas complexas e didiceis, finja que isto e um vestibular da maior\n faculdade que há, o vestibular tem que ser dificil\n        Categoria:\n        [Sociologia]"
+          },
+          {
+            "role": "user",
+            "content": "Sociologia"
+          },
+          {
+            "role": "assistant",
+            "content": "{\n  \"Pergunta\": \"De acordo com os estudos de Michel Foucault, como o poder se manifesta nas instituições sociais?\",\n  \"Opcoes\": {\n    \"A\": \"O poder é centralizado em governos e líderes políticos.\",\n    \"B\": \"O poder é uma relação disseminada e se exerce por meio de práticas disciplinares e normas sociais.\",\n    \"C\": \"O poder opera exclusivamente através da violência e força militar.\",\n    \"D\": \"O poder é inato a indivíduos e não pode ser influenciado por instituições sociais.\"\n  },\n  \"Pontos\": \"65\",\n  \"Money\": \"120\",\n  \"XP\": \"500\",\n  \"Resposta\": \"B\",\n  \"Motivo\": \"Michel Foucault argumenta que o poder não é simplesmente algo que é possuído, mas que é uma relação que circula entre indivíduos e instituições. Segundo ele, o poder se manifesta através de práticas disciplinares e na forma como as normas sociais são internalizadas, influenciando comportamentos e relações dentro de diversas instituições, como escolas, prisões e hospitais.\"\n}"
           }
         ],
         "pergunta": {},
@@ -33036,9 +33096,9 @@
         "ca": "",
         "cm": "",
         "xp": 0,
-        "pontos": "40",
-        "mony": "70",
-        "id": "BAE5BE5D4388054F",
+        "pontos": "65",
+        "mony": "120",
+        "id": "BAE53B88E6C04695",
         "time": "",
         "math": false
       }
@@ -34891,7 +34951,7 @@
           "pontos": 0
         },
         "5521970385666@s.whatsapp.net": {
-          "exp": 15344,
+          "exp": 15408,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 670,
@@ -34904,7 +34964,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736688104280,
+          "lastMessageTime": 1736689393626,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -35216,7 +35276,7 @@
           "trojans": 0
         },
         "5514981384196@s.whatsapp.net": {
-          "exp": 10894,
+          "exp": 11011,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 120,
@@ -35229,7 +35289,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736689041297,
+          "lastMessageTime": 1736696209965,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -35244,7 +35304,7 @@
           "trojans": 0
         },
         "556195667729@s.whatsapp.net": {
-          "exp": 6280,
+          "exp": 6536,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 175,
@@ -35257,7 +35317,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736686326128,
+          "lastMessageTime": 1736696414820,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -35501,7 +35561,7 @@
           "acaoTimer": "2024-12-28T15:17:17.635Z"
         },
         "554599015152@s.whatsapp.net": {
-          "exp": 8262,
+          "exp": 8411,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 1e+26,
@@ -35514,7 +35574,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736685264330,
+          "lastMessageTime": 1736696446848,
           "messageCount": 1,
           "pontos": 0,
           "usuariosRoubados": [],
@@ -35757,7 +35817,7 @@
           "pontos": 0
         },
         "555581183968@s.whatsapp.net": {
-          "exp": 8779,
+          "exp": 8836,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 1120,
@@ -35770,7 +35830,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736660883090,
+          "lastMessageTime": 1736696318908,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -36241,7 +36301,7 @@
           "pontos": 0
         },
         "5512997076907@s.whatsapp.net": {
-          "exp": 28163,
+          "exp": 28193,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 300,
@@ -36254,8 +36314,8 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736658413149,
-          "messageCount": 2,
+          "lastMessageTime": 1736696453562,
+          "messageCount": 1,
           "pontos": 0,
           "tempBan": false,
           "almas": 0,
@@ -36504,7 +36564,7 @@
           "trojans": 0
         },
         "553182537308@s.whatsapp.net": {
-          "exp": 17998,
+          "exp": 18097,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 710,
@@ -36517,7 +36577,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736686868765,
+          "lastMessageTime": 1736695352140,
           "messageCount": 1,
           "pontos": 0,
           "acaoTimer": "2025-01-11T12:26:06.776Z",
@@ -36791,7 +36851,7 @@
           "trojans": 0
         },
         "5519971412295@s.whatsapp.net": {
-          "exp": 281,
+          "exp": 285,
           "limit": 0,
           "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
           "money": 0,
@@ -36804,7 +36864,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736544639302,
+          "lastMessageTime": 1736696165127,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -37118,7 +37178,7 @@
           "trojans": 0
         },
         "556796473405@s.whatsapp.net": {
-          "exp": 1276,
+          "exp": 1329,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 30,
@@ -37131,7 +37191,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736591344161,
+          "lastMessageTime": 1736696363753,
           "messageCount": 1,
           "pontos": 0,
           "rce": 0,
@@ -37752,7 +37812,7 @@
           "trojans": 0
         },
         "554388686229@s.whatsapp.net": {
-          "exp": 18481,
+          "exp": 18510,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 663,
@@ -37765,7 +37825,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736686749860,
+          "lastMessageTime": 1736696291015,
           "messageCount": 1,
           "pontos": 57,
           "usuariosRoubados": [],
@@ -43050,7 +43110,7 @@
           "rce": 0
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 119245,
+          "exp": 119340,
           "limit": 0,
           "role": "",
           "money": 0,
@@ -43105,7 +43165,7 @@
           "trojans": 0
         },
         "5521980818253@s.whatsapp.net": {
-          "exp": 690356,
+          "exp": 690369,
           "limit": 15,
           "role": "Ｅｘｐｌｏｒａｄｏｒ　ｄｅ　Ｓｉｓｔｅｍａｓ",
           "money": 100133,
@@ -43118,7 +43178,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736643925584,
+          "lastMessageTime": 1736690632009,
           "messageCount": 1,
           "pontos": 0,
           "almas": 2,
@@ -43276,7 +43336,7 @@
           "trojans": 0
         },
         "5521970764536@s.whatsapp.net": {
-          "exp": 46,
+          "exp": 309,
           "limit": 0,
           "role": "Ｆａｎｔａｓｍａ　Ｄｉｇｉｔａｌ",
           "money": 340,
@@ -43289,7 +43349,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736680917139,
+          "lastMessageTime": 1736695579998,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -43394,10 +43454,10 @@
           "steals": 0
         },
         "557981607343@s.whatsapp.net": {
-          "exp": 991832,
+          "exp": 991935,
           "limit": 7,
           "role": "Ａｎｏｎｙｍｏｕｓ",
-          "money": 686522,
+          "money": 786522,
           "level": 98,
           "adm": false,
           "legendary": false,
@@ -43407,13 +43467,13 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736644147232,
+          "lastMessageTime": 1736695250639,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
           "steals": 8,
-          "slots": 0,
-          "lastslot": 1736513101611,
+          "slots": 3,
+          "lastslot": 1736694754326,
           "usuariosRoubados": [
             "5521980818253@s.whatsapp.net"
           ],
@@ -43451,7 +43511,7 @@
           "usuariosRoubados": []
         },
         "554792584937@s.whatsapp.net": {
-          "exp": 171387,
+          "exp": 171493,
           "limit": 19,
           "role": "Ａｒｑｕｉｔｅｔｏ　ｄｅ　Ｍａｌｗａｒｅ",
           "money": 2108795,
@@ -43464,7 +43524,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736686559391,
+          "lastMessageTime": 1736695656026,
           "messageCount": 1,
           "pontos": 0,
           "advLink": 2,
@@ -43576,7 +43636,7 @@
           "trojans": 0
         },
         "558199137780@s.whatsapp.net": {
-          "exp": 5046,
+          "exp": 5061,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 184858,
@@ -43589,7 +43649,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736644307300,
+          "lastMessageTime": 1736692383787,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -43881,7 +43941,7 @@
           "trojans": 0
         },
         "553499915050@s.whatsapp.net": {
-          "exp": 6558,
+          "exp": 6605,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 132944,
@@ -43894,7 +43954,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736686619375,
+          "lastMessageTime": 1736695555996,
           "messageCount": 1,
           "pontos": 0,
           "rce": 0,
@@ -46966,16 +47026,16 @@
       "lastSuccess": 1736168685862
     },
     "funAcoes7.js": {
-      "total": 579,
-      "success": 578,
-      "last": 1736686417553,
-      "lastSuccess": 1736686417553
+      "total": 580,
+      "success": 579,
+      "last": 1736695542143,
+      "lastSuccess": 1736695542143
     },
     "grupo-perfil.js": {
-      "total": 339,
-      "success": 333,
-      "last": 1736651035786,
-      "lastSuccess": 1736651035786
+      "total": 341,
+      "success": 335,
+      "last": 1736695039368,
+      "lastSuccess": 1736695039368
     },
     "dono-reiniciar-usuario.js": {
       "total": 23,
@@ -47146,10 +47206,10 @@
       "lastSuccess": 1735506420942
     },
     "fun-slot.js": {
-      "total": 398,
-      "success": 365,
-      "last": 1736685683758,
-      "lastSuccess": 1736685683758
+      "total": 401,
+      "success": 368,
+      "last": 1736694754754,
+      "lastSuccess": 1736694754754
     },
     "fun-acoes.js": {
       "total": 37,
@@ -47272,10 +47332,10 @@
       "lastSuccess": 1736467736211
     },
     "quiz.js": {
-      "total": 158,
-      "success": 132,
-      "last": 1736649352739,
-      "lastSuccess": 1736649352739
+      "total": 165,
+      "success": 137,
+      "last": 1736690699019,
+      "lastSuccess": 1736690699019
     },
     "funHoroscopo.js": {
       "total": 5,
@@ -47629,8 +47689,8 @@
       "modoia": true,
       "jadibotmd": true
     },
-    "cotacao": 0.9908343998525045,
-    "cotacaoOntem": 0.9831909722923905,
+    "cotacao": 0.9968993245604073,
+    "cotacaoOntem": 0.9908343998525045,
     "banco": {
       "clientes": {
         "351927285125@s.whatsapp.net": {
@@ -47649,7 +47709,7 @@
           "conta": "740286848854",
           "sepa": "SE8221482258591744",
           "wallet": "WAL-8860550042",
-          "saldo": 352.46795913783075
+          "saldo": 352.59894586594254
         },
         "553888016495@s.whatsapp.net": {
           "titular": "🌻",
@@ -47659,9 +47719,9 @@
           "saldo": 800.5996721368227
         }
       },
-      "rendimento": 0.00002477085999631261
+      "rendimento": 0.000024922483114010178
     },
-    "cotacaoPercentual": 0.7774102667249647,
-    "ultimaAtualizacao": "2025-01-11T15:00:00.070Z"
+    "cotacaoPercentual": 0.6121027599370377,
+    "ultimaAtualizacao": "2025-01-12T15:09:47.167Z"
   }
 }
