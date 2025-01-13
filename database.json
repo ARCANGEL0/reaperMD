@@ -7226,7 +7226,7 @@
       "tentativasRoubo": 5,
       "spammer": 0,
       "usuariosRoubados": [],
-      "lastmiming": 1736424424211
+      "lastmiming": 1736739642131
     },
     "558196334341@s.whatsapp.net": {
       "counterPrivate": 0,
@@ -15157,7 +15157,7 @@
       "tentativasRoubo": 5,
       "spammer": 0,
       "usuariosRoubados": [],
-      "lastmiming": 1736457061308
+      "lastmiming": 1736736160760
     },
     "558199137780@s.whatsapp.net": {
       "counterPrivate": 0,
@@ -17514,7 +17514,7 @@
       "afkReason": "",
       "role": "",
       "reporte": 0,
-      "name": "Pamela",
+      "name": "Pam",
       "antispam": 0,
       "antispamlastclaim": 0,
       "silenced": false,
@@ -21256,7 +21256,35 @@
           "afkReason": ""
         }
       }
-    }
+    },
+    "5511963974542@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "Vanessa",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 0,
+      "warn": 0,
+      "afkInfo": {
+        "120363126337539207@g.us": {
+          "afkTime": -2,
+          "number": "5511963974542@s.whatsapp.net",
+          "afkReason": ""
+        }
+      }
+    },
+    "553182537308@s.whatsapp.net,554599015152@s.whatsapp.net": {}
   },
   "chats": {
     "120363312968709293@g.us": {
@@ -31383,10 +31411,10 @@
           "tempBan": false
         },
         "5511932804214@s.whatsapp.net": {
-          "exp": 0,
-          "limit": 0,
+          "exp": 400,
+          "limit": 1,
           "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
-          "money": 0,
+          "money": 95,
           "level": 0,
           "adm": false,
           "legendary": false,
@@ -31396,7 +31424,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "pontos": 0
+          "pontos": 50
         },
         "5521980401333@s.whatsapp.net": {
           "exp": 0,
@@ -33315,11 +33343,15 @@
         "558387182943@s.whatsapp.net": {
           "xp": -40,
           "name": "Allan"
+        },
+        "5511932804214@s.whatsapp.net": {
+          "xp": 0,
+          "name": "Pam"
         }
       },
       "quiz": {
         "perguntaAndamento": false,
-        "loading": false,
+        "loading": true,
         "modo": true,
         "categoria": "Sociologia",
         "historico": [
@@ -33398,16 +33430,40 @@
           {
             "role": "assistant",
             "content": "{\n  \"Pergunta\": \"De acordo com os estudos de Michel Foucault, como o poder se manifesta nas instituições sociais?\",\n  \"Opcoes\": {\n    \"A\": \"O poder é centralizado em governos e líderes políticos.\",\n    \"B\": \"O poder é uma relação disseminada e se exerce por meio de práticas disciplinares e normas sociais.\",\n    \"C\": \"O poder opera exclusivamente através da violência e força militar.\",\n    \"D\": \"O poder é inato a indivíduos e não pode ser influenciado por instituições sociais.\"\n  },\n  \"Pontos\": \"65\",\n  \"Money\": \"120\",\n  \"XP\": \"500\",\n  \"Resposta\": \"B\",\n  \"Motivo\": \"Michel Foucault argumenta que o poder não é simplesmente algo que é possuído, mas que é uma relação que circula entre indivíduos e instituições. Segundo ele, o poder se manifesta através de práticas disciplinares e na forma como as normas sociais são internalizadas, influenciando comportamentos e relações dentro de diversas instituições, como escolas, prisões e hospitais.\"\n}"
+          },
+          {
+            "role": "user",
+            "content": "Agora siga as instrucoes que te foram dada  e crie o objeto JSON de uma pergunta com os MESNMOS CAMPOS/PROPRIEDADES no exemplo!!! { Pergunta: \"Pergunta dentro do TEMA DA CATEGORIA\", Opcoes: { A: \"Opcao\", B: \"Opcao\", C: \"Opcao\", D: \"Opcao\" }, Pontos: \"Valor de acordo com a dificuldade\", Money: \"Valor por dificuldade\", XP: \"Valor por dificuldade\", Resposta: \"Opcao certa A, B, C ou D\", Motivo: \"Explicacao detalhada da resposta\" } Retorne APENAS UM OBJETO JSON E MAIS NADA! use o \" nas propriedades do objeto. o usuario ira lhe passar a categoria que deseja, e voce deve gerar uma pergunta baseada no IDIOMA da categoria!! Se for SCIENCE, a pergunta deve ser ingles. Se for CIENCIA, a pergunta deve ser portugues. Se for MEDICINE, deve ser em ingles. se for MEDICINA, deve ser em portugues, etc.\n       \n       \n  NAO MANDE PERGUNTAS SEMELHANTES AUE VOCE JA TENHA ME ENVIADO, SEJA CRIATIVO E\n CRIE perguntas complexas e didiceis, finja que isto e um vestibular da maior\n faculdade que há, o vestibular tem que ser dificil\n        Categoria:\n        [Sociologia]"
+          },
+          {
+            "role": "user",
+            "content": "Sociologia"
+          },
+          {
+            "role": "assistant",
+            "content": "{\n  \"Pergunta\": \"Qual abordagem teórica descreve a sociedade como um sistema composto por partes interdependentes, enfatizando a estabilidade e a ordem social?\",\n  \"Opcoes\": {\n    \"A\": \"Teoria da Evolução Social\",\n    \"B\": \"Teoria do Conflito\",\n    \"C\": \"Teoria Funcionalista\",\n    \"D\": \"Teoria do Interacionismo Simbólico\"\n  },\n  \"Pontos\": \"50\",\n  \"Money\": \"95\",\n  \"XP\": \"400\",\n  \"Resposta\": \"C\",\n  \"Motivo\": \"A teoria funcionalista, desenvolvida por pensadores como Émile Durkheim, analisa a sociedade como um sistema interligado onde cada parte desempenha uma função específica que contribui para a estabilidade do todo. Essa abordagem enfatiza a importância da ordem social e dos mecanismos que mantêm a coesão entre os diferentes elementos sociais.\"\n}"
+          },
+          {
+            "role": "user",
+            "content": "Agora siga as instrucoes que te foram dada  e crie o objeto JSON de uma pergunta com os MESNMOS CAMPOS/PROPRIEDADES no exemplo!!! { Pergunta: \"Pergunta dentro do TEMA DA CATEGORIA\", Opcoes: { A: \"Opcao\", B: \"Opcao\", C: \"Opcao\", D: \"Opcao\" }, Pontos: \"Valor de acordo com a dificuldade\", Money: \"Valor por dificuldade\", XP: \"Valor por dificuldade\", Resposta: \"Opcao certa A, B, C ou D\", Motivo: \"Explicacao detalhada da resposta\" } Retorne APENAS UM OBJETO JSON E MAIS NADA! use o \" nas propriedades do objeto. o usuario ira lhe passar a categoria que deseja, e voce deve gerar uma pergunta baseada no IDIOMA da categoria!! Se for SCIENCE, a pergunta deve ser ingles. Se for CIENCIA, a pergunta deve ser portugues. Se for MEDICINE, deve ser em ingles. se for MEDICINA, deve ser em portugues, etc.\n       \n       \n  NAO MANDE PERGUNTAS SEMELHANTES AUE VOCE JA TENHA ME ENVIADO, SEJA CRIATIVO E\n CRIE perguntas complexas e didiceis, finja que isto e um vestibular da maior\n faculdade que há, o vestibular tem que ser dificil\n        Categoria:\n        [Sociologia]"
+          },
+          {
+            "role": "user",
+            "content": "Sociologia"
+          },
+          {
+            "role": "assistant",
+            "content": "null"
           }
         ],
-        "pergunta": {},
+        "pergunta": null,
         "cp": "",
         "ca": "",
         "cm": "",
         "xp": 0,
-        "pontos": "65",
-        "mony": "120",
-        "id": "BAE53B88E6C04695",
+        "pontos": "50",
+        "mony": "95",
+        "id": "BAE5F6AE707312D8",
         "time": "",
         "math": false
       }
@@ -35242,7 +35298,7 @@
           "shields": 0
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 29813,
+          "exp": 30766,
           "limit": 0,
           "role": "",
           "money": 0,
@@ -35288,7 +35344,7 @@
           "trojans": 0
         },
         "351927285125@s.whatsapp.net": {
-          "exp": 2190,
+          "exp": 2195,
           "limit": 660000000000066,
           "role": "𝑵𝒆𝒗𝒆𝒓𝒎𝒐𝒓𝒆 ༒︎\n𝙼𝚎𝚜𝚝𝚛𝚎 𝚍𝚘𝚜 𝚌𝚘𝚛𝚟𝚘𝚜",
           "money": 666000000000000100,
@@ -35301,7 +35357,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736731359409,
+          "lastMessageTime": 1736734835168,
           "messageCount": 1,
           "pontos": 40,
           "tempBan": false,
@@ -35352,7 +35408,7 @@
           "trojans": 0
         },
         "558199330656@s.whatsapp.net": {
-          "exp": 8765,
+          "exp": 8774,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 120,
@@ -35365,7 +35421,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736714130188,
+          "lastMessageTime": 1736737010278,
           "messageCount": 1,
           "pontos": 0,
           "usuariosRoubados": [],
@@ -35398,7 +35454,7 @@
           "steals": 0
         },
         "5521972685548@s.whatsapp.net": {
-          "exp": 21276,
+          "exp": 21526,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 240,
@@ -35411,8 +35467,8 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736725119535,
-          "messageCount": 3,
+          "lastMessageTime": 1736736361262,
+          "messageCount": 1,
           "pontos": 0,
           "almas": 0,
           "advLink": 0,
@@ -35487,7 +35543,7 @@
           "trojans": 0
         },
         "553497704017@s.whatsapp.net": {
-          "exp": 3045,
+          "exp": 3128,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 60,
@@ -35500,7 +35556,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736679668356,
+          "lastMessageTime": 1736740107390,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -35682,11 +35738,11 @@
           "trojans": 0
         },
         "553188507912@s.whatsapp.net": {
-          "exp": 3987,
+          "exp": 4082,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
-          "money": 60,
-          "level": 2,
+          "money": 90,
+          "level": 3,
           "adm": false,
           "legendary": false,
           "banned": false,
@@ -35695,7 +35751,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736724116733,
+          "lastMessageTime": 1736739959705,
           "messageCount": 1,
           "pontos": 0,
           "acaoTimer": "2024-11-26T21:35:02.700Z",
@@ -35897,7 +35953,7 @@
           "trojans": 0
         },
         "555496930052@s.whatsapp.net": {
-          "exp": 854,
+          "exp": 913,
           "limit": 0,
           "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
           "money": 0,
@@ -35910,7 +35966,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736724733205,
+          "lastMessageTime": 1736735068373,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -36002,7 +36058,7 @@
           "pontos": 0
         },
         "5517992410887@s.whatsapp.net": {
-          "exp": 11642,
+          "exp": 11915,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 120,
@@ -36015,7 +36071,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736731298822,
+          "lastMessageTime": 1736735306625,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -36235,7 +36291,7 @@
           "trojans": 0
         },
         "556295410574@s.whatsapp.net": {
-          "exp": 2305,
+          "exp": 2352,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 60,
@@ -36248,8 +36304,8 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736718986715,
-          "messageCount": 1,
+          "lastMessageTime": 1736735274671,
+          "messageCount": 2,
           "pontos": 0,
           "almas": 0,
           "steals": 0,
@@ -36440,7 +36496,7 @@
           "pontos": 0
         },
         "555596624577@s.whatsapp.net": {
-          "exp": 2421,
+          "exp": 2472,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 60,
@@ -36453,7 +36509,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736510213948,
+          "lastMessageTime": 1736740134302,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -36610,7 +36666,7 @@
           "pontos": 0
         },
         "5512997076907@s.whatsapp.net": {
-          "exp": 30965,
+          "exp": 31167,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 300,
@@ -36623,7 +36679,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736720950709,
+          "lastMessageTime": 1736739341791,
           "messageCount": 1,
           "pontos": 0,
           "tempBan": false,
@@ -36696,7 +36752,7 @@
           "trojans": 0
         },
         "5521993065198@s.whatsapp.net": {
-          "exp": 1316,
+          "exp": 1328,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 30,
@@ -36709,7 +36765,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736686777628,
+          "lastMessageTime": 1736733779254,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -36873,10 +36929,10 @@
           "trojans": 0
         },
         "553182537308@s.whatsapp.net": {
-          "exp": 21188,
+          "exp": 22714,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
-          "money": 5840,
+          "money": 6120,
           "level": 6,
           "adm": false,
           "legendary": false,
@@ -36886,7 +36942,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736725409183,
+          "lastMessageTime": 1736739574231,
           "messageCount": 1,
           "pontos": 9,
           "acaoTimer": "2025-01-11T12:26:06.776Z",
@@ -36979,7 +37035,7 @@
           "steals": 0
         },
         "5516993161616@s.whatsapp.net": {
-          "exp": 26940,
+          "exp": 27696,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 335,
@@ -36992,7 +37048,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736731133705,
+          "lastMessageTime": 1736737018418,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -37325,7 +37381,7 @@
           "tempBan": false
         },
         "556793050856@s.whatsapp.net": {
-          "exp": 1783,
+          "exp": 1802,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 30,
@@ -37338,7 +37394,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736711139634,
+          "lastMessageTime": 1736738139106,
           "messageCount": 1,
           "pontos": 0,
           "rce": 0,
@@ -37508,7 +37564,7 @@
           "trojans": 0
         },
         "5511979750406@s.whatsapp.net": {
-          "exp": 55,
+          "exp": 77,
           "limit": 0,
           "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
           "money": 0,
@@ -37521,7 +37577,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736254582767,
+          "lastMessageTime": 1736737469508,
           "messageCount": 1,
           "pontos": 0,
           "tempBan": false,
@@ -37590,7 +37646,7 @@
           "trojans": 0
         },
         "559881795497@s.whatsapp.net": {
-          "exp": 1146,
+          "exp": 1226,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 30,
@@ -37603,7 +37659,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736721830494,
+          "lastMessageTime": 1736738295166,
           "messageCount": 1,
           "pontos": 0,
           "tempBan": false,
@@ -38121,10 +38177,10 @@
           "trojans": 0
         },
         "554388686229@s.whatsapp.net": {
-          "exp": 20999,
+          "exp": 22700,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
-          "money": 845,
+          "money": 1300,
           "level": 6,
           "adm": false,
           "legendary": false,
@@ -38134,7 +38190,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736727195114,
+          "lastMessageTime": 1736739885963,
           "messageCount": 1,
           "pontos": 72,
           "usuariosRoubados": [],
@@ -38711,7 +38767,7 @@
           "trojans": 0
         },
         "557382274015@s.whatsapp.net": {
-          "exp": 11071,
+          "exp": 11326,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 905,
@@ -38725,7 +38781,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736731674816,
+          "lastMessageTime": 1736740269797,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -39292,7 +39348,7 @@
           "pontos": 0
         },
         "5516988148029@s.whatsapp.net": {
-          "exp": 2610,
+          "exp": 3232,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 60,
@@ -39305,8 +39361,8 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736726267247,
-          "messageCount": 2,
+          "lastMessageTime": 1736736331909,
+          "messageCount": 1,
           "pontos": 0,
           "trojans": 0,
           "steals": 0
@@ -40489,6 +40545,24 @@
           "lastMessageTime": 1736731701399,
           "messageCount": null,
           "pontos": 0
+        },
+        "5511963974542@s.whatsapp.net": {
+          "exp": 19,
+          "limit": 0,
+          "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
+          "money": 0,
+          "level": 0,
+          "adm": false,
+          "legendary": false,
+          "banned": false,
+          "adv": 0,
+          "tentativasRoubo": 5,
+          "silenced": false,
+          "maxlevel": false,
+          "cocriador": false,
+          "lastMessageTime": 1736733430846,
+          "messageCount": null,
+          "pontos": 0
         }
       },
       "isBanned": false,
@@ -40537,7 +40611,7 @@
       "lastSentTime": 0,
       "name": "Onde fingimos ser loucos (ou não)",
       "desc": "⚠️⚠️⚠️ *PROIBIDO MENORES DE 18 ANOS* ⚠️⚠️⚠️\n(As mensagens tem duração de 24hrs )\n\n🫂 *CHAVE PIX PARA CONTRIBUIÇÃO DA MENSALIDADE DO BOT: nicoletaina181@gmail.com*🫂\n\nRESPEITEM PARA SEREM RESPEITADOS!!\n\n*PROIBIDO*\n•FLOODAR/SPAMMAR;\n•MANDAR MENSAGEM DO PV DE OUTROS MEMBROS SEM A AUTORIZAÇÃO DA PESSOA;\n•DIVULGAR/PROMOVER (_sem autorização_);\n*AO DESCUMPRIMENTO DE QUALQUER UMA DAS REGRAS ACIMA O MEMBRO ESTÁ SUJEITO A AVISO*\n\n*TERMINANTEMENTE PROIBIDO*\n•DESRESPEITO (_se você ofende o amiguinho igual, essa regra se torna irrelevante_);\n•PRECONCEITO (_classe, cor/etnia, orientação sexual, religião e etc_);\n•CORINGAR ADM;\n•FIGURINHAS/IMAGENS COM PORNOGRAFIA EXPLÍCITA, GORE, NAZISMO, ZOOFILIA, RACISMO;\n•APOLOGIA/INCENTIVO AO NAZISMO.\n\n*O DESCUMPRIMENTO DE QUALQUER UMA DAS REGRAS ACIMA PODE GERAR ADV E ATÉ MESMO BANIMENTO*\n\n*📌 NÃO NOS RESPONSABILIZAMOS POR PROBLEMAS ASSOCIADOS À:*\n\n•COMPARTILHAMENTO DE DADOS PESSOAIS;\n•ABRIR ÁUDIO ESTOURADO E/OU DUVIDOSO;\n•LINK DUVIDOSO.\n\n⚠️ *MARCAR ADMINISTRADORES QUANDO AS REGRAS FOREM BURLADAS* ⚠\n\n*_BRINCADEIRAS TODOS OS FINAIS DE SEMANA_*\n\n_\"Já é difícil ter que lidar com as coisas, não vamos destruir o cantinho que a gente tem por favor\"_\n_~Carlos Chazin, 2023_︎\n\n▪️ *BOT interativo entre 00:00 - 12:00* ▪️\n\n_*FORMULÁRIO PARA NOVOS ADMS*_\nhttps://forms.gle/S5P56v1U8pWeLEERA\n\n🔷 *REDES SOCIAIS DO GRUPO*🔷\n\n🔹 *FACEBOOK:*\n\nGrupo (oficial): https://www.facebook.com/groups/4573794466077903/?ref=share\n\nGrupo (reserva):\nhttps://www.facebook.com/groups/3360052507549701/?ref=share&mibextid=NSMWBT\n\nPágina (oficial): https://www.facebook.com/profile.php?id=100091738707923&mibextid=LQQJ4d\n\n🔹 *INSTAGRAM:*\n\nInstagram.com/onde_fingimos_ser_loucos_ou_n",
-      "totalMembros": 334,
+      "totalMembros": 333,
       "membros": [
         {
           "id": "559384036433@s.whatsapp.net",
@@ -41644,10 +41718,6 @@
           "admin": null
         },
         {
-          "id": "556195743091@s.whatsapp.net",
-          "admin": null
-        },
-        {
           "id": "5524992141831@s.whatsapp.net",
           "admin": null
         },
@@ -41878,10 +41948,10 @@
       ],
       "boleto": 45,
       "forca": {
-        "palavra": "escuridao",
+        "palavra": "transeunte",
         "isGame": false,
         "forcaID": "",
-        "currentStatus": "es_uri_a_",
+        "currentStatus": "transeunte",
         "currentStageIndex": 3,
         "stages": [
           "♱ 𝑻𝒉𝒆 𝒉𝒂𝒏𝒈𝒎𝒂𝒏\n      \n╭─┅──┅❖\n|                   |\n|                   |\n|                   \n|\n|\n|\n|\n|\n|                             𓄿\n*╰─┅──┅┅❖ ⸸ ❖─┅*\n\n",
@@ -42149,7 +42219,8 @@
         "554196647171@s.whatsapp.net": [],
         "5512997907267@s.whatsapp.net": [],
         "559285174032@s.whatsapp.net": [],
-        "556195743091@s.whatsapp.net": []
+        "556195743091@s.whatsapp.net": [],
+        "5511963974542@s.whatsapp.net": []
       },
       "firstTime": false,
       "antiCallGp": true,
@@ -42445,7 +42516,16 @@
       "noticeTime": "2025-01-03T02:47:56.506Z",
       "semrestricao": true,
       "gpt": {
-        "history": []
+        "history": [
+          {
+            "role": "user",
+            "content": "USER -> Tiago: \"--web o que é transeunte\""
+          },
+          {
+            "role": "system",
+            "content": "Fala aí, garoto. Vamos falar sobre \"transeunte\". O termo vem do latim \"transeuntis\", que é uma forma do verbo \"transire\", ou seja, \"passar\" ou \"atravessar\". Em português, um transeunte é basicamente alguém que está em movimento, geralmente se referindo a pedestres que estão se deslocando a pé pelas ruas. \n\nEsses indivíduos são uma parte essencial do cenário urbano, sempre em trânsito, passando de um lugar para outro. Essa palavra captura a essência da movimentação constante da vida nas cidades — algo que muitos de nós, como você, provavelmente experimentam todos os dias [[0]](https://cidesp.com.br/artigo/transe-ntes-significado) [[1]](https://cidesp.com.br/artigo/transeunte-significado).\n\nEntão, da próxima vez que você estiver andando pela rua, lembre-se: você é um transeunte, parte dessa dança caótica e bela que é a vida urbana. Agora, vai lá e aproveita essa jornada, beleza?"
+          }
+        ]
       },
       "rickgpt": {
         "config": {
@@ -42522,6 +42602,21 @@
           "xp": -10,
           "name": "𝙷𝚎𝚗𝚛𝚢 𝙰𝚛𝚌𝚊𝚗𝚐𝚎𝚕𝚘"
         }
+      },
+      "sudoku": {
+        "gameData": {
+          "puzzle": "----19---6--5---48-5--8-----2--38-----8--2-7--741-6--3--7----6--3---14--4-6--5-8-",
+          "solution": "842619735613527948759384216921738654368452179574196823187943562235861497496275381",
+          "difficulty": "hard",
+          "status": "----19---6--5---48-5--8-----2--38-----8--2-7--741-6--3--7----6--3---14--4-6--5-8-"
+        },
+        "singleplayer": true,
+        "jogadores": [
+          "557382274015@s.whatsapp.net"
+        ],
+        "jogadas": {},
+        "regMsg": "BAE59E98C45882EB",
+        "checked": true
       }
     },
     "120363178125353378@g.us": {
@@ -43449,7 +43544,7 @@
           "rce": 0
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 124839,
+          "exp": 124864,
           "limit": 0,
           "role": "",
           "money": 0,
@@ -44284,7 +44379,7 @@
           "trojans": 0
         },
         "553499915050@s.whatsapp.net": {
-          "exp": 6837,
+          "exp": 6853,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 1132944,
@@ -44297,7 +44392,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736730190055,
+          "lastMessageTime": 1736736307980,
           "messageCount": 1,
           "pontos": 0,
           "rce": 0,
@@ -47491,10 +47586,10 @@
       "lastSuccess": 1736723353141
     },
     "grupo-perfil.js": {
-      "total": 362,
-      "success": 356,
-      "last": 1736730304341,
-      "lastSuccess": 1736730304341
+      "total": 363,
+      "success": 357,
+      "last": 1736739991901,
+      "lastSuccess": 1736739991901
     },
     "dono-reiniciar-usuario.js": {
       "total": 23,
@@ -47503,10 +47598,10 @@
       "lastSuccess": 1736592265800
     },
     "cfg-chatGPT.js": {
-      "total": 331,
-      "success": 328,
-      "last": 1736721041579,
-      "lastSuccess": 1736721041579
+      "total": 332,
+      "success": 329,
+      "last": 1736738905631,
+      "lastSuccess": 1736738905631
     },
     "dono-clearallsession.js": {
       "total": 6,
@@ -47551,10 +47646,10 @@
       "lastSuccess": 1732134744175
     },
     "dl-yt_play.js": {
-      "total": 303,
-      "success": 300,
-      "last": 1736731370649,
-      "lastSuccess": 1736731370649
+      "total": 304,
+      "success": 301,
+      "last": 1736734797661,
+      "lastSuccess": 1736734797661
     },
     "dono-reporte.js": {
       "total": 27,
@@ -47569,10 +47664,10 @@
       "lastSuccess": 1736722785126
     },
     "jogosLetras.js": {
-      "total": 237,
-      "success": 237,
-      "last": 1736724017566,
-      "lastSuccess": 1736724017566
+      "total": 241,
+      "success": 241,
+      "last": 1736738682253,
+      "lastSuccess": 1736738682253
     },
     "lista-lista.js": {
       "total": 5,
@@ -47593,10 +47688,10 @@
       "lastSuccess": 1735650796996
     },
     "sticker-sticker.js": {
-      "total": 446,
-      "success": 446,
-      "last": 1736723372762,
-      "lastSuccess": 1736723372762
+      "total": 448,
+      "success": 448,
+      "last": 1736739642131,
+      "lastSuccess": 1736739642131
     },
     "conversor-totext.js": {
       "total": 8,
@@ -47665,10 +47760,10 @@
       "lastSuccess": 1735506420942
     },
     "fun-slot.js": {
-      "total": 449,
-      "success": 411,
-      "last": 1736730241725,
-      "lastSuccess": 1736730241725
+      "total": 450,
+      "success": 412,
+      "last": 1736736307993,
+      "lastSuccess": 1736736307993
     },
     "fun-acoes.js": {
       "total": 37,
@@ -47791,10 +47886,10 @@
       "lastSuccess": 1736467736211
     },
     "quiz.js": {
-      "total": 165,
-      "success": 137,
-      "last": 1736690699019,
-      "lastSuccess": 1736690699019
+      "total": 167,
+      "success": 139,
+      "last": 1736733375500,
+      "lastSuccess": 1736733375500
     },
     "funHoroscopo.js": {
       "total": 5,
@@ -48013,10 +48108,10 @@
       "lastSuccess": 1735912387103
     },
     "gameSudoku.js": {
-      "total": 32,
-      "success": 32,
-      "last": 1736722711834,
-      "lastSuccess": 1736722711834
+      "total": 49,
+      "success": 49,
+      "last": 1736737681726,
+      "lastSuccess": 1736737681726
     },
     "lista-advertidos.js": {
       "total": 6,
