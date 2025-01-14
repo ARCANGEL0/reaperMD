@@ -80,13 +80,13 @@ function formatParagraphs(inputString) {
 
 global.db.data.chats[m.chat].ignored.push(DELETEMESSAGE.message.protocolMessage.key.id)
 
-let reason = text ? formatParagraphs(text) : '404'
+let reason = text ? formatParagraphs(text) : '> 404'
 
  
 const goingAfk = global.idioma == 'en' ? 
 `┌──[ BYΓΞSΞC ]──[~] 
 └─► touch ~/AFK_STATUS
-> ‎ GNU nano 2.6.1          File: AFK_STATUS
+> ‎ GNU nano 2.6.1    File: AFK_STATUS
 > ‎ 
 > echo "@${m.sender.split("@")[0]} ʟᴏɢɢᴇᴅ ᴏꜰꜰ ᴛᴇᴍᴘᴏʀᴀʀɪʟʏ ᴀɴᴅ ᴡɪʟʟ ʙᴇ ᴀꜰᴋ ꜰᴏʀ ᴀ ᴡʜɪʟᴇ"
 > ‎ . . . . . . . . . . . . . . . . .
@@ -103,7 +103,7 @@ ${reason}
 
 `┌──[ BYΓΞSΞC ]──[~] 
 └─► touch ~/AFK_STATUS
-> ‎ GNU nano 2.6.1          File: AFK_STATUS
+> ‎ GNU nano 2.6.1    File: AFK_STATUS
 > ‎ 
 > echo "@${m.sender.split("@")[0]} ᴅᴇꜱʟᴏɢᴏᴜ ᴛᴇᴍᴘᴏʀᴀʀɪᴀᴍᴇɴᴛᴇ ᴇ ꜰɪᴄᴀʀᴀ ᴀꜰᴋ ᴘᴏʀ ᴜᴍ ᴛᴇᴍᴘᴏ"
 > ‎ . . . . . . . . . . . . . . . . .
