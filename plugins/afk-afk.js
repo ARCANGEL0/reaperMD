@@ -80,7 +80,7 @@ function formatParagraphs(inputString) {
 
 global.db.data.chats[m.chat].ignored.push(DELETEMESSAGE.message.protocolMessage.key.id)
 
-let reason = formatParagraphs(text) || '404'
+let reason = text ? formatParagraphs(text) : '404'
 
  
 const goingAfk = idioma == 'en' ? 
