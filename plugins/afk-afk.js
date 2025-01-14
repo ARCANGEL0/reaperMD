@@ -83,7 +83,7 @@ global.db.data.chats[m.chat].ignored.push(DELETEMESSAGE.message.protocolMessage.
 let reason = text ? formatParagraphs(text) : '404'
 
  
-const goingAfk = idioma == 'en' ? 
+const goingAfk = global.idioma == 'en' ? 
 `┌──[ BYΓΞSΞC ]──[~] 
 └─► touch ~/AFK_STATUS
 > ‎ GNU nano 2.6.1          File: AFK_STATUS
