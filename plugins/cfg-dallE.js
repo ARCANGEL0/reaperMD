@@ -18,9 +18,7 @@ if(!(isAdmin || isOwner) && global.db.data.chats[m.chat].gpt===false){
    return !0;
  }  
  if (!(isAdmin || isOwner) && global.db.data.chats[m.chat].users[m.sender].money < 10) {
-await m.reply(m.chat , `╭─┅──┅❖ ༒︎ ❖─┅──┅
-𝑺𝒆𝒎 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ, 𝒎𝒆𝒓𝒈𝒖𝒍𝒉𝒂𝒏𝒅𝒐-𝒕𝒆 𝒏𝒂 𝒑𝒆𝒏𝒖𝒎𝒃𝒓𝒂 𝒇𝒊𝒏𝒂𝒏𝒄𝒆𝒊𝒓𝒂, 𝒄𝒐𝒎𝒐 𝒐 𝒄𝒐𝒓𝒗𝒐 𝒒𝒖𝒆 𝒆𝒔𝒑𝒓𝒆𝒊𝒕𝒂 𝒂 𝒊𝒏𝒔𝒐𝒍𝒗ê𝒏𝒄𝒊𝒂.
-*╰─┅──┅❖ ⸸ ❖─┅──┅*`, m)
+await m.reply(m.chat , global.db.data.chats[m.chat].language === 'en' ? `> [⚠] ʏᴏᴜ'ʀᴇ ᴏᴜᴛ ᴏꜰ ʙʏᴛᴇᴄᴏɪɴꜱ, ᴋɪᴅ.` : `> [⚠] ᴠᴏᴄᴇ ᴇꜱᴛᴀ ꜱᴇᴍ ʙʏᴛᴇᴄᴏɪɴ ᴀʟɢᴜᴍ, ɢᴀʀᴏᴛᴏ!`, m)
  return !0
  
  }
@@ -50,7 +48,7 @@ let msg = encodeURIComponent(text)
     m.react("✔️")
     if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 10
-await m.reply(`80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${global.idioma == 'en' ? 'ᴜꜱᴇᴅ' : 'ᴜꜱᴀᴅᴏꜱ'}`)
+await m.reply("༒︎ 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")
     }
       await conn.sendFile(m.chat, buffer, 'image.png', null, m);
   

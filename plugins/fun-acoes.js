@@ -209,7 +209,7 @@ if(!global.db.data.chats[m.chat].users[who]){
   global.db.data.chats[m.chat].users[who]={
     exp: 0,
         limit:0,
-        role:'🪶 𝐍𝐨𝐯𝐢𝐜𝐨 𝐄𝐧𝐢𝐠𝐦𝐚𝐭𝐢𝐜𝐨',
+        role:'𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎',
         money:0,
         level:0,
         adm: admcheck,
@@ -240,7 +240,7 @@ if(!global.db.data.chats[m.chat].users[m.sender]){
   global.db.data.chats[m.chat].users[m.sender]={
     exp: 0,
         limit:0,
-        role:'🪶 𝐍𝐨𝐯𝐢𝐜𝐨 𝐄𝐧𝐢𝐠𝐦𝐚𝐭𝐢𝐜𝐨',
+        role:'𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎',
         money:0,
         level:0,
         adm: admcheck,

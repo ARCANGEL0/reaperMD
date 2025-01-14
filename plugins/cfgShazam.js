@@ -30,6 +30,8 @@ let handler = async (m, { conn, args, __dirname, usedPrefix, command }) => {
     let { code, msg } = res.status
     if (code !== 0) throw msg
     let { title, artists, album, genres, release_date } = res.metadata.music[0]
+    
+    
     let txt = `
 ╭─────────────── ♬ ...─╮
    𝄞  ${title}

@@ -180,7 +180,7 @@ if (!isROwner) {
 global.dfail('rowner', m, conn)
 throw false
 }
-global.db.data.chats[m.chat].semrestricao =isEnable
+global.db.data.chats[m.chat].except =isEnable
 break
 
 
