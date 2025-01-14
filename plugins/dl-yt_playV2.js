@@ -86,7 +86,7 @@ const audiocore = mediaa.result2?.[0]?.audio || mediaa.result2?.[1]?.audio || me
 const aa = await conn.sendMessage(m.chat, {audio: {url: audiocore}, fileName: `error.mp3`, mimetype: 'audio/mp4'}, {quoted: m});
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 120
-await m.reply("༒︎ 120 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+await m.reply(`120 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${global.idioma == 'en' ? 'ᴜꜱᴇᴅ' : 'ᴜꜱᴀᴅᴏꜱ'}`)}
 if (!aa) {
 throw new Error();
 }} catch {
@@ -95,7 +95,7 @@ const json = await res.json();
 const aa_1 = await conn.sendMessage(m.chat, {audio: {url: json.result.audio}, fileName: `error.mp3`, mimetype: 'audio/mp4'}, {quoted: m});
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 120
-await m.reply("༒︎ 120 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+await m.reply(`120 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${global.idioma == 'en' ? 'ᴜꜱᴇᴅ' : 'ᴜꜱᴀᴅᴏꜱ'}`)}
 if (!aa_1) aa_1 = await conn.sendFile(m.chat, json.result.audio, 'error.mp3', null, m, false, {mimetype: 'audio/mp4'});
 }}
 if (command == 'play.2') {
@@ -117,7 +117,7 @@ try {
 const mediaa = await ytPlayVid(text);
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 120
-await m.reply("༒︎ 120 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+await m.reply(`120 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${global.idioma == 'en' ? 'ᴜꜱᴇᴅ' : 'ᴜꜱᴀᴅᴏꜱ'}`)}
 const aa_2 = await conn.sendMessage(m.chat, {video: {url: mediaa.result}, fileName: `error.mp4`, caption: `${wm}`, thumbnail: mediaa.thumb, mimetype: 'video/mp4'}, {quoted: m});
 if (!aa_2) {
 throw new Error();
@@ -126,7 +126,7 @@ const res = await fetch(`https://api.lolhuman.xyz/api/ytplay2?apikey=${lolkeysap
 const json = await res.json();
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 120
-await m.reply("༒︎ 120 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+await m.reply(`120 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${global.idioma == 'en' ? 'ᴜꜱᴇᴅ' : 'ᴜꜱᴀᴅᴏꜱ'}`)}
 await conn.sendFile(m.chat, json.result.video, 'error.mp4', `${wm}`, m);
 }}} catch {
 m.reply(`${fg}╭━━━━━━━━━⬣

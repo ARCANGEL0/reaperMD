@@ -16,7 +16,7 @@ const handler  = async (m, { conn, command, text,args, usedPrefix, DevMode }) =>
   if(!text){
     return m.reply(`𝙴𝚍𝚐𝚊𝚛𝙽𝙴𝚃 𝚟𝟹
     
-    🌒 *_MENU DE AJUDA_*
+    💿 *_MENU DE AJUDA_*
  Uso: nmap [Tipo(s) de Escaneamento] [Opções] {especificação de alvo}
     
 *〘〙ESPECIFICAÇÃO DE ALVO:*
@@ -148,7 +148,7 @@ await conn.sendMessage(m.chat, {text: `👁️ 𝙵𝚊𝚣𝚎𝚗𝚍𝚘 𝚟
 await conn.sendMessage(m.chat, {text: `👁️ 𝙵𝚊𝚣𝚎𝚗𝚍𝚘 𝚟𝚊𝚛𝚛𝚎𝚍𝚞𝚛𝚊 𝚍𝚘 𝚑𝚘𝚜𝚝. . .
 [■■■■■■■■■■] 100%`, edit: key});
         m.reply(`_𝙴𝚍𝚐𝚊𝚛𝙽𝙴𝚃 𝚟𝟹_
-      🌒 Resultados do escaneamento: 
+      💿 Resultados do escaneamento: 
       
      ${ responseData.output} `)
     } catch (error) {

@@ -31,7 +31,7 @@ if (!args[0]) throw `${langTOGGLE['smsAvisoMG']()}╭━━━━━━━━━
 
 
 try{
-m.react("🌒")
+m.react("💿")
 let res2 = await fetch(`https://api.lolhuman.xyz/api/stalkig/${text.replace(/^@/, '')}?apikey=${lolkeysapi}`)
 let json = await res2.json()
 

@@ -13,7 +13,7 @@ import {join} from 'path';
 import NeoxrApi from '@neoxr/api'
 var handler = async(m, { conn, text, __dirname }) => {
 
-m.react("🌒")
+m.react("💿")
 
 	
 let img = ['https://telegra.ph/file/ece369d53a1e7c3b1e855.jpg','https://telegra.ph/file/0965392426f51d9d225f2.jpg','https://telegra.ph/file/4b4efafb8c0b4942e23df.jpg']

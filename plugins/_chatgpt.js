@@ -211,7 +211,7 @@ global.db.data.chats[m.chat].bard["config"].lastQuestion = message.key
  global.db.data.chats[m.chat].bard["config"].resposta = data.result
   } 
   catch (error) {
-    m.react("🌓")
+    m.react("💿")
     console.error('Error fetching data:', error);
     try {
     const response = await fetch(url2);

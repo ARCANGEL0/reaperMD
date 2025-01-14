@@ -21,7 +21,7 @@ if (!text) throw `${langTOGGLE['smsAvisoMG']()}❖─┅──┅ 𝑨𝒉, 𝒄
  const url = 'https://vihangayt.me/tools/mathssolve?q=';
  
          try {
-          m.react("🌒")
+          m.react("💿")
             
              const endpoint = 'https://api.itsrose.rest/chatGPT/turbo';
 

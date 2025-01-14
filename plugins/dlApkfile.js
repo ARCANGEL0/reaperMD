@@ -11,7 +11,7 @@ import translate from '@vitalets/google-translate-api'
 
 
 let handler = async (m, { conn, text, usedPrefix, command, isOwner }) => {
-m.react("🌒")
+m.react("💿")
 let regex = /^\d+$/;
 
 
@@ -85,7 +85,7 @@ m.react("🌕")
 console.log(global.apkLista[m.chat].urls[text])
 let docname = text ? text : m.pushName || 'documento'
 
-m.react("🌒")
+m.react("💿")
 co
 
 

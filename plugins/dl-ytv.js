@@ -90,7 +90,7 @@ console.log(data)
 m.react("✔️")
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 80
-await m.reply("༒︎ 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+await m.reply(`80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${global.idioma == 'en' ? 'ᴜꜱᴇᴅ' : 'ᴜꜱᴀᴅᴏꜱ'}`)}
   
 }
 handler.level = 6

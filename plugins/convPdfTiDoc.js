@@ -62,13 +62,13 @@ try{
 
     const data = await response.json();
     console.log(data); // handle response data as needed
-    m.react("🌓")
+    m.react("💿")
     let url = data.fileInfo.url
     console.log(url)
     let getfile = await fetch(`https://api.neoxr.eu/api/pdf-converter?url=${url}&filename=${m.quoted.title.split('.pdf')[0]}&to=docx&apikey=${global.neoxr}`)
     let docz = await getfile.json()
     console.log(docz)
-    m.react("🌔")
+    m.react("💿")
     
     conn.sendFile(m.chat, docz.data.url, docz.data.filename,'', m, false, { asDocument: true })
     
@@ -131,13 +131,13 @@ try{
 
     const data2 = await response2.json();
     console.log(data2); // handle response data as needed
-    m.react("🌓")
+    m.react("💿")
     let url2 = data2.fileInfo.url
     console.log(url2)
     let getfile2 = await fetch(`https://api.neoxr.eu/api/pdf-converter?url=${url2}&filename=${m.quoted.title.split('.pdf')[0]}&to=psd&apikey=${global.neoxr}`)
     let docz2 = await getfile2.json()
     console.log(docz2)
-    m.react("🌔")
+    m.react("💿")
     
     conn.sendFile(m.chat, docz2.data.url, docz2.data.filename,'', m, false, { asDocument: true })
     
@@ -201,13 +201,13 @@ try{
 
     const data3 = await response3.json();
     console.log(data3); // handle response data as needed
-    m.react("🌓")
+    m.react("💿")
     let url3 = data3.fileInfo.url
     console.log(url3)
     let getfile3 = await fetch(`https://api.neoxr.eu/api/pdf-converter?url=${url3}&filename=${m.quoted.title.split('.pdf')[0]}&to=png&apikey=${global.neoxr}`)
     let docz3 = await getfile3.json()
     console.log(docz3)
-    m.react("🌔")
+    m.react("💿")
     
     conn.sendFile(m.chat, docz3.data.url, docz3.data.filename,'', m, false, { asDocument: true })
     
@@ -273,13 +273,13 @@ try{
 
     const data4 = await response4.json();
     console.log(data4); // handle response data as needed
-    m.react("🌓")
+    m.react("💿")
     let url4 = data4.fileInfo.url
     console.log(url4)
     let getfile4 = await fetch(`https://api.neoxr.eu/api/pdf-converter?url=${url4}&filename=${m.quoted.title.split('.pdf')[0]}&to=xslx&apikey=${global.neoxr}`)
     let docz4 = await getfile4.json()
     console.log(docz4)
-    m.react("🌔")
+    m.react("💿")
     
     conn.sendFile(m.chat, docz4.data.url, docz4.data.filename,'', m, false, { asDocument: true })
     

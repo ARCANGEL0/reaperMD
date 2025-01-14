@@ -12,7 +12,7 @@ let handler = async(m, { isOwner, isAdmin, conn, text, participants, args, comma
   
   
 let pesan = args.join` `
-let oi = `🌒 ${langTOGGLE['smsAddB5']()}`
+let oi = `💿 ${langTOGGLE['smsAddB5']()}`
 
 let DELETEMESSAGE = await conn.sendMessage(m.chat, { delete: m.key })
     

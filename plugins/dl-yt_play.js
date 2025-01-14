@@ -92,7 +92,7 @@ let captionvid = `┏━──── 𖤍 ────━┓
 │
 ┗━──── *「️𖤐」* ────━┛`
 
-m.react("🌒")
+m.react("💿")
 let sendtext = await conn.sendFile(m.chat, yt_play[0].image,'error.jpg', captionvid, m)
 let mp3f = getRandom('.mp3');
 let mp4f = getRandom('.mp4');

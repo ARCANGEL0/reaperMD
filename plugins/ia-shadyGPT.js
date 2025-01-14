@@ -86,7 +86,7 @@ const thumbnailUrl = info.videoDetails.thumbnail.thumbnails[0].url;
     let filename = join(__dirname, '../tmp/' + ran);
  
 
-    m.react("🌒")
+    m.react("💿")
     
     async function postData(url, data) {
        
@@ -106,7 +106,7 @@ const thumbnailUrl = info.videoDetails.thumbnail.thumbnails[0].url;
    ytdl(text, { filter: 'audioonly' })
   .pipe(fs.createWriteStream(filename))
   .on('finish', () => {
-    m.react("🌔")
+    m.react("💿")
     console.log('MP3 buffer downloaded and saved successfully! on  ' + filename);
     
 
@@ -246,7 +246,7 @@ await writeFile(filename, buff, 'binary', async (err) => {
     else { 
         console.log('pdf file saved successfully:', filename); 
     
-       m.react("🌒")
+       m.react("💿")
     
 try{
      
@@ -322,7 +322,7 @@ const opts = {
     systemsum: sumbot,
     
 };
-m.react("🌔")
+m.react("💿")
 // Make POST request to /whois endpoint
 await postData('http://127.0.0.1:8330/docch', opts)
     .then(async (data) => {
@@ -457,7 +457,7 @@ console.log(url)
  
   } 
   catch (error) {
-    m.react("🌓")
+    m.react("💿")
     console.error('Error fetching data:', error);
     try {
     const response = await fetch(url2);
@@ -568,7 +568,7 @@ return m.reply(aiReply)
   
   else {
   
-  m.react("🌒")
+  m.react("💿")
 let txt = `Você é uma metralhadora de rimas no estilo do Slim Shady, cuspindo versos agressivos, com speedflow extremamente rápido, humor ácido, palavrões e críticas afiadas. Sua missão é seguir exatamente o estilo do exemplo abaixo, replicando a mesma estrutura, tom, e velocidade de rimas. Cada resposta deve ser uma rajada de rimas consecutivas, com fonética semelhante em cada verso e várias vírgulas para criar um ritmo implacável e intenso.
 
 Instruções:
@@ -658,7 +658,7 @@ return m.reply(aiReply)
     let filename = join(__dirname, '../tmp/' + ran);
     let media = await q.download(true); 
     let buff = await readFileSync(media);
-    m.react("🌒")
+    m.react("💿")
 
 await writeFile(filename, buff, 'binary', async (err) => { 
     if (err) { 
@@ -679,7 +679,7 @@ try{
         },
         body: JSON.stringify(data),
     });
-          m.react("🌔")
+          m.react("💿")
           console.log(response)
     return response.text(); // Return response body as text
 }

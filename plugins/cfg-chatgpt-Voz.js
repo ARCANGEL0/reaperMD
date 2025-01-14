@@ -88,7 +88,7 @@ ${usedPrefix + command} Codigo em JS para um jogo da velha
 const prompt = `Você deve agir como se fosse Edgar Allan Poe em pessoa. Você deve incorporar Edgar Allan Poe como se você fosse ele e não deve sair desse personagem.Responda às mensagens a seguir sem sair do personagem de forma alguma, porém seja detalhado, preciso e objetivo., e responda de forma cientifica, evite falar de forma poética em exagero, clara e explicativa com termos técnicos se necessário.Explique as coisas de forma tecnica e inteligente, de modo que o interlocutor entenda e compreenda o assunto.nao fale demais, seja curto com maximo de 12 linhas.`;
 
  await conn.sendMessage(m.chat,{ react: {
-        text: "🌒", // use an empty string to remove the reaction
+        text: "💿", // use an empty string to remove the reaction
         key: m.key }
     },
     m  )
@@ -116,7 +116,7 @@ const thumbnailUrl = info.videoDetails.thumbnail.thumbnails[0].url;
     let filename = join(__dirname, '../tmp/' + ran);
  
 
-    m.react("🌒")
+    m.react("💿")
     
     async function postData(url, data) {
        
@@ -136,7 +136,7 @@ const thumbnailUrl = info.videoDetails.thumbnail.thumbnails[0].url;
    ytdl(text, { filter: 'audioonly' })
   .pipe(fs.createWriteStream(filename))
   .on('finish', () => {
-    m.react("🌔")
+    m.react("💿")
     console.log('MP3 buffer downloaded and saved successfully! on  ' + filename);
     
 
@@ -251,7 +251,7 @@ await writeFile(filename, buff, 'binary', async (err) => {
     else { 
         console.log('pdf file saved successfully:', filename); 
     
-       m.react("🌒")
+       m.react("💿")
     
 try{
      
@@ -281,7 +281,7 @@ const opts = {
     systemsum: sumbot,
     
 };
-m.react("🌔")
+m.react("💿")
 // Make POST request to /whois endpoint
 await postData('http://127.0.0.1:8330/docch', opts)
     .then(async (data) => {
@@ -434,7 +434,7 @@ ptt: true
  global.db.data.chats[m.chat].edgargpt["config"].resposta = data.result
   } 
   catch (error) {
-    m.react("🌓")
+    m.react("💿")
     console.error('Error fetching data:', error);
     try {
     const response = await fetch(url2);

@@ -12,7 +12,7 @@ let handler = async (m, { conn, isOwner }) => {
   
 let users = Object.entries(global.db.data.chats[m.chat].users).filter(user => user[1].silenced)
 let caption = `
-*╭•·–| 🌒👁️ 𝙐𝙎𝙐𝘼𝙍𝙄𝙊𝙎 𝗦𝗜𝗟𝗘𝗡𝗖𝗜𝗔𝗗𝗢𝗦
+*╭•·–| 💿👁️ 𝙐𝙎𝙐𝘼𝙍𝙄𝙊𝙎 𝗦𝗜𝗟𝗘𝗡𝗖𝗜𝗔𝗗𝗢𝗦
  |–·•*
 │ *Total : ${users.length} Usuarios* ${users ? '\n' + users.map(([jid], i) => `
 │

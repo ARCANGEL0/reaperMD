@@ -83,7 +83,7 @@ ${usedPrefix + command} Um corvo negro abrindo suas asas
 ${usedPrefix + command} um gato preto deitado sob uma caveira
 
 ╰━━━━━━━━━━━━━━━━━━⬣`
-  m.react("🌒")
+  m.react("💿")
   const url = 'http://89.117.96.108:8330/imagine'
   
   if(global.db.data.chats[m.chat].autolevelup && global.db.data.chats[m.chat].users[m.sender].money<495){
@@ -125,7 +125,7 @@ if(ress.length==0){
           if(global.db.data.chats[m.chat].autolevelup){
   global.db.data.chats[m.chat].users[m.sender].money -= 495
   
-   m.reply("༒︎ 495 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")
+   m.reply(`495 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${global.idioma == 'en' ? 'ᴜꜱᴇᴅ' : 'ᴜꜱᴀᴅᴏꜱ'}`)
 }
   }
   
@@ -236,7 +236,7 @@ createImage(text).then(result => {
 
    catch(e){
       console.log(e)
-      m.react("🌔")
+      m.react("💿")
       
       try {
 
@@ -257,7 +257,7 @@ m.react("🌕")
           if(global.db.data.chats[m.chat].autolevelup){
   global.db.data.chats[m.chat].users[m.sender].money -= 495
   
-   m.reply("༒︎ 495 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")
+   m.reply(`495 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${global.idioma == 'en' ? 'ᴜꜱᴇᴅ' : 'ᴜꜱᴀᴅᴏꜱ'}`)
 }
 
 
@@ -283,7 +283,7 @@ fetch(`https://aemt.me/bingimg?text=${text}`, {
      if(global.db.data.chats[m.chat].autolevelup){
   global.db.data.chats[m.chat].users[m.sender].money -= 495
   
-   m.reply("༒︎ 495 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")
+   m.reply(`495 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${global.idioma == 'en' ? 'ᴜꜱᴇᴅ' : 'ᴜꜱᴀᴅᴏꜱ'}`)
 }
 })
 .catch(error => {

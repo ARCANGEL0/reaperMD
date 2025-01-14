@@ -106,49 +106,49 @@ ${m.isGroup ? `` : `${langTOGGLE.smsConfi9()}`}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.welcome ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}
+җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.welcome ? '🌕' : '💿' : langTOGGLE.smsNoGg()}
 ${usedPrefix + command} welcome
 🪶 ${langTOGGLE.smsWel2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.detect ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}
+җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.detect ? '🌕' : '💿' : langTOGGLE.smsNoGg()}
 ${usedPrefix + command} detec
 🪶 ${langTOGGLE.smsDete2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.autolevelup ? '🌕' : '🌒' : langTOGGLE.smsNoGg()} 
+җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.autolevelup ? '🌕' : '💿' : langTOGGLE.smsNoGg()} 
 ${usedPrefix + command} autolevelup | autonivel
 🪶 Ativa sistema de nivelamento e recompensas do Edgar Bot
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${langTOGGLE.smsParaOw()} ${bot.restrict ? '🌕' : '🌒'}
+җ ${langTOGGLE.smsParaOw()} ${bot.restrict ? '🌕' : '💿'}
 ${usedPrefix + command} restrict
 🪶 ${langTOGGLE.smsRestri2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${langTOGGLE.smsParaOw()} ${bot.antiCall ? '🌕' : '🌒'}
+җ ${langTOGGLE.smsParaOw()} ${bot.antiCall ? '🌕' : '💿'}
 ${usedPrefix + command} antiCall
 🪶 ${langTOGGLE.smsLlamar2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${langTOGGLE.smsParaAdmins()} ${bot.antiSpam ? '🌕' : '🌒'}
+җ ${langTOGGLE.smsParaAdmins()} ${bot.antiSpam ? '🌕' : '💿'}
 ${usedPrefix + command} antiSpam
 🪶 Ativa o antispam do Edgar Bot, mutando e punindo quem floodar
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${langTOGGLE.smsParaOw()} ${global.opts['self'] ? '🌒' : '🌕'}
+җ ${langTOGGLE.smsParaOw()} ${global.opts['self'] ? '💿' : '🌕'}
 ${usedPrefix + command} self
 🪶 Desativa o Edgar Allan Bot para todos.
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.modoadmin ? '🌕' : '🌒' : langTOGGLE.smsNoGg()} 
+җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.modoadmin ? '🌕' : '💿' : langTOGGLE.smsNoGg()} 
 ${usedPrefix + command} modoadmin | sembot | pausa (HH:mm:ss)
 🪶 Restringe o bot para apenas para admins 
 (Opcional: tempo, use o comando com um prazo na sintaxe Hora: minutos: segundos para automatizar ativacao e desligamento automático. 
@@ -156,182 +156,182 @@ ex: .on mutebot 00:35:12)
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${langTOGGLE.smsParaOw()} ${global.opts['autoread'] ? '🌕' : '🌒'}
+җ ${langTOGGLE.smsParaOw()} ${global.opts['autoread'] ? '🌕' : '💿'}
 ${usedPrefix + command} autoread
 🪶 ${langTOGGLE.smsLect1()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${langTOGGLE.smsParaOw()} ${bot.temporal ? '🌕' : '🌒'}
+җ ${langTOGGLE.smsParaOw()} ${bot.temporal ? '🌕' : '💿'}
 ${usedPrefix + command} temporal
 🪶 Mensagens temporárias 
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.stickers ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}
+җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.stickers ? '🌕' : '💿' : langTOGGLE.smsNoGg()}
 ${usedPrefix + command} stickers
 🪶 ${langTOGGLE.smsStik1()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.autosticker ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}
+җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.autosticker ? '🌕' : '💿' : langTOGGLE.smsNoGg()}
 ${usedPrefix + command} autosticker
 🪶 ${langTOGGLE.smsStickA2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.reaction ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}    
+җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.reaction ? '🌕' : '💿' : langTOGGLE.smsNoGg()}    
 ${usedPrefix + command} reaction
 🪶 ${langTOGGLE.smsReacc2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.audios ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}
+җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.audios ? '🌕' : '💿' : langTOGGLE.smsNoGg()}
 ${usedPrefix + command} audios
 🪶 ${langTOGGLE.smsAudi2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.antitoxic ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}
+җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.antitoxic ? '🌕' : '💿' : langTOGGLE.smsNoGg()}
 ${usedPrefix + command} antitoxic
 🪶 ${langTOGGLE.smsAntitoc2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.antiver ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}
+җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.antiver ? '🌕' : '💿' : langTOGGLE.smsNoGg()}
 ${usedPrefix + command} antiver
 🪶 ${langTOGGLE.smsModOb2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.delete ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}
+җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.delete ? '🌕' : '💿' : langTOGGLE.smsNoGg()}
 ${usedPrefix + command} antidelete
 җ
 🪶 ${langTOGGLE.smsAntiEli2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.antifake ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}
+җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.antifake ? '🌕' : '💿' : langTOGGLE.smsNoGg()}
 ${usedPrefix + command} antifake
 🪶 ${langTOGGLE.smsAntiInt2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.antiLink ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}
+җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.antiLink ? '🌕' : '💿' : langTOGGLE.smsNoGg()}
 ${usedPrefix + command} antiZap | antiWhats
 🪶 ${langTOGGLE.smsAntiE2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.antiLink2 ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}
+җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.antiLink2 ? '🌕' : '💿' : langTOGGLE.smsNoGg()}
 ${usedPrefix + command} antiLink | links
 🪶 Excluir pessoas que enviarem qualquer link www. e https
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.antiTiktok ? '🌕' : '🌒' : langTOGGLE.smsNoGg()} 
+җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.antiTiktok ? '🌕' : '💿' : langTOGGLE.smsNoGg()} 
 ${usedPrefix + command} antiTiktok
 🪶 ${langTOGGLE.smsAntiTT2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.antiYoutube ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}
+җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.antiYoutube ? '🌕' : '💿' : langTOGGLE.smsNoGg()}
 ${usedPrefix + command} antiYoutube
 🪶 ${langTOGGLE.smsAntiYT2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.antiTelegram ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}
+җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.antiTelegram ? '🌕' : '💿' : langTOGGLE.smsNoGg()}
 ${usedPrefix + command} antiTelegram
 🪶 ${langTOGGLE.smsAntiTEL2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.antiFacebook ? '🌕' : '🌒' : langTOGGLE.smsNoGg()} 
+җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.antiFacebook ? '🌕' : '💿' : langTOGGLE.smsNoGg()} 
 ${usedPrefix + command} antiFacebook
 🪶 ${langTOGGLE.smsAntiFB2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.antiInstagram ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}
+җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.antiInstagram ? '🌕' : '💿' : langTOGGLE.smsNoGg()}
 ${usedPrefix + command} antiInstagram
 🪶 ${langTOGGLE.smsAntiIG2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.antiTwitter ? '🌕' : '🌒' : langTOGGLE.smsNoGg()}   
+җ ${langTOGGLE.smsParaAdmins()} ${m.isGroup ? chat.antiTwitter ? '🌕' : '💿' : langTOGGLE.smsNoGg()}   
 ${usedPrefix + command} antiTwitter
 🪶 ${langTOGGLE.smsAntiTW2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${langTOGGLE.smsParaOw()} ${global.opts['pconly'] ? '🌕' : '🌒'}
+җ ${langTOGGLE.smsParaOw()} ${global.opts['pconly'] ? '🌕' : '💿'}
 ${usedPrefix + command} pconly
 🪶 ${langTOGGLE.smsSOLOP2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${langTOGGLE.smsParaOw()} ${global.opts['gconly'] ? '🌕' : '🌒'}
+җ ${langTOGGLE.smsParaOw()} ${global.opts['gconly'] ? '🌕' : '💿'}
 ${usedPrefix + command} gconly
 җ ${langTOGGLE.smsSOLOG2()}
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${langTOGGLE.smsParaAdmins()  }${global.quixp  ? '🌕' : '🌒'}
+җ ${langTOGGLE.smsParaAdmins()  }${global.quixp  ? '🌕' : '💿'}
 ${usedPrefix + command} quizxp
 🪶 Ativa o modo competição pro quiz
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${langTOGGLE.smsParaAdmins()  }${global.db.data.chats[m.chat].ricksan   ? '🌕' : '🌒'}
+җ ${langTOGGLE.smsParaAdmins()  }${global.db.data.chats[m.chat].ricksan   ? '🌕' : '💿'}
 ${usedPrefix + command} rick
 🪶 Desativa a IA Rick Sanchez neste chat
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${langTOGGLE.smsParaAdmins()  }${chat.xadrez  ? '🌕' : '🌒'}
+җ ${langTOGGLE.smsParaAdmins()  }${chat.xadrez  ? '🌕' : '💿'}
 ${usedPrefix + command} xadrez
 🪶 Ativa habilidade de jogar xadrez no grupo
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${langTOGGLE.smsParaAdmins()  }${chat.jogos  ? '🌕' : '🌒'}
+җ ${langTOGGLE.smsParaAdmins()  }${chat.jogos  ? '🌕' : '💿'}
 ${usedPrefix + command} jogos|games|jogo
 🪶 Desabilita jogos neste vale obscuro
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${langTOGGLE.smsParaAdmins()  }${chat.gpt  ? '🌕' : '🌒'}
+җ ${langTOGGLE.smsParaAdmins()  }${chat.gpt  ? '🌕' : '💿'}
 ${usedPrefix + command} ia|ai|gpt
 🪶 Desabilita a inteligência artiricial do bot
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${langTOGGLE.smsParaAdmins()  }${chat.admafk  ? '🌕' : '🌒'}
+җ ${langTOGGLE.smsParaAdmins()  }${chat.admafk  ? '🌕' : '💿'}
 ${usedPrefix + command} xadrez
 🪶 Habilita AFK somente para ADM
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${langTOGGLE.smsParaAdmins()  }${chat.downloads  ? '🌕' : '🌒'}
+җ ${langTOGGLE.smsParaAdmins()  }${chat.downloads  ? '🌕' : '💿'}
 ${usedPrefix + command} dl|baixar|downloads
 🪶 Desabilita funções de download neste grup
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${langTOGGLE.smsParaAdmins()  }${chat.busca  ? '🌕' : '🌒'}
+җ ${langTOGGLE.smsParaAdmins()  }${chat.busca  ? '🌕' : '💿'}
 ${usedPrefix + command} busca|pesquisa|google
 🪶 Desabilita funções de busca neste grupo
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${langTOGGLE.smsParaAdmins()  }${chat.midia  ? '🌕' : '🌒'}
+җ ${langTOGGLE.smsParaAdmins()  }${chat.midia  ? '🌕' : '💿'}
 ${usedPrefix + command} midia|ferramentas es 
 🪶 Desabilita funções de mídia no grupo
 
 ┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
-җ ${langTOGGLE.smsParaAdmins()  }${chat.midia  ? '🌕' : '🌒'}
+җ ${langTOGGLE.smsParaAdmins()  }${chat.midia  ? '🌕' : '💿'}
 ${usedPrefix + command} interacoes {hh:mm:ss}
 🪶 Desabilita funções de interação no grupo
 (Opcional: pode-se definir um horário para agendar ativação ou desativação do comando. exemplo:
@@ -348,27 +348,27 @@ let interacoes = chat.downloads && chat.midia && chat.gpt && chat.jogos && chat.
 let ownerfuncoes = `|
 |၊၊〘𖤍 *CRIADORES* 𖤍〙
 |
-|╓─━⎓⎔ ${bot.modoia  ? '🌕' : '🌒'} *IA no privado* 
+|╓─━⎓⎔ ${bot.modoia  ? '🌕' : '💿'} *IA no privado* 
 |╟ • •  ˢᵉ ʰᵃᵇᶦˡᶦᵗᵃᵈᵒ, ᵒ ᴱᵈᵍᵃʳ ᶦʳᵃ ᶜᵒⁿᵛᵉʳˢᵃʳ ⁿᵒʳᵐᵃˡᵐᵉⁿᵗᵉ ⁿᵒ ᵖʳᶦᵛᵃᵈᵒ ˢᵉᵐ ᵘˢᵒ ᵈᵉ ᶜᵒᵐᵃⁿᵈᵒˢ ᵖʳᵃ ᴵᴬ
 |┕ _.on/off_ *modoia*
 |
-|╓─━⎓⎔ ${bot.desativado  ? '🌕' : '🌒'} *Bot inativo* 
+|╓─━⎓⎔ ${bot.desativado  ? '🌕' : '💿'} *Bot inativo* 
 |╟ • •  ˢᵉ ʰᵃᵇᶦˡᶦᵗᵃᵈᵒ, ᵒ ᴱᵈᵍᵃʳ ᵉˢᵗᵃʳᵃ ᵇˡᵒᵠᵘᵉᵃᵈᵒ ᵉ ᵘᵗᶦˡᶦᶻᵃᵛᵉˡ ᵃᵖᵉⁿᵃˢ ᵃᵒˢ ᶜʳᶦᵃᵈᵒʳᵉˢ
 |┕ _.on/off_ *desativado*
 |
-|╓─━⎓⎔ ${bot.antiCall  ? '🌕' : '🌒'} *Anti-chamadas* 
+|╓─━⎓⎔ ${bot.antiCall  ? '🌕' : '💿'} *Anti-chamadas* 
 |╟ • •  ˢᵉ ʰᵃᵇᶦˡᶦᵗᵃᵈᵒ, ᵒ ᴱᵈᵍᵃʳ ᶦʳᵃ ᵇˡᵒᵠᵘᵉᵃʳ ᵒ ᵘˢᵘᵃʳᶦᵒ ᵠᵘᵉ ᵒ ˡᶦᵍᵃʳ ᵖᵒʳ ᵗᵉˡᵉᶠᵒⁿᵉ
 |┕ _.on/off_ *anticall*
 |
-|╓─━⎓⎔ ${bot.pconly ? '🌕' : '🌒'} *Somente privado* 
+|╓─━⎓⎔ ${bot.pconly ? '🌕' : '💿'} *Somente privado* 
 |╟ • •  ˢᵉ ʰᵃᵇᶦˡᶦᵗᵃᵈᵒ, ᵒ ᴱᵈᵍᵃʳ ˢᵒ ᶠᵘⁿᶜᶦᵒⁿᵃʳᵃ ᵉᵐ ᵖʳᶦᵛᵃᵈᵒ
 |┕ _.on/off_ *privado*
 |
-|╓─━⎓⎔ ${chat.gconly  ? '🌕' : '🌒'} *Somente grupos* 
+|╓─━⎓⎔ ${chat.gconly  ? '🌕' : '💿'} *Somente grupos* 
 |╟ • •  ˢᵉ ʰᵃᵇᶦˡᶦᵗᵃᵈᵒ, ᵒ ᴱᵈᵍᵃʳ ˢᵒ ᶠᵘⁿᶜᶦᵒⁿᵃʳᵃ ᵉᵐ ᵍʳᵘᵖᵒˢ
 |┕ _.on/off_ *grupos*
 |
-|╓─━⎓⎔ ${chat.antiPrivate  ? '🌕' : '🌒'} *Anti privado* 
+|╓─━⎓⎔ ${chat.antiPrivate  ? '🌕' : '💿'} *Anti privado* 
 |╟ • •  ˢᵉ ʰᵃᵇᶦˡᶦᵗᵃᵈᵒ, ᵒ ᴱᵈᵍᵃʳ ˢᵒ ᶠᵘⁿᶜᶦᵒⁿᵃʳᵃ ᵉᵐ ᵖʳᶦᵛᵃᵈᵒ ᵖᵃʳᵃ ᵘˢᵘᵃʳᶦᵒˢ ᵖᵉʳᵐᶦᵗᶦᵈᵒˢ
 |┕ _.on/off_ *grupos*
 |
@@ -386,158 +386,158 @@ ${langTOGGLE.smsConfi7()}
 ┃ Use *.off [função]* para desativar
 
 ╭────
-|╓─━⎓⎔ ${chat.nsfw  ? '🌕' : '🌒'} *NSFW* 
+|╓─━⎓⎔ ${chat.nsfw  ? '🌕' : '💿'} *NSFW* 
 |╟ • •  ᴴᵃᵇᶦˡᶦᵗᵃ ᶜᵒⁿᵗᵉᵘᵈᵒ ᵃᵈᵘˡᵗᵒ ⁿᵒ ᵍʳᵘᵖᵒ. ˢᵉ ᵈᵉˢᵃᵇᶦˡᶦᵗᵃᵈᵒ, ᵃ ˢᵒᵐᵇʳᵃ ᵖʳᵒᶠᵃⁿᵃ ᵠᵘᵉ ᵉⁿᵛᶦᵃʳ ᵃˡᵍᵒ ᵈᵉˢᵗᵉ ᵍᵉⁿᵉʳᵒ ᵗᵉʳᵃ ᵃ ᵐᵉⁿˢᵃᵍᵉᵐ ᵃᵖᵃᵍᵃᵈᵃ ᵉ ᵘᵐᵃ ᵃᵈᵛᵉʳᵗᵉⁿᶜᶦᵃ
 |╟
 |┕ _.on/off_ *+18*
 |
-|╓─━⎓⎔ ${chat.delete  ? '🌕' : '🌒'} *Sistema de nível* 
+|╓─━⎓⎔ ${chat.delete  ? '🌕' : '💿'} *Sistema de nível* 
 |╟ • •  ˢᵉ ʰᵃᵇᶦˡᶦᵗᵃᵈᵒ, ᶦⁿᵛᵒᶜᵃ ᵒ ˢᶦˢᵗᵉᵐᵃ ᵈᵉ ⁿᶦᵛᵉᶦˢ ⁿᵉˢᵗᵉ ᵈᵒᵐᶦⁿᶦᵒ, ᵖᵉʳᵐᶦᵗᶦⁿᵈᵒ ᵃᵈᵠᵘᶦʳᶦʳ ᵉˣᵖᵉʳᶦᵉⁿᶜᶦᵃ, ᵃˢᶜᵉⁿᵈᵉʳ ᵈᵉ ⁿᶦᵛᵉˡ ᵉ ᵒᵇᵗᵉʳ ᴰᵃʳᵏᶜᵒᶦⁿˢ
 |╟
 |┕ _.on/off_ *autonivel*
 |
-|╓─━⎓⎔ ${chat.delete  ? '🌕' : '🌒'} *AntiSpam* 
+|╓─━⎓⎔ ${chat.delete  ? '🌕' : '💿'} *AntiSpam* 
 |╟ • •  ˢᵉ ʰᵃᵇᶦˡᶦᵗᵃᵈᵒ, ˢᶦˡᵉⁿᶜᶦᵃ ᵒ ᶦⁿᶠʳᵃᶜᵗᵒʳ ᵠᵘᵉ ᵖᵉʳᵗᵘʳᵇᵃʳ ᵒ ˢᶦˡᵉⁿᶜᶦᵒ ᵉ ᵃ ᵖᵃᶻ ⁿᵉˢᵗᵉ ᵈᵒᵐᶦⁿᶦᵒ, ᵃᵖᵃᵍᵃⁿᵈᵒ ˢᵘᵃˢ ᵐᵉⁿˢᵃᵍᵉⁿˢ ᵉ ᵈᵉˢᶠᵉʳᶦⁿᵈᵒ ᵘᵐᵃ ᵃᵈᵛᵉʳᵗᵉⁿᶜᶦᵃ
 |╟
 |┕ _.on/off_ *autonivel*
 |
-|╓─━⎓⎔ ${chat.delete  ? '🌕' : '🌒'} *Anti-Apagar*
+|╓─━⎓⎔ ${chat.delete  ? '🌕' : '💿'} *Anti-Apagar*
 |╟ • •  ˢᵉ ʰᵃᵇᶦˡᶦᵗᵃᵈᵒ, ᶦʳᵃ ᵈᵉˢᵛᵉˡᵃʳ ᵃˢ ᵐᵉⁿˢᵃᵍᵉⁿˢ ᵃᵖᵃᵍᵃᵈᵃˢ ᵖᵉˡᵃ ᵃˡᵐᵃ ᵠᵘᵉ ᶜᵒᵐᵘⁿᶦᶜᵒᵘ.
 |╟
 |┕ _.on/off_ *antidelete*
 |
-|╓─━⎓⎔ ${chat.nsfw  ? '🌕' : '🌒'} *Anti Vis. Única* 
+|╓─━⎓⎔ ${chat.nsfw  ? '🌕' : '💿'} *Anti Vis. Única* 
 |╟ • •  ˢᵉ ʰᵃᵇᶦˡᶦᵗᵃᵈᵒ, ᵃˢ ᵐᵉⁿˢᵃᵍᵉⁿˢ ᵒᶜᵘˡᵗᵃˢ ⁿᵃˢ ˢᵒᵐᵇʳᵃˢ ᶜᵒᵐ ᵛᶦˢᵘᵃˡᶦᶻᵃᶜᵃᵒ ᵘⁿᶦᶜᵃ ˢᵉʳᵃᵒ ᵈᵉˢᵛᵉˡᵃᵈᵃˢ ᵃᵒ ᶜʰᵃᵗ.
 |╟
 |┕ _.on/off_ *antiver*
 |
-|╓─━⎓⎔ ${chat.nsfw  ? '🌕' : '🌒'} *AntiToxico*
+|╓─━⎓⎔ ${chat.nsfw  ? '🌕' : '💿'} *AntiToxico*
 |╟ • •  ˢᵉ ʰᵃᵇᶦˡᶦᵗᵃᵈᵒ, ᵃᵠᵘᵉˡᵉ ᵠᵘᵉ ᵒᵘˢᵃʳ ˢᵉʳ ᵉˣᶜᵉˢˢᶦᵛᵃᵐᵉⁿᵗᵉ ᵒᶠᵉⁿˢᶦᵛᵒ ˢᵉʳᵃ ᵃᵈᵛᵉʳᵗᶦᵈᵒ ᵉ ˢᵘᵃˢ ᵖᵃˡᵃᵛʳᵃˢ ˢᵉʳᵃᵒ ᵃᵖᵃᵍᵃᵈᵃˢ ⁿᵃˢ ˢᵒᵐᵇʳᵃˢ ᵈᵒ ᵉˢᵠᵘᵉᶜᶦᵐᵉⁿᵗᵒ
 |╟ •
 |─┕ _.on/off_ *antitoxico*
 |
-|╓─━⎓⎔ ${interacoes  ? '🌒' : '🌕'} *Interacoes* 
+|╓─━⎓⎔ ${interacoes  ? '💿' : '🌕'} *Interacoes* 
 |╟ • •  ᴴᵃᵇᶦˡᶦᵗᵃ ᵗᵒᵈᵃˢ ᵃˢ ᶦⁿᵗᵉʳᵃᶜᵒᵉˢ ᵈᵒ ᴱᵈᵍᵃʳ. ᴼᵖᶜᶦᵒⁿᵃˡᵐᵉⁿᵗᵉ ᵉ ᵖᵒˢˢᶦᵛᵉˡ ᵖʳᵒᵍʳᵃᵐᵃʳ ᵖᵃʳᵃ ᵉˣᵉᶜᵘᵗᵃʳ ᵃᵖᵒˢ ᵘᵐ ᵗᵉᵐᵖᵒ
 |╟ •
 |─┕ _.on/off_ *interacoes* [horas:minutos:segundos]
 |
-|╓─━⎓⎔ ${chat.antiTraba  ? '🌕' : '🌒'} *Anti trava*
+|╓─━⎓⎔ ${chat.antiTraba  ? '🌕' : '💿'} *Anti trava*
 |╟ • •  ᵠᵘᵃⁿᵈᵒ ᵃᵗᶦᵛᵃᵈᵒ, ᵃᵠᵘᵉˡᵉ ᵠᵘᵉ ᵒᵘˢᵃʳ ᵉⁿᵛᶦᵃʳ ᵘᵐ ᵗʳᵃᵛᵃ ᵒᵘ ᵉˣᶜᵉˢˢᵒ ᵈᵉ ᶜᵃʳᵃᶜᵗᵉʳᵉˢ ˢᵉʳᵃ ˢᵉᵛᵉʳᵃᵐᵉⁿᵗᵉ ᵖᵘⁿᶦᵈᵒ.
 |╟ •
 |─┕ _.on/off_ *antitrava* 
 |
-|╓─━⎓⎔ ${chat.antifake  ? '🌕' : '🌒'} *Anti fake*
+|╓─━⎓⎔ ${chat.antifake  ? '🌕' : '💿'} *Anti fake*
 |╟ • •  ˢᵉ ʰᵃᵇᶦˡᶦᵗᵃᵈᵒ, ᵒˢ ᵘˢᵘᵃʳᶦᵒˢ ᵠᵘᵉ ᶠᵒʳᵉᵐ ᵈᵉᵗᵉⁿᵗᵒʳᵉˢ ᵈᵉ ᵘᵐ ⁿᵘᵐᵉʳᵒ ᶦⁿᵗᵉʳⁿᵃᶜᶦᵒⁿᵃˡ ˢᵘˢᵖᵉᶦᵗᵒ, ˢᵉʳᵃᵒ ᵃᵘᵗᵒᵐᵃᵗᶦᶜᵃᵐᵉⁿᵗᵉ ᵉˣᵖᵘˡˢᵒˢ.
 |╟ •
 |─┕ _.on/off_ *antifake* 
 |
-|╓─━⎓⎔ ${chat.detect  ? '🌕' : '🌒'} *Avisos*
+|╓─━⎓⎔ ${chat.detect  ? '🌕' : '💿'} *Avisos*
 |╟ • •  ˢᵉ ʰᵃᵇᶦˡᶦᵗᵃᵈᵒ, ᵒ ᴱᵈᵍᵃʳ ᶦʳᵃ ᵉⁿᵛᶦᵃʳ ᵘᵐᵃ ᵐᵉⁿˢᵃᵍᵉᵐ ᵈᵉˢᶜʳᶦᵗᶦᵛᵃ ˢᵒᵇʳᵉ ᵃᶜᵒᵉˢ ᶠᵉᶦᵗᵃˢ ⁿᵒ ᵍʳᵘᵖᵒ
 |╟ •
 |─┕ _.on/off_ *avisos* 
 |
-|╓─━⎓⎔ ${chat.welcome  ? '🌕' : '🌒'} *Boas vindas*
+|╓─━⎓⎔ ${chat.welcome  ? '🌕' : '💿'} *Boas vindas*
 |╟ • •  ˢᵉ ʰᵃᵇᶦˡᶦᵗᵃᵈᵒ, ᵒ ᴱᵈᵍᵃʳ ᶦʳᵃ ᵈᵃʳ ᵇᵒᵃˢ ᵛᶦⁿᵈᵃˢ ᵃ ᵐᵉᵐᵇʳᵒˢ ⁿᵒᵛᵒˢ
 |╟ •
 |─┕ _.on/off_ *welcome* 
 |
-|╓─━⎓⎔ ${chat.aurosticker  ? '🌕' : '🌒'} *Auto figurinha*
+|╓─━⎓⎔ ${chat.aurosticker  ? '🌕' : '💿'} *Auto figurinha*
 |╟ • •  ˢᵉ ʰᵃᵇᶦˡᶦᵗᵃᵈᵒ, ᵒ ᴱᵈᵍᵃʳ ᶦʳᵃ ᶜʳᶦᵃʳ ᵉ ᵉⁿᵛᶦᵃʳ ᶠᶦᵍᵘʳᶦⁿʰᵃˢ ᵈᵉ ᵠᵘᵃˡᵠᵘᵉʳ ᶦᵐᵃᵍᵉᵐ ᵉⁿᵛᶦᵃᵈᵃ ⁿᵉˢᵗᵉ ᵈᵒᵐᶦⁿᶦᵒ.
 |╟ •
 |─┕ _.on/off_ *autofig* 
 |
-|╓─━⎓⎔ ${chat.reaction  ? '🌕' : '🌒'} *Reações*
+|╓─━⎓⎔ ${chat.reaction  ? '🌕' : '💿'} *Reações*
 |╟ • •  ˢᵉ ʰᵃᵇᶦˡᶦᵗᵃᵈᵒ,  ᵒ ᴱᵈᵍᵃʳ ᶦʳᵃ ʳᵉᵃᵍᶦʳ ᵃˢ ᵐᵉⁿˢᵃᵍᵉⁿˢ ᵉⁿᵛᶦᵃᵈᵃˢ ⁿᵒ ᵍʳᵘᵖᵒ
 |╟ •
 |─┕ _.on/off_ *emojis* 
 |
-|╓─━⎓⎔ ${chat.antiLink2  ? '🌕' : '🌒'} *Antilink*
+|╓─━⎓⎔ ${chat.antiLink2  ? '🌕' : '💿'} *Antilink*
 |╟ • •  ᵠᵘᵃⁿᵈᵒ ʰᵃᵇᶦˡᶦᵗᵃᵈᵒ, ᵃᵠᵘᵉˡᵉ ᵠᵘᵉ ˢᵉ ᵃᵗʳᵉᵛᵉʳ ᵃ ᵉⁿᵛᶦᵃʳ ᵠᵘᵃˡᵠᵘᵉʳ ˡᶦⁿᵏ ˢᵉʳᵃ ᵖᵘⁿᶦᵈᵒ ˢᵉᵛᵉʳᵃᵐᵉⁿᵗᵉ.
 |╟ •
 |─┕ _.on/off_ *antilink* 
 |
-|╓─━⎓⎔ ${chat.antiLink  ? '🌕' : '🌒'} *AntiZap* 
+|╓─━⎓⎔ ${chat.antiLink  ? '🌕' : '💿'} *AntiZap* 
 |╟ • •  ᵠᵘᵃⁿᵈᵒ ʰᵃᵇᶦˡᶦᵗᵃᵈᵒ, ᵃᵠᵘᵉˡᵉ ᵠᵘᵉ ˢᵉ ᵒᵘˢᵃʳ ᶜᵒᵐᵖᵃʳᵗᶦˡʰᵃʳ ᵘᵐ ˡᶦⁿᵏ ᵈᵉ ᵍʳᵘᵖᵒ ᵈᵉ ʷʰᵃᵗˢᵃᵖᵖ ˢᵉʳᵃ ᶜᵃˢᵗᶦᵍᵃᵈᵒ
 |╟ •
 |─┕ _.on/off_ *antizap* 
 |
-|╓─━⎓⎔ ${chat.antiFacebook  ? '🌕' : '🌒'} *Anti Facebook*
+|╓─━⎓⎔ ${chat.antiFacebook  ? '🌕' : '💿'} *Anti Facebook*
 |╟ • •  ᵠᵘᵃⁿᵈᵒ ʰᵃᵇᶦˡᶦᵗᵃᵈᵒ, ᵃᵠᵘᵉˡᵉ ᵠᵘᵉ ᶜᵒᵐᵖᵃʳᵗᶦˡʰᵃʳ ᵘᵐ ˡᶦⁿᵏ ᵈᵒ ᶠᵃᶜᵉᵇᵒᵒᵏ ˢᵉʳᵃ ᵉˣᶦˡᵃᵈᵒ ᵃˢ ˢᵒᵐᵇʳᵃˢ
 |╟ •
 |─┕ _.on/off_ *antifb* 
 |
-|╓─━⎓⎔ ${chat.antiTelegram  ? '🌕' : '🌒'} *Anti Telegram*
+|╓─━⎓⎔ ${chat.antiTelegram  ? '🌕' : '💿'} *Anti Telegram*
 |╟ • •  ᵠᵘᵃⁿᵈᵒ ʰᵃᵇᶦˡᶦᵗᵃᵈᵒ, ᵃᵠᵘᵉˡᵉ ᵠᵘᵉ ᵉⁿᵛᶦᵃʳ ᵘᵐ ˡᶦⁿᵏ ᵈᵒ ᵀᵉˡᵉᵍʳᵃᵐ ˢᵉʳᵃ ᵉˣᶦˡᵃᵈᵒ.
 |╟ •
 |─┕ _.on/off_ *antitele* 
 |
-|╓─━⎓⎔ ${chat.antiTiktok  ? '🌕' : '🌒'} *Anti TikTok 
+|╓─━⎓⎔ ${chat.antiTiktok  ? '🌕' : '💿'} *Anti TikTok 
 |╟ • •  ᵠᵘᵃⁿᵈᵒ ʰᵃᵇᶦˡᶦᵗᵃᵈᵒ, ᵃᵠᵘᵉˡᵉ ᵠᵘᵉ ᵉⁿᵛᶦᵃʳ ᵘᵐ ˡᶦⁿᵏ ᵈᵒ ᵀᶦᵏᵀᵒᵏ ˢᵉʳᵃ ᵖᵘⁿᶦᵈᵒ ᵇʳᵘˢᶜᵃᵐᵉⁿᵗᵉ ..
 |╟ •
 |─┕ _.on/off_ *antitik* 
 |
-|╓─━⎓⎔ ${chat.antiYoutube  ? '🌕' : '🌒'} *Anti YouTube 
+|╓─━⎓⎔ ${chat.antiYoutube  ? '🌕' : '💿'} *Anti YouTube 
 |╟ • •  ᵠᵘᵃⁿᵈᵒ ʰᵃᵇᶦˡᶦᵗᵃᵈᵒ, ᵃᵠᵘᵉˡᵉ ᵠᵘᵉ ᵉⁿᵛᶦᵃʳ ᵘᵐ ˡᶦⁿᵏ ᵈᵒ ʸᵒᵘᵀᵘᵇᵉ ˢᵉʳᵃ ᵉˣᶦˡᵃᵈᵒ..
 |╟ •
 |─┕ _.on/off_ *antiyt* 
 |
-|╓─━⎓⎔ ${chat.antiTwitter  ? '🌕' : '🌒'} *Anti Twitter 
+|╓─━⎓⎔ ${chat.antiTwitter  ? '🌕' : '💿'} *Anti Twitter 
 |╟ • •  ᵠᵘᵃⁿᵈᵒ ʰᵃᵇᶦˡᶦᵗᵃᵈᵒ, ᵃᵠᵘᵉˡᵉ ᵠᵘᵉ ᵉⁿᵛᶦᵃʳ ᵘᵐ ᵁᴿᴸ ᵈᵒ ᵀʷᶦᵗᵗᵉʳ ˢᵉʳᵃ ᶜᵃˢᵗᶦᵍᵃᵈᵒ 
 |╟ •
 |─┕ _.on/off_ *antitw* 
 |
-|╓─━⎓⎔ ${chat.antiInstagram  ? '🌕' : '🌒'} *Anti Instagram 
+|╓─━⎓⎔ ${chat.antiInstagram  ? '🌕' : '💿'} *Anti Instagram 
 |╟ • •  ᵠᵘᵃⁿᵈᵒ ʰᵃᵇᶦˡᶦᵗᵃᵈᵒ, ᵃᵠᵘᵉˡᵉ ᵠᵘᵉ ᵉⁿᵛᶦᵃʳ ᵘᵐ ᵘᵐ ˡᶦⁿᵏ ᵈᵒ ᶦⁿˢᵗᵃᵍʳᵃᵐ ˢᵉʳᵃ ᶜᵃˢᵗᶦᵍᵃᵈᵒ 
 |╟ •
 |─┕ _.on/off_ *antiinsta* 
 |
-|╓─━⎓⎔ ${chat.edgar  ? '🌕' : '🌒'} *EdgarGPT*
+|╓─━⎓⎔ ${chat.edgar  ? '🌕' : '💿'} *EdgarGPT*
 |╟ • •  ˢᵉ ʰᵃᵇᶦˡᶦᵗᵃᵈᵒ, ᵒ ᴱᵈᵍᵃʳ ᶦʳᵃ ʳᵉˢᵖᵒⁿᵈᵉʳ ᶜᵒᵐ ᴵᴬ ⁴.⁰ ᵠᵘᵃⁿᵈᵒ ˢᵉᵘ ⁿᵒᵐᵉ ᶠᵒʳ ᵖʳᵒᶜˡᵃᵐᵃᵈᵒ ⁿᵉˢᵗᵉ ᵈᵒᵐᶦⁿᶦᵒ
 |╟ •
 |─┕ _.on/off_ *edgar* 
 |
-|╓─━⎓⎔ ${chat.reply  ? '🌕' : '🌒'} *Respostas do GPT*
+|╓─━⎓⎔ ${chat.reply  ? '🌕' : '💿'} *Respostas do GPT*
 |╟ • •  ˢᵉ ʰᵃᵇᶦˡᶦᵗᵃᵈᵒ, ˢᵉʳᵃ ᵖᵒˢˢᶦᵛᵉˡ ʳᵉˢᵖᵒⁿᵈᵉʳ ʳᵉˢᵖᵒˢᵗᵃˢ ᵈᵃ ᴵᴬ ᵉ ᵐᵃⁿᵗᵉʳ ᵘᵐ ᶠˡᵘˣᵒ ᵈᵉ ᶜᵒⁿᵛᵉʳˢᵃ
 |╟ •
 |─┕ _.on/off_ *reply* 
 |
-|╓─━⎓⎔ ${chat.rick  ? '🌕' : '🌒'} *Rick Sanchez*
+|╓─━⎓⎔ ${chat.rick  ? '🌕' : '💿'} *Rick Sanchez*
 |╟ • •  ˢᵉ ᵈᵉˢᵃᵇᶦˡᶦᵗᵃᵈᵒ, ᵇˡᵒᵠᵘᵉᶦᵃ ᵒ ᶜᵒᵐᵃⁿᵈᵒ ᵈᵃ ᴵᴬ ᵈᵒ ʳᶦᶜᵏ ˢᵃⁿᶜʰᵉᶻ
 |╟ •
 |─┕ _.on/off_ *rick* 
 |
-|╓─━⎓⎔ ${chat.ia  ? '🌕' : '🌒'} *Inteligência Artificial*
+|╓─━⎓⎔ ${chat.ia  ? '🌕' : '💿'} *Inteligência Artificial*
 |╟ • •  ˢᵉ ᵈᵉˢᵃᵇᶦˡᶦᵗᵃᵈᵒ, ᵃˢ ᶠᵘⁿᶜᵒᵉˢ ᵈᵃ ᶜᵃᵗᵉᵍᵒʳᶦᵃ ᵈᵉ ᴵᴬ ᶠᶦᶜᵃʳᵃᵒ ᵇˡᵒᵠᵘᵉᵃᵈᵃˢ
 |╟ •
 |─┕ _.on/off_ *ia* 
 |
-|╓─━⎓⎔ ${chat.downloads  ? '🌕' : '🌒'} *Downloads*
+|╓─━⎓⎔ ${chat.downloads  ? '🌕' : '💿'} *Downloads*
 |╟ • •  ˢᵉ ᵈᵉˢᵃᵇᶦˡᶦᵗᵃᵈᵒ, ᵃˢ ᶠᵘⁿᶜᵒᵉˢ ᵈᵃ ᶜᵃᵗᵉᵍᵒʳᶦᵃ ᵈᵉ ᵈᵒʷⁿˡᵒᵃᵈˢ ᶠᶦᶜᵃʳᵃᵒ ᵇˡᵒᵠᵘᵉᵃᵈᵃˢ
 
 |╟ •
 |─┕ _.on/off_ *downloads* 
 |
-|╓─━⎓⎔ ${chat.buscas  ? '🌕' : '🌒'} *Buscas*
+|╓─━⎓⎔ ${chat.buscas  ? '🌕' : '💿'} *Buscas*
 |╟ • •  ˢᵉ ᵈᵉˢᵃᵇᶦˡᶦᵗᵃᵈᵒ, ᵃˢ ᶠᵘⁿᶜᵒᵉˢ ᵈᵃ ᶜᵃᵗᵉᵍᵒʳᶦᵃ ᵈᵉ ᵇᵘˢᶜᵃˢ ᵉ ᵖᵉˢᵠᵘᶦˢᵃˢ ᶠᶦᶜᵃʳᵃᵒ ᵇˡᵒᵠᵘᵉᵃᵈᵃˢ
 |╟ •
 |─┕ _.on/off_ *busca* 
 |
-|╓─━⎓⎔ ${chat.midia  ? '🌕' : '🌒'} *Mídias*
+|╓─━⎓⎔ ${chat.midia  ? '🌕' : '💿'} *Mídias*
 |╟ • •  ˢᵉ ᵈᵉˢᵃᵇᶦˡᶦᵗᵃᵈᵒ, ᵃˢ ᶠᵘⁿᶜᵒᵉˢ ᵈᵃ ᶜᵃᵗᵉᵍᵒʳᶦᵃ ᵈᵉ ᵐᶦᵈᶦᵃˢ ᵉ ᶜᵒⁿᵛᵉʳˢᵒʳᵉˢ ᶠᶦᶜᵃʳᵃᵒ ᵇˡᵒᵠᵘᵉᵃᵈᵃˢ
 |╟ •
 |─┕ _.on/off_ *midia* 
 |
-|╓─━⎓⎔ ${chat.acoes  ? '🌕' : '🌒'} *Ações*
+|╓─━⎓⎔ ${chat.acoes  ? '🌕' : '💿'} *Ações*
 |╟ • •  ˢᵉ ᵈᵉˢᵃᵇᶦˡᶦᵗᵃᵈᵒ, ᵃˢ ᶠᵘⁿᶜᵒᵉˢ ᵈᵃ ᶜᵃᵗᵉᵍᵒʳᶦᵃ ᵈᵉ ᵃᶜᵒᵉˢ ᵉⁿᵗʳᵉ ᵐᵉᵐᵇʳᵒˢ ᶠᶦᶜᵃʳᵃᵒ ᵇˡᵒᵠᵘᵉᵃᵈᵃˢ
 |╟ •
 |─┕ _.on/off_ *acoes* 
 |
-|╓─━⎓⎔ ${chat.jogos  ? '🌕' : '🌒'} *Jogos*
+|╓─━⎓⎔ ${chat.jogos  ? '🌕' : '💿'} *Jogos*
 |╟ • •  ˢᵉ ᵈᵉˢᵃᵇᶦˡᶦᵗᵃᵈᵒ, ᵃˢ ᶠᵘⁿᶜᵒᵉˢ ᵈᵃ ᶜᵃᵗᵉᵍᵒʳᶦᵃ ᵈᵉ ʲᵒᵍᵒˢ ᶠᶦᶜᵃʳᵃᵒ ᵇˡᵒᵠᵘᵉᵃᵈᵃˢ
 |╟ •
 |─┕ _.on/off_ *jogos* 
 |
-|╓─━⎓⎔ ${chat.admafk  ? '🌕' : '🌒'} *AFK só admin*
+|╓─━⎓⎔ ${chat.admafk  ? '🌕' : '💿'} *AFK só admin*
 |╟ • •  ˢᵉ ʰᵃᵇᶦˡᶦᵗᵃᵈᵒ, ˢᵒᵐᵉⁿᵗᵉ ᵃᵈᵐᶦⁿᶦˢᵗʳᵃᵈᵒʳᵉˢ ⁿᵉˢᵗᵃˢ ʳᵘᶦⁿᵃˢ ᵖᵒᵈᵉʳᵃᵒ ᵘᵗᶦˡᶦᶻᵃʳ ᵒ ᴬᶠᴷ
 |╟ •
 |─┕ _.on/off_ *afk* 
