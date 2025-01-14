@@ -55,7 +55,7 @@ const backAfk = global.idioma == 'en' ?
 `┌──[ BYΓΞSΞC ]──[~] 
 └─► rm -rf ~/AFK_STATUS && cat .messagerc
 > ‎ 
-> [*] @${m.sender.split("@")[0]} *ᴏɴʟɪɴᴇ* ɴᴏᴠᴀᴍᴇɴᴛᴇ 🟢
+> [🟢] @${m.sender.split("@")[0]} *ᴏɴʟɪɴᴇ* ɴᴏᴠᴀᴍᴇɴᴛᴇ
 > ‎ . . . . . . . . . . . . . . . . .
 > *𝛌 TΞMPO AUSΞИTΞ:*
 > ${(new Date - user.afkInfo[m.chat].afkTime).toTimeString ()}
@@ -66,7 +66,7 @@ const backAfk = global.idioma == 'en' ?
 `┌──[ BYΓΞSΞC ]──[~] 
 └─► rm -rf ~/AFK_STATUS && cat .messagerc
 > ‎  ‎ 
-> [*] @${m.sender.split("@")[0]} ɪꜱ ɴᴏᴡ *ᴏɴʟɪɴᴇ* 🟢
+> [🟢] @${m.sender.split("@")[0]} ɪꜱ ɴᴏᴡ *ᴏɴʟɪɴᴇ*
 > ‎ . . . . . . . . . . . . . . . . .
 > *𝛌 OFFLIИΞ TIMΞ*:
 > ${(new Date - user.afkInfo[m.chat].afkTime).toTimeString ()}
