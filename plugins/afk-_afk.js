@@ -52,16 +52,6 @@ if (user.afkInfo[m.chat].afkTime > -1) {
 
  
 const backAfk = global.idioma == 'en' ? 
-`┌──[ BYΓΞSΞC ]──[~] 
-└─► rm -rf ~/AFK_STATUS && cat .messagerc
-> ‎ 
-> [🟢] @${m.sender.split("@")[0]} *ᴏɴʟɪɴᴇ* ɴᴏᴠᴀᴍᴇɴᴛᴇ
-> ‎ . . . . . . . . . . . . . . . . .
-> *𝛌 TΞMPO AUSΞИTΞ:*
-> ${(new Date - user.afkInfo[m.chat].afkTime).toTimeString ()}
-> ‎ `
-
-: 
 
 `┌──[ BYΓΞSΞC ]──[~] 
 └─► rm -rf ~/AFK_STATUS && cat .messagerc
@@ -71,7 +61,15 @@ const backAfk = global.idioma == 'en' ?
 > *𝛌 OFFLIИΞ TIMΞ*:
 > ${(new Date - user.afkInfo[m.chat].afkTime).toTimeString ()}
 > ‎ `
-
+:
+`┌──[ BYΓΞSΞC ]──[~] 
+└─► rm -rf ~/AFK_STATUS && cat .messagerc
+> ‎ 
+> [🟢] @${m.sender.split("@")[0]} *ᴏɴʟɪɴᴇ* ɴᴏᴠᴀᴍᴇɴᴛᴇ
+> ‎ . . . . . . . . . . . . . . . . .
+> *𝛌 TΞMPO AUSΞИTΞ:*
+> ${(new Date - user.afkInfo[m.chat].afkTime).toTimeString ()}
+> ‎ `
 
 
 
@@ -115,7 +113,7 @@ let nams = global.db.data.users[m.mentionedJid.toString()].name
 const afkStatus = idioma == 'en' ? 
 `┌──[ BYΓΞSΞC ]──[~] 
 └─► rm -rf ~/AFK_STATUS && journalctl
-> ‎ 𝚄̷𝚂̷𝙴̷𝚁̷ 𝙸̷𝚂̷ 𝙾̷𝙵̷𝙵̷𝙻̷𝙸̷𝙽̷𝙴̷ 🟠
+> [!] ᴜꜱᴇʀ ɪꜱ ᴏꜰꜰʟɪɴᴇ 🔴
 > ‎ . . . . . . . . . . . . . . . . .
 > [!] ᴛɪᴍᴇ ᴏꜰꜰʟɪɴᴇ: ${(new Date - time).toTimeString()}
 > [+] ʀᴇᴀꜱᴏɴ:
@@ -126,7 +124,7 @@ ${reason}
 
 `┌──[ BYΓΞSΞC ]──[~] 
 └─► rm -rf  ~/AFK_STATUS && journalctl
-> ‎ 𝚄̷𝚂̷𝚄̷𝙰̷𝚁̷𝙸̷𝙾̷ 𝙴̷𝚂̷𝚃̷𝙰̷ 𝙾̷𝙵̷𝙵̷𝙻̷𝙸̷𝙽̷𝙴̷ 🟠
+> [!] ᴜꜱᴜᴀʀɪᴏ ᴇꜱᴛᴀ ᴏꜰꜰʟɪɴᴇ 🔴
 > ‎ . . . . . . . . . . . . . . . . .
 > [!] ᴛᴇᴍᴘᴏ ᴏꜰꜰʟɪɴᴇ: ${(new Date - time).toTimeString()}
 > [+] ᴍᴏᴛɪᴠᴏ:
@@ -157,8 +155,13 @@ console.log(m.quoted.sender)
   
  
 
+function formatParagraphs(inputString) {
+  return inputString.split('\n').map(p => p.trim()).filter(Boolean).map(p => `> ${p}`).join('\n');
+}
 
- let reason = global.db.data.users[m.quoted.sender.toString()].afkInfo[m.chat].afkReason ? global.db.data.users[m.quoted.sender.toString()].afkInfo[m.chat].afkReason : ''
+
+ let reason2 = global.db.data.users[m.quoted.sender.toString()].afkInfo[m.chat].afkReason ? global.db.data.users[m.quoted.sender.toString()].afkInfo[m.chat].afkReason : ''
+let reason = text ? formatParagraphs(reason2) : '> 404'
 
 let time = global.db.data.users[m.quoted.sender.toString()].afkInfo[m.chat].afkTime
 
