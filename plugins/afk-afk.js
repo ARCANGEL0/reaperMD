@@ -21,13 +21,7 @@ if(!(isAdmin || isOwner) && global.db.data.chats[m.chat].admafk===false){
   
  } 
  else{
-if (args.length >= 1 ) {
-text = args.slice(0).join(" ")
-} else if (m.quoted && m.quoted.text) {
-text = m.quoted.text
-} else return m.reply(`${langTOGGLE['smsAfkQ1'](usedPrefix, command)}`)
-  
-if (text.length < 10) return m.reply(`${langTOGGLE['smsAfkQ2']()}`)
+
 // Initialize user object if it doesn't exist
 if (!user.afkInfo) {
     user.afkInfo = {};
@@ -78,12 +72,54 @@ if(!global.db.data.chats[m.chat].ignored)
 {
   global.db.data.chats[m.chat].ignored =[]
 }
+
+function formatParagraphs(inputString) {
+  return inputString.split('\n').map(p => p.trim()).filter(Boolean).map(p => `> ${p}`).join('\n');
+}
+
+
 global.db.data.chats[m.chat].ignored.push(DELETEMESSAGE.message.protocolMessage.key.id)
-await conn.reply(m.chat, `${langTOGGLE['smsAvisoAG']()}*⬣━━━「 AFK ⚰️」━━━⬣*
-    *🕯️💀𝕹𝖆𝖔 𝖕𝖊𝖗𝖙𝖚𝖗𝖇𝖊𝐞* *@${m.sender.split("@")[0]}* 
-    *「 𝕴𝖗𝖆 𝖉𝖎𝖛𝖆𝖌𝖆𝖗 𝖕𝖊𝖑𝖆𝖘 𝖘𝖔𝖒𝖇𝖗𝖆𝖘 𝖉𝖔 𝖉𝖊𝖘𝖈𝖔𝖓𝖍𝖊𝖈𝖎𝖉𝖔, 𝖘𝖊 𝖆𝖚𝖘𝖊𝖓𝖙𝖆𝖓𝖉𝖔 𝖉𝖊𝖘𝖙𝖊 𝖛𝖆𝖑𝖊 𝖘𝖔𝖒𝖇𝖗𝖎𝖔.」*
-  
-  *𝕸𝖊𝖗𝖎𝖙𝖚𝖒 𝖈𝖆𝖚𝖘𝖆𝖊:*${text ? '\n ' + text : ''}`, m, { mentions: [m.sender] });
+let reason = formatParagraphs(reason)
+
+ 
+const goingAfk = idioma == 'en' ? 
+`┌──[ BYΓΞSΞC ]──[~] 
+└─► touch ~/AFK_STATUS
+> ‎ GNU nano 2.6.1          File: AFK_STATUS
+> ‎ 
+> echo "@${m.sender.split("@")[0]} ʟᴏɢɢᴇᴅ ᴏꜰꜰ ᴛᴇᴍᴘᴏʀᴀʀɪʟʏ ᴀɴᴅ ᴡɪʟʟ ʙᴇ ᴀꜰᴋ ꜰᴏʀ ᴀ ᴡʜɪʟᴇ"
+> ‎ . . . . . . . . . . . . . . . . .
+> [+] ʀᴇᴀꜱᴏɴ:
+${reason}
+> ‎ 
+> echo -e "$USER" > ~/AFK_STATUS
+> sleep $2
+> ‎ 
+> [^M-U] Undo  [^M-E] Redo  [^K] Cut Text      
+> [^O] Write Out  [^U] Uncut Text  [^X] Exit    `
+
+: 
+
+`┌──[ BYΓΞSΞC ]──[~] 
+└─► touch ~/AFK_STATUS
+> ‎ GNU nano 2.6.1          File: AFK_STATUS
+> ‎ 
+> echo "@${m.sender.split("@")[0]} ᴅᴇꜱʟᴏɢᴏᴜ ᴛᴇᴍᴘᴏʀᴀʀɪᴀᴍᴇɴᴛᴇ ᴇ ꜰɪᴄᴀʀᴀ ᴀꜰᴋ ᴘᴏʀ ᴜᴍ ᴛᴇᴍᴘᴏ"
+> ‎ . . . . . . . . . . . . . . . . .
+> [+] ᴍᴏᴛɪᴠᴏ:
+${reason}
+> ‎ 
+> echo -e "$USER" > ~/AFK_STATUS
+> sleep $2
+> ‎ 
+> [^M-U] Undo  [^M-E] Redo  [^K] Cut Text      
+> [^O] Write Out  [^U] Uncut Text  [^X] Exit   `
+
+
+
+
+
+await conn.reply(m.chat, goingAfk, m, { mentions: [m.sender] });
 
 }
 }

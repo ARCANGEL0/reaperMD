@@ -287,5 +287,5 @@ ${profileString}
 };
 handler.help = ['profile', 'perfil'];
 handler.tags = ['grupo'];
-handler.command = /^(perfil)$/i;
+handler.command = /^(perfil|profile)$/i;
 export default handler;
