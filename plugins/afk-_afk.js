@@ -51,7 +51,7 @@ if (user.afkInfo[m.chat].afkTime > -1) {
 
 
  
-const backAfk = idioma == 'en' ? 
+const backAfk = global.idioma == 'en' ? 
 `┌──[ BYΓΞSΞC ]──[~] 
 └─► rm -rf ~/AFK_STATUS && cat .messagerc
 > ‎  ‎ 
