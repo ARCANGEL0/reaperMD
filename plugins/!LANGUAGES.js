@@ -16,7 +16,7 @@ handler.before = async function (m, { text, args, usedPrefix, command, conn } ) 
 if (!m.isGroup) return !1
 
 
-let idioma = global.db.data.chats[m.chat].language || 'en'
+global.idioma = global.db.data.chats[m.chat].language || 'en'
 
 if(m.quoted &&
 global.db.data.chats[m.chat].langChangeID &&
