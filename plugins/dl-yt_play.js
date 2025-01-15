@@ -94,17 +94,16 @@ const yt_play = await search(args.join(" "))
 console.log(yt_play[0])
 let additionalText = ''
 if (command === 'play') {
-additionalText = '𝘼𝙐𝘿𝙄𝙊 𝄞'
+additionalText = 'ᴀᴜᴅɪᴏ'
 } else if (command === 'play2') {
-additionalText = '𝙑𝙄𝘿𝙀𝙊 ⚝ '}
-let captionvid = `┏━──── 𖤍 ────━┓
-│ ༒︎ ${yt_play[0].title} ༒︎
-│ ▢ ${yt_play[0].description} 
-│
-│ 𝙀𝙉𝙑𝙄𝘼𝙉𝘿𝙊 ${additionalText}
-│ 𝘼𝙂𝙐𝘼𝙍𝘿𝙀. . . 
-│
-┗━──── *「️𖤐」* ────━┛`
+additionalText = 'ᴠɪᴅᴇᴏ'}
+let captionvid = `┌──[ BYΓΞSΞC ]─[~] 
+└─ $ ytdl -mp3 $1
+> ${global.idioma == 'en' ? 'ꜱᴇɴᴅɪɴɢ ' : 'ᴇɴᴠɪᴀɴᴅᴏ '}${additionalText}
+| [×] ${yt_play[0].title}
+> ──── ──── ──── 
+> ‎   
+| [!] ${yt_play[0].description}`
 
 m.react("💿")
 let sendtext = await conn.sendFile(m.chat, yt_play[0].image,'error.jpg', captionvid, m)
@@ -135,11 +134,7 @@ console.log(data.data)
 catch(e){
   console.log(e)
   m.react("💀")
-  m.reply(`╭─❖ ❌ *Um erro inesperado ocorreu* ❖─
-𝑵𝒂 𝒆𝒔𝒄𝒖𝒓𝒊𝒅𝒂𝒐 𝒔𝒆𝒑𝒖𝒍𝒄𝒓𝒂𝒍 𝒅𝒆 𝒎𝒆𝒖 𝒄𝒐𝒅𝒊𝒈𝒐, 𝒐 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒇𝒂𝒍𝒉𝒐𝒖 𝒄𝒐𝒎𝒐 𝒖𝒎𝒂 𝒑𝒓𝒆𝒄𝒆 𝒏𝒂𝒐 𝒂𝒕𝒆𝒏𝒅𝒊𝒅𝒂.
-
-𝑼𝒔𝒆 *.report* 𝒑𝒂𝒓𝒂 𝒓𝒆𝒍𝒂𝒕𝒂𝒓 𝒆𝒔𝒕𝒂 𝒎𝒊𝒔𝒆𝒓𝒂𝒗𝒆𝒍 𝒇𝒂𝒍𝒉𝒂.
-*╰┅─❖ ⸸ ❖─┅*`)
+  m.reply(`╭─❖ ❌ *
 }
 }
 if (command == 'play2') {
