@@ -131,9 +131,8 @@ if (!text) {
     const categoryList = categories.map((category, index) => `> ${usedPrefix + command} ${index + 1} - ${category}`).join('\n');
 
 
-    const quizHelp = global.db.data.chats[m.chat].language === 'en' ?
+    const quizHelp = global.idioma === 'en' ?
   
-
       `┌──[ BYΓΞSΞC ]─[~]─[${date}] 
 └─ $ node quiz.mjs --help
 > . . . . . . . . . . . . . . . . . . . . . . .
