@@ -9,17 +9,17 @@
 let handler = async (m, { conn, text, usedPrefix, command }) => {
 
 
+const date = new Date();
+const formattedDate = `${date.getFullYear()}.${String(date.getMonth() + 1).padStart(2, '0')}.${String(date.getDate()).padStart(2, '0')}`;
+console.log(`cat /etc/logs/${formattedDate}`);
 
 let teks = `┌──[ BYΓΞSΞC ]──[~] 
-└─► cat etc/logs/
-
-
-𝙍𝙀𝙋𝙊𝙍𝙏 ༒︎
-⸸ 𝙉𝙐𝙈𝙀𝙍𝙊: Wa.me/${m.sender.split`@`[0]}
-⸸ 𝙈𝙎𝙂: ${text}
-
-─┅──┅❖ ❖─┅──┅
-`
+└─► cat etc/logs/${formattedDate}
+> ‎ 
+> BUG REPORTADO
+> ᴜꜱᴜᴀʀɪᴏ: @${m.sender.split`@`[0]}
+─┅───────────
+${text ? 'ᴅᴇꜱᴄ. ᴅᴏ ᴏᴄᴏʀʀɪᴅᴏ:\n ' + text : '' }`
 //conn.reply('19393844141@s.whatsapp.net', m.quoted ? teks + m.quoted.text : teks, null, {
 //contextInfo: {
 //mentionedJid: [m.sender]
