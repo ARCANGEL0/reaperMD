@@ -7,10 +7,14 @@
 // ╰─...⌬─────────────────────────────────
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-if (!text) throw `${mg}Descreva o seu relato\n*Exemplo:*\n*${usedPrefix + command} l comando ${usedPrefix}infobot nao funciona.*\n`
-if (text.length < 8) throw `${fg} ✒️*Mínimo 10 caracteres para realizar o relato*\n.*`
-if (text.length > 1000) throw `${fg} ✒️ *Máximo 1000 caracteres para o Relato.*\n*`
-let teks = `༒︎ 𝙍𝙀𝙋𝙊𝙍𝙏 ༒︎
+
+
+
+let teks = `┌──[ BYΓΞSΞC ]──[~] 
+└─► cat etc/logs/
+
+
+𝙍𝙀𝙋𝙊𝙍𝙏 ༒︎
 ⸸ 𝙉𝙐𝙈𝙀𝙍𝙊: Wa.me/${m.sender.split`@`[0]}
 ⸸ 𝙈𝙎𝙂: ${text}
 
@@ -22,20 +26,19 @@ let teks = `༒︎ 𝙍𝙀𝙋𝙊𝙍𝙏 ༒︎
 //}})
 
 if(m.quoted){
-m.quoted.reply(m.quoted ? teks + m.quoted.text : teks,`120363217076425903@g.us`, {contextInfo: {
+m.quoted.reply(m.quoted ? teks + m.quoted.text : teks,`120363360114833087@g.us`, {contextInfo: {
 mentionedJid: [m.sender]
 }})}
 else  {
-  m.reply(m.quoted ? teks + m.quoted.text : teks,`120363217076425903@g.us`, {contextInfo: {
+  m.reply(m.quoted ? teks + m.quoted.text : teks,`120363360114833087@g.us`, {contextInfo: {
 mentionedJid: [m.sender]
 }})}
 
+const msg = idioma == 'en' ? `$ ./report.py
+> ᴛʜᴇ ʀᴇᴘᴏʀᴛ ʜᴀꜱ ʙᴇᴇɴ ꜱᴀᴠᴇᴅ ᴏɴ /ᴇᴛᴄ/ʟᴏɢꜱ ᴀɴᴅ ꜱᴇɴᴛ ᴛᴏ ᴛʜᴇ ᴅᴇᴠᴇʟᴏᴘᴇʀ, ᴛʜᴀɴᴋꜱ ꜰᴏʀ ᴛʜᴇ ꜰᴇᴇᴅʙᴀᴄᴋ, ᴋɪᴅᴅᴏ` : `$ ./report.py 
+> [!] ʀᴇʟᴀᴛᴏʀɪᴏ ꜰᴏɪ ꜱᴀʟᴠᴏ ᴇᴍ /ᴇᴛᴄ/ʟᴏɢꜱ ᴇ ᴇɴᴠɪᴀᴅᴏ ᴘᴀʀᴀ ᴏ ᴅᴇꜱᴇɴᴠᴏʟᴠɪᴅᴏʀ. ᴏʙʀɪɢᴀᴅᴏ ᴘᴇʟᴏ ꜰᴇᴇᴅʙᴀᴄᴋ, ɢᴀʀᴏᴛᴏ. `
 
-
-  m.reply(`╭─┅──┅❖ ༒︎ ❖─┅──┅
-  𝑶 𝒓𝒆𝒍𝒂𝒕𝒐𝒓𝒊𝒐 𝒇𝒐𝒊 𝒆𝒏𝒗𝒊𝒂𝒅𝒐 𝒆 𝒂𝒈𝒖𝒂𝒓𝒅𝒂 𝒖𝒎𝒂 𝒓𝒆𝒔𝒑𝒐𝒔𝒕𝒂. 𝑬𝒎 𝒃𝒓𝒆𝒗𝒆, 𝒓𝒆𝒄𝒆𝒃𝒆𝒓𝒂 𝒖𝒎𝒂 𝒓𝒆𝒑𝒍𝒊𝒄𝒂. 𝑺𝒆 𝒇𝒐𝒓 𝒊𝒓𝒓𝒆𝒍𝒆𝒗𝒂𝒏𝒕𝒆, 𝒔𝒆𝒓𝒂 𝒆𝒔𝒒𝒖𝒆𝒄𝒊𝒅𝒐 𝒏𝒂 𝒎𝒆𝒎𝒐𝒓𝒊𝒂 𝒆 𝒅𝒆𝒔𝒄𝒂𝒓𝒕𝒂𝒅𝒐.
-
-*╰─┅──┅❖ ⸸ ❖─┅──┅* `)
+  m.reply(msg)
 
 }
 
