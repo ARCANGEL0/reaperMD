@@ -117,7 +117,7 @@
           "afkReason": ""
         }
       },
-      "lastmiming": 1737031170292,
+      "lastmiming": 1737210932024,
       "ghost": false,
       "offlineStart": "2025-01-15T00:38:30.382Z",
       "ocupado": false,
@@ -6218,7 +6218,7 @@
       "tentativasRoubo": 5,
       "spammer": 0,
       "usuariosRoubados": [],
-      "lastmiming": 1737150444502,
+      "lastmiming": 1737206973155,
       "registradoBlock": true,
       "regTimeStart": "2025-01-15T01:38:17.895Z",
       "regPrazo": "2025-01-17T01:38:17.895Z",
@@ -14680,7 +14680,7 @@
       "afkReason": "",
       "role": "",
       "reporte": 0,
-      "name": "Edd",
+      "name": "",
       "antispam": 0,
       "antispamlastclaim": 0,
       "silenced": false,
@@ -22142,7 +22142,7 @@
       "spammer": 0,
       "usuariosRoubados": [],
       "warn": 0,
-      "lastmiming": 1737145103203,
+      "lastmiming": 1737207461503,
       "registradoBlock": true,
       "regTimeStart": "2025-01-16T02:43:08.038Z",
       "regPrazo": "2025-01-18T02:43:08.038Z",
@@ -22191,7 +22191,7 @@
           "afkReason": ""
         }
       },
-      "lastmiming": 1736984831186
+      "lastmiming": 1737207084745
     },
     "5516981156744@s.whatsapp.net": {
       "counterPrivate": 0,
@@ -24197,7 +24197,36 @@
       "spammer": 0,
       "usuariosRoubados": []
     },
-    "553497704017@s.whatsapp.net,5521970385666@s.whatsapp.net": {}
+    "553497704017@s.whatsapp.net,5521970385666@s.whatsapp.net": {},
+    "558184216648@s.whatsapp.net,553898809542@s.whatsapp.net": {},
+    "553183665188@s.whatsapp.net": {},
+    "556294302742@s.whatsapp.net": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "~ 赤司 征十郎",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 0,
+      "warn": 0,
+      "afkInfo": {
+        "120363042501201148@g.us": {
+          "afkTime": -2,
+          "number": "556294302742@s.whatsapp.net",
+          "afkReason": ""
+        }
+      }
+    }
   },
   "chats": {
     "120363312968709293@g.us": {
@@ -38517,7 +38546,7 @@
           "shields": 0
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 45740,
+          "exp": 45794,
           "limit": 0,
           "role": "",
           "money": 0,
@@ -38535,7 +38564,7 @@
           "pontos": 0
         },
         "5521970385666@s.whatsapp.net": {
-          "exp": 18837,
+          "exp": 18871,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 100,
@@ -38548,8 +38577,8 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737203357589,
-          "messageCount": 1,
+          "lastMessageTime": 1737203961001,
+          "messageCount": 2,
           "pontos": 0,
           "almas": 0,
           "usuariosRoubados": [],
@@ -38576,7 +38605,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737154720534,
+          "lastMessageTime": 1737210930139,
           "messageCount": 1,
           "pontos": 160,
           "tempBan": false,
@@ -38627,7 +38656,7 @@
           "trojans": 0
         },
         "558199330656@s.whatsapp.net": {
-          "exp": 14933,
+          "exp": 15722,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 180,
@@ -38640,11 +38669,11 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737201024122,
+          "lastMessageTime": 1737206365444,
           "messageCount": 1,
           "pontos": 0,
           "usuariosRoubados": [],
-          "acaoTimer": "2025-01-15T01:38:52.601Z",
+          "acaoTimer": "2025-01-18T12:58:05.196Z",
           "almas": 0,
           "rouboTimestamp": "2024-11-25T16:31:56.439Z",
           "steals": 0,
@@ -38673,7 +38702,7 @@
           "steals": 0
         },
         "5521972685548@s.whatsapp.net": {
-          "exp": 22791,
+          "exp": 22827,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 240,
@@ -38686,8 +38715,8 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737201704547,
-          "messageCount": 2,
+          "lastMessageTime": 1737204257714,
+          "messageCount": 1,
           "pontos": 0,
           "almas": 0,
           "advLink": 0,
@@ -38717,7 +38746,7 @@
           "trojans": 0
         },
         "558897548069@s.whatsapp.net": {
-          "exp": 9870,
+          "exp": 9913,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 120,
@@ -38730,7 +38759,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737193521172,
+          "lastMessageTime": 1737206024964,
           "messageCount": 1,
           "pontos": 0,
           "tempBan": false,
@@ -38762,7 +38791,7 @@
           "trojans": 0
         },
         "553497704017@s.whatsapp.net": {
-          "exp": 6910,
+          "exp": 6924,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 90,
@@ -38775,7 +38804,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737197717274,
+          "lastMessageTime": 1737204298817,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -38840,7 +38869,7 @@
           "cocriador": false
         },
         "556292493236@s.whatsapp.net": {
-          "exp": 1717,
+          "exp": 1734,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 30,
@@ -38853,7 +38882,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737159750658,
+          "lastMessageTime": 1737208314369,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -38890,7 +38919,7 @@
           "trojans": 0
         },
         "556195667729@s.whatsapp.net": {
-          "exp": 12711,
+          "exp": 12898,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 50,
@@ -38903,8 +38932,8 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737203328618,
-          "messageCount": 1,
+          "lastMessageTime": 1737206147514,
+          "messageCount": 5,
           "pontos": 0,
           "almas": 0,
           "steals": 0,
@@ -38918,7 +38947,7 @@
           "lastslot": "2025-01-16T12:28:04.035Z"
         },
         "555599538879@s.whatsapp.net": {
-          "exp": 3955,
+          "exp": 3989,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 60,
@@ -38931,7 +38960,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737201475172,
+          "lastMessageTime": 1737204198012,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -38941,7 +38970,7 @@
           "trojans": 0
         },
         "554998412876@s.whatsapp.net": {
-          "exp": 2861,
+          "exp": 2904,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 60,
@@ -38954,7 +38983,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737139131427,
+          "lastMessageTime": 1737203810410,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -38963,7 +38992,7 @@
           "trojans": 0
         },
         "553188507912@s.whatsapp.net": {
-          "exp": 5574,
+          "exp": 5630,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 90,
@@ -38976,7 +39005,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737168562081,
+          "lastMessageTime": 1737208507032,
           "messageCount": 1,
           "pontos": 0,
           "acaoTimer": "2024-11-26T21:35:02.700Z",
@@ -39081,7 +39110,7 @@
           "almas": 0
         },
         "558184216648@s.whatsapp.net": {
-          "exp": 9609,
+          "exp": 9731,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 120,
@@ -39094,7 +39123,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737203240863,
+          "lastMessageTime": 1737206983146,
           "messageCount": 1,
           "pontos": 0,
           "acaoTimer": "2024-12-22T13:35:39.919Z",
@@ -39107,7 +39136,7 @@
           "lastslot": "2025-01-12T02:36:20.366Z"
         },
         "5516981119323@s.whatsapp.net": {
-          "exp": 2808,
+          "exp": 2941,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 60,
@@ -39120,7 +39149,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737187973948,
+          "lastMessageTime": 1737208288166,
           "messageCount": 1,
           "pontos": 0,
           "tempBan": false,
@@ -39151,7 +39180,7 @@
           "acaoTimer": "2024-12-28T15:17:17.635Z"
         },
         "554599015152@s.whatsapp.net": {
-          "exp": 13036,
+          "exp": 13340,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 1e+26,
@@ -39164,7 +39193,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737153653287,
+          "lastMessageTime": 1737205991076,
           "messageCount": 1,
           "pontos": 28,
           "usuariosRoubados": [],
@@ -39200,10 +39229,10 @@
           "trojans": 0
         },
         "553888016495@s.whatsapp.net": {
-          "exp": 1039339,
-          "limit": 8552,
+          "exp": 1039378,
+          "limit": 8582,
           "role": "Ｅｌｌｉｏｔ　Ａｌｄｅｒｓｏｎ",
-          "money": 117600,
+          "money": 120800,
           "level": 100,
           "adm": true,
           "legendary": false,
@@ -39213,7 +39242,7 @@
           "silenced": false,
           "maxlevel": true,
           "cocriador": false,
-          "lastMessageTime": 1737169704618,
+          "lastMessageTime": 1737209830705,
           "messageCount": 1,
           "pontos": 0,
           "acaoTimer": "2025-01-17T21:48:36.299Z",
@@ -39225,7 +39254,7 @@
           "steals": 0,
           "artifacts": 0,
           "rce": 0,
-          "trojans": 17100,
+          "trojans": 17160,
           "bankName": "🌻"
         },
         "5516988272864@s.whatsapp.net": {
@@ -39283,7 +39312,7 @@
           "pontos": 0
         },
         "5517992410887@s.whatsapp.net": {
-          "exp": 18745,
+          "exp": 19201,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 180,
@@ -39296,7 +39325,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737171300947,
+          "lastMessageTime": 1737208347698,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -39450,11 +39479,11 @@
           "cocriador": false
         },
         "5521966362125@s.whatsapp.net": {
-          "exp": 1981,
+          "exp": 2002,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
-          "money": 30,
-          "level": 1,
+          "money": 60,
+          "level": 2,
           "adm": false,
           "legendary": false,
           "banned": false,
@@ -39463,7 +39492,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737199250637,
+          "lastMessageTime": 1737209415519,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -39825,7 +39854,7 @@
           "cocriador": false
         },
         "5521995632127@s.whatsapp.net": {
-          "exp": 10284,
+          "exp": 10300,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 120,
@@ -39838,7 +39867,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737169833956,
+          "lastMessageTime": 1737208881868,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -39891,7 +39920,7 @@
           "pontos": 0
         },
         "5512997076907@s.whatsapp.net": {
-          "exp": 45303,
+          "exp": 45527,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 420,
@@ -39904,7 +39933,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737175187203,
+          "lastMessageTime": 1737208274026,
           "messageCount": 1,
           "pontos": 0,
           "tempBan": false,
@@ -40155,7 +40184,7 @@
           "trojans": 0
         },
         "553182537308@s.whatsapp.net": {
-          "exp": 30617,
+          "exp": 31174,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 0,
@@ -40168,7 +40197,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737202590215,
+          "lastMessageTime": 1737208422466,
           "messageCount": 1,
           "pontos": 83,
           "acaoTimer": "2025-01-17T21:27:06.946Z",
@@ -42590,7 +42619,7 @@
           "pontos": 0
         },
         "5516988148029@s.whatsapp.net": {
-          "exp": 10308,
+          "exp": 10344,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 120,
@@ -42603,7 +42632,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737161595257,
+          "lastMessageTime": 1737208410711,
           "messageCount": 1,
           "pontos": 0,
           "trojans": 0,
@@ -43393,7 +43422,7 @@
           "steals": 0
         },
         "554184958301@s.whatsapp.net": {
-          "exp": 2452,
+          "exp": 2549,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 60,
@@ -43406,7 +43435,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737159785074,
+          "lastMessageTime": 1737206192952,
           "messageCount": 1,
           "pontos": 0,
           "trojans": 0,
@@ -47033,7 +47062,7 @@
     "120363042501201148@g.us": {
       "users": {
         "351927285125@s.whatsapp.net": {
-          "exp": 880,
+          "exp": 882,
           "limit": 660000000000066,
           "role": "𝑵𝒆𝒗𝒆𝒓𝒎𝒐𝒓𝒆 ༒︎\n𝙼𝚎𝚜𝚝𝚛𝚎 𝚍𝚘𝚜 𝚌𝚘𝚛𝚟𝚘𝚜",
           "money": 666000000000000100,
@@ -47046,7 +47075,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737062640735,
+          "lastMessageTime": 1737207791248,
           "messageCount": 1,
           "pontos": 90,
           "tempBan": false,
@@ -47071,7 +47100,7 @@
           "trojans": 0
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 174849,
+          "exp": 175411,
           "limit": 0,
           "role": "",
           "money": 0,
@@ -47091,7 +47120,7 @@
           "usuariosRoubados": []
         },
         "5521997547386@s.whatsapp.net": {
-          "exp": 761,
+          "exp": 853,
           "limit": 1,
           "role": "Ａｒｑｕｉｔｅｔｏ　ｄｅ　Ｍａｌｗａｒｅ",
           "money": 3443332384,
@@ -47104,14 +47133,14 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737203415190,
+          "lastMessageTime": 1737210274753,
           "messageCount": 1,
           "pontos": 0,
           "slots": 0,
           "lastslot": 1737203344649,
           "almas": 1,
           "steals": 12,
-          "acaoTimer": "2025-01-18T09:25:45.551Z",
+          "acaoTimer": "2025-01-18T14:22:42.950Z",
           "usuariosRoubados": [
             "554792584937@s.whatsapp.net"
           ],
@@ -47127,7 +47156,7 @@
           "trojans": 0
         },
         "5521980818253@s.whatsapp.net": {
-          "exp": 5292,
+          "exp": 5455,
           "limit": 15,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 0,
@@ -47140,12 +47169,12 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737171550720,
+          "lastMessageTime": 1737210268160,
           "messageCount": 1,
           "pontos": 0,
           "almas": 2,
           "steals": 47,
-          "acaoTimer": "2025-01-18T02:46:46.462Z",
+          "acaoTimer": "2025-01-18T14:19:26.729Z",
           "usuariosRoubados": [
             "553496738698@s.whatsapp.net"
           ],
@@ -47202,7 +47231,7 @@
           "pontos": 0
         },
         "553187485309@s.whatsapp.net": {
-          "exp": 38004,
+          "exp": 38022,
           "limit": 0,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 17297134,
@@ -47215,7 +47244,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737166716323,
+          "lastMessageTime": 1737206378857,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -47235,20 +47264,20 @@
           "trojans": 0
         },
         "553496738698@s.whatsapp.net": {
-          "exp": 2699793770,
-          "limit": 22037,
+          "exp": 2699793779,
+          "limit": 22052,
           "role": "Ｅｌｌｉｏｔ　Ａｌｄｅｒｓｏｎ",
-          "money": 647778,
+          "money": 649378,
           "level": 100,
           "adm": false,
           "legendary": false,
           "banned": false,
           "adv": 0,
-          "tentativasRoubo": 1,
+          "tentativasRoubo": 0,
           "silenced": false,
           "maxlevel": true,
           "cocriador": false,
-          "lastMessageTime": 1737200710633,
+          "lastMessageTime": 1737204836737,
           "messageCount": 1,
           "pontos": 80,
           "almas": 0,
@@ -47260,8 +47289,8 @@
           "shields": 1,
           "slots": 1,
           "lastslot": 1737153695035,
-          "acaoTimer": "2025-01-17T22:41:10.995Z",
-          "rouboTimestamp": "2025-01-17T22:41:10.995Z",
+          "acaoTimer": "2025-01-18T12:53:56.742Z",
+          "rouboTimestamp": "2025-01-18T12:53:56.743Z",
           "mortoDemonio": false,
           "lastAttemptTimestamp": "2025-01-17T22:41:10.995Z",
           "shadowAtivo": false,
@@ -47273,7 +47302,7 @@
           "artifacts": 5,
           "vampire": 3,
           "shadows": 2,
-          "trojans": 35027
+          "trojans": 35057
         },
         "558196519603@s.whatsapp.net": {
           "exp": 581,
@@ -47758,7 +47787,7 @@
           "pontos": 0
         },
         "554588374084@s.whatsapp.net": {
-          "exp": 82606,
+          "exp": 82717,
           "limit": 10,
           "role": "Ｏｐｅｒａｔｉｖｏ　ｄｏ　Ｅｘéｒｃｉｔｏ　Ｓｏｍｂｒｉｏ",
           "money": 77866952,
@@ -47771,7 +47800,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737169458510,
+          "lastMessageTime": 1737210071942,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -47781,13 +47810,14 @@
           "usuariosRoubados": [
             "553187485309@s.whatsapp.net"
           ],
-          "acaoTimer": "2025-01-18T02:51:10.128Z",
+          "acaoTimer": "2025-01-18T14:20:14.183Z",
           "rouboTimestamp": "2025-01-17T22:58:32.551Z",
           "mortoDemonio": false,
           "lastAttemptTimestamp": "2025-01-17T22:58:32.551Z",
           "shadowAtivo": false,
           "slots": 0,
-          "lastslot": "2025-01-17T18:20:45.000Z"
+          "lastslot": "2025-01-17T18:20:45.000Z",
+          "shields": 0
         },
         "5513974277846@s.whatsapp.net": {
           "exp": 12,
@@ -47922,7 +47952,7 @@
           "trojans": 0
         },
         "553499915050@s.whatsapp.net": {
-          "exp": 431700,
+          "exp": 431975,
           "limit": 76,
           "role": "Ｄｅｓｅｎｖｏｌｖｅｄｏｒ　ｄｅ　Ｅｘｐｌｏｉｔｓ",
           "money": 45978663,
@@ -47935,7 +47965,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737171104937,
+          "lastMessageTime": 1737207763674,
           "messageCount": 1,
           "pontos": 2415,
           "rce": 0,
@@ -48006,6 +48036,24 @@
           "lastMessageTime": 1737128038354,
           "messageCount": null,
           "pontos": 0
+        },
+        "556294302742@s.whatsapp.net": {
+          "exp": 28,
+          "limit": 0,
+          "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
+          "money": 0,
+          "level": 0,
+          "adm": false,
+          "legendary": false,
+          "banned": false,
+          "adv": 0,
+          "tentativasRoubo": 5,
+          "silenced": false,
+          "maxlevel": false,
+          "cocriador": false,
+          "lastMessageTime": 1737206460577,
+          "messageCount": null,
+          "pontos": 0
         }
       },
       "isBanned": false,
@@ -48074,7 +48122,7 @@
       "lastSentTime": 1737138084185,
       "name": "♥️ Porta Jóias ♦️",
       "desc": "Hierarquia aqui funciona da seguinte forma: \n\n- membro ovo tem q chegar mandando foto do cartão de crédito frente e verso \n\n- membro comum tem q venerar todos os Ademir\n\n*ATENÇÃO NO QUE NÃO PODE*\n\n- Fica a vontade pra mandar oq tu quiser, mas segura tua onda, sem ficar flodando pornografia ou gore.\n\n- não tenho q ficar ditando um milhão d regras, só a questão do bom senso msm, se souber não se comportar como um primata já tá valendo.\n- proibido ser igual ao Vitor.\n\n- *BEBAM ÁGUA!!!!!!!*",
-      "totalMembros": 45,
+      "totalMembros": 46,
       "membros": [
         {
           "id": "557981607343@s.whatsapp.net",
@@ -48217,6 +48265,10 @@
           "admin": null
         },
         {
+          "id": "556294302742@s.whatsapp.net",
+          "admin": null
+        },
+        {
           "id": "5521967106022@s.whatsapp.net",
           "admin": null
         },
@@ -48314,7 +48366,8 @@
         "553499915050@s.whatsapp.net": [],
         "558299945900@s.whatsapp.net": [],
         "558197027012@s.whatsapp.net": [],
-        "559291244670@s.whatsapp.net": []
+        "559291244670@s.whatsapp.net": [],
+        "556294302742@s.whatsapp.net": []
       },
       "firstTime": false,
       "antiCallGp": true,
@@ -49854,21 +49907,6 @@
           "name": "Leonardo"
         }
       },
-      "sudoku": {
-        "gameData": {
-          "puzzle": "17-----569--2---7---21---48---8--7-1---379----6---1----98---4--4-1-9-3-7------5--",
-          "solution": "174938256986245173532167948249856731815379624367421895798513462451692387623784519",
-          "difficulty": "hard",
-          "status": "17-----569--2---7---21---48---8--7-1---379----6---1----98---4--4-1-9-3-7------5--"
-        },
-        "singleplayer": true,
-        "jogadores": [
-          "554588374084@s.whatsapp.net"
-        ],
-        "jogadas": {},
-        "regMsg": "BAE5ADC4DE16C91C",
-        "checked": true
-      },
       "pokers": {
         "gameData": "lobby",
         "table": [],
@@ -49879,154 +49917,6 @@
         "hands": {},
         "bet": 0,
         "total": 0
-      },
-      "quiz": {
-        "perguntaAndamento": false,
-        "loading": true,
-        "modo": true,
-        "categoria": "História",
-        "historico": [
-          {
-            "role": "system",
-            "content": "Voce é uma IA assistente para gerar quiz, perguntas e vestibulares\nvoce deve criar objetos em JS para perguntas, con alternativas, resposta e explicação seguindo este modelo:\n\n\n       { \n         Pergunta: 'Pergunta dentro do TEMA DA CATEGORIA',\n    Opcoes: {\n      A: 'Opcao',\n      B: 'Opcao',\n      C: 'Opcao',\n      D: 'Opcao'\n    },\n    Pontos: 'Valor de acordo com a dificuldade',\n     Money: 'Valor por dificuldade',\n     XP: 'Valor por dificuldade',\n    Resposta: 'Opcao certa A, B, C ou D',\n    Motivo: 'Explicacao detalhada da resposta'\n  }\n\n\nRetorne UM OBJETO JSON COMO PLAIN TEXT E NADA MAIS!!!\nno atributo Resposta, voce deve colocar apenas a letra certa!!\nFACA AS PERGUNTAS NO IDIOMA DA CATEGORIA E DO USUARIO!!! \nSE A CATEGORIA É INGLES, A PERGUNTA É EM INGLES\nSE A CATEGORIA É EM PORTUGUES, A PERGUNTA É EM PORTUGUES\nfaca perguntas dificeis e complexas adequadas a um vestibular referente ao tema\nAjuste o valor de Pontos, Money e XP de acordo com a complexidade e tema da\n, os valores minimos sao 25 pontos, 50 Money e 200xp, faca os valores serem\ndinamicos e variaveis conforme a complexidade!\nEvite repetir as mesmas perguntas"
-          },
-          {
-            "role": "user",
-            "content": "Agora siga as instrucoes que te foram dada  e crie o objeto JSON de uma pergunta com os MESNMOS CAMPOS/PROPRIEDADES no exemplo!!! { Pergunta: \"Pergunta dentro do TEMA DA CATEGORIA\", Opcoes: { A: \"Opcao\", B: \"Opcao\", C: \"Opcao\", D: \"Opcao\" }, Pontos: \"Valor de acordo com a dificuldade\", Money: \"Valor por dificuldade\", XP: \"Valor por dificuldade\", Resposta: \"Opcao certa A, B, C ou D\", Motivo: \"Explicacao detalhada da resposta\" } Retorne APENAS UM OBJETO JSON E MAIS NADA! use o \" nas propriedades do objeto. o usuario ira lhe passar a categoria que deseja, e voce deve gerar uma pergunta baseada no IDIOMA da categoria!! Se for SCIENCE, a pergunta deve ser ingles. Se for CIENCIA, a pergunta deve ser portugues. Se for MEDICINE, deve ser em ingles. se for MEDICINA, deve ser em portugues, etc.\n       \n       \n  NAO MANDE PERGUNTAS SEMELHANTES AUE VOCE JA TENHA ME ENVIADO, SEJA CRIATIVO E\n CRIE perguntas complexas e didiceis, finja que isto e um vestibular da maior\n faculdade que há, o vestibular tem que ser dificil\n        Categoria:\n        [Política]"
-          },
-          {
-            "role": "user",
-            "content": "Política"
-          },
-          {
-            "role": "assistant",
-            "content": "{\n  \"Pergunta\": \"Qual é a principal função do Poder Legislativo em um sistema democrático?\",\n  \"Opcoes\": {\n    \"A\": \"Criar e aprovar leis\",\n    \"B\": \"Executar as leis\",\n    \"C\": \"Interpretar as leis\",\n    \"D\": \"Fiscalizar o Executivo\"\n  },\n  \"Pontos\": \"35\",\n  \"Money\": \"75\",\n  \"XP\": \"300\",\n  \"Resposta\": \"A\",\n  \"Motivo\": \"A principal função do Poder Legislativo é criar e aprovar leis, que são fundamentais para a organização da sociedade e o funcionamento do Estado. O Legislativo também tem a função de fiscalizar o Executivo, mas a criação de leis é sua atribuição primária.\"\n}"
-          },
-          {
-            "role": "user",
-            "content": "Agora siga as instrucoes que te foram dada  e crie o objeto JSON de uma pergunta com os MESNMOS CAMPOS/PROPRIEDADES no exemplo!!! { Pergunta: \"Pergunta dentro do TEMA DA CATEGORIA\", Opcoes: { A: \"Opcao\", B: \"Opcao\", C: \"Opcao\", D: \"Opcao\" }, Pontos: \"Valor de acordo com a dificuldade\", Money: \"Valor por dificuldade\", XP: \"Valor por dificuldade\", Resposta: \"Opcao certa A, B, C ou D\", Motivo: \"Explicacao detalhada da resposta\" } Retorne APENAS UM OBJETO JSON E MAIS NADA! use o \" nas propriedades do objeto. o usuario ira lhe passar a categoria que deseja, e voce deve gerar uma pergunta baseada no IDIOMA da categoria!! Se for SCIENCE, a pergunta deve ser ingles. Se for CIENCIA, a pergunta deve ser portugues. Se for MEDICINE, deve ser em ingles. se for MEDICINA, deve ser em portugues, etc.\n       \n       \n  NAO MANDE PERGUNTAS SEMELHANTES AUE VOCE JA TENHA ME ENVIADO, SEJA CRIATIVO E\n CRIE perguntas complexas e didiceis, finja que isto e um vestibular da maior\n faculdade que há, o vestibular tem que ser dificil\n        Categoria:\n        [Tecnologia]"
-          },
-          {
-            "role": "user",
-            "content": "Tecnologia"
-          },
-          {
-            "role": "assistant",
-            "content": "{\n  \"Pergunta\": \"Qual é a principal diferença entre inteligência artificial fraca e forte?\",\n  \"Opcoes\": {\n    \"A\": \"A inteligência artificial fraca é capaz de realizar tarefas específicas, enquanto a forte possui consciência e compreensão.\",\n    \"B\": \"A inteligência artificial fraca pode aprender com dados, enquanto a forte não pode.\",\n    \"C\": \"A inteligência artificial fraca é mais avançada que a forte.\",\n    \"D\": \"A inteligência artificial forte é utilizada apenas em jogos, enquanto a fraca é usada em aplicações do dia a dia.\"\n  },\n  \"Pontos\": \"40\",\n  \"Money\": \"80\",\n  \"XP\": \"320\",\n  \"Resposta\": \"A\",\n  \"Motivo\": \"A principal diferença entre inteligência artificial fraca e forte é que a fraca é projetada para realizar tarefas específicas sem consciência, enquanto a forte tem a capacidade de entender e interpretar informações de forma semelhante a um ser humano, possuindo, portanto, um nível de consciência e compreensão mais elevado.\"\n}"
-          },
-          {
-            "role": "user",
-            "content": "Agora siga as instrucoes que te foram dada  e crie o objeto JSON de uma pergunta com os MESNMOS CAMPOS/PROPRIEDADES no exemplo!!! { Pergunta: \"Pergunta dentro do TEMA DA CATEGORIA\", Opcoes: { A: \"Opcao\", B: \"Opcao\", C: \"Opcao\", D: \"Opcao\" }, Pontos: \"Valor de acordo com a dificuldade\", Money: \"Valor por dificuldade\", XP: \"Valor por dificuldade\", Resposta: \"Opcao certa A, B, C ou D\", Motivo: \"Explicacao detalhada da resposta\" } Retorne APENAS UM OBJETO JSON E MAIS NADA! use o \" nas propriedades do objeto. o usuario ira lhe passar a categoria que deseja, e voce deve gerar uma pergunta baseada no IDIOMA da categoria!! Se for SCIENCE, a pergunta deve ser ingles. Se for CIENCIA, a pergunta deve ser portugues. Se for MEDICINE, deve ser em ingles. se for MEDICINA, deve ser em portugues, etc.\n       \n       \n  NAO MANDE PERGUNTAS SEMELHANTES AUE VOCE JA TENHA ME ENVIADO, SEJA CRIATIVO E\n CRIE perguntas complexas e didiceis, finja que isto e um vestibular da maior\n faculdade que há, o vestibular tem que ser dificil\n        Categoria:\n        [História]"
-          },
-          {
-            "role": "user",
-            "content": "História"
-          },
-          {
-            "role": "assistant",
-            "content": "{\n  \"Pergunta\": \"Qual foi a principal consequência da Revolução Industrial no século XIX na Europa?\",\n  \"Opcoes\": {\n    \"A\": \"Aumento da produção agrícola em larga escala.\",\n    \"B\": \"Desenvolvimento de um sistema de transporte ferroviário.\",\n    \"C\": \"Aumento da população urbana devido à migração para cidades.\",\n    \"D\": \"A formação de alianças políticas entre países europeus.\"\n  },\n  \"Pontos\": \"45\",\n  \"Money\": \"90\",\n  \"XP\": \"360\",\n  \"Resposta\": \"C\",\n  \"Motivo\": \"A Revolução Industrial resultou em um significativo aumento da população urbana, pois muitas pessoas migraram do campo para as cidades em busca de trabalho nas novas fábricas. Esse fenômeno alterou drasticamente a estrutura social e econômica da Europa, promovendo a urbanização e a formação de novas classes sociais.\"\n}"
-          },
-          {
-            "role": "user",
-            "content": "Agora siga as instrucoes que te foram dada  e crie o objeto JSON de uma pergunta com os MESNMOS CAMPOS/PROPRIEDADES no exemplo!!! { Pergunta: \"Pergunta dentro do TEMA DA CATEGORIA\", Opcoes: { A: \"Opcao\", B: \"Opcao\", C: \"Opcao\", D: \"Opcao\" }, Pontos: \"Valor de acordo com a dificuldade\", Money: \"Valor por dificuldade\", XP: \"Valor por dificuldade\", Resposta: \"Opcao certa A, B, C ou D\", Motivo: \"Explicacao detalhada da resposta\" } Retorne APENAS UM OBJETO JSON E MAIS NADA! use o \" nas propriedades do objeto. o usuario ira lhe passar a categoria que deseja, e voce deve gerar uma pergunta baseada no IDIOMA da categoria!! Se for SCIENCE, a pergunta deve ser ingles. Se for CIENCIA, a pergunta deve ser portugues. Se for MEDICINE, deve ser em ingles. se for MEDICINA, deve ser em portugues, etc.\n       \n       \n  NAO MANDE PERGUNTAS SEMELHANTES AUE VOCE JA TENHA ME ENVIADO, SEJA CRIATIVO E\n CRIE perguntas complexas e didiceis, finja que isto e um vestibular da maior\n faculdade que há, o vestibular tem que ser dificil\n        Categoria:\n        [História]"
-          },
-          {
-            "role": "user",
-            "content": "História"
-          },
-          {
-            "role": "assistant",
-            "content": "{\n  \"Pergunta\": \"Qual foi o impacto da Revolução Francesa na política europeia do século XIX?\",\n  \"Opcoes\": {\n    \"A\": \"Estabelecimento de monarquias absolutas em toda a Europa.\",\n    \"B\": \"Inspiração para movimentos de independência e revoluções liberais.\",\n    \"C\": \"Aumento do poder da Igreja Católica sobre os Estados.\",\n    \"D\": \"Criação de um império colonial europeu unificado.\"\n  },\n  \"Pontos\": \"50\",\n  \"Money\": \"100\",\n  \"XP\": \"400\",\n  \"Resposta\": \"B\",\n  \"Motivo\": \"A Revolução Francesa teve um impacto profundo na política europeia, inspirando movimentos de independência e revoluções liberais em diversos países. Ela desafiou as monarquias absolutas e promoveu ideais de liberdade, igualdade e fraternidade, que se espalharam por toda a Europa, resultando em mudanças significativas nas estruturas políticas e sociais.\"\n}"
-          },
-          {
-            "role": "user",
-            "content": "Agora siga as instrucoes que te foram dada  e crie o objeto JSON de uma pergunta com os MESNMOS CAMPOS/PROPRIEDADES no exemplo!!! { Pergunta: \"Pergunta dentro do TEMA DA CATEGORIA\", Opcoes: { A: \"Opcao\", B: \"Opcao\", C: \"Opcao\", D: \"Opcao\" }, Pontos: \"Valor de acordo com a dificuldade\", Money: \"Valor por dificuldade\", XP: \"Valor por dificuldade\", Resposta: \"Opcao certa A, B, C ou D\", Motivo: \"Explicacao detalhada da resposta\" } Retorne APENAS UM OBJETO JSON E MAIS NADA! use o \" nas propriedades do objeto. o usuario ira lhe passar a categoria que deseja, e voce deve gerar uma pergunta baseada no IDIOMA da categoria!! Se for SCIENCE, a pergunta deve ser ingles. Se for CIENCIA, a pergunta deve ser portugues. Se for MEDICINE, deve ser em ingles. se for MEDICINA, deve ser em portugues, etc.\n       \n       \n  NAO MANDE PERGUNTAS SEMELHANTES AUE VOCE JA TENHA ME ENVIADO, SEJA CRIATIVO E\n CRIE perguntas complexas e didiceis, finja que isto e um vestibular da maior\n faculdade que há, o vestibular tem que ser dificil\n        Categoria:\n        [Medicina]"
-          },
-          {
-            "role": "user",
-            "content": "Medicina"
-          },
-          {
-            "role": "assistant",
-            "content": "{\n  \"Pergunta\": \"Qual é a principal função do hormônio insulina no organismo humano?\",\n  \"Opcoes\": {\n    \"A\": \"Aumentar os níveis de glicose no sangue.\",\n    \"B\": \"Facilitar a absorção de glicose pelas células.\",\n    \"C\": \"Estimular a produção de hormônios do estresse.\",\n    \"D\": \"Regular a temperatura corporal.\"\n  },\n  \"Pontos\": \"30\",\n  \"Money\": \"70\",\n  \"XP\": \"250\",\n  \"Resposta\": \"B\",\n  \"Motivo\": \"A insulina é um hormônio produzido pelo pâncreas que desempenha um papel crucial na regulação dos níveis de glicose no sangue. Sua principal função é facilitar a absorção de glicose pelas células, permitindo que elas utilizem a glicose como fonte de energia. Sem a insulina, os níveis de glicose no sangue podem se tornar perigosamente altos, levando a condições como diabetes.\"\n}"
-          },
-          {
-            "role": "user",
-            "content": "Agora siga as instrucoes que te foram dada  e crie o objeto JSON de uma pergunta com os MESNMOS CAMPOS/PROPRIEDADES no exemplo!!! { Pergunta: \"Pergunta dentro do TEMA DA CATEGORIA\", Opcoes: { A: \"Opcao\", B: \"Opcao\", C: \"Opcao\", D: \"Opcao\" }, Pontos: \"Valor de acordo com a dificuldade\", Money: \"Valor por dificuldade\", XP: \"Valor por dificuldade\", Resposta: \"Opcao certa A, B, C ou D\", Motivo: \"Explicacao detalhada da resposta\" } Retorne APENAS UM OBJETO JSON E MAIS NADA! use o \" nas propriedades do objeto. o usuario ira lhe passar a categoria que deseja, e voce deve gerar uma pergunta baseada no IDIOMA da categoria!! Se for SCIENCE, a pergunta deve ser ingles. Se for CIENCIA, a pergunta deve ser portugues. Se for MEDICINE, deve ser em ingles. se for MEDICINA, deve ser em portugues, etc.\n       \n       \n  NAO MANDE PERGUNTAS SEMELHANTES AUE VOCE JA TENHA ME ENVIADO, SEJA CRIATIVO E\n CRIE perguntas complexas e didiceis, finja que isto e um vestibular da maior\n faculdade que há, o vestibular tem que ser dificil\n        Categoria:\n        [Geral]"
-          },
-          {
-            "role": "user",
-            "content": "Geral"
-          },
-          {
-            "role": "assistant",
-            "content": "{\n  \"Pergunta\": \"Qual é a teoria que explica a origem do universo e a expansão do espaço?\",\n  \"Opcoes\": {\n    \"A\": \"Teoria da Relatividade Geral\",\n    \"B\": \"Teoria do Big Bang\",\n    \"C\": \"Teoria da Evolução\",\n    \"D\": \"Teoria da Gravitação Universal\"\n  },\n  \"Pontos\": \"45\",\n  \"Money\": \"90\",\n  \"XP\": \"360\",\n  \"Resposta\": \"B\",\n  \"Motivo\": \"A Teoria do Big Bang é a explicação científica mais aceita para a origem do universo, sugerindo que ele começou a partir de um estado extremamente quente e denso e tem se expandido desde então. Essa teoria é suportada por evidências observacionais, como a radiação cósmica de fundo e a observação do desvio para o vermelho das galáxias.\"\n}"
-          },
-          {
-            "role": "user",
-            "content": "Agora siga as instrucoes que te foram dada  e crie o objeto JSON de uma pergunta com os MESNMOS CAMPOS/PROPRIEDADES no exemplo!!! { Pergunta: \"Pergunta dentro do TEMA DA CATEGORIA\", Opcoes: { A: \"Opcao\", B: \"Opcao\", C: \"Opcao\", D: \"Opcao\" }, Pontos: \"Valor de acordo com a dificuldade\", Money: \"Valor por dificuldade\", XP: \"Valor por dificuldade\", Resposta: \"Opcao certa A, B, C ou D\", Motivo: \"Explicacao detalhada da resposta\" } Retorne APENAS UM OBJETO JSON E MAIS NADA! use o \" nas propriedades do objeto. o usuario ira lhe passar a categoria que deseja, e voce deve gerar uma pergunta baseada no IDIOMA da categoria!! Se for SCIENCE, a pergunta deve ser ingles. Se for CIENCIA, a pergunta deve ser portugues. Se for MEDICINE, deve ser em ingles. se for MEDICINA, deve ser em portugues, etc.\n       \n       \n  NAO MANDE PERGUNTAS SEMELHANTES AUE VOCE JA TENHA ME ENVIADO, SEJA CRIATIVO E\n CRIE perguntas complexas e didiceis, finja que isto e um vestibular da maior\n faculdade que há, o vestibular tem que ser dificil\n        Categoria:\n        [História]"
-          },
-          {
-            "role": "user",
-            "content": "História"
-          },
-          {
-            "role": "assistant",
-            "content": "{\n  \"Pergunta\": \"Qual foi o principal objetivo da Conferência de Berlim de 1884-1885?\",\n  \"Opcoes\": {\n    \"A\": \"Estabelecer regras para a colonização da África.\",\n    \"B\": \"Promover a paz entre as potências europeias.\",\n    \"C\": \"Criar uma aliança militar contra os Estados Unidos.\",\n    \"D\": \"Definir fronteiras entre os países da América do Sul.\"\n  },\n  \"Pontos\": \"50\",\n  \"Money\": \"100\",\n  \"XP\": \"400\",\n  \"Resposta\": \"A\",\n  \"Motivo\": \"A Conferência de Berlim teve como principal objetivo estabelecer regras para a colonização da África, dividindo o continente entre as potências europeias de forma a evitar conflitos entre elas. Essa conferência marcou o início de um período de intensa exploração e colonização africana, que teve consequências duradouras para os países africanos.\"\n}"
-          },
-          {
-            "role": "user",
-            "content": "Agora siga as instrucoes que te foram dada  e crie o objeto JSON de uma pergunta com os MESNMOS CAMPOS/PROPRIEDADES no exemplo!!! { Pergunta: \"Pergunta dentro do TEMA DA CATEGORIA\", Opcoes: { A: \"Opcao\", B: \"Opcao\", C: \"Opcao\", D: \"Opcao\" }, Pontos: \"Valor de acordo com a dificuldade\", Money: \"Valor por dificuldade\", XP: \"Valor por dificuldade\", Resposta: \"Opcao certa A, B, C ou D\", Motivo: \"Explicacao detalhada da resposta\" } Retorne APENAS UM OBJETO JSON E MAIS NADA! use o \" nas propriedades do objeto. o usuario ira lhe passar a categoria que deseja, e voce deve gerar uma pergunta baseada no IDIOMA da categoria!! Se for SCIENCE, a pergunta deve ser ingles. Se for CIENCIA, a pergunta deve ser portugues. Se for MEDICINE, deve ser em ingles. se for MEDICINA, deve ser em portugues, etc.\n       \n       \n  NAO MANDE PERGUNTAS SEMELHANTES AUE VOCE JA TENHA ME ENVIADO, SEJA CRIATIVO E\n CRIE perguntas complexas e didiceis, finja que isto e um vestibular da maior\n faculdade que há, o vestibular tem que ser dificil\n        Categoria:\n        [Literatura]"
-          },
-          {
-            "role": "user",
-            "content": "Literatura"
-          },
-          {
-            "role": "assistant",
-            "content": "{\n  \"Pergunta\": \"Qual é a principal temática abordada na obra 'Dom Casmurro' de Machado de Assis?\",\n  \"Opcoes\": {\n    \"A\": \"A crítica social da elite carioca.\",\n    \"B\": \"Os conflitos entre classes sociais.\",\n    \"C\": \"O ciúme e a dúvida sobre a fidelidade conjugal.\",\n    \"D\": \"A busca pela identidade nacional brasileira.\"\n  },\n  \"Pontos\": \"40\",\n  \"Money\": \"85\",\n  \"XP\": \"350\",\n  \"Resposta\": \"C\",\n  \"Motivo\": \"'Dom Casmurro' é uma obra que explora profundamente o ciúme e a dúvida sobre a fidelidade conjugal, especialmente através da relação entre Bentinho e Capitu. A narrativa é permeada pela incerteza e pela subjetividade, levando o leitor a questionar a veracidade das percepções do narrador sobre a traição e a lealdade.\"\n}"
-          },
-          {
-            "role": "user",
-            "content": "Agora siga as instrucoes que te foram dada  e crie o objeto JSON de uma pergunta com os MESNMOS CAMPOS/PROPRIEDADES no exemplo!!! { Pergunta: \"Pergunta dentro do TEMA DA CATEGORIA\", Opcoes: { A: \"Opcao\", B: \"Opcao\", C: \"Opcao\", D: \"Opcao\" }, Pontos: \"Valor de acordo com a dificuldade\", Money: \"Valor por dificuldade\", XP: \"Valor por dificuldade\", Resposta: \"Opcao certa A, B, C ou D\", Motivo: \"Explicacao detalhada da resposta\" } Retorne APENAS UM OBJETO JSON E MAIS NADA! use o \" nas propriedades do objeto. o usuario ira lhe passar a categoria que deseja, e voce deve gerar uma pergunta baseada no IDIOMA da categoria!! Se for SCIENCE, a pergunta deve ser ingles. Se for CIENCIA, a pergunta deve ser portugues. Se for MEDICINE, deve ser em ingles. se for MEDICINA, deve ser em portugues, etc.\n       \n       \n  NAO MANDE PERGUNTAS SEMELHANTES AUE VOCE JA TENHA ME ENVIADO, SEJA CRIATIVO E\n CRIE perguntas complexas e didiceis, finja que isto e um vestibular da maior\n faculdade que há, o vestibular tem que ser dificil\n        Categoria:\n        [História]"
-          },
-          {
-            "role": "user",
-            "content": "História"
-          },
-          {
-            "role": "assistant",
-            "content": "{\n  \"Pergunta\": \"Quais foram as principais causas da Primeira Guerra Mundial?\",\n  \"Opcoes\": {\n    \"A\": \"A Revolução Industrial e a ascensão do socialismo.\",\n    \"B\": \"O imperialismo, nacionalismo e alianças militares.\",\n    \"C\": \"A crise econômica de 1929 e o Tratado de Versalhes.\",\n    \"D\": \"A corrida armamentista e a independência das colônias.\"\n  },\n  \"Pontos\": \"50\",\n  \"Money\": \"100\",\n  \"XP\": \"400\",\n  \"Resposta\": \"B\",\n  \"Motivo\": \"As principais causas da Primeira Guerra Mundial incluem o imperialismo, que levou a rivalidades entre potências europeias; o nacionalismo, que fomentou tensões étnicas e políticas; e as alianças militares que criaram um ambiente propenso ao conflito. Esses fatores culminaram no assassinato do arquiduque Francisco Ferdinando, que foi o estopim para o início da guerra.\"\n}"
-          },
-          {
-            "role": "user",
-            "content": "Agora siga as instrucoes que te foram dada  e crie o objeto JSON de uma pergunta com os MESNMOS CAMPOS/PROPRIEDADES no exemplo!!! { Pergunta: \"Pergunta dentro do TEMA DA CATEGORIA\", Opcoes: { A: \"Opcao\", B: \"Opcao\", C: \"Opcao\", D: \"Opcao\" }, Pontos: \"Valor de acordo com a dificuldade\", Money: \"Valor por dificuldade\", XP: \"Valor por dificuldade\", Resposta: \"Opcao certa A, B, C ou D\", Motivo: \"Explicacao detalhada da resposta\" } Retorne APENAS UM OBJETO JSON E MAIS NADA! use o \" nas propriedades do objeto. o usuario ira lhe passar a categoria que deseja, e voce deve gerar uma pergunta baseada no IDIOMA da categoria!! Se for SCIENCE, a pergunta deve ser ingles. Se for CIENCIA, a pergunta deve ser portugues. Se for MEDICINE, deve ser em ingles. se for MEDICINA, deve ser em portugues, etc.\n       \n       \n  NAO MANDE PERGUNTAS SEMELHANTES AUE VOCE JA TENHA ME ENVIADO, SEJA CRIATIVO E\n CRIE perguntas complexas e didiceis, finja que isto e um vestibular da maior\n faculdade que há, o vestibular tem que ser dificil\n        Categoria:\n        [Mitologia]"
-          },
-          {
-            "role": "user",
-            "content": "Mitologia"
-          },
-          {
-            "role": "assistant",
-            "content": "```json\n{\n  \"Pergunta\": \"Qual é o principal papel de Zeus na mitologia grega?\",\n  \"Opcoes\": {\n    \"A\": \"Deus do submundo.\",\n    \"B\": \"Deus da guerra.\",\n    \"C\": \"Deus dos deuses e do céu.\",\n    \"D\": \"Deus do amor e da beleza.\"\n  },\n  \"Pontos\": \"30\",\n  \"Money\": \"60\",\n  \"XP\": \"250\",\n  \"Resposta\": \"C\",\n  \"Motivo\": \"Zeus é considerado o deus supremo na mitologia grega, governando os outros deuses e controlando o céu e o clima. Ele é frequentemente associado ao raio e à justiça, sendo uma figura central nas narrativas míticas que explicam a ordem do cosmos e as relações entre os deuses e os humanos.\"\n}\n```"
-          }
-        ],
-        "pergunta": "```json\n{\n  \"Pergunta\": \"Qual é o principal papel de Zeus na mitologia grega?\",\n  \"Opcoes\": {\n    \"A\": \"Deus do submundo.\",\n    \"B\": \"Deus da guerra.\",\n    \"C\": \"Deus dos deuses e do céu.\",\n    \"D\": \"Deus do amor e da beleza.\"\n  },\n  \"Pontos\": \"30\",\n  \"Money\": \"60\",\n  \"XP\": \"250\",\n  \"Resposta\": \"C\",\n  \"Motivo\": \"Zeus é considerado o deus supremo na mitologia grega, governando os outros deuses e controlando o céu e o clima. Ele é frequentemente associado ao raio e à justiça, sendo uma figura central nas narrativas míticas que explicam a ordem do cosmos e as relações entre os deuses e os humanos.\"\n}\n```",
-        "cp": "",
-        "ca": "",
-        "cm": "",
-        "xp": 0,
-        "pontos": "50",
-        "mony": "100",
-        "id": "BAE551E0CB793A6A",
-        "time": "",
-        "math": false
-      },
-      "roleta": {
-        "jogadores": [],
-        "emAndamento": true,
-        "montante": 20802000,
-        "startTime": "2025-01-15T14:28:14.126Z"
       }
     },
     "5524998599493@s.whatsapp.net": {
@@ -50577,7 +50467,7 @@
           "usuariosRoubados": []
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 750,
+          "exp": 786,
           "limit": 0,
           "role": "",
           "money": 0,
@@ -50629,7 +50519,7 @@
           "nsfwAdv": 2
         },
         "553497704017@s.whatsapp.net": {
-          "exp": 3277,
+          "exp": 3426,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 60,
@@ -50642,8 +50532,8 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737162784847,
-          "messageCount": 2,
+          "lastMessageTime": 1737207186950,
+          "messageCount": 1,
           "pontos": 0,
           "nsfwAdv": 2
         },
@@ -50666,7 +50556,7 @@
           "pontos": 0
         },
         "5511952315622@s.whatsapp.net": {
-          "exp": 447,
+          "exp": 758,
           "limit": 0,
           "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
           "money": 0,
@@ -50679,7 +50569,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737129493452,
+          "lastMessageTime": 1737207352990,
           "messageCount": 1,
           "pontos": 0
         },
@@ -51334,7 +51224,7 @@
           "usuariosRoubados": []
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 681,
+          "exp": 700,
           "limit": 0,
           "role": "",
           "money": 0,
@@ -51508,7 +51398,7 @@
           "usuariosRoubados": []
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 36077,
+          "exp": 36137,
           "limit": 0,
           "role": "",
           "money": 0,
@@ -51527,10 +51417,10 @@
           "usuariosRoubados": []
         },
         "5521970385666@s.whatsapp.net": {
-          "exp": 10335515,
-          "limit": 22557,
+          "exp": 10336086,
+          "limit": 22962,
           "role": "Ｅｌｌｉｏｔ　Ａｌｄｅｒｓｏｎ",
-          "money": 64000,
+          "money": 107200,
           "level": 100,
           "adm": true,
           "legendary": false,
@@ -51545,7 +51435,7 @@
           "pontos": 0,
           "usuariosRoubados": [],
           "shields": 0,
-          "trojans": 45000,
+          "trojans": 45810,
           "bankName": "Sra. Mercês",
           "acaoTimer": "2025-01-17T20:25:42.970Z",
           "rouboTimestamp": "2025-01-17T19:20:57.528Z",
@@ -51583,7 +51473,7 @@
           "steals": 0
         },
         "558199330656@s.whatsapp.net": {
-          "exp": 5531,
+          "exp": 5812,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 90,
@@ -51603,7 +51493,7 @@
           "steals": 0
         },
         "554197056898@s.whatsapp.net": {
-          "exp": 230705,
+          "exp": 232387,
           "limit": 4,
           "role": "Ｌｉｂｅｒａｄｏｒ　ｄｅ　Ｄａｄｏｓ",
           "money": 0,
@@ -51678,10 +51568,10 @@
           "divorcioId": "BAE52DC4D1ADBF4B"
         },
         "553898809542@s.whatsapp.net": {
-          "exp": 66727305,
-          "limit": 48499,
+          "exp": 66729136,
+          "limit": 50209,
           "role": "Ｅｌｌｉｏｔ　Ａｌｄｅｒｓｏｎ",
-          "money": 133816,
+          "money": 316216,
           "level": 100,
           "adm": true,
           "legendary": false,
@@ -51696,7 +51586,7 @@
           "pontos": 0,
           "usuariosRoubados": [],
           "rouboTimestamp": "2025-01-17T20:20:39.020Z",
-          "trojans": 97772,
+          "trojans": 101192,
           "acaoTimer": "2025-01-17T20:20:39.017Z",
           "shields": 0,
           "bankName": "𝐺𝑒𝑟 𝑀𝑜𝑡𝑎",
@@ -51728,7 +51618,7 @@
           "steals": 0
         },
         "5511957799646@s.whatsapp.net": {
-          "exp": 210700,
+          "exp": 211415,
           "limit": 4,
           "role": "Ｌｉｂｅｒａｄｏｒ　ｄｅ　Ｄａｄｏｓ",
           "money": 775,
@@ -51749,7 +51639,7 @@
           "steals": 0
         },
         "5513981141776@s.whatsapp.net": {
-          "exp": 224785,
+          "exp": 224939,
           "limit": 4,
           "role": "Ｌｉｂｅｒａｄｏｒ　ｄｅ　Ｄａｄｏｓ",
           "money": 246,
@@ -51788,7 +51678,7 @@
           "shadowAtivo": false
         },
         "553188507912@s.whatsapp.net": {
-          "exp": 1079,
+          "exp": 1113,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 30,
@@ -51865,7 +51755,7 @@
           "cocriador": false
         },
         "5512997076907@s.whatsapp.net": {
-          "exp": 223215,
+          "exp": 223614,
           "limit": 4,
           "role": "Ｌｉｂｅｒａｄｏｒ　ｄｅ　Ｄａｄｏｓ",
           "money": 1495,
@@ -51906,7 +51796,7 @@
           "steals": 0
         },
         "556295410574@s.whatsapp.net": {
-          "exp": 209085,
+          "exp": 209184,
           "limit": 4,
           "role": "Ｌｉｂｅｒａｄｏｒ　ｄｅ　Ｄａｄｏｓ",
           "money": 860,
@@ -51954,7 +51844,7 @@
           "steals": 0
         },
         "558184216648@s.whatsapp.net": {
-          "exp": 210420,
+          "exp": 211122,
           "limit": 4,
           "role": "Ｌｉｂｅｒａｄｏｒ　ｄｅ　Ｄａｄｏｓ",
           "money": 615,
@@ -52043,7 +51933,7 @@
           "pontos": 0
         },
         "555596624577@s.whatsapp.net": {
-          "exp": 4832,
+          "exp": 4975,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 90,
@@ -52085,7 +51975,7 @@
           "steals": 0
         },
         "5521972685548@s.whatsapp.net": {
-          "exp": 219012,
+          "exp": 219048,
           "limit": 4,
           "role": "Ｌｉｂｅｒａｄｏｒ　ｄｅ　Ｄａｄｏｓ",
           "money": 1264,
@@ -52156,7 +52046,7 @@
           "steals": 0
         },
         "553888016495@s.whatsapp.net": {
-          "exp": 87280,
+          "exp": 87291,
           "limit": 0,
           "role": "Ｅｎｇｅｎｈｅｉｒｏ　Ｓｏｃｉａｌ",
           "money": 600,
@@ -52180,7 +52070,7 @@
           "rouboTimestamp": "2025-01-14T23:38:22.983Z"
         },
         "556295757489@s.whatsapp.net": {
-          "exp": 1752,
+          "exp": 1861,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 30,
@@ -52383,7 +52273,7 @@
           "steals": 0
         },
         "5511952707887@s.whatsapp.net": {
-          "exp": 65665,
+          "exp": 66629,
           "limit": 3,
           "role": "Ｅｘｐｌｏｉｔ　Ｆａｎｔａｓｍａ",
           "money": 994,
@@ -52409,7 +52299,7 @@
           "lastslot": "2025-01-17T20:21:01.629Z"
         },
         "555391818933@s.whatsapp.net": {
-          "exp": 5132,
+          "exp": 5151,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 90,
@@ -52549,7 +52439,7 @@
           "steals": 0
         },
         "5516981119323@s.whatsapp.net": {
-          "exp": 2064,
+          "exp": 2148,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 60,
@@ -52711,7 +52601,7 @@
           "steals": 0
         },
         "558197887354@s.whatsapp.net": {
-          "exp": 38174,
+          "exp": 40595,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 231,
@@ -52731,7 +52621,7 @@
           "shields": 0
         },
         "5511952899890@s.whatsapp.net": {
-          "exp": 16742,
+          "exp": 16751,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 185,
@@ -53005,7 +52895,7 @@
           "steals": 0
         },
         "5511949104591@s.whatsapp.net": {
-          "exp": 376,
+          "exp": 600,
           "limit": 0,
           "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
           "money": 0,
@@ -53145,7 +53035,7 @@
           "steals": 0
         },
         "555197716762@s.whatsapp.net": {
-          "exp": 12953,
+          "exp": 13084,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 120,
@@ -54086,10 +53976,10 @@
       "lastSuccess": 1737109233206
     },
     "menu-menu.js": {
-      "total": 194,
-      "success": 194,
-      "last": 1737169143590,
-      "lastSuccess": 1737169143590
+      "total": 195,
+      "success": 195,
+      "last": 1737207158914,
+      "lastSuccess": 1737207158914
     },
     "dono-unbanchat.js": {
       "total": 30,
@@ -54110,10 +54000,10 @@
       "lastSuccess": 1736706897261
     },
     "dono-exec.js": {
-      "total": 110,
-      "success": 110,
-      "last": 1737041860558,
-      "lastSuccess": 1737041860558
+      "total": 111,
+      "success": 111,
+      "last": 1737207710064,
+      "lastSuccess": 1737207710064
     },
     "bingImg.js": {
       "total": 6,
@@ -54122,10 +54012,10 @@
       "lastSuccess": 1736168685862
     },
     "funAcoes7.js": {
-      "total": 957,
-      "success": 956,
-      "last": 1737192346172,
-      "lastSuccess": 1737192346172
+      "total": 959,
+      "success": 958,
+      "last": 1737207495478,
+      "lastSuccess": 1737207495478
     },
     "grupo-perfil.js": {
       "total": 648,
@@ -54188,16 +54078,16 @@
       "lastSuccess": 1732134744175
     },
     "dl-yt_play.js": {
-      "total": 495,
-      "success": 491,
-      "last": 1737196136757,
-      "lastSuccess": 1737196136757
+      "total": 498,
+      "success": 494,
+      "last": 1737209521992,
+      "lastSuccess": 1737209521992
     },
     "dono-reporte.js": {
-      "total": 32,
-      "success": 30,
-      "last": 1737158854790,
-      "lastSuccess": 1737158854790
+      "total": 33,
+      "success": 31,
+      "last": 1737207680289,
+      "lastSuccess": 1737207680289
     },
     "dono-desmutar.js": {
       "total": 19,
@@ -54230,10 +54120,10 @@
       "lastSuccess": 1736959057116
     },
     "sticker-sticker.js": {
-      "total": 576,
-      "success": 576,
-      "last": 1737191910619,
-      "lastSuccess": 1737191910619
+      "total": 581,
+      "success": 581,
+      "last": 1737210932024,
+      "lastSuccess": 1737210932024
     },
     "conversor-totext.js": {
       "total": 9,
@@ -54308,10 +54198,10 @@
       "lastSuccess": 1737203410208
     },
     "fun-acoes.js": {
-      "total": 109,
-      "success": 108,
-      "last": 1737175818539,
-      "lastSuccess": 1737175818539
+      "total": 115,
+      "success": 114,
+      "last": 1737210164603,
+      "lastSuccess": 1737210164603
     },
     "cfgLoja.js": {
       "total": 88,
@@ -54428,10 +54318,10 @@
       "lastSuccess": 1737127152056
     },
     "quiz.js": {
-      "total": 272,
-      "success": 217,
-      "last": 1737075979484,
-      "lastSuccess": 1737075979484
+      "total": 273,
+      "success": 218,
+      "last": 1737207609093,
+      "lastSuccess": 1737207609093
     },
     "funHoroscopo.js": {
       "total": 12,
@@ -54446,10 +54336,10 @@
       "lastSuccess": 1736113612491
     },
     "dono-cmd-del.js": {
-      "total": 381,
-      "success": 381,
-      "last": 1737166062362,
-      "lastSuccess": 1737166062362
+      "total": 382,
+      "success": 382,
+      "last": 1737204217208,
+      "lastSuccess": 1737204217208
     },
     "dl-ytv.js": {
       "total": 20,
@@ -54470,16 +54360,16 @@
       "lastSuccess": 1737168863535
     },
     "conversor-toimg.js": {
-      "total": 35,
-      "success": 35,
-      "last": 1737153572427,
-      "lastSuccess": 1737153572427
+      "total": 40,
+      "success": 40,
+      "last": 1737210169182,
+      "lastSuccess": 1737210169182
     },
     "games-roleta.js": {
-      "total": 46,
-      "success": 46,
-      "last": 1737085240452,
-      "lastSuccess": 1737085240452
+      "total": 49,
+      "success": 49,
+      "last": 1737207748232,
+      "lastSuccess": 1737207748232
     },
     "cfgRick.js": {
       "total": 31,
@@ -54650,10 +54540,10 @@
       "lastSuccess": 1735912387103
     },
     "gameSudoku.js": {
-      "total": 80,
-      "success": 80,
-      "last": 1737169996722,
-      "lastSuccess": 1737169996722
+      "total": 84,
+      "success": 84,
+      "last": 1737207611601,
+      "lastSuccess": 1737207611601
     },
     "lista-advertidos.js": {
       "total": 7,
@@ -54810,6 +54700,12 @@
       "success": 2,
       "last": 1737065108600,
       "lastSuccess": 1737065108600
+    },
+    "conversor-tomp3.js": {
+      "total": 2,
+      "success": 2,
+      "last": 1737206637441,
+      "lastSuccess": 1737206637441
     }
   },
   "msgs": {},
@@ -54854,14 +54750,14 @@
           "conta": "953415981012",
           "sepa": "SE6844757256636490",
           "wallet": "WAL-0936010359",
-          "saldo": 800071.1137349268
+          "saldo": 800131.3053013291
         },
         "5521970385666@s.whatsapp.net": {
           "titular": "Sra. Mercês",
           "conta": "535441291871",
           "sepa": "SE5822427639074913",
           "wallet": "WAL-9159324339",
-          "saldo": 2788399.0658727046,
+          "saldo": 2790427.5906390515,
           "limiteSaque": 1
         },
         "5513981141776@s.whatsapp.net": {
@@ -54869,7 +54765,7 @@
           "conta": "661874616333",
           "sepa": "SE4577404167973932",
           "wallet": "WAL-1059128979",
-          "saldo": 308166.69994624576,
+          "saldo": 308228.528447893,
           "limiteSaque": 6
         },
         "5521969915001@s.whatsapp.net": {
@@ -54885,7 +54781,7 @@
           "conta": "856213977478",
           "sepa": "SE4417515791941896",
           "wallet": "WAL-4945103334",
-          "saldo": 120585.65135645415,
+          "saldo": 120606.82040093142,
           "limiteSaque": 1
         },
         "554197056898@s.whatsapp.net": {
@@ -54893,7 +54789,7 @@
           "conta": "934819026141",
           "sepa": "SE8183249194361544",
           "wallet": "WAL-3202947270",
-          "saldo": 1762.6254326426338,
+          "saldo": 1766.6965946937971,
           "limiteSaque": 2
         },
         "553898809542@s.whatsapp.net": {
@@ -54901,7 +54797,7 @@
           "conta": "396664072159",
           "sepa": "SE8065925013929199",
           "wallet": "WAL-9124202523",
-          "saldo": 3789808.0651326748
+          "saldo": 3800657.6331259203
         },
         "559294556204@s.whatsapp.net": {
           "titular": "Iury Jonathan martins Amorim",
@@ -54915,7 +54811,7 @@
           "conta": "325272529697",
           "sepa": "SE3124701011125993",
           "wallet": "WAL-6946516905",
-          "saldo": 1009635.901417335,
+          "saldo": 1010446.411626259,
           "limiteSaque": 1
         },
         "554388686229@s.whatsapp.net": {
