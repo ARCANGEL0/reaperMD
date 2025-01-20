@@ -671,12 +671,446 @@ getRobot(global.db.data.chats[m.chat].quiz.historico, categories[text -1])
     
     }
     }
+    
     else if(text=== 'apagar'){
       m.react("✅")
       delete global.db.data.chats[m.chat].quiz
     }
+    else if(text.length>3) {
+   
+       
+  
+        
+   // Assuming you have these variables defined somewhere in your script
+if(!global.db.data.chats[m.chat].quiz.modo){
+  global.db.data.chats[m.chat].quiz.modo =false
+}
+
+// Your existing code...
+
+const selectedCategory = text
+
+global.db.data.chats[m.chat].quiz.categoria = selectedCategory
+
+
+
+  const timeDifference = currentTime - global.db.data.chats[m.chat].quiz.time;
+ 
+  if (!global.db.data.chats[m.chat].quiz.modo && timeDifference < delayBetweenQuestions) {
+    // If the user attempts to ask a question too soon, provide a warning
+    const remainingTime = delayBetweenQuestions - timeDifference;
+    
+    const remainingTimeInSeconds = Math.ceil(remainingTime / 1000);
+
+
+const timing  = global.db.data.chats[m.chat].language === 'en' ? 
+`> [!] 𝙷𝚎𝚢 𝚔𝚒𝚍𝚍𝚘, 𝚢𝚘𝚞'𝚛𝚎 𝚐𝚘𝚒𝚗' 𝚝𝚘𝚘 𝚏𝚊𝚜𝚝. 𝚈𝚘𝚞'𝚛𝚎 𝚜𝚎𝚗𝚍𝚒𝚗𝚐 𝚝𝚘𝚘 𝚖𝚊𝚗𝚢 𝚙𝚊𝚌𝚔𝚎𝚝𝚜 𝚝𝚘 𝚝𝚑𝚎 𝚑𝚘𝚜𝚝 𝚊𝚗𝚍 𝚜𝚝𝚊𝚗𝚍𝚒𝚗𝚐 𝚝𝚑𝚎𝚛𝚎 𝚠𝚒𝚝𝚑 𝟷𝟶𝟶% 𝚕𝚘𝚜𝚜. 𝚁𝚎𝚕𝚊𝚡 𝚔𝚒𝚍, 𝚊𝚗𝚍 𝚠𝚊𝚒𝚝 𝚊𝚋𝚘𝚞𝚝 ${remainingTimeInSeconds} 𝚜𝚎𝚌𝚘𝚗𝚍𝚜`
+:
+`> [!] 𝙴𝚒, 𝚐𝚊𝚛𝚘𝚝𝚘, 𝚟𝚘𝚌𝚎 𝚎𝚜𝚝𝚊 𝚒𝚗𝚍𝚘 𝚛𝚊𝚙𝚒𝚍𝚘 𝚍𝚎𝚖𝚊𝚒𝚜. 𝙴𝚜𝚝𝚊 𝚎𝚗𝚟𝚒𝚊𝚗𝚍𝚘 𝚖𝚞𝚒𝚝𝚘𝚜 𝚙𝚊𝚌𝚘𝚝𝚎𝚜 𝚙𝚊𝚛𝚊 𝚘 𝚑𝚘𝚜𝚝 𝚎 𝚏𝚒𝚌𝚊𝚗𝚍𝚘 𝚕𝚊 𝚌𝚘𝚖 𝟷𝟶𝟶% 𝚍𝚎 𝚙𝚎𝚛𝚍𝚊. 𝚁𝚎𝚕𝚊𝚡𝚊, 𝚐𝚊𝚛𝚘𝚝𝚘, 𝚎 𝚎𝚜𝚙𝚎𝚛𝚊 𝚌𝚎𝚛𝚌𝚊 𝚍𝚎 ${remainingTimeInSeconds} 𝚜𝚎𝚐𝚞𝚗𝚍𝚘𝚜.`
+    return m.reply(timing)
+  } 
+  
+if (global.db.data.chats[m.chat].quiz.modo && global.db.data.chats[m.chat].quiz.perguntaAndamento) {
+   
+const awaitNew  = global.db.data.chats[m.chat].language === 'en' ? 
+`> [!] 𝙷𝚎𝚢 𝚔𝚒𝚍𝚍𝚘, 𝚍𝚘𝚗'𝚝 𝚐𝚘 𝚊𝚛𝚘𝚞𝚗𝚍 𝚜𝚔𝚒𝚙𝚙𝚒𝚗𝚐 𝚝𝚑𝚎 𝚚𝚞𝚎𝚜𝚝𝚒𝚘𝚗𝚜. 𝙰𝚗𝚜𝚠𝚎𝚛 𝚝𝚑𝚎 𝚕𝚊𝚜𝚝 𝚘𝚗𝚎 𝙸 𝚐𝚊𝚟𝚎 𝚢𝚘𝚞 𝚏𝚒𝚛𝚜𝚝 𝚋𝚎𝚏𝚘𝚛𝚎 𝙸 𝚐𝚎𝚗𝚎𝚛𝚊𝚝𝚎 𝚊𝚗𝚘𝚝𝚑𝚎𝚛 𝚚𝚞𝚎𝚜𝚝𝚒𝚘𝚗.`
+:
+`> [!] 𝙴𝚒, 𝚐𝚊𝚛𝚘𝚝𝚘, 𝚗𝚊𝚘 𝚏𝚒𝚚𝚞𝚎 𝚙𝚞𝚕𝚊𝚗𝚍𝚘 𝚊𝚜 𝚙𝚎𝚛𝚐𝚞𝚗𝚝𝚊𝚜. 𝚁𝚎𝚜𝚙𝚘𝚗𝚍𝚊 𝚊 𝚞𝚕𝚝𝚒𝚖𝚊 𝚚𝚞𝚎 𝚎𝚞 𝚝𝚎 𝚍𝚎𝚒 𝚙𝚛𝚒𝚖𝚎𝚒𝚛𝚘, 𝚊𝚗𝚝𝚎𝚜 𝚚𝚞𝚎 𝚎𝚞 𝚐𝚎𝚛𝚎 𝚘𝚞𝚝𝚛𝚊 𝚙𝚎𝚛𝚐𝚞𝚗𝚝𝚊.`
+  
+
+return m.reply(awaitNew)
+  }
+  if(global.db.data.chats[m.chat].quiz.loading===true){
+
+    const onWait  = global.db.data.chats[m.chat].language === 'en' ? 
+`> [!] 𝙷𝚎𝚢 𝚔𝚒𝚍, 𝚠𝚊𝚒𝚝 𝚏𝚘𝚛 𝚖𝚎 𝚝𝚘 𝚐𝚎𝚗𝚎𝚛𝚊𝚝𝚎 𝚝𝚑𝚎 𝚚𝚞𝚎𝚜𝚝𝚒𝚘𝚗 𝚋𝚎𝚏𝚘𝚛𝚎 𝚊𝚜𝚔𝚒𝚗𝚐 𝚏𝚘𝚛 𝚊𝚗𝚘𝚝𝚑𝚎𝚛 𝚘𝚗𝚎. 𝙰𝚛𝚎 𝚢𝚘𝚞 𝚊𝚗𝚡𝚒𝚘𝚞𝚜`
+:
+`> [!] 𝚀𝚞𝚊𝚕𝚎 𝚐𝚊𝚛𝚘𝚝𝚘, 𝚎𝚜𝚙𝚎𝚛𝚊 𝚎𝚞 𝚐𝚎𝚛𝚊𝚛 𝚊 𝚙𝚎𝚛𝚐𝚞𝚗𝚝𝚊 𝚊𝚗𝚝𝚎𝚜 𝚍𝚎 𝚖𝚎 𝚙𝚎𝚍𝚒𝚛 𝚘𝚞𝚝𝚛𝚊, 𝚎𝚜𝚝𝚊 𝚊𝚗𝚜𝚒𝚘𝚜𝚘?`
+  
+
+    return m.reply(onWait);
+  }
+     m.react("⏳")
+ global.db.data.chats[m.chat].quiz.loading=true
+if (!global.db.data.chats[m.chat].quiz.historico ||
+global.db.data.chats[m.chat].quiz.historico.length === 0){
+  global.db.data.chats[m.chat].quiz.historico  = [
+
+    {
+        "role": "system",
+        "content": `Voce é uma IA assistente para gerar quiz, perguntas e vestibulares
+voce deve criar objetos em JS para perguntas, con alternativas, resposta e explicação seguindo este modelo:
+
+
+       { 
+         Pergunta: 'Pergunta dentro do TEMA DA CATEGORIA',
+    Opcoes: {
+      A: 'Opcao',
+      B: 'Opcao',
+      C: 'Opcao',
+      D: 'Opcao'
+    },
+    Pontos: 'Valor de acordo com a dificuldade',
+     Money: 'Valor por dificuldade',
+     XP: 'Valor por dificuldade',
+    Resposta: 'Opcao certa A, B, C ou D',
+    Motivo: 'Explicacao detalhada da resposta'
+  }
+
+
+Retorne UM OBJETO JSON COMO PLAIN TEXT E NADA MAIS!!!
+no atributo Resposta, voce deve colocar apenas a letra certa!!
+FACA AS PERGUNTAS NO IDIOMA DA CATEGORIA E DO USUARIO!!! 
+SE A CATEGORIA É INGLES, A PERGUNTA É EM INGLES
+SE A CATEGORIA É EM PORTUGUES, A PERGUNTA É EM PORTUGUES
+faca perguntas dificeis e complexas adequadas a um vestibular referente ao tema
+Ajuste o valor de Pontos, Money e XP de acordo com a complexidade e tema da
+, os valores minimos sao 25 pontos, 50 Money e 200xp, faca os valores serem
+dinamicos e variaveis conforme a complexidade!
+Evite repetir as mesmas perguntas`
+    },
+    ]
+}
+ global.db.data.chats[m.chat].quiz.historico = [
+...global.db.data.chats[m.chat].quiz.historico,
+
+    {
+        "role": "user",
+        "content": `Agora siga as instrucoes que te foram dada  e crie o objeto JSON de uma pergunta com os MESNMOS CAMPOS/PROPRIEDADES no exemplo!!! { Pergunta: \"Pergunta dentro do TEMA DA CATEGORIA\", Opcoes: { A: \"Opcao\", B: \"Opcao\", C: \"Opcao\", D: \"Opcao\" }, Pontos: \"Valor de acordo com a dificuldade\", Money: \"Valor por dificuldade\", XP: \"Valor por dificuldade\", Resposta: \"Opcao certa A, B, C ou D\", Motivo: \"Explicacao detalhada da resposta\" } Retorne APENAS UM OBJETO JSON E MAIS NADA! use o \" nas propriedades do objeto. o usuario ira lhe passar a categoria que deseja, e voce deve gerar uma pergunta baseada no IDIOMA da categoria!! Se for SCIENCE, a pergunta deve ser ingles. Se for CIENCIA, a pergunta deve ser portugues. Se for MEDICINE, deve ser em ingles. se for MEDICINA, deve ser em portugues, etc.
+       
+       ${global.db.data.chats[m.chat].quiz.categoria
+        == 'Historia' ? `Unificação do Egito (História Antiga), Revolução
+        Francesa (História Moderna), Descobrimento do Brasil (História do
+        Brasil), Revolução Industrial (História Econômica), Primeira Guerra
+        Mundial (História Contemporânea), Queda de Constantinopla (História
+        Medieval), Guerra Fria (História Política), Abolição da Escravatura
+        (História Social), Reforma Protestante (História Religiosa), Civilização
+        Maia (História da América Latina), Revolta dos Búzios (História da
+        Bahia), Independência dos Estados Unidos (História das Américas),
+        Império Napoleônico (História Militar), Invasões Bárbaras (História da
+        Europa), Era Meiji no Japão (História da Ásia), Independência da Índia
+        (História Colonial), Guerra do Paraguai (História da América do Sul),
+        Revolta de Espártaco (História da Roma Antiga), Reforma Agrária no
+        Brasil (História Agrária), Revolução Russa (História do Século XX),
+        Expansão Islâmica (História do Oriente Médio), Inquisição Espanhola
+        (História da Religião), Primeiras Civilizações Mesopotâmicas (História
+        Pré-Histórica), Conferência de Berlim (História da África), Queda do
+        Muro de Berlim (História do Pós-Guerra), Guerras Médicas (História da
+        Grécia Antiga), Renascimento Cultural (História da Arte), Revolução
+        Haitiana (História da América Central), Tratado de Tordesilhas (História
+        Diplomática), Guerra do Vietnã (História dos Conflitos). e muito mais` : ''}
+  NAO MANDE PERGUNTAS SEMELHANTES AUE VOCE JA TENHA ME ENVIADO, SEJA CRIATIVO E
+ CRIE perguntas complexas e didiceis, finja que isto e um vestibular da maior
+ faculdade que há, o vestibular tem que ser dificil
+        Categoria:
+        [${global.db.data.chats[m.chat].quiz.categoria}${global.db.data.chats[m.chat].quiz.categoria
+        == 'Historia' ? ' Geral - Tudo sobre historia' : ''}]`
+    }
+ ]
+ 
+ console.log('begin quiz')
+
+ async function getRobot(messagem,category) { 
+   
+  messagem.push({
+    "role": "user",
+    "content": `${category}`
+  });
+ 
+  try {
+      m.react('💿')
+      const response = await fetch('http://89.117.96.108:8330/aiQuiz', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+              conversation: messagem,
+              question: category,
+          }),
+      });
+      if (!response.ok) {
+          throw new Error('Network response was not ok ' + response.statusText);
+      }
+      
+
+      const data = await response.json()
+
+      const assistantResponse = data.response; 
+  let aiReply = assistantResponse
+     /* 
+      
+*/
+
+
+
+
+      messagem.push({
+        "role": "assistant",
+        "content": `${aiReply}`
+      });
+         m.react('📀')
+         console.log('question added')
+         global.db.data.chats[m.chat].quiz.pergunta = aiReply
+
+         
+
+  if(global.db.data.chats[m.chat].quiz.modo==false){
+    console.log('Modo xp false')
+  if(global.db.data.chats[m.chat].quiz != null) {
+  console.log("Current Time: " + currentTime);
+  console.log("Last Question Time: " + global.db.data.chats[m.chat].quiz.time);
+
+    const timeDifference = currentTime - global.db.data.chats[m.chat].quiz.time;
+  console.log("Time Difference: " + timeDifference);
+  console.log("Delay: " + delayBetweenQuestions);
+console.log('time  ' + timeDifference < delayBetweenQuestions)
+
+console.log('porra')
+  if (timeDifference < delayBetweenQuestions) {
+    // If the user attempts to ask a question too soon, provide a warning
+    const remainingTime = delayBetweenQuestions - timeDifference;
+    
+
+    const remainingTimeInSeconds = Math.ceil(remainingTime / 1000);
+
+
+    const timing  = global.db.data.chats[m.chat].language === 'en' ? 
+    `> [!] 𝙷𝚎𝚢 𝚔𝚒𝚍𝚍𝚘, 𝚢𝚘𝚞'𝚛𝚎 𝚐𝚘𝚒𝚗' 𝚝𝚘𝚘 𝚏𝚊𝚜𝚝. 𝚈𝚘𝚞'𝚛𝚎 𝚜𝚎𝚗𝚍𝚒𝚗𝚐 𝚝𝚘𝚘 𝚖𝚊𝚗𝚢 𝚙𝚊𝚌𝚔𝚎𝚝𝚜 𝚝𝚘 𝚝𝚑𝚎 𝚑𝚘𝚜𝚝 𝚊𝚗𝚍 𝚜𝚝𝚊𝚗𝚍𝚒𝚗𝚐 𝚝𝚑𝚎𝚛𝚎 𝚠𝚒𝚝𝚑 𝟷𝟶𝟶% 𝚕𝚘𝚜𝚜. 𝚁𝚎𝚕𝚊𝚡 𝚔𝚒𝚍, 𝚊𝚗𝚍 𝚠𝚊𝚒𝚝 𝚊𝚋𝚘𝚞𝚝 ${remainingTimeInSeconds} 𝚜𝚎𝚌𝚘𝚗𝚍𝚜`
+    :
+    `> [!] 𝙴𝚒, 𝚐𝚊𝚛𝚘𝚝𝚘, 𝚟𝚘𝚌𝚎 𝚎𝚜𝚝𝚊 𝚒𝚗𝚍𝚘 𝚛𝚊𝚙𝚒𝚍𝚘 𝚍𝚎𝚖𝚊𝚒𝚜. 𝙴𝚜𝚝𝚊 𝚎𝚗𝚟𝚒𝚊𝚗𝚍𝚘 𝚖𝚞𝚒𝚝𝚘𝚜 𝚙𝚊𝚌𝚘𝚝𝚎𝚜 𝚙𝚊𝚛𝚊 𝚘 𝚑𝚘𝚜𝚝 𝚎 𝚏𝚒𝚌𝚊𝚗𝚍𝚘 𝚕𝚊 𝚌𝚘𝚖 𝟷𝟶𝟶% 𝚍𝚎 𝚙𝚎𝚛𝚍𝚊. 𝚁𝚎𝚕𝚊𝚡𝚊, 𝚐𝚊𝚛𝚘𝚝𝚘, 𝚎 𝚎𝚜𝚙𝚎𝚛𝚊 𝚌𝚎𝚛𝚌𝚊 𝚍𝚎 ${remainingTimeInSeconds} 𝚜𝚎𝚐𝚞𝚗𝚍𝚘𝚜.`
+        return m.reply(timing)
+
+    
+  } 
+  else {
+    console.log(global.db.data.chats[m.chat].quiz.pergunta)
+    m.react('💿')
+        console.log('1 🦇')
+        
+        
+    global.db.data.chats[m.chat].quiz.pergunta = JSON.parse(global.db.data.chats[m.chat].quiz.pergunta) 
+    const { Pergunta, XP,Pontos, Money, Opcoes, Resposta, Motivo } = global.db.data.chats[m.chat].quiz.pergunta
+    console.log('2 🦇')
+    console.log(global.db.data.chats[m.chat].quiz.pergunta)
+    const optionsString = Object.entries(Opcoes)
+      .map(([key, value]) => `> ${key}: ${value}`)
+      .join("\n");
+      
+    console.log('3 🦇')
+
+ // Update the current question and answer
+    global.db.data.chats[m.chat].quiz= {
+              ...global.db.data.chats[m.chat].quiz,
+      "cp": Pergunta,
+      "ca": Resposta,
+      "cm": Motivo,
+      "time": new Date().getTime(),
+      loading:false
+    };
+    
+     if (selectedCategoryIndex == 11 || selectedCategory == 'Matematica') {
+     global.db.data.chats[m.chat].quiz.math = true;
+    } else {
+     global.db.data.chats[m.chat].quiz.math = false;
+    }
+    // Send the question
+ 
+    await m.reply(`$ ./quiz.py -c ${selectedCategory} 
+> ‎ 
+> [*] ${Pergunta}
+> ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+> ‎ 
+${optionsString}
+> ‎ 
+> ‎  
+> >>EOF<<`);
+
+    // Update the last question time after sending a new question
+    
+    // Additional code specific to your application logic can go here...
+    // For example, you might want to handle user responses or perform other actions.
+  }
+  }
+  else {
+ 
+    global.db.data.chats[m.chat].quiz.pergunta = JSON.parse(global.db.data.chats[m.chat].quiz.pergunta)
+    console.log('1 🦇')
+    const { Pergunta, XP,Pontos, Money, Opcoes, Resposta, Motivo } = global.db.data.chats[m.chat].quiz.pergunta
+    console.log('2 🦇')
+    const optionsString = Object.entries(Opcoes)
+      .map(([key, value]) => `> ${key}: ${value}`)
+      .join("\n");
+    console.log('3 🦇')
+
+ // Update the current question and answer
+    global.db.data.chats[m.chat].quiz= {
+              ...global.db.data.chats[m.chat].quiz,
+      "cp": Pergunta,
+      "ca": Resposta,
+      "cm": Motivo,
+      "time": new Date().getTime(),
+      loading: false
+    };
+    
+     if (selectedCategoryIndex == 11 || selectedCategory == 'Matematica') {
+     global.db.data.chats[m.chat].quiz.math = true;
+    } else {
+     global.db.data.chats[m.chat].quiz.math = false;
+    }
+    // Send the question
+  
+    await m.reply(`$ ./quiz.py -c ${selectedCategory} 
+> ‎ 
+> [*] ${Pergunta}
+> ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+> ‎ 
+${optionsString}
+> ‎ 
+> ‎  
+> >>EOF<<`);
+
+    // Update the last question time after sending a new question
+    
+    // Additional code specific to your application logic can go here...
+    // For example, you might want to handle user responses or perform other actions.
+  
+  }
+ 
+  }
+  else if(global.db.data.chats[m.chat].quiz.modo==true){
+  console.log('modo xp trur')
+  
+    
+    if(global.db.data.chats[m.chat].quiz!= null) {
+ 
+    global.db.data.chats[m.chat].quiz.pergunta = JSON.parse(global.db.data.chats[m.chat].quiz.pergunta) 
+    const { Pergunta, XP, Money, Pontos, Opcoes, Resposta, Motivo } =
+    global.db.data.chats[m.chat].quiz.pergunta;
+    const optionsString = Object.entries(Opcoes)
+      .map(([key, value]) => `> ${key}: ${value}`)
+      .join("\n");
+    global.db.data.chats[m.chat].quiz.perguntaAndamento = true
     
     
+    let qid = await m.reply(`$ ./quiz.py -c ${selectedCategory} 
+> ‎ 
+> [*] ${Pergunta}
+> ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+> ‎ 
+${optionsString}
+> ‎ 
+> ‎  
+> >>EOF<<`);
+
+ // Update the current question and answer
+    global.db.data.chats[m.chat].quiz= {
+      ...global.db.data.chats[m.chat].quiz,
+      "cp": Pergunta,
+      "ca": Resposta,
+      "cm": Motivo,
+            "xp": XP,
+     "pontos": Pontos,
+        "mony": Money,
+      "id": qid.id,
+      "time": new Date().getTime(),
+      loading:false
+    };
+    
+     if (selectedCategoryIndex == 11 || selectedCategory == 'Matematica') {
+     global.db.data.chats[m.chat].quiz.math = true;
+    } else {
+     global.db.data.chats[m.chat].quiz.math = false;
+    }
+    
+    console.log("on quiz  "+ global.db.data.chats[m.chat].quiz)
+    // Send the question
+    
+
+    // Update the last question time after sending a new question
+    
+    // Additional code specific to your application logic can go here...
+    // For example, you might want to handle user responses or perform other actions.
+  
+  }
+  else {
+    
+    global.db.data.chats[m.chat].quiz.pergunta = JSON.parse(global.db.data.chats[m.chat].quiz.pergunta)
+    const { Pergunta, XP, Money, Pontos, Opcoes, Resposta, Motivo} =
+    global.db.data.chats[m.chat].quiz.pergunta;
+    const optionsString = Object.entries(Opcoes)
+      .map(([key, value]) => `> ${key}: ${value}`)
+      .join("\n");
+    global.xppergunta[m.chat]= true
+ // Update the current question and answer
+    console.log("test" + global.db.data.chats[m.chat].quiz.modo)
+    // Send the question
+  global.db.data.chats[m.chat].quiz.perguntaAndamento = true
+  
+  
+
+
+  
+   let qid = await m.reply(`$ ./quiz.py -c ${selectedCategory} 
+> ‎ 
+> [*] ${Pergunta}
+> ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+> ‎ 
+${optionsString}
+> ‎ 
+> ‎  
+> >>EOF<<`);
+
+global.db.data.chats[m.chat].quiz = {
+        ...global.db.data.chats[m.chat].quiz,
+  "math":false,
+      "cp": Pergunta,
+      "ca": Resposta,
+      "cm": Motivo,
+            "xp": XP,
+     "pontos": Pontos,
+        "mony": Money,
+      "id": qid.id,
+      "time": new Date().getTime(),
+     loading: false
+    };
+    
+    
+     if (selectedCategoryIndex == 11 || selectedCategory == 'Matematica') {
+     global.db.data.chats[m.chat].quiz.math = true;
+    } else {
+     global.db.data.chats[m.chat].quiz.math = false;
+    }
+    console.log("on quiz  "+ global.db.data.chats[m.chat].quiz.id)
+    // Updte the last question time after sending a new question
+    
+    // Additional code specific to your application logic can go here...
+    // For example, you might want to handle user responses or perform other actions.
+  }
+   //fim estado pergunta
+  } // fim elseif if competitivo
+  
+
+ 
+
+         
+return !0
+  } catch (error) {
+      console.log('erro !!!!! ')
+      console.log('///////////////// ')
+      console.log(error)
+    sendSystemErrorAlert(global.db.data.chats[m.chat].language);
+  }
+   
+}
+
+
+
+getRobot(global.db.data.chats[m.chat].quiz.historico, categories[text -1])
+
+  
+
+}
     
     
    else if (text.includes("placar")) {
