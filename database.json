@@ -322,7 +322,7 @@
       "afkReason": "",
       "role": "",
       "reporte": 0,
-      "name": "",
+      "name": "Åńōnymøü_3301 🖖👽",
       "antispam": 0,
       "antispamlastclaim": 0,
       "silenced": false,
@@ -6087,7 +6087,7 @@
       "tentativasRoubo": 5,
       "spammer": 0,
       "usuariosRoubados": [],
-      "lastmiming": 1737131792977
+      "lastmiming": 1737460735161
     },
     "555599538879@s.whatsapp.net": {
       "counterPrivate": 0,
@@ -6641,7 +6641,7 @@
       "website": ".",
       "links": ".",
       "biografia": ".",
-      "lastmiming": 1737396365628,
+      "lastmiming": 1737461286470,
       "parceiro": "555584470148@s.whatsapp.net"
     },
     "5516988272864@s.whatsapp.net": {
@@ -12351,7 +12351,7 @@
       "tentativasRoubo": 5,
       "spammer": 0,
       "usuariosRoubados": [],
-      "lastmiming": 1737247267339,
+      "lastmiming": 1737460390676,
       "registradoBlock": true,
       "regTimeStart": "2025-01-06T03:50:49.130Z",
       "regPrazo": "2025-01-08T03:50:49.130Z",
@@ -25779,7 +25779,8 @@
           "afkReason": ""
         }
       }
-    }
+    },
+    "555391818933@s.whatsapp.net,558184216648@s.whatsapp.net,555596624577@s.whatsapp.net,5521970385666@s.whatsapp.net,553898809542@s.whatsapp.net,5513981141776@s.whatsapp.net": {}
   },
   "chats": {
     "120363312968709293@g.us": {
@@ -36101,10 +36102,10 @@
           "shields": 0
         },
         "351927285125@s.whatsapp.net": {
-          "exp": 1683,
-          "limit": 660000000000067,
+          "exp": 2483,
+          "limit": 660000000000066,
           "role": "𝑵𝒆𝒗𝒆𝒓𝒎𝒐𝒓𝒆 ༒︎\n𝙼𝚎𝚜𝚝𝚛𝚎 𝚍𝚘𝚜 𝚌𝚘𝚛𝚟𝚘𝚜",
-          "money": 666000000000000300,
+          "money": 666000000000000100,
           "level": 666,
           "adm": true,
           "legendary": true,
@@ -36116,7 +36117,7 @@
           "cocriador": false,
           "lastMessageTime": 1731175556195,
           "messageCount": 1,
-          "pontos": 200,
+          "pontos": 345,
           "tempBan": false,
           "coadmin": false,
           "slots": 666,
@@ -38296,9 +38297,9 @@
       },
       "quiz": {
         "perguntaAndamento": false,
-        "loading": false,
+        "loading": true,
         "modo": true,
-        "categoria": "Direito",
+        "categoria": "comptia+",
         "historico": [
           {
             "role": "system",
@@ -38306,7 +38307,7 @@
           },
           {
             "role": "user",
-            "content": "Agora siga as instrucoes que te foram dada  e crie o objeto JSON de uma pergunta com os MESNMOS CAMPOS/PROPRIEDADES no exemplo!!! { Pergunta: \"Pergunta dentro do TEMA DA CATEGORIA\", Opcoes: { A: \"Opcao\", B: \"Opcao\", C: \"Opcao\", D: \"Opcao\" }, Pontos: \"Valor de acordo com a dificuldade\", Money: \"Valor por dificuldade\", XP: \"Valor por dificuldade\", Resposta: \"Opcao certa A, B, C ou D\", Motivo: \"Explicacao detalhada da resposta\" } Retorne APENAS UM OBJETO JSON E MAIS NADA! use o \" nas propriedades do objeto. o usuario ira lhe passar a categoria que deseja, e voce deve gerar uma pergunta baseada no IDIOMA da categoria!! Se for SCIENCE, a pergunta deve ser ingles. Se for CIENCIA, a pergunta deve ser portugues. Se for MEDICINE, deve ser em ingles. se for MEDICINA, deve ser em portugues, etc.\n       \n       \n  NAO MANDE PERGUNTAS SEMELHANTES AUE VOCE JA TENHA ME ENVIADO, SEJA CRIATIVO E\n CRIE perguntas complexas e didiceis, finja que isto e um vestibular da maior\n faculdade que há, o vestibular tem que ser dificil\n        Categoria:\n        [hacking etico - CEH v1.2]"
+            "content": "Agora siga as instrucoes que te foram dada  e crie o objeto JSON de uma pergunta com os MESNMOS CAMPOS/PROPRIEDADES no exemplo!!! { Pergunta: \"Pergunta dentro do TEMA DA CATEGORIA\", Opcoes: { A: \"Opcao\", B: \"Opcao\", C: \"Opcao\", D: \"Opcao\" }, Pontos: \"Valor de acordo com a dificuldade\", Money: \"Valor por dificuldade\", XP: \"Valor por dificuldade\", Resposta: \"Opcao certa A, B, C ou D\", Motivo: \"Explicacao detalhada da resposta\" } Retorne APENAS UM OBJETO JSON E MAIS NADA! use o \" nas propriedades do objeto. o usuario ira lhe passar a categoria que deseja, e voce deve gerar uma pergunta baseada no IDIOMA da categoria!! Se for SCIENCE, a pergunta deve ser ingles. Se for CIENCIA, a pergunta deve ser portugues. Se for MEDICINE, deve ser em ingles. se for MEDICINA, deve ser em portugues, etc.\n       \n       \n  NAO MANDE PERGUNTAS SEMELHANTES AUE VOCE JA TENHA ME ENVIADO, SEJA CRIATIVO E\n CRIE perguntas complexas e didiceis, finja que isto e um vestibular da maior\n faculdade que há, o vestibular tem que ser dificil\n        Categoria:\n        [comptia+]"
           },
           {
             "role": "user",
@@ -38314,55 +38315,10 @@
           },
           {
             "role": "assistant",
-            "content": "{\n  \"Pergunta\": \"Qual é a principal diferença entre um ataque de força bruta e um ataque de dicionário em testes de penetração?\",\n  \"Opcoes\": {\n    \"A\": \"O ataque de força bruta tenta todas as combinações possíveis de senhas, enquanto o ataque de dicionário utiliza uma lista pré-definida de senhas comuns.\",\n    \"B\": \"O ataque de dicionário é mais rápido que o ataque de força bruta, pois utiliza algoritmos de criptografia avançados.\",\n    \"C\": \"O ataque de força bruta é mais eficaz em sistemas com autenticação multifatorial, enquanto o ataque de dicionário não é.\",\n    \"D\": \"O ataque de dicionário é ilegal, enquanto o ataque de força bruta é permitido em testes de segurança.\"\n  },\n  \"Pontos\": \"50\",\n  \"Money\": \"100\",\n  \"XP\": \"300\",\n  \"Resposta\": \"A\",\n  \"Motivo\": \"O ataque de força bruta tenta todas as combinações possíveis de senhas, o que pode levar muito tempo, enquanto o ataque de dicionário utiliza uma lista de senhas comuns, tornando-o mais rápido e eficiente em muitos casos.\"\n}"
-          },
-          {
-            "role": "user",
-            "content": "Agora siga as instrucoes que te foram dada  e crie o objeto JSON de uma pergunta com os MESNMOS CAMPOS/PROPRIEDADES no exemplo!!! { Pergunta: \"Pergunta dentro do TEMA DA CATEGORIA\", Opcoes: { A: \"Opcao\", B: \"Opcao\", C: \"Opcao\", D: \"Opcao\" }, Pontos: \"Valor de acordo com a dificuldade\", Money: \"Valor por dificuldade\", XP: \"Valor por dificuldade\", Resposta: \"Opcao certa A, B, C ou D\", Motivo: \"Explicacao detalhada da resposta\" } Retorne APENAS UM OBJETO JSON E MAIS NADA! use o \" nas propriedades do objeto. o usuario ira lhe passar a categoria que deseja, e voce deve gerar uma pergunta baseada no IDIOMA da categoria!! Se for SCIENCE, a pergunta deve ser ingles. Se for CIENCIA, a pergunta deve ser portugues. Se for MEDICINE, deve ser em ingles. se for MEDICINA, deve ser em portugues, etc.\n       \n       \n  NAO MANDE PERGUNTAS SEMELHANTES AUE VOCE JA TENHA ME ENVIADO, SEJA CRIATIVO E\n CRIE perguntas complexas e didiceis, finja que isto e um vestibular da maior\n faculdade que há, o vestibular tem que ser dificil\n        Categoria:\n        [ENGENHARIA DA COMPUTACAO -- Redes, enderecamento IP, cisco, IPS, cabeamento e estrutural  para CONCURSO]"
-          },
-          {
-            "role": "user",
-            "content": "undefined"
-          },
-          {
-            "role": "assistant",
-            "content": "{\n  \"Pergunta\": \"Qual das seguintes afirmações sobre o endereçamento IP e sub-redes é verdadeira?\",\n  \"Opcoes\": {\n    \"A\": \"Um endereço IP é composto por 32 bits e é sempre escrito em notação decimal.\",\n    \"B\": \"A máscara de sub-rede determina quantos bits são usados para o identificador da rede e quantos para os hosts.\",\n    \"C\": \"O endereçamento IPv6 utiliza 128 bits, mas não permite a comunicação entre redes diferentes.\",\n    \"D\": \"O protocolo ARP é utilizado para converter endereços IP em endereços MAC, mas não é relevante em redes com roteadores.\"\n  },\n  \"Pontos\": \"75\",\n  \"Money\": \"150\",\n  \"XP\": \"400\",\n  \"Resposta\": \"B\",\n  \"Motivo\": \"A máscara de sub-rede é fundamental para determinar a divisão entre a parte do endereço que identifica a rede e a parte que identifica os hosts dentro dessa rede, permitindo a criação de sub-redes e a melhor utilização do espaço de endereçamento IP.\"\n}"
-          },
-          {
-            "role": "user",
-            "content": "Agora siga as instrucoes que te foram dada  e crie o objeto JSON de uma pergunta com os MESNMOS CAMPOS/PROPRIEDADES no exemplo!!! { Pergunta: \"Pergunta dentro do TEMA DA CATEGORIA\", Opcoes: { A: \"Opcao\", B: \"Opcao\", C: \"Opcao\", D: \"Opcao\" }, Pontos: \"Valor de acordo com a dificuldade\", Money: \"Valor por dificuldade\", XP: \"Valor por dificuldade\", Resposta: \"Opcao certa A, B, C ou D\", Motivo: \"Explicacao detalhada da resposta\" } Retorne APENAS UM OBJETO JSON E MAIS NADA! use o \" nas propriedades do objeto. o usuario ira lhe passar a categoria que deseja, e voce deve gerar uma pergunta baseada no IDIOMA da categoria!! Se for SCIENCE, a pergunta deve ser ingles. Se for CIENCIA, a pergunta deve ser portugues. Se for MEDICINE, deve ser em ingles. se for MEDICINA, deve ser em portugues, etc.\n       \n       \n  NAO MANDE PERGUNTAS SEMELHANTES AUE VOCE JA TENHA ME ENVIADO, SEJA CRIATIVO E\n CRIE perguntas complexas e didiceis, finja que isto e um vestibular da maior\n faculdade que há, o vestibular tem que ser dificil\n        Categoria:\n        [Psicologia]"
-          },
-          {
-            "role": "user",
-            "content": "Psicologia"
-          },
-          {
-            "role": "assistant",
-            "content": "{\n  \"Pergunta\": \"Qual é a principal diferença entre a terapia cognitivo-comportamental e a psicanálise no tratamento de transtornos mentais?\",\n  \"Opcoes\": {\n    \"A\": \"A terapia cognitivo-comportamental foca na modificação de pensamentos e comportamentos, enquanto a psicanálise explora o inconsciente e experiências passadas.\",\n    \"B\": \"A psicanálise é mais rápida e eficaz do que a terapia cognitivo-comportamental para todos os tipos de transtornos.\",\n    \"C\": \"A terapia cognitivo-comportamental é baseada em técnicas de relaxamento, enquanto a psicanálise utiliza apenas a conversa.\",\n    \"D\": \"Ambas as abordagens são idênticas em seus métodos e resultados, mas diferem apenas na terminologia.\"\n  },\n  \"Pontos\": \"70\",\n  \"Money\": \"140\",\n  \"XP\": \"350\",\n  \"Resposta\": \"A\",\n  \"Motivo\": \"A terapia cognitivo-comportamental (TCC) é uma abordagem focada na identificação e modificação de padrões de pensamento e comportamento disfuncionais, enquanto a psicanálise se concentra na exploração do inconsciente e na análise de experiências passadas, o que a torna uma abordagem mais longa e introspectiva.\"\n}"
-          },
-          {
-            "role": "user",
-            "content": "Agora siga as instrucoes que te foram dada  e crie o objeto JSON de uma pergunta com os MESNMOS CAMPOS/PROPRIEDADES no exemplo!!! { Pergunta: \"Pergunta dentro do TEMA DA CATEGORIA\", Opcoes: { A: \"Opcao\", B: \"Opcao\", C: \"Opcao\", D: \"Opcao\" }, Pontos: \"Valor de acordo com a dificuldade\", Money: \"Valor por dificuldade\", XP: \"Valor por dificuldade\", Resposta: \"Opcao certa A, B, C ou D\", Motivo: \"Explicacao detalhada da resposta\" } Retorne APENAS UM OBJETO JSON E MAIS NADA! use o \" nas propriedades do objeto. o usuario ira lhe passar a categoria que deseja, e voce deve gerar uma pergunta baseada no IDIOMA da categoria!! Se for SCIENCE, a pergunta deve ser ingles. Se for CIENCIA, a pergunta deve ser portugues. Se for MEDICINE, deve ser em ingles. se for MEDICINA, deve ser em portugues, etc.\n       \n       \n  NAO MANDE PERGUNTAS SEMELHANTES AUE VOCE JA TENHA ME ENVIADO, SEJA CRIATIVO E\n CRIE perguntas complexas e didiceis, finja que isto e um vestibular da maior\n faculdade que há, o vestibular tem que ser dificil\n        Categoria:\n        [Direito]"
-          },
-          {
-            "role": "user",
-            "content": "Direito"
-          },
-          {
-            "role": "assistant",
-            "content": "{\n  \"Pergunta\": \"Qual é a principal função do princípio da proporcionalidade no direito penal brasileiro?\",\n  \"Opcoes\": {\n    \"A\": \"Assegurar que as penas sejam proporcionais à gravidade do crime cometido.\",\n    \"B\": \"Permitir a aplicação de penas alternativas em casos de crimes menores.\",\n    \"C\": \"Estabelecer que a defesa do réu deve ser sempre priorizada em relação à proteção da sociedade.\",\n    \"D\": \"Garantir que todos os crimes sejam julgados pelo mesmo tribunal, independentemente de sua natureza.\"\n  },\n  \"Pontos\": \"80\",\n  \"Money\": \"160\",\n  \"XP\": \"400\",\n  \"Resposta\": \"A\",\n  \"Motivo\": \"O princípio da proporcionalidade é fundamental no direito penal, pois busca assegurar que as penas aplicadas sejam adequadas e proporcionais à gravidade do crime, evitando punições excessivas e garantindo a justiça na aplicação da lei.\"\n}"
+            "content": "```json\n{\n  \"Pergunta\": \"Qual é a diferença fundamental entre null e undefined em JavaScript?\",\n  \"Opcoes\": {\n    \"A\": \"Ambos representam a ausência de valor, mas null é um valor atribuído intencionalmente, enquanto undefined indica que uma variável foi declarada, mas não inicializada.\",\n    \"B\": \"Ambos são idênticos e podem ser usados de forma intercambiável em qualquer contexto.\",\n    \"C\": \"Null é um tipo de dado primitivo, enquanto undefined é um objeto.\",\n    \"D\": \"Null e undefined são sempre considerados iguais em todas as operações de comparação.\"\n  },\n  \"Pontos\": \"40\",\n  \"Money\": \"75\",\n  \"XP\": \"300\",\n  \"Resposta\": \"A\",\n  \"Motivo\": \"A opção A é correta porque null é usado para indicar a ausência intencional de um valor, enquanto undefined é atribuído automaticamente a variáveis que foram declaradas mas não inicializadas. Essa distinção é importante para evitar comportamentos inesperados no código.\"\n}\n```"
           }
         ],
-        "pergunta": {},
-        "cp": "",
-        "ca": "",
-        "cm": "",
-        "xp": 0,
-        "pontos": "80",
-        "mony": "160",
-        "id": "BAE53522274A21BB",
-        "time": "",
-        "math": false
+        "pergunta": "```json\n{\n  \"Pergunta\": \"Qual é a diferença fundamental entre null e undefined em JavaScript?\",\n  \"Opcoes\": {\n    \"A\": \"Ambos representam a ausência de valor, mas null é um valor atribuído intencionalmente, enquanto undefined indica que uma variável foi declarada, mas não inicializada.\",\n    \"B\": \"Ambos são idênticos e podem ser usados de forma intercambiável em qualquer contexto.\",\n    \"C\": \"Null é um tipo de dado primitivo, enquanto undefined é um objeto.\",\n    \"D\": \"Null e undefined são sempre considerados iguais em todas as operações de comparação.\"\n  },\n  \"Pontos\": \"40\",\n  \"Money\": \"75\",\n  \"XP\": \"300\",\n  \"Resposta\": \"A\",\n  \"Motivo\": \"A opção A é correta porque null é usado para indicar a ausência intencional de um valor, enquanto undefined é atribuído automaticamente a variáveis que foram declaradas mas não inicializadas. Essa distinção é importante para evitar comportamentos inesperados no código.\"\n}\n```"
       }
     },
     "120363202611492303@g.us": {
@@ -38377,7 +38333,7 @@
       },
       "users": {
         "554796646044@s.whatsapp.net": {
-          "exp": 2725,
+          "exp": 2885,
           "limit": 0,
           "role": "𝐈𝐧𝐢𝐜𝐢𝐚𝐧𝐭𝐞 𝐝𝐚𝐬 𝐬𝐨𝐦𝐛𝐫𝐚𝐬",
           "money": 60,
@@ -38395,7 +38351,7 @@
           "messageCount": 1
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 1106,
+          "exp": 1148,
           "limit": 0,
           "role": "",
           "money": 0,
@@ -38413,7 +38369,7 @@
           "pontos": 0
         },
         "554598527531@s.whatsapp.net": {
-          "exp": 5402,
+          "exp": 5445,
           "limit": 5000,
           "role": "༒︎ 𝑷𝒍𝒖𝒕ã𝒐 𝑵𝒆𝒈𝒓𝒐",
           "money": 5000,
@@ -38531,10 +38487,14 @@
       "lastSentTime": 0,
       "name": "Sociedade dos Poe's mortos 🪦",
       "desc": "*••• ADMINISTRAÇÃO CABEÇUDOS •••*\n\n* Evitar mandar mensagens na comunidade \n- Fechar o grupo _Cabeçudos_ ou dar uma chamada de atenção quando ver o pessoal fugindo do intuito do grupo \n* Não aceitar solicitações de entrada em nenhum grupo antes de todos aqui lerem o formulário respondido pelo solicitador\n* Remover pessoas que interagem apenas no grupo _Rebosteio_\n* Discutir sempre aqui novas ideias e sugestões para ambos os grupos\n* Mutar pessoa que estiver passando dos limites\n* Não aceitar solicitações nesse grupo\n* Não vazar conversas, prints ou qualquer tipo de mídia desse grupo\n* Qualquer ação que provoque impacto significativo no grupo deve ser discutida e tomada em conjunto acordo\n\n*» Formulário obrigatório para entrada no grupo:*\n\nhttps://forms.gle/3Uq91UWBoWzR1EUn9",
-      "totalMembros": 3,
+      "totalMembros": 4,
       "membros": [
         {
           "id": "351927285125@s.whatsapp.net",
+          "admin": "admin"
+        },
+        {
+          "id": "554598527531@s.whatsapp.net",
           "admin": "admin"
         },
         {
@@ -40231,7 +40191,7 @@
           "shields": 0
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 52747,
+          "exp": 52976,
           "limit": 0,
           "role": "",
           "money": 0,
@@ -40249,7 +40209,7 @@
           "pontos": 0
         },
         "5521970385666@s.whatsapp.net": {
-          "exp": 25329,
+          "exp": 25446,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 0,
@@ -40262,7 +40222,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737457025376,
+          "lastMessageTime": 1737462317812,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -40277,10 +40237,10 @@
           "trojans": 0
         },
         "351927285125@s.whatsapp.net": {
-          "exp": 4465,
-          "limit": 660000000000067,
+          "exp": 4469,
+          "limit": 660000000000066,
           "role": "𝑵𝒆𝒗𝒆𝒓𝒎𝒐𝒓𝒆 ༒︎\n𝙼𝚎𝚜𝚝𝚛𝚎 𝚍𝚘𝚜 𝚌𝚘𝚛𝚟𝚘𝚜",
-          "money": 666000000000000300,
+          "money": 666000000000000100,
           "level": 666,
           "adm": true,
           "legendary": true,
@@ -40290,7 +40250,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737455622412,
+          "lastMessageTime": 1737461648126,
           "messageCount": 1,
           "pontos": 230,
           "tempBan": false,
@@ -40341,7 +40301,7 @@
           "trojans": 0
         },
         "558199330656@s.whatsapp.net": {
-          "exp": 17159,
+          "exp": 17232,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 180,
@@ -40354,7 +40314,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737364177831,
+          "lastMessageTime": 1737461382094,
           "messageCount": 1,
           "pontos": 0,
           "usuariosRoubados": [],
@@ -40387,7 +40347,7 @@
           "steals": 0
         },
         "5521972685548@s.whatsapp.net": {
-          "exp": 28739,
+          "exp": 29085,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 300,
@@ -40400,7 +40360,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737456618768,
+          "lastMessageTime": 1737462542918,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -40476,7 +40436,7 @@
           "trojans": 0
         },
         "553497704017@s.whatsapp.net": {
-          "exp": 7586,
+          "exp": 7600,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 90,
@@ -40489,7 +40449,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737447587817,
+          "lastMessageTime": 1737457459633,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -40576,7 +40536,7 @@
           "trojans": 0
         },
         "5514981384196@s.whatsapp.net": {
-          "exp": 61091,
+          "exp": 61188,
           "limit": 1,
           "role": "Ｓａｂｏｔｅｕｒ　Ｅ－Ｃｏｒｐ",
           "money": 380,
@@ -40589,7 +40549,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737454913973,
+          "lastMessageTime": 1737463270093,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -40604,7 +40564,7 @@
           "trojans": 0
         },
         "556195667729@s.whatsapp.net": {
-          "exp": 14481,
+          "exp": 14776,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 110,
@@ -40617,7 +40577,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737457169027,
+          "lastMessageTime": 1737462132386,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -40632,7 +40592,7 @@
           "lastslot": "2025-01-16T12:28:04.035Z"
         },
         "555599538879@s.whatsapp.net": {
-          "exp": 5361,
+          "exp": 5524,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 90,
@@ -40645,7 +40605,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737412143720,
+          "lastMessageTime": 1737463290480,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -40655,7 +40615,7 @@
           "trojans": 0
         },
         "554998412876@s.whatsapp.net": {
-          "exp": 2966,
+          "exp": 2973,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 60,
@@ -40668,7 +40628,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737406167037,
+          "lastMessageTime": 1737461169783,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -40677,7 +40637,7 @@
           "trojans": 0
         },
         "553188507912@s.whatsapp.net": {
-          "exp": 7386,
+          "exp": 7438,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 90,
@@ -40690,7 +40650,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737430161756,
+          "lastMessageTime": 1737461891247,
           "messageCount": 1,
           "pontos": 0,
           "acaoTimer": "2024-11-26T21:35:02.700Z",
@@ -40704,7 +40664,7 @@
           "trojans": 0
         },
         "554796286237@s.whatsapp.net": {
-          "exp": 3147,
+          "exp": 3180,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 60,
@@ -40717,7 +40677,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737427696101,
+          "lastMessageTime": 1737460683874,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -40821,7 +40781,7 @@
           "lastslot": "2025-01-12T02:36:20.366Z"
         },
         "5516981119323@s.whatsapp.net": {
-          "exp": 3051,
+          "exp": 3209,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 60,
@@ -40834,7 +40794,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737434360422,
+          "lastMessageTime": 1737463276737,
           "messageCount": 1,
           "pontos": 0,
           "tempBan": false,
@@ -40876,7 +40836,7 @@
           "acaoTimer": "2024-12-28T15:17:17.635Z"
         },
         "554599015152@s.whatsapp.net": {
-          "exp": 15294,
+          "exp": 15458,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 1e+26,
@@ -40889,7 +40849,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737420915531,
+          "lastMessageTime": 1737461631630,
           "messageCount": 1,
           "pontos": 28,
           "usuariosRoubados": [],
@@ -40925,10 +40885,10 @@
           "trojans": 0
         },
         "553888016495@s.whatsapp.net": {
-          "exp": 1041741,
-          "limit": 10412,
+          "exp": 1041925,
+          "limit": 10592,
           "role": "Ｅｌｌｉｏｔ　Ａｌｄｅｒｓｏｎ",
-          "money": 316000,
+          "money": 335200,
           "level": 100,
           "adm": true,
           "legendary": false,
@@ -40938,7 +40898,7 @@
           "silenced": false,
           "maxlevel": true,
           "cocriador": false,
-          "lastMessageTime": 1737416096252,
+          "lastMessageTime": 1737461490178,
           "messageCount": 1,
           "pontos": 0,
           "acaoTimer": "2025-01-17T21:48:36.299Z",
@@ -40950,7 +40910,7 @@
           "steals": 0,
           "artifacts": 0,
           "rce": 0,
-          "trojans": 20820,
+          "trojans": 21180,
           "bankName": "🌻"
         },
         "5516988272864@s.whatsapp.net": {
@@ -41175,7 +41135,7 @@
           "cocriador": false
         },
         "5521966362125@s.whatsapp.net": {
-          "exp": 2076,
+          "exp": 2121,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 60,
@@ -41188,8 +41148,8 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737415380846,
-          "messageCount": 1,
+          "lastMessageTime": 1737463913567,
+          "messageCount": 2,
           "pontos": 0,
           "almas": 0,
           "steals": 0,
@@ -41882,7 +41842,7 @@
           "trojans": 0
         },
         "553182537308@s.whatsapp.net": {
-          "exp": 41203,
+          "exp": 41527,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 130,
@@ -41895,7 +41855,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737457302107,
+          "lastMessageTime": 1737462642841,
           "messageCount": 1,
           "pontos": 83,
           "acaoTimer": "2025-01-17T21:27:06.946Z",
@@ -43743,7 +43703,7 @@
           "trojans": 0
         },
         "557382274015@s.whatsapp.net": {
-          "exp": 38504,
+          "exp": 38594,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 250,
@@ -43757,7 +43717,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737442471669,
+          "lastMessageTime": 1737463245750,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -45132,7 +45092,7 @@
           "steals": 0
         },
         "554184958301@s.whatsapp.net": {
-          "exp": 3907,
+          "exp": 3933,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 60,
@@ -45145,7 +45105,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737425984245,
+          "lastMessageTime": 1737457462255,
           "messageCount": 1,
           "pontos": 0,
           "trojans": 0,
@@ -45437,7 +45397,7 @@
           "pontos": 0
         },
         "559193233126@s.whatsapp.net": {
-          "exp": 60,
+          "exp": 203,
           "limit": 0,
           "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
           "money": 0,
@@ -45450,7 +45410,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736903832106,
+          "lastMessageTime": 1737461918683,
           "messageCount": 1,
           "pontos": 0,
           "trojans": 0,
@@ -48356,9 +48316,9 @@
       },
       "quiz": {
         "perguntaAndamento": false,
-        "loading": false,
+        "loading": true,
         "modo": true,
-        "categoria": "arquitetura de redes, hubs, switches, endereçamento IP, cabeamento, roteadores - PROVA PRA CONCURSO",
+        "categoria": "universo the witcher",
         "historico": [
           {
             "role": "system",
@@ -48366,7 +48326,7 @@
           },
           {
             "role": "user",
-            "content": "Agora siga as instrucoes que te foram dada  e crie o objeto JSON de uma pergunta com os MESNMOS CAMPOS/PROPRIEDADES no exemplo!!! { Pergunta: \"Pergunta dentro do TEMA DA CATEGORIA\", Opcoes: { A: \"Opcao\", B: \"Opcao\", C: \"Opcao\", D: \"Opcao\" }, Pontos: \"Valor de acordo com a dificuldade\", Money: \"Valor por dificuldade\", XP: \"Valor por dificuldade\", Resposta: \"Opcao certa A, B, C ou D\", Motivo: \"Explicacao detalhada da resposta\" } Retorne APENAS UM OBJETO JSON E MAIS NADA! use o \" nas propriedades do objeto. o usuario ira lhe passar a categoria que deseja, e voce deve gerar uma pergunta baseada no IDIOMA da categoria!! Se for SCIENCE, a pergunta deve ser ingles. Se for CIENCIA, a pergunta deve ser portugues. Se for MEDICINE, deve ser em ingles. se for MEDICINA, deve ser em portugues, etc.\n       \n       \n  NAO MANDE PERGUNTAS SEMELHANTES AUE VOCE JA TENHA ME ENVIADO, SEJA CRIATIVO E\n CRIE perguntas complexas e didiceis, finja que isto e um vestibular da maior\n faculdade que há, o vestibular tem que ser dificil\n        Categoria:\n        [arquitetura de redes, hubs, switches, endereçamento IP, cabeamento, roteadores - PROVA PRA CONCURSO]"
+            "content": "Agora siga as instrucoes que te foram dada  e crie o objeto JSON de uma pergunta com os MESNMOS CAMPOS/PROPRIEDADES no exemplo!!! { Pergunta: \"Pergunta dentro do TEMA DA CATEGORIA\", Opcoes: { A: \"Opcao\", B: \"Opcao\", C: \"Opcao\", D: \"Opcao\" }, Pontos: \"Valor de acordo com a dificuldade\", Money: \"Valor por dificuldade\", XP: \"Valor por dificuldade\", Resposta: \"Opcao certa A, B, C ou D\", Motivo: \"Explicacao detalhada da resposta\" } Retorne APENAS UM OBJETO JSON E MAIS NADA! use o \" nas propriedades do objeto. o usuario ira lhe passar a categoria que deseja, e voce deve gerar uma pergunta baseada no IDIOMA da categoria!! Se for SCIENCE, a pergunta deve ser ingles. Se for CIENCIA, a pergunta deve ser portugues. Se for MEDICINE, deve ser em ingles. se for MEDICINA, deve ser em portugues, etc.\n       \n       \n  NAO MANDE PERGUNTAS SEMELHANTES AUE VOCE JA TENHA ME ENVIADO, SEJA CRIATIVO E\n CRIE perguntas complexas e didiceis, finja que isto e um vestibular da maior\n faculdade que há, o vestibular tem que ser dificil\n        Categoria:\n        [universo the witcher]"
           },
           {
             "role": "user",
@@ -48374,19 +48334,10 @@
           },
           {
             "role": "assistant",
-            "content": "```json\n{\n  \"Pergunta\": \"Qual é a principal diferença entre os valores null e undefined em JavaScript?\",\n  \"Opcoes\": {\n    \"A\": \"null é um valor atribuído intencionalmente, enquanto undefined é atribuído automaticamente.\",\n    \"B\": \"Ambos são valores que indicam a ausência de um valor, mas null é um objeto e undefined é uma função.\",\n    \"C\": \"null e undefined são estritamente iguais em comparação.\",\n    \"D\": \"undefined é um valor que pode ser atribuído, enquanto null não pode.\"\n  },\n  \"Pontos\": \"40\",\n  \"Money\": \"100\",\n  \"XP\": \"300\",\n  \"Resposta\": \"A\",\n  \"Motivo\": \"A principal diferença é que null é um valor que um desenvolvedor atribui intencionalmente a uma variável para indicar que ela não possui valor, enquanto undefined é um valor que JavaScript atribui automaticamente a variáveis que foram declaradas mas não inicializadas. Portanto, null representa uma ausência intencional de valor, enquanto undefined indica que a variável não foi definida.\"\n}\n```"
+            "content": "```json\n{\n  \"Pergunta\": \"Qual é a relação entre os personagens principais da saga 'The Witcher', Geralt de Rivia e Ciri?\",\n  \"Opcoes\": {\n    \"A\": \"Geralt é o pai biológico de Ciri.\",\n    \"B\": \"Geralt é o mentor e figura paterna de Ciri.\",\n    \"C\": \"Ciri é uma amiga de infância de Geralt.\",\n    \"D\": \"Geralt e Ciri nunca se encontraram.\"\n  },\n  \"Pontos\": \"40\",\n  \"Money\": \"100\",\n  \"XP\": \"300\",\n  \"Resposta\": \"B\",\n  \"Motivo\": \"Geralt de Rivia atua como mentor e figura paterna para Ciri, protegendo-a e guiando-a em sua jornada, especialmente após a morte de sua mãe, a rainha Calanthe.\"\n}\n```"
           }
         ],
-        "pergunta": "```json\n{\n  \"Pergunta\": \"Qual é a principal diferença entre os valores null e undefined em JavaScript?\",\n  \"Opcoes\": {\n    \"A\": \"null é um valor atribuído intencionalmente, enquanto undefined é atribuído automaticamente.\",\n    \"B\": \"Ambos são valores que indicam a ausência de um valor, mas null é um objeto e undefined é uma função.\",\n    \"C\": \"null e undefined são estritamente iguais em comparação.\",\n    \"D\": \"undefined é um valor que pode ser atribuído, enquanto null não pode.\"\n  },\n  \"Pontos\": \"40\",\n  \"Money\": \"100\",\n  \"XP\": \"300\",\n  \"Resposta\": \"A\",\n  \"Motivo\": \"A principal diferença é que null é um valor que um desenvolvedor atribui intencionalmente a uma variável para indicar que ela não possui valor, enquanto undefined é um valor que JavaScript atribui automaticamente a variáveis que foram declaradas mas não inicializadas. Portanto, null representa uma ausência intencional de valor, enquanto undefined indica que a variável não foi definida.\"\n}\n```",
-        "cp": "",
-        "ca": "",
-        "cm": "",
-        "xp": 0,
-        "pontos": "40",
-        "mony": "100",
-        "id": "BAE5B4A575016146",
-        "time": "",
-        "math": false
+        "pergunta": "```json\n{\n  \"Pergunta\": \"Qual é a relação entre os personagens principais da saga 'The Witcher', Geralt de Rivia e Ciri?\",\n  \"Opcoes\": {\n    \"A\": \"Geralt é o pai biológico de Ciri.\",\n    \"B\": \"Geralt é o mentor e figura paterna de Ciri.\",\n    \"C\": \"Ciri é uma amiga de infância de Geralt.\",\n    \"D\": \"Geralt e Ciri nunca se encontraram.\"\n  },\n  \"Pontos\": \"40\",\n  \"Money\": \"100\",\n  \"XP\": \"300\",\n  \"Resposta\": \"B\",\n  \"Motivo\": \"Geralt de Rivia atua como mentor e figura paterna para Ciri, protegendo-a e guiando-a em sua jornada, especialmente após a morte de sua mãe, a rainha Calanthe.\"\n}\n```"
       }
     },
     "120363178125353378@g.us": {
@@ -49292,7 +49243,7 @@
           "trojans": 0
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 199615,
+          "exp": 199677,
           "limit": 0,
           "role": "",
           "money": 0,
@@ -49348,11 +49299,11 @@
           "trojans": 0
         },
         "5521980818253@s.whatsapp.net": {
-          "exp": 7987,
+          "exp": 8030,
           "limit": 15,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
-          "money": 0,
-          "level": 3,
+          "money": 30,
+          "level": 4,
           "adm": true,
           "legendary": false,
           "banned": false,
@@ -49361,7 +49312,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737415117711,
+          "lastMessageTime": 1737461040913,
           "messageCount": 1,
           "pontos": 0,
           "almas": 2,
@@ -49456,10 +49407,10 @@
           "trojans": 0
         },
         "553496738698@s.whatsapp.net": {
-          "exp": 25796796444,
-          "limit": 24467,
+          "exp": 25796796473,
+          "limit": 24497,
           "role": "Ｅｌｌｉｏｔ　Ａｌｄｅｒｓｏｎ",
-          "money": 51839634.5,
+          "money": 51842834.5,
           "level": 100,
           "adm": false,
           "legendary": false,
@@ -49469,7 +49420,7 @@
           "silenced": false,
           "maxlevel": true,
           "cocriador": false,
-          "lastMessageTime": 1737424284953,
+          "lastMessageTime": 1737458262078,
           "messageCount": 1,
           "pontos": 80,
           "almas": 0,
@@ -49494,7 +49445,7 @@
           "artifacts": 5,
           "vampire": 3,
           "shadows": 2,
-          "trojans": 39887
+          "trojans": 39947
         },
         "558196519603@s.whatsapp.net": {
           "exp": 581,
@@ -49597,7 +49548,7 @@
           "trojans": 0
         },
         "559191170055@s.whatsapp.net": {
-          "exp": 679,
+          "exp": 706,
           "limit": 0,
           "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
           "money": 0,
@@ -49610,7 +49561,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737366800939,
+          "lastMessageTime": 1737460558831,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -49983,7 +49934,7 @@
           "pontos": 0
         },
         "554588374084@s.whatsapp.net": {
-          "exp": 160549,
+          "exp": 160565,
           "limit": 35,
           "role": "Ｃａｃａｄｏｒ　ｄｅ　Ｚｅｒｏ－Ｄａｙ",
           "money": 65162869.099999994,
@@ -49996,7 +49947,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737455612346,
+          "lastMessageTime": 1737463946209,
           "messageCount": 1,
           "pontos": 165,
           "almas": 0,
@@ -50278,7 +50229,7 @@
           "steals": 0
         },
         "5521978203935@s.whatsapp.net": {
-          "exp": 241,
+          "exp": 262,
           "limit": 0,
           "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
           "money": 0,
@@ -50291,7 +50242,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737433075110,
+          "lastMessageTime": 1737463792192,
           "messageCount": 1,
           "pontos": 0,
           "trojans": 0,
@@ -53605,7 +53556,7 @@
           "usuariosRoubados": []
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 5805,
+          "exp": 5924,
           "limit": 0,
           "role": "",
           "money": 0,
@@ -53873,7 +53824,7 @@
           "artifacts": -1
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 50629,
+          "exp": 51023,
           "limit": 0,
           "role": "",
           "money": 0,
@@ -53892,10 +53843,10 @@
           "usuariosRoubados": []
         },
         "5521970385666@s.whatsapp.net": {
-          "exp": 10371480,
-          "limit": 53122,
+          "exp": 10371764,
+          "limit": 53377,
           "role": "Ｅｌｌｉｏｔ　Ａｌｄｅｒｓｏｎ",
-          "money": 46400,
+          "money": 73600,
           "level": 100,
           "adm": true,
           "legendary": false,
@@ -53912,9 +53863,9 @@
             "5521969915001@s.whatsapp.net"
           ],
           "shields": 0,
-          "trojans": 106230,
+          "trojans": 106740,
           "bankName": "Sra. Mercês",
-          "acaoTimer": "2025-01-20T23:26:09.874Z",
+          "acaoTimer": "2025-01-21T11:20:48.801Z",
           "rouboTimestamp": "2025-01-20T17:13:54.839Z",
           "mortoDemonio": false,
           "steals": 4,
@@ -53965,7 +53916,7 @@
           ]
         },
         "558199330656@s.whatsapp.net": {
-          "exp": 16933,
+          "exp": 17158,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 180,
@@ -53985,7 +53936,7 @@
           "steals": 0
         },
         "554197056898@s.whatsapp.net": {
-          "exp": 252207,
+          "exp": 252331,
           "limit": 9,
           "role": "Ｄｉｓｒｕｐｔｏｒ　ｄｅ　Ｓｉｓｔｅｍａｓ",
           "money": 0,
@@ -54065,10 +54016,10 @@
           "morto": false
         },
         "553898809542@s.whatsapp.net": {
-          "exp": 66758383,
-          "limit": 74929,
+          "exp": 66758432,
+          "limit": 74974,
           "role": "Ｅｌｌｉｏｔ　Ａｌｄｅｒｓｏｎ",
-          "money": 1953016,
+          "money": 1957816,
           "level": 100,
           "adm": true,
           "legendary": false,
@@ -54083,7 +54034,7 @@
           "pontos": 0,
           "usuariosRoubados": [],
           "rouboTimestamp": "2025-01-17T20:20:39.020Z",
-          "trojans": 150542,
+          "trojans": 150632,
           "acaoTimer": "2025-01-19T16:01:47.586Z",
           "shields": 0,
           "bankName": "𝐺𝑒𝑟 𝑀𝑜𝑡𝑎",
@@ -54126,7 +54077,7 @@
           "steals": 0
         },
         "5511957799646@s.whatsapp.net": {
-          "exp": 218602,
+          "exp": 218615,
           "limit": 4,
           "role": "Ｌｉｂｅｒａｄｏｒ　ｄｅ　Ｄａｄｏｓ",
           "money": 1135,
@@ -54147,7 +54098,7 @@
           "steals": 0
         },
         "5513981141776@s.whatsapp.net": {
-          "exp": 255286,
+          "exp": 255324,
           "limit": 9,
           "role": "Ｄｉｓｒｕｐｔｏｒ　ｄｅ　Ｓｉｓｔｅｍａｓ",
           "money": 100085,
@@ -54187,7 +54138,7 @@
           "divorcioId": "BAE50D61D1A4293D"
         },
         "553188507912@s.whatsapp.net": {
-          "exp": 1756,
+          "exp": 1826,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 30,
@@ -54446,7 +54397,7 @@
           "pontos": 0
         },
         "555596624577@s.whatsapp.net": {
-          "exp": 6413,
+          "exp": 6523,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 90,
@@ -54488,7 +54439,7 @@
           "steals": 0
         },
         "5521972685548@s.whatsapp.net": {
-          "exp": 231928,
+          "exp": 232031,
           "limit": 4,
           "role": "Ｌｉｂｅｒａｄｏｒ　ｄｅ　Ｄａｄｏｓ",
           "money": 1569,
@@ -54510,7 +54461,7 @@
           "regMsg": "",
           "registradoBlock": false,
           "trojans": 0,
-          "acaoTimer": "2025-01-20T18:04:36.339Z",
+          "acaoTimer": "2025-01-21T11:20:26.590Z",
           "rouboTimestamp": "2025-01-16T11:12:37.367Z",
           "rings": 0,
           "steals": 1,
@@ -54575,7 +54526,7 @@
           "steals": 0
         },
         "553888016495@s.whatsapp.net": {
-          "exp": 98741,
+          "exp": 98922,
           "limit": 0,
           "role": "Ｅｎｇｅｎｈｅｉｒｏ　Ｓｏｃｉａｌ",
           "money": 1090,
@@ -54619,10 +54570,10 @@
           "steals": 0
         },
         "5514981848243@s.whatsapp.net": {
-          "exp": 100000025022,
-          "limit": 20800,
+          "exp": 100000025272,
+          "limit": 21070,
           "role": "Ｅｌｌｉｏｔ　Ａｌｄｅｒｓｏｎ",
-          "money": 950552,
+          "money": 979352,
           "level": 100,
           "adm": true,
           "legendary": false,
@@ -54635,7 +54586,7 @@
           "lastMessageTime": 1736936454630,
           "messageCount": 1,
           "pontos": 0,
-          "trojans": 41610,
+          "trojans": 42150,
           "steals": 1,
           "acaoTimer": "2025-01-19T17:10:47.913Z",
           "usuariosRoubados": [],
@@ -54685,7 +54636,7 @@
           "steals": 0
         },
         "5511983522226@s.whatsapp.net": {
-          "exp": 206361,
+          "exp": 206393,
           "limit": 4,
           "role": "Ｌｉｂｅｒａｄｏｒ　ｄｅ　Ｄａｄｏｓ",
           "money": 835,
@@ -54766,11 +54717,11 @@
           "advLink": 0
         },
         "554792625204@s.whatsapp.net": {
-          "exp": 1962,
+          "exp": 2055,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
-          "money": 30,
-          "level": 1,
+          "money": 60,
+          "level": 2,
           "adm": false,
           "legendary": false,
           "banned": false,
@@ -54829,7 +54780,7 @@
           "lastslot": "2025-01-17T20:21:01.629Z"
         },
         "555391818933@s.whatsapp.net": {
-          "exp": 6912,
+          "exp": 6975,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 90,
@@ -54974,7 +54925,7 @@
           "lastslot": "2025-01-20T11:29:35.239Z"
         },
         "5516981119323@s.whatsapp.net": {
-          "exp": 4032,
+          "exp": 4271,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 90,
@@ -55147,7 +55098,7 @@
           "steals": 0
         },
         "558197887354@s.whatsapp.net": {
-          "exp": 72269,
+          "exp": 72495,
           "limit": 11,
           "role": "Ｏｐｅｒａｔｉｖｏ　ｄｏ　Ｅｘéｒｃｉｔｏ　Ｓｏｍｂｒｉｏ",
           "money": 2166,
@@ -55167,7 +55118,7 @@
           "shields": 0
         },
         "5511952899890@s.whatsapp.net": {
-          "exp": 36522,
+          "exp": 36790,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 520,
@@ -56997,7 +56948,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737310152693,
+          "lastMessageTime": 1737458140191,
           "messageCount": 1,
           "pontos": 0
         },
@@ -57174,7 +57125,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737389984299,
+          "lastMessageTime": 1737461514766,
           "messageCount": 1,
           "pontos": 0
         },
@@ -58729,10 +58680,10 @@
       "lastSuccess": 1737442371412
     },
     "grupo-perfil.js": {
-      "total": 807,
-      "success": 801,
-      "last": 1737454331203,
-      "lastSuccess": 1737454331203
+      "total": 808,
+      "success": 802,
+      "last": 1737458238940,
+      "lastSuccess": 1737458238940
     },
     "dono-reiniciar-usuario.js": {
       "total": 25,
@@ -58759,10 +58710,10 @@
       "lastSuccess": 1737384637886
     },
     "dl-ig.js": {
-      "total": 195,
-      "success": 192,
-      "last": 1737417894203,
-      "lastSuccess": 1737417894203
+      "total": 196,
+      "success": 193,
+      "last": 1737460387046,
+      "lastSuccess": 1737460387046
     },
     "buscador-lyrics.js": {
       "total": 10,
@@ -58789,16 +58740,16 @@
       "lastSuccess": 1732134744175
     },
     "dl-yt_play.js": {
-      "total": 565,
-      "success": 560,
-      "last": 1737457113439,
-      "lastSuccess": 1737457113439
+      "total": 566,
+      "success": 561,
+      "last": 1737463258095,
+      "lastSuccess": 1737463258095
     },
     "dono-reporte.js": {
-      "total": 38,
-      "success": 36,
-      "last": 1737410233619,
-      "lastSuccess": 1737410233619
+      "total": 40,
+      "success": 38,
+      "last": 1737461648134,
+      "lastSuccess": 1737461648134
     },
     "dono-desmutar.js": {
       "total": 21,
@@ -58831,10 +58782,10 @@
       "lastSuccess": 1736959057116
     },
     "sticker-sticker.js": {
-      "total": 668,
-      "success": 668,
-      "last": 1737447506653,
-      "lastSuccess": 1737447506653
+      "total": 671,
+      "success": 671,
+      "last": 1737461286470,
+      "lastSuccess": 1737461286470
     },
     "conversor-totext.js": {
       "total": 9,
@@ -58903,16 +58854,16 @@
       "lastSuccess": 1735506420942
     },
     "fun-slot.js": {
-      "total": 794,
-      "success": 733,
-      "last": 1737424029791,
-      "lastSuccess": 1737424029791
+      "total": 795,
+      "success": 734,
+      "last": 1737458262080,
+      "lastSuccess": 1737458262080
     },
     "fun-acoes.js": {
-      "total": 147,
-      "success": 146,
-      "last": 1737428337105,
-      "lastSuccess": 1737428337105
+      "total": 149,
+      "success": 148,
+      "last": 1737458449031,
+      "lastSuccess": 1737458449031
     },
     "cfgLoja.js": {
       "total": 113,
@@ -59029,10 +58980,10 @@
       "lastSuccess": 1737251644901
     },
     "quiz.js": {
-      "total": 366,
-      "success": 308,
-      "last": 1737456823327,
-      "lastSuccess": 1737456823327
+      "total": 379,
+      "success": 321,
+      "last": 1737461550142,
+      "lastSuccess": 1737461550142
     },
     "funHoroscopo.js": {
       "total": 14,
@@ -59179,10 +59130,10 @@
       "lastSuccess": 1737423088032
     },
     "clima.js": {
-      "total": 68,
-      "success": 68,
-      "last": 1737454818477,
-      "lastSuccess": 1737454818477
+      "total": 71,
+      "success": 71,
+      "last": 1737460589294,
+      "lastSuccess": 1737460589294
     },
     "dono-boost.js": {
       "total": 5,
@@ -59491,14 +59442,14 @@
           "conta": "953415981012",
           "sepa": "SE6844757256636490",
           "wallet": "WAL-0936010359",
-          "saldo": 817215.2223901603
+          "saldo": 817669.2358139413
         },
         "5521970385666@s.whatsapp.net": {
           "titular": "Sra. Mercês",
           "conta": "535441291871",
           "sepa": "SE5822427639074913",
           "wallet": "WAL-9159324339",
-          "saldo": 6106848.254478526,
+          "saldo": 6110395.24487375,
           "limiteSaque": 1
         },
         "5513981141776@s.whatsapp.net": {
@@ -59506,7 +59457,7 @@
           "conta": "661874616333",
           "sepa": "SE4577404167973932",
           "wallet": "WAL-1059128979",
-          "saldo": 211357.55842918978,
+          "saldo": 211368.2304754158,
           "limiteSaque": 3
         },
         "5521969915001@s.whatsapp.net": {
@@ -59530,7 +59481,7 @@
           "conta": "934819026141",
           "sepa": "SE8183249194361544",
           "wallet": "WAL-3202947270",
-          "saldo": 2710.2273444187467,
+          "saldo": 2710.7747743275604,
           "limiteSaque": 2
         },
         "553898809542@s.whatsapp.net": {
@@ -59538,7 +59489,7 @@
           "conta": "396664072159",
           "sepa": "SE8065925013929199",
           "wallet": "WAL-9124202523",
-          "saldo": 4991560.170777777
+          "saldo": 4992064.2597364085
         },
         "559294556204@s.whatsapp.net": {
           "titular": "Iury Jonathan martins Amorim",
@@ -59552,7 +59503,7 @@
           "conta": "325272529697",
           "sepa": "SE3124701011125993",
           "wallet": "WAL-6946516905",
-          "saldo": 1023223.8938753883,
+          "saldo": 1023688.9772482285,
           "limiteSaque": 1
         },
         "554388686229@s.whatsapp.net": {
@@ -59568,7 +59519,7 @@
           "conta": "596148955410",
           "sepa": "SE5197775132669144",
           "wallet": "WAL-7840471093",
-          "saldo": 139391.74997897402
+          "saldo": 139455.10735912743
         }
       },
       "rendimento": 0.000025246108048449872
