@@ -207,6 +207,11 @@
   }
 }
 
+
+Request limit reached: As a standard user, your current plan allows up to 3 requests per 1 minute. Consider upgrading your plan to increase your limits.
+
+
+
 curl --request POST \
   --url https://api.itsrose.rest/differentMe/create \
   --header 'Authorization: Bearer Rk-3b78f4b1ca5993ae3c727eb07b91f68e' \
