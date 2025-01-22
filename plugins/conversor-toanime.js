@@ -1016,7 +1016,7 @@ throw `${idioma == 'en' ? "> [!] 𝙷𝚎𝚢 𝚔𝚒𝚍, 𝚝𝚑𝚎𝚛𝚎
       const response = await fetch('https://api.itsrose.rest/turnMe/age', {
           method: 'POST',
           headers: {
-              'Authorization': `Bearer ${global.itsrose}`,
+              'Authorization': `Bearer ${itsrose}`,
               'Content-Type': 'application/json'
           },
           body: JSON.stringify({
