@@ -10,6 +10,9 @@
 
 /* efeitos createCanvas
 
+curl --request GET \
+  --url 'https://api.itsrose.rest/differentMe/status?task_id=' \
+  --header 'Authorization: Bearer YOUR_SECRET_TOKEN'
 
 [22/01, 10:27] 𝙷𝚎𝚗𝚛𝚢 𝙰𝚛𝚌𝚊𝚗𝚐𝚎𝚕𝚘: {
   "status": true,
