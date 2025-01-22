@@ -1929,21 +1929,14 @@ if (turnStyles.hasOwnProperty(args[0])) {
       if (!/image/g.test(mime)){
         
     
-    
-        let styleId = styleMappings[args[0]];
-    console.log(styleId)
+
     
     
      
-      else if(!args[0]){
-       m.reply(helpMenu)
-    return !0
-     }
+      
      
      
-     else if (args[0] && !styleId) {
-                 m.reply(helpMenu)
-        } 
+     
         let profile = await conn.profilePictureUrl(who, 'image').catch((_) => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
         
       
