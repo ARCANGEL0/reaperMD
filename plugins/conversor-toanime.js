@@ -618,7 +618,7 @@ ${filtros}
 
 
 
-
+m.react("💿")
 
 
   async function addObject(imagemSrc, overlaySrc) {
@@ -661,7 +661,7 @@ ${filtros}
     if (err) throw err;
     
     // Envia o arquivo como um buffer
-    conn.sendFile(m.chat, data, 'image.png', '', m);
+    m.react("📀"); conn.sendFile(m.chat, data, 'image.png', '', m);
   })
 })
  
@@ -686,7 +686,7 @@ async function createImageRequest(images, styleId) {
 
   const taskId = postData.result.task_id;
   console.log('Task id   ',taskId)
-  await new Promise(resolve => setTimeout(resolve, 12000));
+  await new Promise(resolve => setTimeout(resolve, 16000));
 
   const statusRequest = await fetch(`https://api.itsrose.rest/differentMe/status?task_id=${taskId}`, {
       headers: { 'Authorization': `Bearer ${apiKey}` }
@@ -733,7 +733,8 @@ const imagemBase = await loadImage(imagemBaseSrc);
     if (err) throw err;
     
     // Envia o arquivo como um buffer
-    conn.sendFile(m.chat, data, 'image.png', '', m);
+    
+    m.react("📀"); conn.sendFile(m.chat, data, 'image.png', '', m);
   })
 })
  
@@ -891,7 +892,7 @@ else {
     if (err) throw err;
     
     // Envia o arquivo como um buffer
-    conn.sendFile(m.chat, data, 'image.png', '', m);
+    m.react("📀"); conn.sendFile(m.chat, data, 'image.png', '', m);
   })
 })
  
@@ -1016,7 +1017,7 @@ else {
     if (err) throw err;
     
     // Envia o arquivo como um buffer
-    conn.sendFile(m.chat, data, 'image.png', '', m);
+    m.react("📀"); conn.sendFile(m.chat, data, 'image.png', '', m);
   })
 })
   
@@ -1347,7 +1348,7 @@ const images = await uploadImage(datab);
 try {
   const rslt = `https://api.neoxr.eu/api/effect?style=caricature&image=${images}&apikey=${global.neoxr}`
 
-await conn.sendFile(m.chat, rslt, 'error.jpg', null, m);
+await m.react("📀"); conn.sendFile(m.chat, rslt, 'error.jpg', null, m);
 
 } catch (e) {
   console.log(e)
@@ -1368,7 +1369,7 @@ throw `${idioma == 'en' ? "> [!] 𝙷𝚎𝚢 𝚔𝚒𝚍, 𝚝𝚑𝚎𝚛𝚎
     
     console.log(dawta)
     
-  conn.sendFile(m.chat, dawta,``,);
+  m.react("📀"); conn.sendFile(m.chat, dawta,``,);
   console.log(who)
   
   }
@@ -1424,7 +1425,7 @@ try {
         .then(async (imageUrl) => {
     console.log('Image URL:', imageUrl) 
 
-    await conn.sendFile(m.chat, imageUrl, 'error.jpg', null, m);
+    await m.react("📀"); conn.sendFile(m.chat, imageUrl, 'error.jpg', null, m);
 
          })
         .catch(err => {
@@ -1452,7 +1453,7 @@ let imagemn = await conn.profilePictureUrl(who, 'image').catch((_) => 'https://t
     .then(async (imageUrl) => {
 console.log('Image URL:', imageUrl) 
 
-await conn.sendFile(m.chat, imageUrl, 'error.jpg', null, m);
+await m.react("📀"); conn.sendFile(m.chat, imageUrl, 'error.jpg', null, m);
 
      })
     .catch(err => {
@@ -1481,7 +1482,7 @@ const images = await uploadImage(datab);
 try {
   const rslt = `https://api.neoxr.eu/api/effect?style=staco&image=${images}&apikey=${global.neoxr}`
 
-await conn.sendFile(m.chat, rslt, 'error.jpg', null, m);
+await m.react("📀"); conn.sendFile(m.chat, rslt, 'error.jpg', null, m);
 
 } catch (e) {
   console.log(e)
@@ -1502,7 +1503,7 @@ throw `${idioma == 'en' ? "> [!] 𝙷𝚎𝚢 𝚔𝚒𝚍, 𝚝𝚑𝚎𝚛𝚎
     
     console.log(dawta)
     
-  conn.sendFile(m.chat, dawta,``,);
+  m.react("📀"); conn.sendFile(m.chat, dawta,``,);
   console.log(who)
   
   }
@@ -1522,7 +1523,7 @@ const images = await uploadImage(datab);
 try {
   const rslt = `https://api.neoxr.eu/api/effect?style=bunny&image=${images}&apikey=${global.neoxr}`
 
-await conn.sendFile(m.chat, rslt, 'error.jpg', null, m);
+await m.react("📀"); conn.sendFile(m.chat, rslt, 'error.jpg', null, m);
 
 } catch (e) {
   console.log(e)
@@ -1543,7 +1544,7 @@ throw `${idioma == 'en' ? "> [!] 𝙷𝚎𝚢 𝚔𝚒𝚍, 𝚝𝚑𝚎𝚛𝚎
     
     console.log(dawta)
     
-  conn.sendFile(m.chat, dawta,``,);
+  m.react("📀"); conn.sendFile(m.chat, dawta,``,);
   console.log(who)
   
   }
@@ -1563,7 +1564,7 @@ const images = await uploadImage(datab);
 try {
   const rslt = `https://api.neoxr.eu/api/effect?style=clown&image=${images}&apikey=${global.neoxr}`
 
-await conn.sendFile(m.chat, rslt, 'error.jpg', null, m);
+await m.react("📀"); conn.sendFile(m.chat, rslt, 'error.jpg', null, m);
 
 } catch (e) {
   console.log(e)
@@ -1584,7 +1585,7 @@ throw `${idioma == 'en' ? "> [!] 𝙷𝚎𝚢 𝚔𝚒𝚍, 𝚝𝚑𝚎𝚛𝚎
     
     console.log(dawta)
     
-  conn.sendFile(m.chat, dawta,``,);
+  m.react("📀"); conn.sendFile(m.chat, dawta,``,);
   console.log(who)
   
   }
@@ -1604,7 +1605,7 @@ const images = await uploadImage(datab);
 try {
   const rslt = `https://itzpire.site/maker/rainbow?url=${images}`
 
-await conn.sendFile(m.chat, rslt, 'error.jpg', null, m);
+await m.react("📀"); conn.sendFile(m.chat, rslt, 'error.jpg', null, m);
 
 } catch (e) {
   console.log(e)
@@ -1624,7 +1625,7 @@ throw `${idioma == 'en' ? "> [!] 𝙷𝚎𝚢 𝚔𝚒𝚍, 𝚝𝚑𝚎𝚛𝚎
     
     console.log(dawta)
     
-  conn.sendFile(m.chat, dawta,``,);
+  m.react("📀"); conn.sendFile(m.chat, dawta,``,);
   console.log(who)
   
   }
@@ -1645,7 +1646,7 @@ const images = await uploadImage(datab);
 try {
   const rslt = `https://api.neoxr.eu/api/effect?style=ink&image=${images}&apikey=${global.neoxr}`
 
-await conn.sendFile(m.chat, rslt, 'error.jpg', null, m);
+await m.react("📀"); conn.sendFile(m.chat, rslt, 'error.jpg', null, m);
 
 } catch (e) {
   console.log(e)
@@ -1666,7 +1667,7 @@ throw `${idioma == 'en' ? "> [!] 𝙷𝚎𝚢 𝚔𝚒𝚍, 𝚝𝚑𝚎𝚛𝚎
     
     console.log(dawta)
     
-  conn.sendFile(m.chat, dawta,``,);
+  m.react("📀"); conn.sendFile(m.chat, dawta,``,);
   console.log(who)
   
   }
@@ -1686,7 +1687,7 @@ const images = await uploadImage(datab);
 try {
   const rslt = `https://api.neoxr.eu/api/effect?style=latte&image=${images}&apikey=${global.neoxr}`
 
-await conn.sendFile(m.chat, rslt, 'error.jpg', null, m);
+await m.react("📀"); conn.sendFile(m.chat, rslt, 'error.jpg', null, m);
 
 } catch (e) {
   console.log(e)
@@ -1707,7 +1708,7 @@ throw `${idioma == 'en' ? "> [!] 𝙷𝚎𝚢 𝚔𝚒𝚍, 𝚝𝚑𝚎𝚛𝚎
     
     console.log(dawta)
     
-  conn.sendFile(m.chat, dawta,``,);
+  m.react("📀"); conn.sendFile(m.chat, dawta,``,);
   console.log(who)
   
   }
@@ -1727,7 +1728,7 @@ const images = await uploadImage(datab);
 try {
   const rslt = `https://api.neoxr.eu/api/effect?style=sketch&image=${images}&apikey=${global.neoxr}`
 
-await conn.sendFile(m.chat, rslt, 'error.jpg', null, m);
+await m.react("📀"); conn.sendFile(m.chat, rslt, 'error.jpg', null, m);
 
 } catch (e) {
   console.log(e)
@@ -1748,7 +1749,7 @@ throw `${idioma == 'en' ? "> [!] 𝙷𝚎𝚢 𝚔𝚒𝚍, 𝚝𝚑𝚎𝚛𝚎
     
     console.log(dawta)
     
-  conn.sendFile(m.chat, dawta,``,);
+  m.react("📀"); conn.sendFile(m.chat, dawta,``,);
   console.log(who)
   
   }
@@ -1772,7 +1773,7 @@ try {
 const anime = `https://api.popcat.xyz/communism?image=${images}`;
 
 
-await conn.sendFile(m.chat, dawta,'')
+await m.react("📀"); conn.sendFile(m.chat, dawta,'')
 } catch (e) {
   console.log(e)
 throw `${idioma == 'en' ? "> [!] 𝙷𝚎𝚢 𝚔𝚒𝚍, 𝚝𝚑𝚎𝚛𝚎 𝚠𝚊𝚜 𝚊𝚗 𝚎𝚛𝚛𝚘𝚛 𝚙𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐 𝚝𝚑𝚎 𝚒𝚖𝚊𝚐𝚎. \n> 𝙲𝚑𝚎𝚌𝚔 𝚒𝚏 𝚝𝚑𝚎𝚛𝚎'𝚜 𝚊 𝚏𝚊𝚌𝚎 𝚒𝚗 𝚒𝚝 𝚏𝚒𝚛𝚜𝚝, 𝚒𝚏 𝚝𝚑𝚎𝚛𝚎'𝚜 𝚜𝚘𝚖𝚎𝚘𝚗𝚎 𝚒𝚗 𝚝𝚑𝚊𝚝 𝚙𝚒𝚌𝚝𝚞𝚛𝚎 𝚊𝚗𝚍 𝚒𝚝'𝚜 𝚐𝚒𝚟𝚒𝚗𝚐 𝚢𝚘𝚞 𝚊𝚗 𝚎𝚛𝚛𝚘𝚛, 𝚜𝚎𝚗𝚍 𝚖𝚎 𝚝𝚑𝚎 𝚕𝚘𝚐 𝚞𝚜𝚒𝚗𝚐 .𝚛𝚎𝚙𝚘𝚛𝚝" : "> [*] 𝙴𝚒 𝚐𝚊𝚛𝚘𝚝𝚘, 𝚑𝚘𝚞𝚟𝚎 𝚞𝚖 𝚎𝚛𝚛𝚘 𝚎𝚖 𝚙𝚛𝚘𝚌𝚎𝚜𝚜𝚊𝚛 𝚊 𝚒𝚖𝚊𝚐𝚎𝚖.\n> 𝚅𝚎𝚛𝚒𝚏𝚒𝚚𝚞𝚎 𝚜𝚎 𝚝𝚎𝚖 𝚊𝚕𝚐𝚞𝚖 𝚛𝚘𝚜𝚝𝚘 𝚗𝚎𝚕𝚊 𝚙𝚛𝚒𝚖𝚎𝚒𝚛𝚘, 𝚜𝚎 𝚝𝚒𝚟𝚎𝚛 𝚊𝚕𝚐𝚞𝚎𝚖 𝚗𝚎𝚜𝚜𝚊 𝚏𝚘𝚝𝚘 𝚎 𝚎𝚜𝚝𝚒𝚟𝚎𝚛 𝚍𝚊𝚗𝚍𝚘 𝚎𝚛𝚛𝚘, 𝚖𝚊𝚗𝚍𝚊 𝚘 𝚕𝚘𝚐 𝚙𝚛𝚊 𝚖𝚒𝚖 𝚞𝚜𝚊𝚗𝚍𝚘 .𝚛𝚎𝚙𝚘𝚛𝚝" }`
@@ -1790,7 +1791,7 @@ throw `${idioma == 'en' ? "> [!] 𝙷𝚎𝚢 𝚔𝚒𝚍, 𝚝𝚑𝚎𝚛𝚎
     image: await conn.profilePictureUrl(who, 'image').catch((_) => 'https://telegra.ph/file/24fa902ead26340f3df2c.png') })
     
     console.log(dawta)
-      conn.sendFile(m.chat, dawta,'')
+      m.react("📀"); conn.sendFile(m.chat, dawta,'')
   console.log(who)
   
   }
@@ -1824,7 +1825,7 @@ if (turnStyles.hasOwnProperty(args[0])) {
       .then(async (imageUrl) => {
           if (imageUrl) {
               console.log(`Image URL: ${imageUrl}`);
-              conn.sendFile(m.chat, imageUrl, 'error.jpg', null, m);
+              m.react("📀"); conn.sendFile(m.chat, imageUrl, 'error.jpg', null, m);
 
           } else {
               m.react("⚠️");
@@ -1848,7 +1849,7 @@ if (turnStyles.hasOwnProperty(args[0])) {
       .then(async (imageUrl) => {
           if (imageUrl) {
               console.log(`Image URL: ${imageUrl}`);
-              conn.sendFile(m.chat, imageUrl, 'error.jpg', null, m);
+              m.react("📀"); conn.sendFile(m.chat, imageUrl, 'error.jpg', null, m);
 
           } else {
               m.react("⚠️");
@@ -1906,7 +1907,7 @@ if (turnStyles.hasOwnProperty(args[0])) {
           console.log(data)
           if (data.status && data.result && data.result.images) {
         for (let i = 0; i < data.result.images.length; i++) {
-           conn.sendFile(m.chat, data.result.images[i], 'error.jpg', null, m);
+           m.react("📀"); conn.sendFile(m.chat, data.result.images[i], 'error.jpg', null, m);
             
         }
     } else {
@@ -1974,7 +1975,7 @@ if (turnStyles.hasOwnProperty(args[0])) {
           console.log(data)
           if (data.status && data.result && data.result.images) {
         for (let i = 0; i < data.result.images.length; i++) {
-           conn.sendFile(m.chat, data.result.images[i], 'error.jpg', null, m);
+           m.react("📀"); conn.sendFile(m.chat, data.result.images[i], 'error.jpg', null, m);
             
         }
     } else {
