@@ -698,6 +698,9 @@ async function createImageRequest(images, styleId) {
   return (statusData.status && statusData.result.status === "completed") ? statusData.result.images[0] : null;
 }
 async function transformImage(profile, styleId) {
+const apiUrl = 'https://api.itsrose.rest/turnMe/transform';
+const authToken = `Bearer ${itsrose}`;
+
   try {
     const res = await fetch(apiUrl, {
       method: 'POST',
@@ -1933,8 +1936,7 @@ transformImage(images, styleId);
         let profile = await conn.profilePictureUrl(who, 'image').catch((_) => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
         
       
-const apiUrl = 'https://api.itsrose.rest/turnMe/transform';
-const authToken = `Bearer ${itsrose}`;
+
 
 
 
