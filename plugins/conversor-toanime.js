@@ -1805,7 +1805,7 @@ throw `${idioma == 'en' ? "> [!] 𝙷𝚎𝚢 𝚔𝚒𝚍, 𝚝𝚑𝚎𝚛𝚎
 
 
 
-if (turnStyles.hasOwnProperty(args[0])) {
+if (Object.keys(turnStyles).find(key => dict[key] === args[0])) {
   let styleId = turnStyles[args[0]];
   console.log(styleId)
 
@@ -1866,7 +1866,7 @@ if (turnStyles.hasOwnProperty(args[0])) {
     
      
 
-} else if(styleMappings.hasOwnProperty(args[0])) {
+} else if(Object.keys(styleMappings).find(key => dict[key] === args[0])) {
   let styleId = styleMappings[args[0]];
   console.log(styleId)
 
