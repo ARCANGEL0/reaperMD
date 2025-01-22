@@ -680,9 +680,12 @@ async function createImageRequest(images, styleId) {
   });
 
   const postData = await postRequest.json();
+  console.log(postData)
+  
   if (!postData.status || !postData.result.task_id) return null;
 
   const taskId = postData.result.task_id;
+  console.log('Task id   ',taskId)
   await new Promise(resolve => setTimeout(resolve, 40000));
 
   const statusRequest = await fetch(`https://api.itsrose.rest/differentMe/status?task_id=${taskId}`, {
@@ -690,6 +693,8 @@ async function createImageRequest(images, styleId) {
   });
 
   const statusData = await statusRequest.json();
+  console.log('img rszp')
+  console.log(statusData)
   return (statusData.status && statusData.result.status === "completed") ? statusData.result.images[0] : null;
 }
 
@@ -1838,7 +1843,7 @@ if (turnStyles.hasOwnProperty(args[0])) {
         
   
         let profile = await conn.profilePictureUrl(who, 'image').catch((_) => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
-        
+    
         createImageRequest(profile, styleId)
       .then(async (imageUrl) => {
           if (imageUrl) {
