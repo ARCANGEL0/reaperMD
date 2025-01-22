@@ -1416,7 +1416,7 @@ const images = await uploadImage(datab);
 try {
 
     fetchImageUrl(images)
-        .then(imageUrl => {
+        .then(async (imageUrl) => {
     console.log('Image URL:', imageUrl) 
 
     await conn.sendFile(m.chat, imageUrl, 'error.jpg', null, m);
@@ -1444,7 +1444,7 @@ throw `${idioma == 'en' ? "> [!] 𝙷𝚎𝚢 𝚔𝚒𝚍, 𝚝𝚑𝚎𝚛𝚎
     
 let imagemn = await conn.profilePictureUrl(who, 'image').catch((_) => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
     fetchImageUrl(imagemn)
-    .then(imageUrl => {
+    .then(async (imageUrl) => {
 console.log('Image URL:', imageUrl) 
 
 await conn.sendFile(m.chat, imageUrl, 'error.jpg', null, m);
@@ -1816,7 +1816,7 @@ if (turnStyles.hasOwnProperty(args[0])) {
 
        
       createImageRequest(images, styleId)
-      .then(imageUrl => {
+      .then(async (imageUrl) => {
           if (imageUrl) {
               console.log(`Image URL: ${imageUrl}`);
               conn.sendFile(m.chat, imageUrl, 'error.jpg', null, m);
@@ -1840,7 +1840,7 @@ if (turnStyles.hasOwnProperty(args[0])) {
         let profile = await conn.profilePictureUrl(who, 'image').catch((_) => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
         
         createImageRequest(profile, styleId)
-      .then(imageUrl => {
+      .then(async (imageUrl) => {
           if (imageUrl) {
               console.log(`Image URL: ${imageUrl}`);
               conn.sendFile(m.chat, imageUrl, 'error.jpg', null, m);
