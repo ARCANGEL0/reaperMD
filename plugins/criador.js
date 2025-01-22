@@ -19,7 +19,7 @@ const cat = `╭─┅──┅❖ ♱ ❖─┅──┅
 |
 | 𝔈𝔪𝔞𝔦𝔩: _*henry.arcangello@gmail.com*_
 | 𝔚𝔢𝔟𝔰𝔦𝔱𝔢: _*arcangelo.net*_ ou _*arcangelo.net/?tr=m*_
-| ℑ𝔫𝔰𝔱𝔞𝔤𝔯𝔞𝔪: _*instagram.com/henryy.xn*_
+| ℑ𝔫𝔰𝔱𝔞𝔤𝔯𝔞𝔪: _*instagram.com/h.arcangelo*_
 | 𝔊𝔦𝔱𝔥𝔲𝔟: _*github.com/ARCANGEL0*_
 | 𝔚𝔥𝔞𝔱𝔰𝔞𝔭𝔭: _*wa.me/351927285125*_
 |

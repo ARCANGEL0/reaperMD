@@ -142,16 +142,16 @@ global.mail = 'henry.arcangello@gmail.com' //SET YOUR EMAIL
 global.desc = '' //description 
 global.desc2 = '' // Longer description 
 global.country = 'PT' //Your country 
-global.author = "ΒYƬΣSΞC-MĐ 𖠑" // sticker description
+global.author = "ΒYƬΣSΞC-MĐ" // sticker description
 global.packname = "👓 MЯ.ЯӨBӨƬ "
 
 //⊱ ━━━━━.⋅ Version | Name | Links ⋅.━━━━ ⊰
 
-global.vs = "1.1.0"
+global.vs = "1.6.1"
 global.vsJB = global.vs
-global.yt = "https://www.instagram.com/henryy.xn"
-global.gt = "ΒYƬΣSΞC-MĐ 𖠑"
-global.ig = "https://www.instagram.com/henryy.xn"
+global.yt = "https://www.instagram.com/h.arcangelo"
+global.gt = "ΒYƬΣSΞC-MĐ"
+global.ig = "https://www.instagram.com/h.arcangelo"
 global.md = "https://github.com/ARCANGEL0/ByteSec-MD"
 
 

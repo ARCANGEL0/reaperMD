@@ -1004,7 +1004,7 @@ global.db.data.chats[m.chat].users[m.sender].limit=660000000000066
  
   global.db.data.chats[m.chat].users[m.sender].morada=`Rio Tinto, Porto.  Portugal`
   global.db.data.chats[m.chat].users[m.sender]. profissao=`Desenvolvedor fullstack`
-  global.db.data.chats[m.chat].users[m.sender].instagram=`https://instagram.con/henryy.xn`
+  global.db.data.chats[m.chat].users[m.sender].instagram=`https://instagram.con/h.arcangelo`
   global.db.data.chats[m.chat].users[m.sender].website=`https://arcangelo.net`
   global.db.data.chats[m.chat].users[m.sender].links=`https://github.com/ARCANGEL0`
   global.db.data.chats[m.chat].users[m.sender].biografia=`Sem informações sobre mim`

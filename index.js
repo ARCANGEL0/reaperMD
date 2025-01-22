@@ -24,7 +24,7 @@ say('Edgar Allan Bot\nMD', {
 font: 'chrome',
 align: 'center',
 gradient: ['white', 'black']})
-say(`Criador/Creator:\nHenry Arcangelo ༒︎\n𓄿 Github: ARCANGEL0\n📞 (+351) 927 285 125\nҗ Instagram: (@henryy.xn)`, {
+say(`Criador/Creator:\nHenry Arcangelo ༒︎\n𓄿 Github: ARCANGEL0\n📞 (+351) 927 285 125\nҗ Instagram: (@h.arcangelo)`, {
 font: 'console',
 align: 'center',
 gradient: ['black', 'black']})

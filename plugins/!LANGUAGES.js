@@ -145,37 +145,28 @@ if (global.db.data.chats[m.chat].language === 'pt') {
 global.notOwner = notOwnerMg;
 
 function sendSystemErrorAlert(lang) {
-    const messages = {
-        pt: `> ### ALERTA DE ERRO DO SISTEMA ###
 
-██▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓██
-█ ERRO: MALFUNCIONAMENTO DO SISTEMA █
-█ CÓDIGO: 0x1F4B                     █
+    let mensagem = global.idioma == 'en' ?
+`> [⚠] ALERTA DE ERRO DO SISTEMA 
+> █ ERROR CODE: 0x1F4B  █
 > ‎ 
-> [!] ALERTA: Falha crítica detectada
-> [!] Protocolo de recuperação: INDISPONÍVEL
+> [!] 𝙰𝚕𝚐𝚞𝚖𝚊 𝚌𝚘𝚒𝚜𝚊 𝚍𝚎𝚞 𝚎𝚛𝚛𝚊𝚍𝚘 𝚊𝚚𝚞𝚒, 𝚐𝚊𝚛𝚘𝚝𝚘.
 > ‎ 
 > >> OPERAÇÃO INTERROMPIDA <<
 > 𖣖 Use ".report" para registrar o incidente
-> ‎ 
-> >>> SISTEMA EM MODO DE EMERGÊNCIA <<<`,
+> ‎ `,
 
-        en: `> ### SYSTEM ERROR ALERT ###
-
-██▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓██
-█ ERROR: SYSTEM MALFUNCTION █
-█ CODE: 0x1F4B             █
+: 
+`> [⚠] SYSTEM ERROR ALERT
+> █ ERROR CODE: 0x1F4B  █
 > ‎ 
-> [!] ALERT: Critical failure detected
-> [!] Recovery protocol: UNAVAILABLE
+> [!] 𝚂𝚘𝚖𝚎𝚝𝚑𝚒𝚗𝚐 𝚠𝚎𝚗𝚝 𝚠𝚛𝚘𝚗𝚐, 𝚔𝚒𝚍𝚍𝚘. . .
 > ‎ 
 > >> OPERATION INTERRUPTED <<
 > 𖣖 Use ".report" to log the incident
-> ‎ 
-> >>> SYSTEM IN EMERGENCY MODE <<<`
-    };
+> ‎ `
 
-    return m.reply(messages[lang]);
+    return m.reply(m.chat,mensagem);
 }
 
 global.sendSystemErrorAlert = sendSystemErrorAlert
