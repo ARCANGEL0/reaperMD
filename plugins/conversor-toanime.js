@@ -720,7 +720,7 @@ const authToken = `Bearer ${itsrose}`;
     if (res.ok && data.result?.images) {
       data.result.images.forEach((img) =>{
         console.log(img) 
-        conn.sendFile(m.chat, img ,'error.png', m)
+        conn.sendFile(m.chat, img ,'error.png', '',m)
         });
     } else {
       throw new Error('Invalid response');
