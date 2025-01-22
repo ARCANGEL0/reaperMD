@@ -154,7 +154,7 @@ function sendSystemErrorAlert(lang) {
 > ‎ 
 > >> OPERAÇÃO INTERROMPIDA <<
 > 𖣖 Use ".report" para registrar o incidente
-> ‎ `,
+> ‎ `
 
 : 
 `> [⚠] SYSTEM ERROR ALERT
