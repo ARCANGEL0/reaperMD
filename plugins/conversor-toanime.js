@@ -251,6 +251,167 @@ import { join } from 'path';
 const handler = async (m, {args,command,usedPrefix,__dirname,conn,text,isAdmin,isOwner}) => {
   
 
+  const styleMappings = {
+    "horrible_zombie": "horrible.zombie",
+      "halloween_makeup": "halloween.makeup",
+      "dark_gothic": "dark.gothic",
+      "halloween_dark_makeup": "halloween.dark.makeup",
+      "japanese_horror": "japanese.horror",
+      "synthwave_punk": "synthwave.punk",
+      "chocolate_man": "chocolate.man",
+      "crazy_scientist": "crazy.scientist",
+      "dont_starve": "dont.starve",
+      "white_statue": "white.statue",
+      "colorful_illustration": "colorful.illustration",
+      "papercut_craft": "papercut.craft",
+      "blood_of_blue": "blood.of.blue",
+      "cyber_punk": "cyber.punk",
+      "fanatic_adventure": "fanatic.adventure",
+      "legend_of_elf": "legend.of.elf",
+      "racer": "racer",
+      "cute_cartoon": "cute.cartoon",
+      "super_hero": "super.hero",
+      "pixel_art": "pixel.art",
+      "retro_style": "retro.style",
+      "black_swing": "black.swing",
+      "fairy_tale": "fairy.tale",
+      "thick_impasto": "thick.impasto",
+      "rainbow_hair": "rainbow.hair",
+      "30s_style": "30s.style",
+      "water_magic": "water.magic",
+      "on_fire": "on.fire",
+      "luminous_cloud": "luminous.cloud",
+      "pocket_pet": "pocket.pet",
+      "spirited_wind": "spirited.wind",
+      "3d_style": "3d.style",
+      "red_redemption": "red.redemption",
+      "boxing_man": "boxing.man",
+      "hell_kight": "hell.kight",
+      "calendar_girl": "calendar.girl",
+      "cute_illustration": "cute.illustration",
+      "aging_filter": "aging.filter",
+      "realistic_fire": "realistic.fire",
+      "tattoo_magic": "tattoo.magic",
+      "christmas_girl": "christmas.girl",
+      "ps_game_style_1": "ps.game.style.1",
+      "thunderstruck_armor": "thunderstruck.armor",
+      "lightning_punk": "lightning.punk",
+      "aether_punk": "aether.punk",
+      "new_worlds_pirates": "new.worlds.pirates",
+      "legend_fighters": "legend.fighters",
+      "barbie_girl": "barbie.girl",
+      "cool_guy": "cool.guy",
+      "muscle_man": "muscle.man",
+      "blindbox": "blindbox",
+      "melted_chocolate": "melted.chocolate",
+      "block_world": "block.world",
+      "90s_comic": "90s.comic",
+      "realistic_thunderstruck_armor": "realistic.thunderstruck.armor",
+      "anime_2d": "anime.2d",
+      "realistic_lightning_punk": "realistic.lightning.punk",
+      "white_skin": "white.skin",
+      "hourglass_body_shape": "hourglass.body.shape",
+      "pixel_style": "pixel.style",
+      "anime_hero": "anime.hero",
+      "christmas_3d": "christmas.3d",
+      "christmas_family": "christmas.family",
+      "cartoon": "cartoon",
+      "80s_style": "80s.style",
+      "christmas_cartoon": "christmas.cartoon",
+      "ps_game_style_2": "ps.game.style.2",
+      "anime": "anime",
+      "city_punk": "city.punk",
+      "cartoon_tattoo_muscle": "cartoon.tattoo.muscle",
+      "pocket_pet": "pocket.pet",
+      "christmas_comic": "christmas.comic",
+      "magic_muscle": "magic.muscle",
+      "super_bowl": "super.bowl",
+      "romantic_anime": "romantic.anime",
+      "animal_ears": "animal.ears",
+      "brick_world": "brick.world",
+      "skeleton_bride": "skeleton.bride",
+      "joker": "joker",
+    "zombie": "zombie",
+    "palhaco": "palhaco",
+    "coelho":"coelho",
+    "grafiti":"grafiti"
+  };
+
+  
+  const turnStyles = {
+    "animal_fest": "animal.fest",
+    "old": "old",
+    "doll": "doll",
+    "metal": "metal",
+    "8bit": "8bit",
+    "city": "city",
+    "blazing_torch": "blazing.torch",
+    "clay": "clay",
+    "realism": "realism",
+    "simulife": "simulife",
+    "sketch": "sketch",
+    "zombie": "zombie",
+    "oil_stick": "oil.stick",
+    "balloon": "balloon",
+    "pipe_craft": "pipe.craft",
+    "crystal": "crystal",
+    "felt": "felt",
+    "jade": "jade",
+    "pink_girl": "pink.girl",
+    "vivid": "vivid",
+    "eastern": "eastern",
+    "mythical": "mythical",
+    "ps2": "ps2",
+    "pixel_game": "pixel.game",
+    "league": "league",
+    "lineage": "lineage",
+    "fantasy": "fantasy",
+    "gta": "gta",
+    "persona": "persona",
+    "happiness": "happiness",
+    "manga": "manga",
+    "sweet": "sweet",
+    "pixel_art": "pixel.art",
+    "catwoman": "catwoman",
+    "loose": "loose",
+    "sakura": "sakura",
+    "pocket": "pocket",
+    "grains": "grains",
+    "graduation": "graduation",
+    "oil_pastel":"oil.pastel",
+    "flora_tour": "flora.tour",
+    "loong_year": "loong.year",
+    "figure": "figure",
+    "prospera": "prospera",
+    "guardians": "guardians",
+    "expedition": "expedition",
+    "leisure": "leisure",
+    "giftify": "giftify",
+    "amiable": "amiable",
+    "3d_cartoon": "3d.cartoon",
+    "sketch_ii": "sketch.ii",
+    "collage": "collage",
+    "mini_doll": "mini.doll",
+    "sketchresize": "sketchresize",
+    "cartoon": "cartoon",
+    "fluffy": "fluffy",
+    "insta": "insta",
+    "local_graffiti": "local.graffiti",
+    "peking_opera": "peking.opera",
+    "opera": "opera",
+    "torch": "torch",
+    "sport": "sport",
+    "dunk": "dunk",
+    "idol": "idol",
+    "anime25d": "anime25d",
+    "anime": "anime",
+    "comic": "comic",
+    "manhwa": "manhwa",
+    "manhwa_female": "manhwa.female",
+    "manhwa_male": "manhwa.male",
+    "samyang": "samyang"
+};
+
 
 const filtros = idioma == 'en' ? 
 `> [!] ⦏𝙵̷𝚒̷𝚕̷𝚝̷𝚎̷𝚛̷𝚜̷⦐
@@ -378,6 +539,77 @@ ${helpText}
 > ʙʀɪᴄᴋ.ᴡᴏʀʟᴅ 
 > ꜱᴋᴇʟᴇᴛᴏɴ.ʙʀɪᴅᴇ
 > ᴊᴏᴋᴇʀ
+> ᴀɴɪᴍᴀʟ.ꜰᴇꜱᴛ 
+> ᴏʟᴅ 
+> ᴅᴏʟʟ 
+> ᴍᴇᴛᴀʟ 
+> 8ʙɪᴛ 
+> ᴄɪᴛʏ 
+> ʙʟᴀᴢɪɴɢ.ᴛᴏʀᴄʜ 
+> ᴄʟᴀʏ 
+> ʀᴇᴀʟɪꜱᴍ 
+> ꜱɪᴍᴜʟɪꜰᴇ 
+> ꜱᴋᴇᴛᴄʜ 
+> ᴢᴏᴍʙɪᴇ 
+> ᴏɪʟ.ꜱᴛɪᴄᴋ 
+> ʙᴀʟʟᴏᴏɴ 
+> ᴘɪᴘᴇ.ᴄʀᴀꜰᴛ 
+> ᴄʀʏꜱᴛᴀʟ 
+> ꜰᴇʟᴛ 
+> ᴊᴀᴅᴇ 
+> ᴘɪɴᴋ.ɢɪʀʟ 
+> ᴠɪᴠɪᴅ 
+> ᴇᴀꜱᴛᴇʀɴ 
+> ᴍʏᴛʜɪᴄᴀʟ 
+> ᴘꜱ2 
+> ᴘɪxᴇʟ.ɢᴀᴍᴇ 
+> ʟᴇᴀɢᴜᴇ 
+> ʟɪɴᴇᴀɢᴇ 
+> ꜰᴀɴᴛᴀꜱʏ 
+> ɢᴛᴀ 
+> ᴘᴇʀꜱᴏɴᴀ 
+> ʜᴀᴘᴘɪɴᴇꜱꜱ 
+> ᴍᴀɴɢᴀ 
+> ꜱᴡᴇᴇᴛ 
+> ᴘɪxᴇʟ.ᴀʀᴛ 
+> ᴄᴀᴛᴡᴏᴍᴀɴ 
+> ʟᴏᴏꜱᴇ 
+> ꜱᴀᴋᴜʀᴀ 
+> ᴘᴏᴄᴋᴇᴛ 
+> ɢʀᴀɪɴꜱ 
+> ɢʀᴀᴅᴜᴀᴛɪᴏɴ 
+> ᴏɪʟ.ᴘᴀꜱᴛᴇʟ 
+> ꜰʟᴏʀᴀ.ᴛᴏᴜʀ 
+> ʟᴏᴏɴɢ.ʏᴇᴀʀ 
+> ꜰɪɢᴜʀᴇ 
+> ᴘʀᴏꜱᴘᴇʀᴀ 
+> ɢᴜᴀʀᴅɪᴀɴꜱ 
+> ᴇxᴘᴇᴅɪᴛɪᴏɴ 
+> ʟᴇɪꜱᴜʀᴇ 
+> ɢɪꜰᴛɪꜰʏ 
+> ᴀᴍɪᴀʙʟᴇ 
+> 3ᴅ.ᴄᴀʀᴛᴏᴏɴ 
+> ꜱᴋᴇᴛᴄʜ.ɪɪ 
+> ᴄᴏʟʟᴀɢᴇ 
+> ᴍɪɴɪ.ᴅᴏʟʟ 
+> ꜱᴋᴇᴛᴄʜʀᴇꜱɪᴢᴇ 
+> ᴄᴀʀᴛᴏᴏɴ 
+> ꜰʟᴜꜰꜰʏ 
+> ɪɴꜱᴛᴀ 
+> ʟᴏᴄᴀʟ.ɢʀᴀꜰꜰɪᴛɪ 
+> ᴘᴇᴋɪɴɢ.ᴏᴘᴇʀᴀ 
+> ᴏᴘᴇʀᴀ 
+> ᴛᴏʀᴄʜ 
+> ꜱᴘᴏʀᴛ 
+> ᴅᴜɴᴋ 
+> ɪᴅᴏʟ 
+> ᴀɴɪᴍᴇ25ᴅ 
+> ᴀɴɪᴍᴇ 
+> ᴄᴏᴍɪᴄ 
+> ᴍᴀɴʜᴡᴀ 
+> ᴍᴀɴʜᴡᴀ.ꜰᴇᴍᴀʟᴇ 
+> ᴍᴀɴʜᴡᴀ.ᴍᴀʟᴇ 
+> ꜱᴀᴍʏᴀɴɢ
 > ________________________
 ${filtros}
 ┖┈┈┈┈┈┈┈┈┈┈
@@ -434,6 +666,34 @@ ${filtros}
 })
  
 }
+
+async function createImageRequest(images, styleId) {
+  const apiKey = 'Rk-3b78f4b1ca5993ae3c727eb07b91f68e';
+  const postRequest = await fetch('https://api.itsrose.rest/differentMe/create', {
+      method: 'POST',
+      headers: {
+          'Accept': 'application/json',
+          'Authorization': `Bearer ${apiKey}`,
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ init_image: images, style_id: styleId, color: "default" })
+  });
+
+  const postData = await postRequest.json();
+  if (!postData.status || !postData.result.task_id) return null;
+
+  const taskId = postData.result.task_id;
+  await new Promise(resolve => setTimeout(resolve, 40000));
+
+  const statusRequest = await fetch(`https://api.itsrose.rest/differentMe/status?task_id=${taskId}`, {
+      headers: { 'Authorization': `Bearer ${apiKey}` }
+  });
+
+  const statusData = await statusRequest.json();
+  return (statusData.status && statusData.result.status === "completed") ? statusData.result.images[0] : null;
+}
+
+
   async function addOverlay(imagemBaseSrc, imagemTopoSrc,opacidade) {
 
 const imagemBase = await loadImage(imagemBaseSrc);
@@ -1534,390 +1794,220 @@ throw `${idioma == 'en' ? "> [!] 𝙷𝚎𝚢 𝚔𝚒𝚍, 𝚝𝚑𝚎𝚛𝚎
   }
   
   
+///// fim
+
+
+
+
+if (turnStyles.hasOwnProperty(args[0])) {
+  let styleId = turnStyles[args[0]];
+  console.log(styleId)
+
   if (/image/g.test(mime)){
      
- let styleMappings = {
-  "horrible_zombie": "horrible.zombie",
-    "halloween_makeup": "halloween.makeup",
-    "dark_gothic": "dark.gothic",
-    "halloween_dark_makeup": "halloween.dark.makeup",
-    "japanese_horror": "japanese.horror",
-    "synthwave_punk": "synthwave.punk",
-    "chocolate_man": "chocolate.man",
-    "crazy_scientist": "crazy.scientist",
-    "dont_starve": "dont.starve",
-    "white_statue": "white.statue",
-    "colorful_illustration": "colorful.illustration",
-    "papercut_craft": "papercut.craft",
-    "blood_of_blue": "blood.of.blue",
-    "cyber_punk": "cyber.punk",
-    "fanatic_adventure": "fanatic.adventure",
-    "legend_of_elf": "legend.of.elf",
-    "racer": "racer",
-    "cute_cartoon": "cute.cartoon",
-    "super_hero": "super.hero",
-    "pixel_art": "pixel.art",
-    "retro_style": "retro.style",
-    "black_swing": "black.swing",
-    "fairy_tale": "fairy.tale",
-    "thick_impasto": "thick.impasto",
-    "rainbow_hair": "rainbow.hair",
-    "30s_style": "30s.style",
-    "water_magic": "water.magic",
-    "on_fire": "on.fire",
-    "luminous_cloud": "luminous.cloud",
-    "pocket_pet": "pocket.pet",
-    "spirited_wind": "spirited.wind",
-    "3d_style": "3d.style",
-    "red_redemption": "red.redemption",
-    "boxing_man": "boxing.man",
-    "hell_kight": "hell.kight",
-    "calendar_girl": "calendar.girl",
-    "cute_illustration": "cute.illustration",
-    "aging_filter": "aging.filter",
-    "realistic_fire": "realistic.fire",
-    "tattoo_magic": "tattoo.magic",
-    "christmas_girl": "christmas.girl",
-    "ps_game_style_1": "ps.game.style.1",
-    "thunderstruck_armor": "thunderstruck.armor",
-    "lightning_punk": "lightning.punk",
-    "aether_punk": "aether.punk",
-    "new_worlds_pirates": "new.worlds.pirates",
-    "legend_fighters": "legend.fighters",
-    "barbie_girl": "barbie.girl",
-    "cool_guy": "cool.guy",
-    "muscle_man": "muscle.man",
-    "blindbox": "blindbox",
-    "melted_chocolate": "melted.chocolate",
-    "block_world": "block.world",
-    "90s_comic": "90s.comic",
-    "realistic_thunderstruck_armor": "realistic.thunderstruck.armor",
-    "anime_2d": "anime.2d",
-    "realistic_lightning_punk": "realistic.lightning.punk",
-    "white_skin": "white.skin",
-    "hourglass_body_shape": "hourglass.body.shape",
-    "pixel_style": "pixel.style",
-    "anime_hero": "anime.hero",
-    "christmas_3d": "christmas.3d",
-    "christmas_family": "christmas.family",
-    "cartoon": "cartoon",
-    "80s_style": "80s.style",
-    "christmas_cartoon": "christmas.cartoon",
-    "ps_game_style_2": "ps.game.style.2",
-    "anime": "anime",
-    "city_punk": "city.punk",
-    "cartoon_tattoo_muscle": "cartoon.tattoo.muscle",
-    "pocket_pet": "pocket.pet",
-    "christmas_comic": "christmas.comic",
-    "magic_muscle": "magic.muscle",
-    "super_bowl": "super.bowl",
-    "romantic_anime": "romantic.anime",
-    "animal_ears": "animal.ears",
-    "brick_world": "brick.world",
-    "skeleton_bride": "skeleton.bride",
-    "joker": "joker",
-  "zombie": "zombie",
-  "palhaco": "palhaco",
-  "coelho":"coelho",
-  "grafiti":"grafiti"
-};
-    let styleId = styleMappings[args[0]];
-console.log(styleId)
 
-    if(args[0]=='gta'){
-      const qs = m.quoted ? m.quoted : m;
-const mimee = (qs.msg || qs).mimetype || qs.mediaType || '';
-
-  m.reply(`${idioma == 'en' ? '> [!] 𝙿𝚕𝚎𝚊𝚜𝚎 𝚠𝚊𝚒𝚝. . .' : '> [!] 𝙶𝚎𝚛𝚊𝚗𝚍𝚘 𝚒𝚖𝚊𝚐𝚎𝚖, 𝚊𝚐𝚞𝚊𝚛𝚍𝚎 . . .' }`);
-const datab = await qs.download?.();
-const images = await uploadImage(datab);
-try {
-  
- 
-const requestBody = {
-  init_image: images,
-  style_id: 'gta',
-  color: "default"
-
-};
-
-const apiUrl = 'https://api.itsrose.rest/image/_inference_style';
-const authToken = itsrose;
-
-let response = await fetch(apiUrl, {
-  method: 'POST',
-  headers: {
-    'Accept': 'application/json',
-    'Authorization': authToken,
-    'Content-Type': 'application/json',
-  },
-  body: JSON.stringify(requestBody),
-})
-  .then(response =>{
-    console.log(response)
     
-return   response.json()})
-    .then(data => {
-      console.log(data)
+    const qs = m.quoted ? m.quoted : m;
+    const mimee = (qs.msg || qs).mimetype || qs.mediaType || '';
+    
+      m.reply(`${idioma == 'en' ? '> [!] 𝙿𝚕𝚎𝚊𝚜𝚎 𝚠𝚊𝚒𝚝. . .' : '> [!] 𝙶𝚎𝚛𝚊𝚗𝚍𝚘 𝚒𝚖𝚊𝚐𝚎𝚖, 𝚊𝚐𝚞𝚊𝚛𝚍𝚎 . . .' }`);
+    const datab = await qs.download?.();
+    const images = await uploadImage(datab);
+
+       
+      createImageRequest(images, styleId)
+      .then(imageUrl => {
+          if (imageUrl) {
+              console.log(`Image URL: ${imageUrl}`);
+              conn.sendFile(m.chat, imageUrl, 'error.jpg', null, m);
+
+          } else {
+              m.react("⚠️");
+              m.reply(`${idioma == 'en' ? "> [!] 𝙷𝚎𝚢 𝚔𝚒𝚍, 𝚝𝚑𝚎𝚛𝚎 𝚠𝚊𝚜 𝚊𝚗 𝚎𝚛𝚛𝚘𝚛 𝚙𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐 𝚝𝚑𝚎 𝚒𝚖𝚊𝚐𝚎. \n> 𝙲𝚑𝚎𝚌𝚔 𝚒𝚏 𝚝𝚑𝚎𝚛𝚎'𝚜 𝚊 𝚏𝚊𝚌𝚎 𝚒𝚗 𝚒𝚝 𝚏𝚒𝚛𝚜𝚝, 𝚒𝚏 𝚝𝚑𝚎𝚛𝚎'𝚜 𝚜𝚘𝚖𝚎𝚘𝚗𝚎 𝚒𝚗 𝚝𝚑𝚊𝚝 𝚙𝚒𝚌𝚝𝚞𝚛𝚎 𝚊𝚗𝚍 𝚒𝚝'𝚜 𝚐𝚒𝚟𝚒𝚗𝚐 𝚢𝚘𝚞 𝚊𝚗 𝚎𝚛𝚛𝚘𝚛, 𝚜𝚎𝚗𝚍 𝚖𝚎 𝚝𝚑𝚎 𝚕𝚘𝚐 𝚞𝚜𝚒𝚗𝚐 .𝚛𝚎𝚙𝚘𝚛𝚝" : "> [*] 𝙴𝚒 𝚐𝚊𝚛𝚘𝚝𝚘, 𝚑𝚘𝚞𝚟𝚎 𝚞𝚖 𝚎𝚛𝚛𝚘 𝚎𝚖 𝚙𝚛𝚘𝚌𝚎𝚜𝚜𝚊𝚛 𝚊 𝚒𝚖𝚊𝚐𝚎𝚖.\n> 𝚅𝚎𝚛𝚒𝚏𝚒𝚚𝚞𝚎 𝚜𝚎 𝚝𝚎𝚖 𝚊𝚕𝚐𝚞𝚖 𝚛𝚘𝚜𝚝𝚘 𝚗𝚎𝚕𝚊 𝚙𝚛𝚒𝚖𝚎𝚒𝚛𝚘, 𝚜𝚎 𝚝𝚒𝚟𝚎𝚛 𝚊𝚕𝚐𝚞𝚎𝚖 𝚗𝚎𝚜𝚜𝚊 𝚏𝚘𝚝𝚘 𝚎 𝚎𝚜𝚝𝚒𝚟𝚎𝚛 𝚍𝚊𝚗𝚍𝚘 𝚎𝚛𝚛𝚘, 𝚖𝚊𝚗𝚍𝚊 𝚘 𝚕𝚘𝚐 𝚙𝚛𝚊 𝚖𝚒𝚖 𝚞𝚜𝚊𝚗𝚍𝚘 .𝚛𝚎𝚙𝚘𝚛𝚝" }`)
+          }
+      });
+    
+    
+    
   
-       conn.sendFile(m.chat, data.result.images[0], 'error.jpg', null, m);
+      
+      
+      
+      }
+      if (!/image/g.test(mime)){
         
-    
- 
-    })
   
-  
-  .catch(error => console.error('Error:', error));
+        let profile = await conn.profilePictureUrl(who, 'image').catch((_) => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
+        
+        createImageRequest(profile, styleId)
+      .then(imageUrl => {
+          if (imageUrl) {
+              console.log(`Image URL: ${imageUrl}`);
+              conn.sendFile(m.chat, imageUrl, 'error.jpg', null, m);
+
+          } else {
+              m.react("⚠️");
+              m.reply(`${idioma == 'en' ? "> [!] 𝙷𝚎𝚢 𝚔𝚒𝚍, 𝚝𝚑𝚎𝚛𝚎 𝚠𝚊𝚜 𝚊𝚗 𝚎𝚛𝚛𝚘𝚛 𝚙𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐 𝚝𝚑𝚎 𝚒𝚖𝚊𝚐𝚎. \n> 𝙲𝚑𝚎𝚌𝚔 𝚒𝚏 𝚝𝚑𝚎𝚛𝚎'𝚜 𝚊 𝚏𝚊𝚌𝚎 𝚒𝚗 𝚒𝚝 𝚏𝚒𝚛𝚜𝚝, 𝚒𝚏 𝚝𝚑𝚎𝚛𝚎'𝚜 𝚜𝚘𝚖𝚎𝚘𝚗𝚎 𝚒𝚗 𝚝𝚑𝚊𝚝 𝚙𝚒𝚌𝚝𝚞𝚛𝚎 𝚊𝚗𝚍 𝚒𝚝'𝚜 𝚐𝚒𝚟𝚒𝚗𝚐 𝚢𝚘𝚞 𝚊𝚗 𝚎𝚛𝚛𝚘𝚛, 𝚜𝚎𝚗𝚍 𝚖𝚎 𝚝𝚑𝚎 𝚕𝚘𝚐 𝚞𝚜𝚒𝚗𝚐 .𝚛𝚎𝚙𝚘𝚛𝚝" : "> [*] 𝙴𝚒 𝚐𝚊𝚛𝚘𝚝𝚘, 𝚑𝚘𝚞𝚟𝚎 𝚞𝚖 𝚎𝚛𝚛𝚘 𝚎𝚖 𝚙𝚛𝚘𝚌𝚎𝚜𝚜𝚊𝚛 𝚊 𝚒𝚖𝚊𝚐𝚎𝚖.\n> 𝚅𝚎𝚛𝚒𝚏𝚒𝚚𝚞𝚎 𝚜𝚎 𝚝𝚎𝚖 𝚊𝚕𝚐𝚞𝚖 𝚛𝚘𝚜𝚝𝚘 𝚗𝚎𝚕𝚊 𝚙𝚛𝚒𝚖𝚎𝚒𝚛𝚘, 𝚜𝚎 𝚝𝚒𝚟𝚎𝚛 𝚊𝚕𝚐𝚞𝚎𝚖 𝚗𝚎𝚜𝚜𝚊 𝚏𝚘𝚝𝚘 𝚎 𝚎𝚜𝚝𝚒𝚟𝚎𝚛 𝚍𝚊𝚗𝚍𝚘 𝚎𝚛𝚛𝚘, 𝚖𝚊𝚗𝚍𝚊 𝚘 𝚕𝚘𝚐 𝚙𝚛𝚊 𝚖𝚒𝚖 𝚞𝚜𝚊𝚗𝚍𝚘 .𝚛𝚎𝚙𝚘𝚛𝚝" }`)
+          }
+      });
     
     
-
-
-
-} 
-catch (e) {
-  console.log(e)
-throw `${idioma == 'en' ? "> [!] 𝙷𝚎𝚢 𝚔𝚒𝚍, 𝚝𝚑𝚎𝚛𝚎 𝚠𝚊𝚜 𝚊𝚗 𝚎𝚛𝚛𝚘𝚛 𝚙𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐 𝚝𝚑𝚎 𝚒𝚖𝚊𝚐𝚎. \n> 𝙲𝚑𝚎𝚌𝚔 𝚒𝚏 𝚝𝚑𝚎𝚛𝚎'𝚜 𝚊 𝚏𝚊𝚌𝚎 𝚒𝚗 𝚒𝚝 𝚏𝚒𝚛𝚜𝚝, 𝚒𝚏 𝚝𝚑𝚎𝚛𝚎'𝚜 𝚜𝚘𝚖𝚎𝚘𝚗𝚎 𝚒𝚗 𝚝𝚑𝚊𝚝 𝚙𝚒𝚌𝚝𝚞𝚛𝚎 𝚊𝚗𝚍 𝚒𝚝'𝚜 𝚐𝚒𝚟𝚒𝚗𝚐 𝚢𝚘𝚞 𝚊𝚗 𝚎𝚛𝚛𝚘𝚛, 𝚜𝚎𝚗𝚍 𝚖𝚎 𝚝𝚑𝚎 𝚕𝚘𝚐 𝚞𝚜𝚒𝚗𝚐 .𝚛𝚎𝚙𝚘𝚛𝚝" : "> [*] 𝙴𝚒 𝚐𝚊𝚛𝚘𝚝𝚘, 𝚑𝚘𝚞𝚟𝚎 𝚞𝚖 𝚎𝚛𝚛𝚘 𝚎𝚖 𝚙𝚛𝚘𝚌𝚎𝚜𝚜𝚊𝚛 𝚊 𝚒𝚖𝚊𝚐𝚎𝚖.\n> 𝚅𝚎𝚛𝚒𝚏𝚒𝚚𝚞𝚎 𝚜𝚎 𝚝𝚎𝚖 𝚊𝚕𝚐𝚞𝚖 𝚛𝚘𝚜𝚝𝚘 𝚗𝚎𝚕𝚊 𝚙𝚛𝚒𝚖𝚎𝚒𝚛𝚘, 𝚜𝚎 𝚝𝚒𝚟𝚎𝚛 𝚊𝚕𝚐𝚞𝚎𝚖 𝚗𝚎𝚜𝚜𝚊 𝚏𝚘𝚝𝚘 𝚎 𝚎𝚜𝚝𝚒𝚟𝚎𝚛 𝚍𝚊𝚗𝚍𝚘 𝚎𝚛𝚛𝚘, 𝚖𝚊𝚗𝚍𝚊 𝚘 𝚕𝚘𝚐 𝚙𝚛𝚊 𝚖𝚒𝚖 𝚞𝚜𝚊𝚗𝚍𝚘 .𝚛𝚎𝚙𝚘𝚛𝚝" }`
-}
-
+    
     
       
-      return 
-    }
-   
-   
- else if(!args[0]){
-   m.reply(helpMenu)
-return !0
- } //ok
-
-
- else if (args[0] && !styleId) {
-          m.reply(helpMenu)
-    } 
+      }
+      
     
+     
+
+} else if(styleMappings.hasOwnProperty(args[0])) {
+  let styleId = styleMappings[args[0]];
+  console.log(styleId)
+
+  if (/image/g.test(mime)){
+     
+
     
-const qs = m.quoted ? m.quoted : m;
-const mimee = (qs.msg || qs).mimetype || qs.mediaType || '';
-
-  m.reply(`${idioma == 'en' ? '> [!] 𝙿𝚕𝚎𝚊𝚜𝚎 𝚠𝚊𝚒𝚝. . .' : '> [!] 𝙶𝚎𝚛𝚊𝚗𝚍𝚘 𝚒𝚖𝚊𝚐𝚎𝚖, 𝚊𝚐𝚞𝚊𝚛𝚍𝚎 . . .' }`);
-const datab = await qs.download?.();
-const images = await uploadImage(datab);
-try {
-  
- 
-
-let response = await  fetch('https://api.itsrose.rest/turnMe/transform', {
-  method: 'POST',
-  headers: {
-    'accept': 'application/json',
-    'Authorization': itsrose,
-    'Content-Type': 'application/json'
-  },
-  body: JSON.stringify({
-    "init_image": images,
-    "style": styleId,
-    "image_num": 4,
-    "prompt": estiloPrompt,
-  })
-})
-.then(response => {
-    console.log(response)
-   return response.json()
-  
+    const qs = m.quoted ? m.quoted : m;
+    const mimee = (qs.msg || qs).mimetype || qs.mediaType || '';
+    
+      m.reply(`${idioma == 'en' ? '> [!] 𝙿𝚕𝚎𝚊𝚜𝚎 𝚠𝚊𝚒𝚝. . .' : '> [!] 𝙶𝚎𝚛𝚊𝚗𝚍𝚘 𝚒𝚖𝚊𝚐𝚎𝚖, 𝚊𝚐𝚞𝚊𝚛𝚍𝚎 . . .' }`);
+    const datab = await qs.download?.();
+    const images = await uploadImage(datab);
+    try {
+      
+     
+    
+    let response = await  fetch('https://api.itsrose.rest/turnMe/transform', {
+      method: 'POST',
+      headers: {
+        'accept': 'application/json',
+        'Authorization': itsrose,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        "init_image": images,
+        "style": styleId,
+        "image_num": 4,
+        "prompt": estiloPrompt,
+      })
     })
-    .then(data => {
-      console.log(data)
-      if (data.status && data.result && data.result.images) {
-    for (let i = 0; i < data.result.images.length; i++) {
-       conn.sendFile(m.chat, data.result.images[i], 'error.jpg', null, m);
+    .then(response => {
+        console.log(response)
+       return response.json()
+      
+        })
+        .then(data => {
+          console.log(data)
+          if (data.status && data.result && data.result.images) {
+        for (let i = 0; i < data.result.images.length; i++) {
+           conn.sendFile(m.chat, data.result.images[i], 'error.jpg', null, m);
+            
+        }
+    } else {
+        console.error('Invalid data format');
+        m.react("⚠️")
+    }
+        })
+      
+      .catch(error => console.error('Error:', error));
+       
+    
+    
+    
+    
+    
+    } catch (e) {
+      console.log(e)
+    throw `${idioma == 'en' ? "> [!] 𝙷𝚎𝚢 𝚔𝚒𝚍, 𝚝𝚑𝚎𝚛𝚎 𝚠𝚊𝚜 𝚊𝚗 𝚎𝚛𝚛𝚘𝚛 𝚙𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐 𝚝𝚑𝚎 𝚒𝚖𝚊𝚐𝚎. \n> 𝙲𝚑𝚎𝚌𝚔 𝚒𝚏 𝚝𝚑𝚎𝚛𝚎'𝚜 𝚊 𝚏𝚊𝚌𝚎 𝚒𝚗 𝚒𝚝 𝚏𝚒𝚛𝚜𝚝, 𝚒𝚏 𝚝𝚑𝚎𝚛𝚎'𝚜 𝚜𝚘𝚖𝚎𝚘𝚗𝚎 𝚒𝚗 𝚝𝚑𝚊𝚝 𝚙𝚒𝚌𝚝𝚞𝚛𝚎 𝚊𝚗𝚍 𝚒𝚝'𝚜 𝚐𝚒𝚟𝚒𝚗𝚐 𝚢𝚘𝚞 𝚊𝚗 𝚎𝚛𝚛𝚘𝚛, 𝚜𝚎𝚗𝚍 𝚖𝚎 𝚝𝚑𝚎 𝚕𝚘𝚐 𝚞𝚜𝚒𝚗𝚐 .𝚛𝚎𝚙𝚘𝚛𝚝" : "> [*] 𝙴𝚒 𝚐𝚊𝚛𝚘𝚝𝚘, 𝚑𝚘𝚞𝚟𝚎 𝚞𝚖 𝚎𝚛𝚛𝚘 𝚎𝚖 𝚙𝚛𝚘𝚌𝚎𝚜𝚜𝚊𝚛 𝚊 𝚒𝚖𝚊𝚐𝚎𝚖.\n> 𝚅𝚎𝚛𝚒𝚏𝚒𝚚𝚞𝚎 𝚜𝚎 𝚝𝚎𝚖 𝚊𝚕𝚐𝚞𝚖 𝚛𝚘𝚜𝚝𝚘 𝚗𝚎𝚕𝚊 𝚙𝚛𝚒𝚖𝚎𝚒𝚛𝚘, 𝚜𝚎 𝚝𝚒𝚟𝚎𝚛 𝚊𝚕𝚐𝚞𝚎𝚖 𝚗𝚎𝚜𝚜𝚊 𝚏𝚘𝚝𝚘 𝚎 𝚎𝚜𝚝𝚒𝚟𝚎𝚛 𝚍𝚊𝚗𝚍𝚘 𝚎𝚛𝚛𝚘, 𝚖𝚊𝚗𝚍𝚊 𝚘 𝚕𝚘𝚐 𝚙𝚛𝚊 𝚖𝚒𝚖 𝚞𝚜𝚊𝚗𝚍𝚘 .𝚛𝚎𝚙𝚘𝚛𝚝" }`
+    }
+    
+      
+      
+      
+      }
+      if (!/image/g.test(mime)){
         
-    }
-} else {
-    console.error('Invalid data format');
-    m.react("⚠️")
-}
-    })
-  
-  .catch(error => console.error('Error:', error));
-   
-
-
-
-
-
-} catch (e) {
-  console.log(e)
-throw `${idioma == 'en' ? "> [!] 𝙷𝚎𝚢 𝚔𝚒𝚍, 𝚝𝚑𝚎𝚛𝚎 𝚠𝚊𝚜 𝚊𝚗 𝚎𝚛𝚛𝚘𝚛 𝚙𝚛𝚘𝚌𝚎𝚜𝚜𝚒𝚗𝚐 𝚝𝚑𝚎 𝚒𝚖𝚊𝚐𝚎. \n> 𝙲𝚑𝚎𝚌𝚔 𝚒𝚏 𝚝𝚑𝚎𝚛𝚎'𝚜 𝚊 𝚏𝚊𝚌𝚎 𝚒𝚗 𝚒𝚝 𝚏𝚒𝚛𝚜𝚝, 𝚒𝚏 𝚝𝚑𝚎𝚛𝚎'𝚜 𝚜𝚘𝚖𝚎𝚘𝚗𝚎 𝚒𝚗 𝚝𝚑𝚊𝚝 𝚙𝚒𝚌𝚝𝚞𝚛𝚎 𝚊𝚗𝚍 𝚒𝚝'𝚜 𝚐𝚒𝚟𝚒𝚗𝚐 𝚢𝚘𝚞 𝚊𝚗 𝚎𝚛𝚛𝚘𝚛, 𝚜𝚎𝚗𝚍 𝚖𝚎 𝚝𝚑𝚎 𝚕𝚘𝚐 𝚞𝚜𝚒𝚗𝚐 .𝚛𝚎𝚙𝚘𝚛𝚝" : "> [*] 𝙴𝚒 𝚐𝚊𝚛𝚘𝚝𝚘, 𝚑𝚘𝚞𝚟𝚎 𝚞𝚖 𝚎𝚛𝚛𝚘 𝚎𝚖 𝚙𝚛𝚘𝚌𝚎𝚜𝚜𝚊𝚛 𝚊 𝚒𝚖𝚊𝚐𝚎𝚖.\n> 𝚅𝚎𝚛𝚒𝚏𝚒𝚚𝚞𝚎 𝚜𝚎 𝚝𝚎𝚖 𝚊𝚕𝚐𝚞𝚖 𝚛𝚘𝚜𝚝𝚘 𝚗𝚎𝚕𝚊 𝚙𝚛𝚒𝚖𝚎𝚒𝚛𝚘, 𝚜𝚎 𝚝𝚒𝚟𝚎𝚛 𝚊𝚕𝚐𝚞𝚎𝚖 𝚗𝚎𝚜𝚜𝚊 𝚏𝚘𝚝𝚘 𝚎 𝚎𝚜𝚝𝚒𝚟𝚎𝚛 𝚍𝚊𝚗𝚍𝚘 𝚎𝚛𝚛𝚘, 𝚖𝚊𝚗𝚍𝚊 𝚘 𝚕𝚘𝚐 𝚙𝚛𝚊 𝚖𝚒𝚖 𝚞𝚜𝚊𝚗𝚍𝚘 .𝚛𝚎𝚙𝚘𝚛𝚝" }`
-}
-
-  
-  
-  
-  }
-  if (!/image/g.test(mime)){
-    
-    let styleMappings = {
-  "aether": "aether",
-  "airbender": "airbender",
-  "anime": "anime",
-  "avatar": "avatar",
-  "baby": "baby",
-  "barbie": "barbie",
-
-  "blindbox": "blindbox",
-  "block": "block",
-  "chocolate": "chocolate",
-  "christmas_3d": "christmas_3d",
-  "christmas_anime": "christmas_anime",
-  "christmas_cartoon": "christmas_cartoon",
-  "christmas_comic": "christmas_comic",
-  "christmas_pixar": "christmas_pixar",
-  "cyberpunk": "cyberpunk",
-  "danil": "danil",
-  "firebender": "firebender",
-  "ghair": "ghair",
-  "gothic": "gothic",
-  "gtav": "gtav",
-  "hallowen": "hallowen",
-  "hell": "hell",
-  "heroes": "heroes",
-  "horror": "horror",
-  "illustration": "illustration",
-  "impasto": "impasto",
-  "jojo": "jojo",
-  "junet": "junet",
-
-  "luminous": "luminous",
-  "old": "old",
-  "onepiece": "onepiece",
-  "papercut": "papercut",
-
-  "pixar": "pixar",
-  "pixar_2": "pixar_2",
-  "pixel": "pixel",
-  "pokemon": "pokemon",
-  "rdr": "rdr",
-  "retro": "retro",
-  "rickmorty": "rickmorty",
-  "spirited": "spirited",
-
-  "surya": "surya",
-  "synthwave": "synthwave",
-  "tattoo":"tatoo",
-  "thunder": "thunder",
-  "wonka": "wonka",
-  "zombie": "zombie",
-    "palhaco": "palhaco",
-  "coelho":"coelho",
-  "grafiti":"grafiti"
-};
-    let styleId = styleMappings[args[0]];
-console.log(styleId)
-
-
-
- if(args[0]=='gta'){
-      let profile = await conn.profilePictureUrl(who, 'image').catch((_) => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
-    
-  
-
-
-const requestBody = {
-  init_image: profile,
-  style_id: 'gta',
-};
-
-const apiUrl = 'https://api.itsrose.rest/image/_inference_style';
-const authToken = itsrose;
-
-let response = await fetch(apiUrl, {
-  method: 'POST',
-  headers: {
-    'Accept': 'application/json',
-    'Authorization': authToken,
-    'Content-Type': 'application/json',
-  },
-  body: JSON.stringify(requestBody),
-})
-  .then(response => {
-    console.log(response)
-   return response.json()
-    })
-  .then(data => {console.log(data)
-  console.log(data.result.images)
-   conn.sendFile(m.chat, data.result.images[0],'error.jpg',null,m)
-  }
-  )
-  .catch(error => console.error('Error:', error));
     
     
+        let styleId = styleMappings[args[0]];
+    console.log(styleId)
     
-     return 
     
-    }
- 
-  else if(!args[0]){
-   m.reply(helpMenu)
-return !0
- }
- 
- 
- else if (args[0] && !styleId) {
-             m.reply(helpMenu)
-    } 
-    let profile = await conn.profilePictureUrl(who, 'image').catch((_) => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
-    
-  
-const apiUrl = 'https://api.itsrose.rest/turnMe/transform';
-const authToken = itsrose;
-
-
-
-let response = await  fetch('https://api.itsrose.rest/turnMe/transform', {
-  method: 'POST',
-  headers: {
-    'accept': 'application/json',
-    'Authorization': itsrose,
-    'Content-Type': 'application/json'
-  },
-  body: JSON.stringify({
-    "init_image": profile,
-    "style": styleId,
-    "image_num": 4,
-    "prompt": estiloPrompt,
-   
-  })
-})
-.then(response => {
-    console.log(response)
-   return response.json()
-  
-    })
-    .then(data => {
-      console.log(data)
-      if (data.status && data.result && data.result.images) {
-    for (let i = 0; i < data.result.images.length; i++) {
-       conn.sendFile(m.chat, data.result.images[i], 'error.jpg', null, m);
+     
+      else if(!args[0]){
+       m.reply(helpMenu)
+    return !0
+     }
+     
+     
+     else if (args[0] && !styleId) {
+                 m.reply(helpMenu)
+        } 
+        let profile = await conn.profilePictureUrl(who, 'image').catch((_) => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
         
-    }
-} else {
-    console.error('Invalid data format');
-    m.react("⚠️")
-    sendSystemErrorAlert(global.db.data.chats[m.chat].language);
-
-}
+      
+    const apiUrl = 'https://api.itsrose.rest/turnMe/transform';
+    const authToken = itsrose;
+    
+    
+    
+    let response = await  fetch('https://api.itsrose.rest/turnMe/transform', {
+      method: 'POST',
+      headers: {
+        'accept': 'application/json',
+        'Authorization': itsrose,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        "init_image": profile,
+        "style": styleId,
+        "image_num": 4,
+        "prompt": estiloPrompt,
+       
+      })
     })
-  
-  .catch(error => console.error('Error:', error));
-   
-
-
-
-  
-  }
-  
-
+    .then(response => {
+        console.log(response)
+       return response.json()
+      
+        })
+        .then(data => {
+          console.log(data)
+          if (data.status && data.result && data.result.images) {
+        for (let i = 0; i < data.result.images.length; i++) {
+           conn.sendFile(m.chat, data.result.images[i], 'error.jpg', null, m);
+            
+        }
+    } else {
+        console.error('Invalid data format');
+        m.react("⚠️")
+        sendSystemErrorAlert(global.db.data.chats[m.chat].language);
+    
+    }
+        })
+      
+      .catch(error => console.error('Error:', error));
+       
+    
+    
+    
+      
+      }
+      
+    
  
+      
+  
+}
+
+else { 
+  return m.reply(helpMenu)
+}
+
+
+
+
   
   
 
