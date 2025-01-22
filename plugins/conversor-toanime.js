@@ -203,7 +203,7 @@
       "manhwa_female",
       "manhwa_male",
       "samyang"
-    ]
+    ] different me
   }
 }
 
@@ -217,6 +217,17 @@ curl --request POST \
   "disable_image_detect": false
 }'
 
+
+curl --request POST \
+  --url https://api.itsrose.rest/turnMe/transform \
+  --header 'Authorization: Bearer Rk-3b78f4b1ca5993ae3c727eb07b91f68e' \
+  --header 'Content-Type: application/json' \
+  --data '{
+  "init_image": "https://scdn.lovita.io/rose_ayank_david.jpg",
+  "prompt": "",
+  "style_id": "",
+  "num_image": 1
+}'
 
 
 
