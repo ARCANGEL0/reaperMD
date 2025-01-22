@@ -2001,9 +2001,6 @@ if (turnStyles.hasOwnProperty(args[0])) {
   
 }
 
-else { 
-  return m.reply(helpMenu)
-}
 
 
 
