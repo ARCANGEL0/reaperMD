@@ -697,7 +697,35 @@ async function createImageRequest(images, styleId) {
   console.log(statusData)
   return (statusData.status && statusData.result.status === "completed") ? statusData.result.images[0] : null;
 }
+async function transformImage(profile, styleId) {
+  try {
+    const res = await fetch(apiUrl, {
+      method: 'POST',
+      headers: {
+        'Authorization': authToken,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        init_image: profile,
+        prompt: '',
+        style_id: styleId,
+        num_image: 4,
+      }),
+    });
 
+    const data = await res.json();
+    if (res.ok && data.result?.images) {
+      data.result.images.forEach((img) =>{
+        console.log(img) 
+        conn.sendFile(m.chat, img ,'error.png', m)
+        });
+    } else {
+      throw new Error('Invalid response');
+    }
+  } catch (err) {
+    console.error(err);
+  }
+}
 
   async function addOverlay(imagemBaseSrc, imagemTopoSrc,opacidade) {
 
@@ -1881,44 +1909,12 @@ if (turnStyles.hasOwnProperty(args[0])) {
     const images = await uploadImage(datab);
     try {
       
-     
-    
-    let response = await  fetch('https://api.itsrose.rest/turnMe/transform', {
-      method: 'POST',
-      headers: {
-        'accept': 'application/json',
-        'Authorization': itsrose,
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        "init_image": images,
-        "style": styleId,
-        "image_num": 4,
-        "prompt": estiloPrompt,
-      })
-    })
-    .then(response => {
-        console.log(response)
-       return response.json()
-      
-        })
-        .then(data => {
-          console.log(data)
-          if (data.status && data.result && data.result.images) {
-        for (let i = 0; i < data.result.images.length; i++) {
-           m.react("📀"); conn.sendFile(m.chat, data.result.images[i], 'error.jpg', null, m);
-            
-        }
-    } else {
-        console.error('Invalid data format');
-        m.react("⚠️")
-    }
-        })
-      
-      .catch(error => console.error('Error:', error));
+
+
        
     
     
+transformImage(images, styleId);
     
     
     
@@ -1932,60 +1928,17 @@ if (turnStyles.hasOwnProperty(args[0])) {
       
       }
       if (!/image/g.test(mime)){
-        
-    
 
-    
-    
-     
-      
-     
-     
      
         let profile = await conn.profilePictureUrl(who, 'image').catch((_) => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
         
       
-    const apiUrl = 'https://api.itsrose.rest/turnMe/transform';
-    const authToken = itsrose;
-    
-    
-    
-    let response = await  fetch('https://api.itsrose.rest/turnMe/transform', {
-      method: 'POST',
-      headers: {
-        'accept': 'application/json',
-        'Authorization': itsrose,
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        "init_image": profile,
-        "style": styleId,
-        "image_num": 4,
-        "prompt": estiloPrompt,
-       
-      })
-    })
-    .then(response => {
-        console.log(response)
-       return response.json()
-      
-        })
-        .then(data => {
-          console.log(data)
-          if (data.status && data.result && data.result.images) {
-        for (let i = 0; i < data.result.images.length; i++) {
-           m.react("📀"); conn.sendFile(m.chat, data.result.images[i], 'error.jpg', null, m);
-            
-        }
-    } else {
-        console.error('Invalid data format');
-        m.react("⚠️")
-        sendSystemErrorAlert(global.db.data.chats[m.chat].language);
-    
-    }
-        })
-      
-      .catch(error => console.error('Error:', error));
+const apiUrl = 'https://api.itsrose.rest/turnMe/transform';
+const authToken = `Bearer ${itsrose}`;
+
+
+
+transformImage(profile, styleId);
        
     
     
