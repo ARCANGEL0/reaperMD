@@ -686,7 +686,7 @@ async function createImageRequest(images, styleId) {
 
   const taskId = postData.result.task_id;
   console.log('Task id   ',taskId)
-  await new Promise(resolve => setTimeout(resolve, 16000));
+  await new Promise(resolve => setTimeout(resolve, 24000));
 
   const statusRequest = await fetch(`https://api.itsrose.rest/differentMe/status?task_id=${taskId}`, {
       headers: { 'Authorization': `Bearer ${apiKey}` }
