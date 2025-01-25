@@ -129,8 +129,8 @@
       },
       "lastmiming": 1737734883339,
       "ghost": false,
-      "offlineStart": "2025-01-15T00:38:30.382Z",
-      "ocupado": false,
+      "offlineStart": "2025-01-25T01:53:33.089Z",
+      "ocupado": true,
       "ausente": false,
       "registradoBlock": true,
       "regTimeStart": "2025-01-08T15:20:58.092Z",
@@ -5616,7 +5616,8 @@
       "website": ".",
       "links": ".",
       "biografia": "Sou uma pessoa insuportável.",
-      "pedidoId": ""
+      "pedidoId": "",
+      "parceiro": "5521972685548@s.whatsapp.net"
     },
     "554188822185@s.whatsapp.net": {
       "counterPrivate": 0,
@@ -5793,7 +5794,8 @@
       "system": "Cu",
       "study": "Enf",
       "serie": "Pronto socorro",
-      "pedidoId": ""
+      "pedidoId": "",
+      "parceiro": "5521970385666@s.whatsapp.net"
     },
     "5513997626809@s.whatsapp.net,554188822185@s.whatsapp.net": {},
     "558897548069@s.whatsapp.net": {
@@ -6582,7 +6584,6 @@
       "tentativasRoubo": 5,
       "spammer": 0,
       "usuariosRoubados": [],
-      "parceiro": "553898809542@s.whatsapp.net",
       "pedidoId": ""
     },
     "553888016495@s.whatsapp.net": {
@@ -6817,7 +6818,7 @@
       "afkReason": "",
       "role": "",
       "reporte": 0,
-      "name": "Eduardo 👾",
+      "name": "",
       "antispam": 0,
       "antispamlastclaim": 0,
       "silenced": false,
@@ -7321,7 +7322,7 @@
           "afkReason": ""
         }
       },
-      "lastmiming": 1736002992327
+      "lastmiming": 1737770578562
     },
     "555584470148@s.whatsapp.net": {
       "counterPrivate": 0,
@@ -12357,7 +12358,7 @@
       "afkReason": "",
       "role": "",
       "reporte": 0,
-      "name": "",
+      "name": "ㅤ",
       "age": "24",
       "antispam": 0,
       "antispamlastclaim": 0,
@@ -15654,7 +15655,7 @@
       "tentativasRoubo": 5,
       "spammer": 0,
       "usuariosRoubados": [],
-      "lastmiming": 1737600093331,
+      "lastmiming": 1737765993851,
       "registradoBlock": true,
       "regTimeStart": "2025-01-24T16:49:52.598Z",
       "regPrazo": "2025-01-26T16:49:52.598Z",
@@ -16544,7 +16545,7 @@
       "afkReason": "",
       "role": "",
       "reporte": 0,
-      "name": "",
+      "name": "MARCOS",
       "antispam": 0,
       "antispamlastclaim": 0,
       "silenced": false,
@@ -18528,7 +18529,7 @@
       "tentativasRoubo": 5,
       "spammer": 0,
       "usuariosRoubados": [],
-      "lastmiming": 1737737867650
+      "lastmiming": 1737771740917
     },
     "559591714483@s.whatsapp.net": {
       "counterPrivate": 0,
@@ -22410,8 +22411,7 @@
       "hobbies": "𝐶𝑜𝑛𝑣𝑒𝑟𝑠𝑎𝑟, 𝑧𝑜𝑎𝑟, 𝑙𝑒𝑟 𝑒 𝑒𝑠𝑡𝑢𝑑𝑎𝑟.",
       "website": "",
       "links": "",
-      "biografia": "",
-      "parceiro": "555496930052@s.whatsapp.net"
+      "biografia": ""
     },
     "553182537308@s.whatsapp.net,5512997076907@s.whatsapp.net": {},
     "5511957799646@s.whatsapp.net": {
@@ -26585,7 +26585,13 @@
           "number": "553299543994@s.whatsapp.net",
           "afkReason": ""
         }
-      }
+      },
+      "money": 150,
+      "nsfwAdv": 0,
+      "adv": 2,
+      "tentativasRoubo": 5,
+      "spammer": 0,
+      "usuariosRoubados": []
     },
     "112167516926080@lid": {
       "counterPrivate": 0,
@@ -27777,7 +27783,7 @@
       "afkReason": "",
       "role": "",
       "reporte": 0,
-      "name": "Jana",
+      "name": "",
       "antispam": 0,
       "antispamlastclaim": 0,
       "silenced": false,
@@ -28418,6 +28424,58 @@
         "120363040750224674@g.us": {
           "afkTime": -2,
           "number": "5513988741810@s.whatsapp.net",
+          "afkReason": ""
+        }
+      }
+    },
+    "126886420197379@lid": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 0,
+      "afkInfo": {
+        "120363373559237671@g.us": {
+          "afkTime": -2,
+          "number": "126886420197379@lid",
+          "afkReason": ""
+        }
+      }
+    },
+    "156113773264918@lid": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 0,
+      "afkInfo": {
+        "120363373559237671@g.us": {
+          "afkTime": -2,
+          "number": "156113773264918@lid",
           "afkReason": ""
         }
       }
@@ -41128,7 +41186,7 @@
       },
       "users": {
         "554796646044@s.whatsapp.net": {
-          "exp": 7299,
+          "exp": 7778,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 90,
@@ -41146,7 +41204,7 @@
           "messageCount": 1
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 2112,
+          "exp": 2115,
           "limit": 0,
           "role": "",
           "money": 0,
@@ -41164,7 +41222,7 @@
           "pontos": 0
         },
         "554598527531@s.whatsapp.net": {
-          "exp": 10447,
+          "exp": 10910,
           "limit": 5000,
           "role": "༒︎ 𝑷𝒍𝒖𝒕ã𝒐 𝑵𝒆𝒈𝒓𝒐",
           "money": 5000,
@@ -41184,7 +41242,7 @@
           "cocriadora": true
         },
         "351927285125@s.whatsapp.net": {
-          "exp": 3157,
+          "exp": 3396,
           "limit": 660000000000066,
           "role": "𝑵𝒆𝒗𝒆𝒓𝒎𝒐𝒓𝒆 ༒︎\n𝙼𝚎𝚜𝚝𝚛𝚎 𝚍𝚘𝚜 𝚌𝚘𝚛𝚟𝚘𝚜",
           "money": 666000000000000100,
@@ -43005,7 +43063,7 @@
           "shields": 0
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 58253,
+          "exp": 59957,
           "limit": 0,
           "role": "",
           "money": 0,
@@ -43023,7 +43081,7 @@
           "pontos": 0
         },
         "5521970385666@s.whatsapp.net": {
-          "exp": 30266,
+          "exp": 31097,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 0,
@@ -43031,13 +43089,13 @@
           "adm": false,
           "legendary": false,
           "banned": false,
-          "adv": 0,
+          "adv": 1,
           "tentativasRoubo": 5,
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737727320189,
-          "messageCount": 2,
+          "lastMessageTime": 1737767288879,
+          "messageCount": 1,
           "pontos": 0,
           "almas": 0,
           "usuariosRoubados": [],
@@ -43060,7 +43118,7 @@
           "shadowAtivo": false
         },
         "351927285125@s.whatsapp.net": {
-          "exp": 6710,
+          "exp": 6836,
           "limit": 660000000000066,
           "role": "𝑵𝒆𝒗𝒆𝒓𝒎𝒐𝒓𝒆 ༒︎\n𝙼𝚎𝚜𝚝𝚛𝚎 𝚍𝚘𝚜 𝚌𝚘𝚛𝚟𝚘𝚜",
           "money": 666000000000000100,
@@ -43073,7 +43131,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737751366283,
+          "lastMessageTime": 1737770461575,
           "messageCount": 1,
           "pontos": 480,
           "tempBan": false,
@@ -43124,7 +43182,7 @@
           "trojans": 0
         },
         "558199330656@s.whatsapp.net": {
-          "exp": 20264,
+          "exp": 22101,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 240,
@@ -43137,7 +43195,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737740602490,
+          "lastMessageTime": 1737772220957,
           "messageCount": 1,
           "pontos": 0,
           "usuariosRoubados": [],
@@ -43170,7 +43228,7 @@
           "steals": 0
         },
         "5521972685548@s.whatsapp.net": {
-          "exp": 34819,
+          "exp": 35466,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 360,
@@ -43183,7 +43241,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737721762911,
+          "lastMessageTime": 1737769166152,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -43214,7 +43272,7 @@
           "trojans": 0
         },
         "558897548069@s.whatsapp.net": {
-          "exp": 14908,
+          "exp": 15072,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 180,
@@ -43227,7 +43285,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737755228140,
+          "lastMessageTime": 1737768703866,
           "messageCount": 1,
           "pontos": 0,
           "tempBan": false,
@@ -43259,7 +43317,7 @@
           "trojans": 0
         },
         "553497704017@s.whatsapp.net": {
-          "exp": 10089,
+          "exp": 10136,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 120,
@@ -43272,7 +43330,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737742099325,
+          "lastMessageTime": 1737763530147,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -43359,7 +43417,7 @@
           "trojans": 0
         },
         "5514981384196@s.whatsapp.net": {
-          "exp": 63411,
+          "exp": 63742,
           "limit": 4,
           "role": "Ｅｘｐｌｏｉｔ　Ｆａｎｔａｓｍａ",
           "money": 680,
@@ -43372,7 +43430,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737676222226,
+          "lastMessageTime": 1737764357096,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -43387,7 +43445,7 @@
           "trojans": 0
         },
         "556195667729@s.whatsapp.net": {
-          "exp": 21227,
+          "exp": 21456,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 170,
@@ -43400,7 +43458,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737751712776,
+          "lastMessageTime": 1737764411423,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -43416,7 +43474,7 @@
           "morto": true
         },
         "555599538879@s.whatsapp.net": {
-          "exp": 6827,
+          "exp": 6949,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 90,
@@ -43429,7 +43487,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737729962318,
+          "lastMessageTime": 1737767299156,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -43461,7 +43519,7 @@
           "trojans": 0
         },
         "553188507912@s.whatsapp.net": {
-          "exp": 8898,
+          "exp": 9022,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 120,
@@ -43474,7 +43532,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737755812138,
+          "lastMessageTime": 1737770363036,
           "messageCount": 1,
           "pontos": 0,
           "acaoTimer": "2024-11-26T21:35:02.700Z",
@@ -43579,7 +43637,7 @@
           "almas": 0
         },
         "558184216648@s.whatsapp.net": {
-          "exp": 11283,
+          "exp": 11323,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 120,
@@ -43592,7 +43650,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737730539841,
+          "lastMessageTime": 1737760852140,
           "messageCount": 1,
           "pontos": 0,
           "acaoTimer": "2024-12-22T13:35:39.919Z",
@@ -43605,7 +43663,7 @@
           "lastslot": "2025-01-12T02:36:20.366Z"
         },
         "5516981119323@s.whatsapp.net": {
-          "exp": 3459,
+          "exp": 3870,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 60,
@@ -43618,7 +43676,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737685251806,
+          "lastMessageTime": 1737769039992,
           "messageCount": 1,
           "pontos": 0,
           "tempBan": false,
@@ -43660,7 +43718,7 @@
           "acaoTimer": "2024-12-28T15:17:17.635Z"
         },
         "554599015152@s.whatsapp.net": {
-          "exp": 17056,
+          "exp": 17207,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 1e+26,
@@ -43673,7 +43731,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737746180786,
+          "lastMessageTime": 1737763421064,
           "messageCount": 1,
           "pontos": 28,
           "usuariosRoubados": [],
@@ -43710,10 +43768,10 @@
           "trojans": 0
         },
         "553888016495@s.whatsapp.net": {
-          "exp": 1045439,
-          "limit": 13682,
+          "exp": 1045818,
+          "limit": 13982,
           "role": "Ｅｌｌｉｏｔ　Ａｌｄｅｒｓｏｎ",
-          "money": 664800,
+          "money": 696800,
           "level": 100,
           "adm": true,
           "legendary": false,
@@ -43723,7 +43781,7 @@
           "silenced": false,
           "maxlevel": true,
           "cocriador": false,
-          "lastMessageTime": 1737751982555,
+          "lastMessageTime": 1737769738361,
           "messageCount": 1,
           "pontos": 0,
           "acaoTimer": "2025-01-17T21:48:36.299Z",
@@ -43735,7 +43793,7 @@
           "steals": 0,
           "artifacts": 0,
           "rce": 0,
-          "trojans": 27360,
+          "trojans": 27960,
           "bankName": "🌻"
         },
         "5516988272864@s.whatsapp.net": {
@@ -43816,7 +43874,7 @@
           "trojans": 0
         },
         "5527999248909@s.whatsapp.net": {
-          "exp": 9823,
+          "exp": 9908,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 120,
@@ -43829,7 +43887,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737620717115,
+          "lastMessageTime": 1737766884757,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -43917,7 +43975,7 @@
           "pontos": 0
         },
         "555581183968@s.whatsapp.net": {
-          "exp": 16322,
+          "exp": 16552,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 1180,
@@ -43930,7 +43988,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737732056319,
+          "lastMessageTime": 1737771012751,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -44026,7 +44084,7 @@
           "trojans": 0
         },
         "556295410574@s.whatsapp.net": {
-          "exp": 3430,
+          "exp": 3503,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 60,
@@ -44039,7 +44097,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737677042784,
+          "lastMessageTime": 1737769005205,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -44073,11 +44131,11 @@
           "trojans": 0
         },
         "559192321625@s.whatsapp.net": {
-          "exp": 116134,
+          "exp": 117239,
           "limit": 3,
           "role": "Ｍｅｍｂｒｏ　ｄｏ　ＬｕｌｚＳｅｃ",
-          "money": 552,
-          "level": 36,
+          "money": 822,
+          "level": 37,
           "adm": true,
           "legendary": false,
           "banned": false,
@@ -44086,8 +44144,8 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737737862590,
-          "messageCount": 1,
+          "lastMessageTime": 1737768669675,
+          "messageCount": 2,
           "pontos": 0,
           "almas": 0,
           "usuariosRoubados": [],
@@ -44254,7 +44312,7 @@
           "trojans": 0
         },
         "558196334341@s.whatsapp.net": {
-          "exp": 2991,
+          "exp": 3047,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 60,
@@ -44267,7 +44325,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737675007707,
+          "lastMessageTime": 1737762421188,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -44336,7 +44394,7 @@
           "cocriador": false
         },
         "5521995632127@s.whatsapp.net": {
-          "exp": 15511,
+          "exp": 15546,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 73,
@@ -44349,7 +44407,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737738679798,
+          "lastMessageTime": 1737760625309,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -44362,7 +44420,7 @@
           "trojans": 0
         },
         "556295757489@s.whatsapp.net": {
-          "exp": 6694,
+          "exp": 7260,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 90,
@@ -44375,7 +44433,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737755357973,
+          "lastMessageTime": 1737771227702,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -44402,7 +44460,7 @@
           "pontos": 0
         },
         "5512997076907@s.whatsapp.net": {
-          "exp": 55078,
+          "exp": 55184,
           "limit": 5,
           "role": "Ｓａｂｏｔｅｕｒ　Ｅ－Ｃｏｒｐ",
           "money": 945,
@@ -44415,7 +44473,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737738497147,
+          "lastMessageTime": 1737771569983,
           "messageCount": 1,
           "pontos": 0,
           "tempBan": false,
@@ -44510,10 +44568,10 @@
           "trojans": 0
         },
         "553496426551@s.whatsapp.net": {
-          "exp": 124567800459,
-          "limit": 8520,
+          "exp": 124567800763,
+          "limit": 8700,
           "role": "Ｅｌｌｉｏｔ　Ａｌｄｅｒｓｏｎ",
-          "money": 332767,
+          "money": 351967,
           "level": 100,
           "adm": true,
           "legendary": false,
@@ -44523,15 +44581,15 @@
           "silenced": false,
           "maxlevel": true,
           "cocriador": false,
-          "lastMessageTime": 1737685234811,
-          "messageCount": 2,
+          "lastMessageTime": 1737767917443,
+          "messageCount": 1,
           "pontos": 0,
           "almas": 0,
           "steals": 0,
           "tempBan": false,
           "usuariosRoubados": [],
           "rce": null,
-          "trojans": 8550,
+          "trojans": 8910,
           "shields": 0
         },
         "553192346005@s.whatsapp.net": {
@@ -44601,7 +44659,7 @@
           "pontos": 0
         },
         "559291695117@s.whatsapp.net": {
-          "exp": 9280,
+          "exp": 12253,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 120,
@@ -44614,7 +44672,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737415914819,
+          "lastMessageTime": 1737772188524,
           "messageCount": 1,
           "pontos": 0,
           "acaoTimer": "2025-01-11T02:48:22.941Z",
@@ -44668,7 +44726,7 @@
           "trojans": 0
         },
         "553182537308@s.whatsapp.net": {
-          "exp": 44666,
+          "exp": 45207,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 130,
@@ -44681,7 +44739,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737723278062,
+          "lastMessageTime": 1737768912840,
           "messageCount": 1,
           "pontos": 83,
           "acaoTimer": "2025-01-24T00:55:38.306Z",
@@ -44788,7 +44846,7 @@
           "steals": 0
         },
         "5516993161616@s.whatsapp.net": {
-          "exp": 34946,
+          "exp": 35225,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 395,
@@ -44801,7 +44859,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737753605850,
+          "lastMessageTime": 1737771979966,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -45134,7 +45192,7 @@
           "tempBan": false
         },
         "556793050856@s.whatsapp.net": {
-          "exp": 4137,
+          "exp": 4275,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 90,
@@ -45147,7 +45205,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737671791663,
+          "lastMessageTime": 1737769109446,
           "messageCount": 1,
           "pontos": 0,
           "rce": 0,
@@ -45296,7 +45354,7 @@
           "trojans": 0
         },
         "556796473405@s.whatsapp.net": {
-          "exp": 2914,
+          "exp": 2964,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 60,
@@ -45309,7 +45367,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737716425211,
+          "lastMessageTime": 1737770309174,
           "messageCount": 1,
           "pontos": 0,
           "rce": 0,
@@ -45811,7 +45869,7 @@
           "trojans": 0
         },
         "559288220824@s.whatsapp.net": {
-          "exp": 50,
+          "exp": 77,
           "limit": 0,
           "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
           "money": 0,
@@ -45824,7 +45882,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737136379513,
+          "lastMessageTime": 1737761168943,
           "messageCount": 1,
           "pontos": 0,
           "rce": 0,
@@ -45933,7 +45991,7 @@
           "trojans": 0
         },
         "554388686229@s.whatsapp.net": {
-          "exp": 41494,
+          "exp": 42223,
           "limit": 2,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 140,
@@ -45946,7 +46004,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737748368287,
+          "lastMessageTime": 1737772216702,
           "messageCount": 1,
           "pontos": 142,
           "usuariosRoubados": [
@@ -46311,7 +46369,7 @@
           "trojans": 0
         },
         "559191131466@s.whatsapp.net": {
-          "exp": 2014,
+          "exp": 2602,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 60,
@@ -46324,7 +46382,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1736623995653,
+          "lastMessageTime": 1737769694641,
           "messageCount": 1,
           "pontos": 0,
           "rce": 0,
@@ -47117,7 +47175,7 @@
           "pontos": 0
         },
         "5516988148029@s.whatsapp.net": {
-          "exp": 10827,
+          "exp": 11065,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 120,
@@ -47130,7 +47188,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737737908655,
+          "lastMessageTime": 1737771739674,
           "messageCount": 1,
           "pontos": 0,
           "trojans": 0,
@@ -47920,7 +47978,7 @@
           "steals": 0
         },
         "554184958301@s.whatsapp.net": {
-          "exp": 4037,
+          "exp": 4065,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 90,
@@ -47933,7 +47991,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737645076617,
+          "lastMessageTime": 1737758744339,
           "messageCount": 1,
           "pontos": 0,
           "trojans": 0,
@@ -48417,7 +48475,7 @@
           "steals": 0
         },
         "559291954843@s.whatsapp.net": {
-          "exp": 16842,
+          "exp": 18070,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 180,
@@ -48430,8 +48488,8 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737739093165,
-          "messageCount": 2,
+          "lastMessageTime": 1737770698397,
+          "messageCount": 1,
           "pontos": 0,
           "trojans": 0,
           "steals": 0,
@@ -48695,7 +48753,7 @@
           "pontos": 0
         },
         "553299543994@s.whatsapp.net": {
-          "exp": 1,
+          "exp": 84,
           "limit": 0,
           "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
           "money": 0,
@@ -48708,12 +48766,12 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737494185115,
-          "messageCount": null,
+          "lastMessageTime": 1737763599768,
+          "messageCount": 1,
           "pontos": 0
         },
         "557799977291@s.whatsapp.net": {
-          "exp": 1020,
+          "exp": 1180,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 30,
@@ -48726,7 +48784,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737736592458,
+          "lastMessageTime": 1737765220655,
           "messageCount": 1,
           "pontos": 0,
           "trojans": 0,
@@ -48870,7 +48928,7 @@
       "lastSentTime": 0,
       "name": "Onde fingimos ser loucos (ou não)",
       "desc": "⚠️⚠️⚠️ *PROIBIDO MENORES DE 18 ANOS* ⚠️⚠️⚠️\n(As mensagens tem duração de 24hrs )\n\n🫂 *CHAVE PIX PARA CONTRIBUIÇÃO DA MENSALIDADE DO BOT: nicoletaina181@gmail.com*🫂\n\nRESPEITEM PARA SEREM RESPEITADOS!!\n\n*PROIBIDO*\n•FLOODAR/SPAMMAR;\n•MANDAR MENSAGEM DO PV DE OUTROS MEMBROS SEM A AUTORIZAÇÃO DA PESSOA;\n•DIVULGAR/PROMOVER (_sem autorização_);\n*AO DESCUMPRIMENTO DE QUALQUER UMA DAS REGRAS ACIMA O MEMBRO ESTÁ SUJEITO A AVISO*\n\n*TERMINANTEMENTE PROIBIDO*\n•DESRESPEITO (_se você ofende o amiguinho igual, essa regra se torna irrelevante_);\n•PRECONCEITO (_classe, cor/etnia, orientação sexual, religião e etc_);\n•CORINGAR ADM;\n•FIGURINHAS/IMAGENS COM PORNOGRAFIA EXPLÍCITA, GORE, NAZISMO, ZOOFILIA, RACISMO;\n•APOLOGIA/INCENTIVO AO NAZISMO.\n\n*O DESCUMPRIMENTO DE QUALQUER UMA DAS REGRAS ACIMA PODE GERAR ADV E ATÉ MESMO BANIMENTO*\n\n*📌 NÃO NOS RESPONSABILIZAMOS POR PROBLEMAS ASSOCIADOS À:*\n\n•COMPARTILHAMENTO DE DADOS PESSOAIS;\n•ABRIR ÁUDIO ESTOURADO E/OU DUVIDOSO;\n•LINK DUVIDOSO.\n\n⚠️ *MARCAR ADMINISTRADORES QUANDO AS REGRAS FOREM BURLADAS* ⚠\n\n*_BRINCADEIRAS TODOS OS FINAIS DE SEMANA_*\n\n_\"Já é difícil ter que lidar com as coisas, não vamos destruir o cantinho que a gente tem por favor\"_\n_~Carlos Chazin, 2023_︎\n\n▪️ *BOT interativo entre 00:00 - 12:00* ▪️\n\n_*FORMULÁRIO PARA NOVOS ADMS*_\nhttps://forms.gle/S5P56v1U8pWeLEERA\n\n🔷 *REDES SOCIAIS DO GRUPO*🔷\n\n🔹 *FACEBOOK:*\n\nGrupo (oficial): https://www.facebook.com/groups/4573794466077903/?ref=share\n\nGrupo (reserva):\nhttps://www.facebook.com/groups/3360052507549701/?ref=share&mibextid=NSMWBT\n\nPágina (oficial): https://www.facebook.com/profile.php?id=100091738707923&mibextid=LQQJ4d\n\n🔹 *INSTAGRAM:*\n\nInstagram.com/onde_fingimos_ser_loucos_ou_n",
-      "totalMembros": 322,
+      "totalMembros": 324,
       "membros": [
         {
           "id": "557799977291@s.whatsapp.net",
@@ -49134,6 +49192,10 @@
         },
         {
           "id": "5511986303123@s.whatsapp.net",
+          "admin": null
+        },
+        {
+          "id": "559191131466@s.whatsapp.net",
           "admin": null
         },
         {
@@ -49878,6 +49940,10 @@
         },
         {
           "id": "5511971055523@s.whatsapp.net",
+          "admin": null
+        },
+        {
+          "id": "553182537308@s.whatsapp.net",
           "admin": null
         },
         {
@@ -50646,7 +50712,22 @@
         "1B10FE269E7ADA176F0DC086516BDF16",
         "6B9B56EF08B837853AC33B92D00CEC5E",
         "F84A690925E2E0FE2C0095D631D097F2",
-        "D159BB3C596449F6EAB7F17DE0EEE098"
+        "D159BB3C596449F6EAB7F17DE0EEE098",
+        "A1A1A8D2A9DF2DE4DAD209AF991C41E0",
+        "F2659EA5429175D8545816E9ABAC57A1",
+        "0345AFB490B39C03F6057AE24822B8DE",
+        "F13228BC45DD2992E9B18D0E9598CF0F",
+        "42075D516D5F906F11EFE4E24EE16743",
+        "C68E482F30E865E538829D38FBF04CE8",
+        "B4A1107A711842444F9F36DA56CA909B",
+        "40173481242C9F2943CB641D0D1811E0",
+        "B865283ED6F2608DE68C098C7DF92563",
+        "F5AB6EAD93EB745BCA8F236141262D25",
+        "079094BC8832EDC7300394EB16B0BD1B",
+        "C972ACF65A1E74C85337745DB80201F1",
+        "EB05F6A17E82BCE1BE62EEB0DB60D9BF",
+        "A4F69ACEFFCC30B2613573AE9CE0C1F5",
+        "8F269B5A3BDA94F009F52B33E07E6D4E"
       ],
       "loja": {
         "lojaId": {
@@ -52295,7 +52376,7 @@
           "usuariosRoubados": []
         },
         "5521997547386@s.whatsapp.net": {
-          "exp": 666580,
+          "exp": 666611,
           "limit": 8,
           "role": "４０４",
           "money": 2254799,
@@ -52308,7 +52389,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737743794699,
+          "lastMessageTime": 1737765769232,
           "messageCount": 1,
           "pontos": 0,
           "slots": 0,
@@ -55955,7 +56036,7 @@
     "120363153388096560@g.us": {
       "users": {
         "351927285125@s.whatsapp.net": {
-          "exp": 635,
+          "exp": 646,
           "limit": 660000000000066,
           "role": "𝑵𝒆𝒗𝒆𝒓𝒎𝒐𝒓𝒆 ༒︎\n𝙼𝚎𝚜𝚝𝚛𝚎 𝚍𝚘𝚜 𝚌𝚘𝚛𝚟𝚘𝚜",
           "money": 666000000000000100,
@@ -55968,7 +56049,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737667446954,
+          "lastMessageTime": 1737763937826,
           "messageCount": 1,
           "pontos": 35,
           "tempBan": false,
@@ -55987,7 +56068,7 @@
           "usuariosRoubados": []
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 1709,
+          "exp": 1727,
           "limit": 0,
           "role": "",
           "money": 0,
@@ -56020,7 +56101,7 @@
           "pontos": 45
         },
         "559192321625@s.whatsapp.net": {
-          "exp": 4614,
+          "exp": 4782,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 90,
@@ -56033,32 +56114,13 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737755239438,
-          "messageCount": 1,
+          "lastMessageTime": 1737763356820,
+          "messageCount": 2,
           "pontos": 0,
           "nsfwAdv": 2
         },
         "553497704017@s.whatsapp.net": {
-          "exp": 7948,
-          "limit": 0,
-          "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
-          "money": 90,
-          "level": 3,
-          "adm": true,
-          "legendary": false,
-          "banned": false,
-          "adv": 0,
-          "tentativasRoubo": 5,
-          "silenced": false,
-          "maxlevel": false,
-          "cocriador": false,
-          "lastMessageTime": 1737754015128,
-          "messageCount": 1,
-          "pontos": 0,
-          "nsfwAdv": 2
-        },
-        "553888016495@s.whatsapp.net": {
-          "exp": 8459,
+          "exp": 8256,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 120,
@@ -56071,8 +56133,27 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737753931264,
+          "lastMessageTime": 1737763740348,
           "messageCount": 1,
+          "pontos": 0,
+          "nsfwAdv": 2
+        },
+        "553888016495@s.whatsapp.net": {
+          "exp": 8817,
+          "limit": 0,
+          "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
+          "money": 120,
+          "level": 4,
+          "adm": true,
+          "legendary": false,
+          "banned": false,
+          "adv": 0,
+          "tentativasRoubo": 5,
+          "silenced": false,
+          "maxlevel": false,
+          "cocriador": false,
+          "lastMessageTime": 1737763949614,
+          "messageCount": 2,
           "pontos": 0
         },
         "5511952315622@s.whatsapp.net": {
@@ -56351,7 +56432,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737587616856,
+          "lastMessageTime": 1737770013084,
           "messageCount": 1,
           "pontos": 0,
           "tempBan": false,
@@ -56371,7 +56452,7 @@
           "usuariosRoubados": []
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 1294,
+          "exp": 1306,
           "limit": 0,
           "role": "",
           "money": 0,
@@ -56757,7 +56838,7 @@
     "120363360114833087@g.us": {
       "users": {
         "351927285125@s.whatsapp.net": {
-          "exp": 12550,
+          "exp": 12567,
           "limit": 660000000000066,
           "role": "𝑵𝒆𝒗𝒆𝒓𝒎𝒐𝒓𝒆 ༒︎\n𝙼𝚎𝚜𝚝𝚛𝚎 𝚍𝚘𝚜 𝚌𝚘𝚛𝚟𝚘𝚜",
           "money": 666000000000000100,
@@ -56770,7 +56851,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737755157794,
+          "lastMessageTime": 1737769846227,
           "messageCount": 1,
           "pontos": 1360,
           "tempBan": false,
@@ -56789,7 +56870,7 @@
           "usuariosRoubados": []
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 12599,
+          "exp": 13389,
           "limit": 660000000000066,
           "role": "𝑵𝒆𝒗𝒆𝒓𝒎𝒐𝒓𝒆 ༒︎\n𝙼𝚎𝚜𝚝𝚛𝚎 𝚍𝚘𝚜 𝚌𝚘𝚛𝚟𝚘𝚜",
           "money": 666000000000000100,
@@ -56821,7 +56902,7 @@
           "usuariosRoubados": []
         },
         "5513997626809@s.whatsapp.net": {
-          "exp": 2891,
+          "exp": 2982,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 60,
@@ -56834,7 +56915,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737745104235,
+          "lastMessageTime": 1737765843690,
           "messageCount": 1,
           "pontos": 0,
           "advLink": 0,
@@ -57023,7 +57104,7 @@
       },
       "users": {
         "351927285125@s.whatsapp.net": {
-          "exp": 252,
+          "exp": 272,
           "limit": 660000000000066,
           "role": "𝑵𝒆𝒗𝒆𝒓𝒎𝒐𝒓𝒆 ༒︎\n𝙼𝚎𝚜𝚝𝚛𝚎 𝚍𝚘𝚜 𝚌𝚘𝚛𝚟𝚘𝚜",
           "money": 666000000000000100,
@@ -57059,7 +57140,7 @@
           "artifacts": -1
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 85677,
+          "exp": 88379,
           "limit": 0,
           "role": "",
           "money": 0,
@@ -57078,16 +57159,16 @@
           "usuariosRoubados": []
         },
         "5521970385666@s.whatsapp.net": {
-          "exp": 10412752,
-          "limit": 88422,
+          "exp": 10415946,
+          "limit": 91150,
           "role": "Ｅｌｌｉｏｔ　Ａｌｄｅｒｓｏｎ",
-          "money": 107200,
+          "money": 254209,
           "level": 100,
           "adm": true,
           "legendary": false,
           "banned": false,
           "adv": 0,
-          "tentativasRoubo": 1,
+          "tentativasRoubo": 0,
           "silenced": false,
           "maxlevel": true,
           "cocriador": false,
@@ -57098,10 +57179,10 @@
             "5521969915001@s.whatsapp.net"
           ],
           "shields": 0,
-          "trojans": 177030,
+          "trojans": 182520,
           "bankName": "Sra. Mercês",
-          "acaoTimer": "2025-01-24T17:27:24.011Z",
-          "rouboTimestamp": "2025-01-23T19:16:10.914Z",
+          "acaoTimer": "2025-01-24T22:53:43.334Z",
+          "rouboTimestamp": "2025-01-24T22:53:43.335Z",
           "mortoDemonio": false,
           "steals": 6,
           "lastAttemptTimestamp": "2025-01-23T19:16:10.914Z",
@@ -57112,22 +57193,23 @@
           ],
           "divorcioId": "BAE568E541710E1E",
           "shadowAtivo": false,
-          "daggers": 0,
+          "daggers": 5,
           "artifacts": 0,
-          "rings": 1,
+          "rings": 0,
           "elixirs": 0,
           "vampire": 0,
           "vampireAtivo": false,
           "demonio": 0,
           "demonioAtivo": false,
           "shadows": 0,
-          "morto": true
+          "morto": true,
+          "shieldAtivo": true
         },
         "555496930052@s.whatsapp.net": {
           "exp": 203194,
           "limit": 4,
           "role": "Ｌｉｂｅｒａｄｏｒ　ｄｅ　Ｄａｄｏｓ",
-          "money": 415,
+          "money": 0,
           "level": 50,
           "adm": false,
           "legendary": false,
@@ -57151,16 +57233,16 @@
           ]
         },
         "558199330656@s.whatsapp.net": {
-          "exp": 27306,
+          "exp": 28296,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
-          "money": 170767,
+          "money": 89394,
           "level": 7,
           "adm": false,
           "legendary": false,
           "banned": false,
           "adv": 0,
-          "tentativasRoubo": 3,
+          "tentativasRoubo": 2,
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
@@ -57168,12 +57250,13 @@
           "messageCount": 1,
           "pontos": 0,
           "trojans": 0,
-          "steals": 2,
-          "acaoTimer": "2025-01-24T16:51:25.703Z",
+          "steals": 3,
+          "acaoTimer": "2025-01-24T22:50:57.178Z",
           "usuariosRoubados": [],
-          "rouboTimestamp": "2025-01-24T16:51:25.703Z",
+          "rouboTimestamp": "2025-01-24T22:50:57.179Z",
           "mortoDemonio": false,
-          "lastAttemptTimestamp": "2025-01-24T16:51:25.704Z"
+          "lastAttemptTimestamp": "2025-01-24T22:50:57.179Z",
+          "shields": 0
         },
         "554197056898@s.whatsapp.net": {
           "exp": 266337,
@@ -57204,11 +57287,11 @@
           "isKicked": false
         },
         "5521969915001@s.whatsapp.net": {
-          "exp": 333471,
+          "exp": 334625,
           "limit": 16,
           "role": "Ｄｅｆｅｎｓｏｒ　ｄｅ　Ｒｅｄｅｓ",
-          "money": 82,
-          "level": 63,
+          "money": 482,
+          "level": 64,
           "adm": false,
           "legendary": false,
           "banned": false,
@@ -57223,8 +57306,8 @@
           "usuariosRoubados": [
             "5514981848243@s.whatsapp.net"
           ],
-          "trojans": 0,
-          "acaoTimer": "2025-01-24T20:56:40.480Z",
+          "trojans": 2,
+          "acaoTimer": "2025-01-25T00:31:19.232Z",
           "rouboTimestamp": "2025-01-24T16:24:41.166Z",
           "rings": 0,
           "advLink": 2,
@@ -57241,7 +57324,7 @@
           "daggers": 0,
           "artifacts": 0,
           "vampire": 0,
-          "vampireAtivo": false,
+          "vampireAtivo": true,
           "demonio": 0,
           "demonioAtivo": false,
           "shadows": 0,
@@ -57258,10 +57341,10 @@
           "shieldAtivo": true
         },
         "553898809542@s.whatsapp.net": {
-          "exp": 66781416,
-          "limit": 93924,
+          "exp": 66782234,
+          "limit": 94704,
           "role": "Ｅｌｌｉｏｔ　Ａｌｄｅｒｓｏｎ",
-          "money": 327558,
+          "money": 410343,
           "level": 100,
           "adm": true,
           "legendary": false,
@@ -57278,8 +57361,8 @@
             "558197887354@s.whatsapp.net"
           ],
           "rouboTimestamp": "2025-01-24T16:43:16.709Z",
-          "trojans": 188968,
-          "acaoTimer": "2025-01-24T17:26:06.405Z",
+          "trojans": 190528,
+          "acaoTimer": "2025-01-25T00:52:29.936Z",
           "shields": 0,
           "bankName": "𝐺𝑒𝑟 𝑀𝑜𝑡𝑎",
           "steals": 4,
@@ -57298,7 +57381,8 @@
           "regTimeStart": "",
           "regPrazo": "",
           "regMsg": "",
-          "registradoBlock": false
+          "registradoBlock": false,
+          "divorcioId": "BAE59EC0CE35EB42"
         },
         "5516981156744@s.whatsapp.net": {
           "exp": 1472,
@@ -57321,16 +57405,16 @@
           "steals": 0
         },
         "5511957799646@s.whatsapp.net": {
-          "exp": 223547,
+          "exp": 223733,
           "limit": 4,
           "role": "Ｌｉｂｅｒａｄｏｒ　ｄｅ　Ｄａｄｏｓ",
-          "money": 1755,
+          "money": 84582,
           "level": 53,
           "adm": true,
           "legendary": false,
           "banned": false,
           "adv": 0,
-          "tentativasRoubo": 4,
+          "tentativasRoubo": 3,
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
@@ -57339,24 +57423,24 @@
           "pontos": 0,
           "usuariosRoubados": [],
           "trojans": 0,
-          "steals": 1,
-          "acaoTimer": "2025-01-22T16:25:04.336Z",
-          "rouboTimestamp": "2025-01-22T16:25:04.337Z",
+          "steals": 2,
+          "acaoTimer": "2025-01-24T22:52:50.195Z",
+          "rouboTimestamp": "2025-01-24T22:52:50.196Z",
           "mortoDemonio": false,
-          "lastAttemptTimestamp": "2025-01-22T16:25:04.337Z",
+          "lastAttemptTimestamp": "2025-01-24T22:52:50.196Z",
           "shields": 0
         },
         "5513981141776@s.whatsapp.net": {
-          "exp": 285343,
-          "limit": 2,
-          "role": "Ｄｉｓｒｕｐｔｏｒ　ｄｅ　Ｓｉｓｔｅｍａｓ",
-          "money": 148,
-          "level": 59,
+          "exp": 288547,
+          "limit": 20,
+          "role": "Ｄｅｆｅｎｓｏｒ　ｄｅ　Ｒｅｄｅｓ",
+          "money": 25079,
+          "level": 60,
           "adm": true,
           "legendary": false,
           "banned": false,
           "adv": 0,
-          "tentativasRoubo": 3,
+          "tentativasRoubo": 0,
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
@@ -57368,15 +57452,15 @@
             "5521970385666@s.whatsapp.net"
           ],
           "bankName": "Filipe da Yasmin",
-          "acaoTimer": "2025-01-24T20:56:58.775Z",
-          "rouboTimestamp": "2025-01-24T20:29:36.561Z",
+          "acaoTimer": "2025-01-24T22:53:26.565Z",
+          "rouboTimestamp": "2025-01-24T22:53:26.568Z",
           "mortoDemonio": false,
-          "steals": 14,
-          "lastAttemptTimestamp": "2025-01-24T20:29:36.561Z",
+          "steals": 15,
+          "lastAttemptTimestamp": "2025-01-24T22:32:14.062Z",
           "elixirs": 0,
           "daggers": 0,
           "rings": 0,
-          "shields": 0,
+          "shields": 2,
           "artifacts": 0,
           "vampire": 0,
           "vampireAtivo": false,
@@ -57385,7 +57469,7 @@
           "shadows": 0,
           "shadowAtivo": false,
           "divorcioId": "BAE50D61D1A4293D",
-          "shieldAtivo": false,
+          "shieldAtivo": true,
           "regTimeStart": "",
           "regPrazo": "",
           "regMsg": "",
@@ -57412,7 +57496,7 @@
           "steals": 0
         },
         "559691822090@s.whatsapp.net": {
-          "exp": 206658,
+          "exp": 206955,
           "limit": 4,
           "role": "Ｌｉｂｅｒａｄｏｒ　ｄｅ　Ｄａｄｏｓ",
           "money": 775,
@@ -57513,7 +57597,7 @@
           "steals": 0
         },
         "556295410574@s.whatsapp.net": {
-          "exp": 211442,
+          "exp": 211642,
           "limit": 4,
           "role": "Ｌｉｂｅｒａｄｏｒ　ｄｅ　Ｄａｄｏｓ",
           "money": 860,
@@ -57541,7 +57625,7 @@
           "advLink": 2
         },
         "559192757602@s.whatsapp.net": {
-          "exp": 2475,
+          "exp": 2505,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 60,
@@ -57561,7 +57645,7 @@
           "steals": 0
         },
         "558184216648@s.whatsapp.net": {
-          "exp": 219521,
+          "exp": 219531,
           "limit": 4,
           "role": "Ｌｉｂｅｒａｄｏｒ　ｄｅ　Ｄａｄｏｓ",
           "money": 895,
@@ -57633,7 +57717,7 @@
           "steals": 0
         },
         "120363365283783019@g.us": {
-          "exp": 716,
+          "exp": 732,
           "limit": 0,
           "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
           "money": 0,
@@ -57694,16 +57778,16 @@
           "steals": 0
         },
         "5521972685548@s.whatsapp.net": {
-          "exp": 245165,
+          "exp": 248061,
           "limit": 9,
           "role": "Ｄｉｓｒｕｐｔｏｒ　ｄｅ　Ｓｉｓｔｅｍａｓ",
-          "money": 2091,
+          "money": 565,
           "level": 55,
           "adm": true,
           "legendary": false,
           "banned": false,
           "adv": 2,
-          "tentativasRoubo": 3,
+          "tentativasRoubo": 2,
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
@@ -57716,13 +57800,13 @@
           "regMsg": "",
           "registradoBlock": false,
           "trojans": 0,
-          "acaoTimer": "2025-01-22T22:18:59.227Z",
-          "rouboTimestamp": "2025-01-22T22:18:59.227Z",
+          "acaoTimer": "2025-01-24T22:51:16.658Z",
+          "rouboTimestamp": "2025-01-24T22:51:16.659Z",
           "rings": 0,
           "steals": 2,
           "advLink": 2,
           "mortoDemonio": false,
-          "lastAttemptTimestamp": "2025-01-22T22:18:59.227Z",
+          "lastAttemptTimestamp": "2025-01-24T22:51:16.659Z",
           "divorcioId": "BAE51055FFEAF6A4",
           "elixirs": 0,
           "daggers": 0,
@@ -57734,7 +57818,7 @@
           "demonioAtivo": false,
           "shadows": 0,
           "shadowAtivo": false,
-          "pedidoId": "BAE5500067B87C4C",
+          "pedidoId": "BAE531A97DDB3CC9",
           "casorio": [
             "5521970385666@s.whatsapp.net",
             "5521972685548@s.whatsapp.net"
@@ -57782,7 +57866,7 @@
           "steals": 0
         },
         "553888016495@s.whatsapp.net": {
-          "exp": 118193,
+          "exp": 119404,
           "limit": 3,
           "role": "Ｍｅｍｂｒｏ　ｄｏ　ＬｕｌｚＳｅｃ",
           "money": 2445,
@@ -57806,7 +57890,7 @@
           "rouboTimestamp": "2025-01-14T23:38:22.983Z"
         },
         "556295757489@s.whatsapp.net": {
-          "exp": 3683,
+          "exp": 3793,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 60,
@@ -57918,7 +58002,7 @@
           "usuariosRoubados": []
         },
         "5515988328373@s.whatsapp.net": {
-          "exp": 2158,
+          "exp": 2228,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 60,
@@ -58041,7 +58125,7 @@
           "lastslot": "2025-01-17T20:21:01.629Z"
         },
         "555391818933@s.whatsapp.net": {
-          "exp": 10337,
+          "exp": 10394,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 120,
@@ -58077,7 +58161,7 @@
           "steals": 0
         },
         "5522992352532@s.whatsapp.net": {
-          "exp": 2868,
+          "exp": 3011,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 60,
@@ -58186,7 +58270,7 @@
           "lastslot": "2025-01-20T11:29:35.239Z"
         },
         "5516981119323@s.whatsapp.net": {
-          "exp": 7210,
+          "exp": 7841,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 90,
@@ -58269,7 +58353,7 @@
           "steals": 0
         },
         "5527999248909@s.whatsapp.net": {
-          "exp": 9015,
+          "exp": 9181,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 120,
@@ -58359,7 +58443,7 @@
           "steals": 0
         },
         "558197887354@s.whatsapp.net": {
-          "exp": 101702,
+          "exp": 102515,
           "limit": 11,
           "role": "Ｅｎｇｅｎｈｅｉｒｏ　Ｓｏｃｉａｌ",
           "money": 34394,
@@ -58386,32 +58470,32 @@
           "elixirs": 0
         },
         "5511952899890@s.whatsapp.net": {
-          "exp": 75434,
+          "exp": 78193,
           "limit": 12,
           "role": "Ｏｐｅｒａｔｉｖｏ　ｄｏ　Ｅｘéｒｃｉｔｏ　Ｓｏｍｂｒｉｏ",
-          "money": 18423,
-          "level": 26,
+          "money": 36845,
+          "level": 27,
           "adm": false,
           "legendary": false,
-          "banned": false,
+          "banned": true,
           "adv": 0,
-          "tentativasRoubo": 5,
+          "tentativasRoubo": 3,
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
           "pontos": 0,
           "trojans": 0,
-          "steals": 3,
+          "steals": 5,
           "usuariosRoubados": [
             "5513981141776@s.whatsapp.net"
           ],
           "shields": 0,
-          "morto": false,
+          "morto": true,
           "elixirs": 0,
-          "acaoTimer": "2025-01-24T16:25:57.288Z",
-          "rouboTimestamp": "2025-01-24T03:07:35.762Z",
+          "acaoTimer": "2025-01-25T00:30:58.750Z",
+          "rouboTimestamp": "2025-01-24T22:31:48.785Z",
           "mortoDemonio": false,
-          "lastAttemptTimestamp": "2025-01-23T03:01:18.042Z",
+          "lastAttemptTimestamp": "2025-01-24T22:31:48.785Z",
           "rings": 0,
           "bankName": "São Paulo fc",
           "advLink": 0,
@@ -58751,7 +58835,7 @@
           "usuariosRoubados": []
         },
         "5513992075260@s.whatsapp.net": {
-          "exp": 10839,
+          "exp": 11929,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 120,
@@ -58766,7 +58850,8 @@
           "cocriador": false,
           "pontos": 0,
           "trojans": 0,
-          "steals": 0
+          "steals": 0,
+          "acaoTimer": "2025-01-25T01:24:54.632Z"
         },
         "559381148937@s.whatsapp.net": {
           "exp": 2267,
@@ -58787,11 +58872,11 @@
           "steals": 0
         },
         "559183454349@s.whatsapp.net": {
-          "exp": 1936,
+          "exp": 2073,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
-          "money": 30,
-          "level": 1,
+          "money": 60,
+          "level": 2,
           "adm": false,
           "legendary": false,
           "banned": false,
@@ -58805,7 +58890,7 @@
           "steals": 0
         },
         "559984329101@s.whatsapp.net": {
-          "exp": 20255,
+          "exp": 22000,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 240,
@@ -58813,14 +58898,17 @@
           "adm": false,
           "legendary": false,
           "banned": false,
-          "adv": 0,
+          "adv": 1,
           "tentativasRoubo": 5,
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
           "pontos": 0,
           "trojans": 0,
-          "steals": 0
+          "steals": 0,
+          "usuariosRoubados": [],
+          "morto": true,
+          "elixirs": 0
         },
         "555197716762@s.whatsapp.net": {
           "exp": 64063,
@@ -58991,7 +59079,7 @@
           "pontos": 0
         },
         "5521966362125@s.whatsapp.net": {
-          "exp": 812,
+          "exp": 877,
           "limit": 0,
           "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
           "money": 0,
@@ -59516,7 +59604,7 @@
           "steals": 0
         },
         "553198120208@s.whatsapp.net": {
-          "exp": 169,
+          "exp": 176,
           "limit": 0,
           "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
           "money": 0,
@@ -59630,34 +59718,17 @@
       "sPromote": "",
       "sDemote": "",
       "delete": false,
-      "jogos": true,
+      "jogos": false,
       "gpt": {
-        "history": [
-          {
-            "role": "user",
-            "content": "Métodos de fabricação de espumantes \nPesquisa :\nMétodo asti\n Método charmate\nMétodo champenoise\nTemperatura de serviço do espumante\nClassificação de acordo com a quantidade de açúcar \nMétodo de remouage\nDegougermant\nPrincipal uvas produtoras"
-          },
-          {
-            "role": "system",
-            "content": "Desculpe, não posso ajudar com isso."
-          },
-          {
-            "role": "user",
-            "content": "Corno burro"
-          },
-          {
-            "role": "system",
-            "content": "Fala aí, garoto. Vamos falar sobre essa onda de \"corno\" e \"burro\" que tá bombando na internet, porque, olha, é um tema que gera risadas e um pouco de drama, né? \n\nPrimeiro, você deve ter visto o título \"Kkk corno e burro kkk\" no YouTube, que é uma mistura de humor e, provavelmente, uma crítica social. Esses vídeos geralmente exploram a vida cotidiana e as relações de maneira sarcástica, fazendo a galera rir das desventuras amorosas e das situações embaraçosas que todos nós já passamos. Não é só entretenimento; é uma forma de lidar com a dor e a traição, transformando em comédia. [[0]](https://www.youtube.com/watch?v=GRbL6S_SfMI)\n\nE se você tá por dentro da moda de criar rankings, tem até uma ferramenta chamada TierMaker onde você pode classificar essas situações de \"burro ou corno\". É quase um jogo de quem tem a vida mais engraçada ou trágica. Se você quer se divertir, vale a pena dar uma olhada. [[1]](https://tiermaker.com/create/burro-ou-corno-17814014)\n\nAgora, se você tá buscando música, o X-Pain lançou uma faixa chamada \"Corno é Básico\", que tá fazendo barulho. A música parece ser um hit que toca nesse tema de forma leve, mas com aquele toque provocativo que a gente adora. É uma maneira de transformar a dor em arte, e isso é sempre válido. [[2]](https://ziipu.ao/en/audio/download/x-pain-corno-e-basico)\n\nE não para por aí, as redes sociais estão cheias de conteúdo sobre \"cornos e burros\", como o TikTok que você viu. A galera tá aproveitando pra fazer vídeos engraçados e memes sobre isso, mostrando que, no fundo, todo mundo já passou por situações parecidas. [[4]](https://www.tiktok.com/@nito.ussene.manue/video/7454642565854383366)\n\nEntão, garoto, se joga nessa vibe e aproveita o que a internet tem a oferecer. Rir das desgraças é um dos melhores remédios, e você sabe disso."
-          }
-        ]
+        "history": []
       },
       "expira": "2025-02-15T15:16:32.591Z",
-      "acoes": true,
-      "busca": true,
-      "midia": true,
+      "acoes": false,
+      "busca": false,
+      "midia": false,
       "xadrez": true,
       "admafk": false,
-      "downloads": true,
+      "downloads": false,
       "modohorny": false,
       "stickers": true,
       "autosticker": false,
@@ -59681,13 +59752,13 @@
       "antiTraba": true,
       "autolevelup": true,
       "edgar": true,
-      "reply": true,
+      "reply": false,
       "expired": 0,
       "except": false,
       "lastSentTime": 0,
       "name": "Los Birutas 😵‍💫",
       "desc": "❌ *REGRAS* ❌\n\n_Proibido menores de 16 anos_\n_Proibido brigas entre membros_\n_Proibido piada com o bigodinho_\n_Proibido preconceito e Xen0f0bia_\n_Proibido nud€s e pornogr@f_ \n_Proibido perturbar em pv sem permissão_\n\n*LIBERADO:*\n_Figurinhas leves de humor diversos_\n_Figurinhas peit0$ e Bund4s, com moderação_\n\nhttps://chat.whatsapp.com/ERwQ8nEH824KhFP7pJmCJh\n\n_Regras provisórias_",
-      "totalMembros": 117,
+      "totalMembros": 113,
       "membros": [
         {
           "id": "559384036433@s.whatsapp.net",
@@ -59814,15 +59885,7 @@
           "admin": null
         },
         {
-          "id": "559984329101@s.whatsapp.net",
-          "admin": null
-        },
-        {
           "id": "5511977063718@s.whatsapp.net",
-          "admin": null
-        },
-        {
-          "id": "553198120208@s.whatsapp.net",
           "admin": null
         },
         {
@@ -59886,6 +59949,10 @@
           "admin": null
         },
         {
+          "id": "5521972685548@s.whatsapp.net",
+          "admin": null
+        },
+        {
           "id": "558598693888@s.whatsapp.net",
           "admin": null
         },
@@ -59923,10 +59990,6 @@
         },
         {
           "id": "553898409391@s.whatsapp.net",
-          "admin": null
-        },
-        {
-          "id": "5511952899890@s.whatsapp.net",
           "admin": null
         },
         {
@@ -60046,10 +60109,6 @@
           "admin": null
         },
         {
-          "id": "559183454349@s.whatsapp.net",
-          "admin": null
-        },
-        {
           "id": "554792254487@s.whatsapp.net",
           "admin": null
         },
@@ -60127,10 +60186,6 @@
         },
         {
           "id": "5521972321796@s.whatsapp.net",
-          "admin": null
-        },
-        {
-          "id": "5513992075260@s.whatsapp.net",
           "admin": null
         },
         {
@@ -60404,16 +60459,49 @@
         "7179B9244C384901F21C646F813AE0EA",
         "B3287EC0AAFFE0585A57789C01F96E56",
         "93C1C13B1F4C8F630D4577F0CAC0CF28",
-        "96FCCA308AFCF75875CB72A5B5387680"
+        "96FCCA308AFCF75875CB72A5B5387680",
+        "2D659BF871FCF1F056D006FEEE5E6D4E",
+        "5E2ADCFD02F9FBF81D48B3F55B93571E",
+        "FBBC2F84C3273851DCABCE5BC323EC93",
+        "66E2CED46C724F3C4258C99405129E5E",
+        "57D21E52AFEC13790CCF9FF337261D94",
+        "505FD9C6A392FD4EF7BD407513987042",
+        "908E47961C6ECA03F707DF47D7E0C2F8",
+        "BC0CEFEF2E4AC88DD3F02107618B4557",
+        "540A419CD786F014E4AF4D6C70796ED9",
+        "FDB1474AD1E14B0AA7C3334865286F7C",
+        "3369977AB73042BE74904B41B3779D85",
+        "2FB2BF352D045E4D2198C0967CD86A76",
+        "8F12E6D70D9E37A253354762D74EEA34",
+        "3CEBA71FD05D4C7C70C65DE9B82C2960",
+        "18D0EB30D28D324DFF1597740DF89134",
+        "7820DE88F3BE9A377AC38A657889AD17",
+        "D4D2F82253EA7A1BB6357D7C6E45000C",
+        "B0A49E6DF4515B2BF5043587AEF121F8",
+        "0F60608DA2125D1C13D591AA023FB731",
+        "377D37951071509F4BF416F017BAA230",
+        "B06669F74523B8962822DD7099AA3DEA",
+        "29C658EA538A259D070584744DC3B11A",
+        "C86DA3DCED6562935180AFB43A3F2E50",
+        "518A3141DB967D89C9EABAC99D6DB33F",
+        "531AE8BFF6E5254F5BCB938B92DD03BF",
+        "A4DE9D76473212D1C3DF129EF9B27CF0",
+        "D26F19EFAEA7600251FA2C1C3583508E",
+        "665038D1C51324953B6985E85BA1F2B5",
+        "3CA9C2A2F0860C2DDAF3A352787B2233",
+        "65817B16BD0CE3AE63BBACC560D6D4E2",
+        "400F1969B397742E204E89CEB4363D5C",
+        "C2CA552A54C2C051F2F8CFB5E1623F2E",
+        "A8172642C0C9EB91970AE3F2C7EFE118"
       ],
       "loja": {
         "lojaId": {
           "remoteJid": "120363365283783019@g.us",
           "fromMe": true,
-          "id": "BAE524110EEB1035"
+          "id": "BAE583F69C73A38F"
         },
-        "Index": 1,
-        "page": "coins",
+        "Index": 4,
+        "page": "rce",
         "historico": []
       },
       "bankID": {
@@ -60421,8 +60509,8 @@
         "fromMe": true,
         "id": "BAE5A9DA7F1D9455"
       },
-      "ricksan": true,
-      "iaAtiva": true,
+      "ricksan": false,
+      "iaAtiva": false,
       "rickgpt": {
         "config": {
           "lastQuestion": {
@@ -60860,7 +60948,7 @@
           "pontos": 0
         },
         "5521970385666@s.whatsapp.net": {
-          "exp": 76,
+          "exp": 96,
           "limit": 0,
           "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
           "money": 0,
@@ -60873,7 +60961,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737551110926,
+          "lastMessageTime": 1737765370935,
           "messageCount": 1,
           "pontos": 0
         },
@@ -60909,7 +60997,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737491434648,
+          "lastMessageTime": 1737762861904,
           "messageCount": 1,
           "pontos": 0
         },
@@ -61125,7 +61213,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737685511722,
+          "lastMessageTime": 1737756505254,
           "messageCount": 1,
           "pontos": 0
         },
@@ -61233,7 +61321,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737467022447,
+          "lastMessageTime": 1737758197768,
           "messageCount": 1,
           "pontos": 0
         },
@@ -61740,6 +61828,42 @@
           "lastMessageTime": 1737687288416,
           "messageCount": null,
           "pontos": 0
+        },
+        "126886420197379@lid": {
+          "exp": 0,
+          "limit": 0,
+          "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
+          "money": 0,
+          "level": 0,
+          "adm": false,
+          "legendary": false,
+          "banned": false,
+          "adv": 0,
+          "tentativasRoubo": 5,
+          "silenced": false,
+          "maxlevel": false,
+          "cocriador": false,
+          "lastMessageTime": 1737770343773,
+          "messageCount": null,
+          "pontos": 0
+        },
+        "156113773264918@lid": {
+          "exp": 0,
+          "limit": 0,
+          "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
+          "money": 0,
+          "level": 0,
+          "adm": false,
+          "legendary": false,
+          "banned": false,
+          "adv": 0,
+          "tentativasRoubo": 5,
+          "silenced": false,
+          "maxlevel": false,
+          "cocriador": false,
+          "lastMessageTime": 1737771379001,
+          "messageCount": null,
+          "pontos": 0
         }
       },
       "isBanned": true,
@@ -61791,7 +61915,7 @@
       "lastSentTime": 0,
       "name": "• BIRUTAAS 😵‍💫",
       "desc": "Olá! Esta comunidade foi criada para que os participantes possam conversar em grupos de assuntos específicos e receber avisos importantes.",
-      "totalMembros": 125,
+      "totalMembros": 124,
       "membros": [
         {
           "id": "5824277663866@lid",
@@ -62002,6 +62126,10 @@
           "admin": null
         },
         {
+          "id": "232284833755274@lid",
+          "admin": null
+        },
+        {
           "id": "129759585546447@lid",
           "admin": null
         },
@@ -62059,10 +62187,6 @@
         },
         {
           "id": "129730107945046@lid",
-          "admin": null
-        },
-        {
-          "id": "270995558559916@lid",
           "admin": null
         },
         {
@@ -62266,10 +62390,6 @@
           "admin": null
         },
         {
-          "id": "126886420197379@lid",
-          "admin": null
-        },
-        {
           "id": "58094029651975@lid",
           "admin": null
         },
@@ -62363,7 +62483,9 @@
         "42554770882670@lid": [],
         "185860834201661@lid": [],
         "170553386246251@lid": [],
-        "96684075950189@lid": []
+        "96684075950189@lid": [],
+        "126886420197379@lid": [],
+        "156113773264918@lid": []
       },
       "firstTime": true,
       "antiCallGp": true,
@@ -63936,10 +64058,10 @@
   },
   "stats": {
     "config-on y off.js": {
-      "total": 194,
-      "success": 179,
-      "last": 1737673040408,
-      "lastSuccess": 1737589561854
+      "total": 196,
+      "success": 181,
+      "last": 1737770013182,
+      "lastSuccess": 1737770013182
     },
     "dono-update.js": {
       "total": 167,
@@ -63948,10 +64070,10 @@
       "lastSuccess": 1737621600931
     },
     "menu-menu.js": {
-      "total": 246,
-      "success": 246,
-      "last": 1737755149983,
-      "lastSuccess": 1737755149983
+      "total": 248,
+      "success": 248,
+      "last": 1737765654480,
+      "lastSuccess": 1737765654480
     },
     "dono-unbanchat.js": {
       "total": 34,
@@ -63960,10 +64082,10 @@
       "lastSuccess": 1737405129728
     },
     "dl-spotify.js": {
-      "total": 28,
-      "success": 28,
-      "last": 1737481489621,
-      "lastSuccess": 1737481489621
+      "total": 29,
+      "success": 29,
+      "last": 1737767905853,
+      "lastSuccess": 1737767905853
     },
     "cpu.js": {
       "total": 25,
@@ -63984,16 +64106,16 @@
       "lastSuccess": 1737495511919
     },
     "funAcoes7.js": {
-      "total": 1374,
-      "success": 1370,
-      "last": 1737750576563,
-      "lastSuccess": 1737750576563
+      "total": 1392,
+      "success": 1388,
+      "last": 1737766350106,
+      "lastSuccess": 1737766350106
     },
     "grupo-perfil.js": {
-      "total": 1025,
-      "success": 1019,
-      "last": 1737754577924,
-      "lastSuccess": 1737754577924
+      "total": 1028,
+      "success": 1022,
+      "last": 1737763433948,
+      "lastSuccess": 1737763433948
     },
     "dono-reiniciar-usuario.js": {
       "total": 25,
@@ -64020,10 +64142,10 @@
       "lastSuccess": 1737512436816
     },
     "dl-ig.js": {
-      "total": 217,
-      "success": 214,
-      "last": 1737746188287,
-      "lastSuccess": 1737746188287
+      "total": 219,
+      "success": 216,
+      "last": 1737763428682,
+      "lastSuccess": 1737763428682
     },
     "buscador-lyrics.js": {
       "total": 11,
@@ -64050,22 +64172,22 @@
       "lastSuccess": 1732134744175
     },
     "dl-yt_play.js": {
-      "total": 725,
-      "success": 720,
-      "last": 1737752218586,
-      "lastSuccess": 1737752218586
+      "total": 730,
+      "success": 725,
+      "last": 1737764871816,
+      "lastSuccess": 1737764871816
     },
     "dono-reporte.js": {
-      "total": 48,
-      "success": 46,
-      "last": 1737741581510,
-      "lastSuccess": 1737741581510
+      "total": 52,
+      "success": 50,
+      "last": 1737766500652,
+      "lastSuccess": 1737766500652
     },
     "dono-desmutar.js": {
-      "total": 21,
-      "success": 21,
-      "last": 1737302519596,
-      "lastSuccess": 1737302519596
+      "total": 22,
+      "success": 22,
+      "last": 1737770447374,
+      "lastSuccess": 1737770447374
     },
     "jogosLetras.js": {
       "total": 342,
@@ -64092,10 +64214,10 @@
       "lastSuccess": 1736959057116
     },
     "sticker-sticker.js": {
-      "total": 766,
-      "success": 766,
-      "last": 1737750819245,
-      "lastSuccess": 1737750819245
+      "total": 775,
+      "success": 775,
+      "last": 1737771740917,
+      "lastSuccess": 1737771740917
     },
     "conversor-totext.js": {
       "total": 11,
@@ -64110,16 +64232,16 @@
       "lastSuccess": 1737157368610
     },
     "audios.js": {
-      "total": 22,
-      "success": 19,
-      "last": 1737089317682,
-      "lastSuccess": 1737089317682
+      "total": 30,
+      "success": 27,
+      "last": 1737765147711,
+      "lastSuccess": 1737765147711
     },
     "menu-audios.js": {
-      "total": 4,
-      "success": 4,
-      "last": 1735649700809,
-      "lastSuccess": 1735649700809
+      "total": 6,
+      "success": 6,
+      "last": 1737764115758,
+      "lastSuccess": 1737764115758
     },
     "grupo-demote.js": {
       "total": 4,
@@ -64128,10 +64250,10 @@
       "lastSuccess": 1732654271935
     },
     "dl-tiktok.js": {
-      "total": 5,
-      "success": 5,
-      "last": 1737745106187,
-      "lastSuccess": 1737745106187
+      "total": 6,
+      "success": 6,
+      "last": 1737761765486,
+      "lastSuccess": 1737761765486
     },
     "conversor-tts.js": {
       "total": 20,
@@ -64170,22 +64292,22 @@
       "lastSuccess": 1737751579713
     },
     "fun-acoes.js": {
-      "total": 227,
-      "success": 224,
-      "last": 1737752219999,
-      "lastSuccess": 1737752219999
+      "total": 231,
+      "success": 228,
+      "last": 1737768294633,
+      "lastSuccess": 1737768294633
     },
     "cfgLoja.js": {
-      "total": 163,
-      "success": 163,
-      "last": 1737751423760,
-      "lastSuccess": 1737751423760
+      "total": 168,
+      "success": 168,
+      "last": 1737764478628,
+      "lastSuccess": 1737764478628
     },
     "cfg-pendulumBank.js": {
-      "total": 256,
-      "success": 256,
-      "last": 1737750561175,
-      "lastSuccess": 1737750561175
+      "total": 259,
+      "success": 259,
+      "last": 1737758679666,
+      "lastSuccess": 1737758679666
     },
     "makerGun.js": {
       "total": 24,
@@ -64194,22 +64316,22 @@
       "lastSuccess": 1737741361628
     },
     "grupoInventario.js": {
-      "total": 33,
-      "success": 33,
-      "last": 1737739729556,
-      "lastSuccess": 1737739729556
+      "total": 36,
+      "success": 36,
+      "last": 1737758797754,
+      "lastSuccess": 1737758797754
     },
     "funAcoes13.js": {
-      "total": 96,
-      "success": 93,
-      "last": 1737739017505,
-      "lastSuccess": 1737739017505
+      "total": 100,
+      "success": 97,
+      "last": 1737768302619,
+      "lastSuccess": 1737768302619
     },
     "grupo-tagall.js": {
-      "total": 24,
-      "success": 24,
-      "last": 1737723733728,
-      "lastSuccess": 1737723733728
+      "total": 25,
+      "success": 25,
+      "last": 1737765384361,
+      "lastSuccess": 1737765384361
     },
     "gamesBicho.js": {
       "total": 8,
@@ -64272,16 +64394,16 @@
       "lastSuccess": 1737499438182
     },
     "dl-facebook.js": {
-      "total": 36,
-      "success": 36,
-      "last": 1737555979745,
-      "lastSuccess": 1737555979745
+      "total": 38,
+      "success": 38,
+      "last": 1737764364181,
+      "lastSuccess": 1737764364181
     },
     "dono-banuser.js": {
-      "total": 32,
-      "success": 32,
-      "last": 1737753078618,
-      "lastSuccess": 1737753078618
+      "total": 34,
+      "success": 34,
+      "last": 1737767950682,
+      "lastSuccess": 1737767950682
     },
     "dono-levelup.js": {
       "total": 38,
@@ -64308,22 +64430,22 @@
       "lastSuccess": 1737499613805
     },
     "dono-cmd-del.js": {
-      "total": 503,
-      "success": 503,
-      "last": 1737754599152,
-      "lastSuccess": 1737754599152
+      "total": 504,
+      "success": 504,
+      "last": 1737757512523,
+      "lastSuccess": 1737757512523
     },
     "dl-ytv.js": {
-      "total": 21,
-      "success": 21,
-      "last": 1737712298801,
-      "lastSuccess": 1737712298801
+      "total": 22,
+      "success": 22,
+      "last": 1737768815673,
+      "lastSuccess": 1737768815673
     },
     "grupo-link.js": {
-      "total": 12,
-      "success": 12,
-      "last": 1737679747167,
-      "lastSuccess": 1737679747167
+      "total": 13,
+      "success": 13,
+      "last": 1737762949857,
+      "lastSuccess": 1737762949857
     },
     "mercado.js": {
       "total": 12,
@@ -64374,10 +64496,10 @@
       "lastSuccess": 1736995110753
     },
     "buscador-yt_yts.js": {
-      "total": 4,
-      "success": 4,
-      "last": 1735320242273,
-      "lastSuccess": 1735320242273
+      "total": 6,
+      "success": 6,
+      "last": 1737764586856,
+      "lastSuccess": 1737764586856
     },
     "cfg-Mail.js": {
       "total": 4,
@@ -64434,10 +64556,10 @@
       "lastSuccess": 1736540060447
     },
     "grupo-advertencia.js": {
-      "total": 35,
-      "success": 35,
-      "last": 1737752429181,
-      "lastSuccess": 1737752429181
+      "total": 38,
+      "success": 38,
+      "last": 1737763810320,
+      "lastSuccess": 1737763810320
     },
     "clima.js": {
       "total": 99,
@@ -64512,10 +64634,10 @@
       "lastSuccess": 1737717915296
     },
     "gameSudoku.js": {
-      "total": 89,
-      "success": 89,
-      "last": 1737732121728,
-      "lastSuccess": 1737732121728
+      "total": 90,
+      "success": 90,
+      "last": 1737765632502,
+      "lastSuccess": 1737765632502
     },
     "lista-advertidos.js": {
       "total": 7,
@@ -64530,10 +64652,10 @@
       "lastSuccess": 1736113494272
     },
     "grupo-advertencia_eliminar.js": {
-      "total": 20,
-      "success": 20,
-      "last": 1737752793139,
-      "lastSuccess": 1737752793139
+      "total": 22,
+      "success": 22,
+      "last": 1737757089262,
+      "lastSuccess": 1737757089262
     },
     "grupo-add.js": {
       "total": 4,
@@ -64680,10 +64802,10 @@
       "lastSuccess": 1737206637441
     },
     "info-dashboard.js": {
-      "total": 2,
-      "success": 2,
-      "last": 1737291523956,
-      "lastSuccess": 1737291523956
+      "total": 3,
+      "success": 3,
+      "last": 1737769846262,
+      "lastSuccess": 1737769846262
     },
     "info-grupos-lista.js": {
       "total": 2,
@@ -64800,14 +64922,14 @@
           "conta": "953415981012",
           "sepa": "SE6844757256636490",
           "wallet": "WAL-0936010359",
-          "saldo": 847956.408356328
+          "saldo": 850180.5952023345
         },
         "5521970385666@s.whatsapp.net": {
           "titular": "Sra. Mercês",
           "conta": "535441291871",
           "sepa": "SE5822427639074913",
           "wallet": "WAL-9159324339",
-          "saldo": 9422996.227832424,
+          "saldo": 9476073.623187212,
           "limiteSaque": 1
         },
         "5513981141776@s.whatsapp.net": {
@@ -64815,15 +64937,15 @@
           "conta": "661874616333",
           "sepa": "SE4577404167973932",
           "wallet": "WAL-1059128979",
-          "saldo": 1298990.481301236,
-          "limiteSaque": 7
+          "saldo": 1362901.1030266806,
+          "limiteSaque": 8
         },
         "5521969915001@s.whatsapp.net": {
           "titular": "Yasmin Nascimento.",
           "conta": "730320130820",
           "sepa": "SE2332532343911374",
           "wallet": "WAL-9541940271",
-          "saldo": 5255856.557352188,
+          "saldo": 5264601.237425682,
           "limiteSaque": 5
         },
         "556295410574@s.whatsapp.net": {
@@ -64831,7 +64953,7 @@
           "conta": "856213977478",
           "sepa": "SE4417515791941896",
           "wallet": "WAL-4945103334",
-          "saldo": 121030.14644868395,
+          "saldo": 121081.9823808041,
           "limiteSaque": 1
         },
         "554197056898@s.whatsapp.net": {
@@ -64847,7 +64969,7 @@
           "conta": "396664072159",
           "sepa": "SE8065925013929199",
           "wallet": "WAL-9124202523",
-          "saldo": 6975961.8244236205
+          "saldo": 6985104.795215784
         },
         "559294556204@s.whatsapp.net": {
           "titular": "Iury Jonathan martins Amorim",
@@ -64861,7 +64983,7 @@
           "conta": "325272529697",
           "sepa": "SE3124701011125993",
           "wallet": "WAL-6946516905",
-          "saldo": 1028384.7777643448,
+          "saldo": 1029188.0862355403,
           "limiteSaque": 1
         },
         "554388686229@s.whatsapp.net": {
@@ -64869,7 +64991,7 @@
           "conta": "129230497641",
           "sepa": "SE5400031721691179",
           "wallet": "WAL-5830221852",
-          "saldo": 584873.837444607,
+          "saldo": 585492.9030457337,
           "limiteSaque": 3
         },
         "5514981848243@s.whatsapp.net": {
@@ -64892,14 +65014,14 @@
           "conta": "403149156273",
           "sepa": "SE1837202190208874",
           "wallet": "WAL-0464666088",
-          "saldo": 3583.507593072959
+          "saldo": 23672.31205067384
         },
         "5521972685548@s.whatsapp.net": {
           "titular": "Gabriel bigcock da rocha",
           "conta": "740339491758",
           "sepa": "SE2695589479257810",
           "wallet": "WAL-4139315983",
-          "saldo": 100.98500407375214
+          "saldo": 101.50523811071992
         },
         "554891455576@s.whatsapp.net": {
           "titular": "Janaina de Almeida",
