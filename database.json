@@ -27442,7 +27442,7 @@
       "afkReason": "",
       "role": "",
       "reporte": 0,
-      "name": "Roberto Thomaz",
+      "name": "",
       "antispam": 0,
       "antispamlastclaim": 0,
       "silenced": false,
@@ -34001,6 +34001,32 @@
       "tentativasRoubo": 5,
       "spammer": 0,
       "usuariosRoubados": []
+    },
+    "79340947652653@lid": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 0,
+      "afkInfo": {
+        "120363375547387049@g.us": {
+          "afkTime": -2,
+          "number": "79340947652653@lid",
+          "afkReason": ""
+        }
+      }
     }
   },
   "chats": {
@@ -49688,7 +49714,7 @@
           "trojans": 0
         },
         "558199330656@s.whatsapp.net": {
-          "exp": 30620,
+          "exp": 30656,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 300,
@@ -49701,7 +49727,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1738210463647,
+          "lastMessageTime": 1738224984495,
           "messageCount": 1,
           "pontos": 0,
           "usuariosRoubados": [],
@@ -49778,7 +49804,7 @@
           "trojans": 0
         },
         "558897548069@s.whatsapp.net": {
-          "exp": 19293,
+          "exp": 19307,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 180,
@@ -49791,7 +49817,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1738200115056,
+          "lastMessageTime": 1738224985609,
           "messageCount": 1,
           "pontos": 0,
           "tempBan": false,
@@ -61599,7 +61625,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1738191837304,
+          "lastMessageTime": 1738224405637,
           "messageCount": 1,
           "pontos": 0,
           "almas": 2,
@@ -62657,8 +62683,8 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1737533348786,
-          "messageCount": 1,
+          "lastMessageTime": 1738218773697,
+          "messageCount": 2,
           "pontos": 0,
           "trojans": 0,
           "steals": 0
@@ -62842,7 +62868,7 @@
       "lastSentTime": 1738074397555,
       "name": "♥️ Porta Jóias ♦️",
       "desc": "Hierarquia aqui funciona da seguinte forma: \n\n- membro ovo tem q chegar mandando foto do cartão de crédito frente e verso \n\n- membro comum tem q venerar todos os Ademir\n\n*ATENÇÃO NO QUE NÃO PODE*\n\n- Fica a vontade pra mandar oq tu quiser, mas segura tua onda, sem ficar flodando pornografia ou gore.\n\n- não tenho q ficar ditando um milhão d regras, só a questão do bom senso msm, se souber não se comportar como um primata já tá valendo.\n- proibido ser igual ao Vitor.\n\n- *BEBAM ÁGUA!!!!!!!*",
-      "totalMembros": 43,
+      "totalMembros": 42,
       "membros": [
         {
           "id": "557981607343@s.whatsapp.net",
@@ -62943,10 +62969,6 @@
         {
           "id": "351927285125@s.whatsapp.net",
           "admin": "admin"
-        },
-        {
-          "id": "5511956651921@s.whatsapp.net",
-          "admin": null
         },
         {
           "id": "5521996069435@s.whatsapp.net",
@@ -66287,7 +66309,7 @@
           ]
         },
         "558199330656@s.whatsapp.net": {
-          "exp": 39688,
+          "exp": 39715,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 2203,
@@ -72870,6 +72892,24 @@
           "lastMessageTime": 1738106978755,
           "messageCount": null,
           "pontos": 0
+        },
+        "79340947652653@lid": {
+          "exp": 0,
+          "limit": 0,
+          "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
+          "money": 0,
+          "level": 0,
+          "adm": false,
+          "legendary": false,
+          "banned": false,
+          "adv": 0,
+          "tentativasRoubo": 5,
+          "silenced": false,
+          "maxlevel": false,
+          "cocriador": false,
+          "lastMessageTime": 1738218773456,
+          "messageCount": null,
+          "pontos": 0
         }
       },
       "isBanned": true,
@@ -72921,7 +72961,7 @@
       "lastSentTime": 0,
       "name": "Avisos E Administração.",
       "desc": "Olá! Esta comunidade foi criada para que os participantes possam conversar em grupos de assuntos específicos e receber avisos importantes.",
-      "totalMembros": 45,
+      "totalMembros": 44,
       "membros": [
         {
           "id": "44621052793070@lid",
@@ -73005,10 +73045,6 @@
         },
         {
           "id": "148408534884486@lid",
-          "admin": null
-        },
-        {
-          "id": "145655511162885@lid",
           "admin": null
         },
         {
@@ -73145,7 +73181,8 @@
         "233002512707705@lid": [],
         "148408534884486@lid": [],
         "146565792559304@lid": [],
-        "145655511162885@lid": []
+        "145655511162885@lid": [],
+        "79340947652653@lid": []
       },
       "firstTime": true,
       "antiCallGp": true,
