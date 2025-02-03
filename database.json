@@ -51947,7 +51947,7 @@
           "steals": 0
         },
         "5521972685548@s.whatsapp.net": {
-          "exp": 53588,
+          "exp": 53627,
           "limit": 2,
           "role": "Ｆａｎｔａｓｍａ　Ｄｉｇｉｔａｌ",
           "money": 445,
@@ -51960,7 +51960,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1738548495524,
+          "lastMessageTime": 1738564972700,
           "messageCount": 1,
           "pontos": 0,
           "almas": 0,
@@ -52831,7 +52831,7 @@
           "trojans": 0
         },
         "557391032940@s.whatsapp.net": {
-          "exp": 13767,
+          "exp": 13795,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 120,
@@ -52844,7 +52844,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1738546437003,
+          "lastMessageTime": 1738564686985,
           "messageCount": 1,
           "pontos": 0,
           "tempBan": false,
@@ -57514,7 +57514,7 @@
           "steals": 0
         },
         "557799977291@s.whatsapp.net": {
-          "exp": 14793,
+          "exp": 14819,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 556,
@@ -57527,7 +57527,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1738557734571,
+          "lastMessageTime": 1738564721416,
           "messageCount": 1,
           "pontos": 0,
           "trojans": 0,
@@ -69011,7 +69011,7 @@
           "daggers": null
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 124025,
+          "exp": 124056,
           "limit": 0,
           "role": "",
           "money": 0,
@@ -69188,16 +69188,16 @@
           "lastAttemptTimestamp": "2025-02-02T17:27:21.236Z"
         },
         "5521969915001@s.whatsapp.net": {
-          "exp": 367343,
+          "exp": 367373,
           "limit": 19,
           "role": "Ａｎａｌｉｓｔａ　ｄｅ　Ｃｉｂｅｒｓｅｇｕｒａｎçａ",
-          "money": 24653,
+          "money": 25089,
           "level": 66,
           "adm": false,
           "legendary": false,
           "banned": false,
           "adv": 1,
-          "tentativasRoubo": 0,
+          "tentativasRoubo": 5,
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
@@ -69208,8 +69208,8 @@
             "5514981848243@s.whatsapp.net"
           ],
           "trojans": 2,
-          "acaoTimer": "2025-02-03T04:44:20.675Z",
-          "rouboTimestamp": "2025-02-01T22:32:09.773Z",
+          "acaoTimer": "2025-02-03T05:30:41.382Z",
+          "rouboTimestamp": "2025-02-03T05:30:41.386Z",
           "rings": 0,
           "advLink": 2,
           "regTimeStart": "",
@@ -69217,8 +69217,8 @@
           "regMsg": "",
           "registradoBlock": false,
           "mortoDemonio": false,
-          "steals": 40,
-          "lastAttemptTimestamp": "2025-02-01T17:31:05.967Z",
+          "steals": 41,
+          "lastAttemptTimestamp": "2025-02-03T05:30:41.385Z",
           "shields": 0,
           "bankName": "Yasmin Nascimento.",
           "elixirs": 0,
@@ -69823,7 +69823,7 @@
           "exp": 100000041884,
           "limit": 35410,
           "role": "Ｅｌｌｉｏｔ　Ａｌｄｅｒｓｏｎ",
-          "money": 1123,
+          "money": 687,
           "level": 100,
           "adm": false,
           "legendary": false,
@@ -77554,10 +77554,10 @@
       "lastSuccess": 1738305284359
     },
     "funAcoes7.js": {
-      "total": 1681,
-      "success": 1675,
-      "last": 1738557150742,
-      "lastSuccess": 1738557150742
+      "total": 1682,
+      "success": 1676,
+      "last": 1738560641607,
+      "lastSuccess": 1738560641607
     },
     "grupo-perfil.js": {
       "total": 1220,
@@ -78417,7 +78417,7 @@
           "conta": "730320130820",
           "sepa": "SE2332532343911374",
           "wallet": "WAL-9541940271",
-          "saldo": 7543277.249858542,
+          "saldo": 7543467.813099757,
           "limiteSaque": 5
         },
         "556295410574@s.whatsapp.net": {
@@ -78493,7 +78493,7 @@
           "conta": "740339491758",
           "sepa": "SE2695589479257810",
           "wallet": "WAL-4139315983",
-          "saldo": 108.83181081427448
+          "saldo": 108.83730964558997
         },
         "554891455576@s.whatsapp.net": {
           "titular": "Janaina de Almeida",
