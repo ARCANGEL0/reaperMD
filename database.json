@@ -152,7 +152,44 @@
       "website": "Djdjdj",
       "links": "Jdjdjfjf",
       "biografia": "Djdjfj",
-      "dormindo": true
+      "dormindo": true,
+      "mail": {
+        "address": "albvqeqz@guerrillamailblock.com",
+        "token": "jh97obglnihfgipnfv18ppp6vd",
+        "id": "ul2n21+5omw8wutvjy84",
+        "sentMail": [],
+        "receivedEmail": [
+          {
+            "id": 1,
+            "from": "no-reply@guerrillamail.com",
+            "subject": "Welcome to Guerrilla Mail",
+            "message": "Dear Random User,\r\n\r\nThank you for using Guerrilla Mail - your temporary email address friend and spam fighter's ally!\r\n\r\nYour disposable email address has been created ready for use.\r\n\r\nEmail: albvqeqz@sharklasers.com\r\n\r\nTips & Notes:\r\n\r\n- You can change this email address! Place your mouse over the Inbox ID at the top of this page and click to edit.\r\n\r\n- Once you change to a new address, the old address will remain available, simply change back to it. (Note: email is kept for 1 hour)\r\n\r\n- Waiting for your mail? There is no need to refresh the page, new emails will be added to the list as they come in.\r\n\r\n- All Emails are deleted after 1 hour.\r\n\r\nClick on the back the \"« Back to inbox\" to go back to the mail list\r\n\r\nThanks,\r\n\r\nGuerrilla Mail Team\r\nhttp://www.guerrillamail.com/\r\n\r\n\"Free to download, but you have to give your email address so they can inevitably attempt to sell you stuff in the future? guerrillamail.com FTW!\"\r\n\r\nConnect with us:\r\nhttps://www.facebook.com/GuerrillaMail\r\nhttps://twitter.com/GuerrillaMail",
+            "date": "31 dez. 1969 | 21:00:00"
+          },
+          {
+            "id": "173536594",
+            "from": "no-reply@mail.instagram.com",
+            "subject": "038917 &eacute; o teu c&oacute;digo do Instagram",
+            "message": "",
+            "date": "05 fev. 2025 | 06:00:36"
+          },
+          {
+            "id": "173536652",
+            "from": "no-reply@mail.instagram.com",
+            "subject": "159704 &eacute; o teu c&oacute;digo do Instagram",
+            "message": "",
+            "date": "05 fev. 2025 | 06:01:27"
+          },
+          {
+            "id": "173536714",
+            "from": "no-reply@mail.instagram.com",
+            "subject": "495087 &eacute; o teu c&oacute;digo do Instagram",
+            "message": "",
+            "date": "05 fev. 2025 | 06:02:02"
+          }
+        ]
+      },
+      "email": "albvqeqz@guerrillamailblock.com"
     },
     "": {},
     "79001643752@s.whatsapp.net": {
@@ -52456,7 +52493,7 @@
           "shields": 0
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 88357,
+          "exp": 88451,
           "limit": 0,
           "role": "",
           "money": 50,
@@ -52514,7 +52551,7 @@
           "divorcioId": "BAE562007F3171C7"
         },
         "351927285125@s.whatsapp.net": {
-          "exp": 8032,
+          "exp": 8033,
           "limit": 660000000000066,
           "role": "𝑵𝒆𝒗𝒆𝒓𝒎𝒐𝒓𝒆 ༒︎\n𝙼𝚎𝚜𝚝𝚛𝚎 𝚍𝚘𝚜 𝚌𝚘𝚛𝚟𝚘𝚜",
           "money": 666000000000000100,
@@ -52527,7 +52564,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1738721558897,
+          "lastMessageTime": 1738741551887,
           "messageCount": 1,
           "pontos": 480,
           "tempBan": false,
@@ -63088,7 +63125,7 @@
       },
       "jogadores": {
         "351927285125@s.whatsapp.net": {
-          "xp": -70,
+          "xp": -90,
           "name": "𝙷𝚎𝚗𝚛𝚢 𝙰𝚛𝚌𝚊𝚗𝚐𝚎𝚕𝚘"
         },
         "559294556204@s.whatsapp.net": {
@@ -63574,9 +63611,9 @@
       },
       "quiz": {
         "perguntaAndamento": false,
-        "loading": true,
+        "loading": false,
         "modo": true,
-        "categoria": "História",
+        "categoria": "estequeometria",
         "historico": [
           {
             "role": "system",
@@ -63584,13 +63621,27 @@
           },
           {
             "role": "user",
-            "content": "Agora siga as instrucoes que te foram dada  e crie o objeto JSON de uma pergunta com os MESNMOS CAMPOS/PROPRIEDADES no exemplo!!! { Pergunta: \"Pergunta dentro do TEMA DA CATEGORIA\", Opcoes: { A: \"Opcao\", B: \"Opcao\", C: \"Opcao\", D: \"Opcao\" }, Pontos: \"Valor de acordo com a dificuldade\", Money: \"Valor por dificuldade\", XP: \"Valor por dificuldade\", Resposta: \"Opcao certa A, B, C ou D\", Motivo: \"Explicacao detalhada da resposta\" } Retorne APENAS UM OBJETO JSON E MAIS NADA! use o \" nas propriedades do objeto. o usuario ira lhe passar a categoria que deseja, e voce deve gerar uma pergunta baseada no IDIOMA da categoria!! Se for SCIENCE, a pergunta deve ser ingles. Se for CIENCIA, a pergunta deve ser portugues. Se for MEDICINE, deve ser em ingles. se for MEDICINA, deve ser em portugues, etc.\n       \n       \n  NAO MANDE PERGUNTAS SEMELHANTES AUE VOCE JA TENHA ME ENVIADO, SEJA CRIATIVO E\n CRIE perguntas complexas e didiceis, finja que isto e um vestibular da maior\n faculdade que há, o vestibular tem que ser dificil\n        Categoria:\n        [História]"
+            "content": "Agora siga as instrucoes que te foram dada  e crie o objeto JSON de uma pergunta com os MESNMOS CAMPOS/PROPRIEDADES no exemplo!!! { Pergunta: \"Pergunta dentro do TEMA DA CATEGORIA\", Opcoes: { A: \"Opcao\", B: \"Opcao\", C: \"Opcao\", D: \"Opcao\" }, Pontos: \"Valor de acordo com a dificuldade\", Money: \"Valor por dificuldade\", XP: \"Valor por dificuldade\", Resposta: \"Opcao certa A, B, C ou D\", Motivo: \"Explicacao detalhada da resposta\" } Retorne APENAS UM OBJETO JSON E MAIS NADA! use o \" nas propriedades do objeto. o usuario ira lhe passar a categoria que deseja, e voce deve gerar uma pergunta baseada no IDIOMA da categoria!! Se for SCIENCE, a pergunta deve ser ingles. Se for CIENCIA, a pergunta deve ser portugues. Se for MEDICINE, deve ser em ingles. se for MEDICINA, deve ser em portugues, etc.\n       \n       \n  NAO MANDE PERGUNTAS SEMELHANTES AUE VOCE JA TENHA ME ENVIADO, SEJA CRIATIVO E\n CRIE perguntas complexas e didiceis, finja que isto e um vestibular da maior\n faculdade que há, o vestibular tem que ser dificil\n        Categoria:\n        [estequeometria]"
           },
           {
             "role": "user",
-            "content": "História"
+            "content": "undefined"
+          },
+          {
+            "role": "assistant",
+            "content": "{\n  \"Pergunta\": \"Qual é a relação entre a quantidade de moles de um gás ideal e seu volume a temperatura e pressão constantes, de acordo com a lei de Avogadro?\",\n  \"Opcoes\": {\n    \"A\": \"A quantidade de moles é inversamente proporcional ao volume.\",\n    \"B\": \"A quantidade de moles é diretamente proporcional ao volume.\",\n    \"C\": \"A quantidade de moles é independente do volume.\",\n    \"D\": \"A quantidade de moles é proporcional ao volume elevado ao quadrado.\"\n  },\n  \"Pontos\": \"30\",\n  \"Money\": \"60\",\n  \"XP\": \"250\",\n  \"Resposta\": \"B\",\n  \"Motivo\": \"A lei de Avogadro afirma que, a temperatura e pressão constantes, volumes iguais de gases diferentes contêm o mesmo número de moléculas. Portanto, a quantidade de moles de um gás ideal é diretamente proporcional ao seu volume.\"\n}"
           }
-        ]
+        ],
+        "pergunta": {},
+        "cp": "",
+        "ca": "",
+        "cm": "",
+        "xp": 0,
+        "pontos": "30",
+        "mony": "60",
+        "id": "",
+        "time": "",
+        "math": false
       }
     },
     "120363178125353378@g.us": {
@@ -69373,7 +69424,7 @@
           "cocriador": false
         },
         "351927232470@s.whatsapp.net": {
-          "exp": 176,
+          "exp": 190,
           "limit": 0,
           "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
           "money": 0,
@@ -69386,7 +69437,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1738711820503,
+          "lastMessageTime": 1738739302515,
           "messageCount": 1,
           "pontos": 0
         },
@@ -69639,10 +69690,10 @@
           "silnciado": false
         },
         "5521970385666@s.whatsapp.net": {
-          "exp": 10486159,
-          "limit": 152421,
+          "exp": 10486354,
+          "limit": 152556,
           "role": "Ｅｌｌｉｏｔ　Ａｌｄｅｒｓｏｎ",
-          "money": 139200,
+          "money": 153600,
           "level": 100,
           "adm": true,
           "legendary": false,
@@ -69659,7 +69710,7 @@
             "5514981848243@s.whatsapp.net"
           ],
           "shields": 3,
-          "trojans": 305547,
+          "trojans": 305817,
           "bankName": "Sra. Mercês",
           "acaoTimer": "2025-02-04T23:42:11.160Z",
           "rouboTimestamp": "2025-02-04T14:45:14.418Z",
@@ -69723,7 +69774,7 @@
           "silnciado": false
         },
         "558199330656@s.whatsapp.net": {
-          "exp": 57402,
+          "exp": 57459,
           "limit": 100,
           "role": "Ｓａｂｏｔｅｕｒ　Ｅ－Ｃｏｒｐ",
           "money": 945,
@@ -72104,7 +72155,7 @@
           "silnciado": false
         },
         "553199378353@s.whatsapp.net": {
-          "exp": 1887,
+          "exp": 1913,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 30,
@@ -78279,7 +78330,7 @@
       },
       "users": {
         "351927285125@s.whatsapp.net": {
-          "exp": 851,
+          "exp": 853,
           "limit": 660000000000066,
           "role": "𝑵𝒆𝒗𝒆𝒓𝒎𝒐𝒓𝒆 ༒︎\n𝙼𝚎𝚜𝚝𝚛𝚎 𝚍𝚘𝚜 𝚌𝚘𝚛𝚟𝚘𝚜",
           "money": 666000000000000100,
@@ -78292,7 +78343,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1738720697328,
+          "lastMessageTime": 1738746125067,
           "messageCount": 1,
           "pontos": 0,
           "tempBan": false,
@@ -78312,7 +78363,7 @@
           "nsfwAdv": null
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 5720,
+          "exp": 5754,
           "limit": 0,
           "role": "",
           "money": 0,
@@ -79277,10 +79328,10 @@
       "lastSuccess": 1738458781733
     },
     "quiz.js": {
-      "total": 453,
-      "success": 388,
-      "last": 1738719906791,
-      "lastSuccess": 1738719906791
+      "total": 456,
+      "success": 391,
+      "last": 1738741552090,
+      "lastSuccess": 1738741552090
     },
     "funHoroscopo.js": {
       "total": 17,
@@ -79367,10 +79418,10 @@
       "lastSuccess": 1737764586856
     },
     "cfg-Mail.js": {
-      "total": 4,
-      "success": 4,
-      "last": 1736184611397,
-      "lastSuccess": 1736184611397
+      "total": 11,
+      "success": 11,
+      "last": 1738746125815,
+      "lastSuccess": 1738746125815
     },
     "nmap.js": {
       "total": 2,
@@ -79818,7 +79869,7 @@
           "conta": "535441291871",
           "sepa": "SE5822427639074913",
           "wallet": "WAL-9159324339",
-          "saldo": 17448464.16412436,
+          "saldo": 17452485.96607262,
           "limiteSaque": 0
         },
         "5513981141776@s.whatsapp.net": {
