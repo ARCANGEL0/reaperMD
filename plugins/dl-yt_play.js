@@ -122,11 +122,11 @@ fetch(`https://api.neoxr.eu/api/youtube?url=${yt_play[0].url}&type=audio&quality
 
 let data = await req.json()
 
-console.log(data)
+
 console.log('more data below of play')
-console.log(data.data)
-  conn.sendFile(m.chat, data.data.url,'erro.mp3',null,m)
-  
+console.log(data.data.url)
+   await conn.sendFile(m.chat, data.data.url,'erro.mp3',null,m)
+  m.react("📀")
 
 
 
