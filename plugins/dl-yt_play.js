@@ -117,15 +117,15 @@ try {
   console.log(yt_play)
   
 let req = await
-fetch(`https://api.neoxr.eu/api/youtube?url=${yt_play[0].url}&type=audio&quality=128kbps&apikey=${neoxr}`)
+fetch(`https://api.ryzendesu.vip/api/downloader/ytmp3?url=${yt_play[0].url}`)
 
 
 let data = await req.json()
 
 
 console.log('more data below of play')
-console.log(data.data.url)
-   await conn.sendFile(m.chat, data.data.url,'erro.mp3',null,m)
+console.log(data.url)
+   await conn.sendFile(m.chat, data.url,'erro.mp3',null,m)
   m.react("📀")
 
 
