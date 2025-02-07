@@ -53,17 +53,44 @@ let filename = join(__dirname, '../tmp/' + mp3f); // Ensure filename has .wav ex
 await conn.sendFile(m.chat, data.data.link, 'error.mp3', null,m)
 
 */
-
+ 
+ try {
+  console.log(yt_play)
+  
 let req = await
-fetch(`https://api.neoxr.eu/api/youtube?url=${youtubeLink}&type=audio&quality=128kbps&apikey=${neoxr}`)
+fetch(`https://api.ryzendesu.vip/api/downloader/ytmp3?url=${youtubeLink}`)
+
+
 let data = await req.json()
-  conn.sendFile(m.chat, data.data.url,'erro.mp3',null,m)
 
 
-m.react("☑️")
-  if(global.db.data.chats[m.chat].autolevelup){
+console.log('more data below of play')
+console.log(data.url)
+if(!data.url || data.url == (null || 'undefined')) throw 'URL Undefined'
+   await conn.sendFile(m.chat, data.url,'erro.mp3',null,m)
+  m.react("📀")
+if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 80
 await m.reply("༒︎ 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+
+
+}
+catch(e){
+  try{
+const audiodlp = await ytmp3(encodeURIComponent(youtubeLink));
+conn.sendMessage(m.chat, { audio: audiodlp, mimetype: "audio/mpeg" }, { quoted: m });
+if(global.db.data.chats[m.chat].autolevelup){
+global.db.data.chats[m.chat].users[m.sender].money -= 80
+ m.react("📀")
+await m.reply("༒︎ 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+
+} catch(e){
+  console.log(e)
+  m.react("💀")
+     sendSystemErrorAlert(global.db.data.chats[m.chat].language);
+}
+}
+  
 }
 
 handler.level = 6
