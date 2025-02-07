@@ -15,7 +15,7 @@ import cloudscraper from 'cloudscraper';
 import { join } from 'path'
 import pkg from '@neoxr/youtube-scraper'
 const { Youtube } = pkg
-import { youtubedl, youtubedlv2 } from '@bochilteam/scraper
+import { youtubedl, youtubedlv2 } from '@bochilteam/scraper'
 
 const require = createRequire(import.meta.url);
 const { ytmp3, ytmp4 } = require("@hiudyy/ytdl");
