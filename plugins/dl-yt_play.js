@@ -156,11 +156,13 @@ console.log(req)
 let data = await req.json()
   m.react("📀")
 console.log(data)
+if(!data || data == (null || 'undefined')) throw '1st failed PLAY2'
   conn.sendFile(m.chat, data.data.url,'erro.mp4',null,m)
 
   
 }
 catch(e){
+  console.log(e)
   try {
 const video = await ytmp4(youtubeLink);
 await conn.sendMessage(m.chat, { video: { url: video }, fileName: `video.mp4`, mimetype: 'video/mp4', caption: ``}, { quoted: m })
@@ -168,6 +170,7 @@ await conn.sendMessage(m.chat, { video: { url: video }, fileName: `video.mp4`, m
 catch(e){
   console.log(e)
   m.react("💀")
+      sendSystemErrorAlert(global.db.data.chats[m.chat].language);
 }
 }
 
