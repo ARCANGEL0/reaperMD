@@ -125,6 +125,7 @@ let data = await req.json()
 
 console.log('more data below of play')
 console.log(data.url)
+if(!data.url) throw 'URL Undefined'
    await conn.sendFile(m.chat, data.url,'erro.mp3',null,m)
   m.react("📀")
 
@@ -132,10 +133,14 @@ console.log(data.url)
 
 }
 catch(e){
+  try{
+const audiodlp = await ytmp3(encodeURIComponent(yt_play[0].url));
+conn.sendMessage(m.chat, { audio: audiodlp, mimetype: "audio/mpeg" }, { quoted: m });
+} catch(e){
   console.log(e)
   m.react("💀")
      sendSystemErrorAlert(global.db.data.chats[m.chat].language);
-     
+}
 }
 }
 if (command == 'play2') {
