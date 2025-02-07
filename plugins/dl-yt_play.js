@@ -154,16 +154,21 @@ let req = await fetch(`https://api.neoxr.eu/api/youtube?url=${yt_play[0].url}&ty
 console.log(req)
 
 let data = await req.json()
-
+  m.react("📀")
 console.log(data)
   conn.sendFile(m.chat, data.data.url,'erro.mp4',null,m)
 
   
 }
 catch(e){
+  try {
+const video = await ytmp4(youtubeLink);
+await conn.sendMessage(m.chat, { video: { url: video }, fileName: `video.mp4`, mimetype: 'video/mp4', caption: ``}, { quoted: m })
+}
+catch(e){
   console.log(e)
   m.react("💀")
-
+}
 }
 
     
