@@ -43,53 +43,42 @@ throw `${langTOGGLE['smsAvisoMG']()} 𝙋𝘼𝙍𝘼 𝙋𝙊𝘿𝙀𝙍 𝙐�
 await conn.reply(m.chat, `${langTOGGLE['smsAvisoEG']()}❖─┅──┅𝙏𝙚𝙪 𝙫𝙞𝙙𝙚𝙤 𝙧𝙚𝙨𝙨𝙤𝙖 𝙘𝙤𝙢𝙤 𝙪𝙢 𝙡𝙪𝙜𝙪𝙗𝙧𝙚 𝙨𝙪𝙨𝙨𝙪𝙧𝙧𝙤, 𝙖 𝙚𝙨𝙥𝙚𝙧𝙖 𝙙𝙚 𝙨𝙪𝙖 𝙘𝙝𝙚𝙜𝙖𝙙𝙖. ─┅──┅❖\n
 𝘼𝙜𝙪𝙖𝙧𝙙𝙚 𝙗𝙧𝙚𝙫𝙚𝙢𝙚𝙣𝙩𝙚 𝙦𝙪𝙚 𝙤 𝙡𝙖𝙢𝙚𝙣𝙩𝙤 𝙙𝙚 𝙨𝙚𝙪 𝙫𝙞𝙙𝙚𝙤 𝙧𝙚𝙘𝙖𝙞𝙧𝙖 𝙨𝙤𝙗𝙧𝙚 𝙤 𝙘𝙝𝙖𝙩. . . ⌛`, fkontak, m)
 
-
 try {
-
-
-let req = await
-fetch(`https://api.neoxr.eu/api/youtube?url=${youtubeLink}&type=video&quality=480p&apikey=${neoxr}`)
+  
+let req = await fetch(`https://api.neoxr.eu/api/youtube?url=${youtubeLink}&type=video&quality=480p&apikey=${neoxr}`)
 console.log(req)
 
 let data = await req.json()
-
-console.log(data)
-  conn.sendFile(m.chat, data.data.url,'erro.mp4',null,m)
-
+  m.react("📀")
   
+console.log(data)
+if(!data || data == (null || 'undefined')) throw '1st failed PLAY2'
+  conn.sendFile(m.chat, data.data.url,'erro.mp4',null,m)
+  if(global.db.data.chats[m.chat].autolevelup){
+global.db.data.chats[m.chat].users[m.sender].money -= 80
+ m.react("📀")
+await m.reply("༒︎ 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+
+
   
 }
 catch(e){
-  
-  try{
-    
-let req = await
-fetch(`https://api.neoxr.eu/api/aio?url=${youtubeLink}&apikey=${neoxr}`)
-console.log(req)
-
-let data = await req.json()
-
-console.log(data)
-  conn.sendFile(m.chat, data.data.url,'erro.mp4',null,m)
-
-  
-  }
-  catch(e){
   console.log(e)
-  m.react("💀")
-  m.reply(`╭─❖ ❌ *Um erro inesperado ocorreu* ❖─
-𝑵𝒂 𝒆𝒔𝒄𝒖𝒓𝒊𝒅𝒂𝒐 𝒔𝒆𝒑𝒖𝒍𝒄𝒓𝒂𝒍 𝒅𝒆 𝒎𝒆𝒖 𝒄𝒐𝒅𝒊𝒈𝒐, 𝒐 𝒄𝒐𝒎𝒂𝒏𝒅𝒐 𝒇𝒂𝒍𝒉𝒐𝒖 𝒄𝒐𝒎𝒐 𝒖𝒎𝒂 𝒑𝒓𝒆𝒄𝒆 𝒏𝒂𝒐 𝒂𝒕𝒆𝒏𝒅𝒊𝒅𝒂.
-
-𝑼𝒔𝒆 *.report* 𝒑𝒂𝒓𝒂 𝒓𝒆𝒍𝒂𝒕𝒂𝒓 𝒆𝒔𝒕𝒂 𝒎𝒊𝒔𝒆𝒓𝒂𝒗𝒆𝒍 𝒇𝒂𝒍𝒉𝒂.
-*╰┅─❖ ⸸ ❖─┅*`)
-}
-
-}
-m.react("✔️")
+  try {
+const video = await ytmp4(youtubeLink);
+await conn.sendMessage(m.chat, { video: { url: video }, fileName: `video.mp4`, mimetype: 'video/mp4', caption: ``}, { quoted: m })
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 80
+ m.react("📀")
 await m.reply("༒︎ 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
-  
+
+}
+catch(e){
+  console.log(e)
+  m.react("💀")
+      sendSystemErrorAlert(global.db.data.chats[m.chat].language);
+}
+}
 }
 handler.level = 6
 handler.command = ['ytv']
