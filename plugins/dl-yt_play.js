@@ -129,7 +129,11 @@ let data = await req.json()
 
 console.log('more data below of play')
 console.log(data.url)
-if(!data.url || data.url == (null || 'undefined')) throw 'URL Undefined'
+if(!data.url || data.url === null || data.url === 'undefined') throw 'URL Undefined'
+
+
+
+
    await conn.sendFile(m.chat, data.url,'erro.mp3',null,m)
   m.react("📀")
 if(global.db.data.chats[m.chat].autolevelup){
@@ -166,7 +170,7 @@ let data = await req.json()
   m.react("📀")
   
 console.log(data)
-if(!data || data == (null || 'undefined')) throw '1st failed PLAY2'
+if(!data || data === null || data === 'undefined') throw '1st failed PLAY2'
   conn.sendFile(m.chat, data.data.url,'erro.mp4',null,m)
   if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 80

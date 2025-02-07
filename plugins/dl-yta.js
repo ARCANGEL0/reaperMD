@@ -66,7 +66,7 @@ let data = await req.json()
 
 console.log('more data below of play')
 console.log(data.url)
-if(!data.url || data.url == (null || 'undefined')) throw 'URL Undefined'
+if(!data.url || data.url === null || data.url === 'undefined') throw 'URL Undefined'
    await conn.sendFile(m.chat, data.url,'erro.mp3',null,m)
   m.react("📀")
 if(global.db.data.chats[m.chat].autolevelup){
