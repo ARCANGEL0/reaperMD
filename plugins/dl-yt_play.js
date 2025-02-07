@@ -132,6 +132,10 @@ console.log(data.url)
 if(!data.url || data.url == (null || 'undefined')) throw 'URL Undefined'
    await conn.sendFile(m.chat, data.url,'erro.mp3',null,m)
   m.react("📀")
+if(global.db.data.chats[m.chat].autolevelup){
+global.db.data.chats[m.chat].users[m.sender].money -= 80
+ m.react("📀")
+await m.reply("༒︎ 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
 
 
 
@@ -140,6 +144,11 @@ catch(e){
   try{
 const audiodlp = await ytmp3(encodeURIComponent(yt_play[0].url));
 conn.sendMessage(m.chat, { audio: audiodlp, mimetype: "audio/mpeg" }, { quoted: m });
+if(global.db.data.chats[m.chat].autolevelup){
+global.db.data.chats[m.chat].users[m.sender].money -= 80
+ m.react("📀")
+await m.reply("༒︎ 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+
 } catch(e){
   console.log(e)
   m.react("💀")
@@ -155,9 +164,15 @@ console.log(req)
 
 let data = await req.json()
   m.react("📀")
+  
 console.log(data)
 if(!data || data == (null || 'undefined')) throw '1st failed PLAY2'
   conn.sendFile(m.chat, data.data.url,'erro.mp4',null,m)
+  if(global.db.data.chats[m.chat].autolevelup){
+global.db.data.chats[m.chat].users[m.sender].money -= 80
+ m.react("📀")
+await m.reply("༒︎ 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+
 
   
 }
@@ -166,6 +181,11 @@ catch(e){
   try {
 const video = await ytmp4(youtubeLink);
 await conn.sendMessage(m.chat, { video: { url: video }, fileName: `video.mp4`, mimetype: 'video/mp4', caption: ``}, { quoted: m })
+if(global.db.data.chats[m.chat].autolevelup){
+global.db.data.chats[m.chat].users[m.sender].money -= 80
+ m.react("📀")
+await m.reply("༒︎ 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+
 }
 catch(e){
   console.log(e)
