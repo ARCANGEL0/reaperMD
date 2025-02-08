@@ -19,6 +19,8 @@ import { youtubedl, youtubedlv2 } from '@bochilteam/scraper'
 
 import { ytmp3, ytmp4 } from "@hiudyy/ytdl"
 
+
+////
 let handler = async (m, { participants,conn,__dirname, command, args, text, usedPrefix, isAdmin}) => {
   async function search(query, options = {}) {
 const search = await yts.search({ query, hl: "pt", gl: "PT", ...options });
