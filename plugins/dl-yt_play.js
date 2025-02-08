@@ -16,11 +16,12 @@ import { join } from 'path'
 import pkg from '@neoxr/youtube-scraper'
 const { Youtube } = pkg
 import { youtubedl, youtubedlv2 } from '@bochilteam/scraper'
-
-import { createRequire } from "module";
+import ytdlf from "@EdderBot02/ytdlf"
+import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
-/////
 const { ytmp3, ytmp4 } = require("@hiudyy/ytdl");
+
+let
 
 
 
