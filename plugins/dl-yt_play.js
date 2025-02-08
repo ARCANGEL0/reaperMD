@@ -21,7 +21,6 @@ import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
 const { ytmp3, ytmp4 } = require("@hiudyy/ytdl");
 
-let
 
 
 
