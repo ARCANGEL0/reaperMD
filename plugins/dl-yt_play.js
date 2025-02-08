@@ -146,8 +146,10 @@ await m.reply("༒︎ 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")
 }
 catch(e){
   try{
-const audiodlp = await ytmp3(encodeURIComponent(yt_play[0].url));
-conn.sendMessage(m.chat, { audio: audiodlp, mimetype: "audio/mpeg" }, { quoted: m });
+    
+    let x = await ytdlf(`${yt_play[0].url}`,"mp3");
+await conn.sendMessage(m.chat, { audio: { url:x.downloadUrl }, mimetype: 'audio/mpeg' }, { quoted: m });
+
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 80
  m.react("📀")
@@ -183,8 +185,10 @@ await m.reply("༒︎ 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")
 catch(e){
   console.log(e)
   try {
-const video = await ytmp4(youtubeLink);
-await conn.sendMessage(m.chat, { video: { url: video }, fileName: `video.mp4`, mimetype: 'video/mp4', caption: ``}, { quoted: m })
+    let y=await ytdlf(`${yt_play[0].url}`,"360");
+await conn.sendMessage(m.chat, { video: { url:y.downloadUrl }, fileName: `video.mp4`, caption: `${wm}` }, { quoted: m }) 
+
+
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 80
  m.react("📀")
