@@ -144,6 +144,9 @@ catch(e){
   try{
     
     let x = await ytdlf(`${yt_play[0].url}`,"mp3");
+console.log(x)
+
+
 await conn.sendMessage(m.chat, { audio: { url:x.downloadUrl }, mimetype: 'audio/mpeg' }, { quoted: m });
 
 if(global.db.data.chats[m.chat].autolevelup){
