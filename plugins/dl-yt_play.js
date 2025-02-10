@@ -290,7 +290,7 @@ await m.reply("༒︎ 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")
 }
 if (command == 'play2') {
 try {
-const video = await ytmp4(yt_play[0].url);
+const video = await ytmp4(yt_play[0].videoId);
 console.log(video)
 await conn.sendMessage(m.chat, { video: { url: video }, fileName: `video.mp4`, mimetype: 'video/mp4', caption: ``}, { quoted: m })
 if(global.db.data.chats[m.chat].autolevelup){
@@ -350,7 +350,7 @@ let n4 = lolh.result.thumbnail
 await conn.sendMessage(m.chat, { video: { url: n2 }, fileName: `${n}.mp4`, mimetype: 'video/mp4', caption: ``, thumbnail: await fetch(n4) }, { quoted: m })
 } catch (E3)
 {
-  console.log(e)
+  console.log(E3)
   try {
     let y=await ytdlf(`${yt_play[0].url}`,"360");
 await conn.sendMessage(m.chat, { video: { url:y.downloadUrl }, fileName: `video.mp4`, caption: `` }, { quoted: m }) 
