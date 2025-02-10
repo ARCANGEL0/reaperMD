@@ -18,10 +18,10 @@ const { Youtube } = pkg
 import { youtubedl, youtubedlv2 } from '@bochilteam/scraper'
 import ytdlf from "@EdderBot02/ytdlf"
 
-
-import { createRequire } from 'module';
-const require = createRequire(import.meta.url);
-const { ytmp3, ytmp4 } = require("@hiudyy/ytdl");
+  
+  import { createRequire } from 'module';
+  const require = createRequire(import.meta.url);
+  const { ytmp3, ytmp4 } = require("@hiudyy/ytdl");
 
 
 
@@ -123,6 +123,10 @@ let mp4f = getRandom('.mp4');
 if (command == 'play') {
 
 
+const audiodlp = await ytmp3(encodeURIComponent(yt_play[0].url));
+conn.sendMessage(m.chat, { audio: audiodlp, mimetype: "audio/mpeg" }, { quoted: m });
+
+/*
 try{
 const audiodlp = await ytmp3(encodeURIComponent(yt_play[0].url));
 conn.sendMessage(m.chat, { audio: audiodlp, mimetype: "audio/mpeg" }, { quoted: m });
@@ -235,7 +239,7 @@ await m.reply("༒︎ 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")
   }
 
 }}}}}}}}}
-
+*/
 
 
 }
