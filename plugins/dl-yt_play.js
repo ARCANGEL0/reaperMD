@@ -123,7 +123,7 @@ let mp4f = getRandom('.mp4');
 if (command == 'play') {
 
 
-const audiodlp = await ytmp3(encodeURIComponent(yt_play[0].url)); 
+const audiodlp = await ytmp3(encodeURIComponent(yt_play[0].videoId)); 
 console.log(audiodlp)
 conn.sendMessage(m.chat, { audio: audiodlp, mimetype: "audio/mpeg" }, { quoted: m });
 
