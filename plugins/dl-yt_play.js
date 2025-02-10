@@ -290,29 +290,68 @@ await m.reply("༒︎ 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")
 }
 if (command == 'play2') {
 try {
-  
-let req = await fetch(`https://api.neoxr.eu/api/youtube?url=${yt_play[0].url}&type=video&quality=480p&apikey=${neoxr}`)
-console.log(req)
-
-let data = await req.json()
-  m.react("📀")
-  
-console.log(data)
-if(!data || data == (null || 'undefined')) throw '1st failed PLAY2'
-  conn.sendFile(m.chat, data.data.url,'erro.mp4',null,m)
-  if(global.db.data.chats[m.chat].autolevelup){
+const video = await ytmp4(encodeURIComponent(yt_play[0].videoId));
+await conn.sendMessage(m.chat, { video: { url: video }, fileName: `video.mp4`, mimetype: 'video/mp4', caption: ``}, { quoted: m })
+if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 80
  m.react("📀")
 await m.reply("༒︎ 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
 
-
+} catch {
+try {
+const res = await
+fetch(`https://api.siputzx.my.id/api/d/ytmp4?url=${yt_play[0].url}`);
+let { data } = await res.json();
+await conn.sendMessage(m.chat, { video: { url: data.dl }, fileName: `video.mp4`, caption: `` }, { quoted: m }) 
+} catch {
+try {
+let y=await ytdlf(`${yt_play[0].rl}`,"360");
+await conn.sendMessage(m.chat, { video: { url:y.downloadUrl }, fileName: `video.mp4`, caption: `` }, { quoted: m }) 
+} catch {
+try {
   
-}
-catch(e){
+let infoo = await ytdl.getInfo('https://youtu.be/' + yt_play[0].videoId)
+let ress = await ytdl.chooseFormat(infoo.formats, { filter: 'audioonly' })
+await conn.sendMessage(m.chat, { video: { url: ress.url }, fileName: `video.mp4`, caption: `` }, { quoted: m }) 
+} catch {
+try {
+const res = await
+fetch(`https://api.zenkey.my.id/api/download/ytmp4?apikey=zenkey&url=${encodeURIComponent(yt_play[0].url)}`)
+let { result } = await res.json()
+await conn.sendMessage(m.chat, { video: { url: result.download.url }, fileName: `video.mp4`, caption: `` }, { quoted: m }) 
+} catch {
+try {
+let qu = args[1] || '360'
+let q = qu + 'p'
+let v = yt_play[0].url
+const yt = await youtubedl(v).catch(async _ => await youtubedlv2(v))
+const dl_url = await yt.video[q].download()
+const ttl = await yt.title
+const size = await yt.video[q].fileSizeH
+await await conn.sendMessage(m.chat, { video: { url: dl_url }, fileName: `${ttl}.mp4`, mimetype: 'video/mp4', caption: ``, thumbnail: await fetch(yt.thumbnail) }, { quoted: m })
+} catch (E1) {
+//console.log('Error 1 ' + E1)  
+try {  
+let mediaa = await ytMp4(yt_play[0].url)
+await conn.sendMessage(m.chat, { video: { url: mediaa.result }, fileName: `error.mp4`, caption: ``, thumbnail: mediaa.thumb, mimetype: 'video/mp4' }, { quoted: m })     
+} catch (E2) {  
+//console.log('Error 2 ' + E2)   
+try {
+let lolhuman = await
+fetch(`https://api.lolhuman.xyz/api/ytvideo2?apikey=${lolkeysapi}&url=${yt_play[0].url}`)
+
+let lolh = await lolhuman.json()
+let n = lolh.result.title || 'error'
+let n2 = lolh.result.link
+let n3 = lolh.result.size
+let n4 = lolh.result.thumbnail
+await conn.sendMessage(m.chat, { video: { url: n2 }, fileName: `${n}.mp4`, mimetype: 'video/mp4', caption: ``, thumbnail: await fetch(n4) }, { quoted: m })
+} catch (E3)
+{
   console.log(e)
   try {
     let y=await ytdlf(`${yt_play[0].url}`,"360");
-await conn.sendMessage(m.chat, { video: { url:y.downloadUrl }, fileName: `video.mp4`, caption: `${wm}` }, { quoted: m }) 
+await conn.sendMessage(m.chat, { video: { url:y.downloadUrl }, fileName: `video.mp4`, caption: `` }, { quoted: m }) 
 
 
 if(global.db.data.chats[m.chat].autolevelup){
@@ -325,7 +364,7 @@ catch(e){
   console.log(e)
   m.react("💀")
       sendSystemErrorAlert(global.db.data.chats[m.chat].language);
-}
+}}}}}}}}}
 }
 
     
@@ -333,7 +372,7 @@ catch(e){
 
   
 
-} catch(e) {
+ catch(e) {
   console.log(e)
 m.react("❌")
 }}
