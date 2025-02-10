@@ -154,6 +154,7 @@ await m.reply("༒︎ 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")
 
 
 }catch(e){
+  console.log(e)
   try{
     
     let x = await ytdlf(`${yt_play[0].url}`,"mp3");
