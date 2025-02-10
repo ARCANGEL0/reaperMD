@@ -157,6 +157,7 @@ await m.reply("༒︎ 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")
 
   }
   catch(e){
+    console.log('fail yts')
     console.log(e)
       try{ 
     const res = await fetch(`https://api.siputzx.my.id/api/d/ytmp4?url=${yt_play[0].url}`);
