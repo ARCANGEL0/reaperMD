@@ -17,6 +17,9 @@ import pkg from '@neoxr/youtube-scraper'
 const { Youtube } = pkg
 import { youtubedl, youtubedlv2 } from '@bochilteam/scraper'
 import ytdlf from "@EdderBot02/ytdlf"
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
+const { ytmp3, ytmp4 } = require("@hiudyy/ytdl");
 
 
 
@@ -116,31 +119,64 @@ let mp4f = getRandom('.mp4');
 
 
 if (command == 'play') {
-// Encode the YouTube URL
+
+
+try{
+const audiodlp = await ytmp3(encodeURIComponent(yt_play[0].url));
+conn.sendMessage(m.chat, { audio: audiodlp, mimetype: "audio/mpeg" }, { quoted: m });
+} catch (e1) {
+try {  
+let x=await ytdlf(`${encodeURIComponent(yt_play[0].url)}`,"mp3");
+await conn.sendMessage(m.chat, { audio: { url:x.downloadUrl }, mimetype: 'audio/mpeg' }, { quoted: m });
+} catch{
 try {
-  console.log(yt_play)
-  
-let req = await
-fetch(`https://api.ryzendesu.vip/api/downloader/ytmp3?url=${yt_play[0].url}`)
-
-
-let data = await req.json()
-
-
-console.log('more data below of play')
-console.log(data.url)
-if(!data.url || data.url == (null || 'undefined')) throw 'URL Undefined'
-   await conn.sendFile(m.chat, data.url,'erro.mp3',null,m)
-
-if(global.db.data.chats[m.chat].autolevelup){
-global.db.data.chats[m.chat].users[m.sender].money -= 80
- m.react("📀")
-await m.reply("༒︎ 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
-
-
-
+const res = await fetch(`https://api.siputzx.my.id/api/d/ytmp4?url=${encodeURIComponent(yt_play[0].url)}`);
+let { data } = await res.json();
+await conn.sendMessage(m.chat, { audio: { url: data.dl }, mimetype: 'audio/mpeg' }, { quoted: m });
+} catch {
+try {
+const axeelUrl = `https://axeel.my.id/api/download/audio?url=${encodeURIComponent(yt_play[0].url)}`;
+const axeelResponse = await fetch(axeelUrl);
+const axeelData = await axeelResponse.json();
+if (!axeelData || !axeelData.downloads?.url) throw new Error();
+await conn.sendMessage(m.chat, { audio: { url: axeelData.downloads.url }, mimetype: 'audio/mpeg' }, { quoted: m });
+} catch {
+try {
+let searchh = await yts(yt_play[0].url)
+let __res = searchh.all.map(v => v).filter(v => v.type == "video")
+let infoo = await ytdl.getInfo('https://youtu.be/' + __res[0].videoId)
+let ress = await ytdl.chooseFormat(infoo.formats, { filter: 'audioonly' })
+await conn.sendMessage(m.chat, { audio: { url: ress.url}, mimetype: 'audio/mpeg' }, { quoted: m})
+} catch {
+try {
+const ryzenUrl = `https://api.ryzendesu.vip/api/downloader/ytmp3?url=${encodeURIComponent(yt_play[0].url)}`;
+const ryzenResponse = await fetch(ryzenUrl);
+const ryzenData = await ryzenResponse.json();
+if (ryzenData.status === 'tunnel' && ryzenData.url) {
+const downloadUrl = ryzenData.url;
+await conn.sendMessage(m.chat, { audio: { url: downloadUrl }, mimetype: 'audio/mpeg' }, { quoted: m });
 }
-catch(e){
+} catch {
+try {          
+const res = await fetch(`https://api.zenkey.my.id/api/download/ytmp3?apikey=zenkey&url=${encodeURIComponent(yt_play[0].url)}`)
+let { result } = await res.json()
+await conn.sendMessage(m.chat, { audio: { url: await result.download.url }, mimetype: 'audio/mpeg' }, { quoted: m })
+} catch {
+try {
+let q = '128kbps'
+let v = yt_play[0].url
+const yt = await youtubedl(v).catch(async _ => await youtubedlv2(v))
+const dl_url = await yt.audio[q].download()
+const ttl = await yt.title
+const size = await yt.audio[q].fileSizeH
+await conn.sendFile(m.chat, dl_url, ttl + '.mp3', null, m, false, { mimetype: 'audio/mp4' })
+} catch {
+try {
+let lolhuman = await fetch(`${apis}/download/ytmp3?&url=${yt_play[0].url}`)    
+let lolh = await lolhuman.json()
+let n = lolh.result.title || 'error'
+await conn.sendMessage(m.chat, { audio: { url: lolh.result.link }, fileName: `${n}.mp3`, mimetype: 'audio/mp4' }, { quoted: m })  
+} catch (e){
   
   try{
     let searchh = await yts(yt_play[0].url)
@@ -196,7 +232,7 @@ await m.reply("༒︎ 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")
 }
   }
 
-}
+}}}}}}}}}
 
 
 
