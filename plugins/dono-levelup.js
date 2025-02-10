@@ -118,13 +118,13 @@ if(!(isAdmin || isOwner)){
  else if(m.quoted && m.quoted.sender&& !args[0])
   {
     while (canLevelUp(user.level, user.exp, global.multiplier)) user.level++
- m.reply("༒︎ Subindo usuário de nível ")    
+ m.reply(" Subindo usuário de nível ")    
 
   }
   else if(m.mentionedJid[0]){
 while (canLevelUp(user.level, user.exp, global.multiplier)) user.level++
 // global.db.data.chats[m.chat].users[who].level
- m.reply("༒︎ Subindo usuário de nível ")
+ m.reply(" Subindo usuário de nível ")
 }
 else if(!mentionedJid[0] && !m.quoted) {
   conn.reply(m.chat, why, m, { mentions: [m.sender] })
@@ -143,7 +143,7 @@ case "darxp":
   {
     global.db.data.chats[m.chat].users[who].exp += parseInt(args[0])
 // global.db.data.chats[m.chat].users[who].level
-m.reply(`༒︎ Enviando ${args[0]} 𝑥𝑝`)
+m.reply(` Enviando ${args[0]} 𝑥𝑝`)
 
   }
   else if(m.mentionedJid[0] && args[0] && args[1]){
@@ -153,11 +153,11 @@ console.log(m.mentionedJid[0])
 let jid = m.mentionedJid[0]
 if(args[0]==`@${jid.split("@")[0]}`){
 global.db.data.chats[m.chat].users[who].exp += parseInt(args[1])
-m.reply(`༒︎ Enviando ${args[1]} 𝑥𝑝`)
+m.reply(` Enviando ${args[1]} 𝑥𝑝`)
 }
 if(args[1]==`@${jid.split("@")[0]}`){
 global.db.data.chats[m.chat].users[who].exp += parseInt(args[0])
-m.reply(`༒︎ Enviando ${args[0]} 𝑥𝑝`)
+m.reply(` Enviando ${args[0]} 𝑥𝑝`)
 }
 // global.db.data.chats[m.chat].users[who].level
 }

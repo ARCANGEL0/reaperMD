@@ -71,7 +71,7 @@ if(!data.url || data.url === null || data.url === 'undefined') throw 'URL Undefi
   m.react("📀")
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 80
-await m.reply("༒︎ 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+await m.reply(" 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
 
 
 }
@@ -82,7 +82,7 @@ conn.sendMessage(m.chat, { audio: audiodlp, mimetype: "audio/mpeg" }, { quoted: 
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 80
  m.react("📀")
-await m.reply("༒︎ 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+await m.reply(" 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
 
 } catch(e){
   console.log(e)

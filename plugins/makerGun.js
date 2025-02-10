@@ -56,7 +56,7 @@ throw `${langTOGGLE.smsAvisoFG()}❖─┅──┅\n𝗘𝗥𝗥𝗢 💀
     image: await conn.profilePictureUrl(who, 'image').catch((_) => 'https://telegra.ph/file/24fa902ead26340f3df2c.png') })
     
     console.log(dawta)
-  conn.sendFile(m.chat, dawta,{mentions:[who]},`🪦💀 @${who.split("@")[0]} ༒︎`);
+  conn.sendFile(m.chat, dawta,{mentions:[who]},`🪦💀 @${who.split("@")[0]} `);
   console.log(who)
   
   }

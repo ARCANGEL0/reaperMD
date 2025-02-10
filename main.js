@@ -172,7 +172,7 @@ opcion = await question(`╭${lineM}
 ┊ ${chalk.blueBright('┊')} ${chalk.bold.yellow(`npm run code ${chalk.italic.magenta('(Inicia com código de 8 dígitos)')}`)}
 ┊ ${chalk.blueBright('┊')} ${chalk.bold.yellow(`npm start ${chalk.italic.magenta('(Inicio predeterminado com opcoes)')}`)}
 ┊ ${chalk.blueBright('╰┅┅┅┅┅❖')} 
-╰${lineM}\n${chalk.bold.magentaBright('༒︎  ')}`)
+╰${lineM}\n${chalk.bold.magentaBright('  ')}`)
 
 if (!/^[1-2]$/.test(opcion)) {
 console.log(chalk.bold.redBright(`NAO SERAO ACEITES NÚMEROS QUE NÃO SEJAM  ${chalk.bold.greenBright("1")} OU ${chalk.bold.greenBright("2")}, TAMPOUCO LETRAS OU SÍMBOLOS ESPECIAIS.
@@ -258,7 +258,7 @@ setTimeout(async () => {
  
 let codeBot = await conn.requestPairingCode(addNumber)
 codeBot = codeBot?.match(/.{1,4}/g)?.join("-") || codeBot
-console.log(chalk.bold.white(chalk.bgMagenta(`Codigo de autênticao ༒︎:`)), chalk.bold.white(chalk.white(codeBot)))
+console.log(chalk.bold.white(chalk.bgMagenta(`Codigo de autênticao :`)), chalk.bold.white(chalk.white(codeBot)))
 
   
 }, 2000)
@@ -296,7 +296,7 @@ rl.close()
 setTimeout(async () => {
 let codeBot = await conn.requestPairingCode(addNumber)
 codeBot = codeBot?.match(/.{1,4}/g)?.join("-") || codeBot
-console.log(chalk.bold.white(chalk.bgMagenta(`Codigo de autênticao ༒︎:`)), chalk.bold.white(chalk.white(codeBot)))
+console.log(chalk.bold.white(chalk.bgMagenta(`Codigo de autênticao :`)), chalk.bold.white(chalk.white(codeBot)))
 }, 2000)
 }}
 
@@ -454,7 +454,7 @@ const dir = global.__filename(join(pluginFolder, filename), true)
 if (filename in global.plugins) {
 if (existsSync(dir)) conn.logger.info(` Atualizado '${filename}' com sucesso  𓄿`)
 else {
-conn.logger.warn(`Arquivo eliminado ༒︎ : '${filename}'`)
+conn.logger.warn(`Arquivo eliminado  : '${filename}'`)
 return delete global.plugins[filename];
 }
 } else conn.logger.info(`NOVOS PLUGINS : '${filename}'`)
@@ -462,7 +462,7 @@ const err = syntaxerror(readFileSync(dir), filename, {
 sourceType: 'module',
 allowAwaitOutsideFunction: true,
 });
-if (err) conn.logger.error(`Peco perdao pelo infortúnio , mas estou deparando com erros de sintaze, averigue o pobre alma: ༒︎
+if (err) conn.logger.error(`Peco perdao pelo infortúnio , mas estou deparando com erros de sintaze, averigue o pobre alma: 
 '${filename}'\n${format(err)}`);
 else {
 try {

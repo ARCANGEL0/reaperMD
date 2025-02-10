@@ -653,7 +653,7 @@ chat.iaAtiva =false;
 chat.acoes =false;
 
   
-m.reply(`${eg} ❖─┅──┅\n🪶💀 INTERAÇÕES DESATIVADAS ༒︎\n─┅──┅❖ 
+m.reply(`${eg} ❖─┅──┅\n🪶💀 INTERAÇÕES DESATIVADAS \n─┅──┅❖ 
 
 ${pickRandom([ 
  "Adeus, como uma sombra que se dissipa com o nascer do sol, parto para o além.",

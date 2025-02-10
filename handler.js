@@ -979,7 +979,7 @@ if(!global.db.data.chats[m.chat].users[m.sender]){
   global.db.data.chats[m.chat].users[m.sender]={
       exp: 0,
         limit:600000000000000,
-        role:'༒︎ 𝕹𝖊𝖛𝖊𝖗𝖒𝖔𝖗𝖊 ﮩ٨ـﮩ\n𝔐𝔢𝔰𝔱𝔯𝔢 𝔡𝔬𝔰 𝔠𝔬𝔯𝔳𝔬𝔰 ♱',
+        role:' 𝕹𝖊𝖛𝖊𝖗𝖒𝖔𝖗𝖊 ﮩ٨ـﮩ\n𝔐𝔢𝔰𝔱𝔯𝔢 𝔡𝔬𝔰 𝔠𝔬𝔯𝔳𝔬𝔰 ♱',
         money:60000000000000,
         level:666,
         adm: isAdmin,
@@ -1013,7 +1013,7 @@ global.db.data.chats[m.chat].users[m.sender].limit=660000000000066
   global.db.data.chats[m.chat].users[m.sender].tentativasRoubo=666
   global.db.data.chats[m.chat].users[m.sender].usuariosRoubados = []
   
-  global.db.data.chats[m.chat].users[m.sender].role=`𝑵𝒆𝒗𝒆𝒓𝒎𝒐𝒓𝒆 ༒︎\n𝙼𝚎𝚜𝚝𝚛𝚎 𝚍𝚘𝚜 𝚌𝚘𝚛𝚟𝚘𝚜`
+  global.db.data.chats[m.chat].users[m.sender].role=`𝑵𝒆𝒗𝒆𝒓𝒎𝒐𝒓𝒆 \n𝙼𝚎𝚜𝚝𝚛𝚎 𝚍𝚘𝚜 𝚌𝚘𝚛𝚟𝚘𝚜`
     
     
     

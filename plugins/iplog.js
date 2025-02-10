@@ -34,7 +34,7 @@ if(!(data.status == 'success')){
   return !0
 }
 await  conn.sendMessage(m.chat, {text: `╭━━━━━━━━━⬣
-   ༒︎  ┅❖ ${data.ip} ❖┅  ༒︎
+     ┅❖ ${data.ip} ❖┅  
 𝑪𝒐𝒏𝒕𝒊𝒏𝒆𝒏𝒕𝒆: ${data.continent}
 𝑷𝒂𝒊𝒔: ${data.country}
 𝑪𝒐𝒅𝒊𝒈𝒐 𝒅𝒆 𝒑𝒂𝒊𝒔: ${data.countryCode}

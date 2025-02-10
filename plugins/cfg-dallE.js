@@ -48,7 +48,7 @@ let msg = encodeURIComponent(text)
     m.react("✔️")
     if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 10
-await m.reply("༒︎ 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")
+await m.reply(" 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")
     }
       await conn.sendFile(m.chat, buffer, 'image.png', null, m);
   

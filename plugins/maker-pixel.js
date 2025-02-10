@@ -76,7 +76,7 @@ let filr1= `../tmp/${uniqueFileName}`
 let fl2 = await filr1.buffer()
  // const  link = await uploadImage(filepath);
  
- await conn.sendFile(m.chat,fl2,{mentions:[who]},`🪦💀 @${who.split("@")[0]} ༒︎`);
+ await conn.sendFile(m.chat,fl2,{mentions:[who]},`🪦💀 @${who.split("@")[0]} `);
 
  
 
@@ -108,7 +108,7 @@ throw `${langTOGGLE.smsAvisoFG()}❖─┅──┅\n𝗘𝗥𝗥𝗢 💀
       },
     });
     console.log(dawta)
-  conn.sendFile(m.chat, dawta,{mentions:[who]},`🪦💀 @${who.split("@")[0]} ༒︎`);
+  conn.sendFile(m.chat, dawta,{mentions:[who]},`🪦💀 @${who.split("@")[0]} `);
   console.log(who)
   
   }

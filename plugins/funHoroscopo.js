@@ -123,7 +123,7 @@ _${message.text}_
                 m.react("✔️")
                 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 125
-await m.reply("༒︎ 125 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊(𝙎")
+await m.reply(" 125 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊(𝙎")
 }
                 
             }

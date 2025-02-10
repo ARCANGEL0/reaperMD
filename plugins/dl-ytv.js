@@ -57,7 +57,7 @@ if(!data || data === null || data === 'undefined') throw '1st failed PLAY2'
   if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 80
  m.react("📀")
-await m.reply("༒︎ 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+await m.reply(" 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
 
 
   
@@ -70,7 +70,7 @@ await conn.sendMessage(m.chat, { video: { url: video }, fileName: `video.mp4`, m
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 80
  m.react("📀")
-await m.reply("༒︎ 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+await m.reply(" 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
 
 }
 catch(e){

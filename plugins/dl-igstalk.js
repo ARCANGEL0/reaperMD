@@ -36,7 +36,7 @@ let res2 = await fetch(`https://api.lolhuman.xyz/api/stalkig/${text.replace(/^@/
 let json = await res2.json()
 
 let iggs = `╭━━━━━━━━━⬣
-┃ ༒︎ *${gt} ${vs}*
+┃  *${gt} ${vs}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃ 𝙉𝙊𝙈𝙀
 ┃ *${json.result.fullname}*

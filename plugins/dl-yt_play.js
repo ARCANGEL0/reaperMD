@@ -131,7 +131,7 @@ conn.sendMessage(m.chat, { audio: audiodlp, mimetype: "audio/mpeg" }, { quoted: 
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 80
  m.react("📀")
-await m.reply("༒︎ 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+await m.reply(" 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
 
 } catch (e1) {
 try {  
@@ -140,7 +140,7 @@ await conn.sendMessage(m.chat, { audio: { url:x.downloadUrl }, mimetype: 'audio/
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 80
  m.react("📀")
-await m.reply("༒︎ 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+await m.reply(" 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
 
 } catch{
 try {
@@ -150,7 +150,7 @@ await conn.sendMessage(m.chat, { audio: { url: data.dl }, mimetype: 'audio/mpeg'
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 80
  m.react("📀")
-await m.reply("༒︎ 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+await m.reply(" 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
 
 
 } catch {
@@ -163,7 +163,7 @@ await conn.sendMessage(m.chat, { audio: { url: axeelData.downloads.url }, mimety
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 80
  m.react("📀")
-await m.reply("༒︎ 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+await m.reply(" 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
 
 } catch {
 try {
@@ -175,7 +175,7 @@ await conn.sendMessage(m.chat, { audio: { url: ress.url}, mimetype: 'audio/mpeg'
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 80
  m.react("📀")
-await m.reply("༒︎ 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+await m.reply(" 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
 
 
 } catch {
@@ -189,7 +189,7 @@ await conn.sendMessage(m.chat, { audio: { url: downloadUrl }, mimetype: 'audio/m
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 80
  m.react("📀")
-await m.reply("༒︎ 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+await m.reply(" 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
 
 }
 } catch {
@@ -200,7 +200,7 @@ await conn.sendMessage(m.chat, { audio: { url: await result.download.url }, mime
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 80
  m.react("📀")
-await m.reply("༒︎ 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+await m.reply(" 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
 
 } catch {
 try {
@@ -214,7 +214,7 @@ await conn.sendFile(m.chat, dl_url, ttl + '.mp3', null, m, false, { mimetype: 'a
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 80
  m.react("📀")
-await m.reply("༒︎ 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+await m.reply(" 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
 
 } catch {
 try {
@@ -225,7 +225,7 @@ await conn.sendMessage(m.chat, { audio: { url: lolh.result.link }, fileName: `${
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 80
  m.react("📀")
-await m.reply("༒︎ 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+await m.reply(" 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
 
 } catch (e){
   
@@ -239,7 +239,7 @@ await conn.sendMessage(m.chat, { audio: { url: ress.url}, mimetype: 'audio/mpeg'
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 80
  m.react("📀")
-await m.reply("༒︎ 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+await m.reply(" 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
 
 
   }
@@ -254,7 +254,7 @@ await conn.sendMessage(m.chat, { audio: { url: data.dl }, mimetype: 'audio/mpeg'
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 80
  m.react("📀")
-await m.reply("༒︎ 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+await m.reply(" 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
 
 
 
@@ -272,7 +272,7 @@ await conn.sendMessage(m.chat, { audio: { url:x.downloadUrl }, mimetype: 'audio/
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 80
  m.react("📀")
-await m.reply("༒︎ 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+await m.reply(" 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
 
 } catch(e){
   console.log(e)
@@ -296,7 +296,7 @@ await conn.sendMessage(m.chat, { video: { url: video }, fileName: `video.mp4`, m
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 80
  m.react("📀")
-await m.reply("༒︎ 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+await m.reply(" 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
 
 } catch {
 try {
@@ -359,7 +359,7 @@ await conn.sendMessage(m.chat, { video: { url:y.downloadUrl }, fileName: `video.
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 80
  m.react("📀")
-await m.reply("༒︎ 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+await m.reply(" 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
 
 }
 catch(e){

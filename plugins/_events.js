@@ -383,7 +383,7 @@ if(!global.db.data.chats[m.chat].users[m.sender]){
   global.db.data.chats[m.chat].users[m.sender]={
     exp: 0,
         limit:4500,
-        role:'༒︎ 𝕹𝖊𝖛𝖊𝖗𝖒𝖔𝖗𝖊 ﮩ٨ـﮩ\n𝔐𝔢𝔰𝔱𝔯𝔢 𝔡𝔬𝔰 𝔠𝔬𝔯𝔳𝔬𝔰 ♱',
+        role:' 𝕹𝖊𝖛𝖊𝖗𝖒𝖔𝖗𝖊 ﮩ٨ـﮩ\n𝔐𝔢𝔰𝔱𝔯𝔢 𝔡𝔬𝔰 𝔠𝔬𝔯𝔳𝔬𝔰 ♱',
         money:4500,
         level:666,
         adm: isAdmin,
@@ -3026,7 +3026,7 @@ console.log(console.log('abc:  ' + global.db.data.chats[m.chat].forca.currentSta
         await conn.sendFile(m.chat, global.imagen8, 'edgar.jpg',` ${global.db.data.chats[m.chat].forca.stages[stageIndex]}
   ִ ࣪𖤐  ${separatedStatus}
   
-  𝑵𝒂 𝒆𝒔𝒄𝒖𝒓𝒊𝒅𝒂𝒐 𝒆𝒕𝒆𝒓𝒏𝒂, 𝒓𝒆𝒄𝒆𝒃𝒆𝒊 𝒎𝒊𝒏𝒉𝒂𝒔 𝒇𝒆𝒍𝒊𝒄𝒊𝒕𝒂𝒄𝒐𝒆𝒔, 𝒑𝒐𝒊𝒔 𝒅𝒆𝒔𝒗𝒆𝒏𝒅𝒂𝒔𝒕𝒆𝒔 𝒐 𝒆𝒏𝒊𝒈𝒎𝒂 𝒆𝒏𝒊𝒈𝒎𝒂𝒕𝒊𝒄𝒐 𝒒𝒖𝒆 𝒂𝒕𝒐𝒓𝒎𝒆𝒏𝒕𝒂𝒗𝒂 𝒗𝒐𝒔𝒔𝒂𝒔 𝒂𝒍𝒎𝒂𝒔 𝒔𝒐𝒎𝒃𝒓𝒊𝒂𝒔. ༒︎`, m);
+  𝑵𝒂 𝒆𝒔𝒄𝒖𝒓𝒊𝒅𝒂𝒐 𝒆𝒕𝒆𝒓𝒏𝒂, 𝒓𝒆𝒄𝒆𝒃𝒆𝒊 𝒎𝒊𝒏𝒉𝒂𝒔 𝒇𝒆𝒍𝒊𝒄𝒊𝒕𝒂𝒄𝒐𝒆𝒔, 𝒑𝒐𝒊𝒔 𝒅𝒆𝒔𝒗𝒆𝒏𝒅𝒂𝒔𝒕𝒆𝒔 𝒐 𝒆𝒏𝒊𝒈𝒎𝒂 𝒆𝒏𝒊𝒈𝒎𝒂𝒕𝒊𝒄𝒐 𝒒𝒖𝒆 𝒂𝒕𝒐𝒓𝒎𝒆𝒏𝒕𝒂𝒗𝒂 𝒗𝒐𝒔𝒔𝒂𝒔 𝒂𝒍𝒎𝒂𝒔 𝒔𝒐𝒎𝒃𝒓𝒊𝒂𝒔. `, m);
      return !0
     }
     
@@ -4757,7 +4757,7 @@ else if(m.quoted && m.quoted.id == global.db.data.chats[m.chat].sudoku?.regMsg){
          
         global.db.data.chats[m.chat].sudoku.checked = true
         global.db.data.chats[m.chat].sudoku.singleplayer = false
-        await m.reply(`╭─┅──┅❖ ༒︎ ❖─┅──┅
+        await m.reply(`╭─┅──┅❖  ❖─┅──┅
 |           𝕤𝕦𝕕𝕠𝕜𝕦
 | ━━⬣ 𝑴𝒖𝒍𝒕𝒊𝒑𝒍𝒂𝒚𝒆𝒓
 |
@@ -4924,7 +4924,7 @@ const statusString = global.db.data.chats[m.chat].sudoku.gameData.status.join(''
 })
  global.db.data.chats[m.chat].users[m.sender].money += conns5
  let textts = `╭──────────────────── ⛦...─╮
-                   ༒︎ 𝑭𝑰𝑴 𝑫𝑬 𝑱𝑶𝑮𝑶 ༒︎            
+                    𝑭𝑰𝑴 𝑫𝑬 𝑱𝑶𝑮𝑶             
  𝒈𝒂𝒏𝒉𝒐𝒖 ${conns5} 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ
 ${global.db.data.chats[m.chat].sudoku.singleplayer ? `` : `─┅❖ 𝑱𝒐𝒈𝒂𝒅𝒐𝒓𝒆𝒔\n`}
 ${global.db.data.chats[m.chat].sudoku.jogadores.map(player => '@' + player.split('@')[0] + '  𝒈𝒂𝒏𝒉𝒐𝒖 ' + (6 * global.db.data.chats[m.chat].sudoku.jogadas[player]) + ' 𝑥𝑝').join('\n')}

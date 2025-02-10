@@ -92,7 +92,7 @@ global.db.data.chats[m.chat].ignored.push(DELETEMESSAGE.message.protocolMessage.
 
 if(!global.db.data.chats[m.chat].reportchat){
 m.quoted.reply(teks,adms.getRandom())
- return  m.reply(`╭─┅──┅❖ ༒︎ ❖─┅──┅
+ return  m.reply(`╭─┅──┅❖  ❖─┅──┅
 
 𝙲𝚊𝚗𝚊𝚕 𝚍𝚎 𝚍𝚎𝚜𝚝𝚒𝚗𝚘 𝚙𝚊𝚛𝚊 𝚍𝚎𝚗𝚞𝚗𝚌𝚒𝚊𝚜 𝚗ã𝚘 𝚍𝚎𝚏𝚒𝚗𝚒𝚍𝚘!
 

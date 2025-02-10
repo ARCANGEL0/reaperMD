@@ -37,7 +37,7 @@ if(!(isAdmin || isOwner|| m.sender==global.cocriador) && global.db.data.chats[m.
 *╰─┅──┅❖ ⸸ ❖─┅──┅*`)
   }
   else {
-  let introh = await conn.sendFile(m.chat, `https://telegra.ph/file/2af2af5307c7e3f7416ad.jpg`, 'sudoku.png', `*╭─┅──┅❖ ༒︎ ❖─┅──┅*
+  let introh = await conn.sendFile(m.chat, `https://telegra.ph/file/2af2af5307c7e3f7416ad.jpg`, 'sudoku.png', `*╭─┅──┅❖  ❖─┅──┅*
 |           𝕤𝕦𝕕𝕠𝕜𝕦
 | 𝑫𝒊𝒈𝒊𝒕𝒆 𝒂 𝒐𝒑𝒄𝒂𝒐 𝒅𝒆 𝒋𝒐𝒈𝒐. . .
 | 1. *Singleplayer*

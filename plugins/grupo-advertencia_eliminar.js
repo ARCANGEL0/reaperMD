@@ -53,7 +53,7 @@ let handler = async (m, {conn,participants, text, command,groupMetadata, usedPre
   try {
     if(global.db.data.chats[m.chat].users[who].adv<=0){
       global.db.data.chats[m.chat].users[who].adv=0
-      m.reply(` ༒︎ 𝗨𝘀𝘂𝗮𝗿𝗶𝗼 𝗻𝗮𝗼 𝗽𝗼𝘀𝘀𝘂𝗶 𝗮𝗱𝘃𝗲𝗿𝘁𝗲𝗻𝗰𝗶𝗮𝘀. .`)
+      m.reply(`  𝗨𝘀𝘂𝗮𝗿𝗶𝗼 𝗻𝗮𝗼 𝗽𝗼𝘀𝘀𝘂𝗶 𝗮𝗱𝘃𝗲𝗿𝘁𝗲𝗻𝗰𝗶𝗮𝘀. .`)
     }
   global.db.data.chats[m.chat].users[who].adv -= 1
   await m.reply(
