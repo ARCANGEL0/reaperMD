@@ -331,12 +331,13 @@ const ttl = await yt.title
 const size = await yt.video[q].fileSizeH
 await await conn.sendMessage(m.chat, { video: { url: dl_url }, fileName: `${ttl}.mp4`, mimetype: 'video/mp4', caption: ``, thumbnail: await fetch(yt.thumbnail) }, { quoted: m })
 } catch (E1) {
-//console.log('Error 1 ' + E1)  
+console.log('Error 1 ' + E1)  
 try {  
 let mediaa = await ytMp4(yt_play[0].url)
 await conn.sendMessage(m.chat, { video: { url: mediaa.result }, fileName: `error.mp4`, caption: ``, thumbnail: mediaa.thumb, mimetype: 'video/mp4' }, { quoted: m })     
 } catch (E2) {  
-//console.log('Error 2 ' + E2)   
+  
+console.log('Error 2 ' + E2)   
 try {
 let lolhuman = await
 fetch(`https://api.lolhuman.xyz/api/ytvideo2?apikey=${lolkeysapi}&url=${yt_play[0].url}`)
