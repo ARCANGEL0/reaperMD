@@ -306,7 +306,7 @@ let { data } = await res.json();
 await conn.sendMessage(m.chat, { video: { url: data.dl }, fileName: `video.mp4`, caption: `` }, { quoted: m }) 
 } catch {
 try {
-let y=await ytdlf(`${yt_play[0].rl}`,"360");
+let y=await ytdlf(`${yt_play[0].url}`,"360");
 await conn.sendMessage(m.chat, { video: { url:y.downloadUrl }, fileName: `video.mp4`, caption: `` }, { quoted: m }) 
 } catch {
 try {
