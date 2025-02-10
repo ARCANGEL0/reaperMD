@@ -290,7 +290,8 @@ await m.reply("༒︎ 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")
 }
 if (command == 'play2') {
 try {
-const video = await ytmp4(encodeURIComponent(yt_play[0].videoId));
+const video = await ytmp4(yt_play[0].url);
+console.log(video)
 await conn.sendMessage(m.chat, { video: { url: video }, fileName: `video.mp4`, mimetype: 'video/mp4', caption: ``}, { quoted: m })
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 80
