@@ -43382,7 +43382,34 @@
           "afkReason": ""
         }
       }
-    }
+    },
+    "34828074414164@lid": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 0,
+      "afkInfo": {
+        "120363312968709293@g.us": {
+          "afkTime": -2,
+          "number": "34828074414164@lid",
+          "afkReason": ""
+        }
+      }
+    },
+    "5514981848243@s.whatsapp.net,5521969915001@s.whatsapp.net": {}
   },
   "chats": {
     "120363312968709293@g.us": {
@@ -53868,6 +53895,24 @@
           "lastMessageTime": 1739642772342,
           "messageCount": null,
           "pontos": 0
+        },
+        "34828074414164@lid": {
+          "exp": 0,
+          "limit": 0,
+          "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
+          "money": 0,
+          "level": 0,
+          "adm": false,
+          "legendary": false,
+          "banned": false,
+          "adv": 0,
+          "tentativasRoubo": 5,
+          "silenced": false,
+          "maxlevel": false,
+          "cocriador": false,
+          "lastMessageTime": 1739645106605,
+          "messageCount": null,
+          "pontos": 0
         }
       },
       "isBanned": true,
@@ -53922,7 +53967,7 @@
       "name": "Grupo Onde Fingimos Ser Loucos (Ou Não)",
       "desc": "⚠️⚠️⚠️ *PROIBIDO MENORES DE 16* ⚠️⚠️⚠️\n\n🫂 *CHAVE PIX PARA CONTRIBUIÇÃO DE PAGAMENTO DO BOOT: 4399186-9327* *!!!!!!*🫂\n\nRESPEITEM A SI MESMOS MALAFRARIAS!!! \n\n⚠️ *TERMINAMENTE PROIBIDO* 🤚🏻\n\n*DISCUTIR SOBRE POLÍTICA*\n• - *DESRESPEITO*\n• - *FICAR PEDINDO ADM*\n• - *FLOODAR / SPAMMAR* \n• - *IMPORTUNAÇÃO NO PV*\n• - *IMPLICÂNCIA COM MEMBROS*\n• - *DIVULGAR/PROMOVER* _(SEM AUTORIZAÇÃO)_\n• - *SÓ FALAR PUTARIA*_(AQUI É HOSPÍCIO, NÃO PUTEIRO)_\n• - *PRECONCEITO* _(GORDOFOBIA, XENOFOBIA, RACISMO, MACHISMO, HOMOFOBIA, ANTISEMITISMO ETC)_ \n• - *GORE / NAZISMO/ANTISEMITISMO / ISLAMOFOBIA / HENTAI / CP / ZOOFILIA / PORNOGRAFIA /XENOFOBIA*  _(DISCUSSÃO / INCENTIVO / APOLOGIA / MÍDIAS)_\n\n🔊 *NÃO NOS RESPONSABILIZAMOS POR PROBLEMAS ASSOCIADOS À:*❗\n\n• - COMPARTILHAMENTO DE DADOS PESSOAIS\n• - ABRIR ÁUDIO DUVIDOSO E/OU ESTOURADO\n• - LINK DESCONFIÁVEL\n\n⚠️ *MARCAR ADMINISTRADORES QUANDO REGRAS FOREM BURLADAS* ⚠\n\n_\"Já é difícil ter que lidar com as coisas, não vamos destruir o cantinho que a gente tem por favor\"_\n_~Carlos Chazin, 2023_︎\n\n▪️ *BOT interativo entre 00:00 - 12:00* ▪️\n\n🔷 *REDES SOCIAIS DO GRUPO*🔷\n\n🔹 *FACEBOOK:*\n\nGrupo (oficial): https://www.facebook.com/groups/4573794466077903/?ref=share\n\nGrupo (reserva):\nhttps://www.facebook.com/groups/3360052507549701/?ref=share&mibextid=NSMWBT\n\nPágina (oficial): https://www.facebook.com/profile.php?id=100091738707923&mibextid=LQQJ4d\n\n🔹 *INSTAGRAM:*\n\nInstagram.com/onde_fingimos_ser_loucos_ou_n",
       "lastSentTime": 0,
-      "totalMembros": 525,
+      "totalMembros": 524,
       "membros": [
         {
           "id": "174427329298684@lid",
@@ -54566,10 +54611,6 @@
         },
         {
           "id": "5695143411763@lid",
-          "admin": null
-        },
-        {
-          "id": "209448442327214@lid",
           "admin": null
         },
         {
@@ -56619,7 +56660,8 @@
         "236932323918064@lid": [],
         "179882374000837@lid": [],
         "160636306735272@lid": [],
-        "209448442327214@lid": []
+        "209448442327214@lid": [],
+        "34828074414164@lid": []
       }
     },
     "120363202217134158@g.us": {
@@ -81332,7 +81374,7 @@
           "silnciado": false
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 206599,
+          "exp": 206863,
           "limit": 0,
           "role": "",
           "money": 0,
@@ -81355,7 +81397,7 @@
           "silnciado": false
         },
         "5521970385666@s.whatsapp.net": {
-          "exp": 10575835,
+          "exp": 10575867,
           "limit": 229819,
           "role": "Ｅｌｌｉｏｔ　Ａｌｄｅｒｓｏｎ",
           "money": 704860,
@@ -81396,7 +81438,7 @@
           "vampire": 3,
           "vampireAtivo": false,
           "demonio": 2,
-          "demonioAtivo": true,
+          "demonioAtivo": false,
           "shadows": 1,
           "morto": false,
           "shieldAtivo": false,
@@ -81485,7 +81527,7 @@
           ]
         },
         "554197056898@s.whatsapp.net": {
-          "exp": 352925,
+          "exp": 353006,
           "limit": 10,
           "role": "Ａｎａｌｉｓｔａ　ｄｅ　Ｃｉｂｅｒｓｅｇｕｒａｎçａ",
           "money": 0,
@@ -81588,7 +81630,7 @@
           "silnciado": false
         },
         "553898809542@s.whatsapp.net": {
-          "exp": 66937312,
+          "exp": 66937477,
           "limit": 227897,
           "role": "Ｅｌｌｉｏｔ　Ａｌｄｅｒｓｏｎ",
           "money": 10845390,
@@ -81689,7 +81731,7 @@
           "silnciado": false
         },
         "5513981141776@s.whatsapp.net": {
-          "exp": 367335,
+          "exp": 367397,
           "limit": 20,
           "role": "Ａｎａｌｉｓｔａ　ｄｅ　Ｃｉｂｅｒｓｅｇｕｒａｎçａ",
           "money": 490,
@@ -81759,7 +81801,7 @@
           "silnciado": false
         },
         "559691822090@s.whatsapp.net": {
-          "exp": 224225,
+          "exp": 224244,
           "limit": 4,
           "role": "Ｌｉｂｅｒａｄｏｒ　ｄｅ　Ｄａｄｏｓ",
           "money": 895,
@@ -82205,7 +82247,7 @@
           "shields": 0
         },
         "553888016495@s.whatsapp.net": {
-          "exp": 132897,
+          "exp": 132901,
           "limit": 7,
           "role": "Ｃａｃａｄｏｒ　ｄｅ　Ｚｅｒｏ－Ｄａｙ",
           "money": 0,
@@ -82883,7 +82925,7 @@
           "isKicked": true
         },
         "558197887354@s.whatsapp.net": {
-          "exp": 140869,
+          "exp": 140945,
           "limit": 18,
           "role": "Ｃａｃａｄｏｒ　ｄｅ　Ｚｅｒｏ－Ｄａｙ",
           "money": 2008,
@@ -83025,7 +83067,7 @@
           "silnciado": false
         },
         "559384036433@s.whatsapp.net": {
-          "exp": 7365,
+          "exp": 7368,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 90,
@@ -83426,7 +83468,7 @@
           "silnciado": false
         },
         "555197716762@s.whatsapp.net": {
-          "exp": 88624,
+          "exp": 88694,
           "limit": 11,
           "role": "Ｅｎｇｅｎｈｅｉｒｏ　Ｓｏｃｉａｌ",
           "money": 900,
@@ -84088,7 +84130,7 @@
           "silnciado": false
         },
         "554891455576@s.whatsapp.net": {
-          "exp": 519969,
+          "exp": 519973,
           "limit": 366,
           "role": "Ｂｌａｃｋ　Ｈａｔ",
           "money": 710,
@@ -92610,10 +92652,10 @@
       "lastSuccess": 1739280072369
     },
     "funAcoes7.js": {
-      "total": 1924,
-      "success": 1914,
-      "last": 1739626266173,
-      "lastSuccess": 1739626266173
+      "total": 1925,
+      "success": 1915,
+      "last": 1739647573201,
+      "lastSuccess": 1739647573201
     },
     "grupo-perfil.js": {
       "total": 1386,
@@ -92718,10 +92760,10 @@
       "lastSuccess": 1738679443205
     },
     "sticker-sticker.js": {
-      "total": 1255,
-      "success": 1255,
-      "last": 1739640938599,
-      "lastSuccess": 1739640938599
+      "total": 1256,
+      "success": 1256,
+      "last": 1739650087194,
+      "lastSuccess": 1739650087194
     },
     "conversor-totext.js": {
       "total": 18,
@@ -92796,10 +92838,10 @@
       "lastSuccess": 1739439789207
     },
     "fun-acoes.js": {
-      "total": 404,
-      "success": 393,
-      "last": 1739634581805,
-      "lastSuccess": 1739634581805
+      "total": 405,
+      "success": 394,
+      "last": 1739644097573,
+      "lastSuccess": 1739644097573
     },
     "cfgLoja.js": {
       "total": 231,
@@ -93450,7 +93492,7 @@
           "conta": "953415981012",
           "sepa": "SE6844757256636490",
           "wallet": "WAL-0936010359",
-          "saldo": 3688458.9001227436,
+          "saldo": 3688642.748042064,
           "limiteSaque": 1
         },
         "5521970385666@s.whatsapp.net": {
@@ -93458,7 +93500,7 @@
           "conta": "535441291871",
           "sepa": "SE5822427639074913",
           "wallet": "WAL-9159324339",
-          "saldo": 25061464.306463912,
+          "saldo": 25072709.043719534,
           "limiteSaque": 2
         },
         "5513981141776@s.whatsapp.net": {
@@ -93466,7 +93508,7 @@
           "conta": "661874616333",
           "sepa": "SE4577404167973932",
           "wallet": "WAL-1059128979",
-          "saldo": 1320025.2465073378,
+          "saldo": 1320584.6125668988,
           "limiteSaque": 3
         },
         "5521969915001@s.whatsapp.net": {
@@ -93482,7 +93524,7 @@
           "conta": "856213977478",
           "sepa": "SE4417515791941896",
           "wallet": "WAL-4945103334",
-          "saldo": 123115.56580092921,
+          "saldo": 123118.63405506716,
           "limiteSaque": 1
         },
         "554197056898@s.whatsapp.net": {
@@ -93490,7 +93532,7 @@
           "conta": "934819026141",
           "sepa": "SE8183249194361544",
           "wallet": "WAL-3202947270",
-          "saldo": 129300.91950140522,
+          "saldo": 129407.3012441177,
           "limiteSaque": 3
         },
         "553898809542@s.whatsapp.net": {
@@ -93498,7 +93540,7 @@
           "conta": "396664072159",
           "sepa": "SE8065925013929199",
           "wallet": "WAL-9124202523",
-          "saldo": 10838494.636520427
+          "saldo": 10862019.768430373
         },
         "559294556204@s.whatsapp.net": {
           "titular": "Iury Jonathan martins Amorim",
@@ -93535,7 +93577,7 @@
           "conta": "433912865304",
           "sepa": "SE1504376292316559",
           "wallet": "WAL-9654909851",
-          "saldo": 8844.577067162994,
+          "saldo": 8851.412711956296,
           "limiteSaque": 0
         },
         "5511952899890@s.whatsapp.net": {
@@ -93557,7 +93599,7 @@
           "conta": "613397124961",
           "sepa": "SE9409335546048939",
           "wallet": "WAL-7396835055",
-          "saldo": 1269.5033319886115
+          "saldo": 1269.6931732090732
         },
         "5521990893085@s.whatsapp.net": {
           "titular": "Izaque Moraes Barbosa",
