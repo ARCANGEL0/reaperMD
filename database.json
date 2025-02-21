@@ -52282,7 +52282,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1739981060080,
+          "lastMessageTime": 1740113876538,
           "messageCount": 1,
           "pontos": 0
         },
@@ -83293,7 +83293,7 @@
           "silnciado": false
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 252238,
+          "exp": 252387,
           "limit": 0,
           "role": "",
           "money": 0,
@@ -83316,10 +83316,10 @@
           "silnciado": false
         },
         "5521970385666@s.whatsapp.net": {
-          "exp": 10604861,
-          "limit": 255538,
+          "exp": 10604925,
+          "limit": 255598,
           "role": "Ｅｌｌｉｏｔ　Ａｌｄｅｒｓｏｎ",
-          "money": 308570.99999999255,
+          "money": 1599.9999999925494,
           "level": 100,
           "adm": false,
           "legendary": false,
@@ -83336,7 +83336,7 @@
             "558184216648@s.whatsapp.net"
           ],
           "shields": 6,
-          "trojans": 512167,
+          "trojans": 512287,
           "bankName": "Sra. Mercês",
           "acaoTimer": "2025-02-20T23:29:51.059Z",
           "rouboTimestamp": "2025-02-20T13:22:35.771Z",
@@ -83357,7 +83357,7 @@
           "vampire": 3,
           "vampireAtivo": false,
           "demonio": 4,
-          "demonioAtivo": true,
+          "demonioAtivo": false,
           "shadows": 8,
           "morto": false,
           "shieldAtivo": false,
@@ -83587,14 +83587,14 @@
           "vampire": 4,
           "vampireAtivo": false,
           "demonio": 0,
-          "demonioAtivo": true,
+          "demonioAtivo": false,
           "shadows": 3,
           "regTimeStart": "",
           "regPrazo": "",
           "regMsg": "",
           "registradoBlock": false,
           "divorcioId": "BAE581FA80E7421B",
-          "shieldAtivo": true,
+          "shieldAtivo": false,
           "morto": false,
           "silnciado": false,
           "slots": 0,
@@ -83913,7 +83913,7 @@
           "silnciado": false
         },
         "558184216648@s.whatsapp.net": {
-          "exp": 277837,
+          "exp": 277854,
           "limit": 9,
           "role": "Ｄｉｓｒｕｐｔｏｒ　ｄｅ　Ｓｉｓｔｅｍａｓ",
           "money": 3725,
@@ -95044,10 +95044,10 @@
       "lastSuccess": 1740110986768
     },
     "grupo-perfil.js": {
-      "total": 1494,
-      "success": 1488,
-      "last": 1740111642494,
-      "lastSuccess": 1740111642494
+      "total": 1495,
+      "success": 1489,
+      "last": 1740116228208,
+      "lastSuccess": 1740116228208
     },
     "dono-reiniciar-usuario.js": {
       "total": 27,
@@ -95074,10 +95074,10 @@
       "lastSuccess": 1739392410716
     },
     "dl-ig.js": {
-      "total": 405,
-      "success": 399,
-      "last": 1740109387745,
-      "lastSuccess": 1740109387745
+      "total": 406,
+      "success": 400,
+      "last": 1740113366838,
+      "lastSuccess": 1740113366838
     },
     "buscador-lyrics.js": {
       "total": 13,
@@ -95236,10 +95236,10 @@
       "lastSuccess": 1740065287052
     },
     "cfg-pendulumBank.js": {
-      "total": 604,
-      "success": 604,
-      "last": 1740112118048,
-      "lastSuccess": 1740112118048
+      "total": 606,
+      "success": 606,
+      "last": 1740116240954,
+      "lastSuccess": 1740116240954
     },
     "makerGun.js": {
       "total": 59,
@@ -95248,10 +95248,10 @@
       "lastSuccess": 1739916398975
     },
     "grupoInventario.js": {
-      "total": 215,
-      "success": 215,
-      "last": 1740094442752,
-      "lastSuccess": 1740094442752
+      "total": 216,
+      "success": 216,
+      "last": 1740116204007,
+      "lastSuccess": 1740116204007
     },
     "funAcoes13.js": {
       "total": 193,
@@ -95886,7 +95886,7 @@
           "conta": "535441291871",
           "sepa": "SE5822427639074913",
           "wallet": "WAL-9159324339",
-          "saldo": 58180621.00720442,
+          "saldo": 58499788.960460745,
           "limiteSaque": 0
         },
         "5513981141776@s.whatsapp.net": {
@@ -96030,7 +96030,7 @@
           "conta": "572970174266",
           "sepa": "SE5197013079675816",
           "wallet": "WAL-5464985398",
-          "saldo": 10223.312872627816,
+          "saldo": 10223.566841706039,
           "limiteSaque": 2
         },
         "559285382025@s.whatsapp.net": {
