@@ -44677,7 +44677,33 @@
         }
       }
     },
-    "5513981141776@s.whatsapp.net,5511910031278@s.whatsapp.net,553898809542@s.whatsapp.net,5521970385666@s.whatsapp.net": {}
+    "5513981141776@s.whatsapp.net,5511910031278@s.whatsapp.net,553898809542@s.whatsapp.net,5521970385666@s.whatsapp.net": {},
+    "266950001303781@lid": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 0,
+      "afkInfo": {
+        "120363312968709293@g.us": {
+          "afkTime": -2,
+          "number": "266950001303781@lid",
+          "afkReason": ""
+        }
+      }
+    }
   },
   "chats": {
     "120363312968709293@g.us": {
@@ -55901,6 +55927,24 @@
           "lastMessageTime": 1740160494157,
           "messageCount": null,
           "pontos": 0
+        },
+        "266950001303781@lid": {
+          "exp": 0,
+          "limit": 0,
+          "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
+          "money": 0,
+          "level": 0,
+          "adm": false,
+          "legendary": false,
+          "banned": false,
+          "adv": 0,
+          "tentativasRoubo": 5,
+          "silenced": false,
+          "maxlevel": false,
+          "cocriador": false,
+          "lastMessageTime": 1740206416665,
+          "messageCount": null,
+          "pontos": 0
         }
       },
       "isBanned": true,
@@ -55955,7 +55999,7 @@
       "name": "Grupo Onde Fingimos Ser Loucos (Ou Não)",
       "desc": "⚠️⚠️⚠️ *PROIBIDO MENORES DE 16* ⚠️⚠️⚠️\n\n🫂 *CHAVE PIX PARA CONTRIBUIÇÃO DE PAGAMENTO DO BOOT: 4399186-9327* *!!!!!!*🫂\n\nRESPEITEM A SI MESMOS MALAFRARIAS!!! \n\n⚠️ *TERMINAMENTE PROIBIDO* 🤚🏻\n\n*DISCUTIR SOBRE POLÍTICA*\n• - *DESRESPEITO*\n• - *FICAR PEDINDO ADM*\n• - *FLOODAR / SPAMMAR* \n• - *IMPORTUNAÇÃO NO PV*\n• - *IMPLICÂNCIA COM MEMBROS*\n• - *DIVULGAR/PROMOVER* _(SEM AUTORIZAÇÃO)_\n• - *SÓ FALAR PUTARIA*_(AQUI É HOSPÍCIO, NÃO PUTEIRO)_\n• - *PRECONCEITO* _(GORDOFOBIA, XENOFOBIA, RACISMO, MACHISMO, HOMOFOBIA, ANTISEMITISMO ETC)_ \n• - *GORE / NAZISMO/ANTISEMITISMO / ISLAMOFOBIA / HENTAI / CP / ZOOFILIA / PORNOGRAFIA /XENOFOBIA*  _(DISCUSSÃO / INCENTIVO / APOLOGIA / MÍDIAS)_\n\n🔊 *NÃO NOS RESPONSABILIZAMOS POR PROBLEMAS ASSOCIADOS À:*❗\n\n• - COMPARTILHAMENTO DE DADOS PESSOAIS\n• - ABRIR ÁUDIO DUVIDOSO E/OU ESTOURADO\n• - LINK DESCONFIÁVEL\n\n⚠️ *MARCAR ADMINISTRADORES QUANDO REGRAS FOREM BURLADAS* ⚠\n\n_\"Já é difícil ter que lidar com as coisas, não vamos destruir o cantinho que a gente tem por favor\"_\n_~Carlos Chazin, 2023_︎\n\n▪️ *BOT interativo entre 00:00 - 12:00* ▪️\n\n🔷 *REDES SOCIAIS DO GRUPO*🔷\n\n🔹 *FACEBOOK:*\n\nGrupo (oficial): https://www.facebook.com/groups/4573794466077903/?ref=share\n\nGrupo (reserva):\nhttps://www.facebook.com/groups/3360052507549701/?ref=share&mibextid=NSMWBT\n\nPágina (oficial): https://www.facebook.com/profile.php?id=100091738707923&mibextid=LQQJ4d\n\n🔹 *INSTAGRAM:*\n\nInstagram.com/onde_fingimos_ser_loucos_ou_n",
       "lastSentTime": 0,
-      "totalMembros": 511,
+      "totalMembros": 510,
       "membros": [
         {
           "id": "174427329298684@lid",
@@ -56747,10 +56791,6 @@
         },
         {
           "id": "183356868321299@lid",
-          "admin": null
-        },
-        {
-          "id": "43478004318372@lid",
           "admin": null
         },
         {
@@ -58637,7 +58677,8 @@
         "128063610347594@lid": [],
         "18378450317439@lid": [],
         "268847823196164@lid": [],
-        "43478004318372@lid": []
+        "43478004318372@lid": [],
+        "266950001303781@lid": []
       }
     },
     "120363202217134158@g.us": {
@@ -83382,7 +83423,7 @@
           "silnciado": false
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 261111,
+          "exp": 261157,
           "limit": 0,
           "role": "",
           "money": 0,
@@ -83446,10 +83487,10 @@
           "vampire": 3,
           "vampireAtivo": false,
           "demonio": 5,
-          "demonioAtivo": true,
+          "demonioAtivo": false,
           "shadows": 11,
           "morto": false,
-          "shieldAtivo": true,
+          "shieldAtivo": false,
           "slots": 2,
           "lastslot": 1739798162706,
           "regTimeStart": "",
@@ -83670,13 +83711,13 @@
           "daggers": 11,
           "mortoDemonio": false,
           "lastAttemptTimestamp": "2025-02-20T15:29:36.331Z",
-          "shadowAtivo": true,
+          "shadowAtivo": false,
           "elixirs": 4,
           "artifacts": 6,
           "vampire": 3,
           "vampireAtivo": false,
           "demonio": 4,
-          "demonioAtivo": true,
+          "demonioAtivo": false,
           "shadows": 2,
           "regTimeStart": "",
           "regPrazo": "",
@@ -83744,7 +83785,7 @@
           "silnciado": false
         },
         "5513981141776@s.whatsapp.net": {
-          "exp": 390986,
+          "exp": 390999,
           "limit": 28,
           "role": "Ａｎａｌｉｓｔａ　ｄｅ　Ｃｉｂｅｒｓｅｇｕｒａｎçａ",
           "money": 601,
@@ -84120,7 +84161,7 @@
           "silnciado": false
         },
         "555596624577@s.whatsapp.net": {
-          "exp": 25999,
+          "exp": 26015,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 240,
@@ -85273,7 +85314,7 @@
           "silnciado": false
         },
         "559186189424@s.whatsapp.net": {
-          "exp": 1348,
+          "exp": 1381,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 30,
@@ -86072,7 +86113,7 @@
           "silnciado": false
         },
         "5521972321796@s.whatsapp.net": {
-          "exp": 11962,
+          "exp": 11980,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 120,
@@ -88563,7 +88604,8 @@
         "9A2BA8CE3688239EC6124509D43FEF2A",
         "78A6F644E35155AA4BC1C74C3D092762",
         "BA8F3BACFE5142D58937B35EB47C8514",
-        "641DAA1550CFFEEAEEE7063A12C83FB2"
+        "641DAA1550CFFEEAEEE7063A12C83FB2",
+        "A884527055515CCC6FBB14BBF37F50AB"
       ],
       "loja": {
         "lojaId": {
@@ -96065,7 +96107,7 @@
           "conta": "661874616333",
           "sepa": "SE4577404167973932",
           "wallet": "WAL-1059128979",
-          "saldo": 3405284.7051338954,
+          "saldo": 3405369.757290604,
           "limiteSaque": 4
         },
         "5521969915001@s.whatsapp.net": {
