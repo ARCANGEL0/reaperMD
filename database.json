@@ -83423,7 +83423,7 @@
           "silnciado": false
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 261157,
+          "exp": 261158,
           "limit": 0,
           "role": "",
           "money": 0,
@@ -83531,7 +83531,7 @@
           "silnciado": false
         },
         "558199330656@s.whatsapp.net": {
-          "exp": 120370,
+          "exp": 120402,
           "limit": 109,
           "role": "Ｍｅｍｂｒｏ　ｄｏ　ＬｕｌｚＳｅｃ",
           "money": 1950,
@@ -83579,7 +83579,7 @@
           "lastslot": "2025-02-17T11:23:20.076Z"
         },
         "554197056898@s.whatsapp.net": {
-          "exp": 370842,
+          "exp": 370930,
           "limit": 23,
           "role": "Ａｎａｌｉｓｔａ　ｄｅ　Ｃｉｂｅｒｓｅｇｕｒａｎçａ",
           "money": 0,
@@ -85019,7 +85019,7 @@
           "isKicked": true
         },
         "558197887354@s.whatsapp.net": {
-          "exp": 149150,
+          "exp": 149154,
           "limit": 18,
           "role": "Ｃａｃａｄｏｒ　ｄｅ　Ｚｅｒｏ－Ｄａｙ",
           "money": 425,
@@ -87497,7 +87497,7 @@
           "demonioAtivo": false,
           "shadows": 1,
           "shadowAtivo": false,
-          "shieldAtivo": true,
+          "shieldAtivo": false,
           "acaoTimer": "2025-02-22T00:59:12.690Z",
           "rouboTimestamp": "2025-02-21T00:59:12.690Z"
         },
@@ -88605,7 +88605,10 @@
         "78A6F644E35155AA4BC1C74C3D092762",
         "BA8F3BACFE5142D58937B35EB47C8514",
         "641DAA1550CFFEEAEEE7063A12C83FB2",
-        "A884527055515CCC6FBB14BBF37F50AB"
+        "A884527055515CCC6FBB14BBF37F50AB",
+        "FD88E1DB2F35CAC8A07F85C544C7A57F",
+        "6CFE29F48E5AD61EF4C32C4ED7D2699B",
+        "57719BE1EE3BFBD99EF0751200CE2E0D"
       ],
       "loja": {
         "lojaId": {
@@ -95599,10 +95602,10 @@
       "lastSuccess": 1737475363177
     },
     "conversor-toimg.js": {
-      "total": 113,
-      "success": 113,
-      "last": 1740058073124,
-      "lastSuccess": 1740058073124
+      "total": 114,
+      "success": 114,
+      "last": 1740211397381,
+      "lastSuccess": 1740211397381
     },
     "games-roleta.js": {
       "total": 70,
@@ -96131,7 +96134,7 @@
           "conta": "934819026141",
           "sepa": "SE8183249194361544",
           "wallet": "WAL-3202947270",
-          "saldo": 162847.69379123565,
+          "saldo": 162868.03164939667,
           "limiteSaque": 3
         },
         "553898809542@s.whatsapp.net": {
@@ -96228,7 +96231,7 @@
           "conta": "866631302710",
           "sepa": "SE8864920466621498",
           "wallet": "WAL-6715775379",
-          "saldo": 386666.6816731149,
+          "saldo": 386676.339260674,
           "limiteSaque": 1
         },
         "5521993751119@s.whatsapp.net": {
