@@ -1361,7 +1361,7 @@ const antideleteMessage = `> BYΓΞSΞC:~# extundelete /dev/sda1 -c
 let DELETEMESSAGE = await conn.sendMessage(msg.chat, {text: antideleteMessage, mentions: [participant]}, {quoted: msg})
 
 
-// conn.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
+conn.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
 } catch (e) {
 console.error(e)
 }}
