@@ -83613,7 +83613,7 @@
           "silnciado": false
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 280315,
+          "exp": 280600,
           "limit": 400,
           "role": "",
           "money": 0,
@@ -83677,7 +83677,7 @@
           "vampire": 3,
           "vampireAtivo": false,
           "demonio": 2,
-          "demonioAtivo": true,
+          "demonioAtivo": false,
           "shadows": 13,
           "morto": false,
           "shieldAtivo": false,
@@ -83856,7 +83856,7 @@
           "daggers": 0,
           "artifacts": 1,
           "vampire": 0,
-          "vampireAtivo": true,
+          "vampireAtivo": false,
           "demonio": 0,
           "demonioAtivo": false,
           "shadows": 0,
@@ -83923,7 +83923,7 @@
           "lastslot": 1740314714748
         },
         "5516981156744@s.whatsapp.net": {
-          "exp": 11036,
+          "exp": 11158,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 120,
@@ -84127,7 +84127,7 @@
           "silnciado": false
         },
         "5512997076907@s.whatsapp.net": {
-          "exp": 364193,
+          "exp": 364536,
           "limit": 15,
           "role": "Ａｎａｌｉｓｔａ　ｄｅ　Ｃｉｂｅｒｓｅｇｕｒａｎçａ",
           "money": 3444,
@@ -84179,7 +84179,7 @@
           "silnciado": false
         },
         "556295410574@s.whatsapp.net": {
-          "exp": 219563,
+          "exp": 219592,
           "limit": 4,
           "role": "Ｌｉｂｅｒａｄｏｒ　ｄｅ　Ｄａｄｏｓ",
           "money": 420,
@@ -84237,10 +84237,10 @@
           "silnciado": false
         },
         "558184216648@s.whatsapp.net": {
-          "exp": 286617,
+          "exp": 287039,
           "limit": 9,
           "role": "Ｄｉｓｒｕｐｔｏｒ　ｄｅ　Ｓｉｓｔｅｍａｓ",
-          "money": 3325,
+          "money": 3245,
           "level": 59,
           "adm": false,
           "legendary": false,
@@ -84353,7 +84353,7 @@
           "silnciado": false
         },
         "555596624577@s.whatsapp.net": {
-          "exp": 26255,
+          "exp": 26309,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 240,
@@ -84504,7 +84504,7 @@
           "shields": 0
         },
         "553888016495@s.whatsapp.net": {
-          "exp": 133554,
+          "exp": 133556,
           "limit": 7,
           "role": "Ｃａｃａｄｏｒ　ｄｅ　Ｚｅｒｏ－Ｄａｙ",
           "money": 0,
@@ -85108,7 +85108,7 @@
           "silnciado": false
         },
         "5527999248909@s.whatsapp.net": {
-          "exp": 11381,
+          "exp": 11410,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 120,
@@ -85593,7 +85593,7 @@
           "usuariosRoubados": []
         },
         "5511949104591@s.whatsapp.net": {
-          "exp": 2038,
+          "exp": 2062,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 60,
@@ -86459,7 +86459,7 @@
           "silnciado": false
         },
         "554891455576@s.whatsapp.net": {
-          "exp": 527300,
+          "exp": 527434,
           "limit": 366,
           "role": "Ｂｌａｃｋ　Ｈａｔ",
           "money": 77,
@@ -86671,7 +86671,7 @@
           "silnciado": false
         },
         "5511995690710@s.whatsapp.net": {
-          "exp": 1276,
+          "exp": 1297,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 696,
@@ -87307,7 +87307,7 @@
           "steals": 0
         },
         "5511948913851@s.whatsapp.net": {
-          "exp": 764,
+          "exp": 782,
           "limit": 0,
           "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
           "money": 0,
@@ -87679,7 +87679,7 @@
           "pontos": 0
         },
         "559192753281@s.whatsapp.net": {
-          "exp": 1003689,
+          "exp": 1003782,
           "limit": 160,
           "role": "Ａｎｏｎｙｍｏｕｓ",
           "money": 1345,
@@ -87751,7 +87751,7 @@
           "pontos": 0
         },
         "5515981911274@s.whatsapp.net": {
-          "exp": 1048,
+          "exp": 1530,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 30,
@@ -95588,10 +95588,10 @@
       "lastSuccess": 1739392410716
     },
     "dl-ig.js": {
-      "total": 417,
-      "success": 410,
-      "last": 1740358830099,
-      "lastSuccess": 1740358830099
+      "total": 418,
+      "success": 411,
+      "last": 1740372026575,
+      "lastSuccess": 1740372026575
     },
     "buscador-lyrics.js": {
       "total": 13,
@@ -95618,10 +95618,10 @@
       "lastSuccess": 1732134744175
     },
     "dl-yt_play.js": {
-      "total": 1427,
-      "success": 1421,
-      "last": 1740361055260,
-      "lastSuccess": 1740361055260
+      "total": 1428,
+      "success": 1422,
+      "last": 1740365191800,
+      "lastSuccess": 1740365191800
     },
     "dono-reporte.js": {
       "total": 93,
@@ -95792,10 +95792,10 @@
       "lastSuccess": 1739629619219
     },
     "fun-tops.js": {
-      "total": 235,
-      "success": 234,
-      "last": 1740364967909,
-      "lastSuccess": 1740364967909
+      "total": 239,
+      "success": 238,
+      "last": 1740365287271,
+      "lastSuccess": 1740365287271
     },
     "info-donar.js": {
       "total": 16,
@@ -96392,7 +96392,7 @@
           "conta": "953415981012",
           "sepa": "SE6844757256636490",
           "wallet": "WAL-0936010359",
-          "saldo": 3704306.1426923326,
+          "saldo": 3704398.2136471886,
           "limiteSaque": 1
         },
         "5521970385666@s.whatsapp.net": {
@@ -96424,7 +96424,7 @@
           "conta": "856213977478",
           "sepa": "SE4417515791941896",
           "wallet": "WAL-4945103334",
-          "saldo": 123354.67798748284,
+          "saldo": 123357.74398217948,
           "limiteSaque": 1
         },
         "554197056898@s.whatsapp.net": {
@@ -96500,7 +96500,7 @@
           "conta": "613397124961",
           "sepa": "SE9409335546048939",
           "wallet": "WAL-7396835055",
-          "saldo": 8396.264020137627,
+          "saldo": 8397.724959819017,
           "limiteSaque": 1
         },
         "5521990893085@s.whatsapp.net": {
@@ -96545,7 +96545,7 @@
           "conta": "572970174266",
           "sepa": "SE5197013079675816",
           "wallet": "WAL-5464985398",
-          "saldo": 5333.666219424672,
+          "saldo": 5336.848782297791,
           "limiteSaque": 3
         },
         "559285382025@s.whatsapp.net": {
