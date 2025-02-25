@@ -64,8 +64,7 @@ if(text) {
 user = m.quoted.sender
 } else if(m.mentionedJid) {
   user = number + '@s.whatsapp.net'
-} } catch (e) {
-} finally {
+} }finally {
 conn.groupParticipantsUpdate(m.chat, [user], 'promote')
     let newAdmin
 
