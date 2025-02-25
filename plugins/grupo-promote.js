@@ -102,6 +102,9 @@ catch (error) {
     sendSystemErrorAlert(global.db.data.chats[m.chat].language);
     
 }
+
+
+}
 handler.command = /^(promote|daradmin|darpoder)$/i
 handler.group = true
 
