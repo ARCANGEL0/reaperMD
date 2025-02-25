@@ -6442,7 +6442,7 @@
       "afkReason": "",
       "role": "",
       "reporte": 0,
-      "name": "signo encapetada (⁠￣⁠ヘ⁠￣⁠;⁠)",
+      "name": "",
       "antispam": 0,
       "antispamlastclaim": 0,
       "silenced": false,
@@ -6532,7 +6532,7 @@
       "tentativasRoubo": 5,
       "spammer": 0,
       "usuariosRoubados": [],
-      "lastmiming": 1739989349078,
+      "lastmiming": 1740519419583,
       "registradoBlock": true,
       "regTimeStart": "2025-01-08T15:30:30.046Z",
       "regPrazo": "2025-01-10T15:30:30.046Z",
@@ -45088,7 +45088,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1740511764593,
+          "lastMessageTime": 1740518004173,
           "messageCount": 1,
           "pontos": 0
         },
@@ -45106,7 +45106,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1740448647830,
+          "lastMessageTime": 1740522928363,
           "messageCount": 1,
           "pontos": 0
         },
@@ -48040,7 +48040,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1740506940768,
+          "lastMessageTime": 1740518529019,
           "messageCount": 1,
           "pontos": 0
         },
@@ -52702,7 +52702,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1740437332159,
+          "lastMessageTime": 1740518588671,
           "messageCount": 1,
           "pontos": 0
         },
@@ -83869,11 +83869,36 @@
         "cm": "",
         "xp": 0,
         "id": "",
-        "time": ""
+        "time": "",
+        "perguntaAndamento": false,
+        "loading": false,
+        "modo": true,
+        "categoria": "Estrutura de dados: Nivel CompTIA+, heap memory, hashing tables, binary trees, graphs, stacks , queues",
+        "historico": [
+          {
+            "role": "system",
+            "content": "Voce é uma IA assistente para gerar quiz, perguntas e vestibulares\nvoce deve criar objetos em JS para perguntas, con alternativas, resposta e explicação seguindo este modelo:\n\n\n       { \n         Pergunta: 'Pergunta dentro do TEMA DA CATEGORIA',\n    Opcoes: {\n      A: 'Opcao',\n      B: 'Opcao',\n      C: 'Opcao',\n      D: 'Opcao'\n    },\n    Pontos: 'Valor de acordo com a dificuldade',\n     Money: 'Valor por dificuldade',\n     XP: 'Valor por dificuldade',\n    Resposta: 'Opcao certa A, B, C ou D',\n    Motivo: 'Explicacao detalhada da resposta'\n  }\n\n\nRetorne UM OBJETO JSON COMO PLAIN TEXT E NADA MAIS!!!\nno atributo Resposta, voce deve colocar apenas a letra certa!!\nFACA AS PERGUNTAS NO IDIOMA DA CATEGORIA E DO USUARIO!!! \nSE A CATEGORIA É INGLES, A PERGUNTA É EM INGLES\nSE A CATEGORIA É EM PORTUGUES, A PERGUNTA É EM PORTUGUES\nfaca perguntas dificeis e complexas adequadas a um vestibular referente ao tema\nAjuste o valor de Pontos, Money e XP de acordo com a complexidade e tema da\n, os valores minimos sao 25 pontos, 50 Money e 200xp, faca os valores serem\ndinamicos e variaveis conforme a complexidade!\nEvite repetir as mesmas perguntas"
+          },
+          {
+            "role": "user",
+            "content": "Agora siga as instrucoes que te foram dada  e crie o objeto JSON de uma pergunta com os MESNMOS CAMPOS/PROPRIEDADES no exemplo!!! { Pergunta: \"Pergunta dentro do TEMA DA CATEGORIA\", Opcoes: { A: \"Opcao\", B: \"Opcao\", C: \"Opcao\", D: \"Opcao\" }, Pontos: \"Valor de acordo com a dificuldade\", Money: \"Valor por dificuldade\", XP: \"Valor por dificuldade\", Resposta: \"Opcao certa A, B, C ou D\", Motivo: \"Explicacao detalhada da resposta\" } Retorne APENAS UM OBJETO JSON E MAIS NADA! use o \" nas propriedades do objeto. o usuario ira lhe passar a categoria que deseja, e voce deve gerar uma pergunta baseada no IDIOMA da categoria!! Se for SCIENCE, a pergunta deve ser ingles. Se for CIENCIA, a pergunta deve ser portugues. Se for MEDICINE, deve ser em ingles. se for MEDICINA, deve ser em portugues, etc.\n       \n       \n  NAO MANDE PERGUNTAS SEMELHANTES AUE VOCE JA TENHA ME ENVIADO, SEJA CRIATIVO E\n CRIE perguntas complexas e didiceis, finja que isto e um vestibular da maior\n faculdade que há, o vestibular tem que ser dificil\n        Categoria:\n        [Estrutura de dados: Nivel CompTIA+, heap memory, hashing tables, binary trees, graphs, stacks , queues]"
+          },
+          {
+            "role": "user",
+            "content": "undefined"
+          },
+          {
+            "role": "assistant",
+            "content": "{\n  \"Pergunta\": \"Qual é a principal vantagem do uso de tabelas de hash em comparação com outras estruturas de dados, como listas encadeadas?\",\n  \"Opcoes\": {\n    \"A\": \"As tabelas de hash oferecem acesso sequencial mais rápido.\",\n    \"B\": \"As tabelas de hash permitem a busca em tempo constante, em média.\",\n    \"C\": \"As tabelas de hash consomem menos memória do que listas encadeadas.\",\n    \"D\": \"As tabelas de hash são mais fáceis de implementar do que árvores binárias.\"\n  },\n  \"Pontos\": \"40\",\n  \"Money\": \"100\",\n  \"XP\": \"300\",\n  \"Resposta\": \"B\",\n  \"Motivo\": \"As tabelas de hash permitem a busca em tempo constante, em média, devido à sua capacidade de mapear chaves a índices de forma eficiente. Isso contrasta com listas encadeadas, onde a busca pode levar tempo linear no pior caso. Embora a implementação de tabelas de hash possa ser mais complexa, sua eficiência em operações de busca é uma das principais razões para seu uso em aplicações que requerem acesso rápido a dados.\"\n}"
+          }
+        ],
+        "pergunta": {},
+        "pontos": "40",
+        "mony": "100"
       },
       "users": {
         "351927285125@s.whatsapp.net": {
-          "exp": 813,
+          "exp": 820,
           "limit": 660000000000066,
           "role": "𝑵𝒆𝒗𝒆𝒓𝒎𝒐𝒓𝒆 \n𝙼𝚎𝚜𝚝𝚛𝚎 𝚍𝚘𝚜 𝚌𝚘𝚛𝚟𝚘𝚜",
           "money": 666000000000000100,
@@ -83913,7 +83938,7 @@
           "silnciado": false
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 294620,
+          "exp": 295851,
           "limit": 400,
           "role": "",
           "money": 264,
@@ -83936,10 +83961,10 @@
           "silnciado": false
         },
         "5521970385666@s.whatsapp.net": {
-          "exp": 10649059,
-          "limit": 294437,
+          "exp": 10649238,
+          "limit": 294632,
           "role": "Ｅｌｌｉｏｔ　Ａｌｄｅｒｓｏｎ",
-          "money": 504000,
+          "money": 524800,
           "level": 100,
           "adm": true,
           "legendary": false,
@@ -83956,9 +83981,9 @@
             "557488681759@s.whatsapp.net"
           ],
           "shields": 6,
-          "trojans": 590286,
+          "trojans": 590676,
           "bankName": "Sra. Mercês",
-          "acaoTimer": "2025-02-25T19:36:46.389Z",
+          "acaoTimer": "2025-02-25T21:08:06.080Z",
           "rouboTimestamp": "2025-02-25T19:36:46.389Z",
           "mortoDemonio": false,
           "steals": 55,
@@ -83976,8 +84001,8 @@
           "elixirs": 1,
           "vampire": 3,
           "vampireAtivo": false,
-          "demonio": 4,
-          "demonioAtivo": false,
+          "demonio": 3,
+          "demonioAtivo": true,
           "shadows": 14,
           "morto": false,
           "shieldAtivo": true,
@@ -84021,7 +84046,7 @@
           "silnciado": false
         },
         "558199330656@s.whatsapp.net": {
-          "exp": 132713,
+          "exp": 133538,
           "limit": 103,
           "role": "Ｃａｃａｄｏｒ　ｄｅ　Ｚｅｒｏ－Ｄａｙ",
           "money": 45089,
@@ -84069,7 +84094,7 @@
           "lastslot": 1740327694062
         },
         "554197056898@s.whatsapp.net": {
-          "exp": 392111,
+          "exp": 392728,
           "limit": 2,
           "role": "Ａｎａｌｉｓｔａ　ｄｅ　Ｃｉｂｅｒｓｅｇｕｒａｎçａ",
           "money": 0,
@@ -84092,7 +84117,7 @@
           "bankName": "Nirriii",
           "shields": 0,
           "steals": 23,
-          "acaoTimer": "2025-02-25T19:29:06.262Z",
+          "acaoTimer": "2025-02-25T21:03:48.819Z",
           "rouboTimestamp": "2025-02-25T19:29:06.263Z",
           "artifacts": 0,
           "advLink": 2,
@@ -84119,7 +84144,7 @@
           "lastslot": "2025-02-23T22:22:41.750Z"
         },
         "5521969915001@s.whatsapp.net": {
-          "exp": 424346,
+          "exp": 425519,
           "limit": 77,
           "role": "Ｄｅｓｅｎｖｏｌｖｅｄｏｒ　ｄｅ　Ｅｘｐｌｏｉｔｓ",
           "money": 1271,
@@ -84174,10 +84199,10 @@
           "silnciado": false
         },
         "553898809542@s.whatsapp.net": {
-          "exp": 66997667,
-          "limit": 277972,
+          "exp": 66999592,
+          "limit": 279637,
           "role": "Ｅｌｌｉｏｔ　Ａｌｄｅｒｓｏｎ",
-          "money": 72000,
+          "money": 249600,
           "level": 100,
           "adm": true,
           "legendary": false,
@@ -84194,7 +84219,7 @@
             "558199330656@s.whatsapp.net"
           ],
           "rouboTimestamp": "2025-02-22T11:17:16.085Z",
-          "trojans": 560057,
+          "trojans": 563387,
           "acaoTimer": "2025-02-24T16:15:52.184Z",
           "shields": 2,
           "bankName": "𝐺𝑒𝑟 𝑀𝑜𝑡𝑎",
@@ -84247,7 +84272,7 @@
           "usuariosRoubados": []
         },
         "5511957799646@s.whatsapp.net": {
-          "exp": 248681,
+          "exp": 248788,
           "limit": 9,
           "role": "Ｄｉｓｒｕｐｔｏｒ　ｄｅ　Ｓｉｓｔｅｍａｓ",
           "money": 1607,
@@ -84277,10 +84302,10 @@
           "silnciado": false
         },
         "5513981141776@s.whatsapp.net": {
-          "exp": 409879,
+          "exp": 411238,
           "limit": 5,
           "role": "Ａｎａｌｉｓｔａ　ｄｅ　Ｃｉｂｅｒｓｅｇｕｒａｎçａ",
-          "money": 248,
+          "money": 168,
           "level": 69,
           "adm": true,
           "legendary": false,
@@ -84326,7 +84351,7 @@
           "lastslot": 1740431387011
         },
         "553188507912@s.whatsapp.net": {
-          "exp": 5309,
+          "exp": 5355,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 90,
@@ -84349,7 +84374,7 @@
           "silnciado": false
         },
         "559691822090@s.whatsapp.net": {
-          "exp": 228663,
+          "exp": 228690,
           "limit": 4,
           "role": "Ｌｉｂｅｒａｄｏｒ　ｄｅ　Ｄａｄｏｓ",
           "money": 415,
@@ -84427,11 +84452,11 @@
           "silnciado": false
         },
         "5512997076907@s.whatsapp.net": {
-          "exp": 368017,
+          "exp": 371175,
           "limit": 15,
           "role": "Ａｎａｌｉｓｔａ　ｄｅ　Ｃｉｂｅｒｓｅｇｕｒａｎçａ",
-          "money": 3444,
-          "level": 66,
+          "money": 3879,
+          "level": 67,
           "adm": false,
           "legendary": false,
           "banned": false,
@@ -84479,7 +84504,7 @@
           "silnciado": false
         },
         "556295410574@s.whatsapp.net": {
-          "exp": 220321,
+          "exp": 220811,
           "limit": 4,
           "role": "Ｌｉｂｅｒａｄｏｒ　ｄｅ　Ｄａｄｏｓ",
           "money": 260,
@@ -84537,10 +84562,10 @@
           "silnciado": false
         },
         "558184216648@s.whatsapp.net": {
-          "exp": 290495,
+          "exp": 291343,
           "limit": 12,
           "role": "Ｄｅｆｅｎｓｏｒ　ｄｅ　Ｒｅｄｅｓ",
-          "money": 2565,
+          "money": 2325,
           "level": 60,
           "adm": false,
           "legendary": false,
@@ -84586,7 +84611,7 @@
           "shadows": 0
         },
         "558387194995@s.whatsapp.net": {
-          "exp": 2780,
+          "exp": 2819,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 60,
@@ -84653,7 +84678,7 @@
           "silnciado": false
         },
         "555596624577@s.whatsapp.net": {
-          "exp": 28421,
+          "exp": 28646,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 300,
@@ -85515,7 +85540,7 @@
           "isKicked": true
         },
         "558197887354@s.whatsapp.net": {
-          "exp": 158954,
+          "exp": 160563,
           "limit": 18,
           "role": "Ｃａｃａｄｏｒ　ｄｅ　Ｚｅｒｏ－Ｄａｙ",
           "money": 2302,
@@ -85646,7 +85671,7 @@
           "silnciado": false
         },
         "5521977371125@s.whatsapp.net": {
-          "exp": 1336,
+          "exp": 1422,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 30,
@@ -85667,7 +85692,7 @@
           "silnciado": false
         },
         "559384036433@s.whatsapp.net": {
-          "exp": 102048,
+          "exp": 102060,
           "limit": 0,
           "role": "Ｅｎｇｅｎｈｅｉｒｏ　Ｓｏｃｉａｌ",
           "money": 425,
@@ -86070,7 +86095,7 @@
           "silnciado": false
         },
         "555197716762@s.whatsapp.net": {
-          "exp": 104033,
+          "exp": 104642,
           "limit": 11,
           "role": "Ｅｎｇｅｎｈｅｉｒｏ　Ｓｏｃｉａｌ",
           "money": 8611,
@@ -86091,7 +86116,7 @@
           "isKicked": false,
           "usuariosRoubados": [],
           "shields": 0,
-          "acaoTimer": "2025-02-25T12:17:35.715Z",
+          "acaoTimer": "2025-02-25T21:42:05.096Z",
           "rouboTimestamp": "2025-02-23T10:32:02.620Z",
           "mortoDemonio": false,
           "lastAttemptTimestamp": "2025-01-22T03:56:09.352Z",
@@ -86540,7 +86565,7 @@
           "usuariosRoubados": []
         },
         "553199378353@s.whatsapp.net": {
-          "exp": 3775,
+          "exp": 3858,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 161,
@@ -86766,7 +86791,7 @@
           "silnciado": false
         },
         "554891455576@s.whatsapp.net": {
-          "exp": 530018,
+          "exp": 530099,
           "limit": 366,
           "role": "Ｂｌａｃｋ　Ｈａｔ",
           "money": 0,
@@ -87445,7 +87470,7 @@
           "silnciado": false
         },
         "5513981963758@s.whatsapp.net": {
-          "exp": 11293,
+          "exp": 11612,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 120,
@@ -88099,7 +88124,7 @@
           "pontos": 0
         },
         "553171158600@s.whatsapp.net": {
-          "exp": 20780,
+          "exp": 20839,
           "limit": 0,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 60,
@@ -88244,7 +88269,7 @@
       "lastSentTime": 0,
       "name": "Los Birutas 😵‍💫",
       "desc": "❌ *REGRAS* ❌\n\n•ᴘʀᴏɪʙɪᴅᴏ ᴍᴇɴᴏʀᴇꜱ ᴅᴇ 𝟣𝟨 ᴀɴᴏꜱ\n•ᴘʀᴏɪʙɪᴅᴏ ʙʀɪɢᴀꜱ ᴇɴᴛʀᴇ ᴍᴇᴍʙʀᴏꜱ\n•ᴘʀᴏɪʙɪᴅᴏ ᴘɪᴀᴅᴀ ᴄᴏᴍ ᴏ ʙɪɢᴏᴅɪɴʜᴏ\n•ᴘʀᴏɪʙɪᴅᴏ ᴘʀᴇᴄᴏɴᴄᴇɪᴛᴏ ᴇ xᴇɴ𝟢ꜰ𝟢ʙɪᴀ\n•ᴘʀᴏɪʙɪᴅᴏ ɴᴜᴅ€ꜱ ᴇ ᴘᴏʀɴᴏɢʀ@ꜰ\n•ᴘʀᴏɪʙɪᴅᴏ ᴘᴇʀᴛᴜʀʙᴀʀ ᴇᴍ ᴘᴠ ꜱᴇᴍ ᴘᴇʀᴍɪꜱꜱãᴏ\n> _ꜱᴇ ꜰᴏʀ ꜱᴀɪʀ ᴅᴏ ɢʀᴜᴘᴏ ᴇ ᴠᴏʟᴛᴀʀ ᴅᴇᴘᴏɪꜱ_ _ᴀᴠɪꜱᴇ ᴀɴᴛᴇꜱ ᴀ ᴀʟɢᴜᴍ ᴀᴅᴍ._\n•ᴄᴏɴꜰᴜꜱãᴏ ᴅᴇ ᴄᴀꜱᴀʟ, ɢᴇʀᴀ ᴀᴅᴠ\n•ᴏ ʜᴏʀáʀɪᴏ ᴅᴏ ᴊᴏɢᴏ ᴅᴀ ᴅɪꜱᴄóʀᴅɪᴀ, é ʟɪʙᴇʀᴀᴅᴏ ᴘʀᴀ ᴢᴏᴀʀ ᴄᴏᴍ ᴅɪꜱᴄóʀᴅɪᴀ, ᴄᴏɴᴛᴀɴᴛᴏ ǫᴜᴇ ʜᴀᴊᴀ ʀᴇꜱᴘᴇɪᴛᴏ. \n•ᴘʀᴏɪʙɪᴅᴏ ꜰʟᴏᴏᴅᴀʀ. 𝟨 ᴏᴜ ᴍᴀɪꜱ ɪᴍᴀɢᴇɴꜱ ᴏᴜ ꜰɪɢᴜʀɪɴʜᴀꜱ é ᴀᴅᴠ. •\nɪᴍᴘʟɪᴄâɴᴄɪᴀ ᴄᴏᴍ ᴍᴇᴍʙʀᴏ ɢᴇʀᴀ ᴀᴅᴠ.\n\n*LIBERADO:*\n_>Figurinhas leves de humor diversos_\n_>Figurinhas peit0$ e Bund4s, com moderação_\n\nLink: https://chat.whatsapp.com/ERwQ8nEH824KhFP7pJmCJh",
-      "totalMembros": 98,
+      "totalMembros": 97,
       "membros": [
         {
           "id": "559384036433@s.whatsapp.net",
@@ -88427,10 +88452,6 @@
           "admin": null
         },
         {
-          "id": "554197056898@s.whatsapp.net",
-          "admin": null
-        },
-        {
           "id": "553898409391@s.whatsapp.net",
           "admin": null
         },
@@ -88496,7 +88517,7 @@
         },
         {
           "id": "351927285125@s.whatsapp.net",
-          "admin": null
+          "admin": "admin"
         },
         {
           "id": "5512997907267@s.whatsapp.net",
@@ -89361,6 +89382,12 @@
           "titulo": [],
           "id": [],
           "links": []
+        }
+      },
+      "jogadores": {
+        "351927285125@s.whatsapp.net": {
+          "xp": -10,
+          "name": "𝙷𝚎𝚗𝚛𝚢 𝙰𝚛𝚌𝚊𝚗𝚐𝚎𝚕𝚘"
         }
       }
     },
@@ -93692,41 +93719,9 @@
       "nsfw": true
     },
     "120363360114833087@g.us": {
-      "quiz": {
-        "math": false,
-        "cp": "",
-        "ca": "",
-        "cm": "",
-        "xp": 0,
-        "id": "",
-        "time": "",
-        "perguntaAndamento": false,
-        "loading": true,
-        "modo": true,
-        "categoria": "perguntas dificeis do CompTIA+",
-        "historico": [
-          {
-            "role": "system",
-            "content": "Voce é uma IA assistente para gerar quiz, perguntas e vestibulares\nvoce deve criar objetos em JS para perguntas, con alternativas, resposta e explicação seguindo este modelo:\n\n\n       { \n         Pergunta: 'Pergunta dentro do TEMA DA CATEGORIA',\n    Opcoes: {\n      A: 'Opcao',\n      B: 'Opcao',\n      C: 'Opcao',\n      D: 'Opcao'\n    },\n    Pontos: 'Valor de acordo com a dificuldade',\n     Money: 'Valor por dificuldade',\n     XP: 'Valor por dificuldade',\n    Resposta: 'Opcao certa A, B, C ou D',\n    Motivo: 'Explicacao detalhada da resposta'\n  }\n\n\nRetorne UM OBJETO JSON COMO PLAIN TEXT E NADA MAIS!!!\nno atributo Resposta, voce deve colocar apenas a letra certa!!\nFACA AS PERGUNTAS NO IDIOMA DA CATEGORIA E DO USUARIO!!! \nSE A CATEGORIA É INGLES, A PERGUNTA É EM INGLES\nSE A CATEGORIA É EM PORTUGUES, A PERGUNTA É EM PORTUGUES\nfaca perguntas dificeis e complexas adequadas a um vestibular referente ao tema\nAjuste o valor de Pontos, Money e XP de acordo com a complexidade e tema da\n, os valores minimos sao 25 pontos, 50 Money e 200xp, faca os valores serem\ndinamicos e variaveis conforme a complexidade!\nEvite repetir as mesmas perguntas"
-          },
-          {
-            "role": "user",
-            "content": "Agora siga as instrucoes que te foram dada  e crie o objeto JSON de uma pergunta com os MESNMOS CAMPOS/PROPRIEDADES no exemplo!!! { Pergunta: \"Pergunta dentro do TEMA DA CATEGORIA\", Opcoes: { A: \"Opcao\", B: \"Opcao\", C: \"Opcao\", D: \"Opcao\" }, Pontos: \"Valor de acordo com a dificuldade\", Money: \"Valor por dificuldade\", XP: \"Valor por dificuldade\", Resposta: \"Opcao certa A, B, C ou D\", Motivo: \"Explicacao detalhada da resposta\" } Retorne APENAS UM OBJETO JSON E MAIS NADA! use o \" nas propriedades do objeto. o usuario ira lhe passar a categoria que deseja, e voce deve gerar uma pergunta baseada no IDIOMA da categoria!! Se for SCIENCE, a pergunta deve ser ingles. Se for CIENCIA, a pergunta deve ser portugues. Se for MEDICINE, deve ser em ingles. se for MEDICINA, deve ser em portugues, etc.\n       \n       \n  NAO MANDE PERGUNTAS SEMELHANTES AUE VOCE JA TENHA ME ENVIADO, SEJA CRIATIVO E\n CRIE perguntas complexas e didiceis, finja que isto e um vestibular da maior\n faculdade que há, o vestibular tem que ser dificil\n        Categoria:\n        [perguntas dificeis do CompTIA+]"
-          },
-          {
-            "role": "user",
-            "content": "undefined"
-          },
-          {
-            "role": "assistant",
-            "content": "```json\n{\n  \"Pergunta\": \"What is the primary purpose of a firewall in a network?\",\n  \"Opcoes\": {\n    \"A\": \"To provide a backup for data storage\",\n    \"B\": \"To monitor and control incoming and outgoing network traffic\",\n    \"C\": \"To enhance the speed of the network\",\n    \"D\": \"To encrypt data transmitted over the network\"\n  },\n  \"Pontos\": \"35\",\n  \"Money\": \"75\",\n  \"XP\": \"300\",\n  \"Resposta\": \"B\",\n  \"Motivo\": \"A firewall is a security device that monitors and controls the incoming and outgoing network traffic based on predetermined security rules. Its primary purpose is to establish a barrier between a trusted internal network and untrusted external networks, such as the internet.\"\n}\n```"
-          }
-        ],
-        "pergunta": "```json\n{\n  \"Pergunta\": \"What is the primary purpose of a firewall in a network?\",\n  \"Opcoes\": {\n    \"A\": \"To provide a backup for data storage\",\n    \"B\": \"To monitor and control incoming and outgoing network traffic\",\n    \"C\": \"To enhance the speed of the network\",\n    \"D\": \"To encrypt data transmitted over the network\"\n  },\n  \"Pontos\": \"35\",\n  \"Money\": \"75\",\n  \"XP\": \"300\",\n  \"Resposta\": \"B\",\n  \"Motivo\": \"A firewall is a security device that monitors and controls the incoming and outgoing network traffic based on predetermined security rules. Its primary purpose is to establish a barrier between a trusted internal network and untrusted external networks, such as the internet.\"\n}\n```"
-      },
       "users": {
         "351927285125@s.whatsapp.net": {
-          "exp": 1326,
+          "exp": 2005,
           "limit": 660000000000066,
           "role": "𝑵𝒆𝒗𝒆𝒓𝒎𝒐𝒓𝒆 \n𝙼𝚎𝚜𝚝𝚛𝚎 𝚍𝚘𝚜 𝚌𝚘𝚛𝚟𝚘𝚜",
           "money": 666000000000000100,
@@ -93739,9 +93734,9 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1740485257989,
+          "lastMessageTime": 1740521825324,
           "messageCount": 1,
-          "pontos": 0,
+          "pontos": 85,
           "tempBan": false,
           "coadmin": false,
           "slots": 666,
@@ -93762,7 +93757,7 @@
           "rouboTimestamp": "2025-02-11T21:26:06.857Z"
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 12268,
+          "exp": 13105,
           "limit": 0,
           "role": "",
           "money": 0,
@@ -93775,7 +93770,7 @@
           "silenced": false,
           "maxlevel": true,
           "cocriador": false,
-          "lastMessageTime": 1740358830144,
+          "lastMessageTime": 1740521825910,
           "messageCount": 1,
           "pontos": 0,
           "tempBan": false,
@@ -93803,7 +93798,7 @@
           "advLink": 0
         }
       },
-      "isBanned": false,
+      "isBanned": true,
       "welcome": true,
       "detect": false,
       "language": "pt",
@@ -94115,6 +94110,37 @@
           "resposta": ""
         },
         "351927285125@s.whatsapp.net": []
+      },
+      "jogadores": {
+        "351927285125@s.whatsapp.net": {
+          "xp": -30,
+          "name": "𝙷𝚎𝚗𝚛𝚢 𝙰𝚛𝚌𝚊𝚗𝚐𝚎𝚕𝚘"
+        }
+      },
+      "quiz": {
+        "perguntaAndamento": false,
+        "loading": true,
+        "modo": true,
+        "categoria": "Estrutura de dados: calculo e funcoes de ativacao, matematica",
+        "historico": [
+          {
+            "role": "system",
+            "content": "Voce é uma IA assistente para gerar quiz, perguntas e vestibulares\nvoce deve criar objetos em JS para perguntas, con alternativas, resposta e explicação seguindo este modelo:\n\n\n       { \n         Pergunta: 'Pergunta dentro do TEMA DA CATEGORIA',\n    Opcoes: {\n      A: 'Opcao',\n      B: 'Opcao',\n      C: 'Opcao',\n      D: 'Opcao'\n    },\n    Pontos: 'Valor de acordo com a dificuldade',\n     Money: 'Valor por dificuldade',\n     XP: 'Valor por dificuldade',\n    Resposta: 'Opcao certa A, B, C ou D',\n    Motivo: 'Explicacao detalhada da resposta'\n  }\n\n\nRetorne UM OBJETO JSON COMO PLAIN TEXT E NADA MAIS!!!\nno atributo Resposta, voce deve colocar apenas a letra certa!!\nFACA AS PERGUNTAS NO IDIOMA DA CATEGORIA E DO USUARIO!!! \nSE A CATEGORIA É INGLES, A PERGUNTA É EM INGLES\nSE A CATEGORIA É EM PORTUGUES, A PERGUNTA É EM PORTUGUES\nfaca perguntas dificeis e complexas adequadas a um vestibular referente ao tema\nAjuste o valor de Pontos, Money e XP de acordo com a complexidade e tema da\n, os valores minimos sao 25 pontos, 50 Money e 200xp, faca os valores serem\ndinamicos e variaveis conforme a complexidade!\nEvite repetir as mesmas perguntas"
+          },
+          {
+            "role": "user",
+            "content": "Agora siga as instrucoes que te foram dada  e crie o objeto JSON de uma pergunta com os MESNMOS CAMPOS/PROPRIEDADES no exemplo!!! { Pergunta: \"Pergunta dentro do TEMA DA CATEGORIA\", Opcoes: { A: \"Opcao\", B: \"Opcao\", C: \"Opcao\", D: \"Opcao\" }, Pontos: \"Valor de acordo com a dificuldade\", Money: \"Valor por dificuldade\", XP: \"Valor por dificuldade\", Resposta: \"Opcao certa A, B, C ou D\", Motivo: \"Explicacao detalhada da resposta\" } Retorne APENAS UM OBJETO JSON E MAIS NADA! use o \" nas propriedades do objeto. o usuario ira lhe passar a categoria que deseja, e voce deve gerar uma pergunta baseada no IDIOMA da categoria!! Se for SCIENCE, a pergunta deve ser ingles. Se for CIENCIA, a pergunta deve ser portugues. Se for MEDICINE, deve ser em ingles. se for MEDICINA, deve ser em portugues, etc.\n       \n       \n  NAO MANDE PERGUNTAS SEMELHANTES AUE VOCE JA TENHA ME ENVIADO, SEJA CRIATIVO E\n CRIE perguntas complexas e didiceis, finja que isto e um vestibular da maior\n faculdade que há, o vestibular tem que ser dificil\n        Categoria:\n        [Estrutura de dados: calculo e funcoes de ativacao, matematica]"
+          },
+          {
+            "role": "user",
+            "content": "undefined"
+          },
+          {
+            "role": "assistant",
+            "content": "```json\n{\n  \"Pergunta\": \"Qual é a diferença entre 'null' e 'undefined' em JavaScript?\",\n  \"Opcoes\": {\n    \"A\": \"'null' é um valor atribuído intencionalmente, enquanto 'undefined' é um valor atribuído automaticamente.\",\n    \"B\": \"'null' e 'undefined' são sempre iguais em comparação estrita.\",\n    \"C\": \"'null' indica que uma variável não foi inicializada, enquanto 'undefined' indica que a variável não existe.\",\n    \"D\": \"'null' é um tipo de dado, enquanto 'undefined' não é.\"\n  },\n  \"Pontos\": \"40\",\n  \"Money\": \"80\",\n  \"XP\": \"300\",\n  \"Resposta\": \"A\",\n  \"Motivo\": \"'null' é um valor que representa a ausência intencional de um valor, enquanto 'undefined' é um valor que é atribuído automaticamente a variáveis que foram declaradas mas não inicializadas. Isso é importante para evitar confusões ao lidar com variáveis em JavaScript.\"\n}\n```"
+          }
+        ],
+        "pergunta": "```json\n{\n  \"Pergunta\": \"Qual é a diferença entre 'null' e 'undefined' em JavaScript?\",\n  \"Opcoes\": {\n    \"A\": \"'null' é um valor atribuído intencionalmente, enquanto 'undefined' é um valor atribuído automaticamente.\",\n    \"B\": \"'null' e 'undefined' são sempre iguais em comparação estrita.\",\n    \"C\": \"'null' indica que uma variável não foi inicializada, enquanto 'undefined' indica que a variável não existe.\",\n    \"D\": \"'null' é um tipo de dado, enquanto 'undefined' não é.\"\n  },\n  \"Pontos\": \"40\",\n  \"Money\": \"80\",\n  \"XP\": \"300\",\n  \"Resposta\": \"A\",\n  \"Motivo\": \"'null' é um valor que representa a ausência intencional de um valor, enquanto 'undefined' é um valor que é atribuído automaticamente a variáveis que foram declaradas mas não inicializadas. Isso é importante para evitar confusões ao lidar com variáveis em JavaScript.\"\n}\n```"
       }
     },
     "79027838669@s.whatsapp.net": {
@@ -95950,10 +95976,10 @@
       "lastSuccess": 1740484972208
     },
     "dono-update.js": {
-      "total": 187,
-      "success": 187,
-      "last": 1740335586322,
-      "lastSuccess": 1740335586322
+      "total": 193,
+      "success": 193,
+      "last": 1740521824481,
+      "lastSuccess": 1740521824481
     },
     "menu-menu.js": {
       "total": 310,
@@ -95992,10 +96018,10 @@
       "lastSuccess": 1739280072369
     },
     "funAcoes7.js": {
-      "total": 2271,
-      "success": 2261,
-      "last": 1740512206390,
-      "lastSuccess": 1740512206390
+      "total": 2272,
+      "success": 2262,
+      "last": 1740517686086,
+      "lastSuccess": 1740517686086
     },
     "grupo-perfil.js": {
       "total": 1622,
@@ -96028,10 +96054,10 @@
       "lastSuccess": 1739392410716
     },
     "dl-ig.js": {
-      "total": 428,
-      "success": 421,
-      "last": 1740492812333,
-      "lastSuccess": 1740492812333
+      "total": 429,
+      "success": 422,
+      "last": 1740516680934,
+      "lastSuccess": 1740516680934
     },
     "buscador-lyrics.js": {
       "total": 13,
@@ -96040,10 +96066,10 @@
       "lastSuccess": 1738434056748
     },
     "grupo-promote.js": {
-      "total": 13,
-      "success": 6,
-      "last": 1737595201222,
-      "lastSuccess": 1732654283976
+      "total": 19,
+      "success": 8,
+      "last": 1740521839174,
+      "lastSuccess": 1740521839174
     },
     "ia-fSociety.js": {
       "total": 7,
@@ -96058,10 +96084,10 @@
       "lastSuccess": 1732134744175
     },
     "dl-yt_play.js": {
-      "total": 1457,
-      "success": 1450,
-      "last": 1740511705531,
-      "lastSuccess": 1740511705531
+      "total": 1461,
+      "success": 1454,
+      "last": 1740519259941,
+      "lastSuccess": 1740519259941
     },
     "dono-reporte.js": {
       "total": 96,
@@ -96100,10 +96126,10 @@
       "lastSuccess": 1738679443205
     },
     "sticker-sticker.js": {
-      "total": 1319,
-      "success": 1319,
-      "last": 1740515241042,
-      "lastSuccess": 1740515241042
+      "total": 1320,
+      "success": 1320,
+      "last": 1740519419583,
+      "lastSuccess": 1740519419583
     },
     "conversor-totext.js": {
       "total": 20,
@@ -96178,10 +96204,10 @@
       "lastSuccess": 1740502740744
     },
     "fun-acoes.js": {
-      "total": 533,
-      "success": 517,
-      "last": 1740509369101,
-      "lastSuccess": 1740509369101
+      "total": 537,
+      "success": 520,
+      "last": 1740519727139,
+      "lastSuccess": 1740519727139
     },
     "cfgLoja.js": {
       "total": 290,
@@ -96202,10 +96228,10 @@
       "lastSuccess": 1740434761517
     },
     "grupoInventario.js": {
-      "total": 300,
-      "success": 300,
-      "last": 1740512225718,
-      "lastSuccess": 1740512225718
+      "total": 301,
+      "success": 301,
+      "last": 1740517691576,
+      "lastSuccess": 1740517691576
     },
     "funAcoes13.js": {
       "total": 207,
@@ -96262,10 +96288,10 @@
       "lastSuccess": 0
     },
     "antiver2.js": {
-      "total": 143,
-      "success": 127,
-      "last": 1740505629874,
-      "lastSuccess": 1740505629874
+      "total": 145,
+      "success": 129,
+      "last": 1740520546549,
+      "lastSuccess": 1740520546549
     },
     "grupo-restaurar.js": {
       "total": 37,
@@ -96298,10 +96324,10 @@
       "lastSuccess": 1740455907574
     },
     "quiz.js": {
-      "total": 460,
-      "success": 395,
-      "last": 1739332023678,
-      "lastSuccess": 1739332023678
+      "total": 487,
+      "success": 421,
+      "last": 1740521394283,
+      "lastSuccess": 1740521394283
     },
     "funHoroscopo.js": {
       "total": 22,
@@ -96840,7 +96866,7 @@
           "conta": "535441291871",
           "sepa": "SE5822427639074913",
           "wallet": "WAL-9159324339",
-          "saldo": 1033355118.4985164,
+          "saldo": 1033688876.2654389,
           "limiteSaque": 3
         },
         "5513981141776@s.whatsapp.net": {
@@ -96848,15 +96874,15 @@
           "conta": "661874616333",
           "sepa": "SE4577404167973932",
           "wallet": "WAL-1059128979",
-          "saldo": 8853483.011168791,
-          "limiteSaque": 7
+          "saldo": 8871315.193007655,
+          "limiteSaque": 0
         },
         "5521969915001@s.whatsapp.net": {
           "titular": "Yasmin Nascimento.",
           "conta": "730320130820",
           "sepa": "SE2332532343911374",
           "wallet": "WAL-9541940271",
-          "saldo": 8810775.32574569,
+          "saldo": 8825451.697210435,
           "limiteSaque": 2
         },
         "556295410574@s.whatsapp.net": {
@@ -96864,7 +96890,7 @@
           "conta": "856213977478",
           "sepa": "SE4417515791941896",
           "wallet": "WAL-4945103334",
-          "saldo": 123477.4816244008,
+          "saldo": 123548.04965192844,
           "limiteSaque": 1
         },
         "554197056898@s.whatsapp.net": {
@@ -96872,7 +96898,7 @@
           "conta": "934819026141",
           "sepa": "SE8183249194361544",
           "wallet": "WAL-3202947270",
-          "saldo": 193494.6335911561,
+          "saldo": 193658.12674196748,
           "limiteSaque": 0
         },
         "553898809542@s.whatsapp.net": {
@@ -96880,7 +96906,7 @@
           "conta": "396664072159",
           "sepa": "SE8065925013929199",
           "wallet": "WAL-9124202523",
-          "saldo": 165610918.23933628,
+          "saldo": 166068195.00944176,
           "limiteSaque": 2
         },
         "559294556204@s.whatsapp.net": {
@@ -96918,7 +96944,7 @@
           "conta": "433912865304",
           "sepa": "SE1504376292316559",
           "wallet": "WAL-9654909851",
-          "saldo": 5134.443937525458,
+          "saldo": 5139.420583185231,
           "limiteSaque": 1
         },
         "5511952899890@s.whatsapp.net": {
@@ -96940,7 +96966,7 @@
           "conta": "613397124961",
           "sepa": "SE9409335546048939",
           "wallet": "WAL-7396835055",
-          "saldo": 114206.57208468502,
+          "saldo": 114223.59535596156,
           "limiteSaque": 4
         },
         "5521990893085@s.whatsapp.net": {
@@ -96970,7 +96996,7 @@
           "conta": "866631302710",
           "sepa": "SE8864920466621498",
           "wallet": "WAL-6715775379",
-          "saldo": 291979.2426159697,
+          "saldo": 292349.3822508046,
           "limiteSaque": 2
         },
         "5521993751119@s.whatsapp.net": {
@@ -96985,7 +97011,7 @@
           "conta": "572970174266",
           "sepa": "SE5197013079675816",
           "wallet": "WAL-5464985398",
-          "saldo": 5364.025202471485,
+          "saldo": 5370.958550280798,
           "limiteSaque": 3
         },
         "559285382025@s.whatsapp.net": {
