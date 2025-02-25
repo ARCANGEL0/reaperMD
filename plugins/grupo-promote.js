@@ -64,8 +64,10 @@ if(text) {
 user = m.quoted.sender
 } else if(m.mentionedJid) {
   user = number + '@s.whatsapp.net'
-} }finally {
-conn.groupParticipantsUpdate(m.chat, [user], 'promote')
+} 
+
+conn.groupParticipantsUpdate(m.chat, [user],'promote')
+
     let newAdmin
 
 if (global.db.data.chats[m.chat].language === 'pt') {
@@ -89,7 +91,17 @@ else if (global.db.data.chats[m.chat].language === 'en') {
   `;
 }
 conn.reply(m.chat, newAdmin,  m)
-}}
+
+  
+  
+}
+catch (error) {
+      console.log('erro !!!!! ')
+      console.log('///////////////// ')
+      console.log(error)
+    sendSystemErrorAlert(global.db.data.chats[m.chat].language);
+    
+}
 handler.command = /^(promote|daradmin|darpoder)$/i
 handler.group = true
 
