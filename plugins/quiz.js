@@ -332,7 +332,7 @@ Evite repetir as mesmas perguntas`
       const data = await response.json()
 
       const assistantResponse = data.response; 
-      rawResponse = assistantResponse.replace(/```json\s*/i, '').replace(/```/g, '').trim();
+      const rawResponse = assistantResponse.replace(/```json\s*/i, '').replace(/```/g, '').trim();
 
   let aiReply = rawResponse
      /* 
