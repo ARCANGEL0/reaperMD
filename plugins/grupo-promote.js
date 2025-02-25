@@ -15,7 +15,7 @@ throw false
 
 
     let noTxt;
-
+ let user
 if (global.db.data.chats[m.chat].language === 'pt') {
     noTxt = `> BYΓΞSΞC:~# man -h
 . . . . . . . . . . . . . . . . . . . . . . 
@@ -57,7 +57,7 @@ if(!text && !m.quoted) return conn.reply(m.chat, noTxt,  m)
 //conn.sendButton(m.chat, wm, langTOGGLE['smsDemott']() + `*${usedPrefix + command} @${global.owner[0][0]}*`, null, [[langTOGGLE.smsConMenu(), `${usedPrefix}menu`]],  m)
 	
 try {
-  let user
+ 
 if(text) {
  user = number + '@s.whatsapp.net'
 } else if(m.quoted.sender) {
