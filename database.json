@@ -27909,7 +27909,7 @@
       "afkReason": "",
       "role": "",
       "reporte": 0,
-      "name": ".",
+      "name": "",
       "antispam": 0,
       "antispamlastclaim": 0,
       "silenced": false,
@@ -45200,7 +45200,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1740529021717,
+          "lastMessageTime": 1740545755164,
           "messageCount": 1,
           "pontos": 0
         },
@@ -55946,8 +55946,8 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1739898297296,
-          "messageCount": null,
+          "lastMessageTime": 1740546068597,
+          "messageCount": 1,
           "pontos": 0
         },
         "249164290068549@lid": {
@@ -84042,7 +84042,7 @@
           "vampire": 3,
           "vampireAtivo": false,
           "demonio": 3,
-          "demonioAtivo": true,
+          "demonioAtivo": false,
           "shadows": 14,
           "morto": false,
           "shieldAtivo": false,
