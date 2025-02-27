@@ -83113,7 +83113,7 @@
     "120363153388096560@g.us": {
       "users": {
         "351927285125@s.whatsapp.net": {
-          "exp": 907,
+          "exp": 912,
           "limit": 660000000000066,
           "role": "𝑵𝒆𝒗𝒆𝒓𝒎𝒐𝒓𝒆 \n𝙼𝚎𝚜𝚝𝚛𝚎 𝚍𝚘𝚜 𝚌𝚘𝚛𝚟𝚘𝚜",
           "money": 666000000000000100,
@@ -83126,8 +83126,8 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1740593545245,
-          "messageCount": 1,
+          "lastMessageTime": 1740644990360,
+          "messageCount": 2,
           "pontos": 35,
           "tempBan": false,
           "coadmin": false,
@@ -83145,7 +83145,7 @@
           "usuariosRoubados": []
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 2879,
+          "exp": 2880,
           "limit": 0,
           "role": "",
           "money": 0,
@@ -84061,7 +84061,7 @@
           "silnciado": false
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 306847,
+          "exp": 307094,
           "limit": 400,
           "role": "",
           "money": 264,
@@ -84084,10 +84084,10 @@
           "silnciado": false
         },
         "5521970385666@s.whatsapp.net": {
-          "exp": 10663207,
-          "limit": 300197,
+          "exp": 10663266,
+          "limit": 300257,
           "role": "Ｅｌｌｉｏｔ　Ａｌｄｅｒｓｏｎ",
-          "money": 206400.00219988823,
+          "money": 3200.0021998882294,
           "level": 100,
           "adm": false,
           "legendary": false,
@@ -84104,7 +84104,7 @@
             "557488681759@s.whatsapp.net"
           ],
           "shields": 6,
-          "trojans": 601744,
+          "trojans": 601864,
           "bankName": "Sra. Mercês",
           "acaoTimer": "2025-02-27T00:37:07.303Z",
           "rouboTimestamp": "2025-02-25T19:36:46.389Z",
@@ -84124,8 +84124,8 @@
           "elixirs": 1,
           "vampire": 3,
           "vampireAtivo": false,
-          "demonio": 3,
-          "demonioAtivo": false,
+          "demonio": 2,
+          "demonioAtivo": true,
           "shadows": 13,
           "morto": false,
           "shieldAtivo": false,
@@ -84169,7 +84169,7 @@
           "silnciado": false
         },
         "558199330656@s.whatsapp.net": {
-          "exp": 141489,
+          "exp": 141520,
           "limit": 98,
           "role": "Ｃａｃａｄｏｒ　ｄｅ　Ｚｅｒｏ－Ｄａｙ",
           "money": 21,
@@ -84322,10 +84322,10 @@
           "silnciado": false
         },
         "553898809542@s.whatsapp.net": {
-          "exp": 67008913,
-          "limit": 287772,
+          "exp": 67009015,
+          "limit": 287862,
           "role": "Ｅｌｌｉｏｔ　Ａｌｄｅｒｓｏｎ",
-          "money": 488000,
+          "money": 6400,
           "level": 100,
           "adm": true,
           "legendary": false,
@@ -84342,7 +84342,7 @@
             "558199330656@s.whatsapp.net"
           ],
           "rouboTimestamp": "2025-02-22T11:17:16.085Z",
-          "trojans": 579647,
+          "trojans": 579827,
           "acaoTimer": "2025-02-26T19:43:52.733Z",
           "shields": 2,
           "bankName": "𝐺𝑒𝑟 𝑀𝑜𝑡𝑎",
@@ -84581,7 +84581,7 @@
           "silnciado": false
         },
         "5512997076907@s.whatsapp.net": {
-          "exp": 375936,
+          "exp": 375955,
           "limit": 15,
           "role": "Ａｎａｌｉｓｔａ　ｄｅ　Ｃｉｂｅｒｓｅｇｕｒａｎçａ",
           "money": 2611,
@@ -85384,7 +85384,7 @@
           "isKicked": true
         },
         "559294556204@s.whatsapp.net": {
-          "exp": 18449,
+          "exp": 18475,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 90,
@@ -86226,7 +86226,7 @@
           "silnciado": false
         },
         "555197716762@s.whatsapp.net": {
-          "exp": 110138,
+          "exp": 110163,
           "limit": 14,
           "role": "Ｍｅｍｂｒｏ　ｄｏ　ＬｕｌｚＳｅｃ",
           "money": 587,
@@ -96217,10 +96217,10 @@
       "lastSuccess": 1740617920996
     },
     "grupo-perfil.js": {
-      "total": 1653,
-      "success": 1647,
-      "last": 1740617887572,
-      "lastSuccess": 1740617887572
+      "total": 1655,
+      "success": 1649,
+      "last": 1740652124874,
+      "lastSuccess": 1740652124874
     },
     "dono-reiniciar-usuario.js": {
       "total": 27,
@@ -96409,10 +96409,10 @@
       "lastSuccess": 1740609372210
     },
     "cfg-pendulumBank.js": {
-      "total": 797,
-      "success": 797,
-      "last": 1740630354691,
-      "lastSuccess": 1740630354691
+      "total": 799,
+      "success": 799,
+      "last": 1740652142351,
+      "lastSuccess": 1740652142351
     },
     "makerGun.js": {
       "total": 61,
@@ -96421,10 +96421,10 @@
       "lastSuccess": 1740434761517
     },
     "grupoInventario.js": {
-      "total": 318,
-      "success": 318,
-      "last": 1740609305213,
-      "lastSuccess": 1740609305213
+      "total": 319,
+      "success": 319,
+      "last": 1740652109057,
+      "lastSuccess": 1740652109057
     },
     "funAcoes13.js": {
       "total": 209,
@@ -97059,7 +97059,7 @@
           "conta": "535441291871",
           "sepa": "SE5822427639074913",
           "wallet": "WAL-9159324339",
-          "saldo": 1226020547.0831385,
+          "saldo": 1226352296.6560125,
           "limiteSaque": 6
         },
         "5513981141776@s.whatsapp.net": {
@@ -97099,7 +97099,7 @@
           "conta": "396664072159",
           "sepa": "SE8065925013929199",
           "wallet": "WAL-9124202523",
-          "saldo": 311536537.0895454,
+          "saldo": 312074332.96726155,
           "limiteSaque": 3
         },
         "559294556204@s.whatsapp.net": {
@@ -97107,7 +97107,7 @@
           "conta": "657321624723",
           "sepa": "SE6752102068953308",
           "wallet": "WAL-7122525939",
-          "saldo": 1162.950197780132
+          "saldo": 1162.9791631517196
         },
         "553182537308@s.whatsapp.net": {
           "titular": "Nath",
@@ -97137,7 +97137,7 @@
           "conta": "433912865304",
           "sepa": "SE1504376292316559",
           "wallet": "WAL-9654909851",
-          "saldo": 58909.71558791234,
+          "saldo": 58911.18284059898,
           "limiteSaque": 5
         },
         "5511952899890@s.whatsapp.net": {
@@ -97189,7 +97189,7 @@
           "conta": "866631302710",
           "sepa": "SE8864920466621498",
           "wallet": "WAL-6715775379",
-          "saldo": 348052.8870235424,
+          "saldo": 348078.89432546357,
           "limiteSaque": 2
         },
         "5521993751119@s.whatsapp.net": {
