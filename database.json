@@ -84061,7 +84061,7 @@
           "silnciado": false
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 306762,
+          "exp": 306847,
           "limit": 400,
           "role": "",
           "money": 264,
@@ -84503,7 +84503,7 @@
           "silnciado": false
         },
         "559691822090@s.whatsapp.net": {
-          "exp": 229019,
+          "exp": 229061,
           "limit": 4,
           "role": "Ｌｉｂｅｒａｄｏｒ　ｄｅ　Ｄａｄｏｓ",
           "money": 255,
@@ -86696,11 +86696,11 @@
           "usuariosRoubados": []
         },
         "553199378353@s.whatsapp.net": {
-          "exp": 4002,
+          "exp": 4018,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
-          "money": 161,
-          "level": 2,
+          "money": 191,
+          "level": 3,
           "adm": false,
           "legendary": false,
           "banned": false,
@@ -86932,10 +86932,10 @@
           "silnciado": false
         },
         "554891455576@s.whatsapp.net": {
-          "exp": 533061,
+          "exp": 533140,
           "limit": 366,
           "role": "Ｂｌａｃｋ　Ｈａｔ",
-          "money": 0,
+          "money": 1000,
           "level": 77,
           "adm": false,
           "legendary": false,
@@ -87569,7 +87569,7 @@
           "silnciado": false
         },
         "5511969572004@s.whatsapp.net": {
-          "exp": 5249,
+          "exp": 5251,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 63,
@@ -88302,11 +88302,11 @@
           "cocriador": false
         },
         "5511911261159@s.whatsapp.net": {
-          "exp": 1875,
+          "exp": 2124,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
-          "money": 30,
-          "level": 1,
+          "money": 60,
+          "level": 2,
           "adm": false,
           "legendary": false,
           "banned": false,
@@ -96391,10 +96391,10 @@
       "lastSuccess": 1737986261258
     },
     "fun-slot.js": {
-      "total": 1227,
-      "success": 1137,
-      "last": 1740590841940,
-      "lastSuccess": 1740590841940
+      "total": 1228,
+      "success": 1138,
+      "last": 1740630368781,
+      "lastSuccess": 1740630368781
     },
     "fun-acoes.js": {
       "total": 564,
@@ -96409,10 +96409,10 @@
       "lastSuccess": 1740609372210
     },
     "cfg-pendulumBank.js": {
-      "total": 796,
-      "success": 796,
-      "last": 1740599054411,
-      "lastSuccess": 1740599054411
+      "total": 797,
+      "success": 797,
+      "last": 1740630354691,
+      "lastSuccess": 1740630354691
     },
     "makerGun.js": {
       "total": 61,
@@ -97159,8 +97159,8 @@
           "conta": "613397124961",
           "sepa": "SE9409335546048939",
           "wallet": "WAL-7396835055",
-          "saldo": 143248.50889695468,
-          "limiteSaque": 0
+          "saldo": 142269.79286417065,
+          "limiteSaque": 1
         },
         "5521990893085@s.whatsapp.net": {
           "titular": "Izaque Moraes Barbosa",
