@@ -45436,7 +45436,33 @@
         }
       }
     },
-    "5512997076907@s.whatsapp.net,5513981141776@s.whatsapp.net": {}
+    "5512997076907@s.whatsapp.net,5513981141776@s.whatsapp.net": {},
+    "51453976674344@lid": {
+      "counterPrivate": 0,
+      "afk": -1,
+      "afkReason": "",
+      "role": "",
+      "reporte": 0,
+      "name": "",
+      "antispam": 0,
+      "antispamlastclaim": 0,
+      "silenced": false,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "lbars": "[▒▒▒▒▒▒▒▒▒]",
+      "legendary": 0,
+      "level": 0,
+      "limit": 0,
+      "exp": 0,
+      "afkInfo": {
+        "120363312968709293@g.us": {
+          "afkTime": -2,
+          "number": "51453976674344@lid",
+          "afkReason": ""
+        }
+      }
+    }
   },
   "chats": {
     "120363312968709293@g.us": {
@@ -45605,7 +45631,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1741057084891,
+          "lastMessageTime": 1741121775280,
           "messageCount": 1,
           "pontos": 0
         },
@@ -57056,6 +57082,24 @@
           "lastMessageTime": 1741087745461,
           "messageCount": null,
           "pontos": 0
+        },
+        "51453976674344@lid": {
+          "exp": 0,
+          "limit": 0,
+          "role": "⌥ 𝚜𝚌𝚛𝚒𝚙𝚝 𝚔𝚒𝚍𝚍𝚒𝚎",
+          "money": 0,
+          "level": 0,
+          "adm": false,
+          "legendary": false,
+          "banned": false,
+          "adv": 0,
+          "tentativasRoubo": 5,
+          "silenced": false,
+          "maxlevel": false,
+          "cocriador": false,
+          "lastMessageTime": 1741125561535,
+          "messageCount": null,
+          "pontos": 0
         }
       },
       "isBanned": true,
@@ -59754,7 +59798,8 @@
         "105841214656763@lid": [],
         "238718778650819@lid": [],
         "124614600605850@lid": [],
-        "29446698455044@lid": []
+        "29446698455044@lid": [],
+        "51453976674344@lid": []
       }
     },
     "120363202217134158@g.us": {
@@ -84646,7 +84691,7 @@
           "lastslot": 1740830634727
         },
         "554197056898@s.whatsapp.net": {
-          "exp": 410990,
+          "exp": 411038,
           "limit": 2,
           "role": "Ａｎａｌｉｓｔａ　ｄｅ　Ｃｉｂｅｒｓｅｇｕｒａｎçａ",
           "money": 17,
@@ -84696,7 +84741,7 @@
           "lastslot": "2025-02-23T22:22:41.750Z"
         },
         "5521969915001@s.whatsapp.net": {
-          "exp": 453657,
+          "exp": 453685,
           "limit": 140,
           "role": "Ｄｅｓｅｎｖｏｌｖｅｄｏｒ　ｄｅ　Ｅｘｐｌｏｉｔｓ",
           "money": 0.002599998377263546,
@@ -85010,7 +85055,7 @@
           "silnciado": false
         },
         "5512997076907@s.whatsapp.net": {
-          "exp": 393284,
+          "exp": 393377,
           "limit": 15,
           "role": "Ａｎａｌｉｓｔａ　ｄｅ　Ｃｉｂｅｒｓｅｇｕｒａｎçａ",
           "money": 338,
@@ -85122,7 +85167,7 @@
           "silnciado": false
         },
         "558184216648@s.whatsapp.net": {
-          "exp": 298341,
+          "exp": 298427,
           "limit": 12,
           "role": "Ｄｅｆｅｎｓｏｒ　ｄｅ　Ｒｅｄｅｓ",
           "money": 121,
@@ -85238,7 +85283,7 @@
           "silnciado": false
         },
         "555596624577@s.whatsapp.net": {
-          "exp": 30530,
+          "exp": 30546,
           "limit": 1,
           "role": "Ｉｎｉｃｉａｄｏｒ　ｄａ　Ｆｓｏｃｉｅｔｙ",
           "money": 300,
@@ -97617,7 +97662,7 @@
           "conta": "730320130820",
           "sepa": "SE2332532343911374",
           "wallet": "WAL-9541940271",
-          "saldo": 3444990.841799766,
+          "saldo": 3445162.435870066,
           "limiteSaque": 8
         },
         "556295410574@s.whatsapp.net": {
@@ -97633,7 +97678,7 @@
           "conta": "934819026141",
           "sepa": "SE8183249194361544",
           "wallet": "WAL-3202947270",
-          "saldo": 301531.6827460598,
+          "saldo": 301546.701958343,
           "limiteSaque": 0
         },
         "553898809542@s.whatsapp.net": {
@@ -97746,7 +97791,7 @@
           "conta": "572970174266",
           "sepa": "SE5197013079675816",
           "wallet": "WAL-5464985398",
-          "saldo": 7468.532185147109,
+          "saldo": 7469.462233855167,
           "limiteSaque": 3
         },
         "559285382025@s.whatsapp.net": {
