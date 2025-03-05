@@ -69,6 +69,8 @@ await conn.sendMessage(m.chat ,{text: global.db.data.chats[m.chat].language === 
 }
 let q, v, yt, dl_url, ttl, size, lolhuman, lolh, n, n2, n3, n4, cap, qu, currentQuality   
 
+const usedText = global.idioma == 'en' ? '𝘶𝘴𝘦𝘥' : '𝘶𝘴𝘢𝘥𝘰𝘴' 
+
 
 
 const mp3Search = global.idioma == 'en' ? `┌──[ BYΓΞSΞC ]─[~] 
@@ -125,22 +127,24 @@ if (command == 'play') {
 
 
 
-try{
+  try{
 const audiodlp = await ytmp3(encodeURIComponent(yt_play[0].videoId));
 conn.sendMessage(m.chat, { audio: audiodlp, mimetype: "audio/mpeg" }, { quoted: m });
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 80
  m.react("📀")
-await m.reply(" 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
 
-} catch (e1) {
+} 
+catch (e1) {
+
 try {  
 let x=await ytdlf(`${encodeURIComponent(yt_play[0].videoId)}`,"mp3");
 await conn.sendMessage(m.chat, { audio: { url:x.downloadUrl }, mimetype: 'audio/mpeg' }, { quoted: m });
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 80
  m.react("📀")
-await m.reply(" 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
 
 } catch{
 try {
@@ -150,7 +154,7 @@ await conn.sendMessage(m.chat, { audio: { url: data.dl }, mimetype: 'audio/mpeg'
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 80
  m.react("📀")
-await m.reply(" 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
 
 
 } catch {
@@ -163,7 +167,7 @@ await conn.sendMessage(m.chat, { audio: { url: axeelData.downloads.url }, mimety
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 80
  m.react("📀")
-await m.reply(" 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
 
 } catch {
 try {
@@ -175,7 +179,7 @@ await conn.sendMessage(m.chat, { audio: { url: ress.url}, mimetype: 'audio/mpeg'
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 80
  m.react("📀")
-await m.reply(" 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
 
 
 } catch {
@@ -189,7 +193,7 @@ await conn.sendMessage(m.chat, { audio: { url: downloadUrl }, mimetype: 'audio/m
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 80
  m.react("📀")
-await m.reply(" 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
 
 }
 } catch {
@@ -200,7 +204,7 @@ await conn.sendMessage(m.chat, { audio: { url: await result.download.url }, mime
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 80
  m.react("📀")
-await m.reply(" 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
 
 } catch {
 try {
@@ -214,7 +218,7 @@ await conn.sendFile(m.chat, dl_url, ttl + '.mp3', null, m, false, { mimetype: 'a
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 80
  m.react("📀")
-await m.reply(" 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
 
 } catch {
 try {
@@ -225,7 +229,7 @@ await conn.sendMessage(m.chat, { audio: { url: lolh.result.link }, fileName: `${
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 80
  m.react("📀")
-await m.reply(" 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
 
 } catch (e){
   
@@ -239,7 +243,7 @@ await conn.sendMessage(m.chat, { audio: { url: ress.url}, mimetype: 'audio/mpeg'
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 80
  m.react("📀")
-await m.reply(" 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
 
 
   }
@@ -254,7 +258,7 @@ await conn.sendMessage(m.chat, { audio: { url: data.dl }, mimetype: 'audio/mpeg'
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 80
  m.react("📀")
-await m.reply(" 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
 
 
 
@@ -272,7 +276,7 @@ await conn.sendMessage(m.chat, { audio: { url:x.downloadUrl }, mimetype: 'audio/
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 80
  m.react("📀")
-await m.reply(" 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
 
 } catch(e){
   console.log(e)
@@ -296,7 +300,7 @@ await conn.sendMessage(m.chat, { video: { url: video }, fileName: `video.mp4`, m
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 80
  m.react("📀")
-await m.reply(" 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
 
 } catch {
 try {
@@ -359,7 +363,7 @@ await conn.sendMessage(m.chat, { video: { url:y.downloadUrl }, fileName: `video.
 if(global.db.data.chats[m.chat].autolevelup){
 global.db.data.chats[m.chat].users[m.sender].money -= 80
  m.react("📀")
-await m.reply(" 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
+await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
 
 }
 catch(e){
