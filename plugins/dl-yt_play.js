@@ -155,6 +155,8 @@ exec(command, (error, stdout, stderr) => {
  conn.sendMessage(m.chat, { audio: `tmp/${randomDg}.mp3`, mimetype: "audio/mpeg" }, { quoted: m });
 
 } 
+
+}
 catch(e)   {
   console.log(e)
   try{
