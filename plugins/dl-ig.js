@@ -5,7 +5,7 @@
 //┃ ✞ঔৣ 𝙿𝚕𝚎𝚊𝚜𝚎 𝚌𝚛𝚎𝚍𝚒𝚝 𝚒𝚏 𝚢𝚘𝚞 𝚞𝚜𝚎 𝚝𝚑𝚎 𝚌𝚘𝚍𝚎 ঔৣ✞
 //┃ 𖤍 𝘾𝙤𝙣𝙩𝙖𝙘𝙩-𝙢𝙚 𝙛𝙤𝙧 𝙖𝙣𝙮 𝙙𝙤𝙪𝙗𝙩
 // ╰─...⌬─────────────────────────────────
-
+import { igdl } from 'btch-downloader'
 import fetch from 'node-fetch';
 import axios from 'axios';
 import instagramGetUrl from 'instagram-url-direct';
@@ -56,13 +56,12 @@ await conn.sendMessage(m.chat, {text: waitttt, edit: key});
     
     try{
       
-      console.log(text)
-const gett = await fetch(`https://api.neoxr.eu/api/ig?url=${text}&apikey=${global.neoxr}`);
-console.log(gett)
-let ssdk = await gett.json()
-console.log(ssdk.data[0].url)
 
-await conn.sendMessage(m.chat, { video: { url: ssdk.data[0].url }, fileName: `error.mp4`, caption: ``, mimetype: 'video/mp4' }, { quoted: m })  
+
+const data = await igdl(text)
+console.log(data) // JSON
+
+await conn.sendMessage(m.chat, { video: { url: data[0].url }, fileName: `error.mp4`, caption: ``, mimetype: 'video/mp4' }, { quoted: m })  
 
 } 
 catch(e) {
