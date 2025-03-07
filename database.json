@@ -84813,7 +84813,7 @@
           "shadowAtivo": false
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 346752,
+          "exp": 346859,
           "limit": 400,
           "role": "",
           "money": 264,
@@ -84921,7 +84921,7 @@
           "silnciado": false
         },
         "558199330656@s.whatsapp.net": {
-          "exp": 173521,
+          "exp": 173567,
           "limit": 91,
           "role": "Ａｒｑｕｉｔｅｔｏ　ｄｅ　Ｍａｌｗａｒｅ",
           "money": -86,
@@ -85070,7 +85070,7 @@
           ],
           "divorcioId": "BAE5382B1F7FAF6F",
           "morto": false,
-          "shieldAtivo": true,
+          "shieldAtivo": false,
           "silnciado": false
         },
         "553898809542@s.whatsapp.net": {
@@ -85257,7 +85257,7 @@
           "shields": 0
         },
         "559691822090@s.whatsapp.net": {
-          "exp": 230511,
+          "exp": 230523,
           "limit": 4,
           "role": "Ｌｉｂｅｒａｄｏｒ　ｄｅ　Ｄａｄｏｓ",
           "money": 535,
@@ -85387,10 +85387,10 @@
           "silnciado": false
         },
         "556295410574@s.whatsapp.net": {
-          "exp": 224078,
+          "exp": 224098,
           "limit": 4,
           "role": "Ｌｉｂｅｒａｄｏｒ　ｄｅ　Ｄａｄｏｓ",
-          "money": 296,
+          "money": 0,
           "level": 53,
           "adm": false,
           "legendary": false,
@@ -85714,7 +85714,7 @@
           "shields": 0
         },
         "553888016495@s.whatsapp.net": {
-          "exp": 133644,
+          "exp": 133742,
           "limit": 7,
           "role": "Ｃａｃａｄｏｒ　ｄｅ　Ｚｅｒｏ－Ｄａｙ",
           "money": 0,
@@ -87460,7 +87460,7 @@
           "usuariosRoubados": []
         },
         "553199378353@s.whatsapp.net": {
-          "exp": 4260,
+          "exp": 4278,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 191,
@@ -97241,10 +97241,10 @@
       "lastSuccess": 1741303126732
     },
     "grupo-perfil.js": {
-      "total": 1777,
-      "success": 1771,
-      "last": 1741294936939,
-      "lastSuccess": 1741294936939
+      "total": 1778,
+      "success": 1772,
+      "last": 1741319425930,
+      "lastSuccess": 1741319425930
     },
     "dono-reiniciar-usuario.js": {
       "total": 27,
@@ -97433,10 +97433,10 @@
       "lastSuccess": 1741303109988
     },
     "cfg-pendulumBank.js": {
-      "total": 981,
-      "success": 981,
-      "last": 1741294954982,
-      "lastSuccess": 1741294954982
+      "total": 982,
+      "success": 982,
+      "last": 1741319436424,
+      "lastSuccess": 1741319436424
     },
     "makerGun.js": {
       "total": 61,
@@ -98087,7 +98087,7 @@
           "conta": "953415981012",
           "sepa": "SE6844757256636490",
           "wallet": "WAL-0936010359",
-          "saldo": 3706440.7356081503,
+          "saldo": 3707082.8486602413,
           "limiteSaque": 1
         },
         "5521970385666@s.whatsapp.net": {
@@ -98119,7 +98119,7 @@
           "conta": "856213977478",
           "sepa": "SE4417515791941896",
           "wallet": "WAL-4945103334",
-          "saldo": 140553.964802499,
+          "saldo": 140856.92149208274,
           "limiteSaque": 2
         },
         "554197056898@s.whatsapp.net": {
@@ -98225,7 +98225,7 @@
           "conta": "866631302710",
           "sepa": "SE8864920466621498",
           "wallet": "WAL-6715775379",
-          "saldo": 484875.99086928973,
+          "saldo": 484947.990945169,
           "limiteSaque": 3
         },
         "5521993751119@s.whatsapp.net": {
