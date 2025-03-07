@@ -5,7 +5,7 @@
 //┃ ✞ঔৣ 𝙿𝚕𝚎𝚊𝚜𝚎 𝚌𝚛𝚎𝚍𝚒𝚝 𝚒𝚏 𝚢𝚘𝚞 𝚞𝚜𝚎 𝚝𝚑𝚎 𝚌𝚘𝚍𝚎 ঔৣ✞
 //┃ 𖤍 𝘾𝙤𝙣𝙩𝙖𝙘𝙩-𝙢𝙚 𝙛𝙤𝙧 𝙖𝙣𝙮 𝙙𝙤𝙪𝙗𝙩
 // ╰─...⌬─────────────────────────────────
-import { twitter } from 'btch-downloader'
+import { ttdl  } from 'btch-downloader'
 import fetch from 'node-fetch';
 import axios from 'axios';
 import instagramGetUrl from 'instagram-url-direct';
@@ -36,23 +36,23 @@ const fkontak = {
 
 
     const messageTxt = global.db.data.chats[m.chat].language == 'en' ? 
-        `┌──[ BYΓΞSΞC ]─[~/twitterDownloader] 
-└─ $ tweetdl --help
+        `┌──[ BYΓΞSΞC ]─[~/tiktok] 
+└─ $ ttkdl --help
 > ‎
-> ‎[!] 𝖳𝖶𝖨𝖳𝖳𝖤𝖱​-𝙳𝙻
+> ‎[!] 𝖳𝗂𝗄𝖳𝗈𝗄-𝙳𝙻
 > - - - - - - - - - - - - - - - - 
-> Sᴄʀɪᴘᴛ ᴅᴇ ᴅᴏᴡɴʟᴏᴀᴅ ᴘᴀʀᴀ ᴛᴡɪᴛᴛᴇʀ. 
+> Sᴄʀɪᴘᴛ ᴅᴇ ᴅᴏᴡɴʟᴏᴀᴅ ᴘᴀʀᴀ ᴛɪᴋᴛᴏᴋ. 
 
 Usᴇ ᴏ ᴄᴏᴍᴀɴᴅᴏ ᴄᴏᴍᴏ ɴᴏ ᴇxᴇᴍᴘʟᴏ ᴀ sᴇɢᴜɪʀ: 
 .𝑡𝑤𝑖𝑡𝑡𝑒𝑟 <𝑙𝑖𝑛𝑘>
 ` 
          : 
-         `┌──[ BYΓΞSΞC ]─[~/twitterDownloader] 
-└─ $ tweetdl --help
+         `┌──[ BYΓΞSΞC ]─[~/tiktok] 
+└─ $ ttkdl --help
 > ‎
-> ‎[!] 𝖳𝖶𝖨𝖳𝖳𝖤𝖱​-𝙳𝙻
+> ‎[!] 𝖳𝗂𝗄𝖳𝗈𝗄-𝙳𝙻
 > - - - - - - - - - - - - - - - - 
-> Dᴏᴡɴʟᴏᴀᴅᴇʀ sᴄʀɪᴘᴛ ꜰᴏʀ ᴛᴡɪᴛᴛᴇʀ. 
+> Dᴏᴡɴʟᴏᴀᴅᴇʀ sᴄʀɪᴘᴛ ꜰᴏʀ ᴛɪᴋᴛᴏᴋ. 
 
 Usᴇ ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅ ᴀs ɪɴ ᴛʜᴇ ᴇxᴀᴍᴘʟᴇ ʙᴇʟᴏᴡ:
 .𝑡𝑤𝑖𝑡𝑡𝑒𝑟 <𝑙𝑖𝑛𝑘>
@@ -72,7 +72,7 @@ await conn.sendMessage(m.chat, {text: waitttt, edit: key});
       
 
 
-const data = await twitter(text)
+const data = await ttdl(text)
 console.log(data) // JSON
 
 
@@ -86,9 +86,9 @@ sendSystemErrorAlert(global.db.data.chats[m.chat].language || "en");
 }
   
 }
-handler.help = ['twitter <link>']
+handler.help = ['tiktok <link>']
 handler.tags = ['downloader']
-handler.command =['twitter']
+handler.command =['tiktok']
 handler.limit = 0
 handler.level = 6
 
