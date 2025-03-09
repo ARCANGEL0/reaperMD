@@ -84832,7 +84832,7 @@
     "120363365283783019@g.us": {
       "users": {
         "351927285125@s.whatsapp.net": {
-          "exp": 1519,
+          "exp": 1524,
           "limit": 660000000000066,
           "role": "𝑵𝒆𝒗𝒆𝒓𝒎𝒐𝒓𝒆 \n𝙼𝚎𝚜𝚝𝚛𝚎 𝚍𝚘𝚜 𝚌𝚘𝚛𝚟𝚘𝚜",
           "money": 666000000000000100,
@@ -84881,7 +84881,7 @@
           "shadowAtivo": false
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 353393,
+          "exp": 353415,
           "limit": 400,
           "role": "",
           "money": 264,
@@ -84943,7 +84943,7 @@
           "vampire": 3,
           "vampireAtivo": false,
           "demonio": 2,
-          "demonioAtivo": true,
+          "demonioAtivo": false,
           "shadows": 15,
           "morto": false,
           "shieldAtivo": false,
@@ -85175,7 +85175,7 @@
           "vampire": 3,
           "vampireAtivo": false,
           "demonio": 0,
-          "demonioAtivo": true,
+          "demonioAtivo": false,
           "shadows": 1,
           "regTimeStart": "",
           "regPrazo": "",
@@ -95067,7 +95067,7 @@
     "120363360114833087@g.us": {
       "users": {
         "351927285125@s.whatsapp.net": {
-          "exp": 5541,
+          "exp": 5873,
           "limit": 660000000000066,
           "role": "𝑵𝒆𝒗𝒆𝒓𝒎𝒐𝒓𝒆 \n𝙼𝚎𝚜𝚝𝚛𝚎 𝚍𝚘𝚜 𝚌𝚘𝚛𝚟𝚘𝚜",
           "money": 666000000000000100,
@@ -95080,7 +95080,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1741490485326,
+          "lastMessageTime": 1741495396076,
           "messageCount": 1,
           "pontos": 375,
           "tempBan": false,
@@ -95103,7 +95103,7 @@
           "rouboTimestamp": "2025-02-11T21:26:06.857Z"
         },
         "79001643752@s.whatsapp.net": {
-          "exp": 16175,
+          "exp": 16199,
           "limit": 0,
           "role": "",
           "money": 0,
@@ -95123,7 +95123,7 @@
           "usuariosRoubados": []
         },
         "5513997626809@s.whatsapp.net": {
-          "exp": 4253,
+          "exp": 5364,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 90,
@@ -95136,7 +95136,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1741490434416,
+          "lastMessageTime": 1741495352701,
           "messageCount": 1,
           "pontos": 0,
           "nsfwAdv": null,
@@ -97432,10 +97432,10 @@
       "lastSuccess": 1741382663046
     },
     "dono-update.js": {
-      "total": 199,
-      "success": 199,
-      "last": 1741478177086,
-      "lastSuccess": 1741478177086
+      "total": 200,
+      "success": 200,
+      "last": 1741490747517,
+      "lastSuccess": 1741490747517
     },
     "menu-menu.js": {
       "total": 316,
@@ -97894,10 +97894,10 @@
       "lastSuccess": 1736621036048
     },
     "dl-yta.js": {
-      "total": 2,
-      "success": 2,
-      "last": 1735326855653,
-      "lastSuccess": 1735326855653
+      "total": 3,
+      "success": 3,
+      "last": 1741490798789,
+      "lastSuccess": 1741490798789
     },
     "dl-imagen.js": {
       "total": 17,
