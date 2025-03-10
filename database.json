@@ -262,6 +262,11 @@
           "afkTime": -2,
           "number": "79001643752@s.whatsapp.net",
           "afkReason": ""
+        },
+        "351927285125@s.whatsapp.net": {
+          "afkTime": -2,
+          "number": "79001643752@s.whatsapp.net",
+          "afkReason": ""
         }
       },
       "warn": 0
@@ -63223,7 +63228,9 @@
           "tentativasRoubo": 5,
           "silenced": false,
           "maxlevel": true,
-          "cocriador": false
+          "cocriador": false,
+          "pontos": 0,
+          "tempBan": false
         }
       },
       "isBanned": false,
@@ -63296,7 +63303,8 @@
           "lastQuestion": "",
           "resposta": ""
         },
-        "351927285125@s.whatsapp.net": []
+        "351927285125@s.whatsapp.net": [],
+        "79001643752@s.whatsapp.net": []
       },
       "msgCount": 0,
       "privategpthistory": []
@@ -83963,7 +83971,7 @@
     "120363153388096560@g.us": {
       "users": {
         "351927285125@s.whatsapp.net": {
-          "exp": 949,
+          "exp": 952,
           "limit": 660000000000066,
           "role": "𝑵𝒆𝒗𝒆𝒓𝒎𝒐𝒓𝒆 \n𝙼𝚎𝚜𝚝𝚛𝚎 𝚍𝚘𝚜 𝚌𝚘𝚛𝚟𝚘𝚜",
           "money": 666000000000000100,
@@ -83976,7 +83984,7 @@
           "silenced": false,
           "maxlevel": false,
           "cocriador": false,
-          "lastMessageTime": 1740819513542,
+          "lastMessageTime": 1741598869173,
           "messageCount": 1,
           "pontos": 35,
           "tempBan": false,
@@ -84994,7 +85002,7 @@
           "silnciado": false
         },
         "558199330656@s.whatsapp.net": {
-          "exp": 179215,
+          "exp": 179252,
           "limit": 91,
           "role": "Ａｒｑｕｉｔｅｔｏ　ｄｅ　Ｍａｌｗａｒｅ",
           "money": 244,
@@ -85356,7 +85364,7 @@
           "isKicked": false
         },
         "553498976629@s.whatsapp.net": {
-          "exp": 70152,
+          "exp": 70243,
           "limit": 1,
           "role": "Ｓａｂｏｔｅｕｒ　Ｅ－Ｃｏｒｐ",
           "money": 115,
@@ -89334,7 +89342,7 @@
           "steals": 0
         },
         "558897548069@s.whatsapp.net": {
-          "exp": 2130,
+          "exp": 2172,
           "limit": 0,
           "role": "Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ",
           "money": 60,
@@ -98514,7 +98522,7 @@
           "conta": "866631302710",
           "sepa": "SE8864920466621498",
           "wallet": "WAL-6715775379",
-          "saldo": 488628.7688296546,
+          "saldo": 488665.3401872328,
           "limiteSaque": 3
         },
         "5521993751119@s.whatsapp.net": {
