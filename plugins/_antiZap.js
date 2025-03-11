@@ -31,7 +31,7 @@ if (m.text.includes(linkThisGroup)) {
 
     if (global.db.data.chats[m.chat].language === 'pt') {
       warnLinks = `
-  > robot@bytesec: #~ journalctl
+  > v@reaper: #~ journalctl
   > ---------------------------------------
   
   [!] 0x8007000E: Violação de Regras
@@ -46,7 +46,7 @@ if (m.text.includes(linkThisGroup)) {
       `;
   } else if (global.db.data.chats[m.chat].language === 'en') {
       warnLinks = `
-  > robot@bytesec: #~ journalctl
+  > v@reaper: #~ journalctl
   > ---------------------------------------
   
   [!] WARNING: Rule Violation
@@ -75,7 +75,7 @@ if (m.text.includes(linkThisGroup)) {
 
 if (global.db.data.chats[m.chat].language === 'pt') {
     linksBAN = `
-> robot@bytesec: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
+> v@reaper: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
 > ---------------------------------------
 
 >>> [!] ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ 
@@ -92,7 +92,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
 }
 else if (global.db.data.chats[m.chat].language === 'en') {
   linksBAN = `
-> robot@bytesec: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
+> v@reaper: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
 > ---------------------------------------
 
 [!] ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ

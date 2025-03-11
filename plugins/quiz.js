@@ -614,13 +614,13 @@ getRobot(global.db.data.chats[m.chat].quiz.historico, categories[text -1])
      if(!global.db.data.chats[m.chat].quiz.pergunta){
 
       const quizEnd = global.db.data.chats[m.chat].language === 'en' ? 
-      `┌──[robot@bytesec]──[~/ϙυιȥ] 
+      `┌──[v@reaper]──[~/ϙυιȥ] 
 └─► get_status -e
 > ‎ 
 [!] ᴛʜɪꜱ ɢᴀᴍᴇ ᴀʟʀᴇᴀᴅʏ ᴇɴᴅᴇᴅ, ᴋɪᴅ
 > ‎ 
 ` : 
-      `┌──[robot@bytesec]──[~/ϙυιȥ] 
+      `┌──[v@reaper]──[~/ϙυιȥ] 
 └─► get_status -e
 > ‎ 
 [!] ᴇꜱꜱᴇ ᴊᴏɢᴏ ᴊᴀ ᴀᴄᴀʙᴏᴜ, ɢᴀʀᴏᴛᴏ
@@ -636,7 +636,7 @@ getRobot(global.db.data.chats[m.chat].quiz.historico, categories[text -1])
       {
 
         const getAnswer = global.db.data.chats[m.chat].language === 'en' ? 
-        `┌──[robot@bytesec]──[~/ϙυιȥ] 
+        `┌──[v@reaper]──[~/ϙυιȥ] 
 └─► get_reply -n
 
 [+] 𝙲𝙾𝚁𝚁𝙴𝙲𝚃 𝙾𝙿𝚃𝙸𝙾𝙽: ${global.db.data.chats[m.chat].quiz.ca} 
@@ -644,7 +644,7 @@ getRobot(global.db.data.chats[m.chat].quiz.historico, categories[text -1])
 > ‎ 
 > ${global.db.data.chats[m.chat].quiz.cm}
 > ‎` : 
-        `┌──[robot@bytesec]──[~/ϙυιȥ] 
+        `┌──[v@reaper]──[~/ϙυιȥ] 
 └─► get_reply -n
 
 [+] 𝙾𝙿𝙲𝙰𝙾 𝙲𝙾𝚁𝚁𝙴𝚃𝙰: ${global.db.data.chats[m.chat].quiz.ca} 
@@ -1136,7 +1136,7 @@ const users = participants.map((u) => conn.decodeJid(u.id));
   console.log(players);
   console.log("acima e topjogadores")
   let formattedMessage = `
-┌──[robot@bytesec]──[~/ϙυιȥ] 
+┌──[v@reaper]──[~/ϙυιȥ] 
 └─► cat ranking.md
 `;
 let mentionedId = [];

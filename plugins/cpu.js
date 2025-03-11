@@ -174,12 +174,12 @@ const header =`
 > ------------------------------------- 
 `
 const header2 = `
-robot@bytesec:#~ uptime
+v@reaper:#~ uptime
 ${uptime}
 `
 
 const grupo = `
-robot@bytesec:~# groupstat *${groupMetadata.subject}*
+v@reaper:~# groupstat *${groupMetadata.subject}*
 ${
   global.db.data.chats[m.chat].language === 'pt'
     ? `> Usuários: *${participants.length}* | Silenciados: *${silenciados}* | Advertidos: *${avisados}* | Exilados: *${banidos}*`
@@ -191,7 +191,7 @@ console.log(grupo);
 
 
         const chtds = `
-robot@bytesec:~# chatstat -a
+v@reaper:~# chatstat -a
 ${
   global.db.data.chats[m.chat].language === 'pt'
     ? `> Total de Chats: ${chats.length} | Usuários: ${Object.keys(global.db.data.users).length} | Chats Privados: ${chats.length - groupsIn.length} | Chats Banidos: ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} | Usuários Bloqueados: ${Object.entries(global.db.data.users).filter(user => user[1].banned).length}`
@@ -203,7 +203,7 @@ console.log(chtds);
 
 
         const system = `
-robot@bytesec:~# lscpu
+v@reaper:~# lscpu
 ${
   global.db.data.chats[m.chat].language === 'pt'
     ? `> INFORMAÇÕES DO SISTEMA

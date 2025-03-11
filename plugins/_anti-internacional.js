@@ -66,7 +66,7 @@ let destino = global.db.data.chats[m.chat].reportchat || adminAleatorio
 
 if (global.db.data.chats[m.chat].language === 'pt') {
     teks = `
-> robot@bytesec: #/users/ cat ${protocol}.log
+> v@reaper: /root/users/ cat ${protocol}.log
 > ---------------------------------------
 
 [!] ALERTA: Usuário Banido
@@ -90,7 +90,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
     `;
 } else if (global.db.data.chats[m.chat].language === 'en') {
     teks = `
-> robot@bytesec: #/users/ cat ${protocol}.log
+> v@reaper: /root/users/ cat ${protocol}.log
 > ---------------------------------------
 
 [!] ALERT: User Banned
@@ -132,7 +132,7 @@ let texto;
 
 if (global.db.data.chats[m.chat].language === 'pt') {
     texto = `
-> robot@bytesec: #/groups/ alert.log
+> v@reaper: #/groups/ alert.log
 > ---------------------------------------
 
 [!] ALERTA: NÚMERO EXTERNO SUSPEITO DETECTADO
@@ -148,7 +148,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
     `;
 } else if (global.db.data.chats[m.chat].language === 'en') {
     texto = `
-> robot@bytesec: #/groups/ alert.log
+> v@reaper: #/groups/ alert.log
 > ---------------------------------------
 
 [!] WARNING: SUSPICIOUS EXTERNAL NUMBER DETECTED

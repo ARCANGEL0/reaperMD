@@ -248,7 +248,7 @@ global.db.data.chats[m.chat].ignored.push(DELETEMESSAGEst.message.protocolMessag
 
 if(global.db.data.chats[m.chat].users[m.sender].nsfwAdv == 1) {
  console.log("🌙")
-  return conn.sendMessage(m.chat, {text: `> robot@bytesec:~# uafw -m @${m.sender.split('@')[0]}
+  return conn.sendMessage(m.chat, {text: `> v@reaper:~# uafw -m @${m.sender.split('@')[0]}
 > . . . . . . . . . . . . . . . . . . . . . . .
 > ‎ 
 ${warningMessageOne.getRandom()}
@@ -258,7 +258,7 @@ ${warningMessageOne.getRandom()}
     [m.sender]}, {quoted: m})
 }
 if(global.db.data.chats[m.chat].users[m.sender].nsfwAdv == 2) {
-  return conn.sendMessage(m.chat, {text: `> robot@bytesec:~# uafw -m @${m.sender.split('@')[0]}
+  return conn.sendMessage(m.chat, {text: `> v@reaper:~# uafw -m @${m.sender.split('@')[0]}
 > . . . . . . . . . . . . . . . . . . . . . . .
 > ‎ 
 ${warningMessageTwo.getRandom()}
@@ -269,7 +269,7 @@ ${warningMessageTwo.getRandom()}
   
 }
 if(global.db.data.chats[m.chat].users[m.sender].nsfwAdv == 3) {
-   await conn.sendMessage(m.chat, {text: `> robot@bytesec:~# uafw -m @${m.sender.split('@')[0]}
+   await conn.sendMessage(m.chat, {text: `> v@reaper:~# uafw -m @${m.sender.split('@')[0]}
 > . . . . . . . . . . . . . . . . . . . . . . .
 > ‎ 
 ${warningMessageThree.getRandom()}
@@ -315,7 +315,7 @@ global.db.data.chats[m.chat].ignored.push(DELETEMESSAGEst.message.protocolMessag
 if(global.db.data.chats[m.chat].users[m.sender].nsfwAdv == 1) {
   console('first')
   
-  return conn.sendMessage(m.chat, {text: `> robot@bytesec:~# uafw -m @${m.sender.split('@')[0]}
+  return conn.sendMessage(m.chat, {text: `> v@reaper:~# uafw -m @${m.sender.split('@')[0]}
 > . . . . . . . . . . . . . . . . . . . . . . .
 > ‎ 
 ${warningMessageOne.getRandom()}
@@ -326,7 +326,7 @@ ${warningMessageOne.getRandom()}
     
 }
 if(global.db.data.chats[m.chat].users[m.sender].nsfwAdv == 2) {
-   return conn.sendMessage(m.chat, {text: `> robot@bytesec:~# uafw -m @${m.sender.split('@')[0]}
+   return conn.sendMessage(m.chat, {text: `> v@reaper:~# uafw -m @${m.sender.split('@')[0]}
 > . . . . . . . . . . . . . . . . . . . . . . .
 > ‎ 
 ${warningMessageTwo.getRandom()}
@@ -337,7 +337,7 @@ ${warningMessageTwo.getRandom()}
   
 }
 if(global.db.data.chats[m.chat].users[m.sender].nsfwAdv == 3) {
-  await conn.sendMessage(m.chat, {text: `> robot@bytesec:~# uafw -m @${m.sender.split('@')[0]}
+  await conn.sendMessage(m.chat, {text: `> v@reaper:~# uafw -m @${m.sender.split('@')[0]}
 > . . . . . . . . . . . . . . . . . . . . . . .
 > ‎ 
 ${warningMessageThree.getRandom()}

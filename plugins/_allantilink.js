@@ -89,31 +89,27 @@ let destino = global.db.data.chats[m.chat].reportchat || adminAleatorio
 
   if (global.db.data.chats[m.chat].language === 'pt') {
           teks = `
-      > robot@bytesec: #/users/ cat ${generateRandomCode()}.log
-      > ---------------------------------------
+> v@reaper: /root/users/ cat ${generateRandomCode()}.log
+> ---------------------------------------
+[!] ALERTA: Usuário Banido
+────────────────────────────────
+> Protocolo: ${generateRandomCode()}
+> Data: ${getDataAtual()}
+>>> DETALHES DO USUÁRIO
+────────────────────────────────
+> [+] Nome: ${m.name}
+> [+] Contato: @${m.sender.split`@`[0]}
+> [+] Grupo: ${groupMetadata.subject}
 
-      [!] ALERTA: Usuário Banido
-      ────────────────────────────────
-      > Protocolo: ${generateRandomCode()}
-      > Data: ${getDataAtual()}
-
-      >>> DETALHES DO USUÁRIO
-      ────────────────────────────────
-      > [+] Nome: ${m.name}
-      > [+] Contato: @${m.sender.split`@`[0]}
-      > [+] Grupo: ${groupMetadata.subject}
-
-      >>> MOTIVO DO EXÍLIO
-      ────────────────────────────────
-      > ${motivo}
-
-      > # Operação realizada pela ByteSec. 
-      > # Monitoramento constante.
-      ────────────────────────────────
-          `;
+>>> MOTIVO DO EXÍLIO
+────────────────────────────────
+> ${motivo}
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥〕 ⚊ 
+────────────────────────────────
+`;
 } else if (global.db.data.chats[m.chat].language === 'en') {
     teks = `
-> robot@bytesec: #/users/ cat ${generateRandomCode()}.log
+> v@reaper: /root/users/ cat ${generateRandomCode()}.log
 > ---------------------------------------
 
 [!] ALERT: User Banned
@@ -184,7 +180,7 @@ let warn;
 
 if (global.db.data.chats[m.chat].language === 'pt') {
     warn = `
-> robot@bytesec: #~ journalctl
+> v@reaper: #~ journalctl
 > ---------------------------------------
 
 [!] 0x8007000E: Violação de Regras
@@ -199,7 +195,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
     `;
 } else if (global.db.data.chats[m.chat].language === 'en') {
     warn = `
-> robot@bytesec: #~ journalctl
+> v@reaper: #~ journalctl
 > ---------------------------------------
 
 [!] WARNING: Rule Violation
@@ -236,7 +232,7 @@ tikDetected= 'Link Tiktok detectado! Protocolo Anti-Link aplicado.'
 
     if (global.db.data.chats[m.chat].language === 'pt') {
         tikTokBAN = `
-    > robot@bytesec: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
+    > v@reaper: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
     > ---------------------------------------
     
     >>> [!] ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ 
@@ -253,7 +249,7 @@ tikDetected= 'Link Tiktok detectado! Protocolo Anti-Link aplicado.'
     }
     else if (global.db.data.chats[m.chat].language === 'en') {
       tikTokBAN = `
-  > robot@bytesec: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
+  > v@reaper: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
   > ---------------------------------------
   
   [!] ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ
@@ -307,7 +303,7 @@ let warnYt;
 
 if (global.db.data.chats[m.chat].language === 'pt') {
     warnYt = `
-> robot@bytesec: #~ journalctl
+> v@reaper: #~ journalctl
 > ---------------------------------------
 
 [!] 0x8007000E: Violação de Regras
@@ -322,7 +318,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
     `;
 } else if (global.db.data.chats[m.chat].language === 'en') {
     warnYt = `
-> robot@bytesec: #~ journalctl
+> v@reaper: #~ journalctl
 > ---------------------------------------
 
 [!] WARNING: Rule Violation
@@ -350,7 +346,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
 
     if (global.db.data.chats[m.chat].language === 'pt') {
         YtBAN = `
-    > robot@bytesec: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
+    > v@reaper: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
     > ---------------------------------------
     
     >>> [!] ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ 
@@ -367,7 +363,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
     }
     else if (global.db.data.chats[m.chat].language === 'en') {
       YtBAN = `
-  > robot@bytesec: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
+  > v@reaper: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
   > ---------------------------------------
   
   [!] ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ
@@ -433,7 +429,7 @@ let warnTg;
 
 if (global.db.data.chats[m.chat].language === 'pt') {
     warnTg = `
-> robot@bytesec: #~ journalctl
+> v@reaper: #~ journalctl
 > ---------------------------------------
 
 [!] 0x8007000E: Violação de Regras
@@ -448,7 +444,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
     `;
 } else if (global.db.data.chats[m.chat].language === 'en') {
     warnTg = `
-> robot@bytesec: #~ journalctl
+> v@reaper: #~ journalctl
 > ---------------------------------------
 
 [!] WARNING: Rule Violation
@@ -478,7 +474,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
 
     if (global.db.data.chats[m.chat].language === 'pt') {
         TgBAN = `
-    > robot@bytesec: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
+    > v@reaper: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
     > ---------------------------------------
     
     >>> [!] ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ 
@@ -495,7 +491,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
     }
     else if (global.db.data.chats[m.chat].language === 'en') {
       TgBAN = `
-  > robot@bytesec: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
+  > v@reaper: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
   > ---------------------------------------
   
   [!] ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ
@@ -563,7 +559,7 @@ let warnFb;
 
 if (global.db.data.chats[m.chat].language === 'pt') {
     warnFb = `
-> robot@bytesec: #~ journalctl
+> v@reaper: #~ journalctl
 > ---------------------------------------
 
 [!] 0x8007000E: Violação de Regras
@@ -578,7 +574,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
     `;
 } else if (global.db.data.chats[m.chat].language === 'en') {
     warnFb = `
-> robot@bytesec: #~ journalctl
+> v@reaper: #~ journalctl
 > ---------------------------------------
 
 [!] WARNING: Rule Violation
@@ -606,7 +602,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
 
     if (global.db.data.chats[m.chat].language === 'pt') {
         FbBAN = `
-    > robot@bytesec: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
+    > v@reaper: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
     > ---------------------------------------
     
     >>> [!] ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ 
@@ -623,7 +619,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
     }
     else if (global.db.data.chats[m.chat].language === 'en') {
       FbBAN = `
-  > robot@bytesec: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
+  > v@reaper: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
   > ---------------------------------------
   
   [!] ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ
@@ -688,7 +684,7 @@ let warnIg;
 
 if (global.db.data.chats[m.chat].language === 'pt') {
     warnIg = `
-> robot@bytesec: #~ journalctl
+> v@reaper: #~ journalctl
 > ---------------------------------------
 
 [!] 0x8007000E: Violação de Regras
@@ -703,7 +699,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
     `;
 } else if (global.db.data.chats[m.chat].language === 'en') {
     warnIg = `
-> robot@bytesec: #~ journalctl
+> v@reaper: #~ journalctl
 > ---------------------------------------
 
 [!] WARNING: Rule Violation
@@ -731,7 +727,7 @@ let IgBAN;
 
     if (global.db.data.chats[m.chat].language === 'pt') {
         IgBAN = `
-    > robot@bytesec: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
+    > v@reaper: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
     > ---------------------------------------
     
     >>> [!] ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ 
@@ -748,7 +744,7 @@ let IgBAN;
     }
     else if (global.db.data.chats[m.chat].language === 'en') {
       IgBAN = `
-  > robot@bytesec: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
+  > v@reaper: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
   > ---------------------------------------
   
   [!] ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ
@@ -816,7 +812,7 @@ let warnTw;
 
 if (global.db.data.chats[m.chat].language === 'pt') {
     warnTw = `
-> robot@bytesec: #~ journalctl
+> v@reaper: #~ journalctl
 > ---------------------------------------
 
 [!] 0x8007000E: Violação de Regras
@@ -831,7 +827,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
     `;
 } else if (global.db.data.chats[m.chat].language === 'en') {
     warnTw = `
-> robot@bytesec: #~ journalctl
+> v@reaper: #~ journalctl
 > ---------------------------------------
 
 [!] WARNING: Rule Violation
@@ -859,7 +855,7 @@ let TwBAN;
 
     if (global.db.data.chats[m.chat].language === 'pt') {
         TwBAN = `
-    > robot@bytesec: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
+    > v@reaper: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
     > ---------------------------------------
     
     >>> [!] ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ 
@@ -876,7 +872,7 @@ let TwBAN;
     }
     else if (global.db.data.chats[m.chat].language === 'en') {
       TwBAN = `
-  > robot@bytesec: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
+  > v@reaper: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
   > ---------------------------------------
   
   [!] ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ

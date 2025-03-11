@@ -30,7 +30,7 @@ m.quoted.id == global.db.data.chats[m.chat].langChangeID )
 
         await conn.sendMessage(m.chat,
         {
-            text: `robot@bytesec:~# lang-config
+            text: `v@reaper:~# lang-config
 ╭ . . . . . . . . . . . . . . . . . . . . . . .
 > [+] LANG CONFIG
 > -----------------------
@@ -48,7 +48,7 @@ m.quoted.id == global.db.data.chats[m.chat].langChangeID )
         global.langTOGGLE = en
   m.react("✅")
         await conn.sendMessage(m.chat, {
-            text: `robot@bytesec:~# lang-config
+            text: `v@reaper:~# lang-config
 ╭ . . . . . . . . . . . . . . . . . . . . . . .
 > [+] LANG CONFIG
 > -----------------------
@@ -71,7 +71,7 @@ return !0
 
 if (global.db.data.chats[m.chat].language === 'pt') {
     notAdminMg = `
-> robot@bytesec: #/groups/ cat warning.log
+> v@reaper: #/groups/ cat warning.log
 > ---------------------------------------
 
 [!] ATENÇÃO: Acesso Negado
@@ -88,7 +88,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
 
 else if (global.db.data.chats[m.chat].language === 'en') {
     notAdminMg = `
-> robot@bytesec: #/groups/ cat warning.log
+> v@reaper: #/groups/ cat warning.log
 > ---------------------------------------
 
 [!] WARNING: Access Denied
@@ -112,7 +112,7 @@ let notOwnerMg;
 
 if (global.db.data.chats[m.chat].language === 'pt') {
     notOwnerMg = `
-> robot@bytesec: #/groups/ cat access_denied.log
+> v@reaper: #/groups/ cat access_denied.log
 > ---------------------------------------
 
 [!] ERROR_ACCESS_DENIED: COMANDO BLOQUEADO
@@ -126,7 +126,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
     `;
 } else if (global.db.data.chats[m.chat].language === 'en') {
     notOwnerMg = `
-> robot@bytesec: #/groups/ cat access_denied.log
+> v@reaper: #/groups/ cat access_denied.log
 > ---------------------------------------
 
 [!] ERROR_ACCESS_DENIED: COMMAND BLOCKED

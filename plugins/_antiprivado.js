@@ -35,7 +35,7 @@ global.db.data.chats[m.chat].first = true
 global.db.data.chats[m.chat].privateChat = true
 
   
-    let getLang = await m.reply(`robot@bytesec:~# lang-config
+    let getLang = await m.reply(`v@reaper:~# lang-config
 ╭ . . . . . . . . . . . . . . . . . . . . . . .
 > [+] LANG CONFIG
 > -----------------------
@@ -55,7 +55,7 @@ if (global.db.data.chats[m.chat].first && m.text) {
 if(m.text ==1){
   await conn.sendMessage(m.chat,
         {
-            text: `robot@bytesec:~# lang-config
+            text: `v@reaper:~# lang-config
 ╭ . . . . . . . . . . . . . . . . . . . . . . .
 > [+] LANG CONFIG
 > -----------------------
@@ -76,7 +76,7 @@ if(m.text ==1){
 else if(m.text==2){
     m.react("✅")
         await conn.sendMessage(m.chat, {
-            text: `robot@bytesec:~# lang-config
+            text: `v@reaper:~# lang-config
 ╭ . . . . . . . . . . . . . . . . . . . . . . .
 > [+] LANG CONFIG
 > -----------------------
@@ -94,7 +94,7 @@ else if(m.text==2){
 }
 
   else{
-    await m.reply(`robot@bytesec:~# lang-config
+    await m.reply(`v@reaper:~# lang-config
 ╭ . . . . . . . . . . . . . . . . . . . . . . .
 > [+] LANG CONFIG
 > -----------------------

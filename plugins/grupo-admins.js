@@ -16,7 +16,7 @@ let pesan = args.join` `
 let oi = `${langTOGGLE.smsAddB5()} + "\n"+_${pesan}_`
 
 let textoA = `
-> robot@bytesec:~# node admins.mjs
+> v@reaper:~# node admins.mjs
 > ---------------------------------------
 
 [!] ${global.db.data.chats[m.chat].language == 'pt' ? 'ALERTA: CONVOCANDO ADMINS' : 'ALERT: SUMMONING ADMINS' }

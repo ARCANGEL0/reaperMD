@@ -271,7 +271,7 @@ vencedores += `@${winner.split('@')[0]}`
 
 
 // List each winner and their share of the prize
-    let txtA = `┌──[robot@bytesec]──[~] 
+    let txtA = `┌──[v@reaper]──[~] 
 └─► cat /games/bicho.csv
 > ‎ 
 > 𝙹̷𝙾̷𝙶̷𝙾̷ 𝙳̷𝙾̷ 𝙱̷𝙸̷𝙲̷𝙷̷𝙾̷  ${numeroSorteado}
@@ -299,7 +299,7 @@ vencedores +=   `@${winner.split('@')[0]}`.join('\n')
 });
   
     // List each winner and their share of the prize
-    let txtB = `┌──[robot@bytesec]──[~] 
+    let txtB = `┌──[v@reaper]──[~] 
 └─► cat /games/bicho.csv
 > ‎ 
 > 𝙹̷𝙾̷𝙶̷𝙾̷ 𝙳̷𝙾̷ 𝙱̷𝙸̷𝙲̷𝙷̷𝙾̷  ${numeroSorteado}
@@ -316,7 +316,7 @@ ${vencedores}
   } else {
     console.log(global.db.data.chats[m.chat].bicho.aposta)
     // List each winner and their share of the prize
-    let txtC = `┌──[robot@bytesec]──[~] 
+    let txtC = `┌──[v@reaper]──[~] 
 └─► cat /games/bicho.csv
 > ‎ 
 > 𝙹̷𝙾̷𝙶̷𝙾̷ 𝙳̷𝙾̷ 𝙱̷𝙸̷𝙲̷𝙷̷𝙾̷  ${numeroSorteado}
@@ -579,7 +579,7 @@ if(!global.db.data.chats[m.chat].jogadores[m.sender]){
           global.db.data.chats[m.chat].users[m.sender].limit += 1
          
           const quizReply = global.db.data.chats[m.chat].language === 'en' ? 
-`┌──[robot@bytesec]──[~/ϙυιȥ] 
+`┌──[v@reaper]──[~/ϙυιȥ] 
 └─► get_reply -n
 
 > ◥ SELECTED OPTION: ${global.db.data.chats[m.chat].quiz.ca}
@@ -597,7 +597,7 @@ if(!global.db.data.chats[m.chat].jogadores[m.sender]){
 ┃ _*1*_ ⧗ ᴇᴛʜᴇʀᴇᴜᴍ
 ▚▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▞
 ` :
-`┌──[robot@bytesec]──[~/ϙυιȥ] 
+`┌──[v@reaper]──[~/ϙυιȥ] 
 └─► get_reply -n
 
 > ◥ OPÇÃO SELECIONADA: ${global.db.data.chats[m.chat].quiz.ca}
@@ -638,14 +638,14 @@ if(!global.db.data.chats[m.chat].jogadores[m.sender]){
           console.log(global.db.data.chats[m.chat].quiz)
          
           const quizWrongReply = global.db.data.chats[m.chat].language === 'en' ? 
-          `┌──[robot@bytesec]──[~/ϙυιȥ] 
+          `┌──[v@reaper]──[~/ϙυιȥ] 
 └─► get_reply -n
 > ‎ 
 [!] ɪɴᴄᴏʀʀᴇᴄᴛ ᴀɴꜱᴡᴇʀ
 > 𝚈𝚘𝚞 𝚓𝚞𝚜𝚝 𝚍𝚛𝚘𝚙𝚙𝚎𝚍 𝟷𝟶 𝚙𝚘𝚒𝚗𝚝𝚜, 𝚔𝚒𝚍
 
 ` : 
-          `┌──[robot@bytesec]──[~/ϙυιȥ] 
+          `┌──[v@reaper]──[~/ϙυιȥ] 
 └─► get_reply -n
 > ‎ 
 [!] ʀᴇꜱᴘᴏꜱᴛᴀ ɪɴᴄᴏʀʀᴇᴛᴀ
@@ -659,13 +659,13 @@ if(!global.db.data.chats[m.chat].jogadores[m.sender]){
            else if (!global.db.data.chats[m.chat].quiz.perguntaAndamento && ["A", "B", "C", "D"].includes(m.text.toUpperCase())) {
             
             const quizEnd = global.db.data.chats[m.chat].language === 'en' ? 
-            `┌──[robot@bytesec]──[~/ϙυιȥ] 
+            `┌──[v@reaper]──[~/ϙυιȥ] 
 └─► get_status -e
 > ‎ 
 > [!] ᴛʜɪꜱ ɢᴀᴍᴇ ᴀʟʀᴇᴀᴅʏ ᴇɴᴅᴇᴅ, ᴋɪᴅ
 > ‎ 
   ` : 
-            `┌──[robot@bytesec]──[~/ϙυιȥ] 
+            `┌──[v@reaper]──[~/ϙυιȥ] 
 └─► get_status -e
 > ‎ 
 > [!] ᴇꜱꜱᴇ ᴊᴏɢᴏ ᴊᴀ ᴀᴄᴀʙᴏᴜ, ɢᴀʀᴏᴛᴏ
@@ -714,7 +714,7 @@ if(/^\s*--exec\s*$/.test(m.text)) {
   let languag = global.db.data.chats[m.chat].language || 'en'
 
   let getRbt = languag === "pt" 
-    ? `┌──[robot@bytesec]──[~] 
+    ? `┌──[v@reaper]──[~] 
 └─► .fsociety --help
 > ‎ 
 > 𝙼𝚎 𝚍𝚎 𝚊𝚕𝚐𝚞𝚖𝚊 𝚛𝚎𝚜𝚙𝚘𝚜𝚝𝚊, 𝚐𝚊𝚛𝚘𝚝𝚘.
@@ -730,10 +730,10 @@ Exemplos de Uso:
 > Lembre-se: Você é um 1 ou um 0? Ou você controla o sistema, ou é controlado por ele. A pergunta é: está no comando ou só segue as linhas de código?
 > ‎
 
-┌──[robot@bytesec]──[~] 
+┌──[v@reaper]──[~] 
 └─► _`
     : 
-    `┌──[robot@bytesec]──[~] 
+    `┌──[v@reaper]──[~] 
 └─► .fsociety --help
 > ‎ 
 > 𝙶𝚒𝚟𝚎 𝚖𝚎 𝚜𝚘𝚖𝚎𝚝𝚑𝚒𝚗', 𝚔𝚒𝚍
@@ -749,7 +749,7 @@ Usage:
 > Remember: Are you a 1 or a 0? Either you control the system, or you are controlled by it. The question is: are you in charge or just following the lines of code?
 > ‎
 
-┌──[robot@bytesec]──[~] 
+┌──[v@reaper]──[~] 
 └─► _`
   
   return m.reply(getRbt)
@@ -784,7 +784,7 @@ else {
 let languag = global.db.data.chats[m.chat].language || 'en'
 
 let getRbt = languag === "pt" 
-  ? `┌──[robot@bytesec]──[~] 
+  ? `┌──[v@reaper]──[~] 
 └─► .fsociety --help
 
 > ### FSOCIETY SYSTEM INITIATED ###
@@ -797,11 +797,11 @@ let getRbt = languag === "pt"
 > ‎ 
 > >> EOF <<
 
-┌──[robot@bytesec]──[~] 
+┌──[v@reaper]──[~] 
 └─► _~
 `
   : 
-  `┌──[robot@bytesec]──[~] 
+  `┌──[v@reaper]──[~] 
 └─► .fsociety --help
 
 > ‎ 
@@ -815,7 +815,7 @@ let getRbt = languag === "pt"
 > ‎ 
 > >> EOF <<
 
-┌──[robot@bytesec]──[~] 
+┌──[v@reaper]──[~] 
 └─► _`
 
 
@@ -1920,7 +1920,7 @@ await    switchTurn()
         if(parseInt(m.text)<=0 || parseInt(m.text)> global.db.data.chats[m.chat].livraria[m.sender].id.length ){
                 
           const errorBook = global.db.data.chats[m.chat].language === 'en' ? 
-          `robot@bytesec:~# wget -np -A pdf books.ru 
+          `v@reaper:~# wget -np -A pdf books.ru 
 > ‎ 
 > [!] . . . . . ɪɴᴠᴀʟɪᴅ ᴄᴏᴍᴍᴀɴᴅ
 > ᴀɴꜱᴡᴇʀ ᴛʜᴇ ᴍᴇꜱꜱᴀɢᴇ ᴡɪᴛʜ ᴀ ɴᴜᴍʙᴇʀ ꜰʀᴏᴍ 1 ᴛᴏ ${global.db.data.chats[m.chat].livraria[m.sender].id.length }   
@@ -1928,7 +1928,7 @@ await    switchTurn()
 
 :
 
-`robot@bytesec:~# wget -np -A pdf books.ru 
+`v@reaper:~# wget -np -A pdf books.ru 
 > ‎   
 > [!] . . . . . ᴄᴏᴍᴀɴᴅᴏ ɪɴᴠᴀʟɪᴅᴏ 
 > ʀᴇꜱᴘᴏɴᴅᴀ ᴀ ᴍᴇɴꜱᴀɢᴇᴍ ᴄᴏᴍ ᴜᴍ ɴᴜᴍᴇʀᴏ ᴅᴇ 1 ᴀᴛᴇ ${global.db.data.chats[m.chat].livraria[m.sender].id.length }
@@ -2004,14 +2004,14 @@ await	conn.sendFile(m.chat, `${limk}`, `${global.db.data.chats[m.chat].livraria[
     } else {
       m.react("⁉️")
       const errorBook2 = global.db.data.chats[m.chat].language === 'en' ? 
-      `robot@bytesec:~# wget -np -A pdf books.ru 
+      `v@reaper:~# wget -np -A pdf books.ru 
     > ‎ 
     > [!] . . . . . ɪɴᴠᴀʟɪᴅ ᴄᴏᴍᴍᴀɴᴅ
     > ᴀɴꜱᴡᴇʀ ᴛʜᴇ ᴍᴇꜱꜱᴀɢᴇ ᴡɪᴛʜ ᴀ ɴᴜᴍʙᴇʀ`
       
       :
       
-      `robot@bytesec:~# wget -np -A pdf books.ru 
+      `v@reaper:~# wget -np -A pdf books.ru 
     > ‎   
     > [!] . . . . . ᴄᴏᴍᴀɴᴅᴏ ɪɴᴠᴀʟɪᴅᴏ 
     > ʀᴇꜱᴘᴏɴᴅᴀ ᴀ ᴍᴇɴꜱᴀɢᴇᴍ ᴄᴏᴍ ᴜᴍ ɴᴜᴍᴇʀᴏ`

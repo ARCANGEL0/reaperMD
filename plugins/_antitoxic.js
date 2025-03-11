@@ -65,7 +65,7 @@ let destino = global.db.data.chats[m.chat].reportchat || adminAleatorio
 
  if (global.db.data.chats[m.chat].language === 'pt') {
          teks = `
-     > robot@bytesec: #/users/ cat ${generateRandomCode()}.log
+     > v@reaper: /root/users/ cat ${generateRandomCode()}.log
      > ---------------------------------------
 
      [!] ALERTA: Usuário Banido
@@ -89,7 +89,7 @@ let destino = global.db.data.chats[m.chat].reportchat || adminAleatorio
          `;
 } else if (global.db.data.chats[m.chat].language === 'en') {
    teks = `
-> robot@bytesec: #/users/ cat ${generateRandomCode()}.log
+> v@reaper: /root/users/ cat ${generateRandomCode()}.log
 > ---------------------------------------
 
 [!] ALERT: User Banned
