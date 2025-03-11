@@ -51,7 +51,7 @@
 
 R.E.A.P.E.R is an AI-enhanced tool with several functions, integrated as a WhatsApp bot, and designed for a range of ethical security tasks and group utilities in general. It provides functionalities from domain recon, OSINT, and payload crafting to group games, chess and other fun utilities, and all accessible directly through your favorite essaging interface.
 
-```gcc
+```coffeescript
 // System Overview:
 [+] > Ethical hacking & cybersecurity utilities via WhatsApp.
 [+] > Recon, payload crafting, and exploit execution.
