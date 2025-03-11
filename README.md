@@ -180,7 +180,7 @@ R.E.A.P.E.R incorporates AI to automate penetration testing (under development),
  v@reaper: #~ ./install.sh --help
 ```
 
-[!] The following steps will guide the process to configure and deploy R.E.A.P.E.R on your Whatsapp BOT (Ensure that you have atleast a second number in order to proceed!).
+[!] The following steps will guide the process to configure and deploy R.E.A.P.E.R on your Whatsapp BOT (Ensure that you have atleast a second number in order to proceed!). <br>
 // Please adhere to the outlined procedures to ensure proper functionality.
 
 > Installation Steps 
@@ -317,11 +317,11 @@ System Ready: After successful authentication via WhatsApp, R.E.A.P.E.R will est
 
 # 0x0111: Usage
 
-Bytesec MD provides structured commands. Type .menu in chat to open the main directory.
+R.E.A.P.E.R provides structured commands. Type .menu in chat to open the main directory.
 
 ```plaintext
 ╭━━━━━━━━━━━━━━━━━━━━━━━⬣
-┃ 𖠑 𝔹𝕪𝕥𝕖𝕤𝕖𝕔 𝕄𝔻 Console
+┃ Console
 ┃
 ┃ .menu - SYSTEM NAVIGATION
 ┃ .menu ai - ARTIFICIAL INTELLIGENCE
@@ -334,27 +334,33 @@ Bytesec MD provides structured commands. Type .menu in chat to open the main dir
 ┃ .menu util - UTILITIES & TOOLS
 ┃ .menu admin - GROUP COMMAND CONTROL
 ┃ .lists - TYPES OF LISTS
-┃ .fsociety - CONTROL INTERFACE
-┃
+┃ .nexus - PENTEST TOOLKIT
 ┃ 
 ╰━━━━━━━━━━━━━━━━━━━━━━━⬣
 ```
-> Call Bytesec AI with the commands bot, robot or GPT in your phrases.
+[+] R.E.A.P.E.R has his own personality as a bot, you can call him Vance - or just V <br>
+> To call Vance anywhere in the group chat, just call him by his name in any phrase or quote him as V, i.e: <br>
+> [\*]: Hey Vance, how's the weather today? <br>
+> [\*]: Hey @v, scan for possible subdomains at 83.117.XX
 
-> Enable and disable plugins:
+[+] To enable and disable plugins:
 >
->> .on <plugin>: Activate module.
+> // .on <plugin>: Activate module.
 >> 
->> .off <plugin>: Deactivate module.
+> // .off <plugin>: Deactivate module.
 
 
-> For system maintenance:
+[+] For system maintenance:
 >
->> .boost: Improve CPU performance if too slow
+> // .boost: Improve CPU performance if too slow
 >> 
->> .resetbot: Clear cache and temp data.
+> // .resetbot: Clear cache and temp data.
 >>
->> .clearallsessions: Purge defunct sessions if reaperMD stops responding
+> // .resetchat: Erases current chat in database.
+>>
+> // .resetuser <user>: Erases user in database.
+>>
+> // .clearallsessions: Purge defunct sessions if reaperMD stops responding
 
 ---
 # 0x1000: Contact
@@ -364,16 +370,23 @@ Bytesec MD provides structured commands. Type .menu in chat to open the main dir
 > If you’re looking to chat with me, **Mr. Robot**, just click [here](https://wa.me/79001643752). 
 > 
 > But if you want to get in touch with my creator, the mastermind behind reaperMD, here’s the number:
+## Contact Information
 
+// Establishing communication channels... <br>
+[+] For inquiries or support, please use the following channels:<br>
+> // R.E.A.P.E.R Official channel: To engage with R.E.A.P.E.R, utilize the following link: <br>
+> [𒌩 RΞ𐊍PER](https://wa.me/79001643752) 
+>
+> [!] Developer Contact: To contact the developer, use the following WhatsApp command: <br>
 > $ whatsapp -c [+351927285125](https://wa.me/351927285125) 
 
 ---
 
 # 0x1001: Collaboration
 
-Bytesec MD thrives on collaboration. If you have scripts, ideas, or custom modules, share them with the community. Let’s work together to enhance our tools and evolve this Swiss Army tool of digital capabilities. Your contributions can make a difference.
+R.E.A.P.E.R thrives on collaboration. If you have scripts, ideas, or custom modules, feel free to share, since I work on this single handledly, any help would be highly appreciated. Your contribution can make a difference.
 
-  <a href="https://www.gnu.org/licenses/agpl-3.0">
+  <a href="https://github.com/ARCANGEL0/reaperMD/pulls">
     <img src="https://img.shields.io/badge/CONTRIBUTE-0078D4?style=for-the-badge&logo=contribute&logoColor=white" alt="">
   </a><br>
 
@@ -393,9 +406,9 @@ Operates under the AGPL-3.0 license. For full terms, see the LICENSE file. Contr
 
 <p align="center">
  <a href="https://ko-fi.com/henryarcangelo">
-   <img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Fuel the Network - Support Bytesec MD on Ko-fi">
+   <img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Fuel the Network - Support R.E.A.P.E.R project on Ko-fi">
  </a> <br>
-<strong>Hack with Purpose. Byte by Byte.</strong> ⛛
+<strong>Hack the world. Byte by Byte.</strong> ⛛
 </p>
 
 
