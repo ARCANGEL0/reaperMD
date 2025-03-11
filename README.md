@@ -6,7 +6,7 @@
   <h1>  ⫍ 𝗥.𝝣.𝝠.𝗣.𝗘.𝗥 ⸸ </h1>
   <strong>﹝R﹞ᴇᴄᴏɴɴᴇssᴀɪɴᴄᴇ,﹝E﹞xᴘʟᴏɪᴛᴀᴛɪᴏɴ﹝A﹞ɴᴅ﹝P﹞ᴇɴᴛᴇsᴛ﹝E﹞ɴɢɪɴᴇ﹝R﹞ᴏʙᴏᴛ </strong><br>
   <center> <strong> ꜰᴏʀ Wʜᴀᴛsᴀᴘᴘ</strong><br> </center>
-  <strong>0x496e737069726564206279206638536f6369657479</strong>
+  <strong>0x436f6e74726f6c20697320616e20696c6c7573696f6e2e</strong>
 </div>
 <br>
 <p align="left">
@@ -41,18 +41,27 @@
 
 </p>
 
-> 𝙒𝙚𝙡𝙘𝙤𝙢𝙚 𝙩𝙤 𝘽𝙮𝙩𝙚𝙨𝙚𝙘 𝙈𝘿, 𝙬𝙝𝙚𝙧𝙚 𝙚𝙫𝙚𝙧𝙮 𝙗𝙮𝙩𝙚 𝙞𝙨 𝙖 𝙬𝙚𝙖𝙥𝙤𝙣 𝙖𝙣𝙙 𝙚𝙫𝙚𝙧𝙮 𝙨𝙞𝙜𝙣𝙖𝙡, 𝙖 𝙥𝙖𝙩𝙝.
+> 𝙚𝙫𝙚𝙧𝙮 𝙗𝙮𝙩𝙚 𝙞𝙨 𝙖 𝙬𝙚𝙖𝙥𝙤𝙣 𝙖𝙣𝙙 𝙚𝙫𝙚𝙧𝙮 𝙨𝙞𝙜𝙣𝙖𝙡, 𝙖 𝙥𝙖𝙩𝙝.
 
 ---
 
 ## 0x0001: PROJECT OVERVIEW
 
-Welc_ome to the digital underground. This isn’t jUst a bot; it’s your AI-powered acco//mplice in the relentless pursuit of truth. Bytesec MD is desi.gned for the rebels, the ones who refuse to accept the status quo. It’s got the common group features for the everyday user, but don’t be fooled—this is a Swiss Army knife of hacking and reconnaissance tools.
+[!] R.E.A.P.E.R Module 
 
-With deep l.earning models at its core, Bytesec MD doesn’t just assist; it em%powers you to navigate the mur&ky waters of cybersecurity. Whe7her you’re__ here to play games or expose vulnerabilities, this bot is built for the 1's, not the 0's.
+R.E.A.P.E.R is an AI-enhanced tool with several functions, integrated as a WhatsApp bot, and designed for a range of ethical security tasks and group utilities in general. It provides functionalities from domain recon, OSINT, and payload crafting to group games, chess and other fun utilities, and all accessible directly through your favorite essaging interface.
 
-Are you re?ady to dive deep into the shadows, di#mantle the facade, and uncover the secrets lurking beneath? The game is on, and kn»wledge is your weapon. Let’s d1srupt the syst3m together.
+// System Overview:
+[+] > Ethical hacking & cybersecurity utilities via WhatsApp.
+[+] > Recon, payload crafting, and exploit execution.
+[+] > Advanced IA for assisted pentesting, real-time chat or image generation
+[+] > Other functions such as integrated IDE to run and compile code inside Whatsapp, games, group filters and many others
 
+R.E.A.P.E.R is designed to streamline security tasks, automate pentesting processes through AI (currently in development), and provide a range of group management features, entertainment, developer utilies and many more, all within WhatsApp.
+
+R.E.A.P.E.R aims to enhance both security workflows and community engagement through a single, accessible platform.
+
+[-] End of Transmission. 
 
 ---
 
@@ -63,7 +72,7 @@ Are you re?ady to dive deep into the shadows, di#mantle the facade, and uncover 
            _SYSTEM OVERRIDE               
 │─────────────────────────────────
   [0x0001] - OVERVIEW                  
-  [0x0010] - ABOUT BYTESEC MD          
+  [0x0010] - ABOUT REAPER          
   [0x0011] - TOOLS                     
   [0x0100] - RANKING FRAMEW0RK         
   [0x0101] - INSTALLATION              
@@ -75,10 +84,10 @@ Are you re?ady to dive deep into the shadows, di#mantle the facade, and uncover 
   [0x1010] - SUPPORT                   
 └─────────────────────────────────┘
 ```
-> root@bytesec: #~ cat shortcuts0.bin <br>
+> v@reaper: #~ cat shortcuts0.bin <br>
 > ━━━━━━━━━━━━━━━━━━━━━━━ <br>
 [0x0001](#0x0001-project-overview) <br>
-[0x0010](#0x0010-bytesec) <br>
+[0x0010](#0x0010-reaper) <br>
 [0x0011](#0x0011-tools) <br>
 [0x0100](#0x0100-ranking) <br>
 [0x0101](#0x0101-installation) <br>
@@ -90,9 +99,23 @@ Are you re?ady to dive deep into the shadows, di#mantle the facade, and uncover 
 [0x1011](#0x1011-support) 
 ---
 
-# 0x0010: Bytesec 
+# 0x0010: Reaper 
 
-Bytesec MD isn't for everyone. It’s designed for the operators who work in the dark, those who know how to navigate complex systems. Inspired by cyber-mystique, this bot was built to empower, to protect, and to probe.
+R.E.A.P.E.R incorporates AI to automate penetration testing (under development), enhancing its core capabilities. The bot also includes features for group management and engagement, combining security tools with community utilities and entertainment.
+
+[+] Core Modules:
+[+] > Recon tools: SQLMap, WPScan, Nikto, Gobuster, all through Whatsapp.
+[+] > Payload Generation & Exploit Execution: MSFVenom, Powersploit, Evil-WinRM.
+[+] > AI-Automated Pentesting (In Development): Provides outputs and re-uses them.
+[+] > All traffic made on BOT runs through TOR, and shell commands such as SQLMap natively runs through 9051 port.
+[+] > Group utilities:
+//// [*] >> Filters: AntiSpam, AntiNSFW, Anti "View Once Messages", Anti Deletion [...]
+//// [*] >> Automation: Schedule tasks, notes. Auto close/opening. MetaAI Blocker [...]
+//// [*] >> Games: Chess,Quiz,Poker,Sudoku [...]
+//// [*] >> Utilities: Social media downloaders, scrapers, play/download music [...]
+//// [*] >> Fun: Image creation, filters & effects, memes generator, jokes and many more. [...]
+//// [*] >> Tools: Decoders, Converters, Cryptography, IDE/Built-in compiler. [...]
+[ -ᴍᴏʀᴇ ɪɴꜰᴏ ʙᴇʟᴏᴡ-  ]
 
 ---
 
@@ -105,205 +128,205 @@ Bytesec MD isn't for everyone. It’s designed for the operators who work in the
 >>
 >> PDF Summarizer: Condense extensive documents into concise and summarized content.
 >>
->> Formula.ai: Handles calculations, algorithms, calculus, functions,equations,statistical analyses in the field and other math operations
+>> Nexus: Assisted pentesting and cybersecurity-driven AI, the main core of the bot (In development)
+>>
+>> Formula.ai: Handles calculations, algorithms, calculus, functions, equations, statistical analyses in the field and other math operations
 >> 
 >> Creative Suite: Includes AI tools for art generation such as DALLE-3, street-style rhymes with shadyGPT, and more.
 >
 > ️☣︎ Recon & Exploit Tools
 >>
 >>OSINT & Scanners
->> PhoneInfoga, theHarvester, Sublist3r, Nikto, Nmap, SQLMap, WPScan, Dirbuster, Wfuzz, Dnsrecon
+>> PhoneInfoga, theHarvester, Sublist3r, Nikto, Nmap, SQLMap, WPScan, Dirbuster, Wfuzz, Dnsrecon [-Mᴏʀᴇ sᴏᴏɴ...-]
 >>
 >> Exploitation & Payloads
->> Metasploit, MSFVenom, Evil Droid, Evil-WinRM, Veil Framework, Impacket, PowerSploit, Empire
+>> Metasploit, MSFVenom, Evil Droid, Evil-WinRM, Veil Framework, Impacket, PowerSploit, Empire [-Mᴏʀᴇ sᴏᴏɴ...-]
 >>
 >> Cryptography & Brute Forcing
->> Hashcat, John the Ripper, Hydra, Medusa, Patator, Crowbar
+>> Hashcat, John the Ripper, Hydra, Medusa, Patator, Crowbar [-Mᴏʀᴇ sᴏᴏɴ...-]
 >>
 >> Post-Exploitation & Persistence
->> Mimikatz, BloodHound (CLI), CrackMapExec, LinPEAS/WinPEAS
+>> Mimikatz, BloodHound (CLI), CrackMapExec, LinPEAS/WinPEAS [-Mᴏʀᴇ sᴏᴏɴ...-]
 >>
 >> Web Application Testing & Fuzzing
->> Burp Suite CLI, XSStrike, XSSer, Commix, LFISuite, DotDotPwn, SQLMap, SQLNinja, Dirb, Ffuf
+>> XSStrike, XSSer, Commix, LFISuite, SQLMap, SQLNinja, Ffuf [-Mᴏʀᴇ sᴏᴏɴ...-]
 >>
 >> Steganography & Utilities
 >> Steghide, ExifTool, GitTools, cupp
->>
->> Network Enumeration & Protocol Poisoning
->> Responder, Dnsenum, Enum4linux
 >
 > 🎲 Games & Diversions
 >
 >> Games: Chess, Poker, Slots, Tic Tac Toe, Roulette, Bets, Hangman, Quiz, Sudoku, Crossword, Wordsearch.
 >>
->> Group entertainment: daily horoscope, MBTI Personality, filters and photos overlays, jokes, memes.
+>> Group entertainment: Daily horoscope, MBTI Personality, filters and photos overlays, jokes, memes.
 >>
->> Interactivity: interactions between members with rewards.
+>> Interactivity: interactions between members with rewards and a level-up system.
 >
 >> 🧩 Utilities & Downloaders
 >> Encoding Suite: Encrypt/decrypt in Morse, Binary, Base64.
 >>
 >> Code Obfuscation: Secure your scripts from prying eyes.
 >>
->> Media Extraction: Download from Instagram, IGTV, facebook, spotify, playstore, and beyond.
+>> Media Extraction: Download from Instagram, TikTok, Threads, IGTV, facebook, spotify, playstore, and beyond.
 >>
 >
 > ⚙️ Group Command Control
->> Admin Tools: Anti-spam, anti-delete, anti-view-once, and link protection.
+>> Admin Tools: Anti-spam, anti-delete, anti-view-once, link protection and many more
 >>
->> User Control: Ban, mute, and full group authority.
+>> User Control: Ban, mute, block bot usage and full group authority.
 >>
->> Automated Reminders: Set tasks, alerts, and timed operations.
+>> Automated tasks: Set tasks, alerts, and timed operations.
 >
 
 ---
 
 # 0x0100: Ranking
 ```bash
- root@bytesecf: #~ cat rank.dat | grep "info"
+ v@reaper: #~ cat rank.dat | grep "info"
 ```
 >> Bytecoins for the Elite
 > 
-> Gain Bytecoins (BTY) for each operation or interaction. Level up, unlock exclusive commands for pentesting and recon, and become a legend within the network. This system is designed to foster engagement, offering high-value tools to those who commit in the group.
+> Gain Bytecoins (🜅) for each operation or interaction. Level up, unlock exclusive commands to use, and become a legend within the community network. This system is designed to foster engagement, offering high-value tools to those who commit in the group.
 
 ---
 
 # 0x0101 Installation
 ```bash
- root@bytesecf: #~ ./install.sh --help
+ v@reaper: #~ ./install.sh --help
 ```
 
-Alright, kiddo. Let’s set up Bytesec MD—no fluff, just the steps you need to get this bot running. You ready? Here we go.
+[!] The following steps will guide the process to configure and deploy R.E.A.P.E.R on your Whatsapp BOT (Ensure that you have atleast a second number in order to proceed!).
+// Please adhere to the outlined procedures to ensure proper functionality.
 
-> Installation Steps for Bytesec MD
+> Installation Steps 
 > 
->> 1. Clone the Repository
->> Open your terminal. Clone the Bytesec MD repository and step inside:
+>> Open your terminal. Clone the REAPER MD repository and step inside:
 ```bash
-git clone https://github.com/seu-usuario/reaperMD.git
+git clone https://github.com/ARCANGEL0/reaperMD.git
 cd reaperMD
-```
->
->> 2. Install Required Node Version with NVM
->> Bytesec MD needs Node.js version 18.1.17. If you’re not there, use NVM to lock it down:
-```bash
-nvm install 18.1.17
-nvm use 18.1.17
-```
->> Set it as your default, so there are no surprises later:
-```bash
-nvm alias default 18.1.17
-```
-> 
-3. Install Dependencies
->> Still with me? Good. Now, in the project directory, install what’s needed:
-```bash
 npm i -f
 ```
 >
-> That’s it. Bytesec MD is locked, loaded, and ready to go. You’re all set—now it’s up to you to make it count.
-
+>> Check if you have required Node version with NVM
+>> R.E.A.P.E.R needs Node.js version >=20. Use NVM to lock it down:
+```bash
+nvm install 20
+nvm use 20
+nvm alias default 20
+```
+>> Before running R.E.A.P.E.R, adjust the necessary configuration in the next section.
 ----
 
 # 0x0110: Configuration
 ```bash
- root@bytesecf: #~ curl -i http://0.0.0.0:3301/configuration.dat
+ v@reaper: #~ curl -i http://0.0.0.0:3301/configuration.dat
 ```
 > ━━━━━━━━━━━━━━━━━━━
 
-Alright, let’s get to the heart of the matter: configuring config.js. Open that file and prepare to enter the realm of digital wizardry. Here’s what you need to do:
+The `config.js` file contains essential parameters for R.E.A.P.E.R's operation. Open this file and configure the following settings: 
 
-### Step 1: Adjust config.js
+### Step 1: Adjust reaperMD/config.js
 ```javascript
 
 global.owner = [
-    ["447598848203", '𝙊𝙬𝙣𝙚𝙧', true], // Your glorious WhatsApp number (country code + number all together, pal)
+    ["YOUR PERSONAL NUMBER HERE", '𝙊𝙬𝙣𝙚𝙧', true], // Your WhatsApp number (country code + number all together)
 ];
 
-// Identify the lucky few allowed to slide into reaperMD's DMs
+// if the ANTI PRIVATE function is enabled, private chat with the bot will be restricted except for the numbers in the array below
 global.permitido = [
-    ["1518833273"], // Add any other numbers that deserve your time
-    ["00000000"], // Placeholder for extra numbers - because you might get popular
+    ["1518833273"], // Insert all numbers together including country code, except the (+)
+    ["00000000"], 
     ["00000000"],
     ["00000000"],
     ["00000000"],
     ["00000000"]
 ];
 
-// Your phonenumber
-global.criador = "351927285125@s.whatsapp.net"; 
+// Your phonenumber 
+global.criador = "1234567890@s.whatsapp.net"; 
 
 // Specify the bot's phone number
-global.botNumberCode = ""; // Example: +59309090909 (fill it with reaperMD’s number)
+global.botNumberCode = ""; // Example: +59309090909 (This must be your second number, where R.E.A.P.E.R will operate)
 
-// API keys (feel free to leave them empty, or fill them if you’re fancy)
+// API keys (feel free to leave them empty, or fill them if you have the API)
 global.lolkeysapi = ""; // LOL Humans API for those quirky moments
-global.miftah = ""; // MiftaH API – because every bot needs its secrets
-global.maelyn = "" // Maelyn API - Pretty name, huh
-global.neoxr = ""; // Neoxr API; sounds cool, right?
-global.itsrose = [""]; // ITSROSE API, because flowers are nice
-global.baileys = "@whiskeysockets/baileys"; // The party starter of libraries
+global.miftah = ""; // MiftaH API –ts
+global.maelyn = "" // Maelyn API 
+global.neoxr = ""; // Neoxr API; 
+global.itsrose = [""]; // ITSROSE API,
 ```
 
-### Step 2: Install Required Packages
-Now that your config.js is looking snazzy, let’s make sure you have all the dependencies in place. Open your terminal and run:
-```bash
-bash
-npm install
-```
-You wouldn’t want to start a revolution with missing pieces now, would you?
+### Step 2: Run the Server
 
-### Step 3: Run the Server
-Time to unleash reaperMD on the digital world. In your terminal, execute:
+[+] To initiate R.E.A.P.E.R, use the following command:
+
 ```bash
 npm start
 ```
-Watch as reaperMD comes to life. If you see any errors, well, that’s just part of the existential dread we call coding.
 
-Or make reaperMD even more interactive! Generate a QR code for scanning by running:
+// Monitoring System Status: Observe console output for status reports. Error messages indicate potential configuration issues or unmet dependencies. Refer to troubleshooting documentation as necessary.
+
+[!] For interactive authentication, generate a QR code by executing:
+
 ```bash
 npm run qr
 ```
-And if you need an authentication code rather than QR to prove you’re not a bot (ironically), use:
 
-```bash
-npm run code
-```
->> Optional Step: Use PM2 for Process Management
-> Want to be the master of your own digital domain? Use PM2 to keep reaperMD running smoothly. Here’s how:
->
-> Install PM2 globally (if you haven’t yet):
+>> Optional: Implementing PM2 for Process Management
+> To enhance R.E.A.P.E.R's operational stability, PM2 can be utilized for process management.
+
+>> [+] Installation Procedure:
+>//1. Verify PM2 installation: Execute the following command to install PM2 globally if not already present:
+
 ```bash
 npm install -g pm2
 ```
-> Start reaperMD with PM2:
+
+>//2. Deploy R.E.A.P.E.R via PM2:
+
 ```bash
-pm2 start npm --name "reaperMD" -- start
+pm2 start npm --name "reaper" --start
 ```
-> Check the status of your beloved bot:
+
+>//3. Status Verification: Monitor the operational status of R.E.A.P.E.R:
+
+```bash
+pm2 status reaper
+```
+
+>> [+] PM2 Management commands:
+>//1 Restart R.E.A.P.E.R:
 >
 ```bash
-pm2 status
+pm2 restart reaper
 ```
-> To generate a new authentication code while reaperMD is working hard:
+>//2 Stop R.E.A.P.E.R:
+>
 ```bash
-pm2 start npm --name "byteSec-code" -- run code
+pm2 stop reaper
 ```
->> Manage your sessions like a pro with these PM2 commands:
-> Restart reaperMD:
+>//3. Kill the process:
+>
 ```bash
-pm2 restart reaperMD
+pm2 delete reaper
 ```
-> Stop reaperMD:
-```bash
-pm2 stop reaperMD
-```
-> Delete the reaperMD process:
-```bash
-pm2 delete reaperMD
-```
+
 ### Conclusion
-And there you have it! You’ve configured config.js, started your Node.js server, and optionally set up PM2 to keep reaperMD in check. Now go out there and let reaperMD take the digital world by storm. Just remember, it’s all a game, and you’re the player. Happy hacking!
+
+
+If `config.js` file has been configured, the Node.js server initiated, and PM2 has been implemented (if selected) for process management. Last step is to finalize setup, perform the following steps:
+
+```plaintext
+>> [!] Authentication Protocol:
+> 
+//> 1. WhatsApp Authentication: Access your WhatsApp account associated with the R.E.A.P.E.R bot.
+//> 2. Device Linking: Navigate to 'Linked Devices' within WhatsApp settings.
+//> 3. Authentication Method:
+ \-> QR Code: If startup used was `npm run qr`.
+  \-> Authentication Code: If startup used was `npm run code`.
+```
+
+System Ready: After successful authentication via WhatsApp, R.E.A.P.E.R will establish connection.
 
 ---
 

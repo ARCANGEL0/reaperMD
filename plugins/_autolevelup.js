@@ -121,7 +121,7 @@ export function before(m, { conn , isOwner, nivel, participants}) {
       const ethereumMessage = eth ? `${messages[userLanguage].ethereum}\n` : '';
   
     let textin = `
-root@bytesec: #~ usermod -aG id
+v@reaper: #~ usermod -aG id
 
 ${messages[userLanguage].levelUpDetected}
 . . . . . . . . . . . . . . . . . . . .
