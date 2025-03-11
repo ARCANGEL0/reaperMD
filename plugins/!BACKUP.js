@@ -20,7 +20,9 @@ if (typeof global.lastBackup === 'undefined') global.lastBackup = new Date();
 
 const now = new Date();
 if (now - global.lastBackup >= 2 * 60 * 60 * 1000) {
-    const gitBackup = spawn('git', ['add', 'database.json && git commit -m "Automated backup" && git push -f origin master'], { shell: true });
+
+    const backupDir = '/root/drive/backups/';
+    const gitBackup = spawn('sh', ['-c', `cp database.json ${backupDir}; cd ${backupDir}; git add . && git commit -m "ReaperMD backup" && git push -f origin master`], { shell: true });
 
     gitBackup.stdout.on('data', (data) => {
         console.log(`stdout: ${data}`);
@@ -39,7 +41,7 @@ if (now - global.lastBackup >= 2 * 60 * 60 * 1000) {
         }
     });
 }
-  
+
 }
 
 
