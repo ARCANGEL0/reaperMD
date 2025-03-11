@@ -64,56 +64,49 @@ let destino = global.db.data.chats[m.chat].reportchat || adminAleatorio
   let protocol = generateRandomCode()
   let teks;
 
-if (global.db.data.chats[m.chat].language === 'pt') {
+  if (global.db.data.chats[m.chat].language === 'pt') {
     teks = `
-> v@reaper: /root/users/ cat ${protocol}.log
+> v@reaper: /root/users/ cat ${generateRandomCode()}.log
 > ---------------------------------------
-
-[!] ALERTA: Usuário Banido
-──────────────────────
-> Protocolo: ${protocol}
-> Data: ${getDataAtual()}
-
->>> DETALHES DO USUÁRIO
-──────────────────────
-> [+] Nome: ${m.name}
-> [+] Contato: @${m.sender.split`@`[0]}
-> [+] Grupo: ${groupMetadata.subject}
-
->>> MOTIVO DO EXÍLIO
-──────────────────────
-> ${motivo}
-
-> # Operação realizada pela ByteSec. 
-> # Monitoramento constante.
-──────────────────────
-    `;
-} else if (global.db.data.chats[m.chat].language === 'en') {
-    teks = `
-> v@reaper: /root/users/ cat ${protocol}.log
-> ---------------------------------------
-
-[!] ALERT: User Banned
-──────────────────────
-> Protocol: ${protocol}
-> Date: ${getDataAtual()}
-
->>> USER DETAILS
-──────────────────────
-> [+] Name: ${m.name}
-> [+] Contact: @${m.sender.split`@`[0]}
-> [+] Group: ${groupMetadata.subject}
-
->>> REASON FOR EXILE
-──────────────────────
+*𓉘!𓉝* 𝗨𝘀𝘂𝗮́𝗿𝗶𝗼 𝗕𝗮𝗻𝗶𝗱𝗼
+────────────────────────────────
+> Pʀᴏᴛᴏᴄᴏʟᴏ: ${generateRandomCode()}
+> Dᴀᴛᴀ: ${getDataAtual()}
+>>> 𝘿𝙀𝙏𝘼𝙇𝙃𝙀𝙎 𝘿𝙊 𝙐𝙎𝙐𝘼́𝙍𝙄𝙊
+────────────────────────────────
+> [+] Nᴏᴍᴇ: ${m.name}
+> [+] Cᴏɴᴛᴀᴛᴏ: @${m.sender.split`@`[0]}
+> [+] Gʀᴜᴘᴏ: ${groupMetadata.subject}
+> ‎ 
+>>> ᴍ̲ᴏ̲ᴛ̲ɪ̲ᴠ̲ᴏ̲
+────────────────────────────────
 > ${motivo}
 > ‎ 
-> # Operation conducted by ByteSec.
-> # Under continuous surveillance.
-──────────────────────
-    `;
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
+────────────────────────────────
+`;
+} else if (global.db.data.chats[m.chat].language === 'en') {
+teks = `
+> v@reaper: /root/users/ cat ${generateRandomCode()}.log
+> ---------------------------------------
+*𓉘!𓉝* 𝗨𝘀𝗲𝗿 𝗕𝗮𝗻𝗻𝗲𝗱
+────────────────────────────────
+> Pʀᴏᴛᴏᴄᴏʟ: ${generateRandomCode()}
+> Dᴀᴛᴇ: ${getDataAtual()}
+>>> 𝙐𝙎𝙀𝙍 𝘿𝙀𝙏𝘼𝙄𝙇𝙎
+────────────────────────────────
+> [+] Nᴀᴍᴇ: ${m.name}
+> [+] Cᴏɴᴛᴀᴄᴛ: @${m.sender.split`@`[0]}
+> [+] Gʀᴏᴜᴘ: ${groupMetadata.subject}
+> ‎ 
+>>> ʀ̲ᴇ̲ᴀ̲s̲ᴏ̲ɴ̲
+────────────────────────────────
+> ${motivo}
+> ‎ 
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
+────────────────────────────────
+`;
 }
-   
    m.reply(teks,destino)
    
  }
@@ -134,32 +127,30 @@ if (global.db.data.chats[m.chat].language === 'pt') {
     texto = `
 > v@reaper: #/groups/ alert.log
 > ---------------------------------------
-
-[!] ALERTA: NÚMERO EXTERNO SUSPEITO DETECTADO
+*𓉘!𓉝* 𝗔𝗟𝗘𝗥𝗧𝗔: ɴᴜ́ᴍᴇʀᴏ sᴜsᴘᴇɪᴛᴏ
 ──────────────────────
-> Número detectado: ${m.sender.split('@')[0]}
-> Código de erro: 0x4F2A1D
-> Acesso não autorizado - bloqueio imediato.
-
-> ⚠ 0xC014: "IP isolado e marcado para blacklist."
+> Nᴜ́ᴍᴇʀᴏ ᴅᴇᴛᴇᴄᴛᴀᴅᴏ: ${m.sender.split('@')[0]}
+> Cᴏ́ᴅɪɢᴏ ᴅᴇ ᴇʀʀᴏ: 0x4F2A1D
+> Aᴄᴇssᴏ ɴᴀ̃ᴏ ᴀᴜᴛᴏʀɪᴢᴀᴅᴏ 
 > ‎ 
-> # Monitoração ativa por ByteSec.
+> ⚠ 0xC014: "IP ᴀᴅɪᴄɪᴏɴᴀᴅᴏ ɴᴏ IPS."
+> ‎ 
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
 ──────────────────────
     `;
 } else if (global.db.data.chats[m.chat].language === 'en') {
     texto = `
 > v@reaper: #/groups/ alert.log
 > ---------------------------------------
-
-[!] WARNING: SUSPICIOUS EXTERNAL NUMBER DETECTED
+*𓉘!𓉝* 𝗔𝗟𝗘𝗥𝗧𝗔: sᴜsᴘɪᴄɪᴏᴜs ɴᴜᴍʙᴇʀ
 ──────────────────────
-> Detected number: ${m.sender.split('@')[0]}
-> Error code: 0x4F2A1D
-> Unauthorized access - immediate lockout.
-
-> ⚠ 0xC014: "IP isolated and flagged for blacklist."
+> Dᴇᴛᴇᴄᴛᴇᴅ ɴᴜᴍʙᴇʀ: ${m.sender.split('@')[0]}
+> Eʀʀᴏʀ ᴄᴏᴅᴇ: 0x4F2A1D
+> Uɴᴀᴜᴛʜᴏʀɪᴢᴇᴅ ᴀᴄᴄᴇss - ʟᴏᴄᴋᴏᴜᴛ.
 > ‎ 
-> # Active monitoring by ByteSec.
+> ⚠ 𝟬𝘅𝗖𝟬𝟭𝟰: ❞𝗜𝗣 𝗳𝗹𝗮𝗴𝗴𝗲𝗱 𝗼𝗻 𝗜𝗣𝗦❞
+> ‎ 
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
 ──────────────────────
     `;
 }
