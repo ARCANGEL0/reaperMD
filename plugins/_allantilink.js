@@ -292,36 +292,33 @@ global.db.data.chats[m.chat].ignored.push(DELETEMESSAGE.message.protocolMessage.
 let warnYt;
 
 if (global.db.data.chats[m.chat].language === 'pt') {
-    warnYt = `
+  warnYt = `
 > v@reaper: #~ journalctl
 > ---------------------------------------
-
-*𓉘!𓉝* 0x8007000E: Violação de Regras
+*𓉘!𓉝* 𝟬𝘅𝟴𝟬𝟬𝟳𝟬𝟬𝟬𝗘: 𝗥𝘂𝗹𝗲 𝗩𝗶𝗼𝗹𝗮𝘁𝗶𝗼𝗻
 ────────────────────────────────
-> Não mande links do Youtube neste grupo. 
-> Isso é estritamente proibido pelas regras.
-> Qualquer desafio a esta ordem resultará em 
-> consequências imediatas.
+> Lɪɴᴋs ᴅᴏ Yᴏᴜᴛᴜʙᴇ sᴀ̃ᴏ ᴘʀᴏɪʙɪᴅᴏs.
+> O ɴᴀ̃ᴏ ᴄᴜᴍᴘʀɪᴍᴇɴᴛᴏ ʀᴇsᴜʟᴛᴀʀᴀ́ ᴇᴍ ʀᴇᴍᴏᴄ̧ᴀ̃ᴏ ɪᴍᴇᴅɪᴀᴛᴀ.
+> Pᴏʀ ꜰᴀᴠᴏʀ, sɪɢᴀ ᴀs ʀᴇɢʀᴀs ᴇsᴛᴀʙᴇʟᴇᴄɪᴅᴀs ɴᴏ ɢʀᴜᴘᴏ.
 > ‎ 
-> # Monitoração ativa por ByteSec.
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
 ────────────────────────────────
-    `;
+  `;
 } else if (global.db.data.chats[m.chat].language === 'en') {
-    warnYt = `
+  warnYt = `
 > v@reaper: #~ journalctl
 > ---------------------------------------
-
-*𓉘!𓉝* WARNING: Rule Violation
+*𓉘!𓉝* 𝟬𝘅𝟴𝟬𝟬𝟳𝟬𝟬𝟬𝗘: 𝗥𝘂𝗹𝗲 𝗩𝗶𝗼𝗹𝗮𝘁𝗶𝗼𝗻
 ────────────────────────────────
-> Do not send Youtube links in this group.
-> It is strictly banned by defined rules.
-> Any challenge to this order will result in 
-> immediate consequences.
+> Yᴏᴜᴛᴜʙᴇ ʟɪɴᴋs ᴀʀᴇ ᴘʀᴏʜɪʙɪᴛᴇᴅ ɪɴ ᴛʜɪs ɢʀᴏᴜᴘ.
+> Nᴏɴ-ᴄᴏᴍᴘʟɪᴀɴᴄᴇ ᴡɪʟʟ ʀᴇsᴜʟᴛ ɪɴ ɪᴍᴍᴇᴅɪᴀᴛᴇ ᴀᴄᴛɪᴏɴ.
+> Pʟᴇᴀsᴇ ᴀᴅʜᴇʀᴇ ᴛᴏ ᴛʜᴇ ᴄᴏᴍᴍᴜɴɪᴛʏ ʀᴜʟᴇs.
 > ‎ 
-> # Active monitoring by ByteSec.
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
 ────────────────────────────────
-    `;
+  `;
 }
+  
     
    
  await conn.sendMessage(m.chat, {text: warnYt, mentions: [m.sender]}, {quoted: m})
@@ -334,41 +331,37 @@ if (global.db.data.chats[m.chat].language === 'pt') {
   if(global.db.data.chats[m.chat].users[m.sender].advYt == 2) {
     let YtBAN;
 
-    if (global.db.data.chats[m.chat].language === 'pt') {
-        YtBAN = `
-    > v@reaper: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
-    > ---------------------------------------
-    
-    >>> *𓉘!𓉝* ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ 
-    ────────────────────────────────
-    > [+] Você achou que poderia ignorar minhas instruções?
-    > [+] Links do Youtube não são permitidos aqui.
-    > [+] Agora, você decidiu se arriscar. A consequência? 
-    > [+] Você será removido do sistema. 
-    
-    > Adeus, ${global.db.data.users[m.sender].name}. 
-    > # Monitoração ativa por ByteSec. 
-    ────────────────────────────────
-        `;
-    }
-    else if (global.db.data.chats[m.chat].language === 'en') {
-      YtBAN = `
-  > v@reaper: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
-  > ---------------------------------------
-  
-  *𓉘!𓉝* ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ
-  ────────────────────────────────
-  > [+] You thought you could just ignore my orders?
-  > [+] Youtube links are strictly forbidden here.
-  > [+] You chose to take a risk. The consequence? 
-  > [+] You’re getting erased from the system. 
-  
-  > Goodbye, ${global.db.data.users[m.sender].name}. 
-  > # Active monitoring by ByteSec. 
-  ────────────────────────────────
-      `;
-  }
 
+    if (global.db.data.chats[m.chat].language === 'pt') {
+      YtBAN = `
+> v@reaper: ./remove.sh -u '@${m.sender.split('@')[0]}'
+> ---------------------------------------
+>>> *𓉘!𓉝* ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ 
+────────────────────────────────
+> [𝗔𝗟𝗘𝗥𝗧] ʟɪɴᴋ ᴅᴏ Yᴏᴜᴛᴜʙᴇ ᴅᴇᴛᴇᴄᴛᴀᴅᴏ
+> *𓉘!𓉝* ᴏ ᴜsᴜᴀ́ʀɪᴏ ᴠɪᴏʟᴏᴜ ᴀs ʀᴇɢʀᴀs ᴅᴏ ɢʀᴜᴘᴏ.​
+> .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+> // 𝙍𝙚𝙢𝙤𝙫𝙚𝙣𝙙𝙤 ${global.db.data.users[m.sender].name}... 
+> ‎ 
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊  
+────────────────────────────────
+`;
+  }
+  else if (global.db.data.chats[m.chat].language === 'en') {
+    YtBAN = `
+> v@reaper: ./remove.sh -u '@${m.sender.split('@')[0]}'
+> ---------------------------------------
+>>> *𓉘!𓉝* ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ
+────────────────────────────────
+> [𝗔𝗟𝗘𝗥𝗧] Yᴏᴜᴛᴜʙᴇ ʟɪɴᴋ ᴅᴇᴛᴇᴄᴛᴇᴅ
+> *𓉘!𓉝* ᴜsᴇʀ ʜᴀs ᴠɪᴏʟᴀᴛᴇᴅ ɢʀᴏᴜᴘ ʀᴜʟᴇs
+> .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+> // 𝙍𝙚𝙢𝙤𝙫𝙞𝙣𝙜 ${global.db.data.users[m.sender].name}...
+> ‎ 
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
+────────────────────────────────
+`;
+}
 await conn.reply(m.chat, YtBAN, null, { mentions: [aa] }
 )
 global.db.data.chats[m.chat].users[m.sender].advYt = 0 
@@ -418,36 +411,34 @@ global.db.data.chats[m.chat].ignored.push(DELETEMESSAGE.message.protocolMessage.
 let warnTg;
 
 if (global.db.data.chats[m.chat].language === 'pt') {
-    warnTg = `
+  warnTg = `
 > v@reaper: #~ journalctl
 > ---------------------------------------
-
-*𓉘!𓉝* 0x8007000E: Violação de Regras
+*𓉘!𓉝* 𝟬𝘅𝟴𝟬𝟬𝟳𝟬𝟬𝟬𝗘: 𝗥𝘂𝗹𝗲 𝗩𝗶𝗼𝗹𝗮𝘁𝗶𝗼𝗻
 ────────────────────────────────
-> Não mande links do Telegram neste grupo. 
-> Isso é estritamente proibido pelas regras.
-> Qualquer desafio a esta ordem resultará em 
-> consequências imediatas.
+> Lɪɴᴋs ᴅᴏ Tᴇʟᴇɢʀᴀᴍ sᴀ̃ᴏ ᴘʀᴏɪʙɪᴅᴏs.
+> O ɴᴀ̃ᴏ ᴄᴜᴍᴘʀɪᴍᴇɴᴛᴏ ʀᴇsᴜʟᴛᴀʀᴀ́ ᴇᴍ ʀᴇᴍᴏᴄ̧ᴀ̃ᴏ ɪᴍᴇᴅɪᴀᴛᴀ.
+> Pᴏʀ ꜰᴀᴠᴏʀ, sɪɢᴀ ᴀs ʀᴇɢʀᴀs ᴇsᴛᴀʙᴇʟᴇᴄɪᴅᴀs ɴᴏ ɢʀᴜᴘᴏ.
 > ‎ 
-> # Monitoração ativa por ByteSec.
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
 ────────────────────────────────
-    `;
+  `;
 } else if (global.db.data.chats[m.chat].language === 'en') {
-    warnTg = `
+  warnTg = `
 > v@reaper: #~ journalctl
 > ---------------------------------------
-
-*𓉘!𓉝* WARNING: Rule Violation
+*𓉘!𓉝* 𝟬𝘅𝟴𝟬𝟬𝟳𝟬𝟬𝟬𝗘: 𝗥𝘂𝗹𝗲 𝗩𝗶𝗼𝗹𝗮𝘁𝗶𝗼𝗻
 ────────────────────────────────
-> Do not send Telegram links in this group.
-> It is strictly banned by defined rules.
-> Any challenge to this order will result in 
-> immediate consequences.
+> Tᴇʟᴇɢʀᴀᴍ ʟɪɴᴋs ᴀʀᴇ ᴘʀᴏʜɪʙɪᴛᴇᴅ ɪɴ ᴛʜɪs ɢʀᴏᴜᴘ.
+> Nᴏɴ-ᴄᴏᴍᴘʟɪᴀɴᴄᴇ ᴡɪʟʟ ʀᴇsᴜʟᴛ ɪɴ ɪᴍᴍᴇᴅɪᴀᴛᴇ ᴀᴄᴛɪᴏɴ.
+> Pʟᴇᴀsᴇ ᴀᴅʜᴇʀᴇ ᴛᴏ ᴛʜᴇ ᴄᴏᴍᴍᴜɴɪᴛʏ ʀᴜʟᴇs.
 > ‎ 
-> # Active monitoring by ByteSec.
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
 ────────────────────────────────
-    `;
+  `;
 }
+  
+
  
 
 
@@ -463,39 +454,35 @@ if (global.db.data.chats[m.chat].language === 'pt') {
     let TgBAN;
 
     if (global.db.data.chats[m.chat].language === 'pt') {
-        TgBAN = `
-    > v@reaper: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
-    > ---------------------------------------
-    
-    >>> *𓉘!𓉝* ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ 
-    ────────────────────────────────
-    > [+] Você achou que poderia ignorar minhas instruções?
-    > [+] Links do Telegram não são permitidos aqui.
-    > [+] Agora, você decidiu se arriscar. A consequência? 
-    > [+] Você será removido do sistema. 
-    
-    > Adeus, ${global.db.data.users[m.sender].name}. 
-    > # Monitoração ativa por ByteSec. 
-    ────────────────────────────────
-        `;
-    }
-    else if (global.db.data.chats[m.chat].language === 'en') {
       TgBAN = `
-  > v@reaper: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
-  > ---------------------------------------
-  
-  *𓉘!𓉝* ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ
-  ────────────────────────────────
-  > [+] You thought you could just ignore my orders?
-  > [+] Telegram links are strictly forbidden here.
-  > [+] You chose to take a risk. The consequence? 
-  > [+] You’re getting erased from the system. 
-  
-  > Goodbye, ${global.db.data.users[m.sender].name}. 
-  > # Active monitoring by ByteSec. 
-  ────────────────────────────────
-      `;
+> v@reaper: ./remove.sh -u '@${m.sender.split('@')[0]}'
+> ---------------------------------------
+>>> *𓉘!𓉝* ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ 
+────────────────────────────────
+> [𝗔𝗟𝗘𝗥𝗧] ʟɪɴᴋ ᴅᴏ Tᴇʟᴇɢʀᴀᴍ ᴅᴇᴛᴇᴄᴛᴀᴅᴏ
+> *𓉘!𓉝* ᴏ ᴜsᴜᴀ́ʀɪᴏ ᴠɪᴏʟᴏᴜ ᴀs ʀᴇɢʀᴀs ᴅᴏ ɢʀᴜᴘᴏ.​
+> .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+> // 𝙍𝙚𝙢𝙤𝙫𝙚𝙣𝙙𝙤 ${global.db.data.users[m.sender].name}... 
+> ‎ 
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊  
+────────────────────────────────
+`;
   }
+  else if (global.db.data.chats[m.chat].language === 'en') {
+    TgBAN = `
+> v@reaper: ./remove.sh -u '@${m.sender.split('@')[0]}'
+> ---------------------------------------
+>>> *𓉘!𓉝* ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ
+────────────────────────────────
+> [𝗔𝗟𝗘𝗥𝗧] Tᴇʟᴇɢʀᴀᴍ ʟɪɴᴋ ᴅᴇᴛᴇᴄᴛᴇᴅ
+> *𓉘!𓉝* ᴜsᴇʀ ʜᴀs ᴠɪᴏʟᴀᴛᴇᴅ ɢʀᴏᴜᴘ ʀᴜʟᴇs
+> .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+> // 𝙍𝙚𝙢𝙤𝙫𝙞𝙣𝙜 ${global.db.data.users[m.sender].name}...
+> ‎ 
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
+────────────────────────────────
+`;
+}
 
 await conn.reply(m.chat, TgBAN, null, { mentions: [aa] }
 )
@@ -548,36 +535,34 @@ global.db.data.chats[m.chat].ignored.push(DELETEMESSAGE.message.protocolMessage.
 let warnFb;
 
 if (global.db.data.chats[m.chat].language === 'pt') {
-    warnFb = `
+  warnFb = `
 > v@reaper: #~ journalctl
 > ---------------------------------------
-
-*𓉘!𓉝* 0x8007000E: Violação de Regras
+*𓉘!𓉝* 𝟬𝘅𝟴𝟬𝟬𝟳𝟬𝟬𝟬𝗘: 𝗥𝘂𝗹𝗲 𝗩𝗶𝗼𝗹𝗮𝘁𝗶𝗼𝗻
 ────────────────────────────────
-> Não mande links do Facebook neste grupo. 
-> Isso é estritamente proibido pelas regras.
-> Qualquer desafio a esta ordem resultará em 
-> consequências imediatas.
+> Lɪɴᴋs ᴅᴏ Fᴀᴄᴇʙᴏᴏᴋ sᴀ̃ᴏ ᴘʀᴏɪʙɪᴅᴏs.
+> O ɴᴀ̃ᴏ ᴄᴜᴍᴘʀɪᴍᴇɴᴛᴏ ʀᴇsᴜʟᴛᴀʀᴀ́ ᴇᴍ ʀᴇᴍᴏᴄ̧ᴀ̃ᴏ ɪᴍᴇᴅɪᴀᴛᴀ.
+> Pᴏʀ ꜰᴀᴠᴏʀ, sɪɢᴀ ᴀs ʀᴇɢʀᴀs ᴇsᴛᴀʙᴇʟᴇᴄɪᴅᴀs ɴᴏ ɢʀᴜᴘᴏ.
 > ‎ 
-> # Monitoração ativa por ByteSec.
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
 ────────────────────────────────
-    `;
+  `;
 } else if (global.db.data.chats[m.chat].language === 'en') {
-    warnFb = `
+  warnFb = `
 > v@reaper: #~ journalctl
 > ---------------------------------------
-
-*𓉘!𓉝* WARNING: Rule Violation
+*𓉘!𓉝* 𝟬𝘅𝟴𝟬𝟬𝟳𝟬𝟬𝟬𝗘: 𝗥𝘂𝗹𝗲 𝗩𝗶𝗼𝗹𝗮𝘁𝗶𝗼𝗻
 ────────────────────────────────
-> Do not send Facebook links in this group.
-> It is strictly banned by defined rules.
-> Any challenge to this order will result in 
-> immediate consequences.
+> Fᴀᴄᴇʙᴏᴏᴋ ʟɪɴᴋs ᴀʀᴇ ᴘʀᴏʜɪʙɪᴛᴇᴅ ɪɴ ᴛʜɪs ɢʀᴏᴜᴘ.
+> Nᴏɴ-ᴄᴏᴍᴘʟɪᴀɴᴄᴇ ᴡɪʟʟ ʀᴇsᴜʟᴛ ɪɴ ɪᴍᴍᴇᴅɪᴀᴛᴇ ᴀᴄᴛɪᴏɴ.
+> Pʟᴇᴀsᴇ ᴀᴅʜᴇʀᴇ ᴛᴏ ᴛʜᴇ ᴄᴏᴍᴍᴜɴɪᴛʏ ʀᴜʟᴇs.
 > ‎ 
-> # Active monitoring by ByteSec.
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
 ────────────────────────────────
-    `;
+  `;
 }
+  
+
  
     
  await conn.sendMessage(m.chat, {text: warnFb, mentions: [m.sender]}, {quoted: m})
@@ -590,40 +575,37 @@ if (global.db.data.chats[m.chat].language === 'pt') {
   if(global.db.data.chats[m.chat].users[m.sender].advFb == 2) {
     let FbBAN;
 
+
     if (global.db.data.chats[m.chat].language === 'pt') {
-        FbBAN = `
-    > v@reaper: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
-    > ---------------------------------------
-    
-    >>> *𓉘!𓉝* ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ 
-    ────────────────────────────────
-    > [+] Você achou que poderia ignorar minhas instruções?
-    > [+] Links do Facebook não são permitidos aqui.
-    > [+] Agora, você decidiu se arriscar. A consequência? 
-    > [+] Você será removido do sistema. 
-    
-    > Adeus, ${global.db.data.users[m.sender].name}. 
-    > # Monitoração ativa por ByteSec. 
-    ────────────────────────────────
-        `;
-    }
-    else if (global.db.data.chats[m.chat].language === 'en') {
       FbBAN = `
-  > v@reaper: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
-  > ---------------------------------------
-  
-  *𓉘!𓉝* ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ
-  ────────────────────────────────
-  > [+] You thought you could just ignore my orders?
-  > [+] Facebook links are strictly forbidden here.
-  > [+] You chose to take a risk. The consequence? 
-  > [+] You’re getting erased from the system. 
-  
-  > Goodbye, ${global.db.data.users[m.sender].name}. 
-  > # Active monitoring by ByteSec. 
-  ────────────────────────────────
-      `;
+> v@reaper: ./remove.sh -u '@${m.sender.split('@')[0]}'
+> ---------------------------------------
+>>> *𓉘!𓉝* ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ 
+────────────────────────────────
+> [𝗔𝗟𝗘𝗥𝗧] ʟɪɴᴋ ᴅᴏ Fᴀᴄᴇʙᴏᴏᴋ ᴅᴇᴛᴇᴄᴛᴀᴅᴏ
+> *𓉘!𓉝* ᴏ ᴜsᴜᴀ́ʀɪᴏ ᴠɪᴏʟᴏᴜ ᴀs ʀᴇɢʀᴀs ᴅᴏ ɢʀᴜᴘᴏ.​
+> .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+> // 𝙍𝙚𝙢𝙤𝙫𝙚𝙣𝙙𝙤 ${global.db.data.users[m.sender].name}... 
+> ‎ 
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊  
+────────────────────────────────
+`;
   }
+  else if (global.db.data.chats[m.chat].language === 'en') {
+    FbBAN = `
+> v@reaper: ./remove.sh -u '@${m.sender.split('@')[0]}'
+> ---------------------------------------
+>>> *𓉘!𓉝* ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ
+────────────────────────────────
+> [𝗔𝗟𝗘𝗥𝗧] Fᴀᴄᴇʙᴏᴏᴋ ʟɪɴᴋ ᴅᴇᴛᴇᴄᴛᴇᴅ
+> *𓉘!𓉝* ᴜsᴇʀ ʜᴀs ᴠɪᴏʟᴀᴛᴇᴅ ɢʀᴏᴜᴘ ʀᴜʟᴇs
+> .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+> // 𝙍𝙚𝙢𝙤𝙫𝙞𝙣𝙜 ${global.db.data.users[m.sender].name}...
+> ‎ 
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
+────────────────────────────────
+`;
+}
 await conn.reply(m.chat, FbBAN, null, { mentions: [aa] }
 )
 global.db.data.chats[m.chat].users[m.sender].advFb = 0 
@@ -673,37 +655,33 @@ global.db.data.chats[m.chat].ignored.push(DELETEMESSAGE.message.protocolMessage.
 let warnIg;
 
 if (global.db.data.chats[m.chat].language === 'pt') {
-    warnIg = `
+  warnIg = `
 > v@reaper: #~ journalctl
 > ---------------------------------------
-
-*𓉘!𓉝* 0x8007000E: Violação de Regras
+*𓉘!𓉝* 𝟬𝘅𝟴𝟬𝟬𝟳𝟬𝟬𝟬𝗘: 𝗥𝘂𝗹𝗲 𝗩𝗶𝗼𝗹𝗮𝘁𝗶𝗼𝗻
 ────────────────────────────────
-> Não mande links do Instagram neste grupo. 
-> Isso é estritamente proibido pelas regras.
-> Qualquer desafio a esta ordem resultará em 
-> consequências imediatas.
+> Lɪɴᴋs ᴅᴏ Iɴsᴛᴀɢʀᴀᴍ sᴀ̃ᴏ ᴘʀᴏɪʙɪᴅᴏs.
+> O ɴᴀ̃ᴏ ᴄᴜᴍᴘʀɪᴍᴇɴᴛᴏ ʀᴇsᴜʟᴛᴀʀᴀ́ ᴇᴍ ʀᴇᴍᴏᴄ̧ᴀ̃ᴏ ɪᴍᴇᴅɪᴀᴛᴀ.
+> Pᴏʀ ꜰᴀᴠᴏʀ, sɪɢᴀ ᴀs ʀᴇɢʀᴀs ᴇsᴛᴀʙᴇʟᴇᴄɪᴅᴀs ɴᴏ ɢʀᴜᴘᴏ.
 > ‎ 
-> # Monitoração ativa por ByteSec.
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
 ────────────────────────────────
-    `;
+  `;
 } else if (global.db.data.chats[m.chat].language === 'en') {
-    warnIg = `
+  warnIg = `
 > v@reaper: #~ journalctl
 > ---------------------------------------
-
-*𓉘!𓉝* WARNING: Rule Violation
+*𓉘!𓉝* 𝟬𝘅𝟴𝟬𝟬𝟳𝟬𝟬𝟬𝗘: 𝗥𝘂𝗹𝗲 𝗩𝗶𝗼𝗹𝗮𝘁𝗶𝗼𝗻
 ────────────────────────────────
-> Do not send Instagram links in this group.
-> It is strictly banned by defined rules.
-> Any challenge to this order will result in 
-> immediate consequences.
+> Iɴsᴛᴀɢʀᴀᴍ ʟɪɴᴋs ᴀʀᴇ ᴘʀᴏʜɪʙɪᴛᴇᴅ ɪɴ ᴛʜɪs ɢʀᴏᴜᴘ.
+> Nᴏɴ-ᴄᴏᴍᴘʟɪᴀɴᴄᴇ ᴡɪʟʟ ʀᴇsᴜʟᴛ ɪɴ ɪᴍᴍᴇᴅɪᴀᴛᴇ ᴀᴄᴛɪᴏɴ.
+> Pʟᴇᴀsᴇ ᴀᴅʜᴇʀᴇ ᴛᴏ ᴛʜᴇ ᴄᴏᴍᴍᴜɴɪᴛʏ ʀᴜʟᴇs.
 > ‎ 
-> # Active monitoring by ByteSec.
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
 ────────────────────────────────
-    `;
+  `;
 }
- 
+
    
  await conn.sendMessage(m.chat, {text:warnIg, mentions: [m.sender]}, {quoted: m})
  global.db.data.chats[m.chat].users[m.sender].advIg++ 
@@ -715,40 +693,37 @@ if (global.db.data.chats[m.chat].language === 'pt') {
   if(global.db.data.chats[m.chat].users[m.sender].advIg == 2) {
 let IgBAN;
 
-    if (global.db.data.chats[m.chat].language === 'pt') {
-        IgBAN = `
-    > v@reaper: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
-    > ---------------------------------------
-    
-    >>> *𓉘!𓉝* ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ 
-    ────────────────────────────────
-    > [+] Você achou que poderia ignorar minhas instruções?
-    > [+] Links do Instagram não são permitidos aqui.
-    > [+] Agora, você decidiu se arriscar. A consequência? 
-    > [+] Você será removido do sistema. 
-    
-    > Adeus, ${global.db.data.users[m.sender].name}. 
-    > # Monitoração ativa por ByteSec. 
-    ────────────────────────────────
-        `;
-    }
-    else if (global.db.data.chats[m.chat].language === 'en') {
-      IgBAN = `
-  > v@reaper: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
-  > ---------------------------------------
-  
-  *𓉘!𓉝* ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ
-  ────────────────────────────────
-  > [+] You thought you could just ignore my orders?
-  > [+] Instagram links are strictly forbidden here.
-  > [+] You chose to take a risk. The consequence? 
-  > [+] You’re getting erased from the system. 
-  
-  > Goodbye, ${global.db.data.users[m.sender].name}. 
-  > # Active monitoring by ByteSec. 
-  ────────────────────────────────
-      `;
-  }
+
+if (global.db.data.chats[m.chat].language === 'pt') {
+  IgBAN = `
+> v@reaper: ./remove.sh -u '@${m.sender.split('@')[0]}'
+> ---------------------------------------
+>>> *𓉘!𓉝* ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ 
+────────────────────────────────
+> [𝗔𝗟𝗘𝗥𝗧] ʟɪɴᴋ ᴅᴏ Iɴsᴛᴀɢʀᴀᴍ ᴅᴇᴛᴇᴄᴛᴀᴅᴏ
+> *𓉘!𓉝* ᴏ ᴜsᴜᴀ́ʀɪᴏ ᴠɪᴏʟᴏᴜ ᴀs ʀᴇɢʀᴀs ᴅᴏ ɢʀᴜᴘᴏ.​
+> .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+> // 𝙍𝙚𝙢𝙤𝙫𝙚𝙣𝙙𝙤 ${global.db.data.users[m.sender].name}... 
+> ‎ 
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊  
+────────────────────────────────
+`;
+}
+else if (global.db.data.chats[m.chat].language === 'en') {
+IgBAN = `
+> v@reaper: ./remove.sh -u '@${m.sender.split('@')[0]}'
+> ---------------------------------------
+>>> *𓉘!𓉝* ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ
+────────────────────────────────
+> [𝗔𝗟𝗘𝗥𝗧] Iɴsᴛᴀɢʀᴀᴍ ʟɪɴᴋ ᴅᴇᴛᴇᴄᴛᴇᴅ
+> *𓉘!𓉝* ᴜsᴇʀ ʜᴀs ᴠɪᴏʟᴀᴛᴇᴅ ɢʀᴏᴜᴘ ʀᴜʟᴇs
+> .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+> // 𝙍𝙚𝙢𝙤𝙫𝙞𝙣𝙜 ${global.db.data.users[m.sender].name}...
+> ‎ 
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
+────────────────────────────────
+`;
+}
 await conn.reply(m.chat, IgBAN, null, { mentions: [aa] }
 )
 global.db.data.chats[m.chat].users[m.sender].advIg = 0 
@@ -801,36 +776,33 @@ global.db.data.chats[m.chat].ignored.push(DELETEMESSAGE.message.protocolMessage.
 let warnTw;
 
 if (global.db.data.chats[m.chat].language === 'pt') {
-    warnTw = `
+  warnTw = `
 > v@reaper: #~ journalctl
 > ---------------------------------------
-
-*𓉘!𓉝* 0x8007000E: Violação de Regras
+*𓉘!𓉝* 𝟬𝘅𝟴𝟬𝟬𝟳𝟬𝟬𝟬𝗘: 𝗥𝘂𝗹𝗲 𝗩𝗶𝗼𝗹𝗮𝘁𝗶𝗼𝗻
 ────────────────────────────────
-> Não mande links do Twitter/X neste grupo. 
-> Isso é estritamente proibido pelas regras.
-> Qualquer desafio a esta ordem resultará em 
-> consequências imediatas.
+> Lɪɴᴋs ᴅᴏ Tᴡɪᴛᴛᴇʀ/X sᴀ̃ᴏ ᴘʀᴏɪʙɪᴅᴏs.
+> O ɴᴀ̃ᴏ ᴄᴜᴍᴘʀɪᴍᴇɴᴛᴏ ʀᴇsᴜʟᴛᴀʀᴀ́ ᴇᴍ ʀᴇᴍᴏᴄ̧ᴀ̃ᴏ ɪᴍᴇᴅɪᴀᴛᴀ.
+> Pᴏʀ ꜰᴀᴠᴏʀ, sɪɢᴀ ᴀs ʀᴇɢʀᴀs ᴇsᴛᴀʙᴇʟᴇᴄɪᴅᴀs ɴᴏ ɢʀᴜᴘᴏ.
 > ‎ 
-> # Monitoração ativa por ByteSec.
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
 ────────────────────────────────
-    `;
+  `;
 } else if (global.db.data.chats[m.chat].language === 'en') {
-    warnTw = `
+  warnTw = `
 > v@reaper: #~ journalctl
 > ---------------------------------------
-
-*𓉘!𓉝* WARNING: Rule Violation
+*𓉘!𓉝* 𝟬𝘅𝟴𝟬𝟬𝟳𝟬𝟬𝟬𝗘: 𝗥𝘂𝗹𝗲 𝗩𝗶𝗼𝗹𝗮𝘁𝗶𝗼𝗻
 ────────────────────────────────
-> Do not send Twitter/X links in this group.
-> It is strictly banned by defined rules.
-> Any challenge to this order will result in 
-> immediate consequences.
+> Tᴡɪᴛᴛᴇʀ/X ʟɪɴᴋs ᴀʀᴇ ᴘʀᴏʜɪʙɪᴛᴇᴅ ɪɴ ᴛʜɪs ɢʀᴏᴜᴘ.
+> Nᴏɴ-ᴄᴏᴍᴘʟɪᴀɴᴄᴇ ᴡɪʟʟ ʀᴇsᴜʟᴛ ɪɴ ɪᴍᴍᴇᴅɪᴀᴛᴇ ᴀᴄᴛɪᴏɴ.
+> Pʟᴇᴀsᴇ ᴀᴅʜᴇʀᴇ ᴛᴏ ᴛʜᴇ ᴄᴏᴍᴍᴜɴɪᴛʏ ʀᴜʟᴇs.
 > ‎ 
-> # Active monitoring by ByteSec.
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
 ────────────────────────────────
-    `;
+  `;
 }
+
     
  await conn.sendMessage(m.chat, {text: warnTw, mentions: [m.sender]}, {quoted: m})
  global.db.data.chats[m.chat].users[m.sender].advTw++ 
@@ -843,40 +815,37 @@ if (global.db.data.chats[m.chat].language === 'pt') {
 
 let TwBAN; 
 
-    if (global.db.data.chats[m.chat].language === 'pt') {
-        TwBAN = `
-    > v@reaper: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
-    > ---------------------------------------
-    
-    >>> *𓉘!𓉝* ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ 
-    ────────────────────────────────
-    > [+] Você achou que poderia ignorar minhas instruções?
-    > [+] Links do Twitter/X não são permitidos aqui.
-    > [+] Agora, você decidiu se arriscar. A consequência? 
-    > [+] Você será removido do sistema. 
-    
-    > Adeus, ${global.db.data.users[m.sender].name}. 
-    > # Monitoração ativa por ByteSec. 
-    ────────────────────────────────
-        `;
-    }
-    else if (global.db.data.chats[m.chat].language === 'en') {
-      TwBAN = `
-  > v@reaper: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
-  > ---------------------------------------
-  
-  *𓉘!𓉝* ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ
-  ────────────────────────────────
-  > [+] You thought you could just ignore my orders?
-  > [+] Twitter/X links are strictly forbidden here.
-  > [+] You chose to take a risk. The consequence? 
-  > [+] You’re getting erased from the system. 
-  
-  > Goodbye, ${global.db.data.users[m.sender].name}. 
-  > # Active monitoring by ByteSec. 
-  ────────────────────────────────
-      `;
-  }
+
+if (global.db.data.chats[m.chat].language === 'pt') {
+  TwBAN = `
+> v@reaper: ./remove.sh -u '@${m.sender.split('@')[0]}'
+> ---------------------------------------
+>>> *𓉘!𓉝* ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ 
+────────────────────────────────
+> [𝗔𝗟𝗘𝗥𝗧] ʟɪɴᴋ ᴅᴏ Tᴡɪᴛᴛᴇʀ/X ᴅᴇᴛᴇᴄᴛᴀᴅᴏ
+> *𓉘!𓉝* ᴏ ᴜsᴜᴀ́ʀɪᴏ ᴠɪᴏʟᴏᴜ ᴀs ʀᴇɢʀᴀs ᴅᴏ ɢʀᴜᴘᴏ.​
+> .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+> // 𝙍𝙚𝙢𝙤𝙫𝙚𝙣𝙙𝙤 ${global.db.data.users[m.sender].name}... 
+> ‎ 
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊  
+────────────────────────────────
+`;
+}
+else if (global.db.data.chats[m.chat].language === 'en') {
+TwBAN = `
+> v@reaper: ./remove.sh -u '@${m.sender.split('@')[0]}'
+> ---------------------------------------
+>>> *𓉘!𓉝* ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ
+────────────────────────────────
+> [𝗔𝗟𝗘𝗥𝗧] Tᴡɪᴛᴛᴇʀ/X ʟɪɴᴋ ᴅᴇᴛᴇᴄᴛᴇᴅ
+> *𓉘!𓉝* ᴜsᴇʀ ʜᴀs ᴠɪᴏʟᴀᴛᴇᴅ ɢʀᴏᴜᴘ ʀᴜʟᴇs
+> .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+> // 𝙍𝙚𝙢𝙤𝙫𝙞𝙣𝙜 ${global.db.data.users[m.sender].name}...
+> ‎ 
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
+────────────────────────────────
+`;
+}
 await conn.reply(m.chat, TwBAN, null, { mentions: [aa] }
 )
 global.db.data.chats[m.chat].users[m.sender].advTw = 0 
