@@ -91,44 +91,42 @@ let destino = global.db.data.chats[m.chat].reportchat || adminAleatorio
           teks = `
 > v@reaper: /root/users/ cat ${generateRandomCode()}.log
 > ---------------------------------------
-[!] ALERTA: Usuário Banido
+*𓉘!𓉝* 𝗨𝘀𝘂𝗮́𝗿𝗶𝗼 𝗕𝗮𝗻𝗶𝗱𝗼
 ────────────────────────────────
-> Protocolo: ${generateRandomCode()}
-> Data: ${getDataAtual()}
->>> DETALHES DO USUÁRIO
+> Pʀᴏᴛᴏᴄᴏʟᴏ: ${generateRandomCode()}
+> Dᴀᴛᴀ: ${getDataAtual()}
+>>> 𝘿𝙀𝙏𝘼𝙇𝙃𝙀𝙎 𝘿𝙊 𝙐𝙎𝙐𝘼́𝙍𝙄𝙊
 ────────────────────────────────
-> [+] Nome: ${m.name}
-> [+] Contato: @${m.sender.split`@`[0]}
-> [+] Grupo: ${groupMetadata.subject}
-
->>> MOTIVO DO EXÍLIO
+> [+] Nᴏᴍᴇ: ${m.name}
+> [+] Cᴏɴᴛᴀᴛᴏ: @${m.sender.split`@`[0]}
+> [+] Gʀᴜᴘᴏ: ${groupMetadata.subject}
+> ‎ 
+>>> ᴍ̲ᴏ̲ᴛ̲ɪ̲ᴠ̲ᴏ̲
 ────────────────────────────────
 > ${motivo}
-> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥〕 ⚊ 
+> ‎ 
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
 ────────────────────────────────
 `;
 } else if (global.db.data.chats[m.chat].language === 'en') {
     teks = `
 > v@reaper: /root/users/ cat ${generateRandomCode()}.log
 > ---------------------------------------
-
-[!] ALERT: User Banned
+*𓉘!𓉝* 𝗨𝘀𝗲𝗿 𝗕𝗮𝗻𝗻𝗲𝗱
 ────────────────────────────────
-> Protocol: ${generateRandomCode()}
-> Date: ${getDataAtual()}
-
->>> USER DETAILS
+> Pʀᴏᴛᴏᴄᴏʟ: ${generateRandomCode()}
+> Dᴀᴛᴇ: ${getDataAtual()}
+>>> 𝙐𝙎𝙀𝙍 𝘿𝙀𝙏𝘼𝙄𝙇𝙎
 ────────────────────────────────
-> [+] Name: ${m.name}
-> [+] Contact: @${m.sender.split`@`[0]}
-> [+] Group: ${groupMetadata.subject}
-
->>> REASON FOR EXILE
+> [+] Nᴀᴍᴇ: ${m.name}
+> [+] Cᴏɴᴛᴀᴄᴛ: @${m.sender.split`@`[0]}
+> [+] Gʀᴏᴜᴘ: ${groupMetadata.subject}
+> ‎ 
+>>> ʀ̲ᴇ̲ᴀ̲s̲ᴏ̲ɴ̲
 ────────────────────────────────
 > ${motivo}
 > ‎ 
-> # Operation conducted by ByteSec.
-> # Under continuous surveillance.
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
 ────────────────────────────────
     `;
 }
@@ -182,30 +180,26 @@ if (global.db.data.chats[m.chat].language === 'pt') {
     warn = `
 > v@reaper: #~ journalctl
 > ---------------------------------------
-
-[!] 0x8007000E: Violação de Regras
+*𓉘!𓉝* 𝟬𝘅𝟴𝟬𝟬𝟳𝟬𝟬𝟬𝗘: 𝗥𝘂𝗹𝗲 𝗩𝗶𝗼𝗹𝗮𝘁𝗶𝗼𝗻
 ────────────────────────────────
-> Não mande links de TikTok neste grupo. 
-> Isso é estritamente proibido pelas regras.
-> Qualquer desafio a esta ordem resultará em 
-> consequências imediatas.
+> Lɪɴᴋs ᴅᴏ TɪᴋTᴏᴋ sᴀ̃ᴏ ᴘʀᴏɪʙɪᴅᴏs.
+> O ɴᴀ̃ᴏ ᴄᴜᴍᴘʀɪᴍᴇɴᴛᴏ ʀᴇsᴜʟᴛᴀʀᴀ́ ᴇᴍ ʀᴇᴍᴏᴄ̧ᴀ̃ᴏ ɪᴍᴇᴅɪᴀᴛᴀ.
+> Pᴏʀ ꜰᴀᴠᴏʀ, sɪɢᴀ ᴀs ʀᴇɢʀᴀs ᴇsᴛᴀʙᴇʟᴇᴄɪᴅᴀs ɴᴏ ɢʀᴜᴘᴏ.
 > ‎ 
-> # Monitoração ativa por ByteSec.
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
 ────────────────────────────────
     `;
 } else if (global.db.data.chats[m.chat].language === 'en') {
     warn = `
 > v@reaper: #~ journalctl
 > ---------------------------------------
-
-[!] WARNING: Rule Violation
+*𓉘!𓉝* 𝟬𝘅𝟴𝟬𝟬𝟳𝟬𝟬𝟬𝗘: 𝗥𝘂𝗹𝗲 𝗩𝗶𝗼𝗹𝗮𝘁𝗶𝗼𝗻
 ────────────────────────────────
-> Do not send TikTok links in this group.
-> It is strictly banned by defined rules.
-> Any challenge to this order will result in 
-> immediate consequences.
+> TɪᴋTᴏᴋ ʟɪɴᴋs ᴀʀᴇ ᴘʀᴏʜɪʙɪᴛᴇᴅ ɪɴ ᴛʜɪs ɢʀᴏᴜᴘ.
+> Nᴏɴ-ᴄᴏᴍᴘʟɪᴀɴᴄᴇ ᴡɪʟʟ ʀᴇsᴜʟᴛ ɪɴ ɪᴍᴍᴇᴅɪᴀᴛᴇ ᴀᴄᴛɪᴏɴ.
+> Pʟᴇᴀsᴇ ᴀᴅʜᴇʀᴇ ᴛᴏ ᴛʜᴇ ᴄᴏᴍᴍᴜɴɪᴛʏ ʀᴜʟᴇs.
 > ‎ 
-> # Active monitoring by ByteSec.
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
 ────────────────────────────────
     `;
 }
@@ -232,37 +226,33 @@ tikDetected= 'Link Tiktok detectado! Protocolo Anti-Link aplicado.'
 
     if (global.db.data.chats[m.chat].language === 'pt') {
         tikTokBAN = `
-    > v@reaper: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
-    > ---------------------------------------
-    
-    >>> [!] ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ 
-    ────────────────────────────────
-    > [+] Você achou que poderia ignorar minhas instruções?
-    > [+] Links de TikTok não são permitidos aqui.
-    > [+] Agora, você decidiu se arriscar. A consequência? 
-    > [+] Você será removido do sistema. 
-    
-    > Adeus, ${global.db.data.users[m.sender].name}. 
-    > # Monitoração ativa por ByteSec. 
-    ────────────────────────────────
-        `;
+> v@reaper: ./remove.sh -u '@${m.sender.split('@')[0]}'
+> ---------------------------------------
+>>> *𓉘!𓉝* ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ 
+────────────────────────────────
+> [𝗔𝗟𝗘𝗥𝗧] ʟɪɴᴋ ᴅᴏ TɪᴋTᴏᴋ ᴅᴇᴛᴇᴄᴛᴀᴅᴏ
+> *𓉘!𓉝* ᴏ ᴜsᴜᴀ́ʀɪᴏ ᴠɪᴏʟᴏᴜ ᴀs ʀᴇɢʀᴀs ᴅᴏ ɢʀᴜᴘᴏ.​
+> .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+> // 𝙍𝙚𝙢𝙤𝙫𝙚𝙣𝙙𝙤 ${global.db.data.users[m.sender].name}... 
+> ‎ 
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊  
+────────────────────────────────
+`;
     }
     else if (global.db.data.chats[m.chat].language === 'en') {
       tikTokBAN = `
-  > v@reaper: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
-  > ---------------------------------------
-  
-  [!] ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ
-  ────────────────────────────────
-  > [+] You thought you could just ignore my orders?
-  > [+] TikTok links are strictly forbidden here.
-  > [+] You chose to take a risk. The consequence? 
-  > [+] You’re getting erased from the system. 
-  
-  > Goodbye, ${global.db.data.users[m.sender].name}. 
-  > # Active monitoring by ByteSec. 
-  ────────────────────────────────
-      `;
+> v@reaper: ./remove.sh -u '@${m.sender.split('@')[0]}'
+> ---------------------------------------
+>>> *𓉘!𓉝* ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ
+────────────────────────────────
+> [𝗔𝗟𝗘𝗥𝗧] TɪᴋTᴏᴋ ʟɪɴᴋ ᴅᴇᴛᴇᴄᴛᴇᴅ
+> *𓉘!𓉝* ᴜsᴇʀ ʜᴀs ᴠɪᴏʟᴀᴛᴇᴅ ɢʀᴏᴜᴘ ʀᴜʟᴇs
+> .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+> // 𝙍𝙚𝙢𝙤𝙫𝙞𝙣𝙜 ${global.db.data.users[m.sender].name}...
+> ‎ 
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
+────────────────────────────────
+`;
   }
   
 await conn.reply(m.chat, tikTokBAN, null, { mentions: [aa] }
@@ -306,7 +296,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
 > v@reaper: #~ journalctl
 > ---------------------------------------
 
-[!] 0x8007000E: Violação de Regras
+*𓉘!𓉝* 0x8007000E: Violação de Regras
 ────────────────────────────────
 > Não mande links do Youtube neste grupo. 
 > Isso é estritamente proibido pelas regras.
@@ -321,7 +311,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
 > v@reaper: #~ journalctl
 > ---------------------------------------
 
-[!] WARNING: Rule Violation
+*𓉘!𓉝* WARNING: Rule Violation
 ────────────────────────────────
 > Do not send Youtube links in this group.
 > It is strictly banned by defined rules.
@@ -349,7 +339,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
     > v@reaper: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
     > ---------------------------------------
     
-    >>> [!] ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ 
+    >>> *𓉘!𓉝* ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ 
     ────────────────────────────────
     > [+] Você achou que poderia ignorar minhas instruções?
     > [+] Links do Youtube não são permitidos aqui.
@@ -366,7 +356,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
   > v@reaper: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
   > ---------------------------------------
   
-  [!] ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ
+  *𓉘!𓉝* ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ
   ────────────────────────────────
   > [+] You thought you could just ignore my orders?
   > [+] Youtube links are strictly forbidden here.
@@ -432,7 +422,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
 > v@reaper: #~ journalctl
 > ---------------------------------------
 
-[!] 0x8007000E: Violação de Regras
+*𓉘!𓉝* 0x8007000E: Violação de Regras
 ────────────────────────────────
 > Não mande links do Telegram neste grupo. 
 > Isso é estritamente proibido pelas regras.
@@ -447,7 +437,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
 > v@reaper: #~ journalctl
 > ---------------------------------------
 
-[!] WARNING: Rule Violation
+*𓉘!𓉝* WARNING: Rule Violation
 ────────────────────────────────
 > Do not send Telegram links in this group.
 > It is strictly banned by defined rules.
@@ -477,7 +467,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
     > v@reaper: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
     > ---------------------------------------
     
-    >>> [!] ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ 
+    >>> *𓉘!𓉝* ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ 
     ────────────────────────────────
     > [+] Você achou que poderia ignorar minhas instruções?
     > [+] Links do Telegram não são permitidos aqui.
@@ -494,7 +484,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
   > v@reaper: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
   > ---------------------------------------
   
-  [!] ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ
+  *𓉘!𓉝* ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ
   ────────────────────────────────
   > [+] You thought you could just ignore my orders?
   > [+] Telegram links are strictly forbidden here.
@@ -562,7 +552,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
 > v@reaper: #~ journalctl
 > ---------------------------------------
 
-[!] 0x8007000E: Violação de Regras
+*𓉘!𓉝* 0x8007000E: Violação de Regras
 ────────────────────────────────
 > Não mande links do Facebook neste grupo. 
 > Isso é estritamente proibido pelas regras.
@@ -577,7 +567,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
 > v@reaper: #~ journalctl
 > ---------------------------------------
 
-[!] WARNING: Rule Violation
+*𓉘!𓉝* WARNING: Rule Violation
 ────────────────────────────────
 > Do not send Facebook links in this group.
 > It is strictly banned by defined rules.
@@ -605,7 +595,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
     > v@reaper: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
     > ---------------------------------------
     
-    >>> [!] ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ 
+    >>> *𓉘!𓉝* ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ 
     ────────────────────────────────
     > [+] Você achou que poderia ignorar minhas instruções?
     > [+] Links do Facebook não são permitidos aqui.
@@ -622,7 +612,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
   > v@reaper: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
   > ---------------------------------------
   
-  [!] ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ
+  *𓉘!𓉝* ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ
   ────────────────────────────────
   > [+] You thought you could just ignore my orders?
   > [+] Facebook links are strictly forbidden here.
@@ -687,7 +677,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
 > v@reaper: #~ journalctl
 > ---------------------------------------
 
-[!] 0x8007000E: Violação de Regras
+*𓉘!𓉝* 0x8007000E: Violação de Regras
 ────────────────────────────────
 > Não mande links do Instagram neste grupo. 
 > Isso é estritamente proibido pelas regras.
@@ -702,7 +692,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
 > v@reaper: #~ journalctl
 > ---------------------------------------
 
-[!] WARNING: Rule Violation
+*𓉘!𓉝* WARNING: Rule Violation
 ────────────────────────────────
 > Do not send Instagram links in this group.
 > It is strictly banned by defined rules.
@@ -730,7 +720,7 @@ let IgBAN;
     > v@reaper: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
     > ---------------------------------------
     
-    >>> [!] ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ 
+    >>> *𓉘!𓉝* ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ 
     ────────────────────────────────
     > [+] Você achou que poderia ignorar minhas instruções?
     > [+] Links do Instagram não são permitidos aqui.
@@ -747,7 +737,7 @@ let IgBAN;
   > v@reaper: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
   > ---------------------------------------
   
-  [!] ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ
+  *𓉘!𓉝* ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ
   ────────────────────────────────
   > [+] You thought you could just ignore my orders?
   > [+] Instagram links are strictly forbidden here.
@@ -815,7 +805,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
 > v@reaper: #~ journalctl
 > ---------------------------------------
 
-[!] 0x8007000E: Violação de Regras
+*𓉘!𓉝* 0x8007000E: Violação de Regras
 ────────────────────────────────
 > Não mande links do Twitter/X neste grupo. 
 > Isso é estritamente proibido pelas regras.
@@ -830,7 +820,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
 > v@reaper: #~ journalctl
 > ---------------------------------------
 
-[!] WARNING: Rule Violation
+*𓉘!𓉝* WARNING: Rule Violation
 ────────────────────────────────
 > Do not send Twitter/X links in this group.
 > It is strictly banned by defined rules.
@@ -858,7 +848,7 @@ let TwBAN;
     > v@reaper: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
     > ---------------------------------------
     
-    >>> [!] ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ 
+    >>> *𓉘!𓉝* ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ 
     ────────────────────────────────
     > [+] Você achou que poderia ignorar minhas instruções?
     > [+] Links do Twitter/X não são permitidos aqui.
@@ -875,7 +865,7 @@ let TwBAN;
   > v@reaper: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
   > ---------------------------------------
   
-  [!] ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ
+  *𓉘!𓉝* ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ
   ────────────────────────────────
   > [+] You thought you could just ignore my orders?
   > [+] Twitter/X links are strictly forbidden here.
