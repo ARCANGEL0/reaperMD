@@ -152,7 +152,7 @@ global.vsJB = global.vs
 global.yt = "https://www.instagram.com/h.arcangelo"
 global.gt = "ΒYƬΣSΞC-MĐ"
 global.ig = "https://www.instagram.com/h.arcangelo"
-global.md = "https://github.com/ARCANGEL0/ByteSec-MD"
+global.md = "https://github.com/ARCANGEL0/reaperMD"
 
 
 global.fb = "https://www.facebook.com/profile.php?id=100089128511446"

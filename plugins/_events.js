@@ -1975,7 +1975,7 @@ let tmpfold = join(__dirname, '../pdfs/' );
   // Assuming `getFilename` is an async function that returns the filename
   try {
     console.log(limk)
- let pth = `/root/Bytesec-MD/pdfs/${ran}`;
+ let pth = `/root/reaperMD/pdfs/${ran}`;
     console.log("Constructed path:", pth); // To verify the path
 
     let imgs =['https://telegra.ph/file/69c9044efa49146aadc69.jpg','https://telegra.ph/file/47b63460ab2efe80d7dfc.jpg']

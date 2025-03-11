@@ -4,23 +4,23 @@
 
 
   <h1>  ⫍ 𝗥.𝝣.𝝠.𝗣.𝗘.𝗥 🗡 </h1>
-  <strong>Rᴇᴄᴏɴɴᴇssᴀɪɴᴄᴇ, Exᴘʟᴏɪᴛᴀᴛɪᴏɴ Aɴᴅ Pᴇɴᴛᴇsᴛ Eɴɢɪɴᴇ Rᴏʙᴏᴛ </strong><br>
+  <strong>﹝R﹞ᴇᴄᴏɴɴᴇssᴀɪɴᴄᴇ,﹝E﹞xᴘʟᴏɪᴛᴀᴛɪᴏɴ﹝A﹞ɴᴅ﹝P﹞ᴇɴᴛᴇsᴛ﹝E﹞ɴɢɪɴᴇ﹝R﹞ᴏʙᴏᴛ </strong><br>
   <strong>0x496e737069726564206279206638536f6369657479</strong>
 </div>
 <br>
 <p align="left">
 
-  <a href="https://github.com/ARCANGEL0/byteSec-MD">
-    <img src="https://img.shields.io/github/stars/ARCANGEL0/byteSec-MD?label=Stars&style=flat-square" alt="Stars">
+  <a href="https://github.com/ARCANGEL0/reaperMD">
+    <img src="https://img.shields.io/github/stars/ARCANGEL0/reaperMD?label=Stars&style=flat-square" alt="Stars">
   </a>
-  <a href="https://github.com/ARCANGEL0/byteSec-MD">
-    <img src="https://img.shields.io/github/forks/ARCANGEL0/byteSec-MD?label=Forks&style=flat-square" alt="Forks">
+  <a href="https://github.com/ARCANGEL0/reaperMD">
+    <img src="https://img.shields.io/github/forks/ARCANGEL0/reaperMD?label=Forks&style=flat-square" alt="Forks">
   </a>
-  <a href="https://github.com/ARCANGEL0/byteSec-MD">
-    <img src="https://img.shields.io/github/watchers/ARCANGEL0/byteSec-MD?label=Watchers&style=flat-square" alt="Watchers">
+  <a href="https://github.com/ARCANGEL0/reaperMD">
+    <img src="https://img.shields.io/github/watchers/ARCANGEL0/reaperMD?label=Watchers&style=flat-square" alt="Watchers">
   </a>
-  <a href="https://github.com/ARCANGEL0/byteSec-MD/pulls">
-    <img src="https://img.shields.io/github/issues-pr/ARCANGEL0/byteSec-MD.svg" alt="Pulls">
+  <a href="https://github.com/ARCANGEL0/reaperMD/pulls">
+    <img src="https://img.shields.io/github/issues-pr/ARCANGEL0/reaperMD.svg" alt="Pulls">
   </a>
   
   <a href="https://ko-fi.com/henryarcangelo">
@@ -30,7 +30,7 @@
     <img src="https://img.shields.io/badge/License-AGPL_v3-blue?style=flat-square" alt="License: AGPL v3">
   </a>
   
-  <a href="https://app.commanddash.io/agent?github=https://github.com/ARCANGEL0/byteSec-MD"><img src="https://img.shields.io/badge/AI-Code%20Assist-EB9FDA"></a>
+  <a href="https://app.commanddash.io/agent?github=https://github.com/ARCANGEL0/reaperMD"><img src="https://img.shields.io/badge/AI-Code%20Assist-EB9FDA"></a>
   <a href="https://nodejs.org/en/download/">
     <img src="https://img.shields.io/badge/Node.js-v18.17.0-brightgreen?style=flat-square" alt="Node.js version 18.17.0">
   </a>
@@ -179,8 +179,8 @@ Alright, kiddo. Let’s set up Bytesec MD—no fluff, just the steps you need to
 >> 1. Clone the Repository
 >> Open your terminal. Clone the Bytesec MD repository and step inside:
 ```bash
-git clone https://github.com/seu-usuario/Bytesec-MD.git
-cd Bytesec-MD
+git clone https://github.com/seu-usuario/reaperMD.git
+cd reaperMD
 ```
 >
 >> 2. Install Required Node Version with NVM
@@ -219,7 +219,7 @@ global.owner = [
     ["447598848203", '𝙊𝙬𝙣𝙚𝙧', true], // Your glorious WhatsApp number (country code + number all together, pal)
 ];
 
-// Identify the lucky few allowed to slide into byteSec-MD's DMs
+// Identify the lucky few allowed to slide into reaperMD's DMs
 global.permitido = [
     ["1518833273"], // Add any other numbers that deserve your time
     ["00000000"], // Placeholder for extra numbers - because you might get popular
@@ -233,7 +233,7 @@ global.permitido = [
 global.criador = "351927285125@s.whatsapp.net"; 
 
 // Specify the bot's phone number
-global.botNumberCode = ""; // Example: +59309090909 (fill it with byteSec-MD’s number)
+global.botNumberCode = ""; // Example: +59309090909 (fill it with reaperMD’s number)
 
 // API keys (feel free to leave them empty, or fill them if you’re fancy)
 global.lolkeysapi = ""; // LOL Humans API for those quirky moments
@@ -253,13 +253,13 @@ npm install
 You wouldn’t want to start a revolution with missing pieces now, would you?
 
 ### Step 3: Run the Server
-Time to unleash byteSec-MD on the digital world. In your terminal, execute:
+Time to unleash reaperMD on the digital world. In your terminal, execute:
 ```bash
 npm start
 ```
-Watch as byteSec-MD comes to life. If you see any errors, well, that’s just part of the existential dread we call coding.
+Watch as reaperMD comes to life. If you see any errors, well, that’s just part of the existential dread we call coding.
 
-Or make byteSec-MD even more interactive! Generate a QR code for scanning by running:
+Or make reaperMD even more interactive! Generate a QR code for scanning by running:
 ```bash
 npm run qr
 ```
@@ -269,40 +269,40 @@ And if you need an authentication code rather than QR to prove you’re not a bo
 npm run code
 ```
 >> Optional Step: Use PM2 for Process Management
-> Want to be the master of your own digital domain? Use PM2 to keep byteSec-MD running smoothly. Here’s how:
+> Want to be the master of your own digital domain? Use PM2 to keep reaperMD running smoothly. Here’s how:
 >
 > Install PM2 globally (if you haven’t yet):
 ```bash
 npm install -g pm2
 ```
-> Start byteSec-MD with PM2:
+> Start reaperMD with PM2:
 ```bash
-pm2 start npm --name "byteSec-MD" -- start
+pm2 start npm --name "reaperMD" -- start
 ```
 > Check the status of your beloved bot:
 >
 ```bash
 pm2 status
 ```
-> To generate a new authentication code while byteSec-MD is working hard:
+> To generate a new authentication code while reaperMD is working hard:
 ```bash
 pm2 start npm --name "byteSec-code" -- run code
 ```
 >> Manage your sessions like a pro with these PM2 commands:
-> Restart byteSec-MD:
+> Restart reaperMD:
 ```bash
-pm2 restart byteSec-MD
+pm2 restart reaperMD
 ```
-> Stop byteSec-MD:
+> Stop reaperMD:
 ```bash
-pm2 stop byteSec-MD
+pm2 stop reaperMD
 ```
-> Delete the byteSec-MD process:
+> Delete the reaperMD process:
 ```bash
-pm2 delete byteSec-MD
+pm2 delete reaperMD
 ```
 ### Conclusion
-And there you have it! You’ve configured config.js, started your Node.js server, and optionally set up PM2 to keep byteSec-MD in check. Now go out there and let byteSec-MD take the digital world by storm. Just remember, it’s all a game, and you’re the player. Happy hacking!
+And there you have it! You’ve configured config.js, started your Node.js server, and optionally set up PM2 to keep reaperMD in check. Now go out there and let reaperMD take the digital world by storm. Just remember, it’s all a game, and you’re the player. Happy hacking!
 
 ---
 
@@ -345,7 +345,7 @@ Bytesec MD provides structured commands. Type .menu in chat to open the main dir
 >> 
 >> .resetbot: Clear cache and temp data.
 >>
->> .clearallsessions: Purge defunct sessions if ByteSec-MD stops responding
+>> .clearallsessions: Purge defunct sessions if reaperMD stops responding
 
 ---
 # 0x1000: Contact
@@ -354,7 +354,7 @@ Bytesec MD provides structured commands. Type .menu in chat to open the main dir
 >
 > If you’re looking to chat with me, **Mr. Robot**, just click [here](https://wa.me/79001643752). 
 > 
-> But if you want to get in touch with my creator, the mastermind behind ByteSec-MD, here’s the number:
+> But if you want to get in touch with my creator, the mastermind behind reaperMD, here’s the number:
 
 > $ whatsapp -c [+351927285125](https://wa.me/351927285125) 
 

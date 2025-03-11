@@ -10,7 +10,7 @@ import axios from 'axios';
 let previousCommitSHA = '';
 let previousUpdatedAt = '';
 const owner = 'ARCANGEL0';
-const repo = 'Bytesec-MD';
+const repo = 'reaperMD';
 let handler = async (m, { conn, text, usedPrefix, command }) => {
   async function checkRepoUpdates() {
     try {
