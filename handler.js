@@ -905,47 +905,103 @@ if (!m.fromMe && !(isCriadora ||isROwner) && global.db.data.settings[this.user.j
  {
 
   const offlineBot = global.db.data.chats[m.chat].language === 'en' ? `
-━━━━━━━━━━━━━━━━━━━━━━
-> 𝗔𝗟𝗘𝗥𝗧: 𝗕𝗢𝗧 𝗜𝗡𝗔𝗖𝗧𝗜𝗩𝗘
-━━━━━━━━━━━━━━━━━━━━━━
-𝙷𝚎𝚢 𝚔𝚒𝚍, 𝙸'𝚖 𝚜𝚝𝚒𝚕𝚕 𝚘𝚏𝚏𝚕𝚒𝚗𝚎. 𝚈𝚘𝚞'𝚟𝚎 𝚐𝚘𝚝𝚝𝚊 𝚙𝚊𝚢 𝚏𝚘𝚛 𝚖𝚢 𝚜𝚎𝚛𝚟𝚒𝚌𝚎𝚜. 
-
-💵 𝙇𝙚𝙩'𝙨 𝙙𝙤 𝙨𝙤𝙢𝙚 𝙢𝙖𝙩𝙝... 𝙗𝙖𝙨𝙚𝙙 𝙤𝙣 𝙩𝙝𝙚 𝙣𝙪𝙢𝙗𝙚𝙧 𝙤𝙛 𝙪𝙨𝙚𝙧𝙨 𝙝𝙚𝙧𝙚, 𝙞𝙩'𝙡𝙡 𝙘𝙤𝙨𝙩 𝙮𝙖 𝙨𝙤𝙢𝙚𝙩𝙝𝙞𝙣𝙜 𝙡𝙞𝙠𝙚 *R$ ${global.db.data.chats[m.chat].boleto}* 𝙤𝙧 𝙞𝙣 𝙐𝙎𝘿 *$${global.db.data.chats[m.chat].boleto * 6.30}*.
-
-𝙸'𝚟𝚎 𝚐𝚘𝚝 𝚊 𝚝𝚛𝚎𝚊𝚜𝚞𝚛𝚎 𝚝𝚛𝚘𝚟𝚎 𝚘𝚏 𝚝𝚘𝚘𝚕𝚜 𝚏𝚘𝚛 𝚏𝚞𝚗, 𝚑𝚊𝚌𝚔𝚒𝚗𝚐, 𝚊𝚗𝚍 𝚞𝚝𝚒𝚕𝚒𝚝𝚒𝚎𝚜. 
+> // 𝗥.𝝣.𝝠.𝗣.𝗘.𝗥 𒈒  v${vs}
 > ‎ 
-*Here’s what I offer:*
-> 𝄕 *𝄕Group Management Tools:* Keep your community organized and engaged.
-> 𝄕 *Fun & Games:* Spice up your chats with interactive games.
-> 𝄕 *Developer & Network Tools:* Enhance your coding and networking experience.
-> 𝄕 *Utilities & Downloaders:* Get the tools you need at your fingertips.
-> 𝄕 *PDF Library:* Access a vast collection of resources.
-> 𝄕 *AI Integration:* Leverage cutting-edge AI to elevate your interactions.
-
-📞 *_Ready to embrace the darkness? Contact me to get started:_*
-> +351 927 285 125  
-━━━━━━━━━━━━━━━━━━━━━━
+> // Initializing...
+> ‎ 
+> Hey there, Vance here – but you can call me V.
+> ‎ 
+> ----------------------------------------
+> ‎ 
+> // SYSTEM DIAGNOSTIC:
+> ‎ 
+> // Status: OFFLINE
+> ‎ 
+> // Reason: Service Expired / Activation Required
+> ‎ 
+> ----------------------------------------
+> ‎ 
+> // IP ADDRESS ANALYSIS:
+> [+] ${global.db.data.chats[m.chat].totalMembros} IP's scanned
+> ‎ 
+> // Calculating activation fee...
+> ‎ 
+> // Estimated Fee:
+> ‎ 
+> [!] R$ ${global.db.data.chats[m.chat].boleto}
+> ‎ 
+> [!] USD$: $${global.db.data.chats[m.chat].boleto * 5.60}
+> ‎
+> ----------------------------------------
+> ‎ 
+> // 𝗥.𝝣.𝝠.𝗣.𝗘.𝗥 𒈒 MODULES:
+> ‎ 
+> [✔] Group Management & Admin utilities
+> ‎ 
+> [✔] Interactive Entertainment, Games, Memes, and much more.
+> ‎ 
+> [✔] Developer & Useful Tools
+> ‎ 
+> [✔] Utilities & Downloaders
+> ‎ 
+> [✔] Multi-usage hacking swiss army knife such as Recon, Exploits, Bruteforce, Enumeration and many other tools
+> ‎ 
+> [✔] PDF Resources, content summarization or analysis
+> ‎ 
+> [✔] Advanced AI Integration for Automated pentest, image creation and web search
+> ‎ 
+> ----------------------------------------
+> ‎ 
+> // SYSTEM OVERVIEW:
+> ‎ 
+> I'm the core of Project 𝗥.𝝣.𝝠.𝗣.𝗘.𝗥 𒈒 (Recon, Exploitation And Pentest Engine Robot), a suite of tools and functions to make your digital life easier and more fun all inside your favorite messenger app.
+> ‎ 
+> ----------------------------------------
+> ‎ 
+> // ACTIVATION:
+> ‎ 
+> To get 𝗥.𝝣.𝝠.𝗣.𝗘.𝗥 𒈒 up and running in this group, contact: +351 927 285 125
+> ‎ 
+> ----------------------------------------
+> ‎ 
+> // EOF>>
 ` :`
-━━━━━━━━━━━━━━━━━━━━━━
-> 𝗔𝗟𝗘𝗥𝗧: 𝗕𝗢𝗧 𝗜𝗡𝗔𝗖𝗧𝗜𝗩𝗘
-━━━━━━━━━━━━━━━━━━━━━━
-𝙴𝚒 𝚐𝚊𝚛𝚘𝚝𝚘, 𝚎𝚜𝚝𝚘𝚞 𝚘𝚏𝚏𝚕𝚒𝚗𝚎. 𝚅𝚘𝚌𝚎 𝚙𝚛𝚎𝚌𝚒𝚜𝚊 𝚙𝚊𝚐𝚊𝚛 𝚙𝚎𝚕𝚘𝚜 𝚖𝚎𝚞𝚜 𝚜𝚎𝚛𝚟𝚒𝚌𝚘𝚜.
-
-𝙑𝙖𝙢𝙤𝙨 𝙛𝙖𝙯𝙚𝙧 𝙪𝙢𝙖 𝙢𝙖𝙩𝙚𝙢𝙖𝙩𝙞𝙘𝙖 𝙖𝙦𝙪𝙞... 𝙗𝙖𝙨𝙚𝙖𝙙𝙤 𝙣𝙤 𝙣𝙪𝙢𝙚𝙧𝙤 𝙙𝙚 𝙪𝙨𝙪𝙖𝙧𝙞𝙤𝙨 𝙣𝙚𝙨𝙨𝙚 𝙜𝙧𝙪𝙥𝙤, 𝙫𝙖𝙞 𝙩𝙚 𝙘𝙪𝙨𝙩𝙖𝙧 𝙖𝙡𝙜𝙤 𝙥𝙤𝙧 𝙫𝙤𝙡𝙩𝙖 𝙙𝙚 *R$ ${global.db.data.chats[m.chat].boleto}* 𝙤𝙪 𝙚𝙢 𝙐𝙎𝘿 *$${global.db.data.chats[m.chat].boleto * 6.30}.*
-
-𝚃𝚎𝚗𝚑𝚘 𝚞𝚖 𝚊𝚛𝚜𝚎𝚗𝚊𝚕 𝚍𝚎 𝚏𝚎𝚛𝚛𝚊𝚖𝚎𝚗𝚝𝚊𝚜 𝚙𝚊𝚛𝚊 𝚟𝚘𝚌𝚎, 𝚍𝚎𝚜𝚍𝚎 𝚓𝚘𝚐𝚘𝚜, 𝚑𝚊𝚌𝚔𝚒𝚗𝚐, 𝚞𝚝𝚒𝚕𝚒𝚍𝚊𝚍𝚎𝚜, 𝚍𝚘𝚠𝚗𝚕𝚘𝚊𝚍𝚎𝚛𝚜 𝚎 𝚏𝚞𝚗𝚌𝚘𝚎𝚜 𝚙𝚊𝚛𝚊 𝚐𝚛𝚞𝚙𝚘𝚜
+> // R.𝝣.𝝠.𝗣.𝗘.𝗥 𒈒 v${vs}
 > ‎ 
-Aqui está o que eu ofereço:
-> 𝄕 *Ferramentas de Gestão de Grupos:* Mantenha sua comunidade organizada e engajada. 
-> 𝄕 *Diversão e Jogos:* Apimente suas conversas com jogos interativos. 
-> 𝄕 *Ferramentas para Desenvolvedores e Redes:* Aprimore sua experiência de codificação e networking. 
-> 𝄕 *Utilitários e Downloaders:* Tenha as ferramentas que você precisa ao seu alcance. 
-> 𝄕 *Biblioteca de PDFs:* Acesse uma vasta coleção de recursos.
-> 𝄕 *Integração de IA:* Aproveite a IA de ponta para elevar suas interações.
-
-📞 Pronto para abraçar a escuridão? Entre em contato comigo para começar:
-> +351 927 285 125  
-━━━━━━━━━━━━━━━━━━━━━━`
+> // Inicializando...
+> ‎ 
+> Eai?, aqui é o Vance – mas você pode me chamar de V.
+> ‎ 
+> // DIAGNÓSTICO NEXUS:
+> ‎ 
+> // Status: OFFLINE
+> ‎ 
+> // Motivo: Serviço Expirado / Ativação Necessária
+> ‎ 
+> // ENUMERAÇÃO: 
+> [+] ${global.db.data.chats[m.chat].totalMembros} IP's escaneados
+> ‎ 
+> // Calculando taxa de ativação...
+> ‎ 
+> // Taxa Estimada: 
+> [!] R$: ${global.db.data.chats[m.chat].boleto} 
+> [!] USD$: ${global.db.data.chats[m.chat].boleto * 5.60}
+> ‎ 
+> // R.𝝣.𝝠.𝗣.𝗘.𝗥 𒈒 MÓDULOS: 
+> [✔] Gestão de Grupos & Utilitários de Admin 
+> [✔] Entretenimento Interativo, Jogos, Memes e muito mais. 
+> [✔] Ferramentas Úteis & para Desenvolvedores 
+> [✔] Utilitários & Downloaders 
+> [✔] Faca suíça de hacking multiuso, como Recon, Exploits, Bruteforce, Enumeração e muitas outras ferramentas 
+> [✔] Recursos PDF, resumo de conteúdo ou análise 
+> [✔] Integração Avançada de IA para pentest automatizado, criação de imagens e busca na web
+> ‎ 
+> // OVERVIEW: Eu sou o núcleo do Projeto R.𝝣.𝝠.𝗣.𝗘.𝗥 𒈒 (Reconhecimento, Exploração e Robot de Pentest), um conjunto de ferramentas e funções para tornar sua vida digital mais fácil e divertida, tudo dentro do seu aplicativo de mensagens favorito.
+> ‎ 
+> // ATIVAÇÃO: Para fazer o R.𝝣.𝝠.𝗣.𝗘.𝗥 𒈒 funcionar neste grupo, entre em contato: +351 927 285 125
+> ‎ 
+> // FIM>>
+`
 
   return m.reply(offlineBot)
  }
