@@ -1,8 +1,10 @@
 <div align="center">
-    <img height="40%" width="40%" src="byte.png">
+    <img height="40%" width="40%" src="xreaper.png">
   <br>
-  <h1>ΒYƬΣSΞC-MĐ </h1>
-  <strong>𝙸𝚗 𝚝𝚑𝚎 𝚜𝚑𝚊𝚍𝚘𝚠𝚜 𝚘𝚏 𝚝𝚑𝚎 𝚗𝚎𝚝, 𝚊𝚛𝚎 𝚢𝚘𝚞 𝚝𝚑𝚎 𝚑𝚞𝚗𝚝𝚎𝚛 𝚘𝚛 𝚝𝚑𝚎 𝚑𝚞𝚗𝚝𝚎𝚍?</strong><br>
+
+
+  <h1>  ⫍ 𝗥.𝝣.𝝠.𝗣.𝗘.𝗥 🗡 </h1>
+  <strong>Rᴇᴄᴏɴɴᴇssᴀɪɴᴄᴇ, Exᴘʟᴏɪᴛᴀᴛɪᴏɴ Aɴᴅ Pᴇɴᴛᴇsᴛ Eɴɢɪɴᴇ Rᴏʙᴏᴛ </strong><br>
   <strong>0x496e737069726564206279206638536f6369657479</strong>
 </div>
 <br>
