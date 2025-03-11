@@ -71,19 +71,19 @@ R.E.A.P.E.R aims to enhance both security workflows and community engagement thr
 
 > v@reaper: #~ cat shortcuts0.bin <br>
 > ┌─────────────────────────────────┐ <br>
->  -  -  - _MAPPINGS <br>
+> _MAPPINGS <br>
 > ━━━━━━━━━━━━━━━━━━━━━━━ <br>
-[[0x0001]](#0x0001-project-overview) > OVERVIEW        <br>
-[0x0010](#0x0010-reaper) > ABOUT REAPER   <br>
-[0x0011](#0x0011-tools) > TOOLS     <br>
-[0x0100](#0x0100-ranking) > RANKING FRAMEW0RK  <br>
-[0x0101](#0x0101-installation) > INSTALLATION    <br>
-[0x0110](#0x0110-configuration) > CONFIGURATION    <br>
-[0x0111](#0x0111-usage) > USAGE         <br>
-[0x1000](#0x1000-contact) > CONTACT     <br>
-[0x1001](#0x1001-collaboration) > COLLABORATION    <br>
-[0x1010](#0x1010-license-&-use-policy) > LICENSE       <br>
-[0x1011](#0x1011-support) > SUPPORT  
+[[0x0001]](#0x0001-project-overview)> OVERVIEW        <br>
+[[0x0010]](#0x0010-reaper)> ABOUT REAPER   <br>
+[[0x0011]](#0x0011-tools)> TOOLS     <br>
+[[0x0100]](#0x0100-ranking)> RANKING FRAMEW0RK  <br>
+[[0x0101]](#0x0101-installation)> INSTALLATION    <br>
+[[0x0110]](#0x0110-configuration)> CONFIGURATION    <br>
+[[0x0111]](#0x0111-usage)> USAGE         <br>
+[[0x1000]](#0x1000-contact)> CONTACT     <br>
+[[0x1001]](#0x1001-collaboration)> COLLABORATION    <br>
+[[0x1010]](#0x1010-license-&-use-policy)> LICENSE       <br>
+[[0x1011]](#0x1011-support)> SUPPORT  
 ---
 
 # 0x0010: Reaper 
