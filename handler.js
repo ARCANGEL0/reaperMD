@@ -97,7 +97,7 @@ if (!isNumber(user.counterPrivate)) user.counterPrivate = 0
 if (!isNumber(user.afk)) user.afk = -1
 //if (!('autolevelup' in user))  user.autolevelup = true
 if (!isNumber(user.reporte)) user.reporte = 0
-if (!('role' in user)) user.role = '𝘼𝙥𝙧𝙚𝙣𝙙𝙞𝙯 🕯️'
+if (!('role' in user)) user.role = ''
 
 if (!isNumber(user.antispam)) user.antispam = 0
 if (!isNumber(user.antispamlastclaim)) user.antispamlastclaim = 0
@@ -239,7 +239,7 @@ antitoxic: true,
 simi: false,
 antiTraba: true,
 autolevelup: true,
-edgar: true,
+iatogglef: true,
 reply: true,
 expired: 0,
 }
