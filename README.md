@@ -85,7 +85,7 @@ R.E.A.P.E.R aims to enhance both security workflows and community engagement thr
 > └──────────────────┘
 
 # 0x0010: Reaper 
-
+```javascript
 R.E.A.P.E.R incorporates AI to automate penetration testing (under development), enhancing its core capabilities. The bot also includes features for group management and engagement, combining security tools with community utilities and entertainment.
 
 [+] Core Modules:
@@ -101,7 +101,7 @@ R.E.A.P.E.R incorporates AI to automate penetration testing (under development),
 //// [*] >> Fun: Image creation, filters & effects, memes generator, jokes and many more. [...]
 //// [*] >> Tools: Decoders, Converters, Cryptography, IDE/Built-in compiler. [...]
 [ -ᴍᴏʀᴇ ɪɴꜰᴏ ʙᴇʟᴏᴡ-  ]
-
+````
 ---
 
 # 0x0011: Tools
