@@ -1,5 +1,5 @@
 <div align="center">
-    <img height="40%" width="40%" src="xreaper.png">
+    <img height="40%" width="40%" src="xReaper.png">
   <br>
 
 
