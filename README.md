@@ -3,7 +3,7 @@
   <br>
 
 
-  <h1>𓆩𝗥.𝝣.𝝠.𝗣.𝗘.𝗥𓆪</h1>
+  <h1>  ⫍ 𝗥.𝝣.𝝠.𝗣.𝗘.𝗥 𒈒</h1>
   <strong>﹝R﹞ᴇᴄᴏɴɴᴇssᴀɪɴᴄᴇ,﹝E﹞xᴘʟᴏɪᴛᴀᴛɪᴏɴ﹝A﹞ɴᴅ﹝P﹞ᴇɴᴛᴇsᴛ﹝E﹞ɴɢɪɴᴇ﹝R﹞ᴏʙᴏᴛ </strong><br>
   <center> <strong> ꜰᴏʀ Wʜᴀᴛsᴀᴘᴘ</strong><br> </center>
   <strong>0x436f6e74726f6c20697320616e20696c6c7573696f6e2e</strong>
