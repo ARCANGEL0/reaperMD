@@ -33,7 +33,7 @@
   
   <a href="https://app.commanddash.io/agent?github=https://github.com/ARCANGEL0/reaperMD"><img src="https://img.shields.io/badge/AI-Code%20Assist-EB9FDA"></a>
   <a href="https://nodejs.org/en/download/">
-    <img src="https://img.shields.io/badge/Node.js-v18.17.0-brightgreen?style=flat-square" alt="Node.js version 18.17.0">
+    <img src="https://img.shields.io/badge/Node.js-v20.9.0-brightgreen?style=flat-square" alt="Node.js version 20.9.0">
   </a>
   <a href="https://www.python.org/downloads/release/python-3110/">
     <img src="https://img.shields.io/badge/Python-v3.11.0-blue?style=flat-square" alt="Python version 3.11"> 
