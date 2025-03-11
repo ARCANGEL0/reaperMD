@@ -69,36 +69,21 @@ R.E.A.P.E.R aims to enhance both security workflows and community engagement thr
 
 ## **System Navigation** 
 
-```plaintext
-┌─────────────────────────────────┐
-           _SYSTEM OVERRIDE               
-│─────────────────────────────────
-  [0x0001] - OVERVIEW                  
-  [0x0010] - ABOUT REAPER          
-  [0x0011] - TOOLS                     
-  [0x0100] - RANKING FRAMEW0RK         
-  [0x0101] - INSTALLATION              
-  [0x0110] - CONFIGURATION             
-  [0x0110] - USAGE                    
-  [0x0111] - CONTACT                   
-  [0x1000] - COLLABORATION             
-  [0x1001] - LICENSE                   
-  [0x1010] - SUPPORT                   
-└─────────────────────────────────┘
-```
 > v@reaper: #~ cat shortcuts0.bin <br>
+> ┌─────────────────────────────────┐ <br>
+>  -  -  - _MAPPINGS <br>
 > ━━━━━━━━━━━━━━━━━━━━━━━ <br>
-[0x0001](#0x0001-project-overview) <br>
-[0x0010](#0x0010-reaper) <br>
-[0x0011](#0x0011-tools) <br>
-[0x0100](#0x0100-ranking) <br>
-[0x0101](#0x0101-installation) <br>
-[0x0110](#0x0110-configuration) <br>
-[0x0111](#0x0111-usage) <br>
-[0x1000](#0x1000-contact) <br>
-[0x1001](#0x1001-collaboration) <br>
-[0x1010](#0x1010-license-&-use-policy) <br>
-[0x1011](#0x1011-support) 
+[0x0001](#0x0001-project-overview)> OVERVIEW        <br>
+[0x0010](#0x0010-reaper)> ABOUT REAPER   <br>
+[0x0011](#0x0011-tools)> TOOLS     <br>
+[0x0100](#0x0100-ranking)> RANKING FRAMEW0RK  <br>
+[0x0101](#0x0101-installation)> INSTALLATION    <br>
+[0x0110](#0x0110-configuration)> CONFIGURATION    <br>
+[0x0111](#0x0111-usage)> USAGE         <br>
+[0x1000](#0x1000-contact)> CONTACT     <br>
+[0x1001](#0x1001-collaboration)> COLLABORATION    <br>
+[0x1010](#0x1010-license-&-use-policy)> LICENSE       <br>
+[0x1011](#0x1011-support)> SUPPORT  
 ---
 
 # 0x0010: Reaper 
