@@ -915,9 +915,8 @@ if (!m.fromMe && !(isCriadora ||isROwner) && global.db.data.settings[this.user.j
 > ‎ 
 > // SYSTEM DIAGNOSTIC:
 > ‎ 
-> // Status: OFFLINE
-> ‎ 
-> // Reason: Service Expired / Activation Required
+> ‎ [==] Status: OFFLINE
+> ‎ [==] Reason: Activation Required
 > ‎ 
 > ----------------------------------------
 > ‎ 
@@ -974,9 +973,8 @@ if (!m.fromMe && !(isCriadora ||isROwner) && global.db.data.settings[this.user.j
 > ‎ 
 > // DIAGNÓSTICO NEXUS:
 > ‎ 
-> // Status: OFFLINE
-> ‎ 
-> // Motivo: Serviço Expirado / Ativação Necessária
+> ‎ [==] Status: OFFLINE
+> ‎ [==] Motivo: Ativação Necessária
 > ‎ 
 > // ENUMERAÇÃO: 
 > [+] ${global.db.data.chats[m.chat].totalMembros} IP's escaneados
@@ -990,13 +988,13 @@ if (!m.fromMe && !(isCriadora ||isROwner) && global.db.data.settings[this.user.j
 > // R.𝝣.𝝠.𝗣.𝗘.𝗥 𒈒 MÓDULOS: 
 > [✔] Gestão de Grupos & Utilitários de Admin 
 > [✔] Entretenimento Interativo, Jogos, Memes e muito mais. 
-> [✔] Ferramentas Úteis & para Desenvolvedores 
+> [✔] Ferramentas Úteis & Utensílios para Desenvolvedores 
 > [✔] Utilitários & Downloaders 
-> [✔] Faca suíça de hacking multiuso, como Recon, Exploits, Bruteforce, Enumeração e muitas outras ferramentas 
+> [✔] Ferramenta multiuso de hacking e red teaming, como Recon, Exploits, Bruteforce, Enumeração e muitas outras funções 
 > [✔] Recursos PDF, resumo de conteúdo ou análise 
 > [✔] Integração Avançada de IA para pentest automatizado, criação de imagens e busca na web
 > ‎ 
-> // OVERVIEW: Eu sou o núcleo do Projeto R.𝝣.𝝠.𝗣.𝗘.𝗥 𒈒 (Reconhecimento, Exploração e Robot de Pentest), um conjunto de ferramentas e funções para tornar sua vida digital mais fácil e divertida, tudo dentro do seu aplicativo de mensagens favorito.
+> // OVERVIEW: Eu sou o núcleo do Projeto R.𝝣.𝝠.𝗣.𝗘.𝗥 𒈒 _(Recon, Exploitation And Pentest Engine Robot)_ , um conjunto de ferramentas e funções para tornar sua vida digital mais fácil e divertida, tudo dentro do seu aplicativo de mensagens favorito.
 > ‎ 
 > // ATIVAÇÃO: Para fazer o R.𝝣.𝝠.𝗣.𝗘.𝗥 𒈒 funcionar neste grupo, entre em contato: +351 927 285 125
 > ‎ 
@@ -1081,16 +1079,16 @@ global.db.data.chats[m.chat].users[m.sender].limit=660000000000066
   global.db.data.chats[m.chat].users[m.sender].legendary=true
   global.db.data.chats[m.chat].users[m.sender].coadmin=false
   global.db.data.chats[m.chat].users[m.sender].slots=666
-  global.db.data.chats[m.chat].users[m.sender].name=`Henry Arcangelo 𖤍`
-  global.db.data.chats[m.chat].users[m.sender].age=`23 anos`
+  global.db.data.chats[m.chat].users[m.sender].name=``
+  global.db.data.chats[m.chat].users[m.sender].age=``
  
-  global.db.data.chats[m.chat].users[m.sender].morada=`Rio Tinto, Porto.  Portugal`
-  global.db.data.chats[m.chat].users[m.sender]. profissao=`Desenvolvedor fullstack`
-  global.db.data.chats[m.chat].users[m.sender].instagram=`https://instagram.con/h.arcangelo`
+  global.db.data.chats[m.chat].users[m.sender].morada=``
+  global.db.data.chats[m.chat].users[m.sender]. profissao=``
+  global.db.data.chats[m.chat].users[m.sender].instagram=``
   global.db.data.chats[m.chat].users[m.sender].website=`https://arcangelo.net`
   global.db.data.chats[m.chat].users[m.sender].links=`https://github.com/ARCANGEL0`
-  global.db.data.chats[m.chat].users[m.sender].biografia=`Sem informações sobre mim`
-  global.db.data.chats[m.chat].users[m.sender].hobbies=`Ler e ouvir música`
+  global.db.data.chats[m.chat].users[m.sender].biografia=``
+  global.db.data.chats[m.chat].users[m.sender].hobbies=``
   global.db.data.chats[m.chat].users[m.sender].relacionamento=`❔`
   global.db.data.chats[m.chat].users[m.sender].tentativasRoubo=666
   global.db.data.chats[m.chat].users[m.sender].usuariosRoubados = []
@@ -1112,13 +1110,13 @@ continue //Sin límite
 if (!isAdmin && global.db.data.chats[m.chat].autolevelup && plugin.level > global.db.data.chats[m.chat].users[m.sender].level) {
 
   const notLevel = global.db.data.chats[m.chat].language === 'en' ? `
-╭──────────╮
->  ⚠︎ ERROR: ACCESS DENIED       
+╭──────────
+> ⚠︎ ERROR: ACCESS DENIED       
 > You need to be Level ${plugin.level} to use this command.    
 ╰─────────
 ` : `
-╭──────────╮
->  ⚠︎ ERROR: ACESSO NEGADO     
+╭──────────
+> ⚠︎ ERROR: ACESSO NEGADO     
 > Você precisa ser nível ${plugin.level} para usar esse comando.    
 ╰──────────
 `
@@ -1202,7 +1200,8 @@ if (!m.plugin && m.sender && global.db.data.chats[m.chat].autolevelup && (user =
     user.exp += points;
     user.limit -= m.limit * 1;
     user.money -= m.money * 1;
-}
+
+  }
 
 let stat
 const isNumber = x => typeof x === 'number' && !isNaN(x)
@@ -1279,41 +1278,33 @@ const isBotAdminNn = botTt2?.admin === "admin" || false
 ;
 
 if (global.db.data.chats[id].language === 'pt') {
-    text = `
-> BYΓΞSΞC:~$ journalctl --access-log
-> --------------
-
-[+] NOVO LOGIN
+    text = `> ⚊ 〔𒈒 𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
+> [+] ꞐӨ𝖵𝖮 Ꝇ𝖮𝖦𝖨𝖭
 ─────────────────
-> Novo usuário detectado: @${user.split('@')[0]}
-> [*] Conexão estabelecida
-> STATUS 200 OK
-
->>> ORIENTAÇÕES DO GRUPO
+> [*] @${user.split('@')[0]} ᴄᴏɴᴇᴄᴛᴀᴅᴏ.
+> 𝚂𝚃𝙰𝚃𝚄𝚂 𝟸𝟶𝟶 𝙾𝙺
+> //// 𝙊𝙍𝙄𝙀𝙉𝙏𝘼𝘾̧𝙊̃𝙀𝙎 𝘿𝙊 𝙂𝙍𝙐𝙋𝙊 ⮟
 ─────────────────
 > [+] Bem-vindo(a) ao grupo ${await this.getName(id)}.
-> [+] Leia as regras e familiarize-se com as normas do grupo.
+> [+] Leia as regras e siga as diretivas do grupo.
 > ‎ 
-> [!] O monitoramento é mantido pela ByteSec..
+> DΞSCᚱIC𐊍Ō ↴
+
 ─────────────────
     `;
 } else if (global.db.data.chats[id].language === 'en') {
-    text = `
-> BYΓΞSΞC:~$ journalctl --access-log
-> ---------------
-
-[+] NEW LOGIN
+    text = `> ⚊ 〔𒈒 𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
+> [+] N𝝣W LØGIN
 ─────────────────
 > New user detected: @${user.split('@')[0]}
 > [*] Connection established 
 > STATUS 200 OK
- 
->>> GROUP GUIDELINES
+> //// 𝙂𝙍𝙊𝙐𝙋 𝙂𝙐𝙄𝘿𝙀𝙇𝙄𝙉𝙀𝙎 ⮟
 ─────────────────
 > [+] Welcome to ${await this.getName(id)}.
-> [+] Read the rules and get familiar with group standards.
+> [+] Please, read the rules and obey group directives
 > ‎ 
-> [+] Order is maintained by ByteSec.
+> DΞSCRIP𝚃IŌN ↴
 ─────────────────
     `;
 }
