@@ -123,7 +123,7 @@ loadChatgptDB();
 
 /* ------------------------------------------------*/
 
-global.authFile = `fsocietyData`
+global.authFile = `DATABASE`
 const {state, saveState, saveCreds} = await useMultiFileAuthState(global.authFile)
 const msgRetryCounterMap = (MessageRetryMap) => { };
 const msgRetryCounterCache = new NodeCache()
@@ -144,27 +144,27 @@ resolver(respuesta.trim())
 }) })
 }
 
-let opcion
+let optionz
 if (methodCodeQR) {
-opcion = '1'
+optionz = '1'
 }
 if (!methodCodeQR && !methodCode && !fs.existsSync(`./${authFile}/creds.json`)) {
 do {
-let lineM = ' ━━━━━━━━━━━⬣ 𓄿 ⬣━━━━━━━━━━━━'
-opcion = await question(`╭${lineM} 
-┊ ${chalk.blueBright('╭─┅──┅❖ ')}
+let lineM = ' ━━━━━━━━━━━⬣━━━━━━━━━━━━'
+optionz = await question(`╭${lineM} 
+┊ ${chalk.blueBright('\n╭─┅──┅❖ ')}
 ┊ ${chalk.blueBright('┊')} ${chalk.blue.bgBlue.bold.cyan('CODIGO DE AUTENTICAÇÃO')}
 ┊ ${chalk.blueBright('╰┅┅─┅──┅❖ ')}   
-┊ ${chalk.blueBright('╭─┅──┅❖ ')}     
+┊ ${chalk.blueBright('\n╭─┅──┅❖ ')}     
 ┊ ${chalk.blueBright('┊')} ${chalk.green.bgMagenta.bold.yellow('¿CÓMO DESEA CONECTARSE?')}
 ┊ ${chalk.blueBright('┊')} ${chalk.bold.redBright('⇢  Opcao 1:')} ${chalk.greenBright('Código QR.')}
 ┊ ${chalk.blueBright('┊')} ${chalk.bold.redBright('⇢  Opcao 2:')} ${chalk.greenBright('Código de 8 digitos.')}
 ┊ ${chalk.blueBright('╰─┅──┅❖ ')}
-┊ ${chalk.blueBright('╭┅┅┅─┅──┅❖ ')}     
+┊ ${chalk.blueBright('\n╭┅┅┅─┅──┅❖ ')}     
 ┊ ${chalk.blueBright('┊')} ${chalk.italic.magenta('Numerk')}
 ┊ ${chalk.blueBright('┊')} ${chalk.italic.magenta('Opcao para conexao.')}
 ┊ ${chalk.blueBright('╰┅┅┅┅─┅──┅❖ ')} 
-┊ ${chalk.blueBright('╭┅┅┅─┅──┅❖ ')}    
+┊ ${chalk.blueBright('\n╭┅┅┅─┅──┅ ')}    
 ┊ ${chalk.blueBright('┊')} ${chalk.red.bgRed.bold.green('Dica:')}
 ┊ ${chalk.blueBright('┊')} ${chalk.italic.cyan('Se usa Termux, Replit, Linux, ou Windows')}
 ┊ ${chalk.blueBright('┊')} ${chalk.italic.cyan('Use estes comandos para uma execução directa:')}
@@ -174,18 +174,18 @@ opcion = await question(`╭${lineM}
 ┊ ${chalk.blueBright('╰┅┅┅┅┅❖')} 
 ╰${lineM}\n${chalk.bold.magentaBright('  ')}`)
 
-if (!/^[1-2]$/.test(opcion)) {
+if (!/^[1-2]$/.test(optionz)) {
 console.log(chalk.bold.redBright(`NAO SERAO ACEITES NÚMEROS QUE NÃO SEJAM  ${chalk.bold.greenBright("1")} OU ${chalk.bold.greenBright("2")}, TAMPOUCO LETRAS OU SÍMBOLOS ESPECIAIS.
 ${chalk.bold.yellowBright("Copie o trecho obscuro e copie em vossa console")}`))
-}} while (opcion !== '1' && opcion !== '2' || fs.existsSync(`./${authFile}/creds.json`))
+}} while (optionz !== '1' && optionz !== '2' || fs.existsSync(`./${authFile}/creds.json`))
 }
 
   
 const connectionOptions = {
   logger: pino({ level: 'silent' }),
-printQRInTerminal: opcion == '1' ? true : methodCodeQR ? true : false,
+printQRInTerminal: optionz == '1' ? true : methodCodeQR ? true : false,
 mobile: MethodMobile, 
-browser: opcion == '1' ? ['bot-MD', 'Edge', '20.0.04'] : methodCodeQR ? ['bot-MD', 'Edge', '20.0.04'] : ["Ubuntu", "Chrome", "20.0.04"],
+browser: optionz == '1' ? ['bot-MD', 'Edge', '20.0.04'] : methodCodeQR ? ['bot-MD', 'Edge', '20.0.04'] : ["Ubuntu", "Chrome", "20.0.04"],
 auth: {
 creds: state.creds,
 keys: makeCacheableSignalKeyStore(state.keys, Pino({ level: "fatal" }).child({ level: "fatal" })),
@@ -196,7 +196,7 @@ syncFullHistory: false
 
 
 // logger: pino({ level: 'silent' }),
-// printQRInTerminal: opcion == '1' ? true : methodCodeQR ? true : false,
+// printQRInTerminal: optionz == '1' ? true : methodCodeQR ? true : false,
 // mobile: MethodMobile,
 // // browser: ['Chrome (Linux)','',''],
 // browser: Browsers.macOS("Safari"),
@@ -225,14 +225,10 @@ global.conn = makeWASocket(connectionOptions)
 	
 if (!fs.existsSync(`./${authFile}/creds.json`)) {
 
-if (opcion === '2' || methodCode) {
-//if (fs.existsSync(`./${authFile}/creds.json`)) {
-//console.log(chalk.bold.redBright(`PRIMERO BORRE EL ARCHIVO ${chalk.bold.greenBright("creds.json")} QUE SE ENCUENTRA EN LA CARPETA ${chalk.bold.greenBright(authFile)} Y REINICIE.`))
-//process.exit()
-//}
-opcion = '2'
+if (optionz === '2' || methodCode) {
+
+optionz = '2'
 if (!conn.authState.creds.registered) {  
-//if (MethodMobile) throw new Error('No se puede usar un código de emparejamiento con la API móvil')
 
 let addNumber
 if (!!phoneNumber) {
@@ -242,7 +238,7 @@ console.log(chalk.bgBlack(chalk.bold.redBright(`Configurar arquivos ${chalk.bold
 process.exit(0)
 }} else {
 while (true) {
-addNumber = await question(chalk.bgBlack(chalk.bold.greenBright(`Por favor, diga-me o numero do whatsapp no qual onde minha solene alma sera reencarnada .\n${chalk.bold.yellowBright("Dica: Copie e cole o numero neste console")}\n${chalk.bold.yellowBright("Exemplo: +593090909090")}\n${chalk.bold.magentaBright('---> ')}`)))
+addNumber = await question(chalk.bgBlack(chalk.bold.greenBright(`Por favor, diga-me o numero do whatsapp do bot.\n${chalk.bold.yellowBright("Dica: Copie e cole o numero neste console")}\n${chalk.bold.yellowBright("Exemplo: +593090909090")}\n${chalk.bold.magentaBright('---> ')}`)))
 addNumber = addNumber.replace(/[^0-9]/g, '')
 
 if (addNumber.match(/^\d+$/) && Object.keys(PHONENUMBER_MCC).some(v => addNumber.startsWith(v))) {
@@ -265,13 +261,9 @@ console.log(chalk.bold.white(chalk.bgMagenta(`Codigo de autênticao :`)), chalk.
 }}
 if (MethodMobile) {
   
-//if (fs.existsSync(`./${authFile}/creds.json`)) {
-//console.log(chalk.bold.redBright(`PRIMERO BORRE EL ARCHIVO ${chalk.bold.greenBright("creds.json")} QUE SE ENCUENTRA EN LA CARPETA ${chalk.bold.greenBright(authFile)} Y REINICIE.`))
-//process.exit()
-//}
-opcion = '2'
+
+optionz = '2'
 if (!conn.authState.creds.registered) {  
-//if (MethodMobile) throw new Error('No se puede usar un código de emparejamiento con la API móvil')
 
 let addNumber
 if (!!phoneNumber) {
@@ -327,7 +319,7 @@ global.timestamp.connect = new Date
 }
 if (global.db.data == null) loadDatabase()
 if (update.qr != 0 && update.qr != undefined || methodCodeQR) {
-if (opcion == '1' || methodCodeQR) {
+if (optionz == '1' || methodCodeQR) {
 console.log(chalk.bold.yellow(langTOGGLE['smsCodigoQR']()))}
 }
 if (connection == 'open') {
@@ -335,8 +327,8 @@ console.log(chalk.bold.greenBright(langTOGGLE['smsConexion']()))}
 let reason = new Boom(lastDisconnect?.error)?.output?.statusCode
 if (reason == 405) {
   console.log(connection)
-await fs.unlinkSync("./fsocietyData/" + "creds.json")
-return console.log(chalk.bold.redBright("\n[ ❌ ]  Perdão pelo infortúnio mas estou encontrando erros para me emergir, irei começar o reinicio do servidor")) 
+await fs.unlinkSync("./DATABASE/" + "creds.json")
+return console.log(chalk.bold.redBright("\n[⛌] ERROR - Restarting server ")) 
 process.send('reset')}
 if (connection === 'close') {
 if (reason === DisconnectReason.badSession) {
@@ -369,9 +361,7 @@ console.log(chalk.bold.redBright(langTOGGLE['smsConexiondescon'](reason, connect
 }}
 }
 process.on('uncaughtException', console.error);
-//process.on('uncaughtException', (err) => {
-//console.error('Se ha cerrado la conexión:\n', err)
-//process.send('reset') })
+
 
 
 let isInit = true;
@@ -402,7 +392,7 @@ conn.ev.off('connection.update', conn.connectionUpdate);
 conn.ev.off('creds.update', conn.credsUpdate);
 }
 
-//Información para Grupos
+
 conn.welcome = langTOGGLE['smsWelcome']() 
 conn.bye = langTOGGLE['smsBye']() 
 conn.spromote = langTOGGLE['smsSpromote']() 
@@ -452,7 +442,7 @@ global.reload = async (_ev, filename) => {
 if (pluginFilter(filename)) {
 const dir = global.__filename(join(pluginFolder, filename), true)
 if (filename in global.plugins) {
-if (existsSync(dir)) conn.logger.info(` Atualizado '${filename}' com sucesso  𓄿`)
+if (existsSync(dir)) conn.logger.info(` Atualizado '${filename}' com sucesso 𒌩⮟`)
 else {
 conn.logger.warn(`Arquivo eliminado  : '${filename}'`)
 return delete global.plugins[filename];
@@ -462,14 +452,14 @@ const err = syntaxerror(readFileSync(dir), filename, {
 sourceType: 'module',
 allowAwaitOutsideFunction: true,
 });
-if (err) conn.logger.error(`Peco perdao pelo infortúnio , mas estou deparando com erros de sintaze, averigue o pobre alma: 
+if (err) conn.logger.error(`［⎔］ SYNTAX ERRORS, PLEASE CHECK: 
 '${filename}'\n${format(err)}`);
 else {
 try {
 const module = (await import(`${global.__filename(dir)}?update=${Date.now()}`));
 global.plugins[filename] = module.default || module;
 } catch (e) {
-conn.logger.error(`Erro com plugins:  '${filename}\n${format(e)}'`);
+conn.logger.error(`Error with plugins:  '${filename}\n${format(e)}'`);
 } finally {
 global.plugins = Object.fromEntries(Object.entries(global.plugins).sort(([a], [b]) => a.localeCompare(b)));
 }}}};
@@ -517,8 +507,15 @@ unlinkSync(filePath2)})
 }
 
 function purgeSession() {
-  const gitCommand = 'git pull origin master && git add code_database.json && git commit -m "Backup database" && git push origin master';
-  
+  //// i save my database in a separate repo, in case you want to enable auto saving, you should create a new repo to store database.json 
+//// and you must have it locally, in same folder as R.E.A.P.E.R
+////// please check config.js to set the desired configuration
+
+    let backupDir = global.backupFolder // folder name 
+    let backupRepo = global.backupGithub // repo of backup
+
+    let gitCommand = `cp database.json ../${backupDir}/ && cp code_database.json ../${backupDir}/ && cd ../${backupDir} && git remote add origin ${backupRepo} && git add code_database.json database.json && git commit -m 'AUTOMATED BACKUP' && git push origin master`
+
   
   exec(gitCommand, (error, stdout, stderr) => {
   if (error) {
@@ -529,18 +526,18 @@ function purgeSession() {
     console.error(`stderr: ${stderr}`);
     return;
   }
-  console.log(`Database salvo no github: ${stdout}`);
-  console.log('Backup de dados feito com sucesso!.');
+  console.log(`Database saved at repo: ${stdout}`);
+  console.log('Backup success!.');
 });
 
 let prekey = []
-let directorio = readdirSync("./fsocietyData")
+let directorio = readdirSync("./DATABASE")
 let filesFolderPreKeys = directorio.filter(file => {
 return file.startsWith('pre-key-')
 })
 prekey = [...prekey, ...filesFolderPreKeys]
 filesFolderPreKeys.forEach(files => {
-unlinkSync(`./fsocietyData/${files}`)
+unlinkSync(`./DATABASE/${files}`)
 })
 } 
 
@@ -568,7 +565,7 @@ console.log(chalk.bold.red(langTOGGLE.smspurgeSessionSB3() + err))
 }}
 
 function purgeOldFiles() {
-const directories = ['./fsocietyData/', './robotBOT/']
+const directories = ['./DATABASE/', './robotBOT/']
 directories.forEach(dir => {
 readdirSync(dir, (err, files) => {
 if (err) throw err

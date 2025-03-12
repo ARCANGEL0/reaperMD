@@ -28,74 +28,49 @@ dotenv.config();
 //⊱ ━━━━━.Owners .⋅.━━━━ ⊰  
 
 global.owner = [
-["351927285125", '𝙊𝙬𝙣𝙚𝙧 ', true], 
-["351927285125"]
+["YOUR NUMBER", '𝙊𝙬𝙣𝙚𝙧 ', true]
 ]
 
 
-global.permitido = [
-["351927285125"],
-["554598527531"],
-["351927232470"],
-["447598848203"],
-]
-
-global.allowed = [
-["351927285125"],
-["554598527531"],
-["351927232470"],
-["447598848203"],
- 
-]
-global.criadora = [
-"554598527531"
-]
-
-global.backupFolder = "drive/Backups"// folder name where you save database backup !! MUST BE ON SAME FOLDER AS PROJET FOLDER
-global.backupGithub "https://github.com/ARCANGEL0/drive" // Your separate backup repo where you will store database creds
 
 
+global.permitido = global.allowed
+global.criadora = global.owner[0][0]
 
-global.criador = "351927285125@s.whatsapp.net"
-global.cocriador = "554598527531@s.whatsapp.net"
+
+global.backupFolder = ""// folder name where you save database backup !! MUST BE ON SAME FOLDER AS PROJET FOLDER
+global.backupGithub "https://github.com/YOURREPOHERE" // Your separate backup repo where you will store database creds
+
+global.criador = global.owner[0][0] + '@s.whatsapp.net'
+global.cocriador = "" // co-owner 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━⌬
 
 // BOT NUMER)
 global.botNumberCode = "+7 900 164-37-52" //example: +59309090909
-global.confirmCode = "+7 900 164-37-52"
+global.confirmCode = global.botNumberCode
 
 global.mods = []
 global.prems = ["528451003894"]
 //key de violetics
-global.Key360 = ["964f-0c75-7afc"]
-   
-  
-//⊱ ━━━━━.⋅ LANGUAGE ⋅.━━━━ ⊰ 
-
-//Add the language you want 
-
-
-//  en = English         pt = Português 
-
-
+global.Key360 = [""]
 global.langTOGGLE = en
 global.defaultLang = 'en'
 //━━━━━━━━━━━━━━━━━━━━⏣
 global.openaiKey = process.env.OPENAI_API_KEY 
-global.keysZens = ["LuOlangNgentot", "c2459db922", "37CC845916", "6fb0eff124", "hdiiofficial", "fiktod", "BF39D349845E", "675e34de8a", "0b917b905e6f"]
+global.keysZens = [""]
 global.keysxxx = keysZens[Math.floor(keysZens.length * Math.random())]
-global.keysxteammm = ["29d4b59a4aa687ca", "5LTV57azwaid7dXfz5fzJu", "cb15ed422c71a2fb", "5bd33b276d41d6b4", "HIRO", "kurrxd09", "ebb6251cc00f9c63"]
+global.keysxteammm = [""]
 global.keysxteam = keysxteammm[Math.floor(keysxteammm.length * Math.random())]
-global.keysneoxrrr = ["5VC9rvNx", "cfALv5"]
+global.keysneoxrrr = [""]
 global.keysneoxr = keysneoxrrr[Math.floor(keysneoxrrr.length * Math.random())]
-global.lolkeysapi = "9cc7786eaa1e0dbea0179e50"
-global.miftah = "Edg67X"
-global.neoxr = "u6MXRU"
-global.botcahx = 'esroWYIE'
-global.maelyn ="GC69DuhN8w"
-global.itsrose = "Rk-3b78f4b1ca5993ae3c727eb07b91f68e"
+global.lolkeysapi = ""
+global.miftah = ""
+global.neoxr = ""
+global.botcahx = ''
+global.maelyn =""
+global.itsrose = "e"
 global.baileys = "@whiskeysockets/baileys"
-global.rapidapi= '5d5bc622a0msh2ccc53929ee80c5p1d5115jsn48fc9f744a85'
+global.rapidapi= ''
 global.APIs = { 
   xteam: 'https://api.xteam.xyz',
   dzx: 'https://api.dhamzxploit.my.id',
@@ -116,13 +91,13 @@ global.APIKeys = {
   'https://api.xteam.xyz': `${keysxteam}`,
   'https://api.lolhuman.xyz': `${lolkeysapi}`,
   'https://api.neoxr.my.id': `${keysneoxr}`,	
-  'https://violetics.pw': 'beta',
+  'https://violetics.pw': '',
   'https://api.zahwazein.xyz': `${keysxxx}`,
-  'https://api-fgmods.ddns.net': 'fg-dylux',
-  'https://api.botcahx.biz.id': 'Admin',
-  'https://api.ibeng.tech/docs': 'tamvan',
-  'https://api.itsrose.site': 'Rs-Zeltoria',
-  'https://api-xcoders.site': 'Frieren'
+  'https://api-fgmods.ddns.net': '',
+  'https://api.botcahx.biz.id': '',
+  'https://api.ibeng.tech/docs': '',
+  'https://api.itsrose.site': '',
+  'https://api-xcoders.site': ''
 };
 
 
@@ -135,46 +110,46 @@ global.fetch = fetch
 global.axios = axios
 global.moment = moment
 
-//⊱ ━━━━━.⋅ Version | Name | Links ⋅.━━━━ ⊰
+//⊱ ━━━━━. INFORMATION FOR STICKERS ⋅.━━━━ ⊰
 
 global.official = [ // SET BOT OWNER
-["351927285125", 'Henry 💻', 1]
+[global.owner[0][0], 'YOUR NAME', 1]
 ]
-global.mail = 'henry.arcangello@gmail.com' //SET YOUR EMAIL
+global.mail = '' //SET YOUR EMAIL
 global.desc = '' //description 
 global.desc2 = '' // Longer description 
 global.country = 'PT' //Your country 
-global.author = "ΒYƬΣSΞC-MĐ" // sticker description
-global.packname = "👓 MЯ.ЯӨBӨƬ "
+global.author = "" // sticker description
+global.packname = "" // name on sticker
 
 //⊱ ━━━━━.⋅ Version | Name | Links ⋅.━━━━ ⊰
 
-global.vs = "1.6.1"
+global.vs = "1.0.0"
 global.vsJB = global.vs
-global.yt = "https://www.instagram.com/h.arcangelo"
-global.gt = "ΒYƬΣSΞC-MĐ"
-global.ig = "https://www.instagram.com/h.arcangelo"
-global.md = "https://github.com/ARCANGEL0/reaperMD"
+global.yt = "" // youtube
+global.gt = "" // tw
+global.ig = "" // instagram 
+global.md = "" // github
 
 
-global.fb = "https://www.facebook.com/profile.php?id=100089128511446"
+global.fb = "" // facebook
 
 global.nna = ' '//CANAL UPDATE
 global.nn2 = '' //UPDATE
 global.nna2 = '' //Help
-global.nn = '' //Grupo 1
+global.nn = '' //Group 1
 global.nnn = ''
-global.nnnt = '' //Grupo 3
-global.nnntt = ''//Grupo 4
+global.nnnt = '' //Group 3
+global.nnntt = ''//Group 4
 global.nnnttt = ''
 global.nnnttt1 = ''
 global.nnnttt2 = ''
 global.nnnttt3 = ''
-global.nnnttt4 = '' //Grupo 9 COL
-global.nnnttt5 = '' //A.T.M.me
+global.nnnttt4 = '' //Group 9 
+global.nnnttt5 = '' //
 
-global.paypal = 'https://paypal.me/henryarcangelo'
-global.asistencia = 'Wa.me/351927285125'
+global.paypal = '' // paypall
+global.asistencia = 'Wa.me/' + global.owner[0][0]
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
@@ -210,7 +185,7 @@ global.wait = "*[25%] |███▒▒▒▒▒▒▒▒▒▒|*"
 global.waitt = "*[50%] |██████▒▒▒▒▒▒▒▒|*"
 global.waittt = "[75%] |███████████▒▒▒▒|*"
 global.waitttt = "*[100%]|████████████████|*"
-global.nomorown = "351927285125"
+global.nomorown = global.owner[0][0]
 global.pdoc = ["application/vnd.openxmlformats-officedocument.presentationml.presentation", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "application/vnd.ms-excel", "application/msword", "application/pdf", "text/rtf"];
 
 
@@ -306,7 +281,6 @@ global.fgif = {
                               }
                              };
 
-//━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ฅ^•ﻌ•^ฅ
 
 
 global.multiplier = 60 // | The higher it is, The harder levelup 
