@@ -156,7 +156,7 @@ optionz = await question(`╭${lineM}
 ┊ ${chalk.blueBright('┊')} ${chalk.blue.bgBlue.bold.cyan('CODIGO DE AUTENTICAÇÃO')}
 ┊ ${chalk.blueBright('╰┅┅─┅──┅❖ ')}   
 ┊ ${chalk.blueBright('\n╭─┅──┅❖ ')}     
-┊ ${chalk.blueBright('┊')} ${chalk.green.bgMagenta.bold.yellow('¿CÓMO DESEA CONECTARSE?')}
+┊ ${chalk.blueBright('┊')} ${chalk.green.bgMagenta.bold.yellow('AUTH METHOD')}
 ┊ ${chalk.blueBright('┊')} ${chalk.bold.redBright('⇢  Opcao 1:')} ${chalk.greenBright('Código QR.')}
 ┊ ${chalk.blueBright('┊')} ${chalk.bold.redBright('⇢  Opcao 2:')} ${chalk.greenBright('Código de 8 digitos.')}
 ┊ ${chalk.blueBright('╰─┅──┅❖ ')}
@@ -176,7 +176,7 @@ optionz = await question(`╭${lineM}
 
 if (!/^[1-2]$/.test(optionz)) {
 console.log(chalk.bold.redBright(`NAO SERAO ACEITES NÚMEROS QUE NÃO SEJAM  ${chalk.bold.greenBright("1")} OU ${chalk.bold.greenBright("2")}, TAMPOUCO LETRAS OU SÍMBOLOS ESPECIAIS.
-${chalk.bold.yellowBright("Copie o trecho obscuro e copie em vossa console")}`))
+${chalk.bold.yellowBright("Copie o trecho e copie noconsole")}`))
 }} while (optionz !== '1' && optionz !== '2' || fs.existsSync(`./${authFile}/creds.json`))
 }
 
@@ -185,7 +185,7 @@ const connectionOptions = {
   logger: pino({ level: 'silent' }),
 printQRInTerminal: optionz == '1' ? true : methodCodeQR ? true : false,
 mobile: MethodMobile, 
-browser: optionz == '1' ? ['bot-MD', 'Edge', '20.0.04'] : methodCodeQR ? ['bot-MD', 'Edge', '20.0.04'] : ["Ubuntu", "Chrome", "20.0.04"],
+browser: optionz == '1' ? ['reaperMD', 'Edge', '20.0.04'] : methodCodeQR ? ['reaperMD', 'Edge', '20.0.04'] : ["Ubuntu", "Chrome", "20.0.04"],
 auth: {
 creds: state.creds,
 keys: makeCacheableSignalKeyStore(state.keys, Pino({ level: "fatal" }).child({ level: "fatal" })),

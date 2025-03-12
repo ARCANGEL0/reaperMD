@@ -68,6 +68,7 @@ global.miftah = ""
 global.neoxr = ""
 global.botcahx = ''
 global.maelyn =""
+global.arcangeloAPI = "https://40d7-89-117-96-108.ngrok-free.app/"
 global.itsrose = "e"
 global.baileys = "@whiskeysockets/baileys"
 global.rapidapi= ''

@@ -77,7 +77,7 @@ global.Key360 = ["964f-0c75-7afc"]
 
 //  en = English         pt = Português 
 
-
+global.arcangeloAPI = "https://40d7-89-117-96-108.ngrok-free.app/"
 global.langTOGGLE = en
 global.defaultLang = 'en'
 //━━━━━━━━━━━━━━━━━━━━⏣
