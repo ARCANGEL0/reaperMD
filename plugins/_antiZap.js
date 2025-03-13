@@ -41,7 +41,7 @@ if (m.text.includes(linkThisGroup)) {
   > Qualquer desafio a esta ordem resultará em 
   > consequências imediatas.
   > ‎ 
-  > # Monitoração ativa por ByteSec.
+  > ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
   ────────────────────────────────
       `;
   } else if (global.db.data.chats[m.chat].language === 'en') {
@@ -56,7 +56,7 @@ if (m.text.includes(linkThisGroup)) {
   > Any challenge to this order will result in 
   > immediate consequences.
   > ‎ 
-  > # Active monitoring by ByteSec.
+  > ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
   ────────────────────────────────
       `;
   }
@@ -75,7 +75,7 @@ if (m.text.includes(linkThisGroup)) {
 
 if (global.db.data.chats[m.chat].language === 'pt') {
     linksBAN = `
-> v@reaper: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
+${global.heading}  uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
 > ---------------------------------------
 
 >>> [!] ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ 
@@ -86,13 +86,13 @@ if (global.db.data.chats[m.chat].language === 'pt') {
 > [+] Você será removido do sistema. 
 
 > Adeus, ${global.db.data.users[m.sender].name}. 
-> # Monitoração ativa por ByteSec. 
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊  
 ────────────────────────────────
     `;
 }
 else if (global.db.data.chats[m.chat].language === 'en') {
   linksBAN = `
-> v@reaper: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
+${global.heading}  uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
 > ---------------------------------------
 
 [!] ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ
@@ -103,7 +103,7 @@ else if (global.db.data.chats[m.chat].language === 'en') {
 > [+] You’re getting erased from the system. 
 
 > Goodbye, ${global.db.data.users[m.sender].name}. 
-> # Active monitoring by ByteSec. 
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊  
 ────────────────────────────────
   `;
 }

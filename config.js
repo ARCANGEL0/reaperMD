@@ -123,8 +123,7 @@ global.APIKeys = {
   'https://api-xcoders.site': 'Frieren'
 };
 
-global.heading = `┌──[𝗥.𝝣.𝝠.𝗣.𝗘.𝗥]──[v${vs}] 
-└─►`
+
 global.wm = "\n𝘽𝙮 𝝺𝗥𝗖𝝠𝗡𝗚𝝣𝗟Ꙩ"
 global.igfg = "𝗥𝝣𝝠𝗣𝗘𝗥 PRӨJE𝐶Ʈ"
 
@@ -182,31 +181,32 @@ global.asistencia = 'Wa.me/351927285125'
 
 //⊱ ━━━━━━━━━━━━━.⋅ Data ⋅.━━━━━━━━━━━━━━ ⊰
 
-global.rg = '\n\n'
+global.rg = '> 𓉘✓𓉝 '
 global.resultado = rg
 
-global.ag = '╰⊱⚠️⊱ | 𝘼𝙑𝙄𝙎𝙊 | ⊱⚠️⊱╮\n\n'
+global.ag = '> 𓉘!𓉝 '
 global.advertencia = ag
 
-global.iig = '╰⊱❕⊱ * 𝙄𝙉𝙁𝙊 * ⊱⊱╮\n\n'
+global.iig = '> 𓉘🞡𓉝 '
 global.informacion = iig
 
-global.fg = '╰⊱❌⊱ *?𝙀𝙍𝙍𝙊* ⊱❌⊱╮\n\n'
+global.fg = '> 𓉘⤫𓉝 '
 global.fallo = fg
 
-global.mg = '╰⊱❗️⊱ * 𝙀𝙍𝙍𝙊* ⊱❗️⊱╮\n\n'
+global.mg = '> 𓉘⤫𓉝 '
 global.mal = mg
 
-global.eeg = '╰⊱📩⊱ *𝙍𝙀𝙋𝙊𝙍𝙏𝙀 * ⊱📩⊱╮\n\n'
+global.eeg =  '> 𓉘⎔𓉝 '
 global.envio = eeg
 
-global.eg = '╰⊱ *𝙀́𝙓𝙄𝙏𝙊* ⊱╮\n\n'
+global.eg = '> 𓉘✓𓉝 '
 global.exito = eg
 
 
+global.heading = `┌──[𝗥.𝝣.𝝠.𝗣.𝗘.𝗥]──[v${vs}] 
+└─►`
 
-global.wm = "ΒYƬΣSΞC-MĐ 𖠑"
-global.igfg = "👓 MЯ.ЯӨBӨƬ"
+
 global.wait = "*[25%] |███▒▒▒▒▒▒▒▒▒▒|*"
 global.waitt = "*[50%] |██████▒▒▒▒▒▒▒▒|*"
 global.waittt = "[75%] |███████████▒▒▒▒|*"
