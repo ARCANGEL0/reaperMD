@@ -223,8 +223,8 @@ async function generateInventoryImage() {
     registerFont('fonts/DutchbrigadeRegular-8M7VJ.otf', { family: 'DutchbrigadeRegular-8M7VJ' });
     registerFont('fonts/WoodgodRegular-3zpjG.ttf', { family: 'WoodgodRegular-3zpjG' });
     
-    let canvasWidth = 1024
-    let canvasHeight = 960
+    let canvasWidth = 1280
+    let canvasHeight =720
     const canvas = createCanvas(canvasWidth,canvasHeight);  // Assuming image size based on description
     const ctx = canvas.getContext('2d');
     // Load the image
