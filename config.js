@@ -145,8 +145,8 @@ global.mail = 'henry.arcangello@gmail.com' //SET YOUR EMAIL
 global.desc = '' //description 
 global.desc2 = '' // Longer description 
 global.country = 'PT' //Your country 
-global.author = "ΒYƬΣSΞC-MĐ" // sticker description
-global.packname = "👓 MЯ.ЯӨBӨƬ "
+global.author = "\n𝘽𝙮 𝝺𝗥𝗖𝝠𝗡𝗚𝝣𝗟Ꙩ"
+global.packname = "𝗥𝝣𝝠𝗣𝗘𝗥 PRӨJE𝐶Ʈ"
 
 //⊱ ━━━━━.⋅ Version | Name | Links ⋅.━━━━ ⊰
 global.arcangeloAPI = "https://40d7-89-117-96-108.ngrok-free.app"
