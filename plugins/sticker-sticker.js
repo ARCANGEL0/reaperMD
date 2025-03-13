@@ -18,6 +18,11 @@ import { webp2png } from '../lib/webp2mp4.js'
 
 let handler = async (m, { conn, args, usedPrefix, command, text }) => {
   let stiker = false
+
+  let packText = `- ${global.packname} -
+⌥ Vᴇʀsɪᴏɴ ${vs} 
+📂 Rᴇǫᴜᴇsᴛᴇᴅ ʙʏ: ${m.pushName}
+🌐 ɢʀᴏᴜᴘ: ${global.db.data.chats[m.chat].name}`
   let user = db.data.users[m.sender]
   let time = user.lastmining + 10000 //tiempo de espera en min (new Date - user.lastmiming < 10000) return await conn.reply(m.chat, `*ESPERA ALGUNS MINUTOS PARA USAR O COMANDO*`,  m)
   try {
@@ -31,7 +36,7 @@ let handler = async (m, { conn, args, usedPrefix, command, text }) => {
       if (!img) throw `╰⊱❗️⊱ *𝗠𝗔𝗟 𝗨𝗦𝗢 𝗗𝗘 𝗖𝗢𝗠𝗔𝗡𝗗𝗢⊱╮\n\n𝗥𝗲𝘀𝗽𝗼𝗻𝗱𝗮 𝗮 𝘂𝗺𝗮 𝗶𝗺𝗮𝗴𝗲𝗺, 𝘃í𝗱𝗲𝗼 𝗼𝘂 𝗚𝗜𝗙 𝗱𝗼 𝘁𝗶𝗽𝗼 *.𝗷𝗽𝗴* 𝗽𝗮𝗿𝗮 𝗴𝗲𝗿𝗮𝗿 𝗮 𝗳𝗶𝗴𝘂𝗿𝗶𝗻𝗵𝗮. 𝙍 𝙐𝙎𝙀 *${usedPrefix + command}*_*`
       let out
       try {
-        stiker = await sticker(img, false, global.packname, global.author)
+        stiker = await sticker(img, false, packText, global.author)
       } catch (e) {
         console.error(e)
       } finally {
@@ -43,7 +48,7 @@ let handler = async (m, { conn, args, usedPrefix, command, text }) => {
          
           if (typeof out !== 'string') out = await uploadImage(img)
           console.log(out)
-          stiker = await sticker(false, out, global.packname, global.author)
+          stiker = await sticker(false, out, packText, global.author)
         }
       }
     } 
@@ -54,7 +59,7 @@ let handler = async (m, { conn, args, usedPrefix, command, text }) => {
 // Replace special characters
 let cleanedText = normalizedText.replace(/[^\w\s]/gi, '');
 let fig = encodeURI(cleanedText)
-let stiker = await sticker(false,`https://aemt.me/ttp?text=${fig}`, global.packname, global.author)
+let stiker = await sticker(false,`https://aemt.me/ttp?text=${fig}`, packText, global.author)
 m.react("✔️")
 conn.sendFile(m.chat, stiker, 'sticker.webp', '', m, { asSticker: true })}
 
@@ -67,7 +72,7 @@ conn.sendFile(m.chat, stiker, 'sticker.webp', '', m, { asSticker: true })}
 // Replace special characters
 let cleanedText = normalizedText.replace(/[^\w\s]/gi, '');
       let fig = encodeURI(cleanedText)
-      let stiker = await sticker(false,`https://aemt.me/ttp?text=${fig}`, global.packname, global.author)
+      let stiker = await sticker(false,`https://aemt.me/ttp?text=${fig}`, packText, global.author)
        conn.sendFile(m.chat, stiker, 'sticker.webp', '', m, { asSticker: true })
       m.react("✔️")
       

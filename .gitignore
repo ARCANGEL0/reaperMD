@@ -11,7 +11,7 @@ lerna-debug.log*
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 tmp/*
 .env
-config.js
+# config.js
 DATABASE/
 # Runtime data
 pids
