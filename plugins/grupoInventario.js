@@ -224,7 +224,7 @@ async function generateInventoryImage() {
     registerFont('fonts/WoodgodRegular-3zpjG.ttf', { family: 'WoodgodRegular-3zpjG' });
     
     let canvasWidth = 2048
-    let canvasHeight =720
+    let canvasHeight = 1280
     const canvas = createCanvas(canvasWidth,canvasHeight);  // Assuming image size based on description
     const ctx = canvas.getContext('2d');
     // Load the image
