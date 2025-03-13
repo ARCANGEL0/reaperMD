@@ -72,7 +72,7 @@ conn.groupParticipantsUpdate(m.chat, [user],'promote')
 
 if (global.db.data.chats[m.chat].language === 'pt') {
     newAdmin = `
-> v@reaper: #~/groups/ usermod -aG sudo user
+${global.heading}  usermod -aG sudo user
 > ---------------------------------------
 >>> [!] ᴀᴅɪᴄɪᴏɴᴀɴᴅᴏ ᴜꜱᴜᴀʀɪᴏ ᴀᴏ ꜱᴜᴅᴏᴇʀꜱ
 ────────────────────────────────
@@ -82,7 +82,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
 }
 else if (global.db.data.chats[m.chat].language === 'en') {
   newAdmin = `
-> v@reaper: #~/groups/ usermod -aG sudo user
+${global.heading}  usermod -aG sudo user
 > ---------------------------------------
 >>> [!] ᴀᴅᴅɪɴɢ ᴜꜱᴇʀ ᴛᴏ ꜱᴜᴅᴏᴇʀꜱ ꜰɪʟᴇ 
 ────────────────────────────────

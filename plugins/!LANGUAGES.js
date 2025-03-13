@@ -81,7 +81,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
 > ‎ 
 > Hey, eu não sou um administrador aqui, garoto!
 > ‎ 
-> # Monitoração ativa por ByteSec.
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
 ────────────────────────────────
     `;
 }
@@ -98,7 +98,7 @@ else if (global.db.data.chats[m.chat].language === 'en') {
 > ‎ 
 > Hey, I'm not an administrator here, kid!
 > ‎ 
-> # Active monitoring by ByteSec.
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
 ────────────────────────────────
     `;
 }
@@ -121,7 +121,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
 > ‎ 
 > ⚠ 0x00000005: *𝒫𝑅𝒪𝐼𝐵𝐼𝒟𝒪*
 > ‎ 
-> # Monitoração ativa por ByteSec.
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
 ────────────────────────────────
     `;
 } else if (global.db.data.chats[m.chat].language === 'en') {
@@ -137,7 +137,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
 > ‎ 
 > ⚠ 0x00000005: *𝐹𝒪𝑅𝐵𝐼𝒟𝒟𝐸𝒩*
 > ‎ 
-> # Active monitoring by ByteSec.
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
 ────────────────────────────────
     `;
 }

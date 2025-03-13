@@ -41,32 +41,30 @@ let warnLinks;
 
 if (global.db.data.chats[m.chat].language === 'pt') {
     warnLinks = `
-> v@reaper: #~ journalctl
+${global.heading} journalctl
 > ---------------------------------------
-
-[!] 0x8007000E: Violação de Regras
+*𓉘!𓉝* 𝗨𝘀𝘂𝗮́𝗿𝗶𝗼 𝗕𝗮𝗻𝗶𝗱𝗼
 ────────────────────────────────
 > Não mande links neste grupo. 
 > Isso é estritamente proibido pelas regras.
 > Qualquer desafio a esta ordem resultará em 
 > consequências imediatas.
 > ‎ 
-> # Monitoração ativa por ByteSec.
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
 ────────────────────────────────
     `;
 } else if (global.db.data.chats[m.chat].language === 'en') {
     warnLinks = `
-> v@reaper: #~ journalctl
+${global.heading} journalctl
 > ---------------------------------------
-
-[!] WARNING: Rule Violation
+*𓉘!𓉝* 𝗨𝘀𝗲𝗿 𝗕𝗮𝗻𝗻𝗲𝗱
 ────────────────────────────────
 > Do not send links in this group.
 > It is strictly banned by defined rules.
 > Any challenge to this order will result in 
 > immediate consequences.
 > ‎ 
-> # Active monitoring by ByteSec.
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
 ────────────────────────────────
     `;
 }
@@ -84,35 +82,31 @@ let linksBAN;
 
 if (global.db.data.chats[m.chat].language === 'pt') {
     linksBAN = `
-> v@reaper: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
+${global.heading} uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
 > ---------------------------------------
-
 >>> [!] ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ 
 ────────────────────────────────
-> [+] Você achou que poderia ignorar minhas instruções?
-> [+] Links não são permitidos aqui.
-> [+] Agora, você decidiu se arriscar. A consequência? 
-> [+] Você será removido do sistema. 
-
-> Adeus, ${global.db.data.users[m.sender].name}. 
-> # Monitoração ativa por ByteSec. 
+> [𝗔𝗟𝗘𝗥𝗧] ʟɪɴᴋ ᴅᴇᴛᴇᴄᴛᴀᴅᴏ
+> *𓉘!𓉝* ᴏ ᴜsᴜᴀ́ʀɪᴏ ᴠɪᴏʟᴏᴜ ᴀs ʀᴇɢʀᴀs ᴅᴏ ɢʀᴜᴘᴏ.​
+> .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+> // 𝙍𝙚𝙢𝙤𝙫𝙚𝙣𝙙𝙤 ${global.db.data.users[m.sender].name}... 
+> ‎ 
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊  
 ────────────────────────────────
     `;
 }
 else if (global.db.data.chats[m.chat].language === 'en') {
   linksBAN = `
-> v@reaper: #~/groups/ uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
+${global.heading} uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
 > ---------------------------------------
-
-[!] ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ
+>>> [!] ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ
 ────────────────────────────────
-> [+] You thought you could just ignore my orders?
-> [+] Links are strictly forbidden here.
-> [+] You chose to take a risk. The consequence? 
-> [+] You’re getting erased from the system. 
-
-> Goodbye, ${global.db.data.users[m.sender].name}. 
-> # Active monitoring by ByteSec. 
+> [𝗔𝗟𝗘𝗥𝗧] ʟɪɴᴋ ᴅᴇᴛᴇᴄᴛᴇᴅ
+> *𓉘!𓉝* ᴜsᴇʀ ʜᴀs ᴠɪᴏʟᴀᴛᴇᴅ ɢʀᴏᴜᴘ ʀᴜʟᴇs
+> .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+> // 𝙍𝙚𝙢𝙤𝙫𝙞𝙣𝙜 ${global.db.data.users[m.sender].name}...
+> ‎ 
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊  
 ────────────────────────────────
   `;
 }
