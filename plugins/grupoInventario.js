@@ -237,41 +237,38 @@ const profileImagePath = await conn.profilePictureUrl(m.sender, 'image').catch((
 
 
 const profileImage = await loadImage(profileImagePath);
-const profileWidth = 250;  // Largura do quadrado central
-const profileHeight = 195; // Altura do quadrado central
-const profileX = 900;  // Posição X do quadrado
-const profileY = 610; // Posição Y do quadrado
+const profileWidth = 250;
+const profileHeight = 195;
+const profileX = 900;
+const profileY = 610;
 
+ctx.save();
+ctx.beginPath();
 
-ctx.save();  
-ctx.beginPath();  
+ctx.moveTo(profileX, profileY + profileHeight);
+ctx.lineTo(profileX - 200, profileY + profileHeight - 30);
+ctx.lineTo(profileX + 86, profileY + profileHeight - 30);
+ctx.lineTo(profileX + 10, profileY + profileHeight - 60);
+ctx.lineTo(profileX + profileWidth, profileY + profileHeight - 60);
+ctx.lineTo(profileX + profileWidth, profileY);
+ctx.lineTo(profileX, profileY);
+ctx.closePath();
 
+ctx.moveTo(profileX + 107, profileY + 178);
+ctx.lineTo(profileX + 162, profileY + 178);
+ctx.lineTo(profileX + 198, profileY + 161);
+ctx.lineTo(profileX + 198, profileY + 195);
+ctx.lineTo(profileX + 76, profileY + 194);
+ctx.closePath();
 
-ctx.moveTo(profileX, profileY + profileHeight); // Start at the bottom left
-ctx.lineTo(profileX - 200, profileY + profileHeight - 30); // First step up
-
-
-
-ctx.lineTo(profileX + 86, profileY + profileHeight - 30); // Straight line to the right
-ctx.lineTo(profileX + 160, profileY + profileHeight - 60); // Second step up diagonally
-
-
-
-
-
-ctx.lineTo(profileX + profileWidth, profileY + profileHeight - 60); // Continue straight to the right
-
-
-ctx.lineTo(profileX + profileWidth, profileY); // Go up to the top right
-ctx.lineTo(profileX, profileY); // Line straight to the top left
-
-
-// Close the path  
-ctx.closePath();  
+ctx.moveTo(profileX + 52, profileY);
+ctx.lineTo(profileX + 52, profileY + 17);
+ctx.lineTo(profileX + 83, profileY + 16);
+ctx.lineTo(profileX + 89, profileY);
+ctx.lineTo(profileX + 53, profileY);
+ctx.closePath();
 
 ctx.clip();
-
-
 ctx.drawImage(profileImage, profileX, profileY, profileWidth, profileHeight);
 ctx.restore();
 
