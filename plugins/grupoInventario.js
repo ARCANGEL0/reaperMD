@@ -255,13 +255,13 @@ ctx.lineTo(profileX-70, profileY + profileHeight - 30);
 ctx.lineTo(profileX + 30, profileY + profileHeight - 30);
 
 // Segundo degrau: sobe diagonalmente
-ctx.lineTo(profileX + 60, profileY + profileHeight - 60);
+ctx.lineTo(profileX + 200, profileY + profileHeight - 60);
 
 // Continua reto para a direita
 ctx.lineTo(profileX + profileWidth, profileY + profileHeight - 60);
 
 // Sobe até o topo direito
-ctx.lineTo(profileX + profileWidth +60, profileY);
+ctx.lineTo(profileX + profileWidth, profileY);
 
 // Vai reto para a esquerda até o topo esquerdo
 ctx.lineTo(profileX, profileY);
