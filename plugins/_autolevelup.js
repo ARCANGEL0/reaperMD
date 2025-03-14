@@ -2300,7 +2300,7 @@ upgradeMessage(m.pushName, user.level, 830,2)
 if (userxp > 1029100) {
   user.maxlevel = true
   user.role = levels[20]
-  user.trojans += 30
+  user.kills += 30
   user.money += 1600
 user.limit += 15
   user.level=100; // Level up

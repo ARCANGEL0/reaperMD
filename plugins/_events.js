@@ -1241,7 +1241,7 @@ console.log("👍")
 > ⌥ @${player2.split("@")[0]}: ${global.db.data.chats[m.chat].truco.stats[player2].pontos}
 > ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 ┃ [*] @${user.split("@")[0]} 𝚂̷𝚃̷𝙰̷𝚃̷𝚂̷:
-> ${ global.db.data.chats[m.chat].truco.coins} 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${isTruco ? `\n┃ ${ global.db.data.chats[m.chat].truco.bugs} ⧗ ᴇᴛʜᴇʀᴇᴜᴍ` : ''}
+> ${ global.db.data.chats[m.chat].truco.coins} 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${isTruco ? `\n┃ ${ global.db.data.chats[m.chat].truco.eth} ⧗ ᴇᴛʜᴇʀᴇᴜᴍ` : ''}
 > ${ global.db.data.chats[m.chat].truco.xp} 𝑥𝑝
 ` : 
 `[!] 𝙵𝙸𝙼 𝙳𝙴 𝙹𝙾𝙶𝙾
@@ -1253,7 +1253,7 @@ console.log("👍")
 > ⌥ @${player2.split("@")[0]}: ${global.db.data.chats[m.chat].truco.stats[player2].pontos}
 > ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 ┃ [*] @${user.split("@")[0]} 𝚂̷𝚃̷𝙰̷𝚃̷𝚂̷:
-> ${ global.db.data.chats[m.chat].truco.coins} 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${isTruco ? `\n┃ ${ global.db.data.chats[m.chat].truco.bugs} ⧗ ᴇᴛʜᴇʀᴇᴜᴍ` : ''}
+> ${ global.db.data.chats[m.chat].truco.coins} 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${isTruco ? `\n┃ ${ global.db.data.chats[m.chat].truco.eth} ⧗ ᴇᴛʜᴇʀᴇᴜᴍ` : ''}
 > ${ global.db.data.chats[m.chat].truco.xp} 𝑥𝑝
 `
            
@@ -1263,7 +1263,7 @@ console.log("👍")
 global.db.data.chats[m.chat].users[user].money +=  global.db.data.chats[m.chat].truco.coins
 global.db.data.chats[m.chat].users[user].exp +=  global.db.data.chats[m.chat].truco.xp
 if(isTruco){
-global.db.data.chats[m.chat].users[user].limit +=  global.db.data.chats[m.chat].truco.bugs
+global.db.data.chats[m.chat].users[user].limit +=  global.db.data.chats[m.chat].truco.eth
 }
 
 
@@ -1330,7 +1330,7 @@ global.db.data.chats[m.chat].truco.coins += Math.floor(Math.random() * 10) + 1;
 
 if( global.db.data.chats[m.chat].truco.total>1)
 {
-  global.db.data.chats[m.chat].truco.bugs = Math.floor((global.db.data.chats[m.chat].truco.total / 3));
+  global.db.data.chats[m.chat].truco.eth = Math.floor((global.db.data.chats[m.chat].truco.total / 3));
 
 }
 
@@ -1402,7 +1402,7 @@ console.log(global.db.data.chats[m.chat].truco.table)
 > ⌥ @${player2.split("@")[0]}: ${global.db.data.chats[m.chat].truco.stats[player2].pontos}
 > ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 ┃ [*] @${user.split("@")[0]} 𝚂̷𝚃̷𝙰̷𝚃̷𝚂̷:
-> ${ global.db.data.chats[m.chat].truco.coins} 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${isTruco ? `\n┃ ${ global.db.data.chats[m.chat].truco.bugs} ⧗ ᴇᴛʜᴇʀᴇᴜᴍ` : ''}
+> ${ global.db.data.chats[m.chat].truco.coins} 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${isTruco ? `\n┃ ${ global.db.data.chats[m.chat].truco.eth} ⧗ ᴇᴛʜᴇʀᴇᴜᴍ` : ''}
 > ${ global.db.data.chats[m.chat].truco.xp} 𝑥𝑝
 ` : 
 `[!] 𝙵𝙸𝙼 𝙳𝙴 𝙹𝙾𝙶𝙾
@@ -1414,7 +1414,7 @@ console.log(global.db.data.chats[m.chat].truco.table)
 > ⌥ @${player2.split("@")[0]}: ${global.db.data.chats[m.chat].truco.stats[player2].pontos}
 > ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 ┃ [*] @${user.split("@")[0]} 𝚂̷𝚃̷𝙰̷𝚃̷𝚂̷:
-> ${ global.db.data.chats[m.chat].truco.coins} 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${isTruco ? `\n┃ ${ global.db.data.chats[m.chat].truco.bugs} ⧗ ᴇᴛʜᴇʀᴇᴜᴍ` : ''}
+> ${ global.db.data.chats[m.chat].truco.coins} 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${isTruco ? `\n┃ ${ global.db.data.chats[m.chat].truco.eth} ⧗ ᴇᴛʜᴇʀᴇᴜᴍ` : ''}
 > ${ global.db.data.chats[m.chat].truco.xp} 𝑥𝑝
 `
       
@@ -1423,7 +1423,7 @@ console.log(global.db.data.chats[m.chat].truco.table)
 global.db.data.chats[m.chat].users[user].money +=  global.db.data.chats[m.chat].truco.coins
 global.db.data.chats[m.chat].users[user].exp +=  global.db.data.chats[m.chat].truco.xp
 if(global.db.data.chats[m.chat].truco.isTruco){
-global.db.data.chats[m.chat].users[user].limit +=  global.db.data.chats[m.chat].truco.bugs
+global.db.data.chats[m.chat].users[user].limit +=  global.db.data.chats[m.chat].truco.eth
 }
 
 
@@ -1451,7 +1451,7 @@ global.db.data.chats[m.chat].users[user].limit +=  global.db.data.chats[m.chat].
 > ⌥ @${player2.split("@")[0]}: ${global.db.data.chats[m.chat].truco.stats[player2].pontos}
 > ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 ┃ [*] @${user.split("@")[0]} 𝚂̷𝚃̷𝙰̷𝚃̷𝚂̷:
-> ${ global.db.data.chats[m.chat].truco.coins} 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${isTruco ? `\n┃ ${ global.db.data.chats[m.chat].truco.bugs} ⧗ ᴇᴛʜᴇʀᴇᴜᴍ` : ''}
+> ${ global.db.data.chats[m.chat].truco.coins} 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${isTruco ? `\n┃ ${ global.db.data.chats[m.chat].truco.eth} ⧗ ᴇᴛʜᴇʀᴇᴜᴍ` : ''}
 > ${ global.db.data.chats[m.chat].truco.xp} 𝑥𝑝
 ` : 
 `[!] 𝙵𝙸𝙼 𝙳𝙴 𝙹𝙾𝙶𝙾
@@ -1463,7 +1463,7 @@ global.db.data.chats[m.chat].users[user].limit +=  global.db.data.chats[m.chat].
 > ⌥ @${player2.split("@")[0]}: ${global.db.data.chats[m.chat].truco.stats[player2].pontos}
 > ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 ┃ [*] @${user.split("@")[0]} 𝚂̷𝚃̷𝙰̷𝚃̷𝚂̷:
-> ${ global.db.data.chats[m.chat].truco.coins} 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${isTruco ? `\n┃ ${ global.db.data.chats[m.chat].truco.bugs} ⧗ ᴇᴛʜᴇʀᴇᴜᴍ` : ''}
+> ${ global.db.data.chats[m.chat].truco.coins} 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${isTruco ? `\n┃ ${ global.db.data.chats[m.chat].truco.eth} ⧗ ᴇᴛʜᴇʀᴇᴜᴍ` : ''}
 > ${ global.db.data.chats[m.chat].truco.xp} 𝑥𝑝
 `
       
@@ -1473,7 +1473,7 @@ global.db.data.chats[m.chat].users[user].limit +=  global.db.data.chats[m.chat].
 global.db.data.chats[m.chat].users[user].money +=  global.db.data.chats[m.chat].truco.coins
 global.db.data.chats[m.chat].users[user].exp +=  global.db.data.chats[m.chat].truco.xp
 if(global.db.data.chats[m.chat].truco.isTruco){
-global.db.data.chats[m.chat].users[user].limit +=  global.db.data.chats[m.chat].truco.bugs
+global.db.data.chats[m.chat].users[user].limit +=  global.db.data.chats[m.chat].truco.eth
 }
 
 
@@ -1524,7 +1524,7 @@ global.db.data.chats[m.chat].truco.coins += Math.floor(Math.random() * 10) + 1;
 
 if( global.db.data.chats[m.chat].truco.total>1)
 {
-  global.db.data.chats[m.chat].truco.bugs = Math.floor((global.db.data.chats[m.chat].truco.total / 3));
+  global.db.data.chats[m.chat].truco.eth = Math.floor((global.db.data.chats[m.chat].truco.total / 3));
 
 }
 
@@ -3430,7 +3430,7 @@ global.db.data.chats[m.chat].loja.page='xp'
      if( m.text== '3' && global.db.data.chats[m.chat].loja.Index ==0 && global.db.data.chats[m.chat].loja.page =='home'){
       
 
-let bugsStore =[
+let ethStore =[
 'https://telegra.ph/file/10d95e3866fb655aa2595.jpg',
 'https://telegra.ph/file/e9857de3dc1f3faea297b.jpg',
 
@@ -3439,7 +3439,7 @@ let bugsStore =[
 'https://telegra.ph/file/292ec5ea862bb3d324e50.jpg'
 ]
       
-let message = await  conn.sendFile(m.chat, bugsStore.getRandom(), 'loja.jpg', `╔═━━━─── • ───━━━═╗
+let message = await  conn.sendFile(m.chat, ethStore.getRandom(), 'loja.jpg', `╔═━━━─── • ───━━━═╗
    *𝔄 𝔏𝔬𝔧𝔞 𝔇' 𝔊𝔞𝔯𝔬 𝔓𝔯𝔢𝔱𝔬*
 ╚═━━━─── • ───━━━═╝
 ╭⋟────────────────────────╮
@@ -3476,13 +3476,13 @@ global.db.data.chats[m.chat].loja.page='tokens'
      if( m.text== '4' && global.db.data.chats[m.chat].loja.Index ==0 && global.db.data.chats[m.chat].loja.page =='home'){
       
 
-let bugsStore =[
+let ethStore =[
   'https://telegra.ph/file/f145110672cb59c3d3e25.jpg',
   'https://telegra.ph/file/f364fe4075cff37ccb6ba.jpg',
 'https://telegra.ph/file/d5af2514298ef4d4af1f0.jpg'
 ]
       
-let message = await  conn.sendFile(m.chat, bugsStore.getRandom(), 'loja.jpg', `╔═━━━─── • ───━━━═╗
+let message = await  conn.sendFile(m.chat, ethStore.getRandom(), 'loja.jpg', `╔═━━━─── • ───━━━═╗
    *𝔄 𝔏𝔬𝔧𝔞 𝔇' 𝔊𝔞𝔯𝔬 𝔓𝔯𝔢𝔱𝔬*
 ╚═━━━─── • ───━━━═╝
 ╭⋟────────────────────────╮
@@ -3757,13 +3757,13 @@ global.db.data.chats[m.chat].users[m.sender][att] =
     let choice = tokOptions[m.text];
    let loja = global.db.data.chats[m.chat].loja
     let user = global.db.data.chats[m.chat].users[m.sender];
-if(user.trojans<0)user.trojans = 0
+if(user.kills<0)user.kills = 0
     // Check if user has enough ʙʏᴛᴇᴄᴏɪɴꜱ
-    if (user.trojans < -choice.cost) {
+    if (user.kills < -choice.cost) {
         m.reply(`⎔⎓──────────────
 ┃  ✇ 𝑬𝑹𝑹𝑶 𝑨𝑶 𝑬𝑭𝑬𝑻𝑼𝑨𝑹 𝑪𝑶𝑴𝑷𝑹𝑨!
 ┃ 
-┃ 𝔑𝔞̃𝔬 𝔱𝔢𝔪 ᴛʀᴏᴊᴀɴꜱ 𝔰𝔲𝔣𝔦𝔠𝔦𝔢𝔫𝔱𝔢́𝔰. . . 
+┃ 𝔑𝔞̃𝔬 𝔱𝔢𝔪 ɴᴏᴅᴇs 𝔰𝔲𝔣𝔦𝔠𝔦𝔢𝔫𝔱𝔢́𝔰. . . 
 ┃
 ╰─...⎔⎓──────────`);
         return;
@@ -3782,7 +3782,7 @@ global.db.data.chats[m.chat].users[m.sender][att] =
 
 
 
-    user.trojans += choice.cost;
+    user.kills += choice.cost;
 
     // Create a protocol ID and log the purchase
     let protocolId = Math.random().toString(36).substr(2, 9).toUpperCase();

@@ -295,7 +295,7 @@ ctx.restore();
     188.5); 
     ctx.fillText(`⥤ ${global.db.data.chats[m.chat].users[m.sender].limit}`,
     604.5, 220.3); 
-    ctx.fillText(`⥤ ${global.db.data.chats[m.chat].users[m.sender].almas}`, 604.5,
+    ctx.fillText(`⥤ ${global.db.data.chats[m.chat].users[m.sender].kills}`, 604.5,
     247.2); 
     // Add item counts to the image
     ctx.fillText(`${counts.adagas}`, 710, 321); 
