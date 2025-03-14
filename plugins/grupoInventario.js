@@ -251,7 +251,7 @@ ctx.beginPath();
 ctx.moveTo(profileX, profileY + profileHeight);
 
 // Primeiro degrau: sobe um pouco
-ctx.lineTo(profileX, profileY + profileHeight +30);
+ctx.lineTo(profileX+400, profileY + profileHeight - 30);
 
 // Linha reta para a direita
 ctx.lineTo(profileX + 30, profileY + profileHeight - 30);
