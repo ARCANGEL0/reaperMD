@@ -1102,9 +1102,9 @@ global.db.data.chats[m.chat].users[m.sender].limit=660000000000066
   
 
 if ( plugin.limit && global.db.data.chats[m.chat].users[m.sender].limit < plugin.limit * 1) {
-  const noBugs = global.db.data.chats[m.chat].language === 'en' ? `𝙔𝙤𝙪 𝙙𝙤𝙣'𝙩 𝙝𝙖𝙫𝙚 ᴇᴛʜᴇʀᴇᴜᴍ!` : `𝙑𝙤𝙘𝙚 𝙚𝙨𝙩𝙖 𝙨𝙚𝙢 ᴇᴛʜᴇʀᴇᴜᴍ!`
+  const noEth = global.db.data.chats[m.chat].language === 'en' ? `𝙔𝙤𝙪 𝙙𝙤𝙣'𝙩 𝙝𝙖𝙫𝙚 ᴇᴛʜᴇʀᴇᴜᴍ!` : `𝙑𝙤𝙘𝙚 𝙚𝙨𝙩𝙖 𝙨𝙚𝙢 ᴇᴛʜᴇʀᴇᴜᴍ!`
  
-  this.reply(m.chat, `> ${noBugs}`, m)
+  this.reply(m.chat, `> ${noEth}`, m)
 continue //Sin límite
 }
 if (!isAdmin && global.db.data.chats[m.chat].autolevelup && plugin.level > global.db.data.chats[m.chat].users[m.sender].level) {

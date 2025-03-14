@@ -41,7 +41,7 @@ _.${command} *rce*_
 async function initializeAttributes(user) {
     
     if (user.money === undefined) user.money = 0;
-    if (user.trojans === undefined) user.trojans = 0;
+    if (user.kills === undefined) user.kills = 0;
     if (user.steals === undefined) user.steals = 0;
     if (user.pontos === undefined) user.pontos = 0;
     if (user.level === undefined) {

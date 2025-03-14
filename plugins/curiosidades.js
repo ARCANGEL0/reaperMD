@@ -383,7 +383,7 @@ else {
        "O paradigma de programação funcional enfatiza a imutabilidade e a avaliação de funções, facilitando a escrita de código conciso e fácil de entender.",
   "A linguagem de programação Rust é conhecida por fornecer controle de memória sem a necessidade de coletor de lixo, garantindo segurança e desempenho.",
   "A programação assíncrona é uma abordagem que permite a execução de tarefas em segundo plano, melhorando a eficiência em operações de entrada/saída intensivas.",
-  "O desenvolvimento orientado a testes (TDD) envolve escrever testes antes de implementar o código, promovendo uma abordagem mais robusta e livre de bugs.",
+  "O desenvolvimento orientado a testes (TDD) envolve escrever testes antes de implementar o código, promovendo uma abordagem mais robusta e livre de eth.",
   "O Docker é uma plataforma de contêineres que facilita a criação, distribuição e execução de aplicativos em ambientes isolados.",
   "A arquitetura de microsserviços divide um aplicativo em componentes independentes, facilitando a escalabilidade e a manutenção.",
   "A linguagem de programação Kotlin é uma escolha popular para desenvolvimento Android, oferecendo concisão e interoperabilidade com Java.",

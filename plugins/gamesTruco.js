@@ -31,7 +31,7 @@ if(!global.db.data.chats[m.chat].truco){
     handsImg:{},
     xp: 0,
     coins: 0,
-    bugs:0,
+    eth:0,
     total: 1,
     isTruco: false,
     valoresCartas:{},
