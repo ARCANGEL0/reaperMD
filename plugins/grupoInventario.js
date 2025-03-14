@@ -247,26 +247,13 @@ ctx.save();
 ctx.beginPath();  
 
 
-// Começa na base esquerda
-ctx.moveTo(profileX, profileY + profileHeight);
-
-// Primeiro degrau: sobe um pouco
-ctx.lineTo(profileX-200, profileY + profileHeight - 30);
-
-// Linha reta para a direita
-ctx.lineTo(profileX + 36, profileY + profileHeight - 30);
-
-// Segundo degrau: sobe diagonalmente
-ctx.lineTo(profileX + 60, profileY + profileHeight - 60);
-
-// Continua reto para a direita
-ctx.lineTo(profileX + profileWidth, profileY + profileHeight - 60);
-
-// Sobe até o topo direito
-ctx.lineTo(profileX + profileWidth, profileY);
-
-// Vai reto para a esquerda até o topo esquerdo
-ctx.lineTo(profileX, profileY);
+ctx.moveTo(profileX, profileY + profileHeight); // Start at the bottom left
+ctx.lineTo(profileX - 200, profileY + profileHeight - 30); // First step up
+ctx.lineTo(profileX + 36, profileY + profileHeight - 30); // Straight line to the right
+ctx.lineTo(profileX + 60, profileY + profileHeight - 60); // Second step up diagonally
+ctx.lineTo(profileX + profileWidth, profileY + profileHeight - 60); // Continue straight to the right
+ctx.lineTo(profileX + profileWidth, profileY); // Go up to the top right
+ctx.lineTo(profileX, profileY); // Line straight to the top left
 
 // Close the path  
 ctx.closePath();  
