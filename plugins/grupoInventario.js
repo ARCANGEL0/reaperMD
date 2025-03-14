@@ -259,7 +259,7 @@ ctx.lineTo(profileX + 120, profileY + profileHeight - 60); // Second step up dia
 
 
 ctx.lineTo(profileX + profileWidth, profileY + profileHeight - 60); // Continue straight to the right
-ctx.lineTo(profileX + profileWidth, profileY+20); // Go up to the top right
+ctx.lineTo(profileX + profileWidth -30, profileY); // Go up to the top right
 ctx.lineTo(profileX, profileY); // Line straight to the top left
 
 // Close the path  
