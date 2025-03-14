@@ -253,7 +253,7 @@ ctx.moveTo(profileX, profileY);
 ctx.lineTo(profileX + 30, profileY);  
 
 // Step 2: Move diagonally up-right  
-ctx.lineTo(profileX + 60, profileY - 30);  
+ctx.lineTo(profileX + 30, profileY - 30);  
 
 // Step 3: Continue straight right  
 ctx.lineTo(profileX + profileWidth, profileY - 30);  
