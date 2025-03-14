@@ -236,43 +236,24 @@ let image = await loadImage(pts)
 const profileImagePath = await conn.profilePictureUrl(m.sender, 'image').catch((_) => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
 
 
-
-   const profileImage = await loadImage(profileImagePath);
-const profileWidth = 306;  
-const profileHeight = 306; 
-const profileX = 72;  
-const profileY = 108; 
+const profileImage = await loadImage(profileImagePath);
+const profileWidth = 306;  // Largura do quadrado central
+const profileHeight = 306; // Altura do quadrado central
+const profileX = 72;  // Posição X do quadrado
+const profileY = 108; // Posição Y do quadrado
 
 ctx.save();
 ctx.beginPath();
 
-// Canto superior esquerdo com detalhes
-ctx.moveTo(profileX + 20, profileY);  
-ctx.lineTo(profileX + 40, profileY);  
-ctx.lineTo(profileX + 50, profileY + 10);
-ctx.lineTo(profileX + 50, profileY + 30);
-ctx.lineTo(profileX + 40, profileY + 40);
-ctx.lineTo(profileX + 20, profileY + 40);
-ctx.lineTo(profileX, profileY + 20);
-
-// Linha superior reta até o canto superior direito
-ctx.lineTo(profileX + profileWidth, profileY);  
-
-// Lado direito reto descendo
-ctx.lineTo(profileX + profileWidth, profileY + profileHeight - 40);
-
-// Canto inferior direito seguindo o design correto
-ctx.lineTo(profileX + profileWidth - 40, profileY + profileHeight - 40); // Linha reta para a esquerda
-ctx.lineTo(profileX + profileWidth - 60, profileY + profileHeight - 20); // Diagonal para baixo/esquerda
-ctx.lineTo(profileX + profileWidth - 60, profileY + profileHeight); // Linha reta para baixo
-
-// Linha inferior reta para o canto inferior esquerdo
-ctx.lineTo(profileX, profileY + profileHeight);
-
-// Lado esquerdo reto até o início do clipe superior esquerdo
-ctx.lineTo(profileX, profileY + 20);  
-
+// Criando um caminho para o formato personalizado do quadrado com os clipes nos cantos necessários
+ctx.moveTo(profileX + 20, profileY);  // Pequena margem para o clipe superior esquerdo
+ctx.lineTo(profileX + profileWidth, profileY); // Linha reta até o canto superior direito
+ctx.lineTo(profileX + profileWidth, profileY + profileHeight - 50); // Lado direito normal
+ctx.lineTo(profileX + profileWidth - 30, profileY + profileHeight); // Clip inferior direito
+ctx.lineTo(profileX, profileY + profileHeight); // Linha reta até o canto inferior esquerdo
+ctx.lineTo(profileX, profileY + 20); // Clip superior esquerdo
 ctx.closePath();
+
 ctx.clip();
 ctx.drawImage(profileImage, profileX, profileY, profileWidth, profileHeight);
 ctx.restore();
