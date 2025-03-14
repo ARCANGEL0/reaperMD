@@ -243,34 +243,37 @@ const profileX = 900;
 const profileY = 610;
 
 ctx.save();
-ctx.beginPath();
+  ctx.beginPath();
 
-ctx.moveTo(profileX, profileY + profileHeight);
-ctx.lineTo(profileX - 200, profileY + profileHeight - 30);
-ctx.lineTo(profileX + 86, profileY + profileHeight - 30);
-ctx.lineTo(profileX + 10, profileY + profileHeight - 60);
-ctx.lineTo(profileX + profileWidth, profileY + profileHeight - 60);
-ctx.lineTo(profileX + profileWidth, profileY);
-ctx.lineTo(profileX, profileY);
-ctx.closePath();
+  // Forma principal do recorte
+  ctx.moveTo(profileX, profileY + profileHeight);
+  ctx.lineTo(profileX - 200, profileY + profileHeight - 30);
+  ctx.lineTo(profileX + 86, profileY + profileHeight - 30);
+  ctx.lineTo(profileX + 10, profileY + profileHeight - 60);
+  ctx.lineTo(profileX + profileWidth, profileY + profileHeight - 60);
+  ctx.lineTo(profileX + profileWidth, profileY);
+  ctx.lineTo(profileX, profileY);
+  ctx.closePath();
 
-ctx.moveTo(profileX + 107, profileY + 178);
-ctx.lineTo(profileX + 162, profileY + 178);
-ctx.lineTo(profileX + 198, profileY + 161);
-ctx.lineTo(profileX + 198, profileY + 195);
-ctx.lineTo(profileX + 76, profileY + 194);
-ctx.closePath();
+  // Buraco inferior (recorta a parte de baixo)
+  ctx.moveTo(profileX + 60, profileY + profileHeight - 20);
+  ctx.lineTo(profileX + profileWidth - 60, profileY + profileHeight - 20);
+  ctx.lineTo(profileX + profileWidth - 80, profileY + profileHeight);
+  ctx.lineTo(profileX + 80, profileY + profileHeight);
+  ctx.closePath();
 
-ctx.moveTo(profileX + 52, profileY);
-ctx.lineTo(profileX + 52, profileY + 17);
-ctx.lineTo(profileX + 83, profileY + 16);
-ctx.lineTo(profileX + 89, profileY);
-ctx.lineTo(profileX + 53, profileY);
-ctx.closePath();
+  // Buraco superior (recorta parte do topo)
+  ctx.moveTo(profileX + 90, profileY);
+  ctx.lineTo(profileX + 110, profileY);
+  ctx.lineTo(profileX + 115, profileY + 20);
+  ctx.lineTo(profileX + 85, profileY + 20);
+  ctx.closePath();
 
-ctx.clip();
-ctx.drawImage(profileImage, profileX, profileY, profileWidth, profileHeight);
-ctx.restore();
+  ctx.clip();
+
+  ctx.drawImage(profileImage, profileX, profileY, profileWidth, profileHeight);
+
+  ctx.restore();
 
 
  
