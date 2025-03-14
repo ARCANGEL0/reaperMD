@@ -240,7 +240,7 @@ const profileImage = await loadImage(profileImagePath);
 const profileWidth = 235;  // Largura do quadrado central
 const profileHeight = 195; // Altura do quadrado central
 const profileX = 915;  // Posição X do quadrado
-const profileY = 546; // Posição Y do quadrado
+const profileY = 536; // Posição Y do quadrado
 
 
 ctx.save();  
