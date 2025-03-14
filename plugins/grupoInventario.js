@@ -254,7 +254,7 @@ ctx.moveTo(profileX, profileY + profileHeight);
 ctx.lineTo(profileX-300, profileY + profileHeight - 30);
 
 // Linha reta para a direita
-ctx.lineTo(profileX + 149, profileY + profileHeight - 30);
+ctx.lineTo(profileX + 36, profileY + profileHeight - 30);
 
 // Segundo degrau: sobe diagonalmente
 ctx.lineTo(profileX + 60, profileY + profileHeight - 60);
