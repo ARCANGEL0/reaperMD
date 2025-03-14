@@ -238,26 +238,27 @@ const profileImagePath = await conn.profilePictureUrl(m.sender, 'image').catch((
 
 
    
-    
-    
 const profileImage = await loadImage(profileImagePath);
 const profileWidth = 306;  // Largura do quadrado central
 const profileHeight = 306; // Altura do quadrado central
-const profileX = 112;  // Posição X do quadrado
-const profileY = 128; // Posição Y do quadrado
+const profileX = 72;  // Posição X do quadrado
+const profileY = 108; // Posição Y do quadrado
 
 ctx.save();
+ctx.beginPath();
 
+// Criando um caminho para o formato personalizado do quadrado com os clipes nos cantos necessários
+ctx.moveTo(profileX + 20, profileY);  // Pequena margem para o clipe superior esquerdo
+ctx.lineTo(profileX + profileWidth, profileY); // Linha reta até o canto superior direito
+ctx.lineTo(profileX + profileWidth, profileY + profileHeight - 50); // Lado direito normal
+ctx.lineTo(profileX + profileWidth - 30, profileY + profileHeight); // Clip inferior direito
+ctx.lineTo(profileX, profileY + profileHeight); // Linha reta até o canto inferior esquerdo
+ctx.lineTo(profileX, profileY + 20); // Clip superior esquerdo
+ctx.closePath();
 
 ctx.clip();
 ctx.drawImage(profileImage, profileX, profileY, profileWidth, profileHeight);
-
- 
- 
-
-
-    
-    ctx.restore();
+ctx.restore();
 
  
     // Set font style for the text
