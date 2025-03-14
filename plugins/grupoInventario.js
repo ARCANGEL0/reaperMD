@@ -246,7 +246,7 @@ const profileY = 566; // Posição Y do quadrado
 ctx.save();  
 ctx.beginPath();  
 // Começa na base esquerda
-ctx.moveTo(profileX, profileY + profileHeight);
+ctx.moveTo(profileX +20, profileY + profileHeight);
 
 // Primeiro degrau: sobe um pouco
 ctx.lineTo(profileX-70, profileY + profileHeight - 30);
