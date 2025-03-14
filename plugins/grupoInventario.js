@@ -249,9 +249,6 @@ ctx.beginPath();
 // Start at top-left  
 ctx.moveTo(profileX, profileY);  
 
-// Step 1: Move right  
-ctx.lineTo(profileX + 35, profileY);  
-
 
 
 // Close the path  
