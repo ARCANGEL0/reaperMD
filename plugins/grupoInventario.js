@@ -237,7 +237,7 @@ const profileImagePath = await conn.profilePictureUrl(m.sender, 'image').catch((
 
 
 const profileImage = await loadImage(profileImagePath);
-const profileWidth = 250;  // Largura do quadrado central
+const profileWidth = 2350;  // Largura do quadrado central
 const profileHeight = 195; // Altura do quadrado central
 const profileX = 915;  // Posição X do quadrado
 const profileY = 566; // Posição Y do quadrado
@@ -249,8 +249,8 @@ ctx.beginPath();
 
 ctx.moveTo(profileX, profileY + profileHeight); // Start at the bottom left
 ctx.lineTo(profileX - 200, profileY + profileHeight - 30); // First step up
-ctx.lineTo(profileX + 76, profileY + profileHeight - 30); // Straight line to the right
-ctx.lineTo(profileX + 100, profileY + profileHeight - 60); // Second step up diagonally
+ctx.lineTo(profileX + 96, profileY + profileHeight - 30); // Straight line to the right
+ctx.lineTo(profileX + 120, profileY + profileHeight - 60); // Second step up diagonally
 ctx.lineTo(profileX + profileWidth, profileY + profileHeight - 60); // Continue straight to the right
 ctx.lineTo(profileX + profileWidth, profileY); // Go up to the top right
 ctx.lineTo(profileX, profileY); // Line straight to the top left
