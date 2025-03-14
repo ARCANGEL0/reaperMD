@@ -256,7 +256,7 @@ ctx.lineTo(profileX + 96, profileY + profileHeight - 30); // Straight line to th
 ctx.lineTo(profileX + 120, profileY + profileHeight - 60); // Second step up diagonally
 
 
-'
+
 
 ctx.lineTo(profileX + profileWidth, profileY + profileHeight - 60); // Continue straight to the right
 ctx.lineTo(profileX + profileWidth, profileY); // Go up to the top right
