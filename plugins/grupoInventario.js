@@ -262,7 +262,7 @@ ctx.closePath();
 
 ctx.clip();
 ctx.drawImage(profileImage, profileX, profileY, profileWidth, profileHeight);
-ctx.restore();
+
  
  
 
