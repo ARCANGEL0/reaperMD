@@ -252,8 +252,6 @@ ctx.beginPath();
 
 
 
-ctx.lineTo(profileX + profileWidth - 30, profileY + profileHeight); // Clip inferior direito
-ctx.lineTo(profileX + 40, profileY + profileHeight); // Linha inferior até o clipe inferior esquerdo
 ctx.lineTo(profileX, profileY + profileHeight - 30); // Clip inferior esquerdo
 ctx.lineTo(profileX, profileY + 20); // Lado esquerdo até o clipe superior esquerdo
 ctx.closePath();
