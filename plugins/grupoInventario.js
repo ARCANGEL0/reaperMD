@@ -249,8 +249,7 @@ const profileY = 128; // Posição Y do quadrado
 ctx.save();
 ctx.beginPath();
 
-// Criando um caminho para o formato personalizado do quadrado com clipes
-ctx.moveTo(profileX + 20, profileY);  // Pequena margem para o clipe superior esquerdo
+
 
 
 ctx.lineTo(profileX + profileWidth - 30, profileY + profileHeight); // Clip inferior direito
