@@ -27,7 +27,15 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
 let uptime = clockString(_uptime)
 
 let shell = `${global.heading} journalctl`
-$
+let greetTxt = global.db.data.chats[m.chat].language === 'en' ? 
+`ᴜsᴇʀ:`
+:
+`ᴜsᴜᴀʀɪᴏ:`
+
+
+let message = `${shell}
+/// 𓉘Ⲗ𓉝 ${greetTxt} ${name}`
+
 
 let estado = `╭━━━━[ *𝙎𝙏𝘼𝙏𝙐𝙎* ]━━━━━⬣
 ┃ *Olá!* ${name}
@@ -46,7 +54,7 @@ let estado = `╭━━━━[ *𝙎𝙏𝘼𝙏𝙐𝙎* ]━━━━━⬣
 ┃ღ *Usuario(s) Proibido(s)*
 ┃➥ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} 
 ╰━━━━━━━━━━━━━━━━━━⬣`
-await conn.sendFile(m.chat, picture, 'stats.mp4', estado, fkontak)
+await conn.sendFile(m.chat, picture, 'stats.mp4', message, fkontak)
 
 }
 handler.help = ['estado']
