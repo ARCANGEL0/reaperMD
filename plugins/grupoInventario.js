@@ -241,18 +241,31 @@ const profileWidth = 306;  // Largura do quadrado central
 const profileHeight = 306; // Altura do quadrado central
 const profileX = 72;  // Posição X do quadrado
 const profileY = 108; // Posição Y do quadrado
-
 ctx.save();
 ctx.beginPath();
 
-// Criando um caminho para o formato personalizado do quadrado com os clipes nos cantos necessários
-ctx.moveTo(profileX + 20, profileY);  // Pequena margem para o clipe superior esquerdo
-ctx.lineTo(profileX + profileWidth, profileY); // Linha reta até o canto superior direito
-ctx.lineTo(profileX + profileWidth, profileY + profileHeight - 50); // Lado direito normal
-ctx.lineTo(profileX + profileWidth - 30, profileY + profileHeight); // Clip inferior direito
-ctx.lineTo(profileX, profileY + profileHeight); // Linha reta até o canto inferior esquerdo
-ctx.lineTo(profileX, profileY + 20); // Clip superior esquerdo
-ctx.lineTo(profileX - 15, profileY + 25); // Clip superior esquerdo
+// Começa na base esquerda
+ctx.moveTo(profileX, profileY + profileHeight);
+
+// Primeiro degrau: sobe um pouco
+ctx.lineTo(profileX, profileY + profileHeight - 30);
+
+// Linha reta para a direita
+ctx.lineTo(profileX + 30, profileY + profileHeight - 30);
+
+// Segundo degrau: sobe diagonalmente
+ctx.lineTo(profileX + 60, profileY + profileHeight - 60);
+
+// Continua reto para a direita
+ctx.lineTo(profileX + profileWidth, profileY + profileHeight - 60);
+
+// Sobe até o topo direito
+ctx.lineTo(profileX + profileWidth, profileY);
+
+// Vai reto para a esquerda até o topo esquerdo
+ctx.lineTo(profileX, profileY);
+
+// Fecha o caminho
 ctx.closePath();
 
 ctx.clip();
