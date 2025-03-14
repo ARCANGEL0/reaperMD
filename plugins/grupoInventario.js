@@ -255,7 +255,8 @@ ctx.lineTo(profileX - 200, profileY + profileHeight - 30); // First step up
 ctx.lineTo(profileX + 86, profileY + profileHeight - 30); // Straight line to the right
 ctx.lineTo(profileX + 110, profileY + profileHeight - 60); // Second step up diagonally
 
-
+ctx.lineTo(profileX + 96, profileY + profileHeight - 35); // Move right & up a bit before diagonal  
+ctx.lineTo(profileX + 120, profileY + profileHeight - 65); // Same diagonal angle
 
 
 ctx.lineTo(profileX + profileWidth, profileY + profileHeight - 60); // Continue straight to the right
