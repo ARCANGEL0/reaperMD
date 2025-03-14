@@ -239,8 +239,8 @@ const profileImagePath = await conn.profilePictureUrl(m.sender, 'image').catch((
 const profileImage = await loadImage(profileImagePath);
 const profileWidth = 250;  // Largura do quadrado central
 const profileHeight = 250; // Altura do quadrado central
-const profileX = 632;  // Posição X do quadrado
-const profileY = 590; // Posição Y do quadrado
+const profileX = 722;  // Posição X do quadrado
+const profileY = 570; // Posição Y do quadrado
 
 
 ctx.save();  
@@ -295,7 +295,7 @@ ctx.restore();
     188.5); 
     ctx.fillText(`⥤ ${global.db.data.chats[m.chat].users[m.sender].limit}`,
     604.5, 220.3); 
-    ctx.fillText(`⥤ ${global.db.data.chats[m.chat].users[m.sender].kills}`, 604.5,
+    ctx.fillText(`⥤ ${global.db.data.chats[m.chat].users[m.sender].almas}`, 604.5,
     247.2); 
     // Add item counts to the image
     ctx.fillText(`${counts.adagas}`, 710, 321); 
