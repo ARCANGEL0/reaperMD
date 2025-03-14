@@ -241,34 +241,38 @@ const profileWidth = 306;  // Largura do quadrado central
 const profileHeight = 306; // Altura do quadrado central
 const profileX = 72;  // Posição X do quadrado
 const profileY = 108; // Posição Y do quadrado
+
+
 ctx.save();
 ctx.beginPath();
 
-// Começa na base esquerda
-ctx.moveTo(profileX, profileY + profileHeight);
+// Começa no topo esquerdo
+ctx.moveTo(profileX, profileY);
 
-// Primeiro degrau: sobe um pouco
-ctx.lineTo(profileX, profileY + profileHeight - 30);
+// Primeiro degrau: vai para a direita um pouco
+ctx.lineTo(profileX + 30, profileY);
 
-// Linha reta para a direita
-ctx.lineTo(profileX + 30, profileY + profileHeight - 30);
+// Sobe um pouco
+ctx.lineTo(profileX + 30, profileY + 30);
 
-// Segundo degrau: sobe diagonalmente
-ctx.lineTo(profileX + 60, profileY + profileHeight - 60);
+// Segundo degrau: vai mais para a direita
+ctx.lineTo(profileX + 60, profileY + 30);
 
-// Continua reto para a direita
-ctx.lineTo(profileX + profileWidth, profileY + profileHeight - 60);
+// Continua reto para a direita até o final
+ctx.lineTo(profileX + profileWidth, profileY + 30);
 
-// Sobe até o topo direito
-ctx.lineTo(profileX + profileWidth, profileY);
+// Desce reto até a base direita
+ctx.lineTo(profileX + profileWidth, profileY + profileHeight);
 
-// Vai reto para a esquerda até o topo esquerdo
-ctx.lineTo(profileX, profileY);
+// Vai reto para a esquerda até a base esquerda
+ctx.lineTo(profileX, profileY + profileHeight);
 
 // Fecha o caminho
 ctx.closePath();
 
 ctx.clip();
+
+
 ctx.drawImage(profileImage, profileX, profileY, profileWidth, profileHeight);
 ctx.restore();
 
