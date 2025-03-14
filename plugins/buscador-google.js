@@ -35,7 +35,7 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
 try {
 const url = 'https://google.com/search?q=' + encodeURIComponent(text);
 google({'query': text}).then(res => {
-let teks = `┌──[ BYΓΞSΞC ]─[~] 
+let teks = `┌──[ 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs} ]─[~] 
 └─ $ ./google ${text} -h ${url}
 > . . . . . . . . . . . . . . . . . . . . . . . . 
 > ${phrases.getRandom()}

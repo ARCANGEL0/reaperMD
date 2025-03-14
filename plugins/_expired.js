@@ -44,7 +44,7 @@ console.log("first time")
 
   const atv1 = global.db.data.chats[m.chat].language == 'en' ? 
 
-  `┌──[ BYΓΞSΞC ]─[~/bin]
+  `┌──[ 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs} ]─[~/bin]
 └─ $ touch activate.sh
 | [!] 𝟻̷𝟶̷𝟶̷ 
 | . . . . . . . . . . . . . . . . .
@@ -64,7 +64,7 @@ console.log("first time")
   
   : 
   
-  `┌──[ BYΓΞSΞC ]─[~/bin]
+  `┌──[ 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs} ]─[~/bin]
 └─ $ touch ativar.sh
 | [!] 𝟻̷𝟶̷𝟶̷ 
 | . . . . . . . . . . . . . . . . .
@@ -91,7 +91,7 @@ if(!isOwner){
   if(!isOwner && !global.db.data.chats[m.chat].firstTime) {
 
 const atv2 = global.db.data.chats[m.chat].language == 'en' ? 
-`┌──[ BYΓΞSΞC ]─[~/bin]
+`┌──[ 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs} ]─[~/bin]
 └─ $ touch activate.sh
 | [!] 𝟻̷𝟶̷𝟶̷ 
 | . . . . . . . . . . . . . . . . .
@@ -111,7 +111,7 @@ const atv2 = global.db.data.chats[m.chat].language == 'en' ?
 > ‎ `
   :
   
-`┌──[ BYΓΞSΞC ]─[~/bin]
+`┌──[ 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs} ]─[~/bin]
 └─ $ touch ativar.sh
 | [!] 𝟻̷𝟶̷𝟶̷ ̷
 | . . . . . . . . . . . . . . . . .

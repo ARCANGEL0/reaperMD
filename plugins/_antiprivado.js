@@ -124,7 +124,7 @@ global.db.data.chats[m.chat].autolevelup = false
    const language = global.db.data.chats[m.chat].language;
 
 const message = language === 'pt' ? `
-> BYΓΞSΞC:~# cat /etc/trial.md
+> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# cat /etc/trial.md
 > . . . . . . . . . . 
 > ‎ 
 [+] Período de Teste: Encerrado
@@ -140,9 +140,9 @@ Interessado no que a fSociety de verdade, a byteSec, realmente oferece? Ferramen
 
 — 𝙈𝙧.𝙍𝙤𝙗𝙤𝙩
 
-BYΓΞSΞC:~# _
+𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# _
 ` : `
-> BYΓΞSΞC:~# cat /etc/trial.md
+> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# cat /etc/trial.md
 > . . . . . . . . . . 
 > ‎ 
 [+] Trial Period: Ended
@@ -158,7 +158,7 @@ Curious about what "real" fSociety, a.k.a byteSec, actually offers? Advanced too
 
 — 𝙈𝙧.𝙍𝙤𝙗𝙤𝙩
 
-BYΓΞSΞC:~# _
+𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# _
 `;
 
 

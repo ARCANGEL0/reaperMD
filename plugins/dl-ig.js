@@ -36,7 +36,7 @@ const fkontak = {
 
 
     const messageTxt = global.db.data.chats[m.chat].language == 'en' ? 
-        `┌──[ BYΓΞSΞC ]─[~/instaloader] 
+        `┌──[ 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs} ]─[~/instaloader] 
 └─ $ instadl --help
 > ‎
 > ‎[!] 𝙸𝙽𝚂𝚃𝙰-𝙳𝙻
@@ -47,7 +47,7 @@ Usᴇ ᴏ ᴄᴏᴍᴀɴᴅᴏ ᴄᴏᴍᴏ ɴᴏ ᴇxᴇᴍᴘʟᴏ ᴀ sᴇɢ�
 .𝑖𝑛𝑠𝑡𝑎𝑑𝑙 <𝑙𝑖𝑛𝑘>
 ` 
          : 
-         `┌──[ BYΓΞSΞC ]─[~/instaloader] 
+         `┌──[ 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs} ]─[~/instaloader] 
 └─ $ instadl --help
 > ‎
 > ‎[!] 𝙸𝙽𝚂𝚃𝙰-𝙳𝙻

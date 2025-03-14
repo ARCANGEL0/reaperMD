@@ -116,7 +116,7 @@ function getCurrentDate(format) {
         
         console.log('API Response:', assistantResponse);
            m.react('📀')
-           let mensagem = m.reply(`┌──[ BYΓΞSΞC ]─[~]─[${date}] 
+           let mensagem = m.reply(`┌──[ 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs} ]─[~]─[${date}] 
   └─ $ ${assistantResponse}`) 
 
   global.db.data.chats[m.chat].gpt.lastQuestion = mensagem.id
@@ -174,7 +174,7 @@ async function getVision(messagem,link) {
       
       console.log('API Response:', assistantResponse);
          m.react('📀')
-         let mensagem = m.reply(`┌──[ BYΓΞSΞC ]─[~]─[${date}] 
+         let mensagem = m.reply(`┌──[ 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs} ]─[~]─[${date}] 
 └─ $ ${assistantResponse}`)
 
 global.db.data.chats[m.chat].gpt.lastQuestion = mensagem.id
@@ -224,13 +224,13 @@ if(!text){
       const examples = phrases.examples[lang].map(question => `> $ ${question}`).join('\n');
   
       return `
-  ┌──[ BYΓΞSΞC ]─[~]─[${date}] 
+  ┌──[ 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs} ]─[~]─[${date}] 
   └─ $ ${greeting}
   
   [*] Examples:
   ${examples}
   
-  ┌──[ BYΓΞSΞC ]─[~]─[${date}] 
+  ┌──[ 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs} ]─[~]─[${date}] 
   └─ $ _
   `;
   }
@@ -412,7 +412,7 @@ await postData('http://89.117.96.108:8330/docch', opts)
  // s
 
 
-let message = await m.reply(`┌──[ BYΓΞSΞC ]─[~]─[${date}] 
+let message = await m.reply(`┌──[ 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs} ]─[~]─[${date}] 
   └─ $ ${data}`)
 
 
