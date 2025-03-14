@@ -251,7 +251,7 @@ ctx.lineTo(profileX + profileWidth, profileY); // Linha reta até o canto superi
 ctx.lineTo(profileX + profileWidth, profileY + profileHeight - 50); // Lado direito normal
 ctx.lineTo(profileX + profileWidth - 30, profileY + profileHeight); // Clip inferior direito
 ctx.lineTo(profileX, profileY + profileHeight); // Linha reta até o canto inferior esquerdo
-ctx.lineTo(profileX, profileY + 20); // Clip superior esquerdo
+ctx.lineTo(profileX, profileY + 50); // Clip superior esquerdo
 ctx.closePath();
 
 ctx.clip();
