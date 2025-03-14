@@ -13,7 +13,7 @@ SI VAS A AÑADIR TUS DATOS O CRÉDITOS, ESTA BIEN. PERO NO QUITEN LOS QUE YA EST
 
 /** PLEASE BE KIND AND KINDNESS NOT TO MINIMALLY CHANGE reaperMD CREDITS, 
 IF YOU ARE GOING TO ADD YOUR DATA OR CREDITS, IT'S OK. BUT DO NOT REMOVE THOSE THAT ARE ALREADY FROM reaperMD, THANK YOU **/
-let handler = async (m, { conn, command, usedPrefix }) => {
+let handler = async (m, { conn, command,  usedPrefix,participants,groupMetadata}) => {
 let picture = './media/concept/concept2.jpg'
 let name = m.pushName || await conn.getName(m.sender) 
 let _uptime = process.uptime() * 1000
@@ -32,9 +32,100 @@ let greetTxt = global.db.data.chats[m.chat].language === 'en' ?
 :
 `ᴜsᴜᴀʀɪᴏ:`
 
+let project = `> ///𝗥.𝝣.𝝠.𝗣.𝗘.𝗥 Pʀᴏᴊᴇᴄᴛ
+> v${vs}`
+
+let isStatus 
+
+if(global.db.data.chats[m.chat].isBanned && global.db.data.chats[m.chat].language == 'pt') {
+    isStatus = '⚠︎ Ｂｌｏｑｕｅａｄｏ'
+  }
+  else if(global.db.data.chats[m.chat].isBanned && global.db.data.chats[m.chat].language == 'en') {
+    isStatus = '⚠︎ Ｂｌｏｃｋｅｄ'
+  }
+  // inactive
+  else if(global.db.data.chats[m.chat].desativado && global.db.data.chats[m.chat].language == 'pt') {
+    isStatus = '⚠︎ Ｄｅｓａｔｉｖａｄｏ'
+  }
+  else if(global.db.data.chats[m.chat].desativado && global.db.data.chats[m.chat].language == 'en') {
+    isStatus = '⚠︎ Ｄｅａｃｔｉｖａｔｅｄ'
+  }
+  //admin
+  else if(global.db.data.chats[m.chat].modoadmin && global.db.data.chats[m.chat].language == 'pt') {
+    isStatus = '⚠︎ Ａｐｅｎａｓ ａｄｍｉｎ'
+  }
+  else if(global.db.data.chats[m.chat].modoadmin && global.db.data.chats[m.chat].language == 'en') {
+    isStatus = '⚠︎ Ａｄｍｉｎ ｏｎｌｙ'
+  }
+  else {
+    if(global.db.data.chats[m.chat].language == 'en') {
+   isStatus = '𓉘𝆺𝅥𓉝 Ｏｎｌｉｎｅ'
+    }
+    else if(global.db.data.chats[m.chat].language == 'pt') {
+   isStatus = '𓉘𝆺𝅥𓉝 Ｏｎｌｉｎｅ'
+    }
+  }
+
+let status2 = global.db.data.chats[m.chat].language === 'en' ? 
+global.opts['self'] ? '𝙥𝙧𝙞𝙫𝙖𝙩𝙚' : '𝙥𝙪𝙗𝙡𝙞𝙘'
+:
+global.opts['self'] ? '𝙥𝙧𝙞𝙫𝙖𝙙𝙤' : '𝙥𝙪́𝙗𝙡𝙞𝙘𝙤'
+let botstatus = `[ ʙᴏᴛ ᴍᴏᴅᴇ: ${status2}` 
+let groupstatus = `sᴛᴀᴛᴜs: ${isStatus}`
+let timeActive  = global.db.data.chats[m.chat].language === 'en' ? 
+`> [ ᴜᴘᴛɪᴍᴇ↴
+> ${uptime}`
+:
+`> [ ᴛᴇᴍᴘᴏ ᴀᴛɪᴠᴏ↴
+> ${uptime}`
+
+
+
+ let totalChats =  global.db.data.chats[m.chat].language === 'pt'
+
+      ? 
+`> ᕀ ᴛᴏᴛᴀʟ ᴅᴇ ᴄʜᴀᴛs: ${chats.length} 
+> ᕀ ᴛᴏᴛᴀʟ ᴅᴇ ᴜsᴜᴀ́ʀɪᴏs: ${Object.keys(global.db.data.users).length} 
+> ᕀ ᴛᴏᴛ. ᴄʜᴀᴛs ᴘʀɪᴠᴀᴅᴏs: ${chats.length - groupsIn.length} | 
+> ᕀ ᴛᴏᴛ. ᴄʜᴀᴛs ʙᴀɴɪᴅᴏs: ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} | 
+> ᕀ ᴛᴏᴛ. ᴜsᴜᴀʀ. ʙʟᴏǫᴜᴇᴀᴅᴏs: ${Object.entries(global.db.data.users).filter(user => user[1].banned).length}`
+     
+      : 
+`> ᕀ ᴛᴏᴛᴀʟ ᴄʜᴀᴛs: ${chats.length} 
+> ᕀ ᴛᴏᴛᴀʟ ᴅᴇ ᴜsᴇʀs: ${Object.keys(global.db.data.users).length} 
+> ᕀ ᴛᴏᴛ. ᴘʀɪᴠᴀᴛᴇ ᴄʜᴀᴛs: ${chats.length - groupsIn.length} | 
+> ᕀ ᴛᴏᴛ. ʙᴀɴɴᴇᴅ ᴄʜᴀᴛs: ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} | 
+> ᕀ ᴛᴏᴛ. ʙᴀɴɴᴇᴅ ᴜsᴇʀs: ${Object.entries(global.db.data.users).filter(user => user[1].banned).length}`
+        
+
+let groupStats =   global.db.data.chats[m.chat].language === 'pt'
+? 
+`> ᕀ ᴜsᴜᴀ́ʀɪᴏs: *${participants.length}*
+> ᕀ ᴜsᴜᴀ́ʀɪᴏs sɪʟᴇɴᴄɪᴀᴅᴏs: *${silenciados}*
+> ᕀ ᴜsᴜᴀ́ʀɪᴏs ᴀᴅᴠᴇʀᴛɪᴅᴏs: *${avisados}* 
+> ᕀ ᴜsᴜᴀ́ʀɪᴏs ʙᴀɴɪᴅᴏs: *${banidos}*`
+: 
+
+`> ᕀ ᴛᴏᴛᴀʟ ᴜsᴇʀs: *${participants.length}* 
+> ᕀ sɪʟᴇɴᴄᴇᴅ ᴜsᴇʀs: *${silenciados}*
+> ᕀ ᴡᴀʀɴᴇᴅ ᴜsᴇʀs: *${avisados}* 
+> ᕀ ʙʟᴀᴄᴋʟɪsᴛ ᴜsᴇʀs: *${banidos}*`
+
+
 
 let message = `${shell}
-/// 𓉘Ⲗ𓉝 ${greetTxt} ${name}`
+/// 𓉘Ⲗ𓉝 ${greetTxt} ${name}
+> ${project}
+> ${botstatus}
+${timeActive}
+> ‎ 
+${totalChats}
+⸺⸺⸺⸺⸺⸺
+> 𓉘🞡𓉝 ${groupMetadata.subject}
+> // ${groupstatus}
+> ‎ 
+${groupStats}
+`
 
 
 let estado = `╭━━━━[ *𝙎𝙏𝘼𝙏𝙐𝙎* ]━━━━━⬣
@@ -54,7 +145,7 @@ let estado = `╭━━━━[ *𝙎𝙏𝘼𝙏𝙐𝙎* ]━━━━━⬣
 ┃ღ *Usuario(s) Proibido(s)*
 ┃➥ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} 
 ╰━━━━━━━━━━━━━━━━━━⬣`
-await conn.sendFile(m.chat, picture, 'stats.mp4', message, fkontak)
+await conn.sendFile(m.chat, picture, 'stats.png', message, fkontak)
 
 }
 handler.help = ['estado']
