@@ -250,7 +250,7 @@ ctx.beginPath();
 ctx.moveTo(profileX, profileY);  
 
 // Step 1: Move right  
-ctx.lineTo(profileX + 95, profileY);  
+ctx.lineTo(profileX + 35, profileY);  
 
 
 
