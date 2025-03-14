@@ -246,23 +246,27 @@ const profileY = 566; // Posição Y do quadrado
 ctx.save();  
 ctx.beginPath();  
 
-// Start at top-left  
-ctx.moveTo(profileX, profileY);  
 
-// Step 1: Move right  
-ctx.lineTo(profileX , profileY);  
+// Começa na base esquerda
+ctx.moveTo(profileX, profileY + profileHeight);
 
-// Step 2: Move diagonally up-right  
-ctx.lineTo(profileX + 30, profileY - 30);  
+// Primeiro degrau: sobe um pouco
+ctx.lineTo(profileX, profileY + profileHeight - 30);
 
-// Step 3: Continue straight right  
-ctx.lineTo(profileX + profileWidth, profileY - 30);  
+// Linha reta para a direita
+ctx.lineTo(profileX + 30, profileY + profileHeight - 30);
 
-// Go down to the bottom-right  
-ctx.lineTo(profileX + profileWidth +60, profileY + profileHeight);  
+// Segundo degrau: sobe diagonalmente
+ctx.lineTo(profileX + 60, profileY + profileHeight - 60);
 
-// Go left to bottom-left  
-ctx.lineTo(profileX, profileY + profileHeight);  
+// Continua reto para a direita
+ctx.lineTo(profileX + profileWidth, profileY + profileHeight - 60);
+
+// Sobe até o topo direito
+ctx.lineTo(profileX + profileWidth, profileY);
+
+// Vai reto para a esquerda até o topo esquerdo
+ctx.lineTo(profileX+120, profileY);
 
 // Close the path  
 ctx.closePath();  
