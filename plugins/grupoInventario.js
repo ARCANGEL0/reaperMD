@@ -248,10 +248,10 @@ ctx.beginPath();
 
 
 // Começa na base esquerda
-ctx.moveTo(profileX, profileY + profileHeight);
+ctx.moveTo(profileX, profileY +40+ profileHeight);
 
 // Primeiro degrau: sobe um pouco
-ctx.lineTo(profileX, profileY + profileHeight - 130);
+ctx.lineTo(profileX, profileY + profileHeight - 30);
 
 // Linha reta para a direita
 ctx.lineTo(profileX + 30, profileY + profileHeight - 30);
