@@ -239,8 +239,8 @@ const profileImagePath = await conn.profilePictureUrl(m.sender, 'image').catch((
 const profileImage = await loadImage(profileImagePath);
 const profileWidth = 280;  // Largura do quadrado central
 const profileHeight = 280; // Altura do quadrado central
-const profileX = 172;  // Posição X do quadrado
-const profileY = 132; // Posição Y do quadrado
+const profileX = 562;  // Posição X do quadrado
+const profileY = 632; // Posição Y do quadrado
 
 
 ctx.save();  
