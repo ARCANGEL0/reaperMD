@@ -248,12 +248,12 @@ ctx.beginPath();
 
 
 ctx.moveTo(profileX, profileY + profileHeight); // Start at the bottom left
-ctx.lineTo(profileX - 200, profileY + profileHeight - 10); // First step up
+ctx.lineTo(profileX - 200, profileY + profileHeight - 30); // First step up
 
 
 
-ctx.lineTo(profileX + 96, profileY + profileHeight - 30); // Straight line to the right
-ctx.lineTo(profileX + 120, profileY + profileHeight - 60); // Second step up diagonally
+ctx.lineTo(profileX + 116, profileY + profileHeight - 30); // Straight line to the right
+ctx.lineTo(profileX + 140, profileY + profileHeight - 60); // Second step up diagonally
 
 
 
