@@ -230,8 +230,8 @@ async function generateInventoryImage() {
     // Load the image
     const pts = join(global.dirname, '../media/overlays/inventory.png');
 let image = await loadImage(pts)
-    const bts = join(global.dirname, '../media/overlays/bats.png');
-let bats = await loadImage(bts)
+
+
     ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
 const profileImagePath = await conn.profilePictureUrl(m.sender, 'image').catch((_) => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
 
@@ -241,17 +241,28 @@ const profileImagePath = await conn.profilePictureUrl(m.sender, 'image').catch((
     
     
 const profileImage = await loadImage(profileImagePath);
-    const profileSize = 306;
-    const profileX = 72
-    const profileY = 108;
-  
-    ctx.save();
-    ctx.beginPath();
-    ctx.arc(profileX + profileSize / 2, profileY + profileSize / 2, profileSize / 2, 0, Math.PI * 2, true);
-    ctx.closePath();
-    ctx.clip();
-    ctx.drawImage(profileImage, profileX, profileY, profileSize, profileSize);
- 
+const profileWidth = 306;  // Largura do quadrado central
+const profileHeight = 306; // Altura do quadrado central
+const profileX = 72;  // Posição X do quadrado
+const profileY = 108; // Posição Y do quadrado
+
+ctx.save();
+ctx.beginPath();
+
+// Criando um caminho para o formato personalizado do quadrado com clipes
+ctx.moveTo(profileX + 20, profileY);  // Pequena margem para o clipe superior esquerdo
+ctx.lineTo(profileX + profileWidth - 40, profileY); // Linha superior até o clipe superior direito
+ctx.lineTo(profileX + profileWidth, profileY + 30); // Clip superior direito
+ctx.lineTo(profileX + profileWidth, profileY + profileHeight - 50); // Lado direito até o clipe inferior direito
+ctx.lineTo(profileX + profileWidth - 30, profileY + profileHeight); // Clip inferior direito
+ctx.lineTo(profileX + 40, profileY + profileHeight); // Linha inferior até o clipe inferior esquerdo
+ctx.lineTo(profileX, profileY + profileHeight - 30); // Clip inferior esquerdo
+ctx.lineTo(profileX, profileY + 20); // Lado esquerdo até o clipe superior esquerdo
+ctx.closePath();
+
+ctx.clip();
+ctx.drawImage(profileImage, profileX, profileY, profileWidth, profileHeight);
+ctx.restore();
  
  
 
@@ -259,7 +270,7 @@ const profileImage = await loadImage(profileImagePath);
     
     ctx.restore();
 
- ctx.drawImage(bats, 28, 58, 403, 412);
+ 
     // Set font style for the text
       ctx.font = `24px "WoodgodRegular-3zpjG"`
     ctx.fillStyle = '#ffffff';  // White color for text
