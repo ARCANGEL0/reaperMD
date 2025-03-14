@@ -100,7 +100,7 @@ export function before(m, { conn , isOwner, nivel, participants}) {
               newCommandsUnlocked: '[!] ɴᴏᴠᴏꜱ ᴄᴏᴍᴀɴᴅᴏꜱ ᴅᴇꜱʙʟᴏϙᴜᴇᴀᴅᴏꜱ:',
               commandsList: '┏──────────────\n',
               commandsEnd: '┗──────────────\n',
-              eof: '> >>EOF<<',
+              eof: '> ❬❬𝖤𝖮𝖥',
               separator: '> ━━━━━━━━━━━━━━━━━━━━━━━━',
               newStatus: 'ɴᴏᴠᴏ ʀᴀɴᴋ: '
           }
