@@ -247,14 +247,7 @@ const profileX = 112;  // Posição X do quadrado
 const profileY = 128; // Posição Y do quadrado
 
 ctx.save();
-ctx.beginPath();
 
-
-
-
-ctx.lineTo(profileX, profileY + profileHeight - 30); // Clip inferior esquerdo
-ctx.lineTo(profileX, profileY + 20); // Lado esquerdo até o clipe superior esquerdo
-ctx.closePath();
 
 ctx.clip();
 ctx.drawImage(profileImage, profileX, profileY, profileWidth, profileHeight);
