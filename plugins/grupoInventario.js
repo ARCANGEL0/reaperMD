@@ -258,10 +258,10 @@ ctx.lineTo(profileX + 30, profileY + profileHeight - 30);
 ctx.lineTo(profileX + 60, profileY + profileHeight - 60);
 
 // Continua reto para a direita
-ctx.lineTo(profileX  +60, profileY + profileHeight - 60);
+ctx.lineTo(profileX + profileWidth, profileY + profileHeight - 60);
 
 // Sobe até o topo direito
-ctx.lineTo(profileX + profileWidth, profileY);
+ctx.lineTo(profileX + profileWidth +60, profileY);
 
 // Vai reto para a esquerda até o topo esquerdo
 ctx.lineTo(profileX, profileY);
