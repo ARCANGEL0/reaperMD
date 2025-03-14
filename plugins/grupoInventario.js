@@ -237,8 +237,7 @@ const profileImagePath = await conn.profilePictureUrl(m.sender, 'image').catch((
 
 
 
-   
-const profileImage = await loadImage(profileImagePath);
+   const profileImage = await loadImage(profileImagePath);
 const profileWidth = 306;  
 const profileHeight = 306; 
 const profileX = 72;  
@@ -259,12 +258,15 @@ ctx.lineTo(profileX, profileY + 20);
 // Linha superior reta até o canto superior direito
 ctx.lineTo(profileX + profileWidth, profileY);  
 
-// Lados normais até o canto inferior direito
-ctx.lineTo(profileX + profileWidth, profileY + profileHeight - 40);  
-ctx.lineTo(profileX + profileWidth - 30, profileY + profileHeight);  
+// Lado direito reto descendo
+ctx.lineTo(profileX + profileWidth, profileY + profileHeight - 40);
 
-// Canto inferior direito inclinado
-ctx.lineTo(profileX + profileWidth - 60, profileY + profileHeight);
+// Canto inferior direito seguindo o design correto
+ctx.lineTo(profileX + profileWidth - 40, profileY + profileHeight - 40); // Linha reta para a esquerda
+ctx.lineTo(profileX + profileWidth - 60, profileY + profileHeight - 20); // Diagonal para baixo/esquerda
+ctx.lineTo(profileX + profileWidth - 60, profileY + profileHeight); // Linha reta para baixo
+
+// Linha inferior reta para o canto inferior esquerdo
 ctx.lineTo(profileX, profileY + profileHeight);
 
 // Lado esquerdo reto até o início do clipe superior esquerdo
@@ -274,6 +276,7 @@ ctx.closePath();
 ctx.clip();
 ctx.drawImage(profileImage, profileX, profileY, profileWidth, profileHeight);
 ctx.restore();
+
 
  
     // Set font style for the text
