@@ -246,29 +246,24 @@ const profileY = 566; // Posição Y do quadrado
 ctx.save();  
 ctx.beginPath();  
 
-// Start at bottom-left  
-ctx.moveTo(profileX, profileY + profileHeight);
+// Start at top-left  
+ctx.moveTo(profileX, profileY);  
 
-// Move right **before the step begins**  
-ctx.lineTo(profileX + 50, profileY + profileHeight);
+// Step 1: Move right  
+ctx.lineTo(profileX , profileY);  
 
-// Step 1: Go up  
-ctx.lineTo(profileX + 50, profileY + profileHeight - 30);
+// Step 2: Move diagonally up-right  
+ctx.lineTo(profileX + 30, profileY - 30);  
 
-// Step 2: Go right  
-ctx.lineTo(profileX + 80, profileY + profileHeight - 30);
+// Step 3: Continue straight right  
+ctx.lineTo(profileX + profileWidth, profileY - 30);  
 
-// Step 3: Go diagonally up-right  
-ctx.lineTo(profileX + 110, profileY + profileHeight - 60);
+// Go down to the bottom-right  
+ctx.lineTo(profileX + profileWidth +60, profileY + profileHeight);  
 
-// Continue straight to the right  
-ctx.lineTo(profileX + profileWidth, profileY + profileHeight - 60);
+// Go left to bottom-left  
+ctx.lineTo(profileX -60, profileY + profileHeight);  
 
-// Go up to the top-right  
-ctx.lineTo(profileX + profileWidth, profileY);
-
-// Go left to top-left  
-ctx.lineTo(profileX, profileY);
 // Close the path  
 ctx.closePath();  
 
