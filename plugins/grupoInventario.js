@@ -262,7 +262,7 @@ ctx.lineTo(profileX + profileWidth, profileY - 30);
 ctx.lineTo(profileX + profileWidth +60, profileY + profileHeight);  
 
 // Go left to bottom-left  
-ctx.lineTo(profileX -60, profileY + profileHeight);  
+ctx.lineTo(profileX, profileY + profileHeight);  
 
 // Close the path  
 ctx.closePath();  
