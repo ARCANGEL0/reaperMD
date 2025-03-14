@@ -242,22 +242,29 @@ const profileHeight = 195; // Altura do quadrado central
 const profileX = 900;  // Posição X do quadrado
 const profileY = 610; // Posição Y do quadrado
 
+
 ctx.save();  
 ctx.beginPath();  
+
 
 ctx.moveTo(profileX, profileY + profileHeight); // Start at the bottom left
 ctx.lineTo(profileX - 200, profileY + profileHeight - 30); // First step up
 
-ctx.lineTo(profileX + 86, profileY + profileHeight - 50); // Straight line to the right
 
-// Adjusted diagonal (more X, less Y for ~65°)
-ctx.lineTo(profileX + 100, profileY + profileHeight - 70);  
 
-ctx.lineTo(profileX + profileWidth, profileY + profileHeight - 50); // Continue straight to the right
+ctx.lineTo(profileX + 86, profileY + profileHeight - 26); // Straight line to the right
+ctx.lineTo(profileX + 110, profileY + profileHeight - 56); // Second step up diagonally
+
+
+
+
+ctx.lineTo(profileX + profileWidth, profileY + profileHeight - 60); // Continue straight to the right
 ctx.lineTo(profileX + profileWidth, profileY); // Go up to the top right
 ctx.lineTo(profileX, profileY); // Line straight to the top left
 
+// Close the path  
 ctx.closePath();  
+
 ctx.clip();
 
 
