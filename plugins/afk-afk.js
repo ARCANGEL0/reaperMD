@@ -84,7 +84,7 @@ let reason = text ? formatParagraphs(text) : '> 404'
 
  
 const goingAfk = global.idioma == 'en' ? 
-`┌──[ BYΓΞSΞC ]──[~] 
+`┌──[ 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs} ]──[~] 
 └─► nano ~/AFK_STATUS
 > ‎ GNU nano 2.6.1    File: AFK_STATUS
 > ‎ 
@@ -101,7 +101,7 @@ ${reason}
 
 : 
 
-`┌──[ BYΓΞSΞC ]──[~] 
+`┌──[ 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs} ]──[~] 
 └─► nano ~/AFK_STATUS
 > ‎ GNU nano 2.6.1    File: AFK_STATUS
 > ‎ 

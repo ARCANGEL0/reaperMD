@@ -17,7 +17,7 @@ throw false
     let noTxt;
  let user
 if (global.db.data.chats[m.chat].language === 'pt') {
-    noTxt = `> BYΓΞSΞC:~# man -h
+    noTxt = `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# man -h
 . . . . . . . . . . . . . . . . . . . . . . 
 
 [!] Uso inválido:
@@ -31,7 +31,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
 }
 
 else if (global.db.data.chats[m.chat].language === 'en') {
-    noTxt = `> BYΓΞSΞC:~# man -h
+    noTxt = `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# man -h
 . . . . . . . . . . . . . . . . . . . . . . 
 
 [!] INVALID USAGE:

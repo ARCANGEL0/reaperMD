@@ -36,7 +36,7 @@ const fkontak = {
 
 
     const messageTxt = global.db.data.chats[m.chat].language == 'en' ? 
-        `┌──[ BYΓΞSΞC ]─[~/twitterDownloader] 
+        `┌──[ 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs} ]─[~/twitterDownloader] 
 └─ $ tweetdl --help
 > ‎
 > ‎[!] 𝖳𝖶𝖨𝖳𝖳𝖤𝖱​-𝙳𝙻
@@ -47,7 +47,7 @@ Usᴇ ᴏ ᴄᴏᴍᴀɴᴅᴏ ᴄᴏᴍᴏ ɴᴏ ᴇxᴇᴍᴘʟᴏ ᴀ sᴇɢ�
 .𝑡𝑤𝑖𝑡𝑡𝑒𝑟 <𝑙𝑖𝑛𝑘>
 ` 
          : 
-         `┌──[ BYΓΞSΞC ]─[~/twitterDownloader] 
+         `┌──[ 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs} ]─[~/twitterDownloader] 
 └─ $ tweetdl --help
 > ‎
 > ‎[!] 𝖳𝖶𝖨𝖳𝖳𝖤𝖱​-𝙳𝙻

@@ -180,7 +180,7 @@ fetch('https://vision.astica.ai/describe', {
           
           console.log('API Response:', assistantResponse);
              m.react('📀')
-             return m.reply(`┌──[ BYΓΞSΞC ]─[~]─[${date}] 
+             return m.reply(`┌──[ 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs} ]─[~]─[${date}] 
     └─ $ ${assistantResponse}`)
   
       } catch (error) {

@@ -13,7 +13,7 @@ const date = new Date();
 const formattedDate = `${date.getFullYear()}.${String(date.getMonth() + 1).padStart(2, '0')}.${String(date.getDate()).padStart(2, '0')}`;
 console.log(`cat /etc/logs/${formattedDate}`);
 
-let teks = `┌──[ BYΓΞSΞC ]──[~] 
+let teks = `┌──[ 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs} ]──[~] 
 └─► cat etc/logs/${formattedDate}
 > ‎ 
 > BUG REPORTADO

@@ -19,28 +19,28 @@ global.db.data.chats[m.chat].isBanned)) return m.react("⭕")
     let mime = (q.msg || q).mimetype || q.mediaType || ''
 const exposedMessage = global.db.data.chats[m.chat].language === 'pt'
     ? [
-        `> BYΓΞSΞC:~# extundelete /dev/sda1 -r --target=view_once
+        `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# extundelete /dev/sda1 -r --target=view_once
 . . . . . . . . . . . . . . . . . . . . . . . . 
 
 [+] Arquivo recuperado:
 > Desculpa, garoto. Aqui, não mantemos segredos uns dos outros.
 > # Vigilância ativa - ΒYƬΣSΞC-MĐ `,
 
-        `> BYΓΞSΞC:~# photorec /dev/sda1 --filetype=jpeg --undelete
+        `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# photorec /dev/sda1 --filetype=jpeg --undelete
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] Arquivo recuperado:
 > Mensagens “visualizar uma vez”? Ah, claro...
 > # Vigilância ativa - ΒYƬΣSΞC-MĐ
 `,
-        `> BYΓΞSΞC:~# recoverfiles /dev/sda1 -p --view-once
+        `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# recoverfiles /dev/sda1 -p --view-once
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] Arquivo recuperado:
 > Parece que alguém levou um xposed
 > # Vigilância ativa - ΒYƬΣSΞC-MĐ`,
 
-        `> BYΓΞSΞC:~# dd if=/dev/sda1 of=/recovered.msg bs=4M
+        `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# dd if=/dev/sda1 of=/recovered.msg bs=4M
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] Arquivo recuperado:
@@ -48,7 +48,7 @@ const exposedMessage = global.db.data.chats[m.chat].language === 'pt'
 > # Vigilância ativa - ΒYƬΣSΞC-MĐ`
     ]
     : [
-        `> BYΓΞSΞC:~# extundelete /dev/sda1 -r --target=view_once
+        `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# extundelete /dev/sda1 -r --target=view_once
 . . . . . . . . . . . . . . . . . . . . . . . . 
 
 [+] File recovered:
@@ -56,21 +56,21 @@ const exposedMessage = global.db.data.chats[m.chat].language === 'pt'
 > # Monitored by - ΒYƬΣSΞC-MĐ
 `,
 
-        `> BYΓΞSΞC:~# photorec /dev/sda1 --filetype=jpeg --undelete
+        `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# photorec /dev/sda1 --filetype=jpeg --undelete
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] File recovered:
 > View only once messages? Yeah, right…
 > # Monitored by - ΒYƬΣSΞC-MĐ`,
 
-        `> BYΓΞSΞC:~# recoverfiles /dev/sda1 -p --view-once
+        `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# recoverfiles /dev/sda1 -p --view-once
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] File recovered:
 > Seems like someone just got xposed
 > # Monitored by - ΒYƬΣSΞC-MĐ`,
 
-        `> BYΓΞSΞC:~# dd if=/dev/sda1 of=/recovered.msg bs=4M
+        `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# dd if=/dev/sda1 of=/recovered.msg bs=4M
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] File recovered:

@@ -36,7 +36,7 @@ const fkontak = {
 
 
     const messageTxt = global.db.data.chats[m.chat].language == 'en' ? 
-        `┌──[ BYΓΞSΞC ]─[~/metaload] 
+        `┌──[ 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs} ]─[~/metaload] 
 └─ $ fbload --help
 > ‎
 > ‎[!] 𝙵𝙰𝙲𝙴𝙱𝙾𝙾𝙺​-𝙳𝙻
@@ -47,7 +47,7 @@ Usᴇ ᴏ ᴄᴏᴍᴀɴᴅᴏ ᴄᴏᴍᴏ ɴᴏ ᴇxᴇᴍᴘʟᴏ ᴀ sᴇɢ�
 .𝑓𝑏​ <𝑙𝑖𝑛𝑘>
 ` 
          : 
-         `┌──[ BYΓΞSΞC ]─[~/metaload] 
+         `┌──[ 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs} ]─[~/metaload] 
 └─ $ fbload --help
 > ‎
 > ‎[!] 𝙵𝙰𝙲𝙴𝙱𝙾𝙾𝙺​-𝙳𝙻

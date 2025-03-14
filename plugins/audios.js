@@ -44,12 +44,12 @@ conn.sendFile(m.chat, buff, ran, null, m, true, {
 type: 'audioMessage', 
 ptt: true 
 })})
-} else throw global.idioma == 'en' ? `┌──[ BYΓΞSΞC ]─[~] 
+} else throw global.idioma == 'en' ? `┌──[ 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs} ]─[~] 
 └─ $ touch README.md
 > . . . . . . . . . . . . . . . . . . . . . 
 > [!] Qᴜᴏᴛᴇ ᴀɴ ᴀᴜᴅɪᴏ, ᴋɪᴅᴅᴏ
 > . . . . . . . . . . . . . . . . . . . . .` : 
-`┌──[ BYΓΞSΞC ]─[~] 
+`┌──[ 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs} ]─[~] 
 └─ $ touch LEIAME.md 
 > . . . . . . . . . . . . . . . . . . . . . . . . 
 > [!] ᴍᴀʀqᴜᴇ ᴀʟɢᴜᴍ ᴀᴜᴅɪᴏ

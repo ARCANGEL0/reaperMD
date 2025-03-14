@@ -1419,7 +1419,7 @@ if (!msg) return
 if(global.db.data.chats[msg.chat].ignored && global.db.data.chats[msg.chat].ignored.includes(id)) return;
 if (!msg?.isGroup) return
 let lang = global.db.data.chats[msg.chat].language
-const antideleteMessage = `> BYΓΞSΞC:~# extundelete /dev/sda1 -c
+const antideleteMessage = `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# extundelete /dev/sda1 -c
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] ${lang == 'pt' ? 'Mensagem recuperada' : 'Message recovered'}:
@@ -1429,7 +1429,7 @@ const antideleteMessage = `> BYΓΞSΞC:~# extundelete /dev/sda1 -c
 > ‎ 
 | ${lang == 'pt' ? 'Adicionado em' : 'Added at'}: /tmp/chats.log
 | 
-> BYΓΞSΞC:~# _`.trim();
+> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# _`.trim();
 
 let DELETEMESSAGE = await conn.sendMessage(msg.chat, {text: antideleteMessage, mentions: [participant]}, {quoted: msg})
 

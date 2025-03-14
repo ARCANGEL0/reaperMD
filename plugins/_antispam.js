@@ -90,214 +90,214 @@ global.db.data.chats[m.chat].users[m.sender].adv =0
 console.log('spam flow starting, running procedures')
 const spamWarningMsg = global.db.data.chats[m.chat].language === 'pt'
     ? [
-        `> BYΓΞSΞC:~# ./silence.py --mute 1 -p
+        `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# ./silence.py --mute 1 -p
 > . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] Spam detectado:
 > >>> ${mention}, aqui não toleramos spam, garoto.
 > Você tá flodando o chat demais. Vou te deixar em silêncio por 30 minutos pra repensar suas atitudes.
 |
-> BYΓΞSΞC:~# _
+> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# _
 > # Vigilância ativa - ΒYƬΣSΞC-MĐ
 `,
 
-        `> BYΓΞSΞC:~# ./silence.py --mute 1 -p
+        `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# ./silence.py --mute 1 -p
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] Spam detectado:
 > >>> ${mention}, parece que você se perdeu no conceito de conversa.
 > Silenciado por 30 minutos pra ver se você entende que spam não é bem-vindo.
 |
-> BYΓΞSΞC:~# _
+> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# _
 > # Vigilância ativa - ΒYƬΣSΞC-MĐ
 `,
 
-        `> BYΓΞSΞC:~# ./silence.py --mute 1 -p
+        `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# ./silence.py --mute 1 -p
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] Spam detectado:
 > >>> ${mention}, você tá espalhando ruído desnecessário.
 > 30 minutos de silêncio pra ver se você entende que isso aqui não é bagunça.
 |
-> BYΓΞSΞC:~# _
+> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# _
 > # Vigilância ativa - ΒYƬΣSΞC-MĐ
 `,
 
-        `> BYΓΞSΞC:~# ./silence.py --mute 1 -p
+        `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# ./silence.py --mute 1 -p
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] Spam detectado:
 > >>> ${mention}, flodando o chat com spam? Péssima ideia.
 > Vou te dar 30 minutos de silêncio. Hora de repensar as regras por aqui.
 |
-> BYΓΞSΞC:~# _
+> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# _
 > # Vigilância ativa - ΒYƬΣSΞC-MĐ
 `,
 
-        `> BYΓΞSΞC:~# ./silence.py --mute 1 -p
+        `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# ./silence.py --mute 1 -p
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] Spam detectado:
 > >>> ${mention}, aqui não toleramos spam.
 > 30 minutos no mudo. Pode usar esse tempo pra refletir.
 |
-> BYΓΞSΞC:~# _
+> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# _
 > # Vigilância ativa - ΒYƬΣSΞC-MĐ
 `,
-        `> BYΓΞSΞC:~# ./silence.py --mute 1 -p
+        `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# ./silence.py --mute 1 -p
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] Executand daemon:
 > >>> ${mention}, insistir em spam? Só te leva ao silêncio.
 > Aproveite os 30 minutos pra pensar se vale a pena continuar assim.
 |
-> BYΓΞSΞC:~# _
+> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# _
 > # Vigilância ativa - ΒYƬΣSΞC-MĐ
 `,
 
-        `> BYΓΞSΞC:~# ./silence.py --mute 1 -p
+        `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# ./silence.py --mute 1 -p
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] Spam detectado:
 > >>> ${mention}, chat é pra conversar, não pra flodar.
 > 30 minutos de silêncio. Talvez assim você entenda o básico.
 |
-> BYΓΞSΞC:~# _
+> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# _
 > # Vigilância ativa - ΒYƬΣSΞC-MĐ
 `,
-        `> BYΓΞSΞC:~# ./silence.py --mute 1 -p
+        `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# ./silence.py --mute 1 -p
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] Spam detectado:
 > >>> ${mention}, spam tem preço, e é o silêncio.
 > Silenciado por 30 minutos. Lembre-se: aqui é um chat para conversar, e não flodar com suas coisas por aqui
 |
-> BYΓΞSΞC:~# _
+> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# _
 > # Vigilância ativa - ΒYƬΣSΞC-MĐ
 `,
 
-        `> BYΓΞSΞC:~# ./silence.py --mute 1 -p
+        `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# ./silence.py --mute 1 -p
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] Spam detectado:
 > >>> ${mention}, chat não é lugar pra poluição de mensagens.
 > 30 minutos de silêncio. Melhor assim.
 |
-> BYΓΞSΞC:~# _
+> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# _
 > # Vigilância ativa - ΒYƬΣSΞC-MĐ
 `,
 
-        `> BYΓΞSΞC:~# ./silence.py --mute 1 -p
+        `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# ./silence.py --mute 1 -p
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] Spam detectado:
 > >>> ${mention}, flodando por aqui? Sem chance.
 > 30 minutos no mudo. Hora de reavaliar o conceito de respeito.
 |
-> BYΓΞSΞC:~# _
+> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# _
 > # Vigilância ativa - ΒYƬΣSΞC-MĐ
 `
     ]
     : [
-        `> BYΓΞSΞC:~# ./silence.py --mute 1 -p
+        `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# ./silence.py --mute 1 -p
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] Spam detected:
 > >>> ${mention}, we don’t tolerate spam here, kid.
 > You’re flooding the chat too much. 30 minutes of silence to rethink your choices.
 |
-> BYΓΞSΞC:~# _
+> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# _
 > # Monitored by - ΒYƬΣSΞC-MĐ`,
 
-        `> BYΓΞSΞC:~# ./silence.py --mute 1 -p
+        `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# ./silence.py --mute 1 -p
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] Spam detected:
 > >>> ${mention}, seems you forgot what a conversation is.
 > Silenced for 30 minutes to remind you that spam isn’t welcome here.
 |
-> BYΓΞSΞC:~# _
+> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# _
 > # Monitored by - ΒYƬΣSΞC-MĐ`,
 
-        `> BYΓΞSΞC:~# ./silence.py --mute 1 -p
+        `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# ./silence.py --mute 1 -p
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] Spam detected:
 > >>> ${mention}, spreading useless noise?
 > 30 minutes of silence to understand this isn’t a free-for-all.
 |
-> BYΓΞSΞC:~# _
+> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# _
 > # Monitored by - ΒYƬΣSΞC-MĐ`,
-        `> BYΓΞSΞC:~# ./silence.py --mute 1 -p
+        `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# ./silence.py --mute 1 -p
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] Spam detected:
 > >>> ${mention}, flooding the chat with spam? Bad move.
 > 30 minutes of silence. Time to rethink the rules around here.
 |
-> BYΓΞSΞC:~# _
+> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# _
 > # Monitored by - ΒYƬΣSΞC-MĐ`,
 
-        `> BYΓΞSΞC:~# ./silence.py --mute 1 -p
+        `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# ./silence.py --mute 1 -p
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] Spam detected:
 > >>> ${mention}, spam isn’t allowed here.
 > 30 minutes in silence. Use the time to reflect on that.
 |
-> BYΓΞSΞC:~# _
+> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# _
 > # Monitored by - ΒYƬΣSΞC-MĐ`,
 
-        `> BYΓΞSΞC:~# ./silence.py --mute 1 -p
+        `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# ./silence.py --mute 1 -p
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] Spam detected:
 > >>> ${mention}, persisting in spam? Only leads to silence.
 > Enjoy the 30 minutes to consider if it’s worth it.
 |
-> BYΓΞSΞC:~# _
+> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# _
 > # Monitored by - ΒYƬΣSΞC-MĐ`,
 
-        `> BYΓΞSΞC:~# ./silence.py --mute 1 -p
+        `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# ./silence.py --mute 1 -p
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] Spam detected:
 > >>> ${mention}, chat’s for conversation, not for flooding.
 > 30 minutes in silence. Maybe then you’ll understand the basics.
 |
-> BYΓΞSΞC:~# _
+> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# _
 > # Monitored by - ΒYƬΣSΞC-MĐ`,
 
 
-        `> BYΓΞSΞC:~# ./silence.py --mute 1 -p
+        `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# ./silence.py --mute 1 -p
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] Spam detected:
 > >>> ${mention}, spam has a price, and it’s silence.
 > 30 minutes out of the conversation. Remember: this isn’t your bulletin board.
 |
-> BYΓΞSΞC:~# _
+> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# _
 > # Monitored by - ΒYƬΣSΞC-MĐ`,
 
-        `> BYΓΞSΞC:~# ./silence.py --mute 1 -p
+        `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# ./silence.py --mute 1 -p
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] Spam detected:
 > >>> ${mention}, chat isn’t a place for message pollution.
 > 30 minutes in silence. Better that way.
 |
-> BYΓΞSΞC:~# _
+> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# _
 > # Monitored by - ΒYƬΣSΞC-MĐ`,
 
 
-        `> BYΓΞSΞC:~# ./silence.py --mute 1 -p
+        `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# ./silence.py --mute 1 -p
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] Spam detected:
 > >>> ${mention}, flooding here? Not happening.
 > 30 minutes in silence. Time to reevaluate the concept of respect.
 |
-> BYΓΞSΞC:~# _
+> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# _
 > # Monitored by - ΒYƬΣSΞC-MĐ`
     ];
 console.log(spamWarningMsg.getRandom())
@@ -309,7 +309,7 @@ await conn.reply(m.chat, spamWarningMsg.getRandom() , m, { mentions: [m.sender] 
   global.db.data.chats[m.chat].users[m.sender].silenced = false;
    const desmutemsg = global.db.data.chats[m.chat].language === 'pt'
     ? [
-        `> BYΓΞSΞC:~# ./silence.py --mute 0 -p
+        `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# ./silence.py --mute 0 -p
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] Executando daemon:
@@ -320,10 +320,10 @@ await conn.reply(m.chat, spamWarningMsg.getRandom() , m, { mentions: [m.sender] 
 |
 > ${global.db.data.chats[m.chat].users[m.sender].adv==2 ? "_Última advertência, garoto. Mais um passo em falso, e você tá fora._ ⨻" : ""}
 |
-> BYΓΞSΞC:~# _
+> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# _
 > # Monitorado por - ΒYƬΣSΞC-MĐ`,
 
-        `> BYΓΞSΞC:~# ./silence.py --mute 0 -p
+        `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# ./silence.py --mute 0 -p
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] Executando daemon:
@@ -334,10 +334,10 @@ await conn.reply(m.chat, spamWarningMsg.getRandom() , m, { mentions: [m.sender] 
 |
 > ${global.db.data.chats[m.chat].users[m.sender].adv==2 ? "_Última chance. Mais uma dessas e você desaparece._" : ""}
 |
-> BYΓΞSΞC:~# _
+> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# _
 > # Monitorado por - ΒYƬΣSΞC-MĐ`,
 
-        `> BYΓΞSΞC:~# ./silence.py --mute 0 -p
+        `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# ./silence.py --mute 0 -p
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] Executando daemon:
@@ -348,11 +348,11 @@ await conn.reply(m.chat, spamWarningMsg.getRandom() , m, { mentions: [m.sender] 
 |
 > ${global.db.data.chats[m.chat].users[m.sender].adv==2 ? "_Último aviso: mais um deslize e é o fim da linha._" : ""}
 |
-> BYΓΞSΞC:~# _
+> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# _
 > # Monitorado por - ΒYƬΣSΞC-MĐ`
     ]
     : [
-        `> BYΓΞSΞC:~# ./silence.py --mute 0 -p
+        `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# ./silence.py --mute 0 -p
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] Running daemon:
@@ -363,10 +363,10 @@ await conn.reply(m.chat, spamWarningMsg.getRandom() , m, { mentions: [m.sender] 
 |
 > ${global.db.data.chats[m.chat].users[m.sender].adv==2 ? "_Last warning. One more strike and you're out._" : ""}
 |
-> BYΓΞSΞC:~# _
+> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# _
 > # Monitored by - ΒYƬΣSΞC-MĐ`,
 
-        `> BYΓΞSΞC:~# ./silence.py --mute 0 -p
+        `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# ./silence.py --mute 0 -p
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] Running daemon:
@@ -377,10 +377,10 @@ await conn.reply(m.chat, spamWarningMsg.getRandom() , m, { mentions: [m.sender] 
 |
 > ${global.db.data.chats[m.chat].users[m.sender].adv==2 ? "_Final chance. One more, and you're out._" : ""}
 |
-> BYΓΞSΞC:~# _
+> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# _
 > # Monitored by - ΒYƬΣSΞC-MĐ`,
 
-        `> BYΓΞSΞC:~# ./silence.py --mute 0 -p
+        `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# ./silence.py --mute 0 -p
 . . . . . . . . . . . . . . . . . . . . . . . .
 
 [+] Running daemon:
@@ -391,7 +391,7 @@ await conn.reply(m.chat, spamWarningMsg.getRandom() , m, { mentions: [m.sender] 
 |
 > ${global.db.data.chats[m.chat].users[m.sender].adv==2 ? "_Last warning: one more slip, and it’s the end of the line._" : ""}
 |
-> BYΓΞSΞC:~# _
+> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# _
 > # Monitored by - ΒYƬΣSΞC-MĐ`
     ];
   

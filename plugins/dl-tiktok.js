@@ -36,7 +36,7 @@ const fkontak = {
 
 
     const messageTxt = global.db.data.chats[m.chat].language == 'en' ? 
-        `┌──[ BYΓΞSΞC ]─[~/tiktok] 
+        `┌──[ 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs} ]─[~/tiktok] 
 └─ $ ttkdl --help
 > ‎
 > ‎[!] 𝖳𝗂𝗄𝖳𝗈𝗄-𝙳𝙻
@@ -47,7 +47,7 @@ Usᴇ ᴏ ᴄᴏᴍᴀɴᴅᴏ ᴄᴏᴍᴏ ɴᴏ ᴇxᴇᴍᴘʟᴏ ᴀ sᴇɢ�
 .𝑡𝑤𝑖𝑡𝑡𝑒𝑟 <𝑙𝑖𝑛𝑘>
 ` 
          : 
-         `┌──[ BYΓΞSΞC ]─[~/tiktok] 
+         `┌──[ 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs} ]─[~/tiktok] 
 └─ $ ttkdl --help
 > ‎
 > ‎[!] 𝖳𝗂𝗄𝖳𝗈𝗄-𝙳𝙻

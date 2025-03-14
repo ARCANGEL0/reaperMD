@@ -29,7 +29,7 @@ if(!text){
 
 
 
-  const musik = global.idioma == 'en' ? `┌──[ BYΓΞSΞC ]─[~] 
+  const musik = global.idioma == 'en' ? `┌──[ 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs} ]─[~] 
 └─ $ ./lyrics.sh
 > .   . . .. . . .  .  . . .. .  .  . . .. . .  .
 > ɢᴏᴛ ᴀ ᴄᴀᴛᴄʜʏ ᴛᴜɴᴇ ꜱᴛᴜᴄᴋ ɪɴ ʏᴏᴜʀ ʜᴇᴀᴅ, ᴋɪᴅ?
@@ -41,7 +41,7 @@ if(!text){
 > . . . . . . . . . . . . . . . . . . . . . . . . 
   ` 
   : 
-  `┌──[ BYΓΞSΞC ]─[~] 
+  `┌──[ 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs} ]─[~] 
 └─ $ ./lyrics.sh
 > .   . . .. . . .  .  . . .. .  .  . . .. . .  .
 > ᴛᴇᴍ ᴜᴍᴀ ᴍᴜꜱɪᴄᴀ ɢʀᴜᴅᴀᴅᴀ ɴᴀ ꜱᴜᴀ ᴄᴀʙᴇᴄᴀ, ɢᴀʀᴏᴛᴏ?
@@ -87,7 +87,7 @@ let movinfo = await info.json()
 console.log(movinfo)
 let pub = await translate(`${movinfo.publish}`, { to: "pt", autoCorrect: true })
 m.react('📀')
-conn.sendFile(m.chat, dat2.image, 'error.jpg',`┌──[ BYΓΞSΞC ]─[~] 
+conn.sendFile(m.chat, dat2.image, 'error.jpg',`┌──[ 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs} ]─[~] 
 └─ $ ./lyrics.sh
 > 
 > [↓] ${dat2.title} 
