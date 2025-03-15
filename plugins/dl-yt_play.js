@@ -65,7 +65,7 @@ if(!global.db.data.chats[m.chat].users[m.sender]){
         banned:false,
   }
 }
- if (!(isAdmin || isOwner) && global.db.data.chats[m.chat].autolevelup && global.db.data.chats[m.chat].users[m.sender].money < 80) {
+ if (!(isAdmin || isOwner) && global.db.data.chats[m.chat].autolevelup && global.db.data.chats[m.chat].users[m.sender].money < 125) {
 await conn.sendMessage(m.chat ,{text: global.db.data.chats[m.chat].language === 'en' ? `> [⚠] ʏᴏᴜ'ʀᴇ ᴏᴜᴛ ᴏꜰ ʙʏᴛᴇᴄᴏɪɴꜱ, ᴋɪᴅ.` : `> [⚠] ᴠᴏᴄᴇ ᴇꜱᴛᴀ ꜱᴇᴍ ʙʏᴛᴇᴄᴏɪɴ ᴀʟɢᴜᴍ, ɢᴀʀᴏᴛᴏ!`},{quoted:m})
  return !0
 }
@@ -127,218 +127,255 @@ let mp4f = getRandom('.mp4');
 if (command == 'play') {
 
 
-try {
-
-const randomDg = Math.floor(Math.random() * 1000) + 1;
-const outputFileName = `/tmp/${randomDg}.mp3`;
-const command = `yt "${yt_play[0].url}" -o "${outputFileName}"`;
-
-
-
-exec(command, (error, stdout, stderr) => {
-  if (error) {
-      console.error(`Error executing command: ${error.message}`);
-      throw error;
-  }
-  if (stderr) {
-      console.error(`Error: ${stderr}`);
-      throw stderr;
-  }
-
-
-
+  try {
   
-  if(global.db.data.chats[m.chat].autolevelup){
-    global.db.data.chats[m.chat].users[m.sender].money -= 80
-     m.react("📀")
-    await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
- conn.sendMessage(m.chat, { audio: `tmp/${randomDg}.mp3`, mimetype: "audio/mpeg" }, { quoted: m });
-
-} 
-
-}
-catch(e)   {
-  console.log(e)
-  try{
-    const audiodlp = await ytmp3(encodeURIComponent(yt_play[0].videoId));
-    conn.sendMessage(m.chat, { audio: audiodlp, mimetype: "audio/mpeg" }, { quoted: m });
+  const randomDg = Math.floor(Math.random() * 1000) + 1;
+  const outputFileName = `/tmp/${randomDg}.mp3`;
+  const command = `yt-dlp -x --audio-format mp3 "${yt_play[0].url}" -o "${outputFileName}"`;
+  
+  
+  
+  exec(command, (error, stdout, stderr) => {
+    if (error) {
+        console.error(`Error executing command: ${error.message}`);
+        throw error;
+    }
+    if (stderr) {
+        console.error(`Error: ${stderr}`);
+        throw stderr;
+    }
+  })
+  
+  
+    
     if(global.db.data.chats[m.chat].autolevelup){
-    global.db.data.chats[m.chat].users[m.sender].money -= 80
-     m.react("📀")
-    await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
+      global.db.data.chats[m.chat].users[m.sender].money -= 80
+       m.react("📀")
+      await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)
+    }
+  
+   conn.sendMessage(m.chat, { audio: `tmp/${randomDg}.mp3`, mimetype: "audio/mpeg" }, { quoted: m });
+  
+  } 
+  
+  
+  catch(e)   {
+    console.log(e)
+    try{
+      const audiodlp = await ytmp3(encodeURIComponent(yt_play[0].videoId));
+      conn.sendMessage(m.chat, { audio: audiodlp, mimetype: "audio/mpeg" }, { quoted: m });
+      if(global.db.data.chats[m.chat].autolevelup){
+      global.db.data.chats[m.chat].users[m.sender].money -= 80
+       m.react("📀")
+      await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
+      
+      } 
+      catch (e1) {
+      
+      try {  
+      let x=await ytdlf(`${encodeURIComponent(yt_play[0].videoId)}`,"mp3");
+      await conn.sendMessage(m.chat, { audio: { url:x.downloadUrl }, mimetype: 'audio/mpeg' }, { quoted: m });
+      if(global.db.data.chats[m.chat].autolevelup){
+      global.db.data.chats[m.chat].users[m.sender].money -= 80
+       m.react("📀")
+      await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
+      
+      } catch{
+      try {
+      const res = await fetch(`https://api.siputzx.my.id/api/d/ytmp4?url=${encodeURIComponent(yt_play[0].url)}`);
+      let { data } = await res.json();
+      await conn.sendMessage(m.chat, { audio: { url: data.dl }, mimetype: 'audio/mpeg' }, { quoted: m });
+      if(global.db.data.chats[m.chat].autolevelup){
+      global.db.data.chats[m.chat].users[m.sender].money -= 80
+       m.react("📀")
+      await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
+      
+      
+      } catch {
+      try {
+      const axeelUrl = `https://axeel.my.id/api/download/audio?url=${encodeURIComponent(yt_play[0].url)}`;
+      const axeelResponse = await fetch(axeelUrl);
+      const axeelData = await axeelResponse.json();
+      if (!axeelData || !axeelData.downloads?.url) throw new Error();
+      await conn.sendMessage(m.chat, { audio: { url: axeelData.downloads.url }, mimetype: 'audio/mpeg' }, { quoted: m });
+      if(global.db.data.chats[m.chat].autolevelup){
+      global.db.data.chats[m.chat].users[m.sender].money -= 80
+       m.react("📀")
+      await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
+      
+      } catch {
+      try {
+      let searchh = await yts(yt_play[0].url)
+      let __res = searchh.all.map(v => v).filter(v => v.type == "video")
+      let infoo = await ytdl.getInfo('https://youtu.be/' + __res[0].videoId)
+      let ress = await ytdl.chooseFormat(infoo.formats, { filter: 'audioonly' })
+      await conn.sendMessage(m.chat, { audio: { url: ress.url}, mimetype: 'audio/mpeg' }, { quoted: m})
+      if(global.db.data.chats[m.chat].autolevelup){
+      global.db.data.chats[m.chat].users[m.sender].money -= 80
+       m.react("📀")
+      await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
+      
+      
+      } catch {
+      try {
+      const ryzenUrl = `https://api.ryzendesu.vip/api/downloader/ytmp3?url=${encodeURIComponent(yt_play[0].url)}`;
+      const ryzenResponse = await fetch(ryzenUrl);
+      const ryzenData = await ryzenResponse.json();
+      if (ryzenData.status === 'tunnel' && ryzenData.url) {
+      const downloadUrl = ryzenData.url;
+      await conn.sendMessage(m.chat, { audio: { url: downloadUrl }, mimetype: 'audio/mpeg' }, { quoted: m });
+      if(global.db.data.chats[m.chat].autolevelup){
+      global.db.data.chats[m.chat].users[m.sender].money -= 80
+       m.react("📀")
+      await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
+      
+      }
+      } catch {
+      try {          
+      const res = await fetch(`https://api.zenkey.my.id/api/download/ytmp3?apikey=zenkey&url=${encodeURIComponent(yt_play[0].url)}`)
+      let { result } = await res.json()
+      await conn.sendMessage(m.chat, { audio: { url: await result.download.url }, mimetype: 'audio/mpeg' }, { quoted: m })
+      if(global.db.data.chats[m.chat].autolevelup){
+      global.db.data.chats[m.chat].users[m.sender].money -= 80
+       m.react("📀")
+      await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
+      
+      } catch {
+      try {
+      let q = '128kbps'
+      let v = yt_play[0].url
+      const yt = await youtubedl(v).catch(async _ => await youtubedlv2(v))
+      const dl_url = await yt.audio[q].download()
+      const ttl = await yt.title
+      const size = await yt.audio[q].fileSizeH
+      await conn.sendFile(m.chat, dl_url, ttl + '.mp3', null, m, false, { mimetype: 'audio/mp4' })
+      if(global.db.data.chats[m.chat].autolevelup){
+      global.db.data.chats[m.chat].users[m.sender].money -= 80
+       m.react("📀")
+      await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
+      
+      } catch {
+      try {
+      let lolhuman = await fetch(`${apis}/download/ytmp3?&url=${yt_play[0].url}`)    
+      let lolh = await lolhuman.json()
+      let n = lolh.result.title || 'error'
+      await conn.sendMessage(m.chat, { audio: { url: lolh.result.link }, fileName: `${n}.mp3`, mimetype: 'audio/mp4' }, { quoted: m })  
+      if(global.db.data.chats[m.chat].autolevelup){
+      global.db.data.chats[m.chat].users[m.sender].money -= 80
+       m.react("📀")
+      await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
+      
+      } catch (e){
+        
+        try{
+          let searchh = await yts(yt_play[0].url)
+      let __res = searchh.all.map(v => v).filter(v => v.type == "video")
+      let infoo = await ytdl.getInfo('https://youtu.be/' + __res[0].videoId)
+      let ress = await ytdl.chooseFormat(infoo.formats, { filter: 'audioonly' })
+      await conn.sendMessage(m.chat, { audio: { url: ress.url}, mimetype: 'audio/mpeg' }, { quoted: m})
+      
+      if(global.db.data.chats[m.chat].autolevelup){
+      global.db.data.chats[m.chat].users[m.sender].money -= 80
+       m.react("📀")
+      await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
+      
+      
+        }
+        catch(e){
+          console.log('failsss yts')
+          console.log(e)
+            try{ 
+          const res = await fetch(`https://api.siputzx.my.id/api/d/ytmp4?url=${yt_play[0].url}`);
+      let { data } = await res.json();
+      await conn.sendMessage(m.chat, { audio: { url: data.dl }, mimetype: 'audio/mpeg' }, { quoted: m ||null });
+       
+      if(global.db.data.chats[m.chat].autolevelup){
+      global.db.data.chats[m.chat].users[m.sender].money -= 80
+       m.react("📀")
+      await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
+      
+      
+      
+      
+      }catch(e){
+        console.log(e)
+        try{
+          
+          let x = await ytdlf(`${yt_play[0].url}`,"mp3");
+      console.log(x)
+      
+      
+      await conn.sendMessage(m.chat, { audio: { url:x.downloadUrl }, mimetype: 'audio/mpeg' }, { quoted: m });
+      
+      if(global.db.data.chats[m.chat].autolevelup){
+      global.db.data.chats[m.chat].users[m.sender].money -= 80
+       m.react("📀")
+      await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
+      
+      } catch(e){
+        console.log(e)
+        m.react("💀")
+           sendSystemErrorAlert(global.db.data.chats[m.chat].language);
+      }
+      
+      }
+        }
+      
+      }}}}}}}}}
+  
+  }
+  
+  
+  
+  
+  
+  }
+if (command == 'play2') {
+
+  try {
+
+    const randomDg = Math.floor(Math.random() * 1000) + 1;
+    const outputFileName = `/tmp/${randomDg}.mp3`;
+    const command = `yt-dlp -x --audio-format mp4 "${yt_play[0].url}" -o "${outputFileName}"`;
+    
+    
+    
+    exec(command, (error, stdout, stderr) => {
+      if (error) {
+          console.error(`Error executing command: ${error.message}`);
+          throw error;
+      }
+      if (stderr) {
+          console.error(`Error: ${stderr}`);
+          throw stderr;
+      }
+    })
+    
+    
+      
+      if(global.db.data.chats[m.chat].autolevelup){
+        global.db.data.chats[m.chat].users[m.sender].money -= 125
+         m.react("📀")
+        await m.reply(` 125 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)
+      }
+    
+     conn.sendMessage(m.chat, { audio: `tmp/${randomDg}.mp4`, mimetype: "video/mp4" }, { quoted: m });
     
     } 
-    catch (e1) {
-    
-    try {  
-    let x=await ytdlf(`${encodeURIComponent(yt_play[0].videoId)}`,"mp3");
-    await conn.sendMessage(m.chat, { audio: { url:x.downloadUrl }, mimetype: 'audio/mpeg' }, { quoted: m });
-    if(global.db.data.chats[m.chat].autolevelup){
-    global.db.data.chats[m.chat].users[m.sender].money -= 80
-     m.react("📀")
-    await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
-    
-    } catch{
-    try {
-    const res = await fetch(`https://api.siputzx.my.id/api/d/ytmp4?url=${encodeURIComponent(yt_play[0].url)}`);
-    let { data } = await res.json();
-    await conn.sendMessage(m.chat, { audio: { url: data.dl }, mimetype: 'audio/mpeg' }, { quoted: m });
-    if(global.db.data.chats[m.chat].autolevelup){
-    global.db.data.chats[m.chat].users[m.sender].money -= 80
-     m.react("📀")
-    await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
-    
-    
-    } catch {
-    try {
-    const axeelUrl = `https://axeel.my.id/api/download/audio?url=${encodeURIComponent(yt_play[0].url)}`;
-    const axeelResponse = await fetch(axeelUrl);
-    const axeelData = await axeelResponse.json();
-    if (!axeelData || !axeelData.downloads?.url) throw new Error();
-    await conn.sendMessage(m.chat, { audio: { url: axeelData.downloads.url }, mimetype: 'audio/mpeg' }, { quoted: m });
-    if(global.db.data.chats[m.chat].autolevelup){
-    global.db.data.chats[m.chat].users[m.sender].money -= 80
-     m.react("📀")
-    await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
-    
-    } catch {
-    try {
-    let searchh = await yts(yt_play[0].url)
-    let __res = searchh.all.map(v => v).filter(v => v.type == "video")
-    let infoo = await ytdl.getInfo('https://youtu.be/' + __res[0].videoId)
-    let ress = await ytdl.chooseFormat(infoo.formats, { filter: 'audioonly' })
-    await conn.sendMessage(m.chat, { audio: { url: ress.url}, mimetype: 'audio/mpeg' }, { quoted: m})
-    if(global.db.data.chats[m.chat].autolevelup){
-    global.db.data.chats[m.chat].users[m.sender].money -= 80
-     m.react("📀")
-    await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
-    
-    
-    } catch {
-    try {
-    const ryzenUrl = `https://api.ryzendesu.vip/api/downloader/ytmp3?url=${encodeURIComponent(yt_play[0].url)}`;
-    const ryzenResponse = await fetch(ryzenUrl);
-    const ryzenData = await ryzenResponse.json();
-    if (ryzenData.status === 'tunnel' && ryzenData.url) {
-    const downloadUrl = ryzenData.url;
-    await conn.sendMessage(m.chat, { audio: { url: downloadUrl }, mimetype: 'audio/mpeg' }, { quoted: m });
-    if(global.db.data.chats[m.chat].autolevelup){
-    global.db.data.chats[m.chat].users[m.sender].money -= 80
-     m.react("📀")
-    await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
-    
-    }
-    } catch {
-    try {          
-    const res = await fetch(`https://api.zenkey.my.id/api/download/ytmp3?apikey=zenkey&url=${encodeURIComponent(yt_play[0].url)}`)
-    let { result } = await res.json()
-    await conn.sendMessage(m.chat, { audio: { url: await result.download.url }, mimetype: 'audio/mpeg' }, { quoted: m })
-    if(global.db.data.chats[m.chat].autolevelup){
-    global.db.data.chats[m.chat].users[m.sender].money -= 80
-     m.react("📀")
-    await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
-    
-    } catch {
-    try {
-    let q = '128kbps'
-    let v = yt_play[0].url
-    const yt = await youtubedl(v).catch(async _ => await youtubedlv2(v))
-    const dl_url = await yt.audio[q].download()
-    const ttl = await yt.title
-    const size = await yt.audio[q].fileSizeH
-    await conn.sendFile(m.chat, dl_url, ttl + '.mp3', null, m, false, { mimetype: 'audio/mp4' })
-    if(global.db.data.chats[m.chat].autolevelup){
-    global.db.data.chats[m.chat].users[m.sender].money -= 80
-     m.react("📀")
-    await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
-    
-    } catch {
-    try {
-    let lolhuman = await fetch(`${apis}/download/ytmp3?&url=${yt_play[0].url}`)    
-    let lolh = await lolhuman.json()
-    let n = lolh.result.title || 'error'
-    await conn.sendMessage(m.chat, { audio: { url: lolh.result.link }, fileName: `${n}.mp3`, mimetype: 'audio/mp4' }, { quoted: m })  
-    if(global.db.data.chats[m.chat].autolevelup){
-    global.db.data.chats[m.chat].users[m.sender].money -= 80
-     m.react("📀")
-    await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
-    
-    } catch (e){
-      
-      try{
-        let searchh = await yts(yt_play[0].url)
-    let __res = searchh.all.map(v => v).filter(v => v.type == "video")
-    let infoo = await ytdl.getInfo('https://youtu.be/' + __res[0].videoId)
-    let ress = await ytdl.chooseFormat(infoo.formats, { filter: 'audioonly' })
-    await conn.sendMessage(m.chat, { audio: { url: ress.url}, mimetype: 'audio/mpeg' }, { quoted: m})
-    
-    if(global.db.data.chats[m.chat].autolevelup){
-    global.db.data.chats[m.chat].users[m.sender].money -= 80
-     m.react("📀")
-    await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
-    
-    
-      }
-      catch(e){
-        console.log('failsss yts')
-        console.log(e)
-          try{ 
-        const res = await fetch(`https://api.siputzx.my.id/api/d/ytmp4?url=${yt_play[0].url}`);
-    let { data } = await res.json();
-    await conn.sendMessage(m.chat, { audio: { url: data.dl }, mimetype: 'audio/mpeg' }, { quoted: m ||null });
-     
-    if(global.db.data.chats[m.chat].autolevelup){
-    global.db.data.chats[m.chat].users[m.sender].money -= 80
-     m.react("📀")
-    await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
-    
-    
-    
-    
-    }catch(e){
-      console.log(e)
-      try{
-        
-        let x = await ytdlf(`${yt_play[0].url}`,"mp3");
-    console.log(x)
-    
-    
-    await conn.sendMessage(m.chat, { audio: { url:x.downloadUrl }, mimetype: 'audio/mpeg' }, { quoted: m });
-    
-    if(global.db.data.chats[m.chat].autolevelup){
-    global.db.data.chats[m.chat].users[m.sender].money -= 80
-     m.react("📀")
-    await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
-    
-    } catch(e){
-      console.log(e)
-      m.react("💀")
-         sendSystemErrorAlert(global.db.data.chats[m.chat].language);
-    }
-    
-    }
-      }
-    
-    }}}}}}}}}
 
-}
-
-
-
-
-
-}
-if (command == 'play2') {
+  catch(e) {
 try {
 const video = await ytmp4(yt_play[0].videoId);
 console.log(video)
 await conn.sendMessage(m.chat, { video: { url: video }, fileName: `video.mp4`, mimetype: 'video/mp4', caption: ``}, { quoted: m })
 if(global.db.data.chats[m.chat].autolevelup){
-global.db.data.chats[m.chat].users[m.sender].money -= 80
+global.db.data.chats[m.chat].users[m.sender].money -= 125
  m.react("📀")
-await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
+await m.reply(` 125 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
 
-} catch {
+} 
+
+catch {
 try {
 const res = await
 fetch(`https://api.siputzx.my.id/api/d/ytmp4?url=${yt_play[0].url}`);
@@ -397,16 +434,18 @@ await conn.sendMessage(m.chat, { video: { url:y.downloadUrl }, fileName: `video.
 
 
 if(global.db.data.chats[m.chat].autolevelup){
-global.db.data.chats[m.chat].users[m.sender].money -= 80
+global.db.data.chats[m.chat].users[m.sender].money -= 125
  m.react("📀")
-await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
+await m.reply(` 125 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
 
 }
 catch(e){
   console.log(e)
   m.react("💀")
       sendSystemErrorAlert(global.db.data.chats[m.chat].language);
-}}}}}}}}}
+}}}}}}}}} 
+
+}
 }
 
     
