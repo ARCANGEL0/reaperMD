@@ -131,7 +131,7 @@ if (command == 'play') {
   
   const randomDg = Math.floor(Math.random() * 1000) + 1;
   const command = `yt-dlp -x --audio-format mp3 "${yt_play[0].url}" -o "${outputFileName}"`;
-  const outputFileName = `/tmp/${randomDg}.mp3`;
+  const outputFileName = `tmp/${randomDg}.mp3`;
  
   
   
@@ -144,7 +144,6 @@ if (command == 'play') {
         console.error(`Error: ${stderr}`);
         throw stderr;
     }
-
     console.log(`File saved as ${outputFileName}`)
     if(global.db.data.chats[m.chat].autolevelup){
       global.db.data.chats[m.chat].users[m.sender].money -= 80
@@ -152,8 +151,9 @@ if (command == 'play') {
       await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)
     }
   
-   conn.sendMessage(m.chat, { audio: `tmp/${randomDg}.mp3`, mimetype: "audio/mpeg" }, { quoted: m });
+   await conn.sendMessage(m.chat, { audio: `tmp/${randomDg}.mp3`, mimetype: "audio/mpeg" }, { quoted: m });
  
+   
   })
   
   
@@ -343,7 +343,7 @@ if (command == 'play2') {
     
     
     
-    exec(command, (error, stdout, stderr) => {
+    exec(command, async (error, stdout, stderr) => {
       if (error) {
           console.error(`Error executing command: ${error.message}`);
           throw error;
@@ -352,18 +352,19 @@ if (command == 'play2') {
           console.error(`Error: ${stderr}`);
           throw stderr;
       }
-    })
-    
-    
-      
       if(global.db.data.chats[m.chat].autolevelup){
         global.db.data.chats[m.chat].users[m.sender].money -= 125
          m.react("📀")
         await m.reply(` 125 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)
       }
     console.log(`File downloaded at ${outputFilename}`)
-     conn.sendMessage(m.chat, { audio: `tmp/${randomDg}.mp4`, mimetype: "video/mp4" }, { quoted: m });
+    await conn.sendMessage(m.chat, { video: { url: outputFilename }, fileName: `video.mp4`, mimetype: 'video/mp4', caption: ``}, { quoted: m })
     
+    })
+    
+    
+      
+   
     } 
 
   catch(e) {

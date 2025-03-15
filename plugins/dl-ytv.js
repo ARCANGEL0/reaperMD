@@ -46,10 +46,10 @@ await conn.reply(m.chat, `${langTOGGLE['smsAvisoEG']()}❖─┅──┅𝙏�
 
 
 try {
-  
+
   const randomDg = Math.floor(Math.random() * 1000) + 1;
-  const outputFileName = `/tmp/${randomDg}.mp4`;
-  const command = `yt-dlp -x --audio-format mp4 "${youtubeLink}" -o "${outputFileName}"`;
+  const outputFileName = `tmp/${randomDg}.mp4`;
+  const command = `yt-dlp -x "${yt_play[0].url}" -o "${outputFileName}"`;
   
   
   
@@ -62,19 +62,21 @@ try {
         console.error(`Error: ${stderr}`);
         throw stderr;
     }
-  })
-  
-  
-    
     if(global.db.data.chats[m.chat].autolevelup){
       global.db.data.chats[m.chat].users[m.sender].money -= 125
        m.react("📀")
       await m.reply(` 125 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)
     }
+  console.log(`File downloaded at ${outputFilename}`)
+  await conn.sendMessage(m.chat, { video: { url: outputFilename }, fileName: `video.mp4`, mimetype: 'video/mp4', caption: ``}, { quoted: m })
   
-   conn.sendMessage(m.chat, { audio: `tmp/${randomDg}.mp4`, mimetype: "video/mp4" }, { quoted: m });
+  })
   
+  
+    
+ 
   } 
+
 catch(e){
   console.log(e)
   try {
