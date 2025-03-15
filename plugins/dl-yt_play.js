@@ -135,7 +135,7 @@ if (command == 'play') {
   
   
   
-  exec(command, (error, stdout, stderr) => {
+  exec(command, async (error, stdout, stderr) => {
     if (error) {
         console.error(`Error executing command: ${error.message}`);
         throw error;
