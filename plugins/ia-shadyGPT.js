@@ -33,22 +33,65 @@ import {gpt} from 'gpti';
 
 let handler = async (m, { conn,__dirname, text, usedPrefix, command, isOwner, args }) => {
 
+
+  
+if (typeof global.db.data.chats[m.chat].shady !== 'object' || global.db.data.chats[m.chat].shady === null) {
+  global.db.data.chats[m.chat].shady = { history: [] };
+}
+
+if (!Array.isArray(global.db.data.chats[m.chat].shady.history)) {
+  global.db.data.chats[m.chat].shady.history = [];
+}
+
+
+
 async function slimShady(message) {
     
-
-  
-  
-  
-  const response = await
-  fetch(`https://api.maelyn.tech/api/chatgpt3?q=${message}&apikey=${maelyn}`);
-
-
-
-
-const result = await response.json();
-console.log(result);
-return result.result;
+    const conversationHistory = global.db.data.chats[m.chat].shady.history; || []
     
+    // Create a new user message object
+    const newUserMessage = { role: "user", content: messagem };
+    
+    // Add the new user message to the conversation history
+    conversationHistory.push(newUserMessage);
+    try {
+        m.react('💿')
+        const response = await fetch(baseUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                conversation: conversationHistory,
+                question: messagem,
+            }),
+        });
+        if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+        }
+        
+
+        const data = await response.json();
+  
+        const assistantResponse = data.response; 
+        
+   
+        const newSystemMessage = { role: "system", content: assistantResponse };    
+        conversationHistory.push(newSystemMessage);
+        
+        console.log('API Response:', assistantResponse);
+           m.react('📀')
+           let mensagem = m.reply(`${assistantResponse}`) 
+
+  global.db.data.chats[m.chat].shady.lastQuestion = mensagem.id
+
+  return mensagem
+    } catch (error) {
+        console.log('erro !!!!! ')
+        console.log('///////////////// ')
+        console.log(error)
+      sendSystemErrorAlert(language);
+    }
 
     
   }
