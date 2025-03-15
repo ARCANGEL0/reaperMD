@@ -239,19 +239,7 @@ let groupStats =   global.db.data.chats[m.chat].language === 'pt'
 
 
 
-let message = `${shell}
-/// 𓉘Ⲗ𓉝 ${greetTxt} ${name}
-> ${project}
-> ${botstatus}
-${timeActive}
-> ‎ 
-${totalChats}
-⸺⸺⸺⸺⸺⸺
-> 𓉘🞡𓉝 ${groupMetadata.subject}
-> // ${groupstatus}
-> ‎ 
-${groupStats}
-`
+
 let systemHeader =  global.db.data.chats[m.chat].language === 'en' ?
 `𝗦𝗬𝗦𝗧𝗘𝗠` 
 : 
@@ -307,11 +295,23 @@ let systemStats = `𓉘ᛜ𓉝 ${systemHeader}
 > ʀᴀᴍ: ${formatBytes(memData.total)} total, ${formatBytes(memData.free)} livre (${Math.round(memData.used / memData.total * 100)}% em uso)
 > ${diskSpace}: ${formatBytes(fsSize.reduce((acc, curr) => acc + curr.size, 0))} total, ${formatBytes(fsSize.reduce((acc, curr) => acc + curr.used, 0))} usado (${Math.round(fsSize.reduce((acc, curr) => acc + curr.used, 0) / fsSize.reduce((acc, curr) => acc + curr.size, 0) * 100)}% em uso)
 > ${sysLoad}: ${systemLoadPercentage}%
-
-
 `
 
-
+let message = `${shell}
+/// 𓉘Ⲗ𓉝 ${greetTxt} ${name}
+> ${project}
+> ${botstatus}
+${timeActive}
+> ‎ 
+${totalChats}
+⸺⸺⸺⸺⸺⸺
+> 𓉘~𓉝 ${groupMetadata.subject}
+> // ${groupstatus}
+> ‎ 
+${groupStats}
+⸺⸺⸺⸺⸺⸺
+${systemStats}
+`
 
 let estado = `╭━━━━[ *𝙎𝙏𝘼𝙏𝙐𝙎* ]━━━━━⬣
 ┃ *Olá!* ${name}
