@@ -150,7 +150,7 @@ return !1
 
 
 
-if (isToxic && chat.antitoxic && !isOwner && !isAdmin) {
+if (chat.antitoxic && !isOwner && !isAdmin) {
   
  const isToxic = profanity.exists(m.text)
     console.log(isToxic)
