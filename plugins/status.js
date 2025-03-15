@@ -17,7 +17,8 @@ import si from 'systeminformation';
 
 let handler = async (m, { conn, command,  usedPrefix,participants,groupMetadata}) => {
 let picture = './media/concept/concept2.jpg'
-let name = m.pushName || await conn.getName(m.sender) 
+let name = m.pushName || await conn.getName(m.sender) const chats = Object.entries(conn.chats).filter(([id, data]) => id && data.isChats)
+const groupsIn = chats.filter(([id]) => id.endsWith('@g.us')) //
 let _uptime = process.uptime() * 1000
 let _muptime
 if (process.send) { process.send('uptime')
