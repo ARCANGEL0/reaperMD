@@ -248,7 +248,7 @@ const audiodt = {
 };
 
 // Make POST request to /whois endpoint
-postData('http://127.0.0.1:8330/transcribe', audiodt)
+postData(`${global.arcangeloAPI}/transcribe`, audiodt)
     .then(async (rsp) => {
       m.react("📀")
         console.log(rsp);
@@ -355,7 +355,7 @@ const opts = {
 };
 m.react("💿")
 // Make POST request to /whois endpoint
-await postData('http://127.0.0.1:8330/docch', opts)
+await postData(`${global.arcangeloAPI}/docch`, opts)
     .then(async (data) => {
       m.react("📀")
         console.log(data);
@@ -552,7 +552,7 @@ const audiodt = {
 };
 
 // Make POST request to /whois endpoint
-postData('http://127.0.0.1:8330/transcribe', audiodt)
+postData(`${global.arcangeloAPI}/transcribe`, audiodt)
     .then(async (resp) => {
       m.react("📀")
         console.log(resp);
