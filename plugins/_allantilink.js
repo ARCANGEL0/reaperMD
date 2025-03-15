@@ -73,8 +73,7 @@ function generateRandomCode() {
      const groupAdms = participants.filter(p => p.admin)
  
   let adms =[]
-  const listaAdmin = groupAdms.map((v, i) =>
-  adms.push(v.id))
+  const listaAdmin = groupAdms.map((v, i) => adms.push(v.id))
   
    console.log('2🌙')
   console.log(adms)
@@ -88,7 +87,7 @@ let destino = global.db.data.chats[m.chat].reportchat || adminAleatorio
   let teks;
 
   if (global.db.data.chats[m.chat].language === 'pt') {
-          teks = `
+    teks = `
 ${global.heading} cat ${generateRandomCode()}.log
 > ---------------------------------------
 *𓉘!𓉝* 𝗨𝘀𝘂𝗮́𝗿𝗶𝗼 𝗕𝗮𝗻𝗶𝗱𝗼
@@ -97,7 +96,7 @@ ${global.heading} cat ${generateRandomCode()}.log
 > Dᴀᴛᴀ: ${getDataAtual()}
 >>> 𝘿𝙀𝙏𝘼𝙇𝙃𝙀𝙎 𝘿𝙊 𝙐𝙎𝙐𝘼́𝙍𝙄𝙊
 ────────────────────────────────
-> [+] Nᴏᴍᴇ: ${m.name}
+> [+] Nᴏᴍᴇ: ${m.pushName}
 > [+] Cᴏɴᴛᴀᴛᴏ: @${m.sender.split`@`[0]}
 > [+] Gʀᴜᴘᴏ: ${groupMetadata.subject}
 > ‎ 
@@ -109,7 +108,7 @@ ${global.heading} cat ${generateRandomCode()}.log
 ────────────────────────────────
 `;
 } else if (global.db.data.chats[m.chat].language === 'en') {
-    teks = `
+teks = `
 ${global.heading} cat ${generateRandomCode()}.log
 > ---------------------------------------
 *𓉘!𓉝* 𝗨𝘀𝗲𝗿 𝗕𝗮𝗻𝗻𝗲𝗱
@@ -118,7 +117,7 @@ ${global.heading} cat ${generateRandomCode()}.log
 > Dᴀᴛᴇ: ${getDataAtual()}
 >>> 𝙐𝙎𝙀𝙍 𝘿𝙀𝙏𝘼𝙄𝙇𝙎
 ────────────────────────────────
-> [+] Nᴀᴍᴇ: ${m.name}
+> [+] Nᴀᴍᴇ: ${m.pushName}
 > [+] Cᴏɴᴛᴀᴄᴛ: @${m.sender.split`@`[0]}
 > [+] Gʀᴏᴜᴘ: ${groupMetadata.subject}
 > ‎ 
@@ -128,7 +127,7 @@ ${global.heading} cat ${generateRandomCode()}.log
 > ‎ 
 > ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
 ────────────────────────────────
-    `;
+`;
 }
    
    m.reply(teks,destino)
