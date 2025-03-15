@@ -5,6 +5,7 @@
 //┃ ✞ঔৣ 𝙿𝚕𝚎𝚊𝚜𝚎 𝚌𝚛𝚎𝚍𝚒𝚝 𝚒𝚏 𝚢𝚘𝚞 𝚞𝚜𝚎 𝚝𝚑𝚎 𝚌𝚘𝚍𝚎 ঔৣ✞
 //┃ 𖤍 𝘾𝙤𝙣𝙩𝙖𝙘𝙩-𝙢𝙚 𝙛𝙤𝙧 𝙖𝙣𝙮 𝙙𝙤𝙪𝙗𝙩
 // ╰─...⌬─────────────────────────────────
+import {exec} from 'child_process'
 
 import { youtubedl, youtubedlv2 } from '@bochilteam/scraper' 
 import fetch from 'node-fetch'
@@ -54,27 +55,38 @@ await conn.sendFile(m.chat, data.data.link, 'error.mp3', null,m)
 
 */
  
- try {
-  console.log(yt_play)
+
+try {
   
-let req = await
-fetch(`https://api.ryzendesu.vip/api/downloader/ytmp3?url=${youtubeLink}`)
-
-
-let data = await req.json()
-
-
-console.log('more data below of play')
-console.log(data.url)
-if(!data.url || data.url === null || data.url === 'undefined') throw 'URL Undefined'
-   await conn.sendFile(m.chat, data.url,'erro.mp3',null,m)
-  m.react("📀")
-if(global.db.data.chats[m.chat].autolevelup){
-global.db.data.chats[m.chat].users[m.sender].money -= 80
-await m.reply(" 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ 𝙐𝙎𝘼𝘿𝙊𝙎")}
-
-
-}
+  const randomDg = Math.floor(Math.random() * 1000) + 1;
+  const outputFileName = `/tmp/${randomDg}.mp3`;
+  const command = `yt-dlp -x --audio-format mp3 "${youtubeLink}" -o "${outputFileName}"`;
+  
+  
+  
+  exec(command, async (error, stdout, stderr) => {
+    if (error) {
+        console.error(`Error executing command: ${error.message}`);
+        throw error;
+    }
+    if (stderr) {
+        console.error(`Error: ${stderr}`);
+        throw stderr;
+    }
+  })
+  
+  
+    
+    if(global.db.data.chats[m.chat].autolevelup){
+      global.db.data.chats[m.chat].users[m.sender].money -= 80
+       m.react("📀")
+      await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)
+    }
+  
+   conn.sendMessage(m.chat, { audio: `tmp/${randomDg}.mp3`, mimetype: "audio/mpeg" }, { quoted: m });
+  
+  } 
+  
 catch(e){
   try{
 const audiodlp = await ytmp3(encodeURIComponent(youtubeLink));

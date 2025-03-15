@@ -19,30 +19,21 @@ export async function before(m, { conn, isAdmin, isBotAdmin, isOwner, usedPrefix
 if (typeof global.lastBackup === 'undefined') global.lastBackup = new Date();
 
 const now = new Date();
-
 if (now - global.lastBackup >= 2 * 60 * 60 * 1000) {
 
-  let backupDir = global.backupFolder // folder name 
-  let backupRepo = global.backupGithub // repo of backup
-
-  let gitCommand = `cp database.json ../${backupDir}/ && cp code_database.json ../${backupDir}/ && cd ../${backupDir} && git remote add origin ${backupRepo} && git add code_database.json database.json && git commit -m 'AUTOMATED BACKUP' && git push origin master`
+    const backupDir = '/root/drive/backups/';
 
 
-exec(gitCommand, (error, stdout, stderr) => {
-if (error) {
-  console.error(`Error: ${error.message}`);
-  return;
-}
-if (stderr) {
-  console.error(`stderr: ${stderr}`);
-  return;
-}
-console.log(`Database saved at repo: ${stdout}`);
-console.log('Backup success!.');
-})
+    exec(`cp database.json ${backupDir} && cd ${backupDir} && git add . && git commit -m "ReaperMD backup" && git push origin master -f`, (error, stdout, stderr) => {
+        if (error) {
+          console.error(`Error executing backup: ${error}`);
+          return;
+        }
+        console.log(`stdout: ${stdout}`);
+        console.error(`stderr: ${stderr}`);
+      });
 
 }
-
 
 }
 
