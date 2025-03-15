@@ -361,7 +361,7 @@ if (command == 'play2') {
          m.react("📀")
         await m.reply(` 125 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)
       }
-    
+    console.log(`File downloaded at ${outputFilename}`)
      conn.sendMessage(m.chat, { audio: `tmp/${randomDg}.mp4`, mimetype: "video/mp4" }, { quoted: m });
     
     } 
