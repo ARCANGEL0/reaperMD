@@ -149,10 +149,13 @@ return !1
 
 
 
-
+// && !isOwner && !isAdmin
+if (chat.antitoxic) {
+  console.log('check toxicity')
  const isToxic = profanity.exists(m.text)
+    console.log(isToxic)
     
-if (isToxic && chat.antitoxic && !isOwner && !isAdmin) {
+  if(isToxic){
 global.db.data.chats[m.chat].users[m.sender].adv  += 1
 
 
@@ -223,7 +226,7 @@ if (global.db.data.chats[m.chat].users[m.sender].adv >= 3) {
   //await this.updateBlockStatus(m.sender, 'block')
   }
 
-
+}
 
 } 
 

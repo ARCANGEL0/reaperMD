@@ -199,10 +199,10 @@ global.opts['self'] ? '𝙥𝙧𝙞𝙫𝙖𝙙𝙤' : '𝙥𝙪́𝙗𝙡𝙞�
 let botstatus = `[ ʙᴏᴛ ᴍᴏᴅᴇ: ${status2}` 
 let groupstatus = `sᴛᴀᴛᴜs: ${isStatus}`
 let timeActive  = global.db.data.chats[m.chat].language === 'en' ? 
-`> [ ᴜᴘᴛɪᴍᴇ↴
+`> ᕀ ᴜᴘᴛɪᴍᴇ↴
 > ${uptime}`
 :
-`> [ ᴛᴇᴍᴘᴏ ᴀᴛɪᴠᴏ↴
+`> ᕀ ᴛᴇᴍᴘᴏ ᴀᴛɪᴠᴏ↴
 > ${uptime}`
 
 
@@ -268,6 +268,10 @@ let cpUsg =  global.db.data.chats[m.chat].language === 'en' ?
 `ᴜsᴏ ᴅᴏ ᴄᴘᴜ`
 
 
+let creator =  global.db.data.chats[m.chat].language === 'en' ?
+`ᴄʀɪᴀᴅᴏʀ`
+:
+`ᴄʀᴇᴀᴛᴏʀ`
 
 let diskSpace =  global.db.data.chats[m.chat].language === 'en' ?
 `ᴅɪsᴋ ᴜsᴀɢᴇ` 
@@ -284,14 +288,12 @@ let systemStats = `𓉘ᛜ𓉝 ${systemHeader}
 > ᴏs: ${osPlatform}
 > ʜᴏsᴛɴᴀᴍᴇ: robot
 > ᴜᴘᴛɪᴍᴇ: ${uptime}
-> sʏs ᴅᴀᴛᴀ: ${systemInfo}
 > ${sysArch}: ${osInfo.arch}
 > ᴅɪsᴛʀᴏ: ${osInfo.distro}
 > ᴋᴇʀɴᴇʟ: ${osInfo.kernel} (Versão: ${osRelease})
 > ${sysCPU}: ${cpuModel}
 > ${sysCORE}: ${cpuCore}
 > ${cpUsg}: ${cpuPer}%
-> ᴄᴘᴜ: ${cpuData}
 > ʀᴀᴍ: ${formatBytes(memData.total)} total, ${formatBytes(memData.free)} livre (${Math.round(memData.used / memData.total * 100)}% em uso)
 > ${diskSpace}: ${formatBytes(fsSize.reduce((acc, curr) => acc + curr.size, 0))} total, ${formatBytes(fsSize.reduce((acc, curr) => acc + curr.used, 0))} usado (${Math.round(fsSize.reduce((acc, curr) => acc + curr.used, 0) / fsSize.reduce((acc, curr) => acc + curr.size, 0) * 100)}% em uso)
 > ${sysLoad}: ${systemLoadPercentage}%
@@ -300,6 +302,7 @@ let systemStats = `𓉘ᛜ𓉝 ${systemHeader}
 let message = `${shell}
 /// 𓉘Ⲗ𓉝 ${greetTxt} ${name}
 > ${project}
+> ${creator}: 𝛌𝐑𝐂𝚲𝐍𝐆𝐄𝐋𝚯
 > ${botstatus}
 ${timeActive}
 > ‎ 
@@ -313,23 +316,6 @@ ${groupStats}
 ${systemStats}
 `
 
-let estado = `╭━━━━[ *𝙎𝙏𝘼𝙏𝙐𝙎* ]━━━━━⬣
-┃ *Olá!* ${name}
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
-┃𓃠 *Versao de ${gt}*
-┃➥ ${vs}
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ღ ${global.opts['self'] ? '𝙋𝙍𝙄𝙑𝘼𝘿𝙊' : '𝙋𝙐𝘽𝙇𝙄𝘾𝙊'}
-┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ღ *Ativo Durante* 
-┃➥ ${uptime}
-┃ღ *Usuario(s) | Users* 
-┃➥ ${Object.keys(global.db.data.users).length} 
-┃ღ *Chat(s) Proibido(s)*
-┃➥ ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} 
-┃ღ *Usuario(s) Proibido(s)*
-┃➥ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} 
-╰━━━━━━━━━━━━━━━━━━⬣`
 await conn.sendFile(m.chat, picture, 'stats.png', message, fkontak)
 
 }
