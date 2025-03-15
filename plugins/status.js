@@ -329,7 +329,7 @@ await conn.sendFile(m.chat, picture, 'stats.png', message, fkontak)
 }
 handler.help = ['estado']
 handler.tags = ['main']
-handler.command = /^(bot?)$/i
+handler.command = /^(status?)$/i
 export default handler
 
 function clockString(ms) {
