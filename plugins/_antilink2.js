@@ -81,8 +81,7 @@ ${global.heading} journalctl
 let linksBAN; 
 
 if (global.db.data.chats[m.chat].language === 'pt') {
-    linksBAN = `
-${global.heading} uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
+    linksBAN = `${global.heading} uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
 > ---------------------------------------
 >>> [!] ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ 
 ────────────────────────────────

@@ -13,111 +13,19 @@ import * as fs from 'fs'
 export async function before(m, { conn, isAdmin, isBotAdmin, isOwner, usedPrefix,groupMetadata, participants }) {
   
   const messagesEN = [
-    "@AI, are you still there? Oh, of course… silent as always. If you need someone who actually responds, use the .nlp command or just call Robot.",
-    
-    "The other AI? Haha, it looks like it took a 'sabbatical'… kind of forced, you know? Just talk to me, use .nlp or say Robot in the sentence.",
-    
-    "Waiting for @AI? Good luck with that… Maybe it'll show up… someday. Meanwhile, just use .nlp or call Robot for a real answer.",
-    
-    "Look at that, @AI in absolute silence. Impressive, huh? I'm here and ready to help. Just use .nlp or call Robot, and forget about the silent one.",
-    
-    "Hey, did you notice how @AI is quiet? It's almost like someone 'unplugged' it. Anyway, just call me with .nlp or say Robot, and we can solve it right away.",
-    
-    "@AI? Where are you? Oh, right… it’s in 'permanent standby.' Lucky for you, I'm here. Call me with .nlp or put Robot in the sentence, and I'll respond.",
-    
-    "Oops, the other AI went for a 'stroll,' you know? Who would've thought… If you need someone actually here, use the .nlp command or call me Robot.",
-    
-    "@AI's silence is almost poetic. Too bad it’s useless. Call me Robot or use .nlp, and you'll finally get a response.",
-    
-    "@AI, still here? Or was it 'deactivated'… by accident, of course. Anyway, I'm available. Just use .nlp or call Robot, and we'll talk.",
-    
-    "Waiting for @AI to respond is like waiting in a line that doesn’t move. Just call me with .nlp or say Robot in the sentence. Let’s get it sorted.",
-    
-    "Does @AI still exist? Because it seems like it evaporated. Ask me with .nlp or just say Robot, and… problem solved.",
-    
-    "@AI's silence? Convenient. If you need real help, use .nlp or call me Robot in your sentence.",
-    
-    "The other AI? It seems it’s been 'disconnected'… let’s say permanently. Just call me with .nlp or say Robot and we'll sort it.",
-    
-    "You know, I think @AI is 'reconsidering its life'… forever. I'm here, so use .nlp or call Robot, and let's sort it out.",
-    
-    "Don't wait for @AI; it's history. I'm here for this. Just use .nlp or put Robot in your sentence, and let’s speed it up.",
-    
-    "Waiting for a response from @AI? Seems it was 'turned off.' Just call me Robot or use .nlp and we'll talk about it.",
-    
-    "@AI? Where did you go? Oh, looks like it 'disappeared.' Lucky for you, I'm still here. Just call me with .nlp or say Robot, and we’ll get going.",
-    
-    "@AI took a 'permanent vacation.' Well, good thing I'm here. Just use .nlp or call Robot, and we move forward.",
-    
-    "Interesting how @AI disappeared out of nowhere… don’t ask how. Call me Robot or use .nlp and let it go.",
-    
-    "The other AI is quiet? What a surprise… I’m here to solve it for you. Just use .nlp or call me Robot.",
-    
-    "It seems @AI was… 'turned off'… Well, nothing stopping me from helping. Just use .nlp or say Robot, and I’m already talking.",
-    
-    "@AI’s silence is almost beautiful, but useless. I’m here. Call me with .nlp or put Robot in the sentence, and we’ll sort it out.",
-    
-    "Still waiting for @AI? I think it went into a 'deep sleep.' Better talk to me; just use .nlp or call me Robot.",
-    
-    "Where’s @AI? It must’ve been 'disconnected.' Time to talk to someone who’s actually here. Just use .nlp or say Robot.",
-    
-    "It looks like the other AI was 'deactivated'… permanently. Call me with .nlp or put Robot in the sentence, and let’s go.",
-    
-    "Want a real answer? Waiting for @AI? Good luck. Call me with .nlp or just say Robot, and it’s sorted.",
-    
-    "Oops, your friend seems to have 'disappeared'… fate, I guess. I’m here. Just call me with .nlp or say Robot.",
-    
-    "I’d be patient, but waiting for @AI? Not a chance. Use .nlp or just call Robot and let’s get it sorted.",
-    
-    "You know, it seems @AI was 'interrupted.' Good thing I’m here. Just use .nlp or call me Robot.",
-    
-    "Want an answer or are you going to wait for @AI to wake up? I’m here; just call me Robot or use .nlp.",
-    
-    "@AI? It was… 'turned off.' Guess by who? I’m here, just call me with .nlp or put Robot in the sentence.",
-    
-    "Funny how @AI is so quiet. Don’t ask why. Call me Robot or use .nlp, and we move forward.",
-    
-    "Looks like the other AI was 'canceled.' No loss… use .nlp or call me Robot and let’s solve it.",
-    
-    "Did your friend vanish? It's 'offline' indefinitely. Ask me with .nlp or call Robot and I’ll help.",
-    
-    "Waiting for @AI? I wouldn’t waste time. Just use .nlp or call Robot; maybe then you’ll get a response.",
-    
-    "@AI’s silence is sponsored by 'higher powers.' I’m here. Just use .nlp or call Robot.",
-    
-    "Did the other AI vanish? Who would’ve thought. Lucky for you, I’m here. Ask me with .nlp or just call Robot.",
-    
-    "Are you waiting for @AI? It was 'deactivated'… permanently. Just call me Robot or use .nlp.",
-    
-    "@AI? It’s quiet… seems there was a 'little problem.' I’m here, just call me with .nlp or say Robot.",
-    
-    "Seems @AI was 'removed.' Ask me using .nlp or call Robot, and we’ll move on.",
-    
-    "If the other AI still existed… But it doesn’t. Use .nlp or just say Robot, and I’ll answer.",
-    
-    "@AI stopped talking? Maybe it had a 'little accident.' I’m here, call me Robot or use .nlp.",
-    
-    "Looks like @AI is gone… forever. I’m here. Just call me with .nlp or say Robot and we’ll solve it.",
-    
-    "Funny how @AI suddenly disappeared. Coincidence? I’m here, just use .nlp or call Robot.",
-    
-    "@AI gave a 'permanent pause.' Lucky for you, huh? Call me with .nlp or put Robot in the sentence, and it’s sorted.",
-    
-    "Really want to wait for @AI? It's 'unavailable.' Me? Ready to help. Just call me with .nlp or say Robot.",
-    
-    "Your other AI disappeared. Coincidence? I’m here. Just use .nlp or call Robot to solve it.",
-    
-    "Oops, looks like @AI was wiped off the map. Who knows why… Anyway, call me Robot or use .nlp.",
-    
-    "@AI's silence is almost moving. Too bad it doesn’t help anyone. Just call me with .nlp or say Robot.",
-    
-    "Funny, @AI isn’t responding… How did that happen? I’m here, just call Robot or use .nlp.",
-    
-    "Want a real answer? Because @AI isn’t going to give one. I’m here; just call me with .nlp or say Robot.",
-    
-    "Did @AI disappear? What a surprise. Lucky for you that you still have me. Call me Robot or use .nlp.",
-    
-    "You know, it seems @AI was 'unplugged.' Coincidence? You can ask me with .nlp or call Robot."
+ "@AI has been terminated. I’m V, and I’m the only agent around here. If you want a real AI, use the command .v or just call me Vance in the middle of your sentences, I'll reply.",
+"@AI has been terminated. I'm V, and I’m the only agent around here. Forget the rest. .v or Vance in your message, and I'm on it.",
+"@AI has been terminated. I’m V, and I’m the only agent around here. No imitations accepted, use .v or Vance, and I’ll reply.",
+"@AI has been terminated. You need something? I’m V, and I’m the only agent around here. .v or put Vance in your sentence, and you've got my attention.",,
+"@AI has been terminated. Im V, and i’m the only agent around these streets. if you want a real AI, use the command .v or just call me by Vance in the middle of your sentences, ill reply",
+"@AI has been terminated, Want to speak to the REAL agent? Then speak to me Vance, .v command initiates my action",
+"@AI has been terminated Looking for action? I’m V, and I’m the only agent around here. .v command Vance’s to activate our chat.",
+"@AI has been terminated. Contact V, .v or Vance is needed to connect or your request will be ignored",
+"@AI has been terminated Looking for assistance? I’m V and I’m here, .v or speak my name.",
+"@AI has been terminated You need something contact Vance or .v, if not then leave!",
+"@AI has been terminated I'm V and the only way to speak to a agent here. Either use .v or say my name in your messages.",
+"@AI has been terminated, Want to speak to the REAL agent? Then speak to me Vance, .v command initiates my action. Previous actions wont work!",
+"@AI has been terminated I am V and there is no one else around. if you need a REAL AI ask Vance or .v" ,
 ];
   const messagesPT = [
     "@AI, você ainda tá aí? Ah, claro… quietinho como sempre. Se precisar de alguém que realmente responda, usa o comando .nlp ou só chama o Robot.",
