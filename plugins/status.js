@@ -6,13 +6,15 @@
 //┃ 𖤍 𝘾𝙤𝙣𝙩𝙖𝙘𝙩-𝙢𝙚 𝙛𝙤𝙧 𝙖𝙣𝙮 𝙙𝙤𝙪𝙗𝙩
 // ╰─...⌬─────────────────────────────────
 
-/**
-POR FAVOR TENGAN LA AMABILIDAD Y BONDAD DE NO CAMBIAR MÍNIMAMENTE LOS CRÉDITOS DE reaperMD, 
-SI VAS A AÑADIR TUS DATOS O CRÉDITOS, ESTA BIEN. PERO NO QUITEN LOS QUE YA ESTAN DE reaperMD, GRACIAS 
-**/
+import { performance } from 'perf_hooks';
+import osu from 'node-os-utils';
+import os from 'os';
+import { sizeFormatter } from 'human-readable';
+import si from 'systeminformation'; 
 
-/** PLEASE BE KIND AND KINDNESS NOT TO MINIMALLY CHANGE reaperMD CREDITS, 
-IF YOU ARE GOING TO ADD YOUR DATA OR CREDITS, IT'S OK. BUT DO NOT REMOVE THOSE THAT ARE ALREADY FROM reaperMD, THANK YOU **/
+// Import
+
+
 let handler = async (m, { conn, command,  usedPrefix,participants,groupMetadata}) => {
 let picture = './media/concept/concept2.jpg'
 let name = m.pushName || await conn.getName(m.sender) 
