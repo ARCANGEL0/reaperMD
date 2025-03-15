@@ -23,6 +23,126 @@ _muptime = await new Promise(resolve => { process.once('message', resolve)
 setTimeout(resolve, 1000) }) * 1000}
 
 
+
+let format = sizeFormatter({
+    std: 'JEDEC', // 'SI' (default) | 'IEC' | 'JEDEC'
+    decimalPlaces: 2,
+    keepTrailingZeroes: false,
+    render: (literal, symbol) => `${literal} ${symbol}B`,
+});
+
+function formatBytes(bytes) {
+    if (bytes === 0) return '0 Bytes';
+    const k = 1024;
+    const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
+    const i = Math.floor(Math.log(bytes) / Math.log(k));
+    return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+}
+
+if (process.send) { process.send('uptime')
+_muptime = await new Promise(resolve => { process.once('message', resolve) 
+setTimeout(resolve, 2000) }) * 1000}
+
+
+//await m.eply('_Realizando test_')
+
+    let NotDetect = '--';
+    let old = performance.now();
+    let cpu = osu.cpu;
+    let cpuCore = cpu.count();
+    let drive = osu.drive;
+    let mem = osu.mem;
+    let netstat = osu.netstat;
+    let OS = osu.os.platform();
+    let cpuModel = cpu.model();
+    let cpuPer;
+    let p1 = cpu.usage().then((cpuPercentage) => {
+        cpuPer = cpuPercentage;
+    }).catch(() => {
+        cpuPer = NotDetect;
+    });
+    let driveTotal, driveUsed, drivePer;
+    let p2 = drive.info().then((info) => {
+        driveTotal = info.totalGb + ' GB';
+        driveUsed = info.usedGb;
+        drivePer = info.usedPercentage + '%';
+    }).catch(() => {
+        driveTotal = NotDetect;
+        driveUsed = NotDetect;
+        drivePer = NotDetect;
+    });
+    let ramTotal, ramUsed;
+    let p3 = mem.info().then((info) => {
+        ramTotal = info.totalMemMb;
+        ramUsed = info.usedMemMb;
+    }).catch(() => {
+        ramTotal = NotDetect;
+        ramUsed = NotDetect;
+    });
+    let netsIn, netsOut;
+    let p4 = netstat.inOut().then((info) => {
+        netsIn = info.total.inputMb + ' MB';
+        netsOut = info.total.outputMb + ' MB';
+    }).catch(() => {
+        netsIn = NotDetect;
+        netsOut = NotDetect;
+    });
+
+    let systemInfo = await si.system();
+    
+    let graphicsInfo = await si.graphics();
+    let osInfo = await si.osInfo(); 
+
+    let cpuData = await si.cpu();
+    let currentLoad = await si.currentLoad();
+    let memData = await si.mem();
+    let fsSize = await si.fsSize();
+    let battery = await si.battery();
+    let temperatures = await si.cpuTemperature();
+    let networkStats = await si.networkStats();
+    let wifiNetworks = await si.wifiNetworks();
+    let gpuData = await si.graphics();
+console.log(cpuData)
+console.log(systemInfo)
+console.log(temperatures)
+
+console.log('gpu blw')
+console.log(gpuData)
+console.log(graphicsInfo)
+console.log('netwr')
+console.log(networkStats)
+    await Promise.all([p1, p2, p3, p4]);
+
+    let osPlatform = osInfo.platform;
+    let osRelease = osInfo.release;
+
+
+const systemLoadPercentage = currentLoad.currentLoad.toFixed(2); 
+
+let banidos = 0;
+let silenciados = 0
+let avisados = 0
+
+for (let userId in global.db.data.chats[m.chat].users) {
+if (global.db.data.chats[m.chat].users[userId].isKicked === true) {
+banidos++;
+}
+if (global.db.data.chats[m.chat].users[userId].silenced === true) {
+silenciados++;
+}
+if (global.db.data.chats[m.chat].users[userId].adv >0) {
+avisados++;
+}
+}
+
+
+
+let neww = performance.now()
+
+let speed = neww - old
+
+
+
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
 let uptime = clockString(_uptime)
 
@@ -126,6 +246,65 @@ ${totalChats}
 > ‎ 
 ${groupStats}
 `
+let systemHeader =  global.db.data.chats[m.chat].language === 'en' ?
+`𝗦𝗬𝗦𝗧𝗘𝗠` 
+: 
+`𝗦𝗜𝗦𝗧𝗘𝗠𝗔`
+
+let sysArch =  global.db.data.chats[m.chat].language === 'en' ?
+`ᴀʀᴄʜɪᴛᴇᴄᴛᴜʀᴇ` 
+: 
+`ᴀʀǫᴜɪᴛᴇᴛᴜʀᴀ`
+
+let sysCPU =  global.db.data.chats[m.chat].language === 'en' ?
+`ᴄᴘᴜ ᴍᴏᴅᴇʟ` 
+: 
+`ᴍᴏᴅᴇʟᴏ ᴅᴇ ᴄᴘᴜ`
+
+let sysCORE =  global.db.data.chats[m.chat].language === 'en' ?
+`ᴄᴏʀᴇs` 
+: 
+`ɴᴜ́ᴄʟᴇᴏs`
+
+
+
+let cpUsg =  global.db.data.chats[m.chat].language === 'en' ?
+`ᴄᴘᴜ ᴜsᴀɢᴇ` 
+: 
+`ᴜsᴏ ᴅᴏ ᴄᴘᴜ`
+
+
+
+let diskSpace =  global.db.data.chats[m.chat].language === 'en' ?
+`ᴅɪsᴋ ᴜsᴀɢᴇ` 
+: 
+`ᴇsᴘᴀᴄ̧ᴏ ᴇᴍ ᴅɪsᴄᴏ`
+
+let sysLoad =  global.db.data.chats[m.chat].language === 'en' ?
+`sʏsᴛᴇᴍ ʟᴏᴀᴅ` 
+: 
+`Cᴀʀɢᴀ ᴅᴏ Sɪsᴛᴇᴍᴀ`
+
+
+let systemStats = `𓉘ᛜ𓉝 ${systemHeader}
+> ᴏs: ${osPlatform}
+> ʜᴏsᴛɴᴀᴍᴇ: robot
+> ᴜᴘᴛɪᴍᴇ: ${uptime}
+> sʏs ᴅᴀᴛᴀ: ${systemInfo}
+> ${sysArch}: ${osInfo.arch}
+> ᴅɪsᴛʀᴏ: ${osInfo.distro}
+> ᴋᴇʀɴᴇʟ: ${osInfo.kernel} (Versão: ${osRelease})
+> ${sysCPU}: ${cpuModel}
+> ${sysCORE}: ${cpuCore}
+> ${cpUsg}: ${cpuPer}%
+> ᴄᴘᴜ: ${cpuData}
+> ʀᴀᴍ: ${formatBytes(memData.total)} total, ${formatBytes(memData.free)} livre (${Math.round(memData.used / memData.total * 100)}% em uso)
+> ${diskSpace}: ${formatBytes(fsSize.reduce((acc, curr) => acc + curr.size, 0))} total, ${formatBytes(fsSize.reduce((acc, curr) => acc + curr.used, 0))} usado (${Math.round(fsSize.reduce((acc, curr) => acc + curr.used, 0) / fsSize.reduce((acc, curr) => acc + curr.size, 0) * 100)}% em uso)
+> ${sysLoad}: ${systemLoadPercentage}%
+
+
+`
+
 
 
 let estado = `╭━━━━[ *𝙎𝙏𝘼𝙏𝙐𝙎* ]━━━━━⬣
