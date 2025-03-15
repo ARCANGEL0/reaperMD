@@ -22,24 +22,17 @@ const now = new Date();
 if (now - global.lastBackup >= 2 * 60 * 60 * 1000) {
 
     const backupDir = '/root/drive/backups/';
-    const gitBackup = spawn('sh', ['-c', `cp database.json ${backupDir}; cd ${backupDir}; git add . && git commit -m "ReaperMD backup" && git push -f origin master`], { shell: true });
 
-    gitBackup.stdout.on('data', (data) => {
-        console.log(`stdout: ${data}`);
-    });
 
-    gitBackup.stderr.on('data', (data) => {
-        console.error(`stderr: ${data}`);
-    });
-
-    gitBackup.on('close', (code) => {
-        if (code === 0) {
-            console.log(`[${now.toISOString()}] Backup completed.`);
-            global.lastBackup = now;
-        } else {
-            console.error(`Backup process exited with code ${code}`);
+    exec(`cp database.json ${backupDir} && cd ${backupDir} && git add . && git commit -m "ReaperMD backup" && git push origin master -f`, (error, stdout, stderr) => {
+        if (error) {
+          console.error(`Error executing backup: ${error}`);
+          return;
         }
-    });
+        console.log(`stdout: ${stdout}`);
+        console.error(`stderr: ${stderr}`);
+      });
+
 }
 
 }
