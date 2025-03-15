@@ -335,7 +335,7 @@ if (command == 'play2') {
   try {
 
     const randomDg = Math.floor(Math.random() * 1000) + 1;
-    const outputFileName = `/tmp/${randomDg}.mp3`;
+    const outputFileName = `/tmp/${randomDg}.mp4`;
     const command = `yt-dlp -x --audio-format mp4 "${yt_play[0].url}" -o "${outputFileName}"`;
     
     
