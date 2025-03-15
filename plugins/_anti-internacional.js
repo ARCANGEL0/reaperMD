@@ -61,7 +61,7 @@ let destino = global.db.data.chats[m.chat].reportchat || adminAleatorio
 
    console.log('3🌙')
 
-  let protocol = generateRandomCode()
+
   let teks;
 
   if (global.db.data.chats[m.chat].language === 'pt') {
@@ -74,7 +74,7 @@ ${global.heading} cat ${generateRandomCode()}.log
 > Dᴀᴛᴀ: ${getDataAtual()}
 >>> 𝘿𝙀𝙏𝘼𝙇𝙃𝙀𝙎 𝘿𝙊 𝙐𝙎𝙐𝘼́𝙍𝙄𝙊
 ────────────────────────────────
-> [+] Nᴏᴍᴇ: ${m.name}
+> [+] Nᴏᴍᴇ: ${m.pushName}
 > [+] Cᴏɴᴛᴀᴛᴏ: @${m.sender.split`@`[0]}
 > [+] Gʀᴜᴘᴏ: ${groupMetadata.subject}
 > ‎ 
@@ -95,7 +95,7 @@ ${global.heading} cat ${generateRandomCode()}.log
 > Dᴀᴛᴇ: ${getDataAtual()}
 >>> 𝙐𝙎𝙀𝙍 𝘿𝙀𝙏𝘼𝙄𝙇𝙎
 ────────────────────────────────
-> [+] Nᴀᴍᴇ: ${m.name}
+> [+] Nᴀᴍᴇ: ${m.pushName}
 > [+] Cᴏɴᴛᴀᴄᴛ: @${m.sender.split`@`[0]}
 > [+] Gʀᴏᴜᴘ: ${groupMetadata.subject}
 > ‎ 

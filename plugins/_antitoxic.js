@@ -13,10 +13,17 @@
 //┃ 𖤍 𝘾𝙤𝙣𝙩𝙖𝙘𝙩-𝙢𝙚 𝙛𝙤𝙧 𝙖𝙣𝙮 𝙙𝙤𝙪𝙗𝙩
 // ╰─...⌬─────────────────────────────────╯
 
-const toxicRegex = /bolsomito|vadia|seu burro|sua burra|é burro|é burra|eh burro|eh burra|qenga|Quenga|Puta|imbecil|sua puta|vagabunda|lugar de mulher|esquerdalha|feminazi|seu merda|merdinha|é rodada|eh rodada|pedaço de merda|seu bosta|seu lixo|neguinho|preto de merda|crioulo vagabundo|selvagem africano|negro serviçal|sai da senzala|mulher negra promíscua|crioulo fedido|escravo inútil|negro burro|negro sujo|escória negra|crioulo malandro|negro ordinário|negro safado|crioulo traidor|negro delinquente|crioulo pilantra|negro favelado|crioulo sem vergonha|negro imprestável|crioulo sem caráter|negro maloqueiro|crioulo nojento|negro vagabundo|crioulo desgraçado|negro marginal|crioulo asqueroso|negro desgraçado|vadia|sua burra|é burra|eh burra|sua puta|lugar de mulher|esquerdalha|feminazi|seu merda|merdinha|é rodada|eh rodada|seu bosta|seu lixo|mulher no volante|mulher só serve para cozinha|frágil como uma mulher|mulher objeto|seja homem de verdade|bichinha delicada|sai do armário|sapatona de merda|mulherzinha fraca|mulher não sabe nada|mulher no volante|mulher só serve para cozinha|frágil como uma mulher|ela está naqueles dias|mulher é tudo igual|elas são emocionais demais|mulheres não deveriam trabalhar|ela estava pedindo por isso|mulheres são ruins em matemática|mulheres são histéricas|mulheres só querem atenção|mulheres falam demais|mulheres são volúveis|mulheres são complicadas|mulheres são fracas|mulheres são manipuladoras|mulheres são sensíveis demais|mulheres são fofoqueiras|mulheres são inferiores|mulheres não são confiáveis/i
+
+
+import { profanity, CensorType } from '@2toad/profanity';
 
 export async function before(m, { conn, isAdmin, isBotAdmin, isOwner }) {
-  
+  const profanity = new Profanity({
+    languages: ['en','pt','de','fr','es','ja','ru','ar'],
+    wholeWord: true,
+
+
+});
   function getDataAtual() {
     const hoje = new Date();
     const dia = String(hoje.getDate()).padStart(2, '0');
@@ -49,8 +56,7 @@ let tempBanimento = async (motivo) => {
     const groupAdms = participants.filter(p => p.admin)
 
  let adms =[]
- const listaAdmin = groupAdms.map((v, i) =>
- adms.push(v.id))
+ const listaAdmin = groupAdms.map((v, i) => adms.push(v.id))
  
   console.log('2🌙')
  console.log(adms)
@@ -62,55 +68,48 @@ let destino = global.db.data.chats[m.chat].reportchat || adminAleatorio
   console.log('3🌙')
 
  let teks;
-
  if (global.db.data.chats[m.chat].language === 'pt') {
-         teks = `
-     > v@reaper: /root/users/ cat ${generateRandomCode()}.log
-     > ---------------------------------------
-
-     [!] ALERTA: Usuário Banido
-     ────────────────────────────────
-     > Protocolo: ${generateRandomCode()}
-     > Data: ${getDataAtual()}
-
-     >>> DETALHES DO USUÁRIO
-     ────────────────────────────────
-     > [+] Nome: ${m.name}
-     > [+] Contato: @${m.sender.split`@`[0]}
-     > [+] Grupo: ${groupMetadata.subject}
-
-     >>> MOTIVO DO EXÍLIO
-     ────────────────────────────────
-     > ${motivo}
-
-     > # Operação realizada pela ByteSec. 
-     > # Monitoramento constante.
-     ────────────────────────────────
-         `;
-} else if (global.db.data.chats[m.chat].language === 'en') {
-   teks = `
-> v@reaper: /root/users/ cat ${generateRandomCode()}.log
+  teks = `
+${global.heading} cat ${generateRandomCode()}.log
 > ---------------------------------------
-
-[!] ALERT: User Banned
+*𓉘!𓉝* 𝗨𝘀𝘂𝗮́𝗿𝗶𝗼 𝗕𝗮𝗻𝗶𝗱𝗼
 ────────────────────────────────
-> Protocol: ${generateRandomCode()}
-> Date: ${getDataAtual()}
-
->>> USER DETAILS
+> Pʀᴏᴛᴏᴄᴏʟᴏ: ${generateRandomCode()}
+> Dᴀᴛᴀ: ${getDataAtual()}
+>>> 𝘿𝙀𝙏𝘼𝙇𝙃𝙀𝙎 𝘿𝙊 𝙐𝙎𝙐𝘼́𝙍𝙄𝙊
 ────────────────────────────────
-> [+] Name: ${m.name}
-> [+] Contact: @${m.sender.split`@`[0]}
-> [+] Group: ${groupMetadata.subject}
-
->>> REASON FOR EXILE
+> [+] Nᴏᴍᴇ: ${m.pushName}
+> [+] Cᴏɴᴛᴀᴛᴏ: @${m.sender.split`@`[0]}
+> [+] Gʀᴜᴘᴏ: ${groupMetadata.subject}
+> ‎ 
+>>> ᴍ̲ᴏ̲ᴛ̲ɪ̲ᴠ̲ᴏ̲
 ────────────────────────────────
 > ${motivo}
 > ‎ 
-> # Operation conducted by ByteSec.
-> # Under continuous surveillance.
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
 ────────────────────────────────
-   `;
+`;
+} else if (global.db.data.chats[m.chat].language === 'en') {
+teks = `
+${global.heading} cat ${generateRandomCode()}.log
+> ---------------------------------------
+*𓉘!𓉝* 𝗨𝘀𝗲𝗿 𝗕𝗮𝗻𝗻𝗲𝗱
+────────────────────────────────
+> Pʀᴏᴛᴏᴄᴏʟ: ${generateRandomCode()}
+> Dᴀᴛᴇ: ${getDataAtual()}
+>>> 𝙐𝙎𝙀𝙍 𝘿𝙀𝙏𝘼𝙄𝙇𝙎
+────────────────────────────────
+> [+] Nᴀᴍᴇ: ${m.pushName}
+> [+] Cᴏɴᴛᴀᴄᴛ: @${m.sender.split`@`[0]}
+> [+] Gʀᴏᴜᴘ: ${groupMetadata.subject}
+> ‎ 
+>>> ʀ̲ᴇ̲ᴀ̲s̲ᴏ̲ɴ̲
+────────────────────────────────
+> ${motivo}
+> ‎ 
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
+────────────────────────────────
+`;
 }
   
   m.reply(teks,destino)
@@ -146,53 +145,88 @@ return !1
     user.warn=0
   }
   let chat = global.db.data.chats[m.chat]
-  let bot = global.db.data.settings[this.user.jid] || {}
-  let img = gataImg.getRandom()	
- const isToxic = toxicRegex.exec(m.text)
+ 
+
+
+
+
+ const isToxic = profanity.exists(m.text)
     
 if (isToxic && chat.antitoxic && !isOwner && !isAdmin) {
 global.db.data.chats[m.chat].users[m.sender].adv  += 1
-if (!(global.db.data.chats[m.chat].users[m.sender].adv >= 3)) await m.reply(`━━━━━━━⬣⚠️⬣━━━━━━
-@${m.sender.split`@`[0]}* җ
 
-${langTOGGLE['smsToxic1']()}
-${langTOGGLE['smsToxic2']()} 
 
-   ⚠ *${global.db.data.chats[m.chat].users[m.sender].adv}/4*
-   
-${wm}`, false, { mentions: [m.sender] })}
-/*await conn.sendButton(m.chat,`${user.warn == 1 ? `*@${m.sender.split`@`[0]}*` : `*@${m.sender.split`@`[0]}*`} *${langTOGGLE['smsToxic1']()} (${isToxic}) ${langTOGGLE['smsToxic2']()}*`, `${langTOGGLE['smsToxic3']()} *${user.warn}/4*\n\n${wm}`, img, [
-[langTOGGLE.smsToxic4(), 'ok'],
-[langTOGGLE.smsToxic5(), '.off antitoxic'],
-[langTOGGLE.smsConMenu(), '/menu']], false, { mentions: [m.sender] })}*/
+let mention = `@${m.sender.split`@`[0]}`
+
+let userAdv = global.db.data.chats[m.chat].users[m.sender].adv
+
+
+  let toxicWarn = global.db.data.chats[m.chat].language === 'pt' ?
+
+`${global.heading} ./flush
+𓉘ⵑ𓉝  ꜰɪʟᴛʀᴏ ᴀᴛɪᴠᴏ
+> ⳼ ${mention} ʀᴇᴄᴇʙᴇᴜ ᴜᴍ ᴀᴠɪsᴏ ${userAdv}/3
+> ‎ 
+> ⮝  𝐬𝐭𝐝: ᴄᴏɴᴛᴇᴜᴅᴏ ᴀʙᴜsɪᴠᴏ/ᴏꜰᴇɴsɪᴠᴏ ᴅᴇᴛᴇᴄᴛᴀᴅᴏ`
+  
+    : 
+    
+`${global.heading} ./flush
+𓉘ⵑ𓉝 ᴀᴄᴛɪᴠᴇ ꜰɪʟᴛᴇʀ
+> ⳼ ${mention} ʀᴇᴄᴇɪᴠᴇᴅ ᴀ ᴡᴀʀɴɪɴɢ ${userAdv}/3
+> ‎ 
+> ⮝ 𝐬𝐭𝐝: ᴏꜰꜰᴇɴsɪᴠᴇ ᴏʀ ᴀʙᴜsɪᴠᴇ ᴡᴏʀᴅs ᴅᴇᴛᴇᴄᴛᴇᴅ`
+
+
+let userBannedTxt = global.db.data.chats[m.chat].language === 'pt' ?
+  
+`${global.heading} ./flush
+𓉘ⵑ𓉝  ꜰɪʟᴛʀᴏ ᴀᴛɪᴠᴏ
+> ⨻ ${mention} ꜰᴏɪ ʙᴀɴɪᴅᴏ
+> ‎ 
+> ⮞ 𝐬𝐭𝐝: ʀᴇᴍᴏᴠᴇɴᴅᴏ ᴘɪᴅ. . .`
+    
+    : 
+    
+`${global.heading} ./flush
+𓉘ⵑ𓉝 ᴀᴄᴛɪᴠᴇ ꜰɪʟᴛᴇʀ
+> ⨻ ${mention} ɪs ɴᴏᴡ ʙᴀɴɴᴇᴅ
+> ‎ 
+> ⮞ 𝐬𝐭𝐝: ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ. . . `
+
+
+
+  
+let messageExplanation = global.db.data.chats[m.chat].language === 'pt' ?
+  
+`ᴄᴏɴᴛᴇᴜᴅᴏ ᴀʙᴜsɪᴠᴏ/ᴏꜰᴇɴsɪᴠᴏ ᴅᴇᴛᴇᴄᴛᴀᴅᴏ`
+: 
+`ᴏꜰꜰᴇɴsɪᴠᴇ ᴏʀ ᴀʙᴜsɪᴠᴇ ᴡᴏʀᴅs ᴅᴇᴛᴇᴄᴛᴇᴅ`
+
+
+if (global.db.data.chats[m.chat].users[m.sender].adv < 3) await m.reply(toxicWarn, false, { mentions: [m.sender] })
+
 
 if (global.db.data.chats[m.chat].users[m.sender].adv >= 3) {
-global.db.data.chats[m.chat].users[m.sender].adv  = 0
-await m.reply(`*${langTOGGLE['smsToxic6']()}*\n*@${m.sender.split`@`[0]} ${langTOGGLE['smsToxic7']()}*`, false, { mentions: [m.sender] })
+
+ 
 
 
-const banExplanationsEN = [
-  "Just banned him for dropping some offensive nonsense in the group. Not on my watch.",
-  "Gave him three strikes for disrespecting our laws on discrimination. Guess he didn’t get the memo.",
-  "That’s right, kiddo. Banned him for being a total jerk to everyone here.",
-  "Banned for spreading toxicity like it’s his job. Not happening in this space.",
-  "Told him the third strike would be his last. He clearly didn’t take me seriously."
-];
 
-// Phrases in Portuguese
-const banExplanationsPT = [
-  "Acabei de banir ele por jogar algumas ofensas no grupo. Não sob minha vigilância.",
-  "Dei a ele três chances por desrespeitar nossas regras sobre discriminação. Parece que ele não pegou o recado.",
-  "Isso mesmo, meu chapa. Banido por ser um completo idiota com todos aqui.",
-  "Banido por espalhar toxicidade como se fosse seu trabalho. Não vai rolar neste espaço.",
-  "Avisei que a terceira chance seria a última. Ele claramente não levou a sério."
-];
+  await m.reply(userBannedTxt, false, { mentions: [m.sender] })
+  
 
-let explanations = global.db.data.chats[m.chat].language === 'pt' ? banExplanationsPT : banExplanationsEN;
+ global.db.data.chats[m.chat].users[m.sender].adv  = 0
 
-await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
-  await tempBanimento(explanations.getRandom())
-//await this.updateBlockStatus(m.sender, 'block')
-}
+  await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
+    await tempBanimento(messageExplanation)
+  //await this.updateBlockStatus(m.sender, 'block')
+  }
+
+
+
+} 
+
+
 return !1
 }

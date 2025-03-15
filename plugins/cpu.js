@@ -18,6 +18,7 @@ const chats = Object.entries(conn.chats).filter(([id, data]) => id && data.isCha
 const groupsIn = chats.filter(([id]) => id.endsWith('@g.us')) //
 
 
+
     let picture = 'https://itzpire.com/file/034330669708.jpg';
     let format = sizeFormatter({
         std: 'JEDEC', // 'SI' (default) | 'IEC' | 'JEDEC'
@@ -274,7 +275,7 @@ ${footer}  ` }, { quoted: m }, { mentions: [m.sender] });
 
 handler.help = ['status']
 handler.tags = ['info']
-handler.command = /^(cpu|status|infogrupo|infochats)$/i
+handler.command = /^(cpu|infogrupo|infochats)$/i
 
 export default handler
 
