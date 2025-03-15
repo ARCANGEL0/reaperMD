@@ -15,7 +15,7 @@
 
 
 
-import { profanity, CensorType } from '@2toad/profanity';
+import { Profanity, CensorType } from '@2toad/profanity';
 
 export async function before(m, { conn, isAdmin, isBotAdmin, isOwner }) {
   const profanity = new Profanity({
