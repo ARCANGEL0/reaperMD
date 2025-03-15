@@ -138,80 +138,28 @@ if(!global.db.data.chats[m.chat].users[m.sender]){
   }
 }
   const warningMessageOne = global.db.data.chats[m.chat].language === 'pt'
-    ? [
-        `⚠️ Olha só, vou ser claro: nada de pornografia aqui. Não sei onde você acha que tá, mas isso é contra as regras. Você acabou de ganhar um aviso. 1/3. Três e você tá fora.`,
-        `Mandar pornografia? Sério? Proibido, garoto. Aqui vai sua primeira advertência. 1/3. Três avisos e já era pra você.`,
-        `Sério mesmo? Achou que pornografia passaria despercebida? Aqui não, campeão. Esse é seu primeiro aviso. 1/3.`,
-        `Mandando conteúdo +18 aqui? Você entendeu completamente errado o tipo de lugar que isso é. Primeira advertência. 1/3. Três e você some.`,
-        `Ei, regras existem por um motivo. Pornografia? Não, obrigado. Esse é seu primeiro strike. 1/3. Três e já era.`,
-        `Vamos deixar claro: +18 aqui não passa. Isso é um aviso, seu primeiro. 1/3. Mais três e acabou.`,
-        `Nada de conteúdo +18 aqui, parceiro. Primeiro aviso. 1/3. Com três, você sai.`,
-        `Sério, pervertido? Achou que esse era o lugar para pornografia? Considera isso sua primeira advertência. 1/3. Três strikes e você some.`,
-        `Sem espaço pra pornografia aqui. Esse é seu aviso número um. 1/3. Três e você desaparece.`,
-        `Regras básicas: pornografia, proibido. Esse é seu primeiro strike. 1/3. Três strikes e tchau.`
-    ]
-    : [
-        `⚠️ Let me be clear: no porn here. Not sure where you think you are, but that’s against the rules. You just earned yourself a warning. 1/3. Three strikes, and you're out.`,
-        `Sending porn? Really? Forbidden, kid. Here’s your first warning. 1/3. Three strikes, and you're done.`,
-        `Are you serious? Thought porn would fly under the radar? Not here, champ. That’s your first warning. 1/3.`,
-        `Sending +18 content here? You completely misunderstood the kind of place this is. First warning. 1/3. Three, and you're out.`,
-        `Hey, rules exist for a reason. Porn? Not happening. That’s your first strike. 1/3. Three, and you're done.`,
-        `Let’s set things straight: no +18 content here. This is your warning, your first. 1/3. Three strikes, and you’re gone.`,
-        `No +18 content here, pal. First warning. 1/3. With three, you’re out.`,
-        `Seriously, pervert? Thought this was the spot for your porn collection? Consider this your first warning. 1/3. Three strikes, and you're gone.`,
-        `There’s no room for porn here. This is your first warning. 1/3. Three, and you disappear.`,
-        `Basic rule: porn, forbidden. That’s your first strike. 1/3. Three strikes, and goodbye.`
-    ];
+    ? `𓉘ⵑ𓉝 ᴄᴏɴᴛᴇᴜᴅᴏ +18 ɪᴅᴇɴᴛɪꜰɪᴄᴀᴅᴏ 
+> ❯❯ ￭ `
+    : `𓉘ⵑ𓉝 +18 ᴄᴏɴᴛᴇɴᴛ ᴅᴇᴛᴇᴄᴛᴇᴅ
+> ❯❯ ￭ `
   const warningMessageTwo = global.db.data.chats[m.chat].language === 'pt'
-    ? [
-        `⚠️ Então, você ignorou o primeiro aviso e mandou pornografia de novo. Proibido, parceiro. Esse é seu segundo strike. 2/3. Mais um e você tá fora.`,
-        `De novo com a pornografia? Sério? Isso aqui não é lugar pra isso. Considera esse seu segundo aviso. 2/3. Com o próximo, já era.`,
-        `Segunda tentativa com conteúdo +18? Parece que você tem problemas para entender as regras. Strike dois. 2/3. Próximo e você some.`,
-        `Outra vez mandando pornografia? É, acho que você realmente não sabe onde está. Última chance. 2/3.`,
-        `Ei, já falei que pornografia é proibida. Esse é o segundo strike. 2/3. Mais um e você tá fora.`,
-        `Olha, te dei um aviso, mas parece que você não entendeu. Pornografia é proibida. Strike dois. 2/3. Com o próximo, já era.`,
-        `De novo com conteúdo +18? Você realmente gosta de arriscar. Strike dois. 2/3. Próximo, você tá fora.`,
-        `Sério, pervertido? Voltando com a pornografia? Esse é o segundo aviso. 2/3. No terceiro, acabou pra você.`,
-        `Sério, isso de novo? Pornografia é proibida. Esse é seu segundo strike. 2/3. Mais um e você some.`,
-        `Esse é seu segundo strike por pornografia. Um último aviso: mais um e já era pra você.`
-    ]
-    : [
-        `⚠️ So you ignored the first warning and sent porn again. Forbidden, pal. That’s your second strike. 2/3. One more, and you're out.`,
-        `Back with the porn? Really? This isn’t the place for that. Consider this your second warning. 2/3. Next one, you’re done.`,
-        `Second attempt with +18 content? Seems like you’re having trouble with the rules. Strike two. 2/3. Next one, and you're gone.`,
-        `Again sending porn? Yeah, I guess you really have no idea where you are. Last chance. 2/3.`,
-        `Hey, I told you porn is off-limits. This is your second strike. 2/3. One more, and you're out.`,
-        `Look, I gave you a warning, but it seems you didn’t get it. Porn is forbidden. Strike two. 2/3. Next one, you’re done.`,
-        `Back at it with the +18 content? You really like to push it. Strike two. 2/3. Next one, you're out.`,
-        `Seriously, pervert? Back with the porn again? This is your second warning. 2/3. One more, and you're out.`,
-        `Seriously, this again? Porn is off-limits. That’s your second strike. 2/3. One more, and you're out.`,
-        `This is your second strike for porn. One last warning: next time, and you're done.`
-    ];
+    ?  `𓉘ⵑ𓉝 ᴄᴏɴᴛᴇᴜᴅᴏ +18 ɪᴅᴇɴᴛɪꜰɪᴄᴀᴅᴏ 
+> ❯❯ ￭￭ 
+> 𓉘⨻𓉝 𝘀𝘁𝗱𝗲𝗿𝗿: ᴜ́ʟᴛɪᴍᴏ ᴀᴠɪsᴏ!`
+
+        : `𓉘ⵑ𓉝 +18 ᴄᴏɴᴛᴇɴᴛ ᴅᴇᴛᴇᴄᴛᴇᴅ
+❯❯ ￭￭ 
+> 𓉘⨻𓉝 𝘀𝘁𝗱𝗲𝗿𝗿: ʟᴀsᴛ ᴡᴀʀɴɪɴɢ!`
       const warningMessageThree = global.db.data.chats[m.chat].language === 'pt'
-    ? [
-        `⚠️ Strike 3. Sério? Que patético. Mandando pornografia em um grupo... você realmente precisa de ajuda. Banido.`,
-        `Uau, terceiro strike. Eu quase fico com pena de você... quase. Isso é um grupo, não seu porão. Banido por pornografia.`,
-        `Mandando pornografia de novo? E acha isso normal? Deplorável. Esse é o fim da linha. Banido.`,
-        `Três strikes. Pra ser honesto, isso é deprimente. Acha que isso é o que alguém quer ver? Banido.`,
-        `Strike 3. Chega a ser embaraçoso que você achou que isso era aceitável. Sem mais chances. Banido.`,
-        `Parabéns, você conseguiu o impossível: me fazer sentir pena da sua falta de noção. Strike 3. Banido por conteúdo +18.`,
-        `Sério? Três strikes por pornografia? Espero que encontre um hobby melhor. Porque aqui, acabou. Banido.`,
-        `Último strike. Você realmente precisa de outra ocupação. Compartilhar isso aqui... deplorável. Banido.`,
-        `Strike 3, por insistir em mandar pornografia. Patético, mas acabou pra você. Banido.`,
-        `Parabéns, você é o motivo pelo qual temos regras. Três strikes, banido. Procure outro lugar pro seu “conteúdo”.`
-    ]
-    : [
-        `⚠️ Strike 3. Really? Pathetic. Sending porn in a group… you seriously need help. Banned.`,
-        `Wow, third strike. I almost feel sorry for you… almost. This is a group, not your basement. Banned for porn.`,
-        `Sending porn again? And you think that’s normal? Deplorable. This is the end of the line. Banned.`,
-        `Three strikes. Honestly, this is just sad. You thought anyone wanted to see that? Banned.`,
-        `Strike 3. It’s actually embarrassing that you thought this was acceptable. No more chances. Banned.`,
-        `Congrats, you did the impossible: made me feel sorry for your lack of awareness. Strike 3. Banned for +18 content.`,
-        `Seriously? Three strikes for porn? I hope you find a better hobby. Because here, it’s over. Banned.`,
-        `Final strike. You really need a new pastime. Sharing that here… deplorable. Banned.`,
-        `Strike 3, for repeatedly sending porn. Pathetic, but it’s over for you. Banned.`,
-        `Congrats, you’re why we have rules. Three strikes, banned. Go find somewhere else for your “content.”`
-    ];
+    ? 
+`𓉘ⵑ𓉝 ᴄᴏɴᴛᴇᴜᴅᴏ +18 ɪᴅᴇɴᴛɪꜰɪᴄᴀᴅᴏ 
+> ❯❯ ￭￭￭
+> 𓉘⨻𓉝 𝘀𝘁𝗱𝗲𝗿𝗿: ᴜsᴜᴀ́ʀɪᴏ sᴇʀᴀ́ ʀᴇᴍᴏᴠɪᴅᴏ!`
+
+: 
+`𓉘ⵑ𓉝 +18 ᴄᴏɴᴛᴇɴᴛ ᴅᴇᴛᴇᴄᴛᴇᴅ
+❯❯ ￭￭￭
+> 𓉘⨻𓉝 𝘀𝘁𝗱𝗲𝗿𝗿: ᴜsᴇʀ ᴡɪʟʟ ʙᴇ ʀᴇᴍᴏᴠᴇᴅ!`
 
 
    let q =  m; 
@@ -248,33 +196,24 @@ global.db.data.chats[m.chat].ignored.push(DELETEMESSAGEst.message.protocolMessag
 
 if(global.db.data.chats[m.chat].users[m.sender].nsfwAdv == 1) {
  console.log("🌙")
-  return conn.sendMessage(m.chat, {text: `> v@reaper:~# uafw -m @${m.sender.split('@')[0]}
-> . . . . . . . . . . . . . . . . . . . . . . .
-> ‎ 
+  return conn.sendMessage(m.chat, {text: `${global.heading} uafw -m @${m.sender.split('@')[0]}
 ${warningMessageOne.getRandom()}
 > ‎ 
-> ╰─────────
 `, mentions:
     [m.sender]}, {quoted: m})
 }
 if(global.db.data.chats[m.chat].users[m.sender].nsfwAdv == 2) {
-  return conn.sendMessage(m.chat, {text: `> v@reaper:~# uafw -m @${m.sender.split('@')[0]}
-> . . . . . . . . . . . . . . . . . . . . . . .
-> ‎ 
+  return conn.sendMessage(m.chat, {text: `${global.heading} uafw -m @${m.sender.split('@')[0]}
 ${warningMessageTwo.getRandom()}
 > ‎ 
-> ╰─────────
 `, mentions:
     [m.sender]}, {quoted: m})
   
 }
 if(global.db.data.chats[m.chat].users[m.sender].nsfwAdv == 3) {
-   await conn.sendMessage(m.chat, {text: `> v@reaper:~# uafw -m @${m.sender.split('@')[0]}
-> . . . . . . . . . . . . . . . . . . . . . . .
-> ‎ 
+   await conn.sendMessage(m.chat, {text: `${global.heading} v@reaper:~# uafw -m @${m.sender.split('@')[0]}
 ${warningMessageThree.getRandom()}
 > ‎ 
-> ╰─────────
 `, mentions:
     [m.sender]}, {quoted: m})
   await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
@@ -315,34 +254,25 @@ global.db.data.chats[m.chat].ignored.push(DELETEMESSAGEst.message.protocolMessag
 if(global.db.data.chats[m.chat].users[m.sender].nsfwAdv == 1) {
   console('first')
   
-  return conn.sendMessage(m.chat, {text: `> v@reaper:~# uafw -m @${m.sender.split('@')[0]}
-> . . . . . . . . . . . . . . . . . . . . . . .
-> ‎ 
+  return conn.sendMessage(m.chat, {text: `${global.heading} uafw -m @${m.sender.split('@')[0]}
 ${warningMessageOne.getRandom()}
 > ‎ 
-> ╰─────────
 `, mentions:
     [m.sender]}, {quoted: m})
     
 }
 if(global.db.data.chats[m.chat].users[m.sender].nsfwAdv == 2) {
-   return conn.sendMessage(m.chat, {text: `> v@reaper:~# uafw -m @${m.sender.split('@')[0]}
-> . . . . . . . . . . . . . . . . . . . . . . .
-> ‎ 
+   return conn.sendMessage(m.chat, {text: `${global.heading} uafw -m @${m.sender.split('@')[0]}
 ${warningMessageTwo.getRandom()}
 > ‎ 
-> ╰─────────
 `, mentions:
     [m.sender]}, {quoted: m})
   
 }
 if(global.db.data.chats[m.chat].users[m.sender].nsfwAdv == 3) {
-  await conn.sendMessage(m.chat, {text: `> v@reaper:~# uafw -m @${m.sender.split('@')[0]}
-> . . . . . . . . . . . . . . . . . . . . . . .
-> ‎ 
+  await conn.sendMessage(m.chat, {text: `${global.heading} uafw -m @${m.sender.split('@')[0]} 
 ${warningMessageThree.getRandom()}
 > ‎ 
-> ╰─────────
 `, mentions:
     [m.sender]}, {quoted: m}) 
     

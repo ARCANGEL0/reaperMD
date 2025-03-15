@@ -123,43 +123,38 @@ global.db.data.chats[m.chat].autolevelup = false
    
    const language = global.db.data.chats[m.chat].language;
 
-const message = language === 'pt' ? `
-> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# cat /etc/trial.md
-> . . . . . . . . . . 
-> ‎ 
-[+] Período de Teste: Encerrado
-
-Então, ${m.pushName}... chegamos ao fim do seu "teste grátis." Interessante, não? Um pequeno vislumbre do que está por trás. Mas sejamos sinceros, você não está aqui só por isso. Você quer ver o que realmente acontece por trás das linhas de código.
-
-Interessado no que a fSociety de verdade, a byteSec, realmente oferece? Ferramentas avançadas, Deep learning pentest, auto-recon... Quer acesso? Sabe onde me encontrar.
-
-> Entre em contato:
-> +351 927 285 125
-
-[!] Mas lembre-se, algumas portas, uma vez abertas, não se fecham. Escolha sabiamente.
-
-— 𝙈𝙧.𝙍𝙤𝙗𝙤𝙩
-
-𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# _
-` : `
-> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# cat /etc/trial.md
-> . . . . . . . . . . 
-> ‎ 
-[+] Trial Period: Ended
-
-So, ${m.pushName}… here we are. The end of your "free trial." A nice little glimpse, right? But let’s be real, you didn’t come here for a taste. You want to see what’s really behind the code.
-
-Curious about what "real" fSociety, a.k.a byteSec, actually offers? Advanced tools. Auto-recon, Deep learning pentest. You want in? You know where to find me.
-
-> Reach us out:
-> +351 927 285 125
-
-[!] But remember, some doors, once opened, don’t close. Choose wisely.
-
-— 𝙈𝙧.𝙍𝙤𝙗𝙤𝙩
-
-𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# _
-`;
+   const message = language === 'pt' ? `
+> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# cat /etc/trial.md  
+> ‎  
+*[+]* *Pᴇʀɪ́ᴏᴅᴏ ᴅᴇ Tᴇsᴛᴇ:* Encerrado.  
+*[+] ᴜsᴜᴀ́ʀɪᴏ:* ${m.pushName}
+> ————————————————————————————————————————————————
+> *[𝗔𝗡𝗔́𝗟𝗜𝗦𝗘 𝗧𝗘́𝗖𝗡𝗜𝗖𝗔 𝗖𝗢𝗡𝗖𝗟𝗨𝗜́𝗗𝗔]:*
+> O ᴘᴇʀɪ́ᴏᴅᴏ ᴇxᴘᴇʀɪᴍᴇɴᴛᴀʟ ᴛᴇʀᴍɪɴᴏᴜ. Vᴏᴄᴇ̂ ᴛᴇᴠᴇ ᴀᴄᴇssᴏ ᴀ ʀᴇᴄᴜʀsᴏs ʙᴀ́sɪᴄᴏs. Sᴇ ᴅᴇsᴇᴊᴀ ᴄᴏɴᴛɪɴᴜᴀʀ ᴜsᴀɴᴅᴏ ᴏ ᴘʀᴏᴊᴇᴛᴏ R.Ξ.Λ.P.E.R ᴅᴇᴠᴇ ᴇɴᴛʀᴀʀ ᴇᴍ ᴄᴏɴᴛᴀᴛᴏ ᴄᴏᴍ ᴏ Dᴇsᴇɴᴠᴏʟᴠᴇᴅᴏʀ
+> ‎
+*[𝗖𝗢𝗡𝗧𝗔𝗧𝗢]:*
+> Eɴᴛʀᴇ ᴇᴍ ᴄᴏɴᴛᴀᴛᴏ: *+351927285125*. 
+> ‎
+*[𝙰𝙶𝙴𝙽𝚃]:* Vance
+*[𝚂𝚃𝙰𝚃𝚄𝚂]:* *Inativo*
+> ‎  
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊   ` : `
+> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# cat /etc/trial.md  
+> ‎  
+*[+]* *ᴛʀɪᴀʟ ᴘᴇʀɪᴏᴅ:* Ended.  
+*[+] ᴜsᴇʀ:* ${m.pushName}  
+> ————————————————————————————————————————————————  
+> *[𝗩𝗔𝗟𝗜𝗗𝗔𝗧𝗜𝗢𝗡]:*  
+> Tʜᴇ ᴇxᴘᴇʀɪᴍᴇɴᴛᴀʟ ᴘᴇʀɪᴏᴅ ʜᴀs ᴄᴏɴᴄʟᴜᴅᴇᴅ. Yᴏᴜ ʜᴀᴅ ᴀᴄᴄᴇss ᴛᴏ ʙᴀsɪᴄ ʀᴇsᴏᴜʀᴄᴇs. Iꜰ ʏᴏᴜ ᴡɪsʜ ᴛᴏ ᴄᴏɴᴛɪɴᴜᴇ ᴜsɪɴɢ ᴛʜᴇ R.Ξ.Λ.P.E.R ᴘʀᴏᴊᴇᴄᴛ, ʏᴏᴜ ᴍᴜsᴛ ᴄᴏɴᴛᴀᴄᴛ ᴛʜᴇ Dᴇᴠᴇʟᴏᴘᴇʀ.  
+> ‎  
+*[𝗖𝗢𝗡𝗧𝗔𝗖𝗧]:* 
+> Reach out at: *+351927285125*.  
+> ‎  
+*[𝙰𝙶𝙴𝙽𝚃]:* Vance  
+*[𝚂𝚃𝙰𝚃𝚄𝚂]:* *Inactive*  
+> ‎  
+> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊   
+   `;
 
 
  m.reply(message)
