@@ -55,13 +55,12 @@ await conn.sendFile(m.chat, data.data.link, 'error.mp3', null,m)
 
 */
  
-
 try {
   
   const randomDg = Math.floor(Math.random() * 1000) + 1;
-  const outputFileName = `/tmp/${randomDg}.mp3`;
-  const command = `yt-dlp -x --audio-format mp3 "${youtubeLink}" -o "${outputFileName}"`;
-  
+  const command = `yt-dlp -x --audio-format mp3 "${yt_play[0].url}" -o "${outputFileName}"`;
+  const outputFileName = `tmp/${randomDg}.mp3`;
+ 
   
   
   exec(command, async (error, stdout, stderr) => {
@@ -73,17 +72,20 @@ try {
         console.error(`Error: ${stderr}`);
         throw stderr;
     }
-  })
-  
-  
-    
+    console.log(`File saved as ${outputFileName}`)
     if(global.db.data.chats[m.chat].autolevelup){
       global.db.data.chats[m.chat].users[m.sender].money -= 80
        m.react("📀")
       await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)
     }
   
-   conn.sendMessage(m.chat, { audio: `tmp/${randomDg}.mp3`, mimetype: "audio/mpeg" }, { quoted: m });
+   await conn.sendMessage(m.chat, { audio: `tmp/${randomDg}.mp3`, mimetype: "audio/mpeg" }, { quoted: m });
+ 
+   
+  })
+  
+  
+    
   
   } 
   
