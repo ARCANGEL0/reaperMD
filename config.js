@@ -56,7 +56,7 @@ global.criadora = [
 global.backupFolder = "/root/drive/backups"
 // folder name where you save database backup !! MUST BE ON SAME FOLDER AS PROJET FOLDER
 
-global.backupGithub "https://github.com/ARCANGEL0/drive"
+global.backupGithub ="https://github.com/ARCANGEL0/drive"
 
 // Your separate backup repo where you will store database creds
 
