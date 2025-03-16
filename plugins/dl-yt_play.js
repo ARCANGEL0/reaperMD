@@ -136,7 +136,7 @@ const command = `yt "${yt_play[0].url}" -o "${outputFileName}"`;
 
 
 
-exec(command, (error, stdout, stderr) => {
+exec(command, async (error, stdout, stderr) => {
   if (error) {
       console.error(`Error executing command: ${error.message}`);
       throw error;
