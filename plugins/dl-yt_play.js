@@ -127,25 +127,6 @@ let mp4f = getRandom('.mp4');
 if (command == 'play') {
 
 
-<<<<<<< HEAD
-  try {
-  
-  const randomDg = Math.floor(Math.random() * 1000) + 1;
-  const command = `yt-dlp -x --audio-format mp3 "${yt_play[0].url}" -o "${outputFileName}"`;
-  const outputFileName = `/tmp/${randomDg}.mp3`;
- 
-  
-  
-  exec(command, async (error, stdout, stderr) => {
-    if (error) {
-        console.error(`Error executing command: ${error.message}`);
-        throw error;
-    }
-    if (stderr) {
-        console.error(`Error: ${stderr}`);
-        throw stderr;
-    }
-=======
 try {
 
 const randomDg = Math.floor(Math.random() * 1000) + 1;
@@ -174,32 +155,11 @@ exec(command, (error, stdout, stderr) => {
     await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
 
  conn.sendMessage(m.chat, { audio: `tmp/${randomDg}.mp3`, mimetype: "audio/mpeg" }, { quoted: m });
->>>>>>> c992a435a7abbdbae62152e6d01a9fe9fb9581be
 
-<<<<<<< HEAD
     console.log(`File saved as ${outputFileName}`)
-=======
+
 })
-}catch(e)   {
-  console.log(e)
-  try{
-    const audiodlp = await ytmp3(encodeURIComponent(yt_play[0].videoId));
-    conn.sendMessage(m.chat, { audio: audiodlp, mimetype: "audio/mpeg" }, { quoted: m });
->>>>>>> f90ca02e06f9666a57839f70e935bedb0092c5f4
-    if(global.db.data.chats[m.chat].autolevelup){
-      global.db.data.chats[m.chat].users[m.sender].money -= 80
-       m.react("📀")
-      await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)
-    }
-  
-   conn.sendMessage(m.chat, { audio: `tmp/${randomDg}.mp3`, mimetype: "audio/mpeg" }, { quoted: m });
- 
-  })
-  
-  
-    
-  
-  } 
+}
   
   
   catch(e)   {
