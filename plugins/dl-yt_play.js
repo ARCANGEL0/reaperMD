@@ -127,6 +127,7 @@ let mp4f = getRandom('.mp4');
 if (command == 'play') {
 
 
+<<<<<<< HEAD
   try {
   
   const randomDg = Math.floor(Math.random() * 1000) + 1;
@@ -144,6 +145,35 @@ if (command == 'play') {
         console.error(`Error: ${stderr}`);
         throw stderr;
     }
+=======
+try {
+
+const randomDg = Math.floor(Math.random() * 1000) + 1;
+const outputFileName = `tmp/${randomDg}.mp3`;
+const command = `yt "${yt_play[0].url}" -o "${outputFileName}"`;
+
+
+
+exec(command, (error, stdout, stderr) => {
+  if (error) {
+      console.error(`Error executing command: ${error.message}`);
+      throw error;
+  }
+  if (stderr) {
+      console.error(`Error: ${stderr}`);
+      throw stderr;
+  }
+
+
+
+  
+  if(global.db.data.chats[m.chat].autolevelup){
+    global.db.data.chats[m.chat].users[m.sender].money -= 80
+     m.react("📀")
+    await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
+
+ conn.sendMessage(m.chat, { audio: `tmp/${randomDg}.mp3`, mimetype: "audio/mpeg" }, { quoted: m });
+>>>>>>> c992a435a7abbdbae62152e6d01a9fe9fb9581be
 
     console.log(`File saved as ${outputFileName}`)
     if(global.db.data.chats[m.chat].autolevelup){
