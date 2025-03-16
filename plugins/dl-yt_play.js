@@ -153,8 +153,7 @@ exec(command, async (error, stdout, stderr) => {
      m.react("📀")
     await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
 
- conn.sendMessage(m.chat, { audio: `tmp/${randomDg}.mp3`, mimetype: "audio/mpeg" }, { quoted: m });
-
+ conn.sendFile(m.chat, `tmp/${randomDg}.mp3`,'err.mp3',null,m)
     console.log(`File saved as ${outputFileName}`)
 
 })
