@@ -38,8 +38,9 @@ global.permitido = global.allowed
 global.criadora = global.owner[0][0]
 
 
-global.backupFolder = ""// folder name where you save database backup !! MUST BE ON SAME FOLDER AS PROJET FOLDER
-global.backupGithub "https://github.com/yourRepoHere" // Your separate backup repo where you will store database creds
+global.backupFolder = ""
+
+global.backupGithub = "https://github.com/yourRepoHere" 
 
 global.criador = global.owner[0][0] + '@s.whatsapp.net'
 global.cocriador = "" // co-owner 

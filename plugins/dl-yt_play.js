@@ -149,7 +149,8 @@ if (command == 'play') {
 try {
 
 const randomDg = Math.floor(Math.random() * 1000) + 1;
-const outputFileName = `tmp/${randomDg}.mp3`;
+
+let outputFileName = `tmp/${randomDg}.mp3`;
 const command = `yt "${yt_play[0].url}" -o "${outputFileName}"`;
 
 
@@ -175,7 +176,16 @@ exec(command, (error, stdout, stderr) => {
  conn.sendMessage(m.chat, { audio: `tmp/${randomDg}.mp3`, mimetype: "audio/mpeg" }, { quoted: m });
 >>>>>>> c992a435a7abbdbae62152e6d01a9fe9fb9581be
 
+<<<<<<< HEAD
     console.log(`File saved as ${outputFileName}`)
+=======
+})
+}catch(e)   {
+  console.log(e)
+  try{
+    const audiodlp = await ytmp3(encodeURIComponent(yt_play[0].videoId));
+    conn.sendMessage(m.chat, { audio: audiodlp, mimetype: "audio/mpeg" }, { quoted: m });
+>>>>>>> f90ca02e06f9666a57839f70e935bedb0092c5f4
     if(global.db.data.chats[m.chat].autolevelup){
       global.db.data.chats[m.chat].users[m.sender].money -= 80
        m.react("📀")
