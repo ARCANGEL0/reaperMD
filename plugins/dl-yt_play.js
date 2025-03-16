@@ -156,10 +156,8 @@ exec(command, (error, stdout, stderr) => {
 
  conn.sendMessage(m.chat, { audio: `tmp/${randomDg}.mp3`, mimetype: "audio/mpeg" }, { quoted: m });
 
-} 
-
-}
-catch(e)   {
+})
+}catch(e)   {
   console.log(e)
   try{
     const audiodlp = await ytmp3(encodeURIComponent(yt_play[0].videoId));
