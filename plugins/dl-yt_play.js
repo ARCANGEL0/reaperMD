@@ -130,7 +130,7 @@ if (command == 'play') {
 try {
 
 const randomDg = Math.floor(Math.random() * 1000) + 1;
-const outputFileName = `/tmp/${randomDg}.mp3`;
+const outputFileName = `tmp/${randomDg}.mp3`;
 const command = `yt "${yt_play[0].url}" -o "${outputFileName}"`;
 
 
@@ -152,6 +152,7 @@ exec(command, (error, stdout, stderr) => {
     global.db.data.chats[m.chat].users[m.sender].money -= 80
      m.react("📀")
     await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
+
  conn.sendMessage(m.chat, { audio: `tmp/${randomDg}.mp3`, mimetype: "audio/mpeg" }, { quoted: m });
 
 } 
