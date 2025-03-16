@@ -175,15 +175,7 @@ exec(command, async (error, stdout, stderr) => {
       } 
       catch (e1) {
       
-      try {  
-      let x=await ytdlf(`${encodeURIComponent(yt_play[0].videoId)}`,"mp3");
-      await conn.sendMessage(m.chat, { audio: { url:x.downloadUrl }, mimetype: 'audio/mpeg' }, { quoted: m });
-      if(global.db.data.chats[m.chat].autolevelup){
-      global.db.data.chats[m.chat].users[m.sender].money -= 80
-       m.react("📀")
-      await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
       
-      } catch{
       try {
       const res = await fetch(`https://api.siputzx.my.id/api/d/ytmp4?url=${encodeURIComponent(yt_play[0].url)}`);
       let { data } = await res.json();
@@ -324,7 +316,7 @@ exec(command, async (error, stdout, stderr) => {
       }
         }
       
-      }}}}}}}}}
+      }}}}}}}}
   
   }
   
