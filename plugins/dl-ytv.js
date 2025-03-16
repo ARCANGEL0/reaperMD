@@ -68,7 +68,7 @@ try {
       await m.reply(` 125 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)
     }
   console.log(`File downloaded at ${outputFilename}`)
-  await conn.sendMessage(m.chat, { video: { url: outputFilename }, fileName: `video.mp4`, mimetype: 'video/mp4', caption: ``}, { quoted: m })
+ conn.sendFile(m.chat, `tmp/${randomDg}.mp4`,'err.mp4',null,m)
   
   })
   
