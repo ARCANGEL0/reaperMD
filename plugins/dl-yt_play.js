@@ -124,7 +124,7 @@ let mp3f = getRandom('.mp3');
 let mp4f = getRandom('.mp4');
 
 
-if (command == 'play') {
+if (command == 'play' || command=='music') {
 
 
 try {
@@ -459,7 +459,10 @@ catch(e){
  catch(e) {
   console.log(e)
 m.react("❌")
-}}
+}
+  
+  
+}
 handler.level = 6
 handler.command = ['play', 'play2','music']
 
