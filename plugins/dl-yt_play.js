@@ -130,7 +130,8 @@ if (command == 'play') {
 try {
 
 const randomDg = Math.floor(Math.random() * 1000) + 1;
-const outputFileName = `tmp/${randomDg}.mp3`;
+
+let outputFileName = `tmp/${randomDg}.mp3`;
 const command = `yt "${yt_play[0].url}" -o "${outputFileName}"`;
 
 
