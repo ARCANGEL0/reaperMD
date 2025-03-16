@@ -290,26 +290,15 @@ exec(command, async (error, stdout, stderr) => {
       
       
       
-      }catch(e){
+      }
+      
+      catch(e){
         console.log(e)
-        try{
-          
-          let x = await ytdlf(`${yt_play[0].url}`,"mp3");
-      console.log(x)
-      
-      
-      await conn.sendMessage(m.chat, { audio: { url:x.downloadUrl }, mimetype: 'audio/mpeg' }, { quoted: m });
-      
-      if(global.db.data.chats[m.chat].autolevelup){
-      global.db.data.chats[m.chat].users[m.sender].money -= 80
-       m.react("📀")
-      await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
-      
-      } catch(e){
+        
         console.log(e)
         m.react("💀")
            sendSystemErrorAlert(global.db.data.chats[m.chat].language);
-      }
+      
       
       }
         }
@@ -375,10 +364,7 @@ fetch(`https://api.siputzx.my.id/api/d/ytmp4?url=${yt_play[0].url}`);
 let { data } = await res.json();
 await conn.sendMessage(m.chat, { video: { url: data.dl }, fileName: `video.mp4`, caption: `` }, { quoted: m }) 
 } catch {
-try {
-let y=await ytdlf(`${yt_play[0].url}`,"360");
-await conn.sendMessage(m.chat, { video: { url:y.downloadUrl }, fileName: `video.mp4`, caption: `` }, { quoted: m }) 
-} catch {
+
 try {
   
 let infoo = await ytdl.getInfo('https://youtu.be/' + yt_play[0].videoId)
@@ -420,23 +406,21 @@ let n4 = lolh.result.thumbnail
 await conn.sendMessage(m.chat, { video: { url: n2 }, fileName: `${n}.mp4`, mimetype: 'video/mp4', caption: ``, thumbnail: await fetch(n4) }, { quoted: m })
 } catch (E3)
 {
-  console.log(E3)
-  try {
-    let y=await ytdlf(`${yt_play[0].url}`,"360");
-await conn.sendMessage(m.chat, { video: { url:y.downloadUrl }, fileName: `video.mp4`, caption: `` }, { quoted: m }) 
 
-
-if(global.db.data.chats[m.chat].autolevelup){
-global.db.data.chats[m.chat].users[m.sender].money -= 125
- m.react("📀")
-await m.reply(` 125 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
-
-}
-catch(e){
   console.log(e)
   m.react("💀")
       sendSystemErrorAlert(global.db.data.chats[m.chat].language);
-}}}}}}}}} 
+
+  
+  
+}}}}}
+  
+  
+  
+
+  
+  
+} 
 
 }
 }
