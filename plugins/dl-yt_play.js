@@ -16,7 +16,6 @@ import { join } from 'path'
 import pkg from '@neoxr/youtube-scraper'
 const { Youtube } = pkg
 import { youtubedl, youtubedlv2 } from '@bochilteam/scraper'
-import ytdlf from "@EdderBot02/ytdlf"
 
   import {exec} from 'child_process'
 
@@ -75,7 +74,7 @@ const usedText = global.idioma == 'en' ? '𝘶𝘴𝘦𝘥' : '𝘶𝘴𝘢𝘥�
 
 
 
-const mp3Search = global.idioma == 'en' ? `┌──[ BYΓΞSΞC ]─[~] 
+const mp3Search = global.idioma == 'en' ? `┌──[ 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs} ]─[~] 
 └─ $ ytdl -mp3 --help
 > .   . . .. . . .  .  . . .. .  .  . . .. . .  .
 > ʜᴇʏ, ᴋɪᴅ. ᴡʜᴀᴛ ᴀᴜᴅɪᴏ ᴀʀᴇ ʏᴏᴜ ʟᴏᴏᴋɪɴɢ ᴛᴏ ꜱᴇᴀʀᴄʜ ꜰᴏʀ ᴏɴ ʏᴏᴜᴛᴜʙᴇ? ᴀ ʜᴇᴀʀᴛʙʀᴇᴀᴋ ꜱᴏɴɢ ᴀʙᴏᴜᴛ ᴀɴ ᴇx? ᴍᴀʏʙᴇ ᴀ ᴄᴏɴᴄᴇʀᴛ ᴄʟɪᴘ?
@@ -87,7 +86,7 @@ const mp3Search = global.idioma == 'en' ? `┌──[ BYΓΞSΞC ]─[~]
 > . . . . . . . . . . . . . . . . . . . . . . . . 
 ` 
 : 
-`┌──[ BYΓΞSΞC ]─[~] 
+`┌──[ 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs} ]─[~] 
 └─ $ ytdl -mp3 --help
 > .   . . .. . . .  .  . . .. .  .  . . .. . .  .
 > ᴇ ᴀɪ, ɢᴀʀᴏᴛᴏ. Qᴜᴀʟ ᴀᴜᴅɪᴏ ᴠᴏᴄᴇ ᴇꜱᴛᴀ ᴀꜰɪᴍ ᴅᴇ ʙᴜꜱᴄᴀʀ ɴᴏ ʏᴏᴜᴛᴜʙᴇ? 
@@ -110,7 +109,7 @@ if (command === 'play') {
 additionalText = 'ᴀᴜᴅɪᴏ'
 } else if (command === 'play2') {
 additionalText = 'ᴠɪᴅᴇᴏ'}
-let captionvid = `┌──[ BYΓΞSΞC ]─[~] 
+let captionvid = `┌──[ 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs} ]─[~] 
 └─ $ ytdl -mp3 $1
 > ${global.idioma == 'en' ? 'ꜱᴇɴᴅɪɴɢ ' : 'ᴇɴᴠɪᴀɴᴅᴏ '}${additionalText}
 | [×] ${yt_play[0].title}
@@ -124,42 +123,41 @@ let mp3f = getRandom('.mp3');
 let mp4f = getRandom('.mp4');
 
 
-if (command == 'play') {
+if (command == 'play' || command=='music') {
 
 
-  try {
+try {
+
+const randomDg = Math.floor(Math.random() * 1000) + 1;
+
+let outputFileName = `tmp/${randomDg}.mp3`;
+const command = `yt-dlp -x --audio-format mp3 "${yt_play[0].url}" -o "${outputFileName}"`;
+
+
+
+exec(command, async (error, stdout, stderr) => {
+  if (error) {
+      console.error(`Error executing command: ${error.message}`);
+      throw error;
+  }
+  if (stderr) {
+      console.error(`Error: ${stderr}`);
+      throw stderr;
+  }
+
+
+
   
-  const randomDg = Math.floor(Math.random() * 1000) + 1;
-  const command = `yt-dlp -x --audio-format mp3 "${yt_play[0].url}" -o "${outputFileName}"`;
-  const outputFileName = `tmp/${randomDg}.mp3`;
- 
-  
-  
-  exec(command, async (error, stdout, stderr) => {
-    if (error) {
-        console.error(`Error executing command: ${error.message}`);
-        throw error;
-    }
-    if (stderr) {
-        console.error(`Error: ${stderr}`);
-        throw stderr;
-    }
+  if(global.db.data.chats[m.chat].autolevelup){
+    global.db.data.chats[m.chat].users[m.sender].money -= 80
+     m.react("📀")
+    await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
+
+ conn.sendFile(m.chat, `tmp/${randomDg}.mp3`,'err.mp3',null,m)
     console.log(`File saved as ${outputFileName}`)
-    if(global.db.data.chats[m.chat].autolevelup){
-      global.db.data.chats[m.chat].users[m.sender].money -= 80
-       m.react("📀")
-      await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)
-    }
-  
-   await conn.sendMessage(m.chat, { audio: `tmp/${randomDg}.mp3`, mimetype: "audio/mpeg" }, { quoted: m });
- 
-   
-  })
-  
-  
-    
-  
-  } 
+
+})
+}
   
   
   catch(e)   {
@@ -175,15 +173,7 @@ if (command == 'play') {
       } 
       catch (e1) {
       
-      try {  
-      let x=await ytdlf(`${encodeURIComponent(yt_play[0].videoId)}`,"mp3");
-      await conn.sendMessage(m.chat, { audio: { url:x.downloadUrl }, mimetype: 'audio/mpeg' }, { quoted: m });
-      if(global.db.data.chats[m.chat].autolevelup){
-      global.db.data.chats[m.chat].users[m.sender].money -= 80
-       m.react("📀")
-      await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
       
-      } catch{
       try {
       const res = await fetch(`https://api.siputzx.my.id/api/d/ytmp4?url=${encodeURIComponent(yt_play[0].url)}`);
       let { data } = await res.json();
@@ -324,7 +314,7 @@ if (command == 'play') {
       }
         }
       
-      }}}}}}}}}
+      }}}}}}}}
   
   }
   
@@ -343,7 +333,7 @@ if (command == 'play2') {
     
     
     
-    exec(command, async (error, stdout, stderr) => {
+    exec(command, (error, stdout, stderr) => {
       if (error) {
           console.error(`Error executing command: ${error.message}`);
           throw error;
@@ -352,19 +342,18 @@ if (command == 'play2') {
           console.error(`Error: ${stderr}`);
           throw stderr;
       }
+    })
+    
+    
+      
       if(global.db.data.chats[m.chat].autolevelup){
         global.db.data.chats[m.chat].users[m.sender].money -= 125
          m.react("📀")
         await m.reply(` 125 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)
       }
-    console.log(`File downloaded at ${outputFilename}`)
-    await conn.sendMessage(m.chat, { video: { url: outputFilename }, fileName: `video.mp4`, mimetype: 'video/mp4', caption: ``}, { quoted: m })
     
-    })
+    conn.sendFile(m.chat, `tmp/${randomDg}.mp4`,'err.mp4',null,m)
     
-    
-      
-   
     } 
 
   catch(e) {
@@ -460,7 +449,10 @@ catch(e){
  catch(e) {
   console.log(e)
 m.react("❌")
-}}
+}
+  
+  
+}
 handler.level = 6
 handler.command = ['play', 'play2','music']
 
