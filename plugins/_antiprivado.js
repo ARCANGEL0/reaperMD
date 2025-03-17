@@ -71,10 +71,10 @@ if(m.text ==1){
     m.react("✅")
   global.db.data.chats[m.chat].language ='pt'
   global.db.data.chats[m.chat].langAnswered = true 
-  global.db.data.chats[m.chat].msgCount =0
+  global.db.data.chats[m.chat].msgCount = 0
   return !0
 } 
-else if(m.text==2){
+else if(m.text==2 ){
     m.react("✅")
         await conn.sendMessage(m.chat, {
             text: `v@reaper:~# lang-config
@@ -88,7 +88,8 @@ else if(m.text==2){
        
         },m);
   global.db.data.chats[m.chat].language ='en'
-  global.db.data.chats[m.chat].langAnswered = true   global.db.data.chats[m.chat].msgCount =0
+  global.db.data.chats[m.chat].langAnswered = true 
+    global.db.data.chats[m.chat].msgCount = 0
   return !0
   
 }
