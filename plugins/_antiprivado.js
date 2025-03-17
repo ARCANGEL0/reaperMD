@@ -14,7 +14,6 @@
 // ╰─...⌬─────────────────────────────────╯
 
 
-const comandos = /piedra|papel|tijera|estado|verificar|code|jadibot --code|--code|creadora|bottemporal|grupos|instalarbot|términos|bots|deletebot|eliminarsesion|serbot|verify|register|registrar|reg|reg1|nombre|name|nombre2|name2|edad|age|edad2|age2|genero|género|gender|identidad|pasatiempo|hobby|identify|finalizar|pas2|pas3|pas4|pas5|registroc|deletesesion|registror|jadibot/i
 export async function before(m, {conn, isAdmin, isBotAdmin, isOwner, isROwner,isAllowed ,plugin,usedPrefix, command }) {
   
   
@@ -23,15 +22,17 @@ if(global.db.data.chats[m.chat].fim) return !1
 if (m.isGroup) return !1
 if (m.fromMe) return !1
 if (!m.message) return !0
+
 const regex = new RegExp(`^${comandos.source}$`, 'i')
 if (regex.test(m.text.toLowerCase().trim())) return !0
 
 let chat, user, bot
 chat = global.db.data.chats[m.chat]
 
-if(typeof global.db.data.chats[m.chat].first === 'undefined'){
+if(!global.db.data.chats[m.chat].first || typeof global.db.data.chats[m.chat].first === 'undefined'){
 
 global.db.data.chats[m.chat].first = true
+global.db.data.chats[m.chat].langAnswered = false
 global.db.data.chats[m.chat].privateChat = true
 
   
@@ -69,7 +70,7 @@ if(m.text ==1){
    
     m.react("✅")
   global.db.data.chats[m.chat].language ='pt'
-  global.db.data.chats[m.chat].first = false 
+  global.db.data.chats[m.chat].langAnswered = true 
   global.db.data.chats[m.chat].msgCount =0
   return !0
 } 
@@ -87,8 +88,7 @@ else if(m.text==2){
        
         },m);
   global.db.data.chats[m.chat].language ='en'
-  global.db.data.chats[m.chat].first = false 
-  global.db.data.chats[m.chat].msgCount =0
+  global.db.data.chats[m.chat].langAnswered = true   global.db.data.chats[m.chat].msgCount =0
   return !0
   
 }
