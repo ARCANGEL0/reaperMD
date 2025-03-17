@@ -31,12 +31,11 @@ if (m.text.includes(linkThisGroup)) {
 
     if (global.db.data.chats[m.chat].language === 'pt') {
       warnLinks = `
-  > v@reaper: #~ journalctl
+  ${global.heading} journalctl
   > ---------------------------------------
-  
-  [!] 0x8007000E: Violação de Regras
+  *𓉘!𓉝* 𝗨𝘀𝘂𝗮́𝗿𝗶𝗼 𝗕𝗮𝗻𝗶𝗱𝗼
   ────────────────────────────────
-  > Não mande links do Whatsapp neste grupo. 
+  > Não mande links do Whatsapp neste grupo.  
   > Isso é estritamente proibido pelas regras.
   > Qualquer desafio a esta ordem resultará em 
   > consequências imediatas.
@@ -46,10 +45,9 @@ if (m.text.includes(linkThisGroup)) {
       `;
   } else if (global.db.data.chats[m.chat].language === 'en') {
       warnLinks = `
-  > v@reaper: #~ journalctl
+  ${global.heading} journalctl
   > ---------------------------------------
-  
-  [!] WARNING: Rule Violation
+  *𓉘!𓉝* 𝗨𝘀𝗲𝗿 𝗕𝗮𝗻𝗻𝗲𝗱
   ────────────────────────────────
   > Do not send Whatsapp links in this group.
   > It is strictly banned by defined rules.
@@ -60,6 +58,7 @@ if (m.text.includes(linkThisGroup)) {
   ────────────────────────────────
       `;
   }
+      
 
 
  await conn.sendMessage(m.chat, {text: warnLinks, mentions: [m.sender]}, {quoted: m})
@@ -73,41 +72,35 @@ if (m.text.includes(linkThisGroup)) {
     
     let linksBAN; 
 
-if (global.db.data.chats[m.chat].language === 'pt') {
+    if (global.db.data.chats[m.chat].language === 'pt') {
+      linksBAN = `${global.heading} uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
+  > ---------------------------------------
+  >>> [!] ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ 
+  ────────────────────────────────
+  > [𝗔𝗟𝗘𝗥𝗧] ʟɪɴᴋ ᴡʜᴀᴛsᴀᴘᴘ ᴅᴇᴛᴇᴄᴛᴀᴅᴏ
+  > *𓉘!𓉝* ᴏ ᴜsᴜᴀ́ʀɪᴏ ᴠɪᴏʟᴏᴜ ᴀs ʀᴇɢʀᴀs ᴅᴏ ɢʀᴜᴘᴏ.​
+  > .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+  > // 𝙍𝙚𝙢𝙤𝙫𝙚𝙣𝙙𝙤 ${global.db.data.users[m.sender].name}... 
+  > ‎ 
+  > ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊  
+  ────────────────────────────────
+      `;
+  }
+  else if (global.db.data.chats[m.chat].language === 'en') {
     linksBAN = `
-${global.heading}  uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
-> ---------------------------------------
-
->>> [!] ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ 
-────────────────────────────────
-> [+] Você achou que poderia ignorar minhas instruções?
-> [+] Links do whatsapp não são permitidos aqui.
-> [+] Agora, você decidiu se arriscar. A consequência? 
-> [+] Você será removido do sistema. 
-
-> Adeus, ${global.db.data.users[m.sender].name}. 
-> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊  
-────────────────────────────────
+  ${global.heading} uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
+  > ---------------------------------------
+  >>> [!] ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ
+  ────────────────────────────────
+  > [𝗔𝗟𝗘𝗥𝗧] ᴡʜᴀᴛsᴀᴘᴘ ʟɪɴᴋ ᴅᴇᴛᴇᴄᴛᴇᴅ
+  > *𓉘!𓉝* ᴜsᴇʀ ʜᴀs ᴠɪᴏʟᴀᴛᴇᴅ ɢʀᴏᴜᴘ ʀᴜʟᴇs
+  > .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+  > // 𝙍𝙚𝙢𝙤𝙫𝙞𝙣𝙜 ${global.db.data.users[m.sender].name}...
+  > ‎ 
+  > ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊  
+  ────────────────────────────────
     `;
-}
-else if (global.db.data.chats[m.chat].language === 'en') {
-  linksBAN = `
-${global.heading}  uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
-> ---------------------------------------
-
-[!] ʀᴇᴍᴏᴠɪɴɢ ᴘɪᴅ
-────────────────────────────────
-> [+] You thought you could just ignore my orders?
-> [+] Whatsapp Links are strictly forbidden here.
-> [+] You chose to take a risk. The consequence? 
-> [+] You’re getting erased from the system. 
-
-> Goodbye, ${global.db.data.users[m.sender].name}. 
-> ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊  
-────────────────────────────────
-  `;
-}
-
+  }
  await conn.sendMessage(m.chat, {text: linksBAN, mentions: [m.sender]}, {quoted: m})
  
 //No longer available

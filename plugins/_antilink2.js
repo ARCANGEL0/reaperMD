@@ -45,7 +45,7 @@ ${global.heading} journalctl
 > ---------------------------------------
 *𓉘!𓉝* 𝗨𝘀𝘂𝗮́𝗿𝗶𝗼 𝗕𝗮𝗻𝗶𝗱𝗼
 ────────────────────────────────
-> Não mande links neste grupo. 
+> Não mande links neste grupo.  
 > Isso é estritamente proibido pelas regras.
 > Qualquer desafio a esta ordem resultará em 
 > consequências imediatas.

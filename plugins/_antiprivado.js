@@ -36,7 +36,7 @@ global.db.data.chats[m.chat].langAnswered = false
 global.db.data.chats[m.chat].privateChat = true
 
   
-    let getLang = await m.reply(`v@reaper:~# lang-config
+    let getLang = await m.reply(`${global.heading} set-locale
 ╭ . . . . . . . . . . . . . . . . . . . . . . .
 > [+] LANG CONFIG
 > -----------------------
@@ -47,16 +47,15 @@ global.db.data.chats[m.chat].privateChat = true
 ╰─────────
 `)
 
- global.db.data.chats[m.chat].langChangeID = getLang.key.id
-  
+
   
 
 }
-if (global.db.data.chats[m.chat].first && m.text) {
-if(m.text ==1){
+if (global.db.data.chats[m.chat].first && !global.db.data.chats[m.chat].langAnswered && m.text) {
+if(m.text ==1 && !global.db.data.chats[m.chat].langAnswered){
   await conn.sendMessage(m.chat,
         {
-            text: `v@reaper:~# lang-config
+            text: `${global.heading} set-locale
 ╭ . . . . . . . . . . . . . . . . . . . . . . .
 > [+] LANG CONFIG
 > -----------------------
@@ -74,10 +73,10 @@ if(m.text ==1){
   global.db.data.chats[m.chat].msgCount = 0
   return !0
 } 
-else if(m.text==2 ){
+else if(m.text==2 && !global.db.data.chats[m.chat].langAnswered){
     m.react("✅")
         await conn.sendMessage(m.chat, {
-            text: `v@reaper:~# lang-config
+            text: `${global.heading} set-locale
 ╭ . . . . . . . . . . . . . . . . . . . . . . .
 > [+] LANG CONFIG
 > -----------------------
@@ -94,8 +93,8 @@ else if(m.text==2 ){
   
 }
 
-  else{
-    await m.reply(`v@reaper:~# lang-config
+  else if (global.db.data.chats[m.chat].langAnswered && !['1', '2'].includes(m.text)){
+    await m.reply(`${global.heading} set-locale
 ╭ . . . . . . . . . . . . . . . . . . . . . . .
 > [+] LANG CONFIG
 > -----------------------
@@ -120,7 +119,7 @@ else {
   user = global.db.data.users[m.sender]
 bot = global.db.data.settings[this.user.jid] || {}
 global.db.data.chats[m.chat].autolevelup = false
- if(!isAllowed && !m.fromMe && bot.antiPrivate && global.db.data.chats[m.chat].msgCount >= 10){
+ if(!isAllowed && !m.fromMe && !bot.antiPrivate && global.db.data.chats[m.chat].msgCount >= 10){
    
    const language = global.db.data.chats[m.chat].language;
 
@@ -161,7 +160,7 @@ global.db.data.chats[m.chat].autolevelup = false
  m.reply(message)
 global.db.data.chats[m.chat].fim = true
 }
-else if (!isAllowed && bot.antiPrivate) {
+else if (!isAllowed && !bot.antiPrivate) {
   global.db.data.chats[m.chat].msgCount+=1
 
 return !1

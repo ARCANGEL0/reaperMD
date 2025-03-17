@@ -38,90 +38,23 @@ let buffer = Buffer.from([])
 
 
  const exposedMessage = global.db.data.chats[m.chat].language === 'pt'
-    ? [
-        `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# extundelete /dev/sda1 -r --target=view_once
-. . . . . . . . . . . . . . . . . . . . . . . . 
+    ?  
+`${global.heading} steghide extract -sf
+𓉘🞢𓉝 ᴍᴇɴsᴀɢᴇᴍ ᴏᴄᴜʟᴛᴀ ᴅᴇᴛᴇᴄᴛᴀᴅᴀ
+> ‎ 
+> ⮝ 𝐬𝐭𝐝: ᴇxᴛʀᴀɪɴᴅᴏ ᴍᴇᴛᴀᴅᴀᴅᴏs
+> ᴜsᴜᴀʀɪᴏ: @${m.sender.split('@')[0]}
+${msg[type].caption ? '> '+ msg[type].caption : ''}`
 
-[+] Arquivo recuperado:
-> >>> Usuário: @${m.sender.split('@')[0]}${msg[type].caption ? '> '+
-msg[type].caption : ''}
-| 
-> Desculpa, garoto. Aqui, não mantemos segredos uns dos outros.
-> # Vigilância ativa - ΒYƬΣSΞC-MĐ `,
+:
 
-        `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# photorec /dev/sda1 --filetype=jpeg --undelete
-. . . . . . . . . . . . . . . . . . . . . . . .
-
-[+] Arquivo recuperado:
-> >>> Usuário: @${m.sender.split('@')[0]}${msg[type].caption ? '> '+
-msg[type].caption : ''}
-|
-> Mensagens “visualizar uma vez”? Ah, claro...
-> # Vigilância ativa - ΒYƬΣSΞC-MĐ
-`,
-
-        `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# recoverfiles /dev/sda1 -p --view-once
-. . . . . . . . . . . . . . . . . . . . . . . .
-
-[+] Arquivo recuperado:
-> >>> Usuário: @${m.sender.split('@')[0]}${msg[type].caption ? '> '+
-msg[type].caption : ''}
-| 
-> Parece que alguém levou um xposed
-> # Vigilância ativa - ΒYƬΣSΞC-MĐ`,
-
-        `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# dd if=/dev/sda1 of=/recovered.msg bs=4M
-. . . . . . . . . . . . . . . . . . . . . . . .
-
-[+] Arquivo recuperado:
-> >>> Usuário: @${m.sender.split('@')[0]}${msg[type].caption ? '> '+
-msg[type].caption : ''}
-| 
-> Ops, era para ser segredo? 
-> # Vigilância ativa - ΒYƬΣSΞC-MĐ`
-    ]
-    : [
-        `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# extundelete /dev/sda1 -r --target=view_once
-. . . . . . . . . . . . . . . . . . . . . . . . 
-
-[+] File recovered:
-> >>> User: @${m.sender.split('@')[0]}${msg[type].caption ? '> '+
-msg[type].caption : ''}
-| 
-> Sorry, kiddo. In here, we don’t keep secrets from each other.
-> # Monitored by - ΒYƬΣSΞC-MĐ
-`,
-
-        `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# photorec /dev/sda1 --filetype=jpeg --undelete
-. . . . . . . . . . . . . . . . . . . . . . . .
-
-[+] File recovered:
-> >>> User: @${m.sender.split('@')[0]}${msg[type].caption ? '> '+
-msg[type].caption : ''}
-| 
-> View only once messages? Yeah, right…
-> # Monitored by - ΒYƬΣSΞC-MĐ`,
-
-        `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# recoverfiles /dev/sda1 -p --view-once
-. . . . . . . . . . . . . . . . . . . . . . . .
-
-[+] File recovered:
-> >>> User: @${m.sender.split('@')[0]}${msg[type].caption ? '> '+
-msg[type].caption : ''}
-|
-> Seems like someone just got xposed
-> # Monitored by - ΒYƬΣSΞC-MĐ`,
-
-        `> 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs}:~# dd if=/dev/sda1 of=/recovered.msg bs=4M
-. . . . . . . . . . . . . . . . . . . . . . . .
-
-[+] File recovered:
-> >>> User: @${m.sender.split('@')[0]}${msg[type].caption ? '> '+
-msg[type].caption : ''}
-|
-> Ops, was it supposed to be a secret?
-> # Monitored by - ΒYƬΣSΞC-MĐ`
-    ]
+`${global.heading} steghide extract -sf
+𓉘🞢𓉝 ʜɪᴅᴅᴇɴ ᴍᴇssᴀɢᴇ ɪᴅᴇɴᴛɪꜰɪᴇᴅ
+> ‎ 
+> ⮝ 𝐬𝐭𝐝: ᴇxᴛʀᴀᴄᴛɪɴɢ ᴍᴇᴛᴀᴅᴀᴛᴀ
+> ᴜsᴇʀ: @${m.sender.split('@')[0]}
+${msg[type].caption ? '> '+ msg[type].caption : ''}`
+  
 
 
 

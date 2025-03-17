@@ -876,7 +876,7 @@ continue
 m.isCommand = true
 
 if(!m.fromMe && typeof global.db.data.chats[m.chat].initialBoot == 'undefined'){
-   let getLang = await m.reply(`v@reaper:~# lang-config
+   let getLang = await m.reply(`${global.heading} set-locale
 ╭ . . . . . . . . . . . . . . . . . . . . . . .
 > [!] system >>> ${global.db.data.chats[m.chat].language}
 > [+] LANG CONFIG

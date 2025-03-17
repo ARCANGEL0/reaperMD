@@ -30,7 +30,7 @@ m.quoted.id == global.db.data.chats[m.chat].langChangeID )
 
         await conn.sendMessage(m.chat,
         {
-            text: `v@reaper:~# lang-config
+            text: `${global.heading} set-locale
 ╭ . . . . . . . . . . . . . . . . . . . . . . .
 > [+] LANG CONFIG
 > -----------------------
@@ -48,7 +48,7 @@ m.quoted.id == global.db.data.chats[m.chat].langChangeID )
         global.langTOGGLE = en
   m.react("✅")
         await conn.sendMessage(m.chat, {
-            text: `v@reaper:~# lang-config
+            text: `${global.heading} set-locale
 ╭ . . . . . . . . . . . . . . . . . . . . . . .
 > [+] LANG CONFIG
 > -----------------------

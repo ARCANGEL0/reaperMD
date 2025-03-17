@@ -25,6 +25,8 @@ async function deleteInactiveUserData(m) {
 
   if (currentTime - lastUpdateTime > INACTIVITY_TIMEOUT_MS) {
     delete global.chatgpt.data.users[m.sender];
+
+    delete global.db.data.chats[m.chat].gpt;
     
   }
 }
