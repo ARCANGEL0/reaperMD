@@ -52,6 +52,9 @@ global.criadora = [
 ]
 
 
+global.projectRepo = `https://github.com/ARCANGEL0/reaperMD.git`
+
+global.repoBranch= `development`
 
 global.backupFolder = "/root/drive/backups"
 // folder name where you save database backup !! MUST BE ON SAME FOLDER AS PROJET FOLDER
