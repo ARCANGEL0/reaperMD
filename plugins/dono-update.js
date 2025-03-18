@@ -31,9 +31,10 @@ conn.reply(m.chat, fetch, m)
   
 }
 //} catch {
+let cmdxx = `git remote set-url origin ${global.projectRepo} && git pull origin ${global.repoBranch} -f`
 
-var update = execSync(`git remote set-url origin ${global.projectRepo} && git
-pull origin ${global.repoBranch} -f`)
+console.log(cmdxx)
+var update = execSync(cmdxx)
 
 // update here 
 
