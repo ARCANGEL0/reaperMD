@@ -380,6 +380,8 @@ const requestData = {
 
 
 
+
+
 fetch('https://vision.astica.ai/describe', {
     method: 'POST',
     headers: {
