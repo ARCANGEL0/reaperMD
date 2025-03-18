@@ -8,7 +8,7 @@
 import axios from 'axios'
 import {decode} from 'html-entities'
 let handler = async(m, { conn,args, usedPrefix, command, text }) =>  {
-  
+  if (!m.isGroup) return !1
   let getLang = await m.reply(`${global.heading} set-locale
 ╭ . . . . . . . . . . . . . . . . . . . . . . .
 > [!] system >>> ${global.db.data.chats[m.chat].language}
