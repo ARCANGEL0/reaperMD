@@ -41,7 +41,9 @@ global.criadora = global.owner[0][0]
 global.backupFolder = ""
 
 global.backupGithub = "https://github.com/yourRepoHere" 
+global.projectRepo = `https://github.com/ARCANGEL0/reaperMD.git`
 
+global.repoBranch= `master`
 global.criador = global.owner[0][0] + '@s.whatsapp.net'
 global.cocriador = "" // co-owner 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━⌬
