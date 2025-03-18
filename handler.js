@@ -875,7 +875,7 @@ continue
 
 m.isCommand = true
 
-if(!m.fromMe && typeof global.db.data.chats[m.chat].initialBoot == 'undefined'){
+if(!m.fromMe && !m.isGroup && typeof global.db.data.chats[m.chat].initialBoot == 'undefined'){
    let getLang = await m.reply(`${global.heading} set-locale
 ╭ . . . . . . . . . . . . . . . . . . . . . . .
 > [!] system >>> ${global.db.data.chats[m.chat].language}
