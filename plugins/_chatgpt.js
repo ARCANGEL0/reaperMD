@@ -184,7 +184,7 @@ if (!global.db.data.chats[m.chat].gpt.images?.length) {
       
       console.log('API Response:', assistantResponse);
          m.react('📀')
-         return m.reply(`┌──[ 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs} ]─[~]─[${date}] 
+         return m.reply(`┌──[ 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs} ]─[~] 
 └─ $ ℕⲷ𝚡𝚞𝚜​
 ${assistantResponse}`)
 
