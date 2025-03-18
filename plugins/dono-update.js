@@ -59,7 +59,7 @@ await m.reply(fetch2)
   let fetcherror= `┌──[ Ǥнѳᔕт ]─[/usr/bin]
 └─ git pull origin master
 > . . . . . . . . . . .
-> [!] _Failed to pull refs from master_
+> [!] _Failed to pull refs from ${global.repoBranch}_
 > . . . . . . . . . . . `
 
 ////
