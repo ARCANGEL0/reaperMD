@@ -10,7 +10,7 @@ import { execSync } from 'child_process'
 let handler = async (m, { conn, text }) => {
 try {  
 if (global.conn.user.jid == conn.user.jid) {
-let stdout = execSync('git pull origin master' + (m.fromMe && text ? ' ' + text : ''))
+let stdout = execSync(`git pull origin ${global.repoBranch}` + (m.fromMe && text ? ' ' + text : ''))
 
 const formattedStdout = stdout
     .toString()
