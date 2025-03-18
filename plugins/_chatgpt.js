@@ -138,7 +138,7 @@ ${assistantResponse}`)
     }
      
 }
-~
+
 
 async function getVision(messagem, image) { 
  
@@ -192,7 +192,7 @@ ${assistantResponse}`)
 
   } catch (error) {
       console.error('Error:', error);
-    sendSystemErrorAlert(global.db.data.chats[m.chat].language || "en");
+    global.sendSystemErrorAlert(global.db.data.chats[m.chat].language || "en");
   }
    
 }
