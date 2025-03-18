@@ -96,7 +96,7 @@ const q = m.quoted ? m.quoted : m;
     
     // Create a new user message object
     const newUserMessage = { role: "user", content: messagem };
-    sai que
+  
     // Add the new user message to the conversation history
     conversationHistory.push(newUserMessage);
     const isWeb = (text) => text.includes('--web'); 
@@ -197,16 +197,13 @@ ${assistantResponse}`)
    
 }
 
-  m.react("👁️")
+
   
   if (/image/g.test(mime)){
   
 const datab = await q.download?.();
 const images = await uploadImage(datab);
 
-
-
-  
 await getVision(m.text,images)
 
 }
