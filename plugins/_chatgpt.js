@@ -128,7 +128,7 @@ const q = m.quoted ? m.quoted : m;
         
         console.log('API Response:', assistantResponse);
            m.react('📀')
-           return m.reply(`┌──[ 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs} ]─[~]─[${date}] 
+           return m.reply(`┌──[ 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs} ]─[~] 
 └─ $ ℕⲷ𝚡𝚞𝚜​
 ${assistantResponse}`)
 
