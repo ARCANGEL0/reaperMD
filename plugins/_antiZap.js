@@ -80,7 +80,7 @@ if (m.text.includes(linkThisGroup)) {
   > [𝗔𝗟𝗘𝗥𝗧] ʟɪɴᴋ ᴡʜᴀᴛsᴀᴘᴘ ᴅᴇᴛᴇᴄᴛᴀᴅᴏ
   > *𓉘!𓉝* ᴏ ᴜsᴜᴀ́ʀɪᴏ ᴠɪᴏʟᴏᴜ ᴀs ʀᴇɢʀᴀs ᴅᴏ ɢʀᴜᴘᴏ.​
   > .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
-  > // 𝙍𝙚𝙢𝙤𝙫𝙚𝙣𝙙𝙤 ${global.db.data.users[m.sender].name}... 
+  > ⫻ 𝙍𝙚𝙢𝙤𝙫𝙚𝙣𝙙𝙤 ${global.db.data.users[m.sender].name}... 
   > ‎ 
   > ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊  
   ────────────────────────────────
@@ -95,7 +95,7 @@ if (m.text.includes(linkThisGroup)) {
   > [𝗔𝗟𝗘𝗥𝗧] ᴡʜᴀᴛsᴀᴘᴘ ʟɪɴᴋ ᴅᴇᴛᴇᴄᴛᴇᴅ
   > *𓉘!𓉝* ᴜsᴇʀ ʜᴀs ᴠɪᴏʟᴀᴛᴇᴅ ɢʀᴏᴜᴘ ʀᴜʟᴇs
   > .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
-  > // 𝙍𝙚𝙢𝙤𝙫𝙞𝙣𝙜 ${global.db.data.users[m.sender].name}...
+  > ⫻ 𝙍𝙚𝙢𝙤𝙫𝙞𝙣𝙜 ${global.db.data.users[m.sender].name}...
   > ‎ 
   > ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊  
   ────────────────────────────────

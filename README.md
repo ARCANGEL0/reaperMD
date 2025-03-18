@@ -345,22 +345,22 @@ R.E.A.P.E.R provides structured commands. Type .menu in chat to open the main di
 
 [+] To enable and disable plugins:
 >
-> // .on <plugin>: Activate module.
+> ⫻ .on <plugin>: Activate module.
 >> 
-> // .off <plugin>: Deactivate module.
+> ⫻ .off <plugin>: Deactivate module.
 
 
 [+] For system maintenance:
 >
-> // .boost: Improve CPU performance if too slow
+> ⫻ .boost: Improve CPU performance if too slow
 >> 
-> // .resetbot: Clear cache and temp data.
+> ⫻ .resetbot: Clear cache and temp data.
 >>
-> // .resetchat: Erases current chat in database.
+> ⫻ .resetchat: Erases current chat in database.
 >>
-> // .resetuser <user>: Erases user in database.
+> ⫻ .resetuser <user>: Erases user in database.
 >>
-> // .clearallsessions: Purge defunct sessions if reaperMD stops responding
+> ⫻ .clearallsessions: Purge defunct sessions if reaperMD stops responding
 
 ---
 # 0x1000: Contact
@@ -374,7 +374,7 @@ R.E.A.P.E.R provides structured commands. Type .menu in chat to open the main di
 
 // Establishing communication channels... <br>
 [+] For inquiries or support, please use the following channels:<br>
-> // R.E.A.P.E.R Official channel: To engage with R.E.A.P.E.R, utilize the following link: <br>
+> ⫻ R.E.A.P.E.R Official channel: To engage with R.E.A.P.E.R, utilize the following link: <br>
 > [𒌩 RΞ𐊍PER](https://wa.me/79001643752) 
 >
 > [!] Developer Contact: To contact the developer, use the following WhatsApp command: <br>

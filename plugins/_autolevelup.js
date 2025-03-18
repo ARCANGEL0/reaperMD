@@ -77,32 +77,32 @@ export function before(m, { conn , isOwner, nivel, participants}) {
       // Define messages based on language
       const messages = {
           en: {
-              levelUpDetected: '[+] LΞѴΞL UP DΞΓΞCTΞD!',
-              user: `[ 𝚄̷𝚂̷𝙴̷𝚁̷: ${username} ]`,
-              level: `[ 𝙻̷𝙴̷𝚅̷𝙴̷𝙻̷: v${previousLevel} ❱❱❱ v${currentLevel} ]`,
-              protocolInitiated: '[LOADING]',
-              authenticationSuccess: `[+] ${coins} ʙʏᴛᴇᴄᴏɪɴꜱ ʀᴇᴄᴇɪᴠᴇᴅ ɪɴ ʏᴏᴜʀ ʙ̺ʏ̺ᴡ̺ᴀ̺ʟ̺ʟ̺ᴇ̺ᴛ̺ [SUCCESS]`,
-              ethereum: `[+] ${eth} ᴇᴛʜᴇʀᴇᴜᴍ ʀᴇᴄᴇɪᴠᴇᴅ ɪɴ ʏᴏᴜʀ ʙ̺ʏ̺ᴡ̺ᴀ̺ʟ̺ʟ̺ᴇ̺ᴛ̺ [SUCCESS]`,
-              newCommandsUnlocked: '[!] ɴᴇᴡ ᴄᴏᴍᴍᴀɴᴅꜱ ᴜɴʟᴏᴄᴋᴇᴅ:',
-              commandsList: '┏──────────────\n',
-              commandsEnd: '┗──────────────\n',
-              eof: '> <<EOF',
-              separator: '> ━━━━━━━━━━━━━━━━━━━━━━━━',
-              newStatus: 'ɴᴇᴡ ʀᴀɴᴋ: '
-          },
-          pt: {
-              levelUpDetected: '[+] LΞѴΞL UP DΞΓΞCTАDѲ!',
-              user: `[ 𝚄̷𝚂̷𝚄̷𝙰̷𝚁̷𝙸̷𝙾̷: ${username} ]`,
-              level: `[ 𝙽̷𝙸̷𝚅̷𝙴̷𝙻̷: v${previousLevel} ❱❱❱ v${currentLevel} ]`,
-              protocolInitiated: '[CARREGANDO]',
-              authenticationSuccess: `[+] ${coins} ʙʏᴛᴇᴄᴏɪɴꜱ ʀᴇᴄᴇʙɪᴅᴏꜱ ɴᴀ ʙ̺ʏ̺ᴡ̺ᴀ̺ʟ̺ʟ̺ᴇ̺ᴛ̺ [SUCESSO]`,
-            ethereum: `[+] ${eth} ᴇᴛʜᴇʀᴇᴜᴍ ʀᴇᴄᴇʙɪᴅᴏꜱ ɴᴀ ʙ̺ʏ̺ᴡ̺ᴀ̺ʟ̺ʟ̺ᴇ̺ᴛ̺ [SUCCESSO]`,
-              newCommandsUnlocked: '[!] ɴᴏᴠᴏꜱ ᴄᴏᴍᴀɴᴅᴏꜱ ᴅᴇꜱʙʟᴏϙᴜᴇᴀᴅᴏꜱ:',
+              levelUpDetected: '𓉘𑀯𓉝 LΞѴΞL 𝈈P DΞΓΞCTΞD!',
+              user: `// ᴜsᴇʀ: ${username} ]`,
+              level: `// ʟᴇᴠᴇʟ: v${previousLevel} ⟫ v${currentLevel}`,
+              protocolInitiated: '𓉘◬𓉝 𝗖𝗮𝗿𝗿𝗲𝗴𝗮𝗻𝗱𝗼. . .  ',
+              bytecoins: `> ＋ ${coins} ʙʏᴛᴇᴄᴏɪɴꜱ ʀᴇᴄᴇɪᴠᴇᴅ ɪɴ ʏᴏᴜʀ ᴡ̺ᴀ̺ʟ̺ʟ̺ᴇ̺ᴛ̺ `,
+              ethereum: `> ＋ ${eth} ᴇᴛʜᴇʀᴇᴜᴍ ʀᴇᴄᴇɪᴠᴇᴅ ɪɴ ʏᴏᴜʀ ᴡ̺ᴀ̺ʟ̺ʟ̺ᴇ̺ᴛ̺ `,
+              newCommandsUnlocked: '𓉘𐠠𓉝 ɴᴇᴡ ᴄᴏᴍᴍᴀɴᴅꜱ ᴜɴʟᴏᴄᴋᴇᴅ:',
               commandsList: '┏──────────────\n',
               commandsEnd: '┗──────────────\n',
               eof: '> ❬❬𝖤𝖮𝖥',
               separator: '> ━━━━━━━━━━━━━━━━━━━━━━━━',
-              newStatus: 'ɴᴏᴠᴏ ʀᴀɴᴋ: '
+              newStatus: '𖤂 ɴᴇᴡ ʀᴀɴᴋ: '
+          },
+          pt: {
+              levelUpDetected: '𓉘𑀯𓉝 LΞѴΞL 𝈈P DΞΓΞCTАDѲ!',
+              user: `𓉘–𓉝 ᴜsᴜᴀʀɪᴏ: ${username}`,
+              level: `[ ɴɪᴠᴇʟ: v${previousLevel} ⟫ v${currentLevel} ]`,
+              protocolInitiated: '𓉘◬𓉝 𝗟𝗼𝗮𝗱𝗶𝗻𝗴. . . ',
+              bytecoins: `> ＋ ${coins} ʙʏᴛᴇᴄᴏɪɴꜱ ʀᴇᴄᴇʙɪᴅᴏꜱ ɴᴀ ʙ̺ʏ̺ᴡ̺ᴀ̺ʟ̺ʟ̺ᴇ̺ᴛ̺ `,
+            ethereum: `> ＋ ${eth} ᴇᴛʜᴇʀᴇᴜᴍ ʀᴇᴄᴇʙɪᴅᴏꜱ ɴᴀ ʙ̺ʏ̺ᴡ̺ᴀ̺ʟ̺ʟ̺ᴇ̺ᴛ̺ `,
+              newCommandsUnlocked: '𓉘𐠠𓉝 ɴᴏᴠᴏꜱ ᴄᴏᴍᴀɴᴅᴏꜱ ᴅᴇꜱʙʟᴏϙᴜᴇᴀᴅᴏꜱ:',
+              commandsList: '┏──────────────\n',
+              commandsEnd: '┗──────────────\n',
+              eof: '> ❬❬𝖤𝖮𝖥',
+              separator: '> ━━━━━━━━━━━━━━━━━━━━━━━━',
+              newStatus: '𖤂 ɴᴏᴠᴏ ʀᴀɴᴋ: '
           }
       };
   
@@ -120,19 +120,18 @@ export function before(m, { conn , isOwner, nivel, participants}) {
           : ''; // Empty string if no commands
       const ethereumMessage = eth ? `${messages[userLanguage].ethereum}\n` : '';
   
-    let textin = `
-v@reaper: #~ usermod -aG id
 
-${messages[userLanguage].levelUpDetected}
-. . . . . . . . . . . . . . . . . . . .
-${messages[userLanguage].user}${statusMessage ? `\n[ ${statusMessage} ]\n` : ''}
-${messages[userLanguage].level}
-. . . . . . . . . . . . . . . . . . . .
-  
+
+
+
+
+    let textin = `${messages[userLanguage].levelUpDetected}
+> ${messages[userLanguage].user}
+> ${messages[userLanguage].level}${statusMessage ? `\n> ${statusMessage} ]\n` : ''}
+> ‎
 ${messages[userLanguage].protocolInitiated}
-
-${messages[userLanguage].authenticationSuccess}
-${ethereumMessage} 
+⸻⸻⸻⸻
+${messages[userLanguage].bytecoins}${ethereumMessage} 
 ${commandsSection} 
 ${messages[userLanguage].eof}
 > ‎ `;
@@ -174,7 +173,7 @@ if(!global.db.data.chats[m.chat].users){
 if(!global.db.data.chats[m.chat].users[m.sender]){
   global.db.data.chats[m.chat].users[m.sender]={exp: 0,
         limit:0,
-        role:'🪶 Ｓｃｒｉｐｔ　Ｋｉｄｄｉｅ',
+        role:'sᴄʀɪᴘᴛ ᴋɪᴅᴅɪᴇ',
         money:0,
         level:0,
         adm: admcheck,
@@ -195,54 +194,54 @@ if (global.db.data.chats[m.chat].language === 'pt') {
 
   levels = 
   [
-    "Script Kiddie",
-    "Hacker mirim",
-    "Aprendiz",
-    "Trainee",
-    "Iniciado",
-    "Adepto",
-    "O Operador",
+    "sᴄʀɪᴘᴛ ᴋɪᴅᴅɪᴇ",
+    "sᴄʀɪᴘᴛ ᴋɪᴅᴅɪᴇ ɪɪ",
+    "ᴀᴘʀᴇɴᴅɪᴢ",
+    "ᴛʀᴀɪɴᴇᴇ",
+    "ɪɴɪᴄɪᴀᴅᴏ",
+    "ᴏᴘᴇʀᴀᴅᴏʀ",
+    "ᴏᴘᴇʀᴀᴅᴏʀ ɪɪ ",
     "Apex",
-    "Expert",
-    "Profissional",
-    "Avançado",
-    "Especialista",
-    "Pro",
-    "Mestre",
-    "Elite",
-    "Fantasma",
-    "A Lenda",
-    "Void",
-    "O Espectro",
-    "Entidade",
-    "Deus"
+    "ᴇxᴘᴇʀᴛ",
+    "ᴇxᴘᴇʀᴛ ɪɪ",
+    "ᴇxᴘᴇʀᴛ ɪɪɪ",
+    "ᴘʀᴏ",
+    "ᴘʀᴏ ɪɪ",
+    "ᴍᴇsᴛʀᴇ",
+    "ᴇʟɪᴛᴇ",
+    "ᴇʟɪᴛᴇ ɪɪ", 
+    "𝐆𝐇𝝝𝗦𝐓",
+    "V̶̳̗̇̒̈́Ŏ̶͓͓͐̚ͅI̶̘̰͍͂Ḋ̶̝͑",
+    "ꓥ𝗇ⲑ𝗇𝗒𝗆ø𝗎𝗌 🖧",
+    "𝗘̄Ꞑ𝗧̱𝗜̶̤͆𝗗̷𝗔̆̀𝗗̴͍̚𝗘̄̀",
+    "ᮿ 𝕯𝖊𝖚𝖘 "
     ]
 } 
 else {
 levels = 
 
 [
-  "Script kiddie",
-  "Entry-level hacker",
-  "Apprentice",
-  "Trainee",
-  "Initiate",
-  "Adept",
-  "The Operator",
+  "sᴄʀɪᴘᴛ ᴋɪᴅᴅɪᴇ",
+  "sᴄʀɪᴘᴛ ᴋɪᴅᴅɪᴇ ɪɪ",
+  "ᴀᴘᴘʀᴇɴᴛɪᴄᴇ",
+  "ᴛʀᴀɪɴᴇᴇ",
+  "ɪɴɪᴛɪᴀᴛᴇ",
+  "ᴏᴘᴇʀᴀᴛᴏʀ",
+  "ᴏᴘᴇʀᴀᴛᴏʀ ɪɪ",
   "Apex",
-  "Expert",
-  "Professional",
-  "Advanced",
-  "Specialist",
-  "Pro",
-  "Master",
-  "Elite",
-  "Ghost",
-  "Legend",
-  "VOID",
-  "The Spectre",
-  "Entity",
-  "God"
+  "ᴇxᴘᴇʀᴛ",
+  "ᴇxᴘᴇʀᴛ ɪɪ",
+  "ᴇxᴘᴇʀᴛ ɪɪɪ",
+  "ᴘʀᴏ",
+  "ᴘʀᴏ ɪɪ",
+  "ᴍᴀsᴛᴇʀ",
+  "ᴇʟɪᴛᴇ",
+  "ᴇʟɪᴛᴇ ɪɪ",
+  "𝐆𝐇𝝝𝗦𝐓",
+  "V̶̳̗̇̒̈́Ŏ̶͓͓͐̚ͅI̶̘̰͍͂Ḋ̶̝͑",
+  "ꓥ𝗇ⲑ𝗇𝗒𝗆ø𝗎𝗌 🖧",
+  "𝗘̄Ꞑ𝗧̱𝗜̶̤͆𝗧𝗬̵̠̾",
+  "⟠ 𝓐𝖑𝖒𝖎𝖌𝖍𝖙𝒚 𝖔𝖓𝖊"
   ]
 
 }

@@ -232,7 +232,7 @@ tikDetected= 'Link Tiktok detectado! Protocolo Anti-Link aplicado.'
 > [𝗔𝗟𝗘𝗥𝗧] ʟɪɴᴋ ᴅᴏ TɪᴋTᴏᴋ ᴅᴇᴛᴇᴄᴛᴀᴅᴏ
 > *𓉘!𓉝* ᴏ ᴜsᴜᴀ́ʀɪᴏ ᴠɪᴏʟᴏᴜ ᴀs ʀᴇɢʀᴀs ᴅᴏ ɢʀᴜᴘᴏ.​
 > .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
-> // 𝙍𝙚𝙢𝙤𝙫𝙚𝙣𝙙𝙤 ${global.db.data.users[m.sender].name}... 
+> ⫻ 𝙍𝙚𝙢𝙤𝙫𝙚𝙣𝙙𝙤 ${global.db.data.users[m.sender].name}... 
 > ‎ 
 > ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊  
 ────────────────────────────────
@@ -247,7 +247,7 @@ tikDetected= 'Link Tiktok detectado! Protocolo Anti-Link aplicado.'
 > [𝗔𝗟𝗘𝗥𝗧] TɪᴋTᴏᴋ ʟɪɴᴋ ᴅᴇᴛᴇᴄᴛᴇᴅ
 > *𓉘!𓉝* ᴜsᴇʀ ʜᴀs ᴠɪᴏʟᴀᴛᴇᴅ ɢʀᴏᴜᴘ ʀᴜʟᴇs
 > .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
-> // 𝙍𝙚𝙢𝙤𝙫𝙞𝙣𝙜 ${global.db.data.users[m.sender].name}...
+> ⫻ 𝙍𝙚𝙢𝙤𝙫𝙞𝙣𝙜 ${global.db.data.users[m.sender].name}...
 > ‎ 
 > ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
 ────────────────────────────────
@@ -340,7 +340,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
 > [𝗔𝗟𝗘𝗥𝗧] ʟɪɴᴋ ᴅᴏ Yᴏᴜᴛᴜʙᴇ ᴅᴇᴛᴇᴄᴛᴀᴅᴏ
 > *𓉘!𓉝* ᴏ ᴜsᴜᴀ́ʀɪᴏ ᴠɪᴏʟᴏᴜ ᴀs ʀᴇɢʀᴀs ᴅᴏ ɢʀᴜᴘᴏ.​
 > .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
-> // 𝙍𝙚𝙢𝙤𝙫𝙚𝙣𝙙𝙤 ${global.db.data.users[m.sender].name}... 
+> ⫻ 𝙍𝙚𝙢𝙤𝙫𝙚𝙣𝙙𝙤 ${global.db.data.users[m.sender].name}... 
 > ‎ 
 > ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊  
 ────────────────────────────────
@@ -355,7 +355,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
 > [𝗔𝗟𝗘𝗥𝗧] Yᴏᴜᴛᴜʙᴇ ʟɪɴᴋ ᴅᴇᴛᴇᴄᴛᴇᴅ
 > *𓉘!𓉝* ᴜsᴇʀ ʜᴀs ᴠɪᴏʟᴀᴛᴇᴅ ɢʀᴏᴜᴘ ʀᴜʟᴇs
 > .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
-> // 𝙍𝙚𝙢𝙤𝙫𝙞𝙣𝙜 ${global.db.data.users[m.sender].name}...
+> ⫻ 𝙍𝙚𝙢𝙤𝙫𝙞𝙣𝙜 ${global.db.data.users[m.sender].name}...
 > ‎ 
 > ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
 ────────────────────────────────
@@ -461,7 +461,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
 > [𝗔𝗟𝗘𝗥𝗧] ʟɪɴᴋ ᴅᴏ Tᴇʟᴇɢʀᴀᴍ ᴅᴇᴛᴇᴄᴛᴀᴅᴏ
 > *𓉘!𓉝* ᴏ ᴜsᴜᴀ́ʀɪᴏ ᴠɪᴏʟᴏᴜ ᴀs ʀᴇɢʀᴀs ᴅᴏ ɢʀᴜᴘᴏ.​
 > .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
-> // 𝙍𝙚𝙢𝙤𝙫𝙚𝙣𝙙𝙤 ${global.db.data.users[m.sender].name}... 
+> ⫻ 𝙍𝙚𝙢𝙤𝙫𝙚𝙣𝙙𝙤 ${global.db.data.users[m.sender].name}... 
 > ‎ 
 > ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊  
 ────────────────────────────────
@@ -476,7 +476,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
 > [𝗔𝗟𝗘𝗥𝗧] Tᴇʟᴇɢʀᴀᴍ ʟɪɴᴋ ᴅᴇᴛᴇᴄᴛᴇᴅ
 > *𓉘!𓉝* ᴜsᴇʀ ʜᴀs ᴠɪᴏʟᴀᴛᴇᴅ ɢʀᴏᴜᴘ ʀᴜʟᴇs
 > .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
-> // 𝙍𝙚𝙢𝙤𝙫𝙞𝙣𝙜 ${global.db.data.users[m.sender].name}...
+> ⫻ 𝙍𝙚𝙢𝙤𝙫𝙞𝙣𝙜 ${global.db.data.users[m.sender].name}...
 > ‎ 
 > ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
 ────────────────────────────────
@@ -584,7 +584,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
 > [𝗔𝗟𝗘𝗥𝗧] ʟɪɴᴋ ᴅᴏ Fᴀᴄᴇʙᴏᴏᴋ ᴅᴇᴛᴇᴄᴛᴀᴅᴏ
 > *𓉘!𓉝* ᴏ ᴜsᴜᴀ́ʀɪᴏ ᴠɪᴏʟᴏᴜ ᴀs ʀᴇɢʀᴀs ᴅᴏ ɢʀᴜᴘᴏ.​
 > .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
-> // 𝙍𝙚𝙢𝙤𝙫𝙚𝙣𝙙𝙤 ${global.db.data.users[m.sender].name}... 
+> ⫻ 𝙍𝙚𝙢𝙤𝙫𝙚𝙣𝙙𝙤 ${global.db.data.users[m.sender].name}... 
 > ‎ 
 > ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊  
 ────────────────────────────────
@@ -599,7 +599,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
 > [𝗔𝗟𝗘𝗥𝗧] Fᴀᴄᴇʙᴏᴏᴋ ʟɪɴᴋ ᴅᴇᴛᴇᴄᴛᴇᴅ
 > *𓉘!𓉝* ᴜsᴇʀ ʜᴀs ᴠɪᴏʟᴀᴛᴇᴅ ɢʀᴏᴜᴘ ʀᴜʟᴇs
 > .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
-> // 𝙍𝙚𝙢𝙤𝙫𝙞𝙣𝙜 ${global.db.data.users[m.sender].name}...
+> ⫻ 𝙍𝙚𝙢𝙤𝙫𝙞𝙣𝙜 ${global.db.data.users[m.sender].name}...
 > ‎ 
 > ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
 ────────────────────────────────
@@ -702,7 +702,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
 > [𝗔𝗟𝗘𝗥𝗧] ʟɪɴᴋ ᴅᴏ Iɴsᴛᴀɢʀᴀᴍ ᴅᴇᴛᴇᴄᴛᴀᴅᴏ
 > *𓉘!𓉝* ᴏ ᴜsᴜᴀ́ʀɪᴏ ᴠɪᴏʟᴏᴜ ᴀs ʀᴇɢʀᴀs ᴅᴏ ɢʀᴜᴘᴏ.​
 > .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
-> // 𝙍𝙚𝙢𝙤𝙫𝙚𝙣𝙙𝙤 ${global.db.data.users[m.sender].name}... 
+> ⫻ 𝙍𝙚𝙢𝙤𝙫𝙚𝙣𝙙𝙤 ${global.db.data.users[m.sender].name}... 
 > ‎ 
 > ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊  
 ────────────────────────────────
@@ -717,7 +717,7 @@ IgBAN = `
 > [𝗔𝗟𝗘𝗥𝗧] Iɴsᴛᴀɢʀᴀᴍ ʟɪɴᴋ ᴅᴇᴛᴇᴄᴛᴇᴅ
 > *𓉘!𓉝* ᴜsᴇʀ ʜᴀs ᴠɪᴏʟᴀᴛᴇᴅ ɢʀᴏᴜᴘ ʀᴜʟᴇs
 > .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
-> // 𝙍𝙚𝙢𝙤𝙫𝙞𝙣𝙜 ${global.db.data.users[m.sender].name}...
+> ⫻ 𝙍𝙚𝙢𝙤𝙫𝙞𝙣𝙜 ${global.db.data.users[m.sender].name}...
 > ‎ 
 > ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
 ────────────────────────────────
@@ -824,7 +824,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
 > [𝗔𝗟𝗘𝗥𝗧] ʟɪɴᴋ ᴅᴏ Tᴡɪᴛᴛᴇʀ/X ᴅᴇᴛᴇᴄᴛᴀᴅᴏ
 > *𓉘!𓉝* ᴏ ᴜsᴜᴀ́ʀɪᴏ ᴠɪᴏʟᴏᴜ ᴀs ʀᴇɢʀᴀs ᴅᴏ ɢʀᴜᴘᴏ.​
 > .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
-> // 𝙍𝙚𝙢𝙤𝙫𝙚𝙣𝙙𝙤 ${global.db.data.users[m.sender].name}... 
+> ⫻ 𝙍𝙚𝙢𝙤𝙫𝙚𝙣𝙙𝙤 ${global.db.data.users[m.sender].name}... 
 > ‎ 
 > ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊  
 ────────────────────────────────
@@ -839,7 +839,7 @@ TwBAN = `
 > [𝗔𝗟𝗘𝗥𝗧] Tᴡɪᴛᴛᴇʀ/X ʟɪɴᴋ ᴅᴇᴛᴇᴄᴛᴇᴅ
 > *𓉘!𓉝* ᴜsᴇʀ ʜᴀs ᴠɪᴏʟᴀᴛᴇᴅ ɢʀᴏᴜᴘ ʀᴜʟᴇs
 > .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
-> // 𝙍𝙚𝙢𝙤𝙫𝙞𝙣𝙜 ${global.db.data.users[m.sender].name}...
+> ⫻ 𝙍𝙚𝙢𝙤𝙫𝙞𝙣𝙜 ${global.db.data.users[m.sender].name}...
 > ‎ 
 > ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊ 
 ────────────────────────────────

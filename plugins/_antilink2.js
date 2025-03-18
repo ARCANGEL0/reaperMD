@@ -88,7 +88,7 @@ if (global.db.data.chats[m.chat].language === 'pt') {
 > [𝗔𝗟𝗘𝗥𝗧] ʟɪɴᴋ ᴅᴇᴛᴇᴄᴛᴀᴅᴏ
 > *𓉘!𓉝* ᴏ ᴜsᴜᴀ́ʀɪᴏ ᴠɪᴏʟᴏᴜ ᴀs ʀᴇɢʀᴀs ᴅᴏ ɢʀᴜᴘᴏ.​
 > .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
-> // 𝙍𝙚𝙢𝙤𝙫𝙚𝙣𝙙𝙤 ${global.db.data.users[m.sender].name}... 
+> ⫻ 𝙍𝙚𝙢𝙤𝙫𝙚𝙣𝙙𝙤 ${global.db.data.users[m.sender].name}... 
 > ‎ 
 > ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊  
 ────────────────────────────────
@@ -103,7 +103,7 @@ ${global.heading} uafw && ./remove -l || grep -r '@${m.sender.split('@')[0]}'
 > [𝗔𝗟𝗘𝗥𝗧] ʟɪɴᴋ ᴅᴇᴛᴇᴄᴛᴇᴅ
 > *𓉘!𓉝* ᴜsᴇʀ ʜᴀs ᴠɪᴏʟᴀᴛᴇᴅ ɢʀᴏᴜᴘ ʀᴜʟᴇs
 > .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
-> // 𝙍𝙚𝙢𝙤𝙫𝙞𝙣𝙜 ${global.db.data.users[m.sender].name}...
+> ⫻ 𝙍𝙚𝙢𝙤𝙫𝙞𝙣𝙜 ${global.db.data.users[m.sender].name}...
 > ‎ 
 > ⚊ 〔𝗥𝝣𝝠𝗣𝗘𝗥 v${vs}〕 ⚊  
 ────────────────────────────────

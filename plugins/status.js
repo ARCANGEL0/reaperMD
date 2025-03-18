@@ -158,7 +158,7 @@ let greetTxt = global.db.data.chats[m.chat].language === 'en' ?
 :
 `ᴜsᴜᴀʀɪᴏ:`
 
-let project = `> ///𝗥.𝝣.𝝠.𝗣.𝗘.𝗥 Pʀᴏᴊᴇᴄᴛ
+let project = `> ⫻ 𝗥.𝝣.𝝠.𝗣.𝗘.𝗥 Pʀᴏᴊᴇᴄᴛ
 > v${vs}`
 
 let isStatus 
@@ -300,7 +300,7 @@ let systemStats = `𓉘ᛜ𓉝 ${systemHeader}
 `
 
 let message = `${shell}
-/// 𓉘Ⲗ𓉝 ${greetTxt} ${name}
+⫻ 𓉘Ⲗ𓉝 ${greetTxt} ${name}
 > ${project}
 > ${creator}: 𝛌𝐑𝐂𝚲𝐍𝐆𝐄𝐋𝚯
 > ${botstatus}
@@ -309,7 +309,7 @@ ${timeActive}
 ${totalChats}
 ⸺⸺⸺⸺⸺⸺
 > 𓉘~𓉝 ${groupMetadata.subject}
-> // ${groupstatus}
+> ⫻ ${groupstatus}
 > ‎ 
 ${groupStats}
 ⸺⸺⸺⸺⸺⸺

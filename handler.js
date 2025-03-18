@@ -748,7 +748,7 @@ if (m.text && global.db.data.chats[m.chat].users[m.sender].banned && !(isCriador
 ────────────────────────────────
 > [𝗔𝗟𝗘𝗥𝗧] ᴜsᴜᴀʀɪᴏ ʙᴀɴɪᴅᴏ
 > .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
-> // ${global.db.data.users[m.sender].name}... 
+> ⫻ ${global.db.data.users[m.sender].name}... 
 > Vᴏᴄᴇ ᴇsᴛᴀ ʙʟᴏǫᴜᴇᴀᴅᴏ ᴅᴇ ᴜsᴀʀ ᴍᴇᴜs ᴄᴏᴍᴀɴᴅᴏs. 
 > ‎ 
 > Sɪɴᴛᴏ ᴍᴜɪᴛᴏ, 
@@ -762,7 +762,7 @@ if (m.text && global.db.data.chats[m.chat].users[m.sender].banned && !(isCriador
 ────────────────────────────────
 > [𝗔𝗟𝗘𝗥𝗧] ᴜsᴇʀ ʙᴀɴɴᴇᴅ 
 > .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
-> // ${global.db.data.users[m.sender].name}... 
+> ⫻ ${global.db.data.users[m.sender].name}... 
 > Yᴏᴜ ᴀʀᴇ ʙʟᴏᴄᴋᴇᴅ ꜰʀᴏᴍ ᴜsɪɴɢ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs
 > ‎ 
 > Sᴏʀʀʏ, ᴍᴀɴ
@@ -794,7 +794,7 @@ if (m.text && global.db.data.users[m.sender].blocked && !(isCriadora ||isROwner)
   ────────────────────────────────
   > [𝗔𝗟𝗘𝗥𝗧] ᴜsᴜᴀʀɪᴏ ʙᴀɴɪᴅᴏ
   > .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
-  > // ${global.db.data.users[m.sender].name}... 
+  > ⫻ ${global.db.data.users[m.sender].name}... 
   > Vᴏᴄᴇ ᴇsᴛᴀ ʙʟᴏǫᴜᴇᴀᴅᴏ ᴅᴇ ᴜsᴀʀ ᴍᴇᴜs ᴄᴏᴍᴀɴᴅᴏs. 
   > ‎ 
   > Sɪɴᴛᴏ ᴍᴜɪᴛᴏ, 
@@ -808,7 +808,7 @@ if (m.text && global.db.data.users[m.sender].blocked && !(isCriadora ||isROwner)
   ────────────────────────────────
   > [𝗔𝗟𝗘𝗥𝗧] ᴜsᴇʀ ʙᴀɴɴᴇᴅ 
   > .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
-  > // ${global.db.data.users[m.sender].name}... 
+  > ⫻ ${global.db.data.users[m.sender].name}... 
   > Yᴏᴜ ᴀʀᴇ ʙʟᴏᴄᴋᴇᴅ ꜰʀᴏᴍ ᴜsɪɴɢ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs
   > ‎ 
   > Sᴏʀʀʏ, ᴍᴀɴ
@@ -905,27 +905,27 @@ if (!m.fromMe && !(isCriadora ||isROwner) && global.db.data.settings[this.user.j
  {
 
   const offlineBot = global.db.data.chats[m.chat].language === 'en' ? `
-> // 𝗥.𝝣.𝝠.𝗣.𝗘.𝗥 𒈒  v${vs}
+> ⫻ 𝗥.𝝣.𝝠.𝗣.𝗘.𝗥 𒈒  v${vs}
 > ‎ 
-> // Initializing...
+> ⫻ Initializing...
 > ‎ 
 > Hey there, Vance here – but you can call me V.
 > ‎ 
 > ----------------------------------------
 > ‎ 
-> // SYSTEM DIAGNOSTIC:
+> ⫻ SYSTEM DIAGNOSTIC:
 > ‎ 
 > ‎ [==] Status: OFFLINE
 > ‎ [==] Reason: Activation Required
 > ‎ 
 > ----------------------------------------
 > ‎ 
-> // IP ADDRESS ANALYSIS:
+> ⫻ IP ADDRESS ANALYSIS:
 > [+] ${global.db.data.chats[m.chat].totalMembros} IP's scanned
 > ‎ 
-> // Calculating activation fee...
+> ⫻ Calculating activation fee...
 > ‎ 
-> // Estimated Fee:
+> ⫻ Estimated Fee:
 > ‎ 
 > [!] R$ ${global.db.data.chats[m.chat].boleto}
 > ‎ 
@@ -933,7 +933,7 @@ if (!m.fromMe && !(isCriadora ||isROwner) && global.db.data.settings[this.user.j
 > ‎
 > ----------------------------------------
 > ‎ 
-> // 𝗥.𝝣.𝝠.𝗣.𝗘.𝗥 𒈒 MODULES:
+> ⫻ 𝗥.𝝣.𝝠.𝗣.𝗘.𝗥 𒈒 MODULES:
 > ‎ 
 > [✔] Group Management & Admin utilities
 > ‎ 
@@ -951,41 +951,41 @@ if (!m.fromMe && !(isCriadora ||isROwner) && global.db.data.settings[this.user.j
 > ‎ 
 > ----------------------------------------
 > ‎ 
-> // SYSTEM OVERVIEW:
+> ⫻ SYSTEM OVERVIEW:
 > ‎ 
 > I'm the core of Project 𝗥.𝝣.𝝠.𝗣.𝗘.𝗥 𒈒 (Recon, Exploitation And Pentest Engine Robot), a suite of tools and functions to make your digital life easier and more fun all inside your favorite messenger app.
 > ‎ 
 > ----------------------------------------
 > ‎ 
-> // ACTIVATION:
+> ⫻ ACTIVATION:
 > ‎ 
 > To get 𝗥.𝝣.𝝠.𝗣.𝗘.𝗥 𒈒 up and running in this group, contact: +351 927 285 125
 > ‎ 
 > ----------------------------------------
 > ‎ 
-> // EOF>>
+> ⫻ EOF>>
 ` :`
-> // R.𝝣.𝝠.𝗣.𝗘.𝗥 𒈒 v${vs}
+> ⫻ R.𝝣.𝝠.𝗣.𝗘.𝗥 𒈒 v${vs}
 > ‎ 
-> // Inicializando...
+> ⫻ Inicializando...
 > ‎ 
 > Eai?, aqui é o Vance – mas você pode me chamar de V.
 > ‎ 
-> // DIAGNÓSTICO NEXUS:
+> ⫻ DIAGNÓSTICO NEXUS:
 > ‎ 
 > ‎ [==] Status: OFFLINE
 > ‎ [==] Motivo: Ativação Necessária
 > ‎ 
-> // ENUMERAÇÃO: 
+> ⫻ ENUMERAÇÃO: 
 > [+] ${global.db.data.chats[m.chat].totalMembros} IP's escaneados
 > ‎ 
-> // Calculando taxa de ativação...
+> ⫻ Calculando taxa de ativação...
 > ‎ 
-> // Taxa Estimada: 
+> ⫻ Taxa Estimada: 
 > [!] R$: ${global.db.data.chats[m.chat].boleto} 
 > [!] USD$: ${global.db.data.chats[m.chat].boleto * 5.60}
 > ‎ 
-> // R.𝝣.𝝠.𝗣.𝗘.𝗥 𒈒 MÓDULOS: 
+> ⫻ R.𝝣.𝝠.𝗣.𝗘.𝗥 𒈒 MÓDULOS: 
 > [✔] Gestão de Grupos & Utilitários de Admin 
 > [✔] Entretenimento Interativo, Jogos, Memes e muito mais. 
 > [✔] Ferramentas Úteis & Utensílios para Desenvolvedores 
@@ -994,11 +994,11 @@ if (!m.fromMe && !(isCriadora ||isROwner) && global.db.data.settings[this.user.j
 > [✔] Recursos PDF, resumo de conteúdo ou análise 
 > [✔] Integração Avançada de IA para pentest automatizado, criação de imagens e busca na web
 > ‎ 
-> // OVERVIEW: Eu sou o núcleo do Projeto R.𝝣.𝝠.𝗣.𝗘.𝗥 𒈒 _(Recon, Exploitation And Pentest Engine Robot)_ , um conjunto de ferramentas e funções para tornar sua vida digital mais fácil e divertida, tudo dentro do seu aplicativo de mensagens favorito.
+> ⫻ OVERVIEW: Eu sou o núcleo do Projeto R.𝝣.𝝠.𝗣.𝗘.𝗥 𒈒 _(Recon, Exploitation And Pentest Engine Robot)_ , um conjunto de ferramentas e funções para tornar sua vida digital mais fácil e divertida, tudo dentro do seu aplicativo de mensagens favorito.
 > ‎ 
-> // ATIVAÇÃO: Para fazer o R.𝝣.𝝠.𝗣.𝗘.𝗥 𒈒 funcionar neste grupo, entre em contato: +351 927 285 125
+> ⫻ ATIVAÇÃO: Para fazer o R.𝝣.𝝠.𝗣.𝗘.𝗥 𒈒 funcionar neste grupo, entre em contato: +351 927 285 125
 > ‎ 
-> // FIM>>
+> ⫻ FIM>>
 `
 
   return m.reply(offlineBot)
@@ -1283,7 +1283,7 @@ if (global.db.data.chats[id].language === 'pt') {
 ─────────────────
 > [*] @${user.split('@')[0]} ᴄᴏɴᴇᴄᴛᴀᴅᴏ.
 > 𝚂𝚃𝙰𝚃𝚄𝚂 𝟸𝟶𝟶 𝙾𝙺
-> //// 𝙊𝙍𝙄𝙀𝙉𝙏𝘼𝘾̧𝙊̃𝙀𝙎 𝘿𝙊 𝙂𝙍𝙐𝙋𝙊 ⮟
+> ⫻ 𝙊𝙍𝙄𝙀𝙉𝙏𝘼𝘾̧𝙊̃𝙀𝙎 𝘿𝙊 𝙂𝙍𝙐𝙋𝙊 ⮟
 ─────────────────
 > [+] Bem-vindo(a) ao grupo ${await this.getName(id)}.
 > [+] Leia as regras e siga as diretivas do grupo.
@@ -1299,7 +1299,7 @@ if (global.db.data.chats[id].language === 'pt') {
 > New user detected: @${user.split('@')[0]}
 > [*] Connection established 
 > STATUS 200 OK
-> //// 𝙂𝙍𝙊𝙐𝙋 𝙂𝙐𝙄𝘿𝙀𝙇𝙄𝙉𝙀𝙎 ⮟
+> ⫻ 𝙂𝙍𝙊𝙐𝙋 𝙂𝙐𝙄𝘿𝙀𝙇𝙄𝙉𝙀𝙎 ⮟
 ─────────────────
 > [+] Welcome to ${await this.getName(id)}.
 > [+] Please, read the rules and obey group directives

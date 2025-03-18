@@ -45,12 +45,7 @@ delete global.db.data.chats[m.chat].bicho
  
 } 
 
-/*    
-if (m.mentionedJid.includes(this.user.jid) && m.isGroup && !chat.isBanned) {
-let stiker = await sticker(imagen2, false, global.packname, global.author)  
-this.sendFile(m.chat, stiker, 'sticker.webp', null, m, false, { 
-contextInfo: { externalAdReply: { title: '𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣   🐈', body: '𝓔𝓭𝓰𝓪𝓻 𝓑𝓞𝓣  ', sourceUrl: `https://github.com/ARCANGEL0/reaperMD`, thumbnail: imagen2}}})}*/
-    
+
 return !0 }
 export default handler
 
@@ -80,8 +75,7 @@ global.db.data.chats[m.chat].bicho.numero = numer
   });
 
   if (vencedoresNumeroExato.length > 0) {
-  
-// Calculate prize per winner
+
 let prizePerWinner = Math.floor(global.db.data.chats[m.chat].bicho.aposta / vencedoresNumeroExato.length);
 let vencedores = ''
 vencedoresNumeroExato.forEach(winner => {
@@ -90,27 +84,32 @@ vencedores += `\n @${winner.split('@')[0]}`
 });
 
 
+let txtA = global.db.data.chats[m.chat].language === 'pt' ?
+`${global.heading} beast --show
+𓉘🞢𓉝  ᴊᴏɢᴏ ᴅᴏ ʙɪᴄʜᴏ ᴇɴᴄᴇʀʀᴀᴅᴏ> ‎ 
+> ⫻ ᴀɴɪᴍᴀʟ sᴏʀᴛᴇᴀᴅᴏ: *${animalSorteado}*
+> ⫻ ɴᴜ́ᴍᴇʀᴏ sᴏʀᴛᴇᴀᴅᴏ: ${numeroSorteado}
+> ⸻⸻⸻⸻
+> 𐠠 ᴠᴇɴᴄᴇᴅᴏʀᴇs 〔ᴀɴɪᴍᴀʟ〕:
+${vencedores}`
 
-// List each winner and their share of the prize
-    let txtA = `━━━━━━━━━⬣ 𖤐 ⬣━━━━━━━━ 
-                 𝔍𝔬𝔤𝔬 𝔡𝔞 𝔅𝔢𝔰𝔱𝔞 
-                            ⸸ _*${numeroSorteado}*_ ⸸
-    𝑶 𝒂𝒏𝒊𝒎𝒂𝒍 𝒔𝒐𝒓𝒕𝒆𝒂𝒅𝒐 𝒇𝒐𝒊:
-   *${animalSorteado}*
-   
-𝑨𝒍𝒎𝒂𝒔 𝒄𝒐𝒏𝒄𝒆𝒅𝒊𝒅𝒂𝒔 𝒂 𝒄𝒆𝒍𝒆𝒔𝒕𝒊𝒂𝒍 𝒇𝒐𝒓𝒕𝒖𝒏𝒂
-    
-  𝑫𝒆𝒔𝒗𝒆𝒏𝒅𝒂𝒓𝒂𝒎 𝒐 𝑵𝒖𝒎𝒆𝒓𝒐 𝒅𝒆𝒔𝒕𝒆𝒎𝒊𝒅𝒐: 
-  ${vencedores}
+:
+
+`${global.heading} beast --show
+𓉘🞢𓉝  -ᴀɴɪᴍᴀʟ- ɢᴀᴍᴇ ʜᴀs ᴇɴᴅᴇᴅ
+> ⫻ ᴀɴɪᴍᴀʟ: *${animalSorteado}*
+> ⫻ ɴᴜᴍʙᴇʀ: ${numeroSorteado}
+> ⸻⸻⸻⸻
+> 𐠠 ᴡɪɴɴᴇʀs 〔ᴀɴɪᴍᴀʟ〕:
+${vencedores}`
   
-   ━━━━━━━━━⬣⬣━━━━━━━━  `
-       
+
+
        await conn.sendMessage(m.chat, {text: txtA, }  ,{ mentions: conn.parseMention(txtA) });
        
      return !0
   } else if (vencedoresAnimal.length > 0) {
-  
- // Calculate prize per winner
+
 let prizePerWinner = Math.floor(global.db.data.chats[m.chat].bicho.aposta / vencedoresAnimal.length);
 let vencedores = ''
 vencedoresNumeroExato.forEach(winner => {
@@ -118,30 +117,46 @@ vencedoresNumeroExato.forEach(winner => {
 vencedores +=   `\n @${winner.split('@')[0]}`
 });
   
-       let txtB = `━━━━━━━━━⬣ 𖤐 ⬣━━━━━━━━
-                          𝔍𝔬𝔤𝔬 𝔡𝔞 𝔅𝔢𝔰𝔱𝔞 
-                            ⸸ _*${numeroSorteado}*_ ⸸
-    𝑶 𝒂𝒏𝒊𝒎𝒂𝒍 𝒔𝒐𝒓𝒕𝒆𝒂𝒅𝒐 𝒇𝒐𝒊:
-   *${animalSorteado}*
-   
-𝑨𝒍𝒎𝒂𝒔 𝒄𝒐𝒏𝒄𝒆𝒅𝒊𝒅𝒂𝒔 𝒂 𝒄𝒆𝒍𝒆𝒔𝒕𝒊𝒂𝒍 𝒇𝒐𝒓𝒕𝒖𝒏𝒂
-    
-  𝑫𝒆𝒔𝒗𝒆𝒏𝒅𝒂𝒓𝒂𝒎 𝒐 𝑵𝒖𝒎𝒆𝒓𝒐 𝒅𝒆𝒔𝒕𝒆𝒎𝒊𝒅𝒐: 
-  ${vencedores}
+let txtB = global.db.data.chats[m.chat].language === 'pt' ?
+`${global.heading} beast --show
+𓉘🞢𓉝  ᴊᴏɢᴏ ᴅᴏ ʙɪᴄʜᴏ ᴇɴᴄᴇʀʀᴀᴅᴏ> ‎ 
+> ⫻ ᴀɴɪᴍᴀʟ sᴏʀᴛᴇᴀᴅᴏ: *${animalSorteado}*
+> ⫻ ɴᴜ́ᴍᴇʀᴏ sᴏʀᴛᴇᴀᴅᴏ: ${numeroSorteado}
+> ⸻⸻⸻⸻
+> 𐠠 ᴠᴇɴᴄᴇᴅᴏʀᴇs 〔ɴᴜᴍ.〕:
+${vencedores}`
+
+:
+
+`${global.heading} beast --show
+𓉘🞢𓉝  -ᴀɴɪᴍᴀʟ- ɢᴀᴍᴇ ʜᴀs ᴇɴᴅᴇᴅ
+> ⫻ ᴀɴɪᴍᴀʟ: *${animalSorteado}*
+> ⫻ ɴᴜᴍʙᴇʀ: ${numeroSorteado}
+> ⸻⸻⸻⸻
+> 𐠠 ᴡɪɴɴᴇʀs 〔ɴᴜᴍ.〕:
+${vencedores}`
   
-   ━━━━━━━━━⬣⬣━━━━━━━━  `
     await conn.sendMessage(m.chat, {text: txtB, }  ,{ mentions: conn.parseMention(txtB) });
      return !0
   } else {
-       let txtC = `━━━━━━━━━⬣ 𖤐 ⬣━━━━━━━━
-                      𝔍𝔬𝔤𝔬 𝔡𝔞 𝔅𝔢𝔰𝔱𝔞 
-                            ⸸ _*${numeroSorteado}*_ ⸸
-    𝑶 𝒂𝒏𝒊𝒎𝒂𝒍 𝒔𝒐𝒓𝒕𝒆𝒂𝒅𝒐 𝒇𝒐𝒊:
-   *${animalSorteado}*
-   
-  𝑵𝒆𝒏𝒉𝒖𝒎𝒂 𝒂𝒍𝒎𝒂 𝒑𝒓𝒆𝒔𝒆𝒏𝒕𝒆 𝒂𝒄𝒆𝒓𝒕𝒐𝒖 𝒆𝒔𝒕𝒆 𝒋𝒐𝒈𝒐
-  
-   ━━━━━━━━━⬣⬣━━━━━━━━  `
+    let txtB = global.db.data.chats[m.chat].language === 'pt' ?
+    `${global.heading} beast --show
+𓉘🞢𓉝  ᴊᴏɢᴏ ᴅᴏ ʙɪᴄʜᴏ ᴇɴᴄᴇʀʀᴀᴅᴏ> ‎ 
+> ⫻ ᴀɴɪᴍᴀʟ sᴏʀᴛᴇᴀᴅᴏ: *${animalSorteado}*
+> ⫻ ɴᴜ́ᴍᴇʀᴏ sᴏʀᴛᴇᴀᴅᴏ: ${numeroSorteado}
+> ⸻⸻⸻⸻
+> ⵁ sᴇᴍ ᴠᴇɴᴄᴇᴅᴏʀᴇs`
+
+
+:
+
+`${global.heading} beast --show
+𓉘🞢𓉝  -ᴀɴɪᴍᴀʟ- ɢᴀᴍᴇ ʜᴀs ᴇɴᴅᴇᴅ
+> ⫻ ᴀɴɪᴍᴀʟ: *${animalSorteado}*
+> ⫻ ɴᴜᴍʙᴇʀ: ${numeroSorteado}
+> ⸻⸻⸻⸻
+> ⵁ ɴᴏ ᴡɪɴɴᴇʀs`
+      
        await conn.sendMessage(m.chat, {text: txtC, }  ,{ mentions: conn.parseMention(txtC) });
      return !0
   }

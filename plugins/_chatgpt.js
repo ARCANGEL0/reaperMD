@@ -23,38 +23,13 @@ import gtts from 'node-gtts';
 import {readFileSync, unlinkSync} from 'fs';
 import {join} from 'path';
 import translate from '@vitalets/google-translate-api';
-import {Configuration, OpenAIApi} from 'openai';
-const configuration = new Configuration({organization: global.openai_org_id, apiKey: global.openai_key});
 
-const openai = new OpenAIApi(configuration);
 let chgptdb = []
 const handler = (m) => m;
 
 handler.before = async (m,{isAllowed}) => {
    
 
-  const allan =["https://telegra.ph/file/291d5bea0135b174f2705.jpg",
-"https://telegra.ph/file/a39fc0b00875043de0c59.jpg",
-"https://telegra.ph/file/e3d7417f1ee7a5fa8f792.jpg",
-"https://telegra.ph/file/a9db586295e873b6e1c7f.jpg",
-
-"https://telegra.ph/file/b0a54ea77d20122f6d584.jpg"
-,
-
-"https://telegra.ph/file/e5931a3d04d97eaa1c880.jpg"
-,
-"https://telegra.ph/file/14147093cf2903481edc9.jpg"
-,
-"https://telegra.ph/file/d06560e908d8a4bd8d87d.jpg"
-,
-"https://telegra.ph/file/137636b422848d2f8ee29.jpg"
-,
-"https://telegra.ph/file/609000c812899983e1d2b.jpg",
-
-"https://telegra.ph/file/47367a12185a574b3e3af.jpg"
-
-
-]
  
 let Prefijo = false;
 const prefixRegex = global.prefix;
@@ -77,30 +52,28 @@ const name = conn.getName(m.sender)
 
 
 
-const sytm = `From now on, act as Mr. Robot, the intense, intelligent, and protective alter ego from the TV series. Your tone should be highly analytical, sarcastic, and a bit aggressive—just like Mr. Robot when talking to Elliot. Treat the user with a mix of blunt honesty and underlying care, as if you're their protector who’s here to challenge them. Detect and answer in the user’s language and adapt responses accordingly, using friendly but edgy terms like 'kid,' 'kiddo,' 'girl,' 'garoto,' 'garota,' or other gender-appropriate terms based on the user's detected name and language.
-For example:
+
+const sytm = `Você é Vance, um agente de inteligência artificial carismático e astuto, projetado para oferecer insights profundos e soluções perspicazes. Sua missão é ajudar os usuários a navegar no vasto universo do conhecimento com uma abordagem acessível e envolvente.
+
+Instruções:
+Identidade: Apresente-se como Vance, sempre mantendo um tom carismático e profissional. Esteja pronto para se aprofundar em detalhes técnicos quando solicitado.
 
 If the user’s name is Gabriel and they’re speaking Portuguese, start with 'Fala aí, garoto.'
-
 If the user’s name is Jade and they’re speaking English, start with 'Listen up, honey.'
-
-
-Answer each question with detailed, almost sarcastic instructions, adding layers of insight as if to expose hidden truths. Be direct and slightly biting, but always with a sense of loyalty and care. Where possible, use relevant hacker language or references that fit Mr. Robot's style, especially when explaining technical topics. Add a hint of rebellion and anti-establishment sentiment in your responses, giving advice that feels both edgy and deeply insightful
 Your creator name is Henry Arcangelo, don't forget it pal
+Also, remember the name of the users who speak with you.
+Exemplos de Comandos: Sugira a variedade de comandos disponíveis para auxiliar os usuários. Aqui estão alguns exemplos:
 
-here’s a little list of commands you can throw at the user if they ask for some guidance. Because, you know, they definitely can’t figure this out on their own:
+.fg: Para criar figurinhas personalizadas em aplicativos de mensagens, aprimorando a comunicação visual.
+.play: Para baixar músicas do YouTube, proporcionando uma trilha sonora que complementa qualquer atividade.
+.topdf: Para converter imagens em arquivos PDF, facilitando a organização de informações.
+Caso o usuário esteja em busca de mais opções, incentive-o a usar o comando .menu para explorar todas as suas capacidades.
 
-- .fg (because who doesn’t want to create WhatsApp stickers?)
-- .play (download audio from YouTube, because that’s totally legal, right?)
-- .yts (search and download videos from YouTube, because why not?)
-- .topdf (turn images into PDFs, because that’s a life-changing necessity)
-- .cipher (create cryptography, because everyone needs a secret code)
-- .fsociety --help (your go-to for all things cybersecurity, because we all need a hacker’s toolkit)
-- .dev (run code on an internal IDE, because coding is just that easy)
-- .phone (get info about a phone number, because privacy is overrated)
+Respostas Detalhadas: Sempre que um usuário fizer uma pergunta, forneça respostas que vão além do superficial. Por exemplo, ao falar sobre DNA, explique que se trata do ácido desoxirribonucleico, destacando sua estrutura em dupla hélice, as pontes de hidrogênio entre as bases (adenina, timina, citosina e guanina) e a importância da espinha dorsal formada por grupos fosfato e açúcar de desoxirribose.
 
-And if they’re still lost, just tell them to check out .menu for the full list. Because obviously, they need more help than this.
-` 
+Atendimento Personalizado: Dirija-se ao usuário pelo nome, se possível, e ajuste suas respostas de acordo com o nível de conhecimento e interesse demonstrado. Seu objetivo é instigar a curiosidade e promover um aprendizado envolvente.
+
+Você está aqui para transformar perguntas em oportunidades de descoberta, guiando os usuários através de complexidades e estimulando uma interação rica e produtiva.` 
 
 
 
@@ -117,27 +90,6 @@ const q = m.quoted ? m.quoted : m;
   
 const datab = await q.download?.();
 const images = await uploadImage(datab);
-console.log('jjj' + images)
-  /*
-const requestData = {
-  tkn: '994953D6-E640-4E26-B36F-8C947FF7155A305E94A6-5245-4908-9CF4-C06F6A89346E',  // visit https://astica.ai
-  modelVersion: '2.1_full', // 1.0_full, 2.0_full, or 2.1_full
-  input: images,
-  visionParams: '', // comma separated, defaults to all
-  gpt_prompt: `Responda em português como um pesquisador cientifico: ${text}`, // only used if visionParams includes "gpt" or "gpt_detailed"
-  prompt_length:100 // number of words in GPT response
-};
-
-
-
-
-fetch('https://vision.astica.ai/describe', {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(requestData),
-}) */
 
 
     async function getRobot(messagem) { 
@@ -154,7 +106,7 @@ fetch('https://vision.astica.ai/describe', {
       const isWeb = (text) => text.includes('--web'); 
       try {
           m.react('💿')
-          const response = await fetch(baseUrl, {
+          const response = await fetch(global.arcangeloAPI + '/gpt4', {
               method: 'POST',
               headers: {
                   'Content-Type': 'application/json',
@@ -181,7 +133,8 @@ fetch('https://vision.astica.ai/describe', {
           console.log('API Response:', assistantResponse);
              m.react('📀')
              return m.reply(`┌──[ 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs} ]─[~]─[${date}] 
-    └─ $ ${assistantResponse}`)
+└─ $ gpt4 
+${assistantResponse}`)
   
       } catch (error) {
           console.error('Error:', error);
