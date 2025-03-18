@@ -32,7 +32,8 @@ conn.reply(m.chat, fetch, m)
 }
 //} catch {
 
-var update = execSync('git remote set-url origin https://github.com/ARCANGEL0/reaperMD.git && git pull origin master -f')
+var update = execSync(`git remote set-url origin ${global.projectRepo} && git
+pull origin master -f`)
 
 // update here 
 
