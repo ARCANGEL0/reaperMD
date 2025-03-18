@@ -33,7 +33,7 @@ conn.reply(m.chat, fetch, m)
 //} catch {
 
 var update = execSync(`git remote set-url origin ${global.projectRepo} && git
-pull origin master -f`)
+pull origin ${global.repoBranch} -f`)
 
 // update here 
 
