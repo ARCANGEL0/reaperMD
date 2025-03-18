@@ -36,7 +36,7 @@ const prefixRegex = global.prefix;
 if (prefixRegex.test(m.text) && !opts['gconly']) Prefijo = true;
 const bot = global.db.data.settings[conn.user.jid]   
 if ( !m.isGroup && !Prefijo && !m.fromMe && m.text !== '' ) {
-  if(!isAllowed && global.db.data.settings[this.user.jid].antiPrivate && global.db.data.chats[m.chat].msgCount >= 5){
+  if(!isAllowed && global.db.data.settings[this.user.jid].antiPrivate && global.db.data.chats[m.chat].msgCount >= 7){
     return !0
   }
 if (/^.*false|disnable|(turn)?off|0/i.test(m.text)) return;
@@ -84,6 +84,119 @@ const q = m.quoted ? m.quoted : m;
   const mime = (q.msg || q).mimetype || q.mediaType || '';
   let isTele = /image\/(png|jpe?g|gif)|video\/mp4/.test(mime);
   
+  async function getRobot(messagem) { 
+   
+    if (!global.db.data.chats[m.chat].gpt.history?.length) {
+      global.db.data.chats[m.chat].gpt.history = [{ role: "assistant", content: sytm }];
+  }
+
+  
+    // Get the conversation history from your global structure
+    const conversationHistory = global.db.data.chats[m.chat].gpt.history;
+    
+    // Create a new user message object
+    const newUserMessage = { role: "user", content: messagem };
+    sai que
+    // Add the new user message to the conversation history
+    conversationHistory.push(newUserMessage);
+    const isWeb = (text) => text.includes('--web'); 
+    try {
+        m.react('💿')
+        const response = await fetch(global.arcangeloAPI + '/gpt4', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                conversation: conversationHistory,
+                question: text,
+                isWeb: isWeb,
+            }),
+        });
+        if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+        }
+        
+
+        const data = await response.json();
+  
+        const assistantResponse = data.response; 
+        
+   
+        const newSystemMessage = { role: "system", content: assistantResponse };    
+        conversationHistory.push(newSystemMessage);
+        
+        console.log('API Response:', assistantResponse);
+           m.react('📀')
+           return m.reply(`┌──[ 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs} ]─[~]─[${date}] 
+└─ $ ℕⲷ𝚡𝚞𝚜​
+${assistantResponse}`)
+
+    } catch (error) {
+        console.error('Error:', error);
+      sendSystemErrorAlert(global.db.data.chats[m.chat].language || "en");
+    }
+     
+}
+~
+
+async function getVision(messagem, image) { 
+ 
+  if (!global.db.data.chats[m.chat].gpt.history?.length) {
+    global.db.data.chats[m.chat].gpt.history = [{ role: "assistant", content: sytm }];
+}
+if (!global.db.data.chats[m.chat].gpt.images?.length) {
+  global.db.data.chats[m.chat].gpt.images = [];
+  global.db.data.chats[m.chat].gpt.images.push(image);
+}
+
+  // Get the conversation history from your global structure
+  const conversationHistory = global.db.data.chats[m.chat].gpt.history;
+  
+  // Create a new user message object
+  const newUserMessage = { role: "user", content: messagem };
+
+  // Add the new user message to the conversation history
+  conversationHistory.push(newUserMessage);
+  const isWeb = (text) => text.includes('--web'); 
+  try {
+      m.react('💿')
+      const response = await fetch(global.arcangeloAPI + '/vision', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+              conversation: conversationHistory,
+              link: image
+          }),
+      });
+      if (!response.ok) {
+          throw new Error('Network response was not ok ' + response.statusText);
+      }
+      
+
+      const data = await response.json();
+
+      const assistantResponse = data.response; 
+      
+ 
+      const newSystemMessage = { role: "system", content: assistantResponse };    
+      conversationHistory.push(newSystemMessage);
+      
+      console.log('API Response:', assistantResponse);
+         m.react('📀')
+         return m.reply(`┌──[ 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs} ]─[~]─[${date}] 
+└─ $ ℕⲷ𝚡𝚞𝚜​
+${assistantResponse}`)
+
+  } catch (error) {
+      console.error('Error:', error);
+    sendSystemErrorAlert(global.db.data.chats[m.chat].language || "en");
+  }
+   
+}
+
   m.react("👁️")
   
   if (/image/g.test(mime)){
@@ -92,147 +205,25 @@ const datab = await q.download?.();
 const images = await uploadImage(datab);
 
 
-    async function getRobot(messagem) { 
-   
- 
-      // Get the conversation history from your global structure
-      const conversationHistory = global.db.data.chats[m.chat].gpt.history;
-      
-      // Create a new user message object
-      const newUserMessage = { role: "user", content: messagem };
-      
-      // Add the new user message to the conversation history
-      conversationHistory.push(newUserMessage);
-      const isWeb = (text) => text.includes('--web'); 
-      try {
-          m.react('💿')
-          const response = await fetch(global.arcangeloAPI + '/gpt4', {
-              method: 'POST',
-              headers: {
-                  'Content-Type': 'application/json',
-              },
-              body: JSON.stringify({
-                  conversation: conversationHistory,
-                  question: text,
-                  isWeb: isWeb,
-              }),
-          });
-          if (!response.ok) {
-              throw new Error('Network response was not ok ' + response.statusText);
-          }
-          
-  
-          const data = await response.json();
-    
-          const assistantResponse = data.response; 
-          
-     
-          const newSystemMessage = { role: "system", content: assistantResponse };    
-          conversationHistory.push(newSystemMessage);
-          
-          console.log('API Response:', assistantResponse);
-             m.react('📀')
-             return m.reply(`┌──[ 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs} ]─[~]─[${date}] 
-└─ $ gpt4 
-${assistantResponse}`)
-  
-      } catch (error) {
-          console.error('Error:', error);
-        sendSystemErrorAlert(global.db.data.chats[m.chat].language || "en");
-      }
-       
-  }
-  
 
   
-async function fetchData() {
-  const encodedPrompt = encodeURIComponent(prompt);
-  const url =`https://api.miftahganzz.my.id/api/ai/gemini-img?q=${prompt}?&url=${images}&apikey=${global.miftah}`
-const url2 = `https://api.maelyn.tech/api/gemini/image?q=${prompt}&url=${images}&apikey=${global.maelyn}`
-// const url = `https://api.neoxr.eu/api/koros?image=${images}&q=${text}&apikey=${global.neoxr}`;
-console.log(url)
-  try {
-    const response = await fetch(url);
-    const data = await response.json();
-    console.log(data);
-      
-       if (data.status == 'error') throw data.error
- let message = await  conn.sendFile(m.chat, allan.getRandom(), 'edgar.jpg', data.result, m)
-  m.react("🌕")
-global.db.data.chats[m.chat].bard["config"].lastQuestion = message.key
- 
- global.db.data.chats[m.chat].bard["config"].resposta = data.result
-  } 
-  catch (error) {
-    m.react("💿")
-    console.error('Error fetching data:', error);
-    try {
-    const response = await fetch(url2);
-    const data = await response.json();
-    console.log(data);
-       m.react("🌕")
- let message = await  conn.sendFile(m.chat, allan.getRandom(), 'edgar.jpg', data.result, m)
- 
-global.db.data.chats[m.chat].bard["config"].lastQuestion = message.key
- 
- global.db.data.chats[m.chat].bard["config"].resposta = data.result
-  } 
-  catch (error) {
-    console.error('Error fetching data:', error);
-  }
-  
-  
-  }
-}
-
-fetchData();
-
+await getVision(m.text,images)
 
 }
 if (!/image/g.test(mime)){
  try{
    
- 
- gpt.web({
-    prompt: sytm,
-    markdown: false
-}, async (err, data) => {
-    if(err != null){
-        console.log(err);
-    } else {
-        console.log(data);
-        let message = await conn.sendMessage(m.chat, {
-      text: data.gpt,
-      contextInfo: {
-        externalAdReply: {
-          title: "𝕰𝖉𝖌𝖆𝖗 𝕬𝖑𝖑𝖆𝖓 𝕻𝖔𝖊 🪶",
-          body: "",
-          thumbnailUrl: allan.getRandom(),
-          sourceUrl: "",
-          mediaType: 1,
-          showAdAttribution: false,
-          renderLargerThumbnail: false,
-        },
-      },
-    }, { quoted: m });
- 
 
- 
- global.db.data.chats[m.chat].privategpthistory.push(data.gpt)
- 
-
- 
- 
-    }
-});
+ await getRobot(m.text)
+}
 
     
   
  
- }
+ 
  catch(e){
    console.log(e)
-   m.react("🪦")
+   sendSystemErrorAlert(global.db.data.chats[m.chat].language || "en");
  }
 }
 

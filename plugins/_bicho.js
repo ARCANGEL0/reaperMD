@@ -168,7 +168,12 @@ ${vencedores}`
       return global.db.data.chats[m.chat].bicho.animais[i];
     }
   }
-  return 'Animal não encontrado';
+   let txtT = global.db.data.chats[m.chat].language === 'pt'
+   ?
+   `Aɴɪᴍᴀʟ ɴᴀ̃ᴏ ᴇɴᴄᴏɴᴛʀᴀᴅᴏ`
+   :
+   `ᴀɴɪᴍᴀʟ ɴᴏᴛ ꜰᴏᴜɴᴅ`
+  return txtT;
 }
 
  
