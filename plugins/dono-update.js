@@ -12,6 +12,7 @@ try {
 if (global.conn.user.jid == conn.user.jid) {
 let stdout = execSync(`git pull origin ${global.repoBranch}` + (m.fromMe && text ? ' ' + text : ''))
 
+
 const formattedStdout = stdout
     .toString()
     .split('\n') // Divide em linhas
@@ -34,7 +35,7 @@ conn.reply(m.chat, fetch, m)
 let cmdxx = `git remote set-url origin ${global.projectRepo} && git pull origin ${global.repoBranch} -f`
 
 console.log(cmdxx)
-
+//updt
 var update = execSync(cmdxx)
 
 // update here 
