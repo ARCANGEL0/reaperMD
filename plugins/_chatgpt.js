@@ -40,13 +40,10 @@ if ( !m.isGroup && !Prefijo && !m.fromMe && m.text !== '' ) {
     return !0
   }
 if (/^.*false|disnable|(turn)?off|0/i.test(m.text)) return;
-if(!global.db.data.chats[m.chat].privategpthistory){
-  global.db.data.chats[m.chat].privategpthistory = []
-}
-let gptHistoryArray = global.db.data.chats[m.chat].privategpthistory
 
 
-let joinedHistory = gptHistoryArray.join('\n\n');
+
+
 
 const name = conn.getName(m.sender)
 
