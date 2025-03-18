@@ -109,7 +109,7 @@ const q = m.quoted ? m.quoted : m;
             },
             body: JSON.stringify({
                 conversation: conversationHistory,
-                question: text,
+                question: m.text,
                 isWeb: isWeb,
             }),
         });
