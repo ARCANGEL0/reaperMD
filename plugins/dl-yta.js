@@ -76,6 +76,8 @@ try {
   })
   
   
+  
+  
     
     if(global.db.data.chats[m.chat].autolevelup){
       global.db.data.chats[m.chat].users[m.sender].money -= 80
