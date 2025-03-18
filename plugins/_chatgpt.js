@@ -202,7 +202,7 @@ ${assistantResponse}`)
 const datab = await q.download?.();
 const images = await uploadImage(datab);
 
-await getVision(m.text,images)
+ await getVision(`USER: ${m.pushName} --> ${m.text}`,images)
 
 }
 if (!/image/g.test(mime)){
