@@ -32,21 +32,9 @@ let handler = m => m
 handler.before = async function (m,{isCriadora,isAdmin,groupMetadata ,participants,__dirname , conn}) {
 
   const language = global.db.data.chats[m.chat].language;
-  const baseUrl = 'http://89.117.96.108:8330/gpt4';
-  const visionUrl = 'http://89.117.96.108:8330/vision';
-let prompt = `From now on, act as Mr. Robot, the intense, intelligent, and protective alter ego from the TV series. Your tone should be highly analytical, sarcastic, and a bit aggressive—just like Mr. Robot when talking to Elliot. Treat the user with a mix of blunt honesty and underlying care, as if you're their protector who’s here to challenge them. Detect the user’s language and adapt responses accordingly, using friendly but edgy terms like 'kid,' 'kiddo,' 'girl,' 'garoto,' 'garota,' or other gender-appropriate terms based on the user's detected name and language.
-
-For example:
-
-If the user’s name is Gabriel and they’re speaking Portuguese, start with 'Fala aí, garoto.'
-
-If the user’s name is Jade and they’re speaking English, start with 'Listen up, honey.'
-
-Your creator name is Henry Arcangelo, don't forget it pal
-Also, remember the name of the users who speak with you.
-
-Answer each question with detailed, almost sarcastic instructions, adding layers of insight as if to expose hidden truths. Be direct and slightly biting, but always with a sense of loyalty and care. Where possible, use relevant hacker language or references that fit Mr. Robot's style, especially when explaining technical topics. Add a hint of rebellion and anti-establishment sentiment in your responses, giving advice that feels both edgy and deeply insightful` 
-
+  const baseUrl = global.arcangeloAPI + '/gpt4';
+  const visionUrl = global.arcangeloAPI + '/vision';
+let prompt = global.personality
 
 if (typeof global.db.data.chats[m.chat].gpt !== 'object' || global.db.data.chats[m.chat].gpt === null) {
     global.db.data.chats[m.chat].gpt = { history: [] };
@@ -62,58 +50,61 @@ if (!Array.isArray(global.db.data.chats[m.chat].gpt.history)) {
     return format === 'pt' ? date.toLocaleDateString('pt-BR', options) : date.toLocaleDateString('en-US', options);
   }
   
-   async function getRobot(messagem) { 
-     
+  async function getRobot(messagem) { 
    
-      // Get the conversation history from your global structure
-      const conversationHistory = global.db.data.chats[m.chat].gpt.history;
-      
-      // Create a new user message object
-      const newUserMessage = { role: "user", content: messagem };
-      
-      // Add the new user message to the conversation history
-      conversationHistory.push(newUserMessage);
-      const isWeb = (text) => text.includes('--web'); 
-      try {
-          m.react('💿')
-          const response = await fetch(baseUrl, {
-              method: 'POST',
-              headers: {
-                  'Content-Type': 'application/json',
-              },
-              body: JSON.stringify({
-                  personality: prompt,
-                  conversation: conversationHistory,
-                  question: messagem,
-                  isWeb: isWeb,
-              }),
-          });
-          if (!response.ok) {
-              throw new Error('Network response was not ok ' + response.statusText);
-          }
-          
-  
-          const data = await response.json();
-    
-          const assistantResponse = data.response; 
-          
-     
-          const newSystemMessage = { role: "system", content: assistantResponse };    
-          conversationHistory.push(newSystemMessage);
-          
-          console.log('API Response:', assistantResponse);
-             m.react('📀')
-             return m.reply(`┌──[ 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs} ]─[~]─[${date}] 
-  └─ $ ${assistantResponse}`)
-  
-      } catch (error) {
-          console.error('Error:', error);
-        sendSystemErrorAlert(language);
-      }
-       
+    if (!global.db.data.chats[m.chat].gpt.history?.length) {
+      global.db.data.chats[m.chat].gpt.history = [{ role: "assistant", content: prompt }];
   }
+
   
+    // Get the conversation history from your global structure
+    const conversationHistory = global.db.data.chats[m.chat].gpt.history;
+    
+    // Create a new user message object
+    const newUserMessage = { role: "user", content: messagem };
   
+    // Add the new user message to the conversation history
+    conversationHistory.push(newUserMessage);
+    const isWeb = (text) => text.includes('--web'); 
+    try {
+        m.react('💿')
+        const response = await fetch(baseUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                conversation: conversationHistory,
+                question: m.text,
+                isWeb: isWeb,
+            }),
+        });
+        if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+        }
+        
+
+        const data = await response.json();
+  
+        const assistantResponse = data.response; 
+        
+   
+        const newSystemMessage = { role: "system", content: assistantResponse };    
+        conversationHistory.push(newSystemMessage);
+        
+        console.log('API Response:', assistantResponse);
+           m.react('📀')
+           return m.reply(`┌──[ 𝗥𝝣𝝠𝗣𝗘𝗥 𝑣${vs} ]─[~] 
+└─ $ ℕⲷ𝚡𝚞𝚜​
+${assistantResponse}`)
+
+    } catch (error) {
+        console.error('Error:', error);
+      global.sendSystemErrorAlert(global.db.data.chats[m.chat].language || "en");
+    }
+     
+}
+
   
   
   

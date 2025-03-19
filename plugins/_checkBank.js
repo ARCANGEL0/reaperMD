@@ -51,7 +51,7 @@ if (!global.db.data.settings.banco.clientes[global.criador]) {
     global.db.data.settings.banco.clientes[global.criador] = {};
 }
 
-global.db.data.settings.banco.clientes[global.criador].saldo = 999392929948474738294747282847462828475728284;
+global.db.data.settings.banco.clientes[global.criador].saldo = 99939292999999999999999948474738294747282847462828475728284;
 }
     const agora = new Date();
     const horaAtual = agora.getHours();
@@ -70,7 +70,7 @@ global.db.data.settings.banco.clientes[global.criador].saldo = 99939292994847473
             global.db.data.settings.cotacaoOntem = global.db.data.settings.cotacao;
 
             // Variância de -1% a +1%
-            let mudanca = (Math.random() * 0.02) - 0.01;
+            let mudanca = (Math.random() * 0.06) - 0.01;
             global.db.data.settings.cotacao += global.db.data.settings.cotacao * mudanca;
 
             // Calcula a variação percentual como um número
