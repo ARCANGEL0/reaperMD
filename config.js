@@ -290,7 +290,7 @@ global.author = "\n𝘽𝙮 𝝺𝗥𝗖𝝠𝗡𝗚𝝣𝗟Ꙩ"
 global.packname = "𝗥𝝣𝝠𝗣𝗘𝗥 PRӨJE𝐶Ʈ"
 
 //⊱ ━━━━━.⋅ Version | Name | Links ⋅.━━━━ ⊰
-global.arcangeloAPI = "arcangelo.myddns.me"
+global.arcangeloAPI = "http://arcangelo.ip-ddns.com:8330"
 global.vs = "1.6.1"
 global.vsJB = global.vs
 global.yt = "https://www.instagram.com/h.arcangelo"
