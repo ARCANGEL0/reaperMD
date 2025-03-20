@@ -316,34 +316,36 @@ if (command == 'play2') {
 
   try {
 
-    const randomDg = Math.floor(Math.random() * 1000) + 1;
-    const outputFileName = `tmp/${randomDg}.mp4`;
-    const command = `yt-dlp -x "${yt_play[0].url}" -o "${outputFileName}"`;
-    
-    
-    
-    exec(command, (error, stdout, stderr) => {
-      if (error) {
-          console.error(`Error executing command: ${error.message}`);
-          throw error;
-      }
-      if (stderr) {
-          console.error(`Error: ${stderr}`);
-          throw stderr;
-      }
-    })
-    
-    
-      
-      if(global.db.data.chats[m.chat].autolevelup){
-        global.db.data.chats[m.chat].users[m.sender].money -= 125
-         m.react("📀")
-        await m.reply(` 125 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)
-      }
-    await conn.sendMessage(m.chat, { video: { url: outputFileName }, fileName: `video.mp4`, caption: `` }, { quoted: m }) 
-  //  conn.sendFile(m.chat, `tmp/${randomDg}.mp4`,'err.mp4',null,m)
-    
-    } 
+const randomDg = Math.floor(Math.random() * 1000) + 1;
+
+let outputFileName = `tmp/${randomDg}.mp4`;
+const command = `yt-dlp -x "${yt_play[0].url}" -o "${outputFileName}"`;
+
+
+
+exec(command, async (error, stdout, stderr) => {
+  if (error) {
+      console.error(`Error executing command: ${error.message}`);
+      throw error;
+  }
+  if (stderr) {
+      console.error(`Error: ${stderr}`);
+      throw stderr;
+  }
+
+
+
+  
+  if(global.db.data.chats[m.chat].autolevelup){
+    global.db.data.chats[m.chat].users[m.sender].money -= 125
+     m.react("📀")
+    await m.reply(` 125 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
+
+ conn.sendFile(m.chat, `tmp/${randomDg}.mp4`,'err.mp4',null,m)
+    console.log(`File saved as ${outputFileName}`)
+
+})
+}
 
   catch(e) {
 try {
