@@ -427,16 +427,10 @@ await conn.sendMessage(m.chat, { video: { url: n2 }, fileName: `${n}.mp4`, mimet
 
     
 }
-
-  
-
- catch(e) {
-  console.log(e)
-m.react("❌")
-}
   
   
 }
+
 handler.level = 6
 handler.command = ['play', 'play2','music']
 
