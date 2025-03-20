@@ -23,12 +23,19 @@ const rl = createInterface(process.stdin, process.stdout)
 say('R.E.A.P.E.R', {
 font: 'tiny',
 align: 'left',
-color: 'red'})
+colors: 'redBright'})
 
-say(`Creator:\nHenry Arcangelo \n𓄿 Github: ARCANGEL0\n📞 (+351) 927 285 125\nҗ Instagram: (@h.arcangelo)`, {
+say(`Creator: Henry Arcangelo 
+Github: ARCANGEL0`, {
 font: 'console',
 align: 'left',
-gradient: ['red', 'black']})
+colors: ['red', 'white']})
+
+say(`📞 (+351) 927 285 125
+Instagram: (@h.arcangelo)`, {
+font: 'console',
+align: 'left',
+colors: ['red', 'white']})
 
 let isRunning = false
 /**
