@@ -22,11 +22,12 @@ const rl = createInterface(process.stdin, process.stdout)
  
 say('R.E.A.P.E.R', {
 font: 'tiny',
-align: 'center',
+align: 'left',
 color: 'red'})
+
 say(`Criador/Creator:\nHenry Arcangelo \n𓄿 Github: ARCANGEL0\n📞 (+351) 927 285 125\nҗ Instagram: (@h.arcangelo)`, {
 font: 'console',
-align: 'center',
+align: 'left',
 gradient: ['black', 'black']})
 
 let isRunning = false
