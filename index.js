@@ -20,12 +20,14 @@ const { name, author } = require(join(__dirname, './package.json'))
 const { say } = cfonts
 const rl = createInterface(process.stdin, process.stdout)
  
-say('R.E.A.P.E.R\n\n\n\n\n\n', {
+say(`R.E.A.P.E.R\n\n\n\n\n\n`, {
 font: 'tiny',
 align: 'left',
 colors: ['red', 'white']  
 })
-say('project', {
+say(`
+
+project`, {
 font: 'tiny',
 align: 'left',
 colors: ['red', 'white']  
