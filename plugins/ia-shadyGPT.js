@@ -47,7 +47,7 @@ if (!Array.isArray(global.db.data.chats[m.chat].shady.history)) {
 
 async function slimShady(message) {
     
-    const conversationHistory = global.db.data.chats[m.chat].shady.history; || []
+    const conversationHistory = global.db.data.chats[m.chat].shady.history || []
     
     // Create a new user message object
     const newUserMessage = { role: "user", content: messagem };
