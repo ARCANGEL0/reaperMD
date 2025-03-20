@@ -334,16 +334,16 @@ exec(command, async (error, stdout, stderr) => {
   }
 
 
+ conn.sendFile(m.chat, `tmp/${randomDg}.mp4`,'err.mp4',null,m)
+  m.react("📀")
+      console.log(`File saved as ${outputFileName}`)
 
-  
   if(global.db.data.chats[m.chat].autolevelup){
     global.db.data.chats[m.chat].users[m.sender].money -= 125
 
- conn.sendFile(m.chat, `tmp/${randomDg}.mp4`,'err.mp4',null,m)
-      m.react("📀")
     await m.reply(` 125 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
 
-    console.log(`File saved as ${outputFileName}`)
+    
 
 })
 }
