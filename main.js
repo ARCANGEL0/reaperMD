@@ -153,7 +153,7 @@ do {
 let lineM = ' ━━━━━━━━━━━⬣━━━━━━━━━━━━'
 optionz = await question(`╭${lineM} 
 ┊ ${chalk.blueBright('\n╭─┅──┅❖ ')}
-┊ ${chalk.blueBright('┊')} ${chalk.blue.bgBlue.bold.cyan('CODIGO DE AUTENTICAÇÃO')}
+┊ ${chalk.blueBright('┊')} ${chalk.blue.bgBlue.bold.cyan('AUTH CODE')}
 ┊ ${chalk.blueBright('╰┅┅─┅──┅❖ ')}   
 ┊ ${chalk.blueBright('\n╭─┅──┅❖ ')}     
 ┊ ${chalk.blueBright('┊')} ${chalk.green.bgMagenta.bold.yellow('AUTH METHOD')}
@@ -166,16 +166,19 @@ optionz = await question(`╭${lineM}
 ┊ ${chalk.blueBright('╰┅┅┅┅─┅──┅❖ ')} 
 ┊ ${chalk.blueBright('\n╭┅┅┅─┅──┅ ')}    
 ┊ ${chalk.blueBright('┊')} ${chalk.red.bgRed.bold.green('Dica:')}
-┊ ${chalk.blueBright('┊')} ${chalk.italic.cyan('Se usa Termux, Replit, Linux, ou Windows')}
-┊ ${chalk.blueBright('┊')} ${chalk.italic.cyan('Use estes comandos para uma execução directa:')}
+┊ ${chalk.blueBright('┊')} ${chalk.italic.cyan('SDo you use Termux, Replit, Linux, ou Windows')}
+┊ ${chalk.blueBright('┊')} ${chalk.italic.cyan('Use these commands for direct connection:')}
 ┊ ${chalk.blueBright('┊')} ${chalk.bold.yellow(`npm run qr ${chalk.italic.magenta('(Inicia com código QR)')}`)}
-┊ ${chalk.blueBright('┊')} ${chalk.bold.yellow(`npm run code ${chalk.italic.magenta('(Inicia com código de 8 dígitos)')}`)}
-┊ ${chalk.blueBright('┊')} ${chalk.bold.yellow(`npm start ${chalk.italic.magenta('(Inicio predeterminado com opcoes)')}`)}
+┊ ${chalk.blueBright('┊')} ${chalk.bold.yellow(`npm run code
+${chalk.italic.magenta('(Start with 8 digits code)')}`)}
+┊ ${chalk.blueBright('┊')} ${chalk.bold.yellow(`npm start
+${chalk.italic.magenta('(Start wi5h options menu)')}`)}
 ┊ ${chalk.blueBright('╰┅┅┅┅┅❖')} 
 ╰${lineM}\n${chalk.bold.magentaBright('  ')}`)
 
 if (!/^[1-2]$/.test(optionz)) {
-console.log(chalk.bold.redBright(`NAO SERAO ACEITES NÚMEROS QUE NÃO SEJAM  ${chalk.bold.greenBright("1")} OU ${chalk.bold.greenBright("2")}, TAMPOUCO LETRAS OU SÍMBOLOS ESPECIAIS.
+console.log(chalk.bold.redBright(`NUMBERS NOT ACCEPTED
+${chalk.bold.greenBright("1")} OU ${chalk.bold.greenBright("2")}, NEITHER SYMBOLS OR CHARS
 ${chalk.bold.yellowBright("Copie o trecho e copie noconsole")}`))
 }} while (optionz !== '1' && optionz !== '2' || fs.existsSync(`./${authFile}/creds.json`))
 }
@@ -238,13 +241,14 @@ console.log(chalk.bgBlack(chalk.bold.redBright(`Configurar arquivos ${chalk.bold
 process.exit(0)
 }} else {
 while (true) {
-addNumber = await question(chalk.bgBlack(chalk.bold.greenBright(`Por favor, diga-me o numero do whatsapp do bot.\n${chalk.bold.yellowBright("Dica: Copie e cole o numero neste console")}\n${chalk.bold.yellowBright("Exemplo: +593090909090")}\n${chalk.bold.magentaBright('---> ')}`)))
+addNumber = await question(chalk.bgBlack(chalk.bold.greenBright(`Insert bot
+number.\n${chalk.bold.yellowBright("Tip:copy & paste number here in the console")}\n${chalk.bold.yellowBright("i.e: +593090909090")}\n${chalk.bold.magentaBright('---> ')}`)))
 addNumber = addNumber.replace(/[^0-9]/g, '')
 
 if (addNumber.match(/^\d+$/) && Object.keys(PHONENUMBER_MCC).some(v => addNumber.startsWith(v))) {
 break 
 } else {
-console.log(chalk.bold.redBright("Coloque o código de pais."))
+console.log(chalk.bold.redBright("Insert country code."))
 }}
 rl.close()  
 }
@@ -269,17 +273,20 @@ let addNumber
 if (!!phoneNumber) {
 addNumber = phoneNumber.replace(/[^0-9]/g, '')
 if (!Object.keys(PHONENUMBER_MCC).some(v => addNumber.startsWith(v))) {
-console.log(chalk.bgBlack(chalk.bold.redBright(`Configurar arquivos ${chalk.bold.greenBright("config.js")} Diga-me o codigo do pais, ó pobre alma, ${chalk.bold.yellowBright("Exemplo: +593090909090")}`)))
+console.log(chalk.bgBlack(chalk.bold.redBright(`Configure files
+${chalk.bold.greenBright("config.js")} insert country code,
+${chalk.bold.yellowBright("i.e: +593090909090")}`)))
 process.exit(0)
 }} else {
 while (true) {
-addNumber = await question(chalk.bgBlack(chalk.bold.greenBright(`Por favor, diga-me o numero do whatsapp no qual onde minha solene alma sera reencarnada .\n${chalk.bold.yellowBright("Dica: Copie e cole o numero neste console")}\n${chalk.bold.yellowBright("Exemplo: +593090909090")}\n${chalk.bold.magentaBright('---> ')}`)))
+addNumber = await question(chalk.bgBlack(chalk.bold.greenBright(`Insert bot
+number .\n${chalk.bold.yellowBright("")}\n${chalk.bold.yellowBright("i.e: +593090909090")}\n${chalk.bold.magentaBright('---> ')}`)))
 addNumber = addNumber.replace(/[^0-9]/g, '')
 
 if (addNumber.match(/^\d+$/) && Object.keys(PHONENUMBER_MCC).some(v => addNumber.startsWith(v))) {
 break 
 } else {
-console.log(chalk.bold.redBright("Coloque o código de pais."))
+console.log(chalk.bold.redBright("Insert country code."))
 }}
 rl.close()  
 }
@@ -288,7 +295,7 @@ rl.close()
 setTimeout(async () => {
 let codeBot = await conn.requestPairingCode(addNumber)
 codeBot = codeBot?.match(/.{1,4}/g)?.join("-") || codeBot
-console.log(chalk.bold.white(chalk.bgMagenta(`Codigo de autênticao :`)), chalk.bold.white(chalk.white(codeBot)))
+console.log(chalk.bold.white(chalk.bgMagenta(`AUTH CODE -->`)), chalk.bold.white(chalk.white(codeBot)))
 }, 2000)
 }}
 
@@ -442,12 +449,12 @@ global.reload = async (_ev, filename) => {
 if (pluginFilter(filename)) {
 const dir = global.__filename(join(pluginFolder, filename), true)
 if (filename in global.plugins) {
-if (existsSync(dir)) conn.logger.info(` Atualizado '${filename}' com sucesso 𒌩⮟`)
+if (existsSync(dir)) conn.logger.info(` Updated '${filename}' 𒌩⮟`)
 else {
 conn.logger.warn(`Arquivo eliminado  : '${filename}'`)
 return delete global.plugins[filename];
 }
-} else conn.logger.info(`NOVOS PLUGINS : '${filename}'`)
+} else conn.logger.info(`NEW PLUGINS : '${filename}'`)
 const err = syntaxerror(readFileSync(dir), filename, {
 sourceType: 'module',
 allowAwaitOutsideFunction: true,
