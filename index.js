@@ -21,9 +21,9 @@ const { say } = cfonts
 const rl = createInterface(process.stdin, process.stdout)
  
 say('R.E.A.P.E.R', {
-font: 'grid',
+font: 'tiny',
 align: 'center',
-gradient: ['red', 'red']})
+color: 'red'})
 say(`Criador/Creator:\nHenry Arcangelo \n𓄿 Github: ARCANGEL0\n📞 (+351) 927 285 125\nҗ Instagram: (@h.arcangelo)`, {
 font: 'console',
 align: 'center',
