@@ -25,10 +25,10 @@ font: 'tiny',
 align: 'left',
 color: 'red'})
 
-say(`Criador/Creator:\nHenry Arcangelo \n𓄿 Github: ARCANGEL0\n📞 (+351) 927 285 125\nҗ Instagram: (@h.arcangelo)`, {
+say(`Creator:\nHenry Arcangelo \n𓄿 Github: ARCANGEL0\n📞 (+351) 927 285 125\nҗ Instagram: (@h.arcangelo)`, {
 font: 'console',
 align: 'left',
-gradient: ['black', 'black']})
+gradient: ['red', 'black']})
 
 let isRunning = false
 /**
