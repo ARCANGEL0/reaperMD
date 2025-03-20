@@ -334,16 +334,15 @@ exec(command, async (error, stdout, stderr) => {
   }
 
 
- conn.sendFile(m.chat, `tmp/${randomDg}.mp4`,'err.mp4',null,m)
-  m.react("📀")
-      console.log(`File saved as ${outputFileName}`)
-
+await conn.sendMessage(m.chat, { video: { url: outputFileName }, fileName: `video.mp4`, caption: `` }, { quoted: m }) 
+    console.log(`File saved as ${outputFileName}`)
+  
+     m.react("📀")
   if(global.db.data.chats[m.chat].autolevelup){
     global.db.data.chats[m.chat].users[m.sender].money -= 125
-
     await m.reply(` 125 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
 
-    
+
 
 })
 }
