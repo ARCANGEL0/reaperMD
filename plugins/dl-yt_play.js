@@ -430,7 +430,13 @@ await conn.sendMessage(m.chat, { video: { url: n2 }, fileName: `${n}.mp4`, mimet
   
   
 }
-
+catch(e){
+        
+        console.log(e)
+        m.react("💀")
+           sendSystemErrorAlert(global.db.data.chats[m.chat].language);
+}
+}
 handler.level = 6
 handler.command = ['play', 'play2','music']
 
