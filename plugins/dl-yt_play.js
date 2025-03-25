@@ -161,6 +161,8 @@ exec(command, async (error, stdout, stderr) => {
   
   
   catch(e)   {
+    
+    console.log('2tmp')
     console.log(e)
     try{
       const audiodlp = await ytmp3(encodeURIComponent(yt_play[0].videoId));
