@@ -60,7 +60,7 @@ try {
   
   const randomDg = Math.floor(Math.random() * 1000) + 1;
   const outputFileName = `/tmp/${randomDg}.mp3`;
-  const command = `yt-dlp -x --audio-format mp3 "${youtubeLink}" -o "${outputFileName}"`;
+  const command = `yt-dlp --no-warnings  -x --audio-format mp3 "${youtubeLink}" -o "${outputFileName}"`;
   
   
   
