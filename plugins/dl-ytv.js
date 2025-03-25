@@ -49,7 +49,7 @@ try {
 
   const randomDg = Math.floor(Math.random() * 1000) + 1;
   const outputFileName = `tmp/${randomDg}.mp4`;
-  const command = `yt-dlp -x "${yt_play[0].url}" -o "${outputFileName}"`;
+  const command = `yt-dlp -x "${yt_play[0].url}" --no-warnings -o "${outputFileName}"`;
   
   
   
