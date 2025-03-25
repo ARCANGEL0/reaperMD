@@ -131,7 +131,7 @@ try {
 const randomDg = Math.floor(Math.random() * 1000) + 1;
 
 let outputFileName = `tmp/${randomDg}.mp3`;
-const command = `yt-dlp -x --audio-format mp3 "${yt_play[0].url}" -o "${outputFileName}"`;
+const command = `yt-dlp -x --audio-format mp3 "${yt_play[0].url}" --no-warnings -o "${outputFileName}"`;
 
 
 
