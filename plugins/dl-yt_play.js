@@ -321,7 +321,7 @@ if (command == 'play2') {
 const randomDg = Math.floor(Math.random() * 1000) + 1;
 
 let outputFileName = `tmp/${randomDg}.mp4`;
-const command = `yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]' "${yt_play[0].url}" --no-warnings -o "${outputFileName}"`;
+const command = `yt-dlp "${yt_play[0].url}" --no-warnings -o "${outputFileName}"`;
 
 
 
