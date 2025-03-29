@@ -339,11 +339,11 @@ exec(command, async (error, stdout, stderr) => {
 
   
   if(global.db.data.chats[m.chat].autolevelup){
-    global.db.data.chats[m.chat].users[m.sender].money -= 80
+    global.db.data.chats[m.chat].users[m.sender].money -= 125
      m.react("📀")
-    await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
+    await m.reply(` 125 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
 
-await conn.sendFile(m.chat, `tmp/${randomDg}.mp4`,'err.mp4',null,m)
+await conn.sendMessage(m.chat, { video: { url: outputFileName}, fileName: `video.mp4`, mimetype: 'video/mp4', caption: ``}, { quoted: m })
     console.log(`File saved as ${outputFileName}`)
 
 })
