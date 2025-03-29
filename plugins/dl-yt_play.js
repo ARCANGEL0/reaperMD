@@ -323,7 +323,7 @@ const randomDg = Math.floor(Math.random() * 1000) + 1;
 let outputFileName = `tmp/${randomDg}.mp4`;
 const command = `yt-dlp -x "${yt_play[0].url}" --no-warnings -o "${outputFileName}"`;
 
-
+console.log(command)
 
 exec(command, async (error, stdout, stderr) => {
   if (error) {
@@ -336,15 +336,15 @@ exec(command, async (error, stdout, stderr) => {
   }
 
 
-await conn.sendMessage(m.chat, { video: { url: outputFileName }, fileName: `video.mp4`, caption: `` }, { quoted: m }) 
-    console.log(`File saved as ${outputFileName}`)
+
   
-     m.react("📀")
   if(global.db.data.chats[m.chat].autolevelup){
-    global.db.data.chats[m.chat].users[m.sender].money -= 125
-    await m.reply(` 125 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
+    global.db.data.chats[m.chat].users[m.sender].money -= 80
+     m.react("📀")
+    await m.reply(` 80 🜅 ʙʏᴛᴇᴄᴏɪɴꜱ ${usedText}`)}
 
-
+ conn.sendFile(m.chat, `tmp/${randomDg}.mp3`,'err.mp3',null,m)
+    console.log(`File saved as ${outputFileName}`)
 
 })
 }
