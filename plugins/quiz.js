@@ -983,8 +983,8 @@ ${optionsString}
   
     
     if(global.db.data.chats[m.chat].quiz!= null) {
- 
-    global.db.data.chats[m.chat].quiz.pergunta = JSON.parse(global.db.data.chats[m.chat].quiz.pergunta) 
+ const cleanedString = global.db.data.chats[m.chat].quiz.pergunta.replace(/json|```/g, "").trim();
+    global.db.data.chats[m.chat].quiz.pergunta = JSON.parse(cleanedString) 
     const { Pergunta, XP, Money, Pontos, Opcoes, Resposta, Motivo } =
     global.db.data.chats[m.chat].quiz.pergunta;
     const optionsString = Object.entries(Opcoes)
