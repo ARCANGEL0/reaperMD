@@ -683,12 +683,10 @@ getRobot(global.db.data.chats[m.chat].quiz.historico, categories[text -1])
        
   
         
-   // Assuming you have these variables defined somewhere in your script
 if(!global.db.data.chats[m.chat].quiz.modo){
   global.db.data.chats[m.chat].quiz.modo =false
 }
 
-// Your existing code...
 
 const selectedCategory = text
 
