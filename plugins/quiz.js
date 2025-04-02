@@ -1005,9 +1005,7 @@ ${optionsString}
     
     if(global.db.data.chats[m.chat].quiz!= null) {
  
-    global.db.data.chats[m.chat].quiz.pergunta =
-     parseAndFormatResponse(global.db.data.chats[m.chat].quiz.pergunta);
-    
+   
     const { Pergunta, XP, Money, Pontos, Opcoes, Resposta, Motivo } =
     global.db.data.chats[m.chat].quiz.pergunta;
     const optionsString = Object.entries(Opcoes)
