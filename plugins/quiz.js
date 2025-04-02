@@ -888,7 +888,6 @@ const formattedResponse = parseAndFormatResponse(assistantResponse);
   console.log("Delay: " + delayBetweenQuestions);
 console.log('time  ' + timeDifference < delayBetweenQuestions)
 
-console.log('porra')
   if (timeDifference < delayBetweenQuestions) {
     // If the user attempts to ask a question too soon, provide a warning
     const remainingTime = delayBetweenQuestions - timeDifference;
@@ -1006,7 +1005,9 @@ ${optionsString}
     
     if(global.db.data.chats[m.chat].quiz!= null) {
  
-    global.db.data.chats[m.chat].quiz.pergunta = JSON.parse(global.db.data.chats[m.chat].quiz.pergunta) 
+    global.db.data.chats[m.chat].quiz.pergunta =
+     parseAndFormatResponse(global.db.data.chats[m.chat].quiz.pergunta);
+    
     const { Pergunta, XP, Money, Pontos, Opcoes, Resposta, Motivo } =
     global.db.data.chats[m.chat].quiz.pergunta;
     const optionsString = Object.entries(Opcoes)
