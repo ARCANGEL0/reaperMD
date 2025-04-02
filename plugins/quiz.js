@@ -683,12 +683,11 @@ getRobot(global.db.data.chats[m.chat].quiz.historico, categories[text -1])
        
   
         
-   // Assuming you have these variables defined somewhere in your script
 if(!global.db.data.chats[m.chat].quiz.modo){
   global.db.data.chats[m.chat].quiz.modo =false
 }
 
-// Your existing code...
+
 
 const selectedCategory = text
 
@@ -812,6 +811,25 @@ Evite repetir as mesmas perguntas`
  
  console.log('begin quiz')
 
+
+  async function parseAndFormatResponse(responseString) { 
+    const cleanedString = responseString.replace(/json|```/g, "").trim();
+
+    try {
+        const parsedData = JSON.parse(cleanedString);
+        const formattedJSON = JSON.stringify(parsedData, null, 4);
+        
+        console.log("Formatted JSON:", formattedJSON);
+        return formattedJSON;
+    } catch (error) {
+        console.error("Error parsing JSON:", error);
+        return null;
+    }
+
+}
+
+
+
  async function getRobot(messagem,category) { 
    
   messagem.push({
@@ -839,10 +857,12 @@ Evite repetir as mesmas perguntas`
       const data = await response.json()
 
       const assistantResponse = data.response; 
-  let aiReply = assistantResponse
-     /* 
-      
-*/
+  
+  
+
+const formattedResponse = parseAndFormatResponse(assistantResponse);
+  let aiReply = formattedResponse
+  
 
 
 
@@ -1108,7 +1128,7 @@ return !0
 
 
 
-getRobot(global.db.data.chats[m.chat].quiz.historico, categories[text -1])
+getRobot(global.db.data.chats[m.chat].quiz.historico, selectedCategory)
 
   
 
