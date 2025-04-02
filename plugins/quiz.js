@@ -683,11 +683,12 @@ getRobot(global.db.data.chats[m.chat].quiz.historico, categories[text -1])
        
   
         
+   // Assuming you have these variables defined somewhere in your script
 if(!global.db.data.chats[m.chat].quiz.modo){
   global.db.data.chats[m.chat].quiz.modo =false
 }
 
-
+// Your existing code...
 
 const selectedCategory = text
 
@@ -811,25 +812,6 @@ Evite repetir as mesmas perguntas`
  
  console.log('begin quiz')
 
-
-  async function parseAndFormatResponse(responseString) { 
-    const cleanedString = responseString.replace(/json|```/g, "").trim();
-
-    try {
-        const parsedData = JSON.parse(cleanedString);
-        const formattedJSON = JSON.stringify(parsedData, null, 4);
-        
-        console.log("Formatted JSON:", formattedJSON);
-        return formattedJSON;
-    } catch (error) {
-        console.error("Error parsing JSON:", error);
-        return null;
-    }
-
-}
-
-
-
  async function getRobot(messagem,category) { 
    
   messagem.push({
@@ -857,12 +839,10 @@ Evite repetir as mesmas perguntas`
       const data = await response.json()
 
       const assistantResponse = data.response; 
-  
-  
-
-const formattedResponse = parseAndFormatResponse(assistantResponse);
-  let aiReply = formattedResponse
-  
+  let aiReply = assistantResponse
+     /* 
+      
+*/
 
 
 
@@ -888,6 +868,7 @@ const formattedResponse = parseAndFormatResponse(assistantResponse);
   console.log("Delay: " + delayBetweenQuestions);
 console.log('time  ' + timeDifference < delayBetweenQuestions)
 
+console.log('porra')
   if (timeDifference < delayBetweenQuestions) {
     // If the user attempts to ask a question too soon, provide a warning
     const remainingTime = delayBetweenQuestions - timeDifference;
@@ -1005,7 +986,7 @@ ${optionsString}
     
     if(global.db.data.chats[m.chat].quiz!= null) {
  
-   
+    global.db.data.chats[m.chat].quiz.pergunta = JSON.parse(global.db.data.chats[m.chat].quiz.pergunta) 
     const { Pergunta, XP, Money, Pontos, Opcoes, Resposta, Motivo } =
     global.db.data.chats[m.chat].quiz.pergunta;
     const optionsString = Object.entries(Opcoes)
@@ -1127,7 +1108,7 @@ return !0
 
 
 
-getRobot(global.db.data.chats[m.chat].quiz.historico, selectedCategory)
+getRobot(global.db.data.chats[m.chat].quiz.historico, categories[text -1])
 
   
 
